@@ -1,0 +1,28 @@
+{
+    "sections":[
+        {
+            "id":1,
+            "name":"1-1 Section",
+            "orderNumber":1,
+            "episodeId":1
+        },
+        {
+            "id":2,
+            "name":"1-2 Section",
+            "orderNumber":1,
+            "episodeId":1
+        },
+        {
+            "id":3,
+            "name":"2-1 Section",
+            "orderNumber":1,
+            "episodeId":2
+        },
+        {
+            "id":4,
+            "name":"2-2 Section",
+            "orderNumber":1,
+            "episodeId":2
+        }
+    ]
+}
