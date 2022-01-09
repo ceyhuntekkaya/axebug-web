@@ -1,0 +1,14 @@
+{
+    "episodes":[
+        {
+            "id":1,
+            "name":"Intro Episode",
+            "orderNumber":1
+        },
+        {
+            "id":2,
+            "name":"Adventure 1",
+            "orderNumber":2
+        }
+    ]
+}
