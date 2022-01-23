@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom';
 import ContentBase from './components/ContentBase';
 
 const SectionList = require("../model/Section.json")
@@ -9,7 +10,7 @@ export default function Studty(props) {
 
     const [sections, setSections] = useState([]);
     const [contents, setContents] = useState([]);
-    const [selectedSection, setSelectedSection] = useState({name:"Select One"});
+    const [selectedSection, setSelectedSection] = useState({ name: "Select One" });
     const [startContent, setStartContent] = useState(false);
     const [pageMode, setPageMode] = useState("section");
     const [selectedContent, setSelectedContent] = useState({});
@@ -54,12 +55,24 @@ oku yaz
         setStartContent(true);
     }
 
+    const onResetSelectedSection = () => {
+        setSelectedSection({ name: "Select One" });
+        setSelectedContent({});
+        setStartContent(false);
+        setPageMode("section")
+    }
 
     return (
         <React.Fragment>
             <div className="container">
                 <div className="row pt-4">
                     <h3>AXE BUG COMICS</h3>
+                </div>
+                <div className="row">
+                    <Link to="/student" className="col btn btn-dark m-3">HOMEWORK LIST</Link>
+                    {
+                        pageMode !== "section" ? <button onClick={onResetSelectedSection} className="col btn btn-dark m-3">SECTION LIST</button> : null
+                    }
                 </div>
                 <div className="row mt-4">
                     <div className="col-2 mr-2">
@@ -72,7 +85,7 @@ oku yaz
                                     <ul className="list-group list-group-flush">
                                         {
                                             sections.map((section, key) => (
-                                                <li key={key} className={`list-group-item ${section.id===selectedSection.id ? "btn btn-success" : ""}`} onClick={() => onSectionSubmit(section)}>{section.name}</li>
+                                                <li key={key} className={`list-group-item ${section.id === selectedSection.id ? "btn btn-success" : ""}`} onClick={() => onSectionSubmit(section)}>{section.name}</li>
                                             ))
                                         }
                                     </ul>
@@ -80,7 +93,7 @@ oku yaz
                                     <ul className="list-group list-group-flush">
                                         {
                                             contents.map((content, key) => (
-                                                <li key={key} className={`list-group-item ${content.id===selectedContent.id ? "btn btn-success" : ""}`} onClick={() => onSectionContent(content)}>{content.name}</li>
+                                                <li key={key} className={`list-group-item ${content.id === selectedContent.id ? "btn btn-success" : ""}`} onClick={() => onSectionContent(content)}>{content.name}</li>
                                             ))
                                         }
                                     </ul>
