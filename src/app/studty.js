@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import ContentBase from './components/contentBase';
+import ContentBase from './components/ContentBase';
 
 const SectionList = require("../model/Section.json")
 const ContentList = require("../model/content.json")
@@ -13,6 +13,28 @@ export default function Studty(props) {
     const [startContent, setStartContent] = useState(false);
     const [pageMode, setPageMode] = useState("section");
     const [selectedContent, setSelectedContent] = useState({});
+
+
+    /*
+
+doş
+konuş
+
+
+
+ses yok
+dloku
+konuş
+
+
+dinleyaz
+
+oku yaz
+
+
+
+
+    */
 
     useEffect(() => {
         setSections(SectionList.sections)
