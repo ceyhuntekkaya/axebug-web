@@ -17,15 +17,13 @@ export default function ContentBase(props) {
     const [level, setLevel] = useState(1);
 
 
-
+console.log(selectedContent)
     useEffect(() => {
         if (props.selectedContent) {
             setSelectedContent(props.selectedContent);
             setLevel(1);
         }
     }, [props.selectedContent])
-
-
     return (
         <div className="card">
             <div className="card-header">
@@ -33,9 +31,9 @@ export default function ContentBase(props) {
             </div>
             <div className="card-body">
                 <audio controls className='w-100'>
-                    <source src={`assests/${selectedContent.soundUrl}`} type="audio/mpeg" />
+                    <source src={`../assests/${selectedContent.soundUrl}`} type="audio/mpeg" />
                 </audio>
-                <img src={`assests/${selectedContent.imageEmptyUrl}`} alt="" className="w-50" />
+                <img src={`../assests/${selectedContent.imageEmptyUrl}`} alt="" className="w-50" />
                 <div className="alert alert-secondary mt-2" role="alert">
                     {selectedContent.text}
                 </div>
@@ -43,7 +41,6 @@ export default function ContentBase(props) {
                     <label htmlFor="txt" className="form-label">Write text...</label>
                     <input type="email" className="form-control" id="txt" placeholder="Write text..." />
                 </div>
-
                 <div className="container">
                     <div className="row row-cols-auto">
                         <div className="col"><button className="btn btn-primary">Record Your Voice</button></div>

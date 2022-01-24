@@ -11,6 +11,7 @@ import Homework from "./admin/component/Homework";
 import SchoolRoomList from "./admin/component/SchoolRoomList";
 import StudentList from "./admin/component/StudentList";
 import './App.css';
+import Student from "./app/student";
 import Studty from './app/studty';
 
 
@@ -31,6 +32,7 @@ function App() {
         <Route exact path="/admin/homework" element={<Homework />} />
         <Route exact path="/admin" element={<Admin />} />
         <Route exact path="/study" element={<Studty />} />
+        <Route exact path="/student" element={<Student />} />
       </Routes>
     </Router>
   );
