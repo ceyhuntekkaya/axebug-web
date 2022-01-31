@@ -1,9 +1,58 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Square from './components/Square';
 
 export default function Student() {
+
+  const onClick =()=>{
+    alert("tiklandi")
+  }
   return (
     <React.Fragment>
+      <div className="container">
+        <div className="text-white bg-dark border border-2 border-dark p-2 mt-5 d-flex justify-content-center" style={{width:350}}><h2><b>AXEBUG DIGITAL</b></h2></div>
+        <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{width:350}}><h2><b>STUDENT SECTION</b></h2></div>
+      </div>
+      <div className="d-flex justify-content-center">
+      
+      <div style={{ width: 750 }}>
+        <div className="row m-5">
+          <div className="col-4 m-auto">
+            <Square col="12" backgroundColor="black">
+              <h3><b>MISSIONS</b></h3>
+            </Square>
+            <Square col="12" backgroundColor="white" onClick="/study">
+            <h3><b>EXAM</b></h3>
+            </Square>
+            <Square col="12" backgroundColor="white">
+            <h3><b>QUIZ</b></h3>
+            </Square>
+            <Square col="12" backgroundColor="white">
+            <h3><b>AXE4SKILS</b></h3>
+            </Square>
+          </div>
+          <div className="col-4">
+            <Square col="12" backgroundColor="black">
+            <h3><b>MATERIALS</b></h3>
+            </Square>
+            <Square col="12" backgroundColor="white">
+            <h3><b>WORDBANK</b></h3>
+            </Square>
+            <Square col="12" backgroundColor="white">
+            <h3><b>SPELLING</b></h3>
+            </Square>
+          </div>
+          <div className="col-4">
+            <Square col="12" backgroundColor="black">
+            <h3><b>SCORBOARD</b></h3>
+            </Square>
+            <Square col="12" backgroundColor="white">
+            <h3><b>REPORT</b></h3>
+            </Square>
+          </div>
+        </div>
+      </div>
+    </div>
       <div className="container">
         <div className="row pt-4">
           <h3>AXE BUG COMICS</h3>

@@ -1,6 +1,6 @@
 import React from "react"
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -12,8 +12,8 @@ import SchoolRoomList from "./admin/component/SchoolRoomList";
 import StudentList from "./admin/component/StudentList";
 import TeacherList from "./admin/component/TeacherList";
 import './App.css';
-import Student from "./app/student";
-import Studty from './app/studty';
+import Student from "./app/Student";
+import Studty from './app/Study';
 import Login from "./login/login";
 
 
@@ -25,7 +25,7 @@ import Login from "./login/login";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route exact path="/admin/student" element={<StudentList />} />
         <Route exact path="/admin/schoolroom" element={<SchoolRoomList />} />
@@ -40,7 +40,7 @@ function App() {
         
         <Route exact path="/login" element={<Login />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 

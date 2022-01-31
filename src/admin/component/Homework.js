@@ -53,7 +53,7 @@ export default function Homework() {
 
     const SchoolRoomSelect = () => {
         return (
-            <select class="form-select" aria-label="Default select example" value={selectedSchoolRoom} onChange={(e) => setSelectedSchoolRoom(e.target.value)}>
+            <select className="form-select" aria-label="Default select example" value={selectedSchoolRoom} onChange={(e) => setSelectedSchoolRoom(e.target.value)}>
                 <option selected>Open this select menu</option>
                 {
                     schoolRooms.map(room => (

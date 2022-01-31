@@ -5,7 +5,7 @@ import ContentBase from './components/ContentBase';
 const SectionList = require("../model/Section.json")
 const ContentList = require("../model/content.json")
 
-export default function Studty(props) {
+export default function Study(props) {
 
     const [sections, setSections] = useState([]);
     const [contents, setContents] = useState([]);
