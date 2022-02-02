@@ -21,6 +21,7 @@ export default function ContentBase(props) {
         }
     }, [props.selectedContent])
 
+
     const nextExersize = () => {
         if (level < 4)
             setLevel(level + 1);
@@ -35,56 +36,69 @@ export default function ContentBase(props) {
 
     return (
         <div className="card">
-            <div className="card-header">
-                {selectedContent.name}
-            </div>
-            <div className="card-body">
-                <div className="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-                    <div className="btn-group mr-2" role="group" aria-label="First group">
+            <div className='row m-2'>
+                <div className='col-4 boxDark'><h3><b>AXEBUG DIGITAL</b></h3></div>
+                <div className="col-8 btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div className="btn-group mr-2 w-100" role="group" aria-label="First group">
                         <button type="button" class={`btn btn-${level === 1 ? "dark" : "secondary"}`} onClick={() => setLevel(1)}>Listen & Speak</button>
                         <button type="button" class={`btn btn-${level === 2 ? "dark" : "secondary"}`} onClick={() => setLevel(2)}>Read & Speak</button>
                         <button type="button" class={`btn btn-${level === 3 ? "dark" : "secondary"}`} onClick={() => setLevel(3)}>Listen & Write</button>
                         <button type="button" class={`btn btn-${level === 4 ? "dark" : "secondary"}`} onClick={() => setLevel(4)}>Read & Write</button>
                     </div>
                 </div>
-                {
-                    level === 1 || level === 3 ?
-                        <audio controls className='w-100'>
-                            <source src={`assests/${selectedContent.soundUrl}`} type="audio/mpeg" />
-                        </audio> : null
-                }
-                {
-                    level === 1 ?
-                        <img src={`assests/${selectedContent.imageEmptyUrl}`} alt="" className="w-50" style={{ height: 400 }} /> : null
-                }
-                {
-                    level === 2 || level === 4 ?
-                        <img src={`assests/${selectedContent.imageFullUrl}`} alt="" className="w-50" style={{ height: 400 }} /> : null
-                }
-                {
-                    level === 4 ?
-                        <div className="alert alert-secondary mt-2" role="alert">
-                            {selectedContent.text}
-                        </div> : null
-                }
-                {
-                    level === 3 || level === 4 ?
-                        <div className="mb-3">
-                            <label htmlFor="txt" className="form-label">Write text...</label>
-                            <input type="email" className="form-control" id="txt" placeholder="Write text..." />
-                        </div> : null
-                }
+            </div>
+            <div className='row m-2'>
+                <div className='col-4 boxWhite mr-5'><h3><b>AXE4SKILS</b></h3></div>
+                <div className='col-8 boxDark ml-5'><h4>Listen to the audio. Then, repeat the sentences clearly.</h4></div>
+            </div>
+            <div className="card-body">
+
+                <div className="">
+                    {
+                        level === 1 || level === 3 ?
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                                <source src={`assets/${selectedContent.soundUrl}`} type="audio/mpeg" />
+                            </audio> : null
+                    }
+                    {
+                        level === 1 ?
+                            <img src={`assets/${selectedContent.imageEmptyUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} /> : null
+                    }
+                    {
+                        level === 2 || level === 4 ?
+                            <img src={`assets/${selectedContent.imageFullUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} /> : null
+                    }
+                    {
+                        level === 4 ?
+                            <div className="alert alert-secondary mt-2" role="alert">
+                                {selectedContent.text}
+                            </div> : null
+                    }
+                    {
+                        level === 3 || level === 4 ?
+                            <div className="mb-3">
+                                <label htmlFor="txt" className="form-label">Write text...</label>
+                                <input type="email" className="form-control" id="txt" placeholder="Write text..." />
+                            </div> : null
+                    }
+                </div>
+                <div>
+                    <div className='row  mt-3'>
+                        <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} id="file" value="78" max="100"> 78% </progress>
+                        <div className='col-auto' style={{ height: 30 }}><h2>% 78</h2></div>
+                    </div>
+                </div>
                 <div className="row row-cols-auto mt-2">
                     {
                         level === 1 || level === 2 ?
-                            <div className="col"><button className="btn btn-primary">Record Your Voice</button></div> : null
+                            <div className="col"><button className="btn btn-dark">Record Your Voice</button></div> : null
                     }
                     {
                         level > 1 ?
-                            <div className="col"><button className="btn btn-primary" onClick={prevtExersize}>Prev</button></div>
+                            <div className="col"><button className="btn btn-dark" onClick={prevtExersize}>Prev</button></div>
                             : null
                     }
-                    <div className="col"><button className="btn btn-primary" onClick={nextExersize}>{level === 4 ? "Next Content" : "Next"}</button></div>
+                    <div className="col"><button className="btn btn-dark" onClick={nextExersize}>{level === 4 ? "Next Panel" : "Next"}</button></div>
                 </div>
             </div>
         </div>

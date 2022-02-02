@@ -12,8 +12,12 @@ import SchoolRoomList from "./admin/component/SchoolRoomList";
 import StudentList from "./admin/component/StudentList";
 import TeacherList from "./admin/component/TeacherList";
 import './App.css';
+import Exam from "./app/Exam";
+import ExamList from "./app/ExamList";
+import QuizList from "./app/QuizList";
 import Student from "./app/Student";
 import Studty from './app/Study';
+import TaskList from "./app/TaskList";
 import Login from "./login/login";
 
 
@@ -37,7 +41,12 @@ function App() {
         <Route exact path="/admin" element={<Admin />} />
         <Route exact path="/study" element={<Studty />} />
         <Route exact path="/student" element={<Student />} />
-        
+        <Route exact path="/exam" element={<ExamList />} />
+        <Route exact path="/quiz" element={<QuizList />} />
+        <Route exact path="/task" element={<TaskList />} />
+        <Route exact path="/app/exam" element={<Exam />} />
+
+
         <Route exact path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>

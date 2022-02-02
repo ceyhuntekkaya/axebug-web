@@ -25,7 +25,7 @@ export default function Square(props) {
         }
     }, [])
 
-    return <React.Fragment>
+    return (
         <div className={`square m-2 col-${colSize} border border-4 ${border}`} style={{ backgroundColor: backgroundColor }} onClick={props.onClick ? props.onClick : null }>
             <img src="http://dummyimage.com/50x50/000/fff.gif&text=50x50" className="sq-setter-w" />
             {
@@ -34,10 +34,7 @@ export default function Square(props) {
                 :
                 <div to="/" className={`sq-content p-3 d-flex justify-content-center align-items-center ${textColor}`} style={{fontSize: 22}}> {props.children}</div>
             }
-           
-          
-        </div>
-    </React.Fragment>;
+        </div>)
 }
 
 

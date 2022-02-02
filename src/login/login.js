@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
+import { Link, useNavigate } from "react-router-dom";
+
+
 export default function Login(props) {
+    const navigate = useNavigate();
 
     useEffect(() => {
         document.body.style.backgroundColor = 'black'; // '#231F20';
@@ -8,7 +12,7 @@ export default function Login(props) {
     const loginEvent = (e) => {
         //e.preventDefault();
         console.log("buradalar")
-        props.history.push(`/study`);
+        navigate(`/student`);
     }
 
     return <React.Fragment>
@@ -37,5 +41,6 @@ export default function Login(props) {
                 </div>
             </div>
         </div>
+        
     </React.Fragment>
 }

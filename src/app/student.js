@@ -1,108 +1,113 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Square from './components/Square';
 
 export default function Student() {
+  useEffect(() => {
+    document.body.style.backgroundColor = 'white'; // '#231F20';
+  }, [])
 
-  const onClick =()=>{
+  const onClick = () => {
     alert("tiklandi")
   }
+
+  const unCompletedQuiz = () => { return (<React.Fragment><Square col="3" backgroundColor="white" onClick="/exam"><b>QUIZ 01</b></Square></React.Fragment>) }
+  const unCompletedExam = () => { return (<React.Fragment><Square col="3" backgroundColor="white" onClick="/exam"><b>EXAM 01</b></Square></React.Fragment>) }
+  const unCompletedTask = () => { return (<React.Fragment><Square col="3" backgroundColor="white" onClick="/exam"><b>TASK 01</b></Square></React.Fragment>) }
+  const myTasks = () => {
+    return (<div className="row mt-3">
+      <Square col="3" backgroundColor="white" onClick="/exam"><b>EXAM 01</b></Square>
+      <Square col="3" backgroundColor="white" onClick="/quiz"><b>QUIZ 01</b></Square>
+      <Square col="3" backgroundColor="white" onClick="/quiz"><b>TASK 01</b></Square>
+    </div>)
+  }
+  const myAvatar = () => {
+    return (
+      <div className='mt-4'><img style={{ width: "100%", height: 215, backgroundColor: "black" }} alt='Avatar' /></div>)
+  }
+  const contentMenu = () => {
+    return (<React.Fragment>
+      <div className="row mt-5">
+        <Square col="3" backgroundColor="black"><b>MISSIONS</b> </Square>
+        <Square col="3" backgroundColor="white" onClick="/exam"><b>EXAM</b></Square>
+        <Square col="3" backgroundColor="white" onClick="/quiz"><b>QUIZ</b></Square>
+        <Square col="3" backgroundColor="white" onClick="/study"><b>AXE4SKILS</b></Square>
+      </div>
+      <div className="row">
+        <Square col="3" backgroundColor="black"><b>MATERIALS</b></Square>
+        <Square col="3" backgroundColor="white" onClick="/wordbank"><b>WORDBANK</b></Square>
+        <Square col="3" backgroundColor="white" onClick="/spell"><b>SPELLING</b></Square>
+      </div>
+      <div className="row">
+        <Square col="3" backgroundColor="black"><b>SCORBOARD</b></Square>
+        <Square col="3" backgroundColor="white" onClick="/report"><b>REPORT</b></Square>
+      </div>
+
+    </React.Fragment>)
+  }
+  const scoreBoard = () => {
+    return (
+      <div className="border border-2 border-dark p-2 mt-2" style={{ backgroundColor: "black", color: "white" }}>
+        <div className='row'><h1>SCORE BOARD</h1></div>
+        <div className='row'><h2>EXAM SCORE 93 </h2></div>
+        <div className='row'><h2>QUIZ SCORE 84 </h2></div>
+        <div className='row'><h2>AXE 4 SKILLS SCORE 72</h2></div>
+
+
+        <div className='row'><h2>AXE 4 SKILLS SCORE 72</h2></div>
+        <div className='row'><h2>AXE 4 SKILLS SCORE 72</h2></div>
+        <div className='row'><h2>AXE 4 SKILLS SCORE 72</h2></div>
+        <div className='row'><h2>AXE 4 SKILLS SCORE 72</h2></div>
+
+
+        <div className='row'><h1>OVERALL SCORE 83</h1></div>
+      </div>
+    )
+  }
+
   return (
-    <React.Fragment>
-      <div className="container">
-        <div className="text-white bg-dark border border-2 border-dark p-2 mt-5 d-flex justify-content-center" style={{width:350}}><h2><b>AXEBUG DIGITAL</b></h2></div>
-        <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{width:350}}><h2><b>STUDENT SECTION</b></h2></div>
-      </div>
-      <div className="d-flex justify-content-center">
-      
-      <div style={{ width: 750 }}>
-        <div className="row m-5">
-          <div className="col-4 m-auto">
-            <Square col="12" backgroundColor="black">
-              <h3><b>MISSIONS</b></h3>
-            </Square>
-            <Square col="12" backgroundColor="white" onClick="/study">
-            <h3><b>EXAM</b></h3>
-            </Square>
-            <Square col="12" backgroundColor="white">
-            <h3><b>QUIZ</b></h3>
-            </Square>
-            <Square col="12" backgroundColor="white">
-            <h3><b>AXE4SKILS</b></h3>
-            </Square>
-          </div>
-          <div className="col-4">
-            <Square col="12" backgroundColor="black">
-            <h3><b>MATERIALS</b></h3>
-            </Square>
-            <Square col="12" backgroundColor="white">
-            <h3><b>WORDBANK</b></h3>
-            </Square>
-            <Square col="12" backgroundColor="white">
-            <h3><b>SPELLING</b></h3>
-            </Square>
-          </div>
-          <div className="col-4">
-            <Square col="12" backgroundColor="black">
-            <h3><b>SCORBOARD</b></h3>
-            </Square>
-            <Square col="12" backgroundColor="white">
-            <h3><b>REPORT</b></h3>
-            </Square>
-          </div>
-        </div>
-      </div>
-    </div>
-      <div className="container">
-        <div className="row pt-4">
-          <h3>AXE BUG COMICS</h3>
-        </div>
-        <div className="row mt-4">
-          <div className="card">
-            <div className="card-title">
-              <div className="pl-3 pt-3"><h5>My Homeworks</h5></div></div>
-            <div className="card-body">
-              <table className="table table-hover">
-                <tr>
-                  <th>Capture</th>
-                  <th>Epispde</th>
-                  <th>Section</th>
-                  <th>Start Date</th>
-                  <th>End Date</th>
-                  <th></th>
-                </tr>
-                <tr>
-                  <td>1. AXEBUG IN SPACE</td>
-                  <td>1. MAKE A BUG</td>
-                  <td>1. SECTION - AXEBUG COMING</td>
-                  <td>1.1.2022</td>
-                  <td>3.1.2022</td>
-                  <td><Link className="btn btn-warning m-2" to="/study">START STUDY</Link></td>
-                </tr>
-                <tr>
-                  <td>1. AXEBUG IN SPACE</td>
-                  <td>1. MAKE A BUG</td>
-                  <td>2. SECTION - AXEBUG SPEAKING</td>
-                  <td>1.1.2022</td>
-                  <td>3.1.2022</td>
-                  <td><Link className="btn btn-warning m-2" to="/study">START STUDY</Link></td>
-                </tr>
-                <tr>
-                  <td>1. AXEBUG IN SPACE</td>
-                  <td>1. MAKE A BUG</td>
-                  <td>3. SECTION - AXEBUG FLYING</td>
-                  <td>1.1.2022</td>
-                  <td>3.1.2022</td>
-                  <td><Link className="btn btn-warning m-2" to="/study">START STUDY</Link></td>
-                </tr>
-              </table>
-
+      <div className='container'>
+        <div className='row'>
+          <div className='col'>
+            <div className='row'>
+              <div className='col-7'>
+                <div className="text-white bg-dark border border-2 border-dark p-2 mt-4 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>AXEBUG DIGITAL</b></h2></div>
+                <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>STUDENT SECTION</b></h2></div>
+                <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>YOUR TASKS</b></h2></div>
+              </div>
+              <div className='col-5'>
+                {
+                  myAvatar()
+                }
+              </div>
             </div>
+            {
+              myTasks()
+            }
+            {
+              contentMenu()
+            }
           </div>
+          <div className='col'>
+            <div>
+              <div className="text-white bg-dark border border-2 border-dark p-2 mt-4 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>UNCOMPLATED TASK</b></h2></div>
+            </div><div className='row'>
+              {
+                unCompletedExam()
+              }
+              {
+                unCompletedQuiz()
+              }
+              {
+                unCompletedTask()
+              }
+            </div>
+            {
+              scoreBoard()
+            }
 
-
+          </div>
         </div>
       </div>
-    </React.Fragment>
   );
 }
