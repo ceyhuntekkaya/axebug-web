@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 const config = require('./config.json');
 
 export default function useStudent() {
@@ -108,5 +108,5 @@ export default function useStudent() {
             await loginStudent(params);
         }
     }
-    return [result, handleChange];;
+    return [result, handleChange];
 }

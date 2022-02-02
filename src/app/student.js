@@ -15,7 +15,7 @@ export default function Student() {
             <div className="card-body">
               <table className="table table-hover">
                 <tr>
-                  <th>Publication</th>
+                  <th>Capture</th>
                   <th>Epispde</th>
                   <th>Section</th>
                   <th>Start Date</th>
