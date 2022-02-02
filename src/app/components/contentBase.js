@@ -39,8 +39,8 @@ export default function ContentBase(props) {
                 {selectedContent.name}
             </div>
             <div className="card-body">
-                <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                <div className="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                    <div className="btn-group mr-2" role="group" aria-label="First group">
                         <button type="button" class={`btn btn-${level === 1 ? "dark" : "secondary"}`} onClick={() => setLevel(1)}>Listen & Speak</button>
                         <button type="button" class={`btn btn-${level === 2 ? "dark" : "secondary"}`} onClick={() => setLevel(2)}>Read & Speak</button>
                         <button type="button" class={`btn btn-${level === 3 ? "dark" : "secondary"}`} onClick={() => setLevel(3)}>Listen & Write</button>
