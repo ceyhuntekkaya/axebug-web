@@ -56,9 +56,9 @@ export default function useWordBank() {
             setResult(`An error has occurred: ${err}`);
         }
     }
-    const findByEpisode = async (episodeId) => {
+    const findByEpisode = async (params) => {
         try {
-            const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/episode/${episodeId}`);
+            const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/episode/${params.episodeId}/${params.category}`);
             setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);

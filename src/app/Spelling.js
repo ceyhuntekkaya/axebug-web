@@ -3,7 +3,7 @@ import Square from './components/Square';
 import useWordBank from '../api/useWordBank';
 import { useSearchParams } from 'react-router-dom';
 
-export default function WordBank(props) {
+export default function Spelling() {
     const [searchParams,] = useSearchParams();
     const [wordList, setWordList] = useWordBank(null);
     const [selectedWord, setSelectedWord] = useState({ number: 0, type: "" });
@@ -17,7 +17,7 @@ export default function WordBank(props) {
         var id = searchParams.get("id");
         setSelectedWordId(parseInt(id));
         var episodeId = searchParams.get("e");
-        setWordList("findByEpisode", {episodeId: episodeId, category: "wordBank"});
+        setWordList("findByEpisode", {episodeId: episodeId, category: "spelling"});
     }, [])
 
     useEffect(() => {
@@ -60,7 +60,7 @@ export default function WordBank(props) {
                                 <div className='col-8 boxWhite ml-5'><h4>Listening and Speaking</h4></div>
                             </div>
                             <div className='row m-2'>
-                                <div className='col-4 boxWhite mr-5'><h3><b>WORDBANK</b></h3></div>
+                                <div className='col-4 boxWhite mr-5'><h3><b>SPELLING BEE</b></h3></div>
                                 <div className='col-8 boxDark ml-5'><h4>Listen to the audio. Then, repeat the sentences clearly.</h4></div>
                             </div>
                             <div className="m-2">
@@ -79,13 +79,7 @@ export default function WordBank(props) {
                                         </audio>
                                         <div className='boxWhite p-2'>
                                             <div>
-                                                <span style={{ fontSize: 48, fontWeight: "bold" }}>{selectedWord.name}</span>
-                                                <span style={{ fontSize: 36, fontStyle: 'italic' }}>/ {selectedWord.type}</span></div>
-                                            <div style={{ fontSize: 48 }}>
-                                                {
-                                                    selectedWord.description
-                                                }
-                                            </div>
+                                                <span style={{ fontSize: 72, fontWeight: "bold" , letterSpacing:15}}>{selectedWord.name}</span></div>
                                         </div>
                                         <div className='col-12 boxDark ml-5'><h4>Record your voice</h4></div>
 
@@ -94,7 +88,7 @@ export default function WordBank(props) {
                                         <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} id="file" value="78" max="100"> 78% </progress>
                                         <div className='col-auto' style={{ height: 30 }}><h2>% 78</h2></div>
                                     </div>
-                                    <div className='col-12 boxDark mt-5'><h2>Total Word Score 87</h2></div>
+                                    <div className='col-12 boxDark mt-5'><h2>Total Spelling Score 87</h2></div>
 
                                 </div>
                             </div>

@@ -24,6 +24,9 @@ import EpisodeList from "./app/EpisodeList";
 import WordBankList from "./app/WordBankList";
 import WordBankEpisode from "./app/WordBankEpisode";
 import WordBank from "./app/WordBank";
+import Spelling from "./app/Spelling";
+import SpellingList from "./app/SpellingList";
+import SpellingEpisode from "./app/SpellingEpisode";
 
 
 // <Route path="*" element={<NotFound/>}/>
@@ -55,9 +58,12 @@ function App() {
         <Route exact path="/wordbank" element={<WordBankList />} />
         <Route exact path="/words" element={<WordBankEpisode />} />
 
+        <Route exact path="/speling" element={<SpellingList />} />
+        <Route exact path="/spellingword" element={<SpellingEpisode />} />
+
         <Route exact path="/app/exam" element={<Exam />} />
         <Route exact path="/app/wordbank" element={<WordBank />} />
-
+        <Route exact path="/app/spelling" element={<Spelling />} />
 
         <Route exact path="/" element={<Login />} />
       </Routes>

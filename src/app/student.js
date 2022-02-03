@@ -36,7 +36,7 @@ export default function Student() {
       <div className="row">
         <Square col="3" backgroundColor="black"><b>MATERIALS</b></Square>
         <Square col="3" backgroundColor="white" to="/wordbank"><b>WORDBANK</b></Square>
-        <Square col="3" backgroundColor="white" to="/spell"><b>SPELLING</b></Square>
+        <Square col="3" backgroundColor="white" to="/speling"><b>SPELLING</b></Square>
       </div>
       <div className="row">
         <Square col="3" backgroundColor="black"><b>SCORBOARD</b></Square>

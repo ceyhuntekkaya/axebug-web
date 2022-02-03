@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import useWordBank from '../api/useWordBank';
 import Square from './components/Square';
 import { useSearchParams } from 'react-router-dom';
@@ -6,12 +6,21 @@ import { useSearchParams } from 'react-router-dom';
 export default function WordBankEpisode() {
     const [wordList, setWordList] = useWordBank([]);
     const [searchParams,] = useSearchParams();
+    const [episode, setEpisode] = useState({});
+    const [chapter, setChapter] = useState({});
 
     useEffect(() => {
         var id = searchParams.get("id");
-        setWordList("findByEpisode", id);
+        setWordList("findByEpisode", { episodeId: id, category: "wordBank" });
 
     }, [])
+    useEffect(() => {
+        console.log(wordList)
+        if (wordList) {
+            setChapter(wordList[0].episode.chapter);
+            setEpisode(wordList[0].episode)
+        }
+    }, [wordList])
 
     return <React.Fragment>
         <div className="container">
@@ -24,8 +33,8 @@ export default function WordBankEpisode() {
                     wordList ?
                         wordList.length > 0 ?
                             <React.Fragment>
-                                <Square col="2" backgroundColor="black"><h4><b>{wordList[0].episode.chapter.name}</b></h4> </Square>
-                                <Square col="2" backgroundColor="black"><h4><b>{wordList[0].episode.name}</b></h4> </Square>
+                                <Square col="2" backgroundColor="black"><h4><b>{chapter.name}</b></h4> </Square>
+                                <Square col="2" backgroundColor="black"><h4><b>{episode.name}</b></h4> </Square>
                             </React.Fragment> : null : null
                 }
                 {
