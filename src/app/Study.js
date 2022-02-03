@@ -1,25 +1,27 @@
 import React, { useState, useEffect } from 'react'
 import ContentBase from './components/ContentBase';
-
-const ContentList = require("../model/content.json")
+import usePanel from '../api/usePanel';
+import { useSearchParams } from 'react-router-dom';
 
 export default function Study(props) {
-
-    const [contents, setContents] = useState([]);
+    const [panels, setPanels] = usePanel([]);
     const [startContent, setStartContent] = useState(false);
     const [selectedContent, setSelectedContent] = useState({});
     const [activeContentKey, setActiveContentKey] = useState(false);
+    const [searchParams,] = useSearchParams();
 
     useEffect(() => {
-        document.body.style.backgroundColor = 'white'; // '#231F20';
+        document.body.style.backgroundColor = 'white';
+        var id = searchParams.get("id");
+        setPanels("findByTask", id);
     }, [])
 
     useEffect(() => {
-        setContents(ContentList.contents)
-        setSelectedContent(contents[0]);
-        onSectionContent(contents[0], 0)
-
-    }, [])
+        if (panels) {
+            setSelectedContent(panels[0]);
+            onSectionContent(panels[0], 0)
+        }
+    }, [panels])
 
     const onSectionContent = (content, key) => {
         setSelectedContent(content);
@@ -28,33 +30,34 @@ export default function Study(props) {
     }
 
     const showNextContent = () => {
-        if (activeContentKey < contents.length - 1) {
-            onSectionContent(contents[activeContentKey + 1], activeContentKey + 1);
+        if (activeContentKey < panels.length - 1) {
+            onSectionContent(panels[activeContentKey + 1], activeContentKey + 1);
         }
     }
 
     return (
-            <div className="container">
-                <div className="row mt-4">
-                    <div className="col-2 mr-2">
-                        <div className="card" style={{ cursor: "pointer" }}>
-                            <div className="row">
-                                {
-                                    contents.map((content, key) => (
-                                        <img src={`assets/${content.imageFullUrl}`} key={key} className={`col-6`} onClick={() => onSectionContent(content, key)} style={{ cursor: "pointer" }} />
-                                    ))
-                                }
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col ml-2">
-                        <div className="mb-4">
+        <div className="container">
+            <div className="row mt-4">
+                <div className="col-2 mr-2">
+                    <div className="card" style={{ cursor: "pointer" }}>
+                        <div className="row">
                             {
-                                startContent ? <ContentBase selectedContent={selectedContent} onNextContent={showNextContent} /> : null
+                                panels ?
+                                    panels.map((panel, key) => (
+                                        <img src={`../assets/${panel.imageEmptyUrl}`} key={key} className={`col-6`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} />
+                                    )) : null
                             }
                         </div>
                     </div>
                 </div>
+                <div className="col ml-2">
+                    <div className="mb-4">
+                        {
+                            startContent ? <ContentBase selectedContent={selectedContent} onNextContent={showNextContent} /> : null
+                        }
+                    </div>
+                </div>
             </div>
+        </div>
     )
 }

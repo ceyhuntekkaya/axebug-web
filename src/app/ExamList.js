@@ -12,10 +12,10 @@ export default function ExamList() {
             <div className="d-flex justify-content-center mt-5">
 
                 <div className='row' style={{ width: 750 }}>
-                    <Square col="3" backgroundColor="white"><h1><b>EXAM</b><br /><b>01</b></h1> </Square>
-                    <Square col="3" backgroundColor="white"><h1><b>EXAM</b><br /><b>02</b></h1> </Square>
-                    <Square col="3" backgroundColor="white"><h1><b>EXAM</b><br /><b>03</b></h1> </Square>
-                    <Square col="3" backgroundColor="white"><h1><b>EXAM</b><br /><b>04</b></h1> </Square>
+                    <Square col="3" to="/app/exam" backgroundColor="white"><h1><b>EXAM</b><br /><b>01</b></h1> </Square>
+                    <Square col="3" to="/app/exam" backgroundColor="white"><h1><b>EXAM</b><br /><b>02</b></h1> </Square>
+                    <Square col="3" to="/app/exam" backgroundColor="white"><h1><b>EXAM</b><br /><b>03</b></h1> </Square>
+                    <Square col="3" to="/app/exam" backgroundColor="white"><h1><b>EXAM</b><br /><b>04</b></h1> </Square>
                 </div>
             </div>
         </React.Fragment>

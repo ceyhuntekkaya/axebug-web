@@ -1,8 +1,13 @@
-import React, { useEffect } from 'react';
-import { Link, useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom";
+import useStudent from "../api/useStudent"
 
 
 export default function Login(props) {
+    const [student, setStudent] = useStudent(null);
+    const [username, setUsername] = useState("student");
+    const [password, setPassword] = useState("student");
+
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -10,10 +15,16 @@ export default function Login(props) {
     }, [])
 
     const loginEvent = (e) => {
-        //e.preventDefault();
-        console.log("buradalar")
-        navigate(`/student`);
+        setStudent("login", { username: username, password: password });
     }
+
+    useEffect(() => {
+        if (student && student.name) {
+            navigate(`/student`);
+            localStorage.setItem("student",JSON.stringify(student))
+        }
+    }, [student])
+
 
     return <React.Fragment>
         <div className="container" style={{ marginTop: 200 }}>
@@ -26,11 +37,17 @@ export default function Login(props) {
                             <form>
                                 <div className="form-group mb-3 mt-4">
                                     <label htmlFor="username" className="col-form-label"><h4><b>Username</b></h4></label>
-                                    <input style={{ fontWeight: "bold", fontSize: 20 }} type="text" className="form-control border border-3 border-dark" id="username" placeholder="Enter your username" />
+                                    <input style={{ fontWeight: "bold", fontSize: 20 }}
+                                        type="text" className="form-control border border-3 border-dark"
+                                        id="username" placeholder="Enter your username"
+                                        value={username} onChange={(e) => setUsername(e.target.value)} />
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="password" className="col-form-label"><h4><b>Password</b></h4></label>
-                                    <input style={{ fontWeight: "bold", fontSize: 20 }} type="password" className="form-control border border-3 border-dark" id="password" placeholder="Enter your password" />
+                                    <input style={{ fontWeight: "bold", fontSize: 20 }}
+                                        type="password" className="form-control border border-3 border-dark"
+                                        id="password" placeholder="Enter your password"
+                                        value={password} onChange={(e) => setPassword(e.target.value)} />
                                 </div>
                             </form>
                         </div>
@@ -41,6 +58,6 @@ export default function Login(props) {
                 </div>
             </div>
         </div>
-        
+
     </React.Fragment>
 }

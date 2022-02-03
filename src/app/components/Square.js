@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Square(props) {
     const [colSize, ] = useState(props.col);
@@ -7,6 +7,7 @@ export default function Square(props) {
     const [border, setBorder] = useState("border-dark");
     const [textColor, setTextColor] = useState("text-dark");
     const [hasEvent, setHasEvent] = useState(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         if (props.backgroundColor){
@@ -20,13 +21,17 @@ export default function Square(props) {
                 setBorder("border-dark")
             }
         }
-        if (props.onClick){
-            setHasEvent(props.onClick);
+        if (props.to){
+            setHasEvent(props.to);
         }
     }, [])
 
+    const goLink = (link) => {
+        navigate(link);
+    }
+
     return (
-        <div className={`square m-2 col-${colSize} border border-4 ${border}`} style={{ backgroundColor: backgroundColor }} onClick={props.onClick ? props.onClick : null }>
+        <div className={`square m-2 col-${colSize} border border-4 ${border}`} style={{ backgroundColor: backgroundColor }} onClick={() => props.to ? goLink(props.to) : null }>
             <img src="http://dummyimage.com/50x50/000/fff.gif&text=50x50" className="sq-setter-w" />
             {
                 hasEvent ?

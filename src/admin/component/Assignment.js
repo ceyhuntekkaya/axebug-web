@@ -48,7 +48,6 @@ export default function Assignment() {
 
         const controlList = schoolRoomAssignments.filter(sra => sra.schoolRoomId === assignmentSection.schoolRoomId && sra.section.id === assignmentSection.section.id);
 
-        console.log(controlList)
         if(controlList.length===0){
             const assList = JSON.parse(JSON.stringify(schoolRoomAssignments));
             assignmentSection.id = schoolRoomAssignments.length+1;

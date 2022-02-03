@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import OpticalForm from './components/OpticalForm';
 import MultiSelection from './questionTypes/MultiSelection';
 
