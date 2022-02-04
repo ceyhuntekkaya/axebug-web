@@ -6,7 +6,6 @@ const goQuestion=()=>{
     props.setSelectedQestions(props.question)
 }
 const selectAnswer=(asnswer)=>{
-    console.log(asnswer)
 }
 
   return <div className='row'>

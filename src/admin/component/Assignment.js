@@ -4,11 +4,9 @@ import AssignmentSchoolRooms from './AssignmentSchoolRooms'
 import AssignmentSchoolRoomSection from './AssignmentSchoolRoomSection'
 import AssignmentSections from './AssignmentSections'
 import Menu from './Menu'
-
 const SectionList = require("../../model/Section.json")
 const ContentList = require("../../model/content.json")
 const EpisodeList = require("../../model/episode.json")
-
 
 export default function Assignment() {
     const [sections, setSections] = useState([]);
@@ -44,7 +42,6 @@ export default function Assignment() {
 
         const controlList = schoolRoomAssignments.filter(sra => sra.schoolRoomId === assignmentSection.schoolRoomId && sra.section.id === assignmentSection.section.id);
 
-        console.log(controlList)
         if(controlList.length===0){
             const assList = JSON.parse(JSON.stringify(schoolRoomAssignments));
             assignmentSection.id = schoolRoomAssignments.length+1;

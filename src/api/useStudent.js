@@ -1,12 +1,14 @@
 import { useState } from 'react';
+import axios from 'axios'
 const config = require('./config.json');
 
 export default function useStudent() {
     const [result, setResult] = useState(null)
+    const RequestMapping = "student";
 
     const createStudent = async (student) => {
         try {
-            const res = await axios.post(`${config.api.invokeUrl}/student/`, student);
+            const res = await axios.post(`${config.api.invokeUrl}/${RequestMapping}/`, student);
             setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);
@@ -14,7 +16,7 @@ export default function useStudent() {
     }
     const updateStudent = async (student) => {
         try {
-            const res = await axios.patch(`${config.api.invokeUrl}/student/`, student);
+            const res = await axios.patch(`${config.api.invokeUrl}/${RequestMapping}/`, student);
             setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);
@@ -22,7 +24,7 @@ export default function useStudent() {
     }
     const deleteStudent = async (studentId) => {
         try {
-            await axios.delete(`${config.api.invokeUrl}/student/${studentId}`);
+            await axios.delete(`${config.api.invokeUrl}/${RequestMapping}/${studentId}`);
             setResult("SUCCESS");
         } catch (err) {
             setResult(`An error has occurred: ${err}`);
@@ -30,15 +32,15 @@ export default function useStudent() {
     }
     const findAllStudent = async () => {
         try {
-            await axios.delete(`${config.api.invokeUrl}/student/`);
+            const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/`);
             setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);
         }
     }
-    const findByIdStudent = async (studentId) => {
+    const findById = async (studentId) => {
         try {
-            const res = await axios.get(`${config.api.invokeUrl}/student/${studentId}`);
+            const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/${studentId}`);
             setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);
@@ -46,7 +48,7 @@ export default function useStudent() {
     }
     const findByNameStudent = async (name) => {
         try {
-            const res = await axios.get(`${config.api.invokeUrl}/student/name/${name}`);
+            const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/name/${name}`);
             setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);
@@ -54,7 +56,7 @@ export default function useStudent() {
     }
     const findBySchoolRoomStudent = async (schoolRoomId) => {
         try {
-            const res = await axios.get(`${config.api.invokeUrl}/student/schoolroom/${schoolRoomId}`);
+            const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/schoolroom/${schoolRoomId}`);
             setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);
@@ -62,7 +64,7 @@ export default function useStudent() {
     }
     const findBySchoolStudent = async (schoolId) => {
         try {
-            const res = await axios.get(`${config.api.invokeUrl}/student/school/${schoolId}`);
+            const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/school/${schoolId}`);
             setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);
@@ -70,15 +72,15 @@ export default function useStudent() {
     }
     const findByGradeStudent = async (schoolId, grade) => {
         try {
-            const res = await axios.get(`${config.api.invokeUrl}/student/school/${schoolId}/grade/${grade}`);
+            const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/school/${schoolId}/grade/${grade}`);
             setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);
         }
     }
-    const loginStudent = async (loginInfo) => {
+    const login = async (loginInfo) => {
         try {
-            const res = await axios.patch(`${config.api.invokeUrl}/student/login/`, loginInfo);
+            const res = await axios.put(`${config.api.invokeUrl}/${RequestMapping}/login/`, loginInfo);
             setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);
@@ -94,18 +96,18 @@ export default function useStudent() {
             await deleteStudent(params);
         } else if (type === "findAllStudent") {
             await findAllStudent();
-        } else if (type === "findByIdStudent") {
-            await findByIdStudent(params);
         } else if (type === "findByNameStudent") {
             await findByNameStudent(params);
+        } else if (type === "findById") {
+            await findById(params);
         } else if (type === "findBySchoolRoomStudent") {
             await findBySchoolRoomStudent(params);
         } else if (type === "findBySchoolStudent") {
             await findBySchoolStudent(params);
         } else if (type === "findByGradeStudent") {
             await findByGradeStudent(params.schoolId, params.grade);
-        } else if (type === "loginStudent") {
-            await loginStudent(params);
+        } else if (type === "login") {
+            await login(params);
         }
     }
     return [result, handleChange];

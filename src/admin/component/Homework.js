@@ -26,8 +26,6 @@ export default function Homework() {
         })
         setEpisodes(axeBug);
 
-        console.log(axeBug);
-
         const schoolRoomListEffect = [];
         const studentListEffect = [];
         for (var i = 0; i < 10; i++) {

@@ -1,46 +1,46 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import Square from './components/Square';
 
 export default function Student() {
+  const[student, setStudent] = useState({name:"", surname: "", avatar:""});
+
   useEffect(() => {
     document.body.style.backgroundColor = 'white'; // '#231F20';
+    const studentData = JSON.parse(localStorage.getItem("student"));
+    setStudent(studentData);
   }, [])
 
-  const onClick = () => {
-    alert("tiklandi")
-  }
 
-  const unCompletedQuiz = () => { return (<React.Fragment><Square col="3" backgroundColor="white" onClick="/exam"><b>QUIZ 01</b></Square></React.Fragment>) }
-  const unCompletedExam = () => { return (<React.Fragment><Square col="3" backgroundColor="white" onClick="/exam"><b>EXAM 01</b></Square></React.Fragment>) }
-  const unCompletedTask = () => { return (<React.Fragment><Square col="3" backgroundColor="white" onClick="/exam"><b>TASK 01</b></Square></React.Fragment>) }
+  const unCompletedQuiz = () => { return (<React.Fragment><Square col="3" backgroundColor="white" to="/exam"><b>QUIZ 01</b></Square></React.Fragment>) }
+  const unCompletedExam = () => { return (<React.Fragment><Square col="3" backgroundColor="white" to="/app/exam"><b>EXAM 01</b></Square></React.Fragment>) }
+  const unCompletedTask = () => { return (<React.Fragment><Square col="3" backgroundColor="white" to="/exam"><b>TASK 01</b></Square></React.Fragment>) }
   const myTasks = () => {
     return (<div className="row mt-3">
-      <Square col="3" backgroundColor="white" onClick="/exam"><b>EXAM 01</b></Square>
-      <Square col="3" backgroundColor="white" onClick="/quiz"><b>QUIZ 01</b></Square>
-      <Square col="3" backgroundColor="white" onClick="/quiz"><b>TASK 01</b></Square>
+      <Square col="3" backgroundColor="white" to="/exam"><b>EXAM 01</b></Square>
+      <Square col="3" backgroundColor="white" to="/quiz"><b>QUIZ 01</b></Square>
+      <Square col="3" backgroundColor="white" to="/quiz"><b>TASK 01</b></Square>
     </div>)
   }
   const myAvatar = () => {
     return (
-      <div className='mt-4'><img style={{ width: "100%", height: 215, backgroundColor: "black" }} alt='Avatar' /></div>)
+      <div className='mt-4'><img src={`assets/${student.avatar}`} style={{ width: "100%", backgroundColor: "black" }} alt='Avatar' /></div>)
   }
   const contentMenu = () => {
     return (<React.Fragment>
       <div className="row mt-5">
         <Square col="3" backgroundColor="black"><b>MISSIONS</b> </Square>
-        <Square col="3" backgroundColor="white" onClick="/exam"><b>EXAM</b></Square>
-        <Square col="3" backgroundColor="white" onClick="/quiz"><b>QUIZ</b></Square>
-        <Square col="3" backgroundColor="white" onClick="/study"><b>AXE4SKILS</b></Square>
+        <Square col="3" backgroundColor="white" to="/exam"><b>EXAM</b></Square>
+        <Square col="3" backgroundColor="white" to="/quiz"><b>QUIZ</b></Square>
+        <Square col="3" backgroundColor="white" to="/chapter"><b>AXE4SKILS</b></Square>
       </div>
       <div className="row">
         <Square col="3" backgroundColor="black"><b>MATERIALS</b></Square>
-        <Square col="3" backgroundColor="white" onClick="/wordbank"><b>WORDBANK</b></Square>
-        <Square col="3" backgroundColor="white" onClick="/spell"><b>SPELLING</b></Square>
+        <Square col="3" backgroundColor="white" to="/wordbank"><b>WORDBANK</b></Square>
+        <Square col="3" backgroundColor="white" to="/speling"><b>SPELLING</b></Square>
       </div>
       <div className="row">
         <Square col="3" backgroundColor="black"><b>SCORBOARD</b></Square>
-        <Square col="3" backgroundColor="white" onClick="/report"><b>REPORT</b></Square>
+        <Square col="3" backgroundColor="white" to="/report"><b>REPORT</b></Square>
       </div>
 
     </React.Fragment>)
@@ -72,7 +72,7 @@ export default function Student() {
             <div className='row'>
               <div className='col-7'>
                 <div className="text-white bg-dark border border-2 border-dark p-2 mt-4 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>AXEBUG DIGITAL</b></h2></div>
-                <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>STUDENT SECTION</b></h2></div>
+                <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>{student.name}'s SECTION</b></h2></div>
                 <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>YOUR TASKS</b></h2></div>
               </div>
               <div className='col-5'>

@@ -57,16 +57,16 @@ export default function ContentBase(props) {
                     {
                         level === 1 || level === 3 ?
                             <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                <source src={`assets/${selectedContent.soundUrl}`} type="audio/mpeg" />
+                                <source src={`../assets/${selectedContent.soundUrl}`} type="audio/mpeg" />
                             </audio> : null
                     }
                     {
                         level === 1 ?
-                            <img src={`assets/${selectedContent.imageEmptyUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} /> : null
+                            <img src={`../assets/${selectedContent.imageEmptyUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} /> : null
                     }
                     {
                         level === 2 || level === 4 ?
-                            <img src={`assets/${selectedContent.imageFullUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} /> : null
+                            <img src={`../assets/${selectedContent.imageFullUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} /> : null
                     }
                     {
                         level === 4 ?
