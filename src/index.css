@@ -16,8 +16,6 @@ html, body {
   margin: 0 auto;
 }
 
-
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -28,7 +26,6 @@ code {
 
 .square {
   position: relative;
-  margin: 20px;
   display: inline-block; /* could be float */
   overflow: auto; /* UPDATE: if content may overflow square */
 }
@@ -69,4 +66,12 @@ code {
   border-radius: 25px;
   width: 15px;
   height: 25px;
+}
+.homeLinkBlack{
+  text-decoration: none;
+  color: white;
+}
+.homeLinkWhite{
+  text-decoration: none;
+  color: black;
 }

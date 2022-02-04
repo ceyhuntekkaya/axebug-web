@@ -32,8 +32,8 @@ export default function SpellingEpisode() {
 
                 </div>
                 <div className='col'>
-                    <Square col="2" backgroundColor="black"><h4><b>{chapter.name}</b></h4> </Square>
-                    <Square col="2" backgroundColor="black"><h4><b>{episode.name}</b></h4> </Square>
+                    <Square col="3" backgroundColor="black"><h4><b>{chapter.name}</b></h4> </Square>
+                    <Square col="3" backgroundColor="black"><h4><b>{episode.name}</b></h4> </Square>
                 </div>
 
             </div>
@@ -43,7 +43,7 @@ export default function SpellingEpisode() {
                 {
                     wordList ?
                         wordList.map((word, key) =>
-                            <Square key={key} to={`/app/spelling/?id=${word.id}&e=${word.episode.id}`} col="1" backgroundColor="white"><h4><b>{word.name}</b></h4> </Square>
+                            <Square key={key} to={`/app/spelling/?id=${word.id}&e=${word.episode.id}`} col="1" backgroundColor="white"><h5>{word.name}</h5> </Square>
                         ) : null
                 }
             </div>
