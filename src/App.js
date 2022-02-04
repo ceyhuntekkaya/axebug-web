@@ -47,7 +47,7 @@ function App() {
         <Route exact path="/app/exam" element={<Exam />} />
 
 
-        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );
