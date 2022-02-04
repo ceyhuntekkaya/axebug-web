@@ -2,11 +2,9 @@ import React, { useEffect, useState } from 'react';
 import OpticalForm from './components/OpticalForm';
 import MultiSelection from './questionTypes/MultiSelection';
 
-
 export default function Exam() {
     const [questions, setQestions] = useState([]);
     const [selectedQuestions, setSelectedQestions] = useState({ number: 0, type: "" });
-
 
     useEffect(() => {
         const questionList = [];
@@ -17,7 +15,6 @@ export default function Exam() {
         setQestions(questionList);
 
     }, [])
-
 
     const nextQuestions = () => {
 

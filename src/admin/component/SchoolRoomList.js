@@ -19,7 +19,6 @@ export default function SchoolRoomList() {
         };
       };
 
-      
     const addSchoolRoom = (room) => {
         const roomList = JSON.parse(JSON.stringify(schoolRoomList, getCircularReplacer()));
         room.id = schoolRoomList.length+1;

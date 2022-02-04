@@ -9,7 +9,6 @@ export default function SpellingEpisode() {
     const [episode, setEpisode] = useState({});
     const [chapter, setChapter] = useState({});
 
-
     useEffect(() => {
         var id = searchParams.get("id");
         setWordList("findByEpisode", { episodeId: id, category: "spelling" });

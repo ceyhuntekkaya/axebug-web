@@ -12,7 +12,6 @@ export default function Spelling() {
     const [episode, setEpisode] = useState({});
     const [chapter, setChapter] = useState({});
 
-
     useEffect(() => {
         var id = searchParams.get("id");
         setSelectedWordId(parseInt(id));

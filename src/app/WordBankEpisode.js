@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import useWordBank from '../api/useWordBank';
 import Square from './components/Square';
-import { Link, useSearchParams } from 'react-router-dom';
+import {useSearchParams} from 'react-router-dom';
+import Home from './components/Home';
 
 export default function WordBankEpisode() {
     const [wordList, setWordList] = useWordBank([]);
@@ -23,11 +24,7 @@ export default function WordBankEpisode() {
     }, [wordList])
 
     return <React.Fragment>
-        <div className="container">
-            <div className="text-white bg-dark border border-2 border-dark p-2 mt-5 d-flex justify-content-center" style={{ width: 350 }}><h2><b><Link className='homeLinkBlack' to="/student">AXEBUG DIGITAL</Link></b></h2></div>
-            <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: 350 }}><h2><b><Link
-             className='homeLinkWhite' to="/wordbank">WORD BANK</Link></b></h2></div>
-        </div>
+        <Home secondaryName="Word Bank" secondaryLink="/wordbank" />
         <div className="d-flex justify-content-center mt-5">
             <div className='row' style={{ width: 750 }}>
                 {

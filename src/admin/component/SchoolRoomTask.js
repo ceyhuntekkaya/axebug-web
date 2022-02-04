@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react'
 
-
 const schoolRoomtModel = {
     "id": 0,
     "name": "",
     "grade": "",
     "active": true,
 }
-
 
 export default function SchoolRoomTask(props) {
     const [name, setName] = useState(schoolRoomtModel.name);
