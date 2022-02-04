@@ -16,14 +16,10 @@ export default function Assignment() {
     const [episodes, setEpisodes] = useState([]);
     const [schoolRooms, setSchoolRooms] = useState([]);
     const [schoolRoomAssignments, setSchoolRoomAssignments] = useState([]);
-
-
     const [selectedSchoolRoom, setSelectedSchoolRoom] = useState({});
     const [selectedAssignSection, setSelectedAssignSection] = useState({});
     const [selectedEpisode, setSelectedEpisode] = useState({});
     const [selectesSection, setSelectedSection] = useState({});
-
-
 
     useEffect(() => {
         setSections(SectionList.sections)
@@ -65,8 +61,6 @@ export default function Assignment() {
         })
         setSchoolRoomAssignments(assList);
     }
-
-
 
     return (
         <div className="container">

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Menu from './Menu'
 import { loremIpsum } from "lorem-ipsum";
-
 const SectionList = require("../../model/Section.json")
 const EpisodeList = require("../../model/episode.json")
 

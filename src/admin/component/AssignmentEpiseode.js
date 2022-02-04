@@ -2,7 +2,6 @@ import React from 'react'
 
 export default function AssignmentEpiseode(props) {
     return (
-
         <ul className="list-group">
         {
             props.episodes.map(episode => (
