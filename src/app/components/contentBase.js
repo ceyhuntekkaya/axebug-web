@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import SpechText from './SpechText';
 
 const contentModel = {
     "id": 1,
@@ -33,7 +34,7 @@ export default function ContentBase(props) {
         if (level > 1)
             setLevel(level - 1);
     }
-
+console.log(selectedContent.soundUrl)
     return (
         <div className="card">
             <div className='row m-2'>
@@ -62,11 +63,11 @@ export default function ContentBase(props) {
                     }
                     {
                         level === 1 ?
-                            <img src={`../assets/${selectedContent.imageEmptyUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} /> : null
+                            <img src={`../assets/${selectedContent.imageFullUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} /> : null
                     }
                     {
                         level === 2 || level === 4 ?
-                            <img src={`../assets/${selectedContent.imageFullUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} /> : null
+                            <img src={`../assets/${selectedContent.imageEmptyUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} /> : null
                     }
                     {
                         level === 4 ?
@@ -91,7 +92,7 @@ export default function ContentBase(props) {
                 <div className="row row-cols-auto mt-2">
                     {
                         level === 1 || level === 2 ?
-                            <div className="col"><button className="btn btn-dark">Record Your Voice</button></div> : null
+                            <SpechText/> : null
                     }
                     {
                         level > 1 ?

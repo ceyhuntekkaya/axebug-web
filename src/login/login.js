@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import useStudent from "../api/useStudent"
-
+import useLogin from "../api/useLogin"
 
 export default function Login(props) {
-    const [student, setStudent] = useStudent(null);
+    const [login, setLogin] = useLogin(null);
     const [username, setUsername] = useState("student");
     const [password, setPassword] = useState("student");
-
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -15,15 +13,37 @@ export default function Login(props) {
     }, [])
 
     const loginEvent = (e) => {
-        setStudent("login", { username: username, password: password });
+        setLogin({ username: username, password: password });
     }
 
     useEffect(() => {
-        if (student && student.name) {
-            navigate(`/student`);
-            localStorage.setItem("student",JSON.stringify(student))
+        if (login != null) {
+            if (login.error === null) {
+                if (login.userType === "STUDENT") {
+                    localStorage.setItem("student", JSON.stringify(login.student))
+                    navigate(`/student`);
+                }
+                else if (login.userType === "TEACHER") {
+                    navigate(`/teacher`);
+                    localStorage.setItem("teacher", JSON.stringify(login.teacher))
+                }
+                else if (login.userType === "SCHOOL") {
+                    navigate(`/admin`);
+                    localStorage.setItem("school", JSON.stringify(login.school))
+                }
+                else if (login.userType === "SYSTEM_ADMIN") {
+                    navigate(`/system`);
+                    localStorage.setItem("system_admin", JSON.stringify(login.systemAdmin))
+                }
+                else {
+                    console.log("USER NOT FOUND")
+                }
+            }
+            else {
+                console.log("ERROR",login)
+            }
         }
-    }, [student])
+    }, [login])
 
 
     return <React.Fragment>

@@ -22,6 +22,7 @@ export default function WordBankEpisode() {
             setEpisode(wordList[0].episode)
         }
     }, [wordList])
+    console.log("ceycey: ",wordList)
 
     return <React.Fragment>
         <Home secondaryName="Word Bank" secondaryLink="/wordbank" />

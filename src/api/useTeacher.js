@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import axios from 'axios'
 const config = require('./config.json');
 
 export default function useTeacher() {
@@ -22,15 +23,16 @@ export default function useTeacher() {
     }
     const deleteteacher = async (teacherId) => {
         try {
-            await axios.delete(`${config.api.invokeUrl}/teacher/${teacherId}`);
-            setResult("SUCCESS");
+            console.log(`${config.api.invokeUrl}/teacher/${teacherId}`)
+            const res = await axios.delete(`${config.api.invokeUrl}/teacher/${teacherId}`);
+            setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);
         }
     }
     const findAllteacher = async () => {
         try {
-            await axios.delete(`${config.api.invokeUrl}/teacher/`);
+            const res = await axios.delete(`${config.api.invokeUrl}/teacher/`);
             setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);
@@ -84,10 +86,6 @@ export default function useTeacher() {
             setResult(`An error has occurred: ${err}`);
         }
     }
-
-
-
-
 
     const handleChange = async (type, params) => {
         if (type === "createteacher") {
