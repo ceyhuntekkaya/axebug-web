@@ -1,15 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import Square from './components/Square';
+import useSchoolRoomWork from '../api/useSchoolRoomWork'
 
 export default function Student() {
   const[student, setStudent] = useState({name:"", surname: "", avatar:""});
+  const [schoolRoomWorkList, setSchoolRoomWorkList] = useSchoolRoomWork(null);
 
   useEffect(() => {
     document.body.style.backgroundColor = 'white'; // '#231F20';
     const studentData = JSON.parse(localStorage.getItem("student"));
     setStudent(studentData);
+    setSchoolRoomWorkList("getSchoolRoomWorks", studentData.schoolRoom.id)
   }, [])
 
+
+  useEffect(() => {
+    if(schoolRoomWorkList){
+      localStorage.setItem("schoolRoomWorkList", JSON.stringify(schoolRoomWorkList))
+    }
+  }, [schoolRoomWorkList])
 
   const unCompletedQuiz = () => { return (<React.Fragment><Square col="3" backgroundColor="white" to="/exam"><b>QUIZ 01</b></Square></React.Fragment>) }
   const unCompletedExam = () => { return (<React.Fragment><Square col="3" backgroundColor="white" to="/app/exam"><b>EXAM 01</b></Square></React.Fragment>) }

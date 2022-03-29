@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import useEpisode from '../api/useEpisode';
 import Square from './components/Square';
 import { useSearchParams } from 'react-router-dom';
@@ -6,10 +6,22 @@ import { useSearchParams } from 'react-router-dom';
 export default function EpisodeList() {
     const [episodes, setEpisodes] = useEpisode([]);
     const [searchParams,] = useSearchParams();
+    const [episodeWorks, setEpisodeWorks] = useState(null);
+
     useEffect(() => {
         var id = searchParams.get("id");
+        const schoolRoomWorkList = JSON.parse(localStorage.getItem("schoolRoomWorkList"));
+        const episodeWork = [];
+        schoolRoomWorkList.forEach(element => {
+            if (element.episodeTask) {
+                const foundedChapter = element.episodeTask.episode;
+                const hasChapter = episodeWork.find(cw => cw.id === foundedChapter.id);
+                if (!hasChapter)
+                    episodeWork.push(element.episodeTask.episode)
+            }
+        });
+        setEpisodeWorks(episodeWork)
         setEpisodes("findByChapter", id);
-
     }, [])
 
     return (
@@ -24,7 +36,10 @@ export default function EpisodeList() {
                     {
                         episodes ?
                             episodes.map((episode, key) =>
-                                <Square key={key} col="3" backgroundColor="white" to={`/task/?id=${episode.id}`}><h1><b>{episode.name}</b></h1> </Square>
+                                episodeWorks.find(cw => cw.id === episode.id) ?
+                                    <Square key={key} col="3" backgroundColor="black" to={`/task/?id=${episode.id}`}><h1><b>{episode.name}</b></h1> </Square>
+                                    :
+                                    <Square key={key} col="3" backgroundColor="white"><h1><b>{episode.name}</b></h1> </Square>
                             )
                             : null
                     }

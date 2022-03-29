@@ -1,11 +1,23 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import useChapter from '../api/useChapter';
 import Square from './components/Square';
 
 export default function ChapterList() {
   const [chapters, setChapters] = useChapter([]);
+  const [chapterWorks, setChapterWorks] = useState(null);
 
   useEffect(() => {
+    const schoolRoomWorkList = JSON.parse(localStorage.getItem("schoolRoomWorkList"));
+    const chapterWork = [];
+    schoolRoomWorkList.forEach(element => {
+      if (element.episodeTask) {
+        const foundedChapter = element.episodeTask.episode.chapter;
+        const hasChapter = chapterWork.find(cw => cw.id === foundedChapter.id);
+        if (!hasChapter)
+          chapterWork.push(element.episodeTask.episode.chapter)
+      }
+    });
+    setChapterWorks(chapterWork)
     setChapters("findAllChapters", null);
   }, [])
 
@@ -21,7 +33,15 @@ export default function ChapterList() {
           {
             chapters ?
               chapters.map((chapter, key) =>
-                <Square key={key} col="3" backgroundColor="white" to={`/episode/?id=${chapter.id}`}><h1><b>{chapter.name}</b></h1> </Square>
+                chapterWorks.find(cw => cw.id === chapter.id) ?
+                  <Square key={key} col="3"
+                    backgroundColor="black"
+                    to={`/episode/?id=${chapter.id}`}
+                  ><h1><b>{chapter.name}</b></h1> </Square>
+                  :
+                  <Square key={key} col="3"
+                    backgroundColor="white"
+                  ><h1><b>{chapter.name}</b></h1> </Square>
               )
               : null
           }

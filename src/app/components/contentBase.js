@@ -41,10 +41,10 @@ console.log(selectedContent.soundUrl)
                 <div className='col-4 boxDark'><h3><b>AXEBUG DIGITAL</b></h3></div>
                 <div className="col-8 btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                     <div className="btn-group mr-2 w-100" role="group" aria-label="First group">
-                        <button type="button" class={`btn btn-${level === 1 ? "dark" : "secondary"}`} onClick={() => setLevel(1)}>Listen & Speak</button>
-                        <button type="button" class={`btn btn-${level === 2 ? "dark" : "secondary"}`} onClick={() => setLevel(2)}>Read & Speak</button>
-                        <button type="button" class={`btn btn-${level === 3 ? "dark" : "secondary"}`} onClick={() => setLevel(3)}>Listen & Write</button>
-                        <button type="button" class={`btn btn-${level === 4 ? "dark" : "secondary"}`} onClick={() => setLevel(4)}>Read & Write</button>
+                        <button type="button" className={`btn btn-${level === 1 ? "dark" : "secondary"}`} onClick={() => setLevel(1)}>Listen & Speak</button>
+                        <button type="button" className={`btn btn-${level === 2 ? "dark" : "secondary"}`} onClick={() => setLevel(2)}>Read & Speak</button>
+                        <button type="button" className={`btn btn-${level === 3 ? "dark" : "secondary"}`} onClick={() => setLevel(3)}>Listen & Write</button>
+                        <button type="button" className={`btn btn-${level === 4 ? "dark" : "secondary"}`} onClick={() => setLevel(4)}>Read & Write</button>
                     </div>
                 </div>
             </div>

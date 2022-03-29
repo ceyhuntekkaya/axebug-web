@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Menu from './Menu'
 import useSchoolRoom from '../../api/useSchoolRoom'
 import useChapter from '../../api/useChapter'
+import useSchoolRoomWork from '../../api/useSchoolRoomWork'
 
 export default function Assignment() {
     const [episodeList, setEpisode] = useState([]);
@@ -9,21 +10,29 @@ export default function Assignment() {
     const [episodeTaskList, setEpisodeTask] = useState([]);
     const [examList, setExamList] = useState([]);
     const [quizList, setQuizList] = useState([]);
-    const [selectedSchoolRoom, setSelectedSchoolRoom] = useState({id:0});
+    const [selectedSchoolRoom, setSelectedSchoolRoom] = useState({ id: 0 });
     const [selectedEpisode, setSelectedEpisode] = useState({});
     const [selectedChapter, setSelectedChapter] = useState({});
-    const [selectedTask, setSelectedTask] = useState({});
-    const [selectedExam, setSelectedExam] = useState({});
-    const [selectedQuiz, setSelectedQuiz] = useState({});
     const [schoolRoomList, setSchoolRoomList] = useSchoolRoom([]);
+    const [schoolRoomWorkList, setSchoolRoomWorkList] = useSchoolRoomWork([]);
     const [allChapterDetail, setAllChapterDetail] = useChapter(null);
     const [selectedType, setSelectedType] = useState([]);
+    const [happyWorks, setHappyWorks] = useState([]);
 
     useEffect(() => {
         const res = JSON.parse(localStorage.getItem("school"));
         setSchoolRoomList("findAllSchoolRoom", res.id);
         setAllChapterDetail("findAllDetail", null);
+
     }, [])
+
+    useEffect(() => {
+        if (selectedSchoolRoom)
+            if (selectedSchoolRoom.id != 0)
+                setSchoolRoomWorkList("getSchoolRoomWorks", selectedSchoolRoom.id)
+    }, [selectedSchoolRoom])
+
+
     useEffect(() => {
         if (allChapterDetail) {
             setChapter(allChapterDetail.chapterList)
@@ -37,25 +46,74 @@ export default function Assignment() {
         setEpisode(allChapterDetail.episodeList.filter((episode) => episode.chapter.id === chapter.id));
     }
     const getTasks = (epi) => {
+        hasHappyWorks(epi.id)
         setSelectedEpisode(epi)
         setEpisodeTask(allChapterDetail.taskList.filter((task) => task.episode.id === epi.id));
     }
 
-    const typeHandler = (id) => {
-        setSelectedType(id)
-        if (id === 1) {
-
+    const assignmentWork = (work) => {
+        const param = {
+            schoolRoomId: selectedSchoolRoom.id,
+            studyStartDate: 0,
+            studyFinishDate: 0
         }
-        else if (id === 2) {
-
+        if (selectedType === 1) {
+            param.workType = "TASK";
+            param.episodeTaskId = work.id;
         }
-        else if (id === 3) {
-
+        else if (selectedType === 2 || selectedType === 3) {
+            param.workType = "EXAM";
+            param.examId = work.id;
         }
+        setSchoolRoomWorkList("createSchoolRoomWork", param)
     }
 
-    const assignmentSection =(assObject)=>{
+    const hasTask = (id) => {
+        if (schoolRoomWorkList)
+            if (schoolRoomWorkList.length > 0) {
+                const findTask = schoolRoomWorkList.find(task => task.episodeTask && task.episodeTask.id === id);
+                if (findTask) return true;
+            }
+        return false;
+    }
+    const hasExam = (id) => {
+        if (schoolRoomWorkList)
+            if (schoolRoomWorkList.length > 0) {
+                const findTask = schoolRoomWorkList.find(task => task.exam && task.exam.id === id);
+                if (findTask) return true;
+            }
+        return false;
+    }
+    const hasHappyWorks = (id) => {
+        if (schoolRoomWorkList)
+            if (schoolRoomWorkList.length > 0) {
+                if (selectedType === 1) {//Task
+                    const filterWorks = schoolRoomWorkList.filter(task => task.episodeTask && task.episodeTask.episode.id === id);
+                    setHappyWorks(filterWorks);
+                }
+                else if (selectedType === 2) {//Quiz
 
+                }
+                else if (selectedType === 3) {// Exam
+
+                }
+
+            }
+    }
+    useEffect(() => {
+        if (selectedType === 1) {//Task
+            hasHappyWorks(selectedEpisode.id)
+        }
+        else if (selectedType === 2) {//Quiz
+
+        }
+        else if (selectedType === 3) {// Exam
+
+        }
+    }, [schoolRoomWorkList])
+
+    const assignmentWorkDelete = (work) => {
+        setSchoolRoomWorkList("deleteSchoolRoomWork", work.id)
     }
 
     return (
@@ -93,15 +151,15 @@ export default function Assignment() {
                                     <div className="card-body">
                                         <li key="key1"
                                             className={`list-group-item ${selectedType === 1 ? "active" : ""}`}
-                                            onClick={() => typeHandler(1)}
+                                            onClick={() => setSelectedType(1)}
                                         >Task</li>
                                         <li key="key2"
                                             className={`list-group-item ${selectedType === 2 ? "active" : ""}`}
-                                            onClick={() => typeHandler(2)}
+                                            onClick={() => setSelectedType(2)}
                                         >Quiz</li>
                                         <li key="key3"
                                             className={`list-group-item ${selectedType === 3 ? "active" : ""}`}
-                                            onClick={() => typeHandler(3)}
+                                            onClick={() => setSelectedType(3)}
                                         >Exam</li>
                                     </div>
                                 </div>
@@ -156,9 +214,12 @@ export default function Assignment() {
                                                             episodeTaskList.map((task, key) => (
                                                                 <li key={key}
                                                                     className={`list-group-item`}
-                                                                    onClick={() => setSelectedTask(task)}
-                                                                >{task.name}
-                                                                <button className="btn btn-primary" onClick={() => assignmentSection(task)}>ADD</button> </li>
+                                                                >{task.name}{
+                                                                        hasTask(task.id) === false ?
+                                                                            <button className="btn btn-primary" onClick={() => assignmentWork(task)}>ADD</button>
+                                                                            : null
+                                                                    }
+                                                                </li>
                                                             )) : null
                                                     }
                                                 </div>
@@ -180,8 +241,13 @@ export default function Assignment() {
                                                         examList.map((exam, key) => (
                                                             <li key={key}
                                                                 className={`list-group-item`}
-                                                                onClick={() => setSelectedExam(exam)}
-                                                            >{exam.name}<button className="btn btn-primary" onClick={() => assignmentSection(exam)}>ADD</button></li>
+                                                            >{exam.name}
+                                                                {
+                                                                    hasExam(exam.id) === false ?
+                                                                        <button className="btn btn-primary" onClick={() => assignmentWork(exam)}>ADD</button>
+                                                                        : null
+                                                                }
+                                                            </li>
                                                         )) : null
                                                 }
                                             </div>
@@ -202,8 +268,12 @@ export default function Assignment() {
                                                         quizList.map((quiz, key) => (
                                                             <li key={key}
                                                                 className={`list-group-item`}
-                                                                onClick={() => setSelectedQuiz(quiz)}
-                                                            >{quiz.name}<button className="btn btn-primary" onClick={() => assignmentSection(quiz)}>ADD</button></li>
+                                                            >{quiz.name}  {
+                                                                    hasExam(quiz.id) === false ?
+                                                                        <button className="btn btn-primary" onClick={() => assignmentWork(quiz)}>ADD</button>
+                                                                        : null
+                                                                }
+                                                            </li>
                                                         )) : null
                                                 }
                                             </div>
@@ -217,7 +287,19 @@ export default function Assignment() {
                                         Happy Works
                                     </div>
                                     <div className="card-body">
-                                        atanmışla mı
+                                        {
+                                            happyWorks ?
+                                                happyWorks.map((hp, key) => (
+                                                    <li key={key}
+                                                        className={`list-group-item`}
+                                                    >{hp.episodeTask.name}  {
+                                                            hasExam(hp.id) === false ?
+                                                                <button className="btn btn-primary" onClick={() => assignmentWorkDelete(hp)}>REMOVE</button>
+                                                                : null
+                                                        }
+                                                    </li>
+                                                )) : null
+                                        }
                                     </div>
                                 </div>
                             </div>
