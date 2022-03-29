@@ -32,7 +32,7 @@ export default function useTeacher() {
     }
     const findAllteacher = async () => {
         try {
-            const res = await axios.delete(`${config.api.invokeUrl}/teacher/`);
+            const res = await axios.get(`${config.api.invokeUrl}/teacher/`);
             setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);

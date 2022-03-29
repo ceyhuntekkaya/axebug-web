@@ -24,8 +24,8 @@ export default function useStudent() {
     }
     const deleteStudent = async (studentId) => {
         try {
-            await axios.delete(`${config.api.invokeUrl}/${RequestMapping}/${studentId}`);
-            setResult("SUCCESS");
+            const res = await axios.delete(`${config.api.invokeUrl}/${RequestMapping}/${studentId}`);
+            setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);
         }

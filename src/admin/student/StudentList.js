@@ -1,60 +1,44 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Menu from '../component/Menu'
 import StudentTask from './StudentTask'
+import useSchoolRoom from '../../api/useSchoolRoom'
+import useStudent from "../../api/useStudent"
 
 export default function StudentList() {
-    //<div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-    const [studentList, setStudentList] = useState([]);
+    const [studentList, setStudentList] = useStudent([]);
+    const [schoolRoomList, setSchoolRoomList] = useSchoolRoom([]);
     const [selectedStudent, setSelectedStudent] = useState({});
+    const [school, setSchool] = useState(null);
+    const [selectedSchoolRoomId, setSelectedSchoolRoomId] = useState(0);
 
-    const getCircularReplacer = () => {
-        const seen = new WeakSet();
-        return (key, value) => {
-          if (typeof value === "object" && value !== null) {
-            if (seen.has(value)) {
-              return;
-            }
-            seen.add(value);
-          }
-          return value;
-        };
-      };
+    useEffect(() => {
+        const res = JSON.parse(localStorage.getItem("school"));
+        setSchool(res);
+        setSchoolRoomList("findAllSchoolRoom", res.id);
+    }, [])
 
-      
     const addStudent = (student) => {
-        const stdList = JSON.parse(JSON.stringify(studentList, getCircularReplacer()));
-        student.id = studentList.length+1;
-        stdList.push(student);
-        setStudentList(stdList);
+        student.school = { id: school.id };
+        setSelectedSchoolRoomId(student.schoolRoom.id)
+        setStudentList("createStudent", student);
     }
 
     const updateStudent = (student) => {
-        let stdList = [];
-        studentList.forEach((data, i) => {
-            if(data.id=== student.id){
-                stdList.push(student)
-            }
-            else{
-                stdList.push(data)
-            }
-        })
-        setStudentList(stdList);
+
     }
 
     const deleteStudent = (student) => {
-        let stdList = [];
-        studentList.forEach((data, i) => {
-            if(data.id !== student.id){
-                stdList.push(data)
-            }
-        })
-        setStudentList(stdList);
+        setStudentList("deleteStudent", student.id);
     }
 
     const selectStudentEvent = (student) => {
         setSelectedStudent(student)
     }
 
+    const handleSchooroomChange = (schoolRoomId) => {
+        setSelectedSchoolRoomId(schoolRoomId)
+        setStudentList("findBySchoolRoomStudent", schoolRoomId);
+    }
 
     return (
         <div className="container">
@@ -66,7 +50,7 @@ export default function StudentList() {
                             Student
                         </div>
                         <div className="card-body">
-                            <StudentTask addStudent={addStudent} selectedStudent={selectedStudent} setSelectedStudent={setSelectedStudent} updateStudent={updateStudent} deleteStudent={deleteStudent}/>
+                            <StudentTask schoolRoomList={schoolRoomList} addStudent={addStudent} selectedStudent={selectedStudent} setSelectedStudent={setSelectedStudent} updateStudent={updateStudent} deleteStudent={deleteStudent} />
                         </div>
                     </div>
                 </div>
@@ -76,31 +60,39 @@ export default function StudentList() {
                             Student List
                         </div>
                         <div className="card-body">
+                            <div>
+                                <select className="form-select" id="schoolRoomGrade" value={selectedSchoolRoomId}
+                                    onChange={(e) => handleSchooroomChange(e.target.value)}>
+                                    <option value="0">Select School Room</option>
+                                    {
+                                        schoolRoomList ?
+                                            schoolRoomList.map((schoolroom, key) => (
+                                                <option key={key} value={`${schoolroom.id}`}>{schoolroom.name}</option>
+                                            )) : null
+                                    }
+                                </select>
+                            </div>
 
                             <table className="table table-striped table-hover">
                                 <thead>
                                     <tr>
-                                    <th scope="col"></th>
+                                        <th scope="col"></th>
                                         <th scope="col">Name</th>
                                         <th scope="col">Surname</th>
                                         <th scope="col">Username</th>
-                                        <th scope="col">Active</th>
-                                        <th scope="col">Class Name</th>
                                     </tr>
                                 </thead>
                                 <tbody>
 
-                                    {
+                                    {studentList ?
                                         studentList.map((std, key) => (
-                                            <tr key={key} className={`${selectedStudent.id=== std.id ? "btn-warning": ""}`}>
-                                                <th><button className="btn btn-success" onClick={()=>selectStudentEvent(std)}>Select</button></th>
+                                            <tr key={key} className={`${selectedStudent.id === std.id ? "btn-warning" : ""}`}>
+                                                <th><button className="btn btn-success" onClick={() => selectStudentEvent(std)}>Select</button></th>
                                                 <td>{std.name}</td>
                                                 <td>{std.surname}</td>
                                                 <td>{std.username}</td>
-                                                <td>{std.active}</td>
-                                                <td>{std.id}</td>
                                             </tr>
-                                        ))
+                                        )) : null
                                     }
                                 </tbody>
                             </table>

@@ -3,36 +3,16 @@ import Menu from '../component/Menu'
 import TeacherTask from './TeacherTask'
 import useTeacher from "../../api/useTeacher"
 
-export default function TeacherList(props) {
+export default function TeacherList() {
   const [teacherList, setTeacherList] = useTeacher([]);
   const [selectedTeacher, setSelectedTeacher] = useState({});
   const [school, setSchool] = useState(null);
 
-  const getCircularReplacer = () => {
-    const seen = new WeakSet();
-    return (key, value) => {
-      if (typeof value === "object" && value !== null) {
-        if (seen.has(value)) {
-          return;
-        }
-        seen.add(value);
-      }
-      return value;
-    };
-  };
-
   useEffect(() => {
     const res = JSON.parse(localStorage.getItem("school"));
     setSchool(res);
     setTeacherList("findBySchoolteacher", res.id);
   }, [])
-
-  useEffect(() => {
-    const res = JSON.parse(localStorage.getItem("school"));
-    setSchool(res);
-    setTeacherList("findBySchoolteacher", res.id);
-  }, [])
-
 
 
   const addTeacher = (teacher) => {
@@ -50,7 +30,7 @@ export default function TeacherList(props) {
   }
 
   const selectTeacherEvent = (teacher) => {
-setSelectedTeacher(teacher);
+    setSelectedTeacher(teacher);
   }
 
 

@@ -62,6 +62,16 @@ export default function useChapter() {
             setResult(`An error has occurred: ${err}`);
         }
     }
+
+    const findAllDetail = async () => {
+        try {
+            const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/all/detail/list/`);
+            setResult(res.data);
+        } catch (err) {
+            setResult(`An error has occurred: ${err}`);
+        }
+    }
+
     const handleChange = async (type, params) => {
         if (type === "createChapter") {
             await createChapter(params);
@@ -75,6 +85,8 @@ export default function useChapter() {
             await findByIdChapter(params);
         } else if (type === "findByNameChapter") {
             await findByNameChapter(params);
+        } else if (type === "findAllDetail") {
+            await findAllDetail();
         } else if (type === "findAllChaptersWithEpisodes") {
         await findAllChaptersWithEpisodes();
     } 

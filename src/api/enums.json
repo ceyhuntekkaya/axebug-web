@@ -1,0 +1,19 @@
+{
+    "Grade":[
+        {"name": "KINDERGARTEN 4", "id":"KINDERGARTEN_4" }, 
+        {"name": "KINDERGARTEN 5", "id":"KINDERGARTEN_5"}, 
+        {"name": "KINDERGARTEN 6", "id":"KINDERGARTEN_6"}, 
+        {"name": "GRADE 1", "id":"GRADE_1"}, 
+        {"name": "GRADE 2", "id":"GRADE_2"}, 
+        {"name": "GRADE 3", "id":"GRADE_3"}, 
+        {"name": "GRADE 4", "id":"GRADE_4"}, 
+        {"name": "GRADE 5", "id":"GRADE_5"}, 
+        {"name": "GRADE 6", "id":"GRADE_6"}, 
+        {"name": "GRADE 7", "id":"GRADE_7"}, 
+        {"name": "GRADE 8", "id":"GRADE_8"}, 
+        {"name": "GRADE 9", "id":"GRADE_9"}, 
+        {"name": "GRADE 10", "id":"GRADE_10"}, 
+        {"name": "GRADE 11", "id":"GRADE_11"}, 
+        {"name": "GRADE 12", "id":"GRADE_12"}
+    ]
+}

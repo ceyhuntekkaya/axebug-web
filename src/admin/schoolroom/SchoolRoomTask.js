@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
+const enums = require('../../api/enums.json')
+
 const schoolRoomtModel = {
     "id": 0,
     "name": "",
@@ -40,13 +42,13 @@ export default function SchoolRoomTask(props) {
 
     const updateEvent = (e) => {
         e.preventDefault();
-        const updateSchoolRomm = {"id":id, "name": name, "grade": grade, "active": active };
+        const updateSchoolRomm = { "id": id, "name": name, "grade": grade, "active": active };
         props.updateSchoolRoom(updateSchoolRomm);
     }
 
     const deleteEvent = (e) => {
         e.preventDefault();
-        const deleteSchoolRomm = { "id":id, "name": name, "grade": grade, "active": active };
+        const deleteSchoolRomm = { "id": id, "name": name, "grade": grade, "active": active };
         props.deleteSchoolRoom(deleteSchoolRomm);
     }
 
@@ -62,7 +64,15 @@ export default function SchoolRoomTask(props) {
                 </div>
                 <div className="col-6">
                     <label htmlFor="schoolRoomGrade" className="form-label">Grade</label>
-                    <input type="text" className="form-control" id="schoolRoomGrade" value={grade} onChange={(e) => setGrade(e.target.value)} />
+
+                    <select className="form-select" id="schoolRoomGrade" value={grade} onChange={(e) => setGrade(e.target.value)} >
+                        {
+                            enums.Grade.map((grade, key) => (
+                                <option key={key} value={`${grade.id}`}>{grade.name}</option>
+                            ))
+                        }
+                    </select>
+
                 </div>
                 <div className="col-6 mt-3">
                     <input type="checkbox" className="form-check-input" id="exampleCheck1" value={active} onChange={(e) => setActive(e.target.value)} />
