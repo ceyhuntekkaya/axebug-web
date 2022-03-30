@@ -15,6 +15,7 @@ const contentModel = {
 export default function ContentBase(props) {
     const [selectedContent, setSelectedContent] = useState(contentModel);
     const [level, setLevel] = useState(1);
+
     useEffect(() => {
         if (props.selectedContent) {
             setSelectedContent(props.selectedContent);
@@ -34,7 +35,6 @@ export default function ContentBase(props) {
         if (level > 1)
             setLevel(level - 1);
     }
-console.log(selectedContent.soundUrl)
     return (
         <div className="card">
             <div className='row m-2'>
