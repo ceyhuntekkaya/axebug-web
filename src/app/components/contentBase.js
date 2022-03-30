@@ -11,22 +11,40 @@ const contentModel = {
     "orderNumber": 1,
     "sectionId": 1
 }
+var stringSimilarity = require("string-similarity");
 
 export default function ContentBase(props) {
     const [selectedContent, setSelectedContent] = useState(contentModel);
     const [level, setLevel] = useState(1);
+
+    const [speechValue, setSpeechValue] = useState(100);
 
     useEffect(() => {
         if (props.selectedContent) {
             setSelectedContent(props.selectedContent);
             setLevel(1);
         }
+       
+
     }, [props.selectedContent])
 
 
+    const clearText = (text)=>{
+        let newText = text.replace(".","").replace("'","").replace("!","").replace(",","").replace("’","").replace("?","").replace("-","").replace("_","");
+        newText = newText.toLowerCase();
+        return newText;
+    }
+
+    const getSpeechText = (text) => {
+        var similarity = stringSimilarity.compareTwoStrings(clearText(text), clearText(selectedContent.text));
+        const value = parseInt(similarity * 100)
+        setSpeechValue(value);
+    }
+
     const nextExersize = () => {
-        if (level < 4)
+        if (level < 4) {
             setLevel(level + 1);
+        }
         else {
             props.onNextContent();
         }
@@ -85,14 +103,14 @@ export default function ContentBase(props) {
                 </div>
                 <div>
                     <div className='row  mt-3'>
-                        <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} id="file" value="78" max="100"> 78% </progress>
-                        <div className='col-auto' style={{ height: 30 }}><h2>% 78</h2></div>
+                        <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} value={speechValue} id="file" max="100"> 78% </progress>
+                        <div className='col-auto' style={{ height: 30 }}><h2>% {speechValue}</h2></div>
                     </div>
                 </div>
                 <div className="row row-cols-auto mt-2">
                     {
                         level === 1 || level === 2 ?
-                            <SpechText/> : null
+                            <SpechText getSpeechText={getSpeechText} /> : null
                     }
                     {
                         level > 1 ?

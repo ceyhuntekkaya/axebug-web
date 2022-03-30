@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ContentBase from './components/ContentBase';
 import usePanel from '../api/usePanel';
 import { useSearchParams } from 'react-router-dom';
+import useStudentWork from '../api/useStudentWork'
 
 const studentWorkTemplate = {
     read: "",
@@ -27,15 +28,18 @@ export default function Study(props) {
 
     const [studentWork, setStudentWork] = useState(studentWorkTemplate);
 
-    useEffect(() => {
-        const student = JSON.parse(localStorage.getItem("student"));
-        setStudentWork({...studentWork, student:{id:student.id}})
+    const [studentWorkTaskList, setStudentWorkApi] = useStudentWork(false);
 
-        // TODO: task evulationları API çek 
+    useEffect(() => {
 
         document.body.style.backgroundColor = 'white';
         var id = searchParams.get("id");
         setPanels("findByTask", id);
+
+        const student = JSON.parse(localStorage.getItem("student"));
+        setStudentWork({...studentWork, student:{id:student.id}})
+
+        setStudentWorkApi("checkStudentWorkTask", {studentId: student.id, taskId: id});
     }, [])
 
     useEffect(() => {
@@ -54,24 +58,37 @@ export default function Study(props) {
     const showNextContent = () => {
         if (activeContentKey < panels.length - 1) {
             onSectionContent(panels[activeContentKey + 1], activeContentKey + 1);
-            saveEvulations();
         }
     }
 
     const setEvulations=(type, value, evulation)=>{
-
+        if(type==="1"){
+            setStudentWork({...studentWork, read:value, readEvaluation:evulation});
+        }
+        else if(type==="2"){
+            setStudentWork({...studentWork, write:value, writeEvaluation:evulation});
+        }
+        else if(type==="3"){
+            setStudentWork({...studentWork, speaking:value, speakingEvaluation:evulation});
+        }
+        else if(type==="4"){
+            setStudentWork({...studentWork, listening:value, listeningEvaluation:evulation});
+        }
+        setStudentWorkApi("createStudentWork", studentWork);
     }
 
-    const saveEvulations=()=>{
-        
-
-        // TODO: save data
-    }
 
     useEffect(() => {
         if (selectedContent) {
             setStudentWork({...studentWork, episodeTaskPanel:{id:selectedContent.id}});
             
+            if(studentWorkTaskList){
+                const selectedPanelStudentWork = studentWorkTaskList.find(sw=> sw.episodeTaskPanel.id === selectedContent.id);
+                if(selectedPanelStudentWork){
+                    setStudentWork(selectedPanelStudentWork);
+                }
+            }
+           
             // TODO:  eski avulatipnları yükle
 
         }

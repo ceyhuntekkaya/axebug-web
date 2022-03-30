@@ -1,36 +1,35 @@
 import { useState } from 'react';
+import axios from 'axios'
 const config = require('./config.json');
 
 export default function useStudentWork() {
     const [result, setResult] = useState(null);
+    const RequestMapping = "homework";
 
+    const createStudentWork = async (studentWork) => {
+        try {
+            const res = await axios.post(`${config.api.invokeUrl}/${RequestMapping}/`, studentWork);
+            setResult(res.data);
+        } catch (err) {
+            setResult(`An error has occurred: ${err}`);
+        }
+    }
 
-
-
-
+    const checkStudentWorkTask = async (params) => {
+        try {
+            const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/${params.studentId}/${params.taskId}/`);
+            setResult(res.data);
+        } catch (err) {
+            setResult(`An error has occurred: ${err}`);
+        }
+    }
 
     const handleChange = async (type, params) => {
-        if (type === "createStudent") {
-            await createStudent(params);
-        } else if (type === "updateStudent") {
-            await updateStudent(params);
-        } else if (type === "deleteStudent") {
-            await deleteStudent(params);
-        } else if (type === "findAllStudent") {
-            await findAllStudent();
-        } else if (type === "findByIdStudent") {
-            await findByIdStudent(params);
-        } else if (type === "findByNameStudent") {
-            await findByNameStudent(params);
-        } else if (type === "findBySchoolRoomStudent") {
-            await findBySchoolRoomStudent(params);
-        } else if (type === "findBySchoolStudent") {
-            await findBySchoolStudent(params);
-        } else if (type === "findByGradeStudent") {
-            await findByGradeStudent(params.schoolId, params.grade);
-        } else if (type === "loginStudent") {
-            await loginStudent(params);
-        }
+        if (type === "createStudentWork") {
+            await createStudentWork(params);
+        } else if (type === "checkStudentWorkTask") {
+            await checkStudentWorkTask(params);
+        } 
     }
     return [result, handleChange];
 }

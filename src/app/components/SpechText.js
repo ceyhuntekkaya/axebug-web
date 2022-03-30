@@ -34,8 +34,6 @@ export default class SpechText extends Component {
 
 
     startListening = () => {
-        console.log('baslandi...')
-
         try {
             this.listener = new SpeechToText(
                 this.onFinalised,
@@ -53,7 +51,7 @@ export default class SpechText extends Component {
     stopListening = () => {
         this.listener.stopListening();
         this.setState({ listening: false });
-        console.log(this.state.interimText)
+        this.props.getSpeechText(this.state.interimText)
     };
 
 
@@ -61,7 +59,7 @@ export default class SpechText extends Component {
         return (
             <div className="col">
                 <button className="btn btn-dark" onClick={() => this.startListening()}>Record Your Voice</button>
-                <input type='text' value={this.state.interimText} id="speechTextInput"></input>
+                <input type='text' value={this.state.interimText} readOnly id="speechTextInput"></input>
             </div>
         )
     }
