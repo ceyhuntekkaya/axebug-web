@@ -95,7 +95,7 @@ export default function Study(props) {
                 <div className="col ml-2">
                     <div className="mb-4">
                         {
-                            startContent ? <ContentBase setEvulations={setEvulations} selectedContent={selectedContent} onNextContent={showNextContent} /> : null
+                            startContent ? <ContentBase studentWork={studentWork} setEvulations={setEvulations} selectedContent={selectedContent} onNextContent={showNextContent} /> : null
                         }
                     </div>
                 </div>
