@@ -24,8 +24,6 @@ export default function ContentBase(props) {
             setSelectedContent(props.selectedContent);
             setLevel(1);
         }
-       
-
     }, [props.selectedContent])
 
 
