@@ -18,7 +18,7 @@ export default function ContentBase(props) {
     const [level, setLevel] = useState(1);
 
     const [speechValue, setSpeechValue] = useState(100);
-
+//ceyhun
     useEffect(() => {
         if (props.selectedContent) {
             setSelectedContent(props.selectedContent);

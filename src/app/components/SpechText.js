@@ -8,7 +8,6 @@ export default class SpechText extends Component {
         listening: false,
     };
 
-
     onAnythingSaid = text => {
         if (this.state.listening) {
             var konum = text.length;
@@ -31,7 +30,6 @@ export default class SpechText extends Component {
     onFinalised = text => {
         this.stopListening()
     };
-
 
     startListening = () => {
         try {
