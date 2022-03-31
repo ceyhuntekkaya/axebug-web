@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import OpticalForm from './components/OpticalForm';
 import MultiSelection from './questionTypes/MultiSelection';
 
@@ -27,7 +28,9 @@ export default function Exam() {
     return <React.Fragment>
         <div className="container">
             <div className="row pt-4">
-                <h3>AXE BUG COMICS</h3>
+                <h3>
+                    <Link to="/student" style={{ color: "black", textDecoration: "none" }}> AXEBUG DIGITAL</Link>
+                </h3>
             </div>
 
             <div className="row mt-4">

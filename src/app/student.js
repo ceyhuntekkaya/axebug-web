@@ -24,14 +24,15 @@ export default function Student() {
   }, [studentWorkTaskList])
 
   const checkComplated = (task, exam) => {
-
     if (task) {
-      const find = studentWorkTaskList.studentWorkList.find(sw => sw.episodeTaskPanel.episodeTask.id === task.id);
+      const find = studentWorkTaskList.studentWorkList.find(
+        sw => sw.episodeTaskPanel ? sw.episodeTaskPanel.episodeTask.id === task.id: null);
       if (find)
         return false
     }
     else if (exam) {
-      const find = studentWorkTaskList.studentWorkList.find(sw => sw.exam.id === exam.id);
+      const find = studentWorkTaskList.studentWorkList.find(
+        sw => sw.exam ? sw.exam.id === exam.id : null);
       if (find)
         return false
     }

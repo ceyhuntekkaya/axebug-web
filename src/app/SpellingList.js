@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import useChapter from '../api/useChapter';
 import Square from './components/Square';
+import { Link } from 'react-router-dom';
 
 export default function SpellingList() {
   const [chapters, setChapters] = useChapter([]);

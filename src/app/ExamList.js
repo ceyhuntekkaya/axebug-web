@@ -1,5 +1,6 @@
 import React from 'react';
 import Square from './components/Square';
+import { Link } from 'react-router-dom';
 
 export default function ExamList() {
     return (

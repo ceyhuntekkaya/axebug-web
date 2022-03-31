@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useTask from '../api/useTask';
 import Square from './components/Square';
 import { useSearchParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 export default function TaskList() {

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Square from './components/Square';
 import useWordBank from '../api/useWordBank';
 import { useSearchParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function WordBank(props) {
     const [searchParams,] = useSearchParams();

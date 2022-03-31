@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useWordBank from '../api/useWordBank';
 import Square from './components/Square';
 import { useSearchParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function SpellingEpisode() {
     const [wordList, setWordList] = useWordBank([]);

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useEpisode from '../api/useEpisode';
 import Square from './components/Square';
 import { useSearchParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function EpisodeList() {
     const [episodes, setEpisodes] = useEpisode([]);
