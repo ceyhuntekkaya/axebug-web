@@ -12,27 +12,25 @@ export default function SchoolRoomList() {
         const res = JSON.parse(localStorage.getItem("school"));
         setSchool(res);
         setSchoolRoomList("findAllSchoolRoom", res.id);
-      }, [])
+    }, [])
 
 
     const addSchoolRoom = (schoolroom) => {
         schoolroom.school = { id: school.id };
         setSchoolRoomList("createSchoolRoom", schoolroom);
-      }
-    
-    
-      const updateSchoolRoom = (schoolroom) => {
-    //updateSchoolRoom
-      }
-    
-      const deleteSchoolRoom = (schoolroom) => {
-        setSchoolRoomList("deleteSchoolRoom", schoolroom.id);
-      }
-    
-      const selectSchoolRoomEvent = (schoolroom) => {
-        setSelectedSchoolRoom(schoolroom);
-      }
+    }
 
+    const updateSchoolRoom = (schoolroom) => {
+
+    }
+
+    const deleteSchoolRoom = (schoolroom) => {
+        setSchoolRoomList("deleteSchoolRoom", schoolroom.id);
+    }
+
+    const selectSchoolRoomEvent = (schoolroom) => {
+        setSelectedSchoolRoom(schoolroom);
+    }
 
     return (
         <div className="container">
@@ -45,7 +43,7 @@ export default function SchoolRoomList() {
                         </div>
                         <div className="card-body">
                             {
-                            <SchoolRoomTask addSchoolRoom={addSchoolRoom} selectedSchoolRoom={selectedSchoolRoom} setSelectedSchoolRoom={setSelectedSchoolRoom} updateSchoolRoom={updateSchoolRoom} deleteSchoolRoom={deleteSchoolRoom}/>
+                                <SchoolRoomTask addSchoolRoom={addSchoolRoom} selectedSchoolRoom={selectedSchoolRoom} setSelectedSchoolRoom={setSelectedSchoolRoom} updateSchoolRoom={updateSchoolRoom} deleteSchoolRoom={deleteSchoolRoom} />
                             }
                         </div>
                     </div>
@@ -60,7 +58,7 @@ export default function SchoolRoomList() {
                             <table className="table table-striped table-hover">
                                 <thead>
                                     <tr>
-                                    <th scope="col"></th>
+                                        <th scope="col"></th>
                                         <th scope="col">Name</th>
                                         <th scope="col">Grade</th>
                                         <th scope="col">Active</th>
@@ -70,14 +68,14 @@ export default function SchoolRoomList() {
 
                                     {
                                         schoolRoomList ?
-                                        schoolRoomList.map((room, key) => (
-                                            <tr key={key} className={`${selectedSchoolRoom.id=== room.id ? "btn-warning": ""}`}>
-                                                <th><button className="btn btn-success" onClick={()=>selectSchoolRoomEvent(room)}>Select</button></th>
-                                                <td>{room.name}</td>
-                                                <td>{room.grade}</td>
-                                                <td>{room.active}</td>
-                                            </tr>
-                                        )) : null
+                                            schoolRoomList.map((room, key) => (
+                                                <tr key={key} className={`${selectedSchoolRoom.id === room.id ? "btn-warning" : ""}`}>
+                                                    <th><button className="btn btn-success" onClick={() => selectSchoolRoomEvent(room)}>Select</button></th>
+                                                    <td>{room.name}</td>
+                                                    <td>{room.grade}</td>
+                                                    <td>{room.active}</td>
+                                                </tr>
+                                            )) : null
                                     }
                                 </tbody>
                             </table>
