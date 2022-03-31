@@ -5,7 +5,9 @@ export default function QuizList() {
   return (
     <React.Fragment>
       <div className="container">
-        <div className="text-white bg-dark border border-2 border-dark p-2 mt-5 d-flex justify-content-center" style={{ width: 350 }}><h2><b>AXEBUG DIGITAL</b></h2></div>
+        <div className="text-white bg-dark border border-2 border-dark p-2 mt-5 d-flex justify-content-center" style={{ width: 350 }}><h2><b>
+        <Link to="/student" style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link>
+          </b></h2></div>
         <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: 350 }}><h2><b>QUIZS</b></h2></div>
       </div>
       <div className="d-flex justify-content-center mt-5">

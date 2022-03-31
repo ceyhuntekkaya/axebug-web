@@ -54,7 +54,9 @@ export default function Spelling() {
                     <div className="mb-4">
                         <div className="">
                             <div className='row m-2'>
-                                <div className='col-4 boxDark mr-5'><h3><b>AXEBUG DIGITAL</b></h3></div>
+                                <div className='col-4 boxDark mr-5'><h3><b>
+                                <Link to="/student" style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link>
+                                    </b></h3></div>
                                 <div className='col-8 boxWhite ml-5'><h4>Listening and Speaking</h4></div>
                             </div>
                             <div className='row m-2'>

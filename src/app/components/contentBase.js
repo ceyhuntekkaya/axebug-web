@@ -71,7 +71,7 @@ export default function ContentBase(props) {
     return (
         <div className="card">
             <div className='row m-2'>
-                <div className='col-4 boxDark'><h3><b>AXEBUG DIGITAL</b></h3></div>
+                <div className='col-4 boxDark'><h3><b><Link to="/student" style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link></b></h3></div>
                 <div className="col-8 btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                     <div className="btn-group mr-2 w-100" role="group" aria-label="First group">
                         <button type="button" className={`btn btn-${level === 1 ? "dark" : "secondary"}`} onClick={() => setLevel(1)}>Listen & Speak</button>
