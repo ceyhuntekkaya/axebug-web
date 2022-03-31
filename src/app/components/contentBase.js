@@ -11,24 +11,25 @@ const contentModel = {
     "orderNumber": 1,
     "sectionId": 1
 }
+
 var stringSimilarity = require("string-similarity");
 
 export default function ContentBase(props) {
     const [selectedContent, setSelectedContent] = useState(contentModel);
     const [level, setLevel] = useState(1);
+    const [txtValue, settxtValue] = useState("");
 
     const [speechValue, setSpeechValue] = useState(100);
-        //ceyhun tekkaya
     useEffect(() => {
         if (props.selectedContent) {
             setSelectedContent(props.selectedContent);
             setLevel(1);
+            clearValues()
         }
     }, [props.selectedContent])
 
-
-    const clearText = (text)=>{
-        let newText = text.replace(".","").replace("'","").replace("!","").replace(",","").replace("’","").replace("?","").replace("-","").replace("_","");
+    const clearText = (text) => {
+        let newText = text.replace(".", "").replace("'", "").replace("!", "").replace(",", "").replace("’", "").replace("?", "").replace("-", "").replace("_", "");
         newText = newText.toLowerCase();
         return newText;
     }
@@ -37,6 +38,7 @@ export default function ContentBase(props) {
         var similarity = stringSimilarity.compareTwoStrings(clearText(text), clearText(selectedContent.text));
         const value = parseInt(similarity * 100)
         setSpeechValue(value);
+        props.setEvulations(level, text, value)
     }
 
     const nextExersize = () => {
@@ -46,11 +48,26 @@ export default function ContentBase(props) {
         else {
             props.onNextContent();
         }
+        clearValues()
     }
     const prevtExersize = () => {
-        if (level > 1)
+        if (level > 1) {
             setLevel(level - 1);
+        }
+        clearValues()
     }
+
+    const clearValues=()=>{
+        settxtValue("");
+        setSpeechValue(0)
+    }
+
+    useEffect(() => {
+        clearValues();
+    }, [level])
+
+    
+
     return (
         <div className="card">
             <div className='row m-2'>
@@ -95,7 +112,9 @@ export default function ContentBase(props) {
                         level === 3 || level === 4 ?
                             <div className="mb-3">
                                 <label htmlFor="txt" className="form-label">Write text...</label>
-                                <input type="email" className="form-control" id="txt" placeholder="Write text..." />
+                                <input type="text" className="form-control" id="txt" placeholder="Write text..." 
+                                value={txtValue} onChange={(e) => settxtValue(e.target.value)} />
+                                <button className='btn btn-success' onClick={()=> getSpeechText(txtValue)}>Check Text</button>
                             </div> : null
                     }
                 </div>

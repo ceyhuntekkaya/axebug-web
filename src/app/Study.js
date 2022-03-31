@@ -15,8 +15,8 @@ const studentWorkTemplate = {
     speakingEvaluation: 0,
     listeningEvaluation: 0,
 
-    student: {id:0},
-    episodeTaskPanel: {id:0},
+    student: { id: 0 },
+    episodeTaskPanel: { id: 0 },
 }
 
 export default function Study(props) {
@@ -25,21 +25,18 @@ export default function Study(props) {
     const [selectedContent, setSelectedContent] = useState({});
     const [activeContentKey, setActiveContentKey] = useState(false);
     const [searchParams,] = useSearchParams();
-
     const [studentWork, setStudentWork] = useState(studentWorkTemplate);
-
-    const [studentWorkTaskList, setStudentWorkApi] = useStudentWork(false);
+    const [studentWorkTaskList, setStudentWorkApi] = useStudentWork(null);
+    const [studentId, setStudentId] = useState(0);
 
     useEffect(() => {
-
         document.body.style.backgroundColor = 'white';
         var id = searchParams.get("id");
         setPanels("findByTask", id);
-
         const student = JSON.parse(localStorage.getItem("student"));
-        setStudentWork({...studentWork, student:{id:student.id}})
-
-        setStudentWorkApi("checkStudentWorkTask", {studentId: student.id, taskId: id});
+        setStudentId(student.id )
+        setStudentWork({ ...studentWork, student: { id: student.id } })
+        setStudentWorkApi("checkStudentWorkTask", { studentId: student.id, taskId: id });
     }, [])
 
     useEffect(() => {
@@ -61,36 +58,38 @@ export default function Study(props) {
         }
     }
 
-    const setEvulations=(type, value, evulation)=>{
-        if(type==="1"){
-            setStudentWork({...studentWork, read:value, readEvaluation:evulation});
+    const setEvulations = (type, value, evulation) => {
+        let values = { ...studentWork };
+        if (type === 1) {
+            values.read = value
+            values.readEvaluation = evulation
         }
-        else if(type==="2"){
-            setStudentWork({...studentWork, write:value, writeEvaluation:evulation});
+        else if (type === 2) {
+            values.write = value
+            values.writeEvaluation = evulation
         }
-        else if(type==="3"){
-            setStudentWork({...studentWork, speaking:value, speakingEvaluation:evulation});
+        else if (type === 3) {
+            values.speaking = value
+            values.speakingEvaluation = evulation
         }
-        else if(type==="4"){
-            setStudentWork({...studentWork, listening:value, listeningEvaluation:evulation});
+        else if (type === 4) {
+            values.listening = value
+            values.listeningEvaluation = evulation
         }
-        setStudentWorkApi("createStudentWork", studentWork);
+        values.student.id = studentId;
+        setStudentWork(values)
+        setStudentWorkApi("createStudentWork", values);
     }
-
 
     useEffect(() => {
         if (selectedContent) {
-            setStudentWork({...studentWork, episodeTaskPanel:{id:selectedContent.id}});
-            
-            if(studentWorkTaskList){
-                const selectedPanelStudentWork = studentWorkTaskList.find(sw=> sw.episodeTaskPanel.id === selectedContent.id);
-                if(selectedPanelStudentWork){
+            setStudentWork({ ...studentWork, episodeTaskPanel: { id: selectedContent.id } });
+            if (studentWorkTaskList) {
+                const selectedPanelStudentWork = studentWorkTaskList.find(sw => sw.episodeTaskPanel.id === selectedContent.id);
+                if (selectedPanelStudentWork) {
                     setStudentWork(selectedPanelStudentWork);
                 }
             }
-           
-            // TODO:  eski avulatipnları yükle
-
         }
     }, [selectedContent])
 

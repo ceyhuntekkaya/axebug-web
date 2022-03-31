@@ -1,35 +1,35 @@
 import React, { useEffect, useState } from 'react';
 import Square from './components/Square';
-import useSchoolRoomWork from '../api/useSchoolRoomWork'
+import useStudentWork from '../api/useStudentWork'
 
 export default function Student() {
-  const[student, setStudent] = useState({name:"", surname: "", avatar:""});
-  const [schoolRoomWorkList, setSchoolRoomWorkList] = useSchoolRoomWork(null);
+  const [student, setStudent] = useState({ name: "", surname: "", avatar: "" });
+  const [studentWorkTaskList, setStudentWorkApi] = useStudentWork(null);
 
   useEffect(() => {
     document.body.style.backgroundColor = 'white'; // '#231F20';
     const studentData = JSON.parse(localStorage.getItem("student"));
     setStudent(studentData);
-    setSchoolRoomWorkList("getSchoolRoomWorks", studentData.schoolRoom.id)
+    setStudentWorkApi("studentActiveTask", studentData.id)
+
   }, [])
 
-
   useEffect(() => {
-    if(schoolRoomWorkList){
-      localStorage.setItem("schoolRoomWorkList", JSON.stringify(schoolRoomWorkList))
+    if (studentWorkTaskList) {
+      const activeTaskList = studentWorkTaskList.schoolRoomWorkList;
+      const studentWorkList = studentWorkTaskList.studentWorkList;
+      localStorage.setItem("schoolRoomWorkList", JSON.stringify(activeTaskList))
+      console.log(activeTaskList)
     }
-  }, [schoolRoomWorkList])
+  }, [studentWorkTaskList])
 
-  const unCompletedQuiz = () => { return (<React.Fragment><Square col="3" backgroundColor="white" to="/exam"><b>QUIZ 01</b></Square></React.Fragment>) }
-  const unCompletedExam = () => { return (<React.Fragment><Square col="3" backgroundColor="white" to="/app/exam"><b>EXAM 01</b></Square></React.Fragment>) }
-  const unCompletedTask = () => { return (<React.Fragment><Square col="3" backgroundColor="white" to="/exam"><b>TASK 01</b></Square></React.Fragment>) }
-  const myTasks = () => {
-    return (<div className="row mt-3">
-      <Square col="3" backgroundColor="white" to="/exam"><b>EXAM 01</b></Square>
-      <Square col="3" backgroundColor="white" to="/quiz"><b>QUIZ 01</b></Square>
-      <Square col="3" backgroundColor="white" to="/quiz"><b>TASK 01</b></Square>
-    </div>)
+  const checkComplated = (taskId) => {
+    const find = studentWorkTaskList.studentWorkList.find(sw => sw.episodeTaskPanel.episodeTask.id === taskId);
+    if (find)
+      return false
+    return true
   }
+
   const myAvatar = () => {
     return (
       <div className='mt-4'><img src={`assets/${student.avatar}`} style={{ width: "100%", backgroundColor: "black" }} alt='Avatar' /></div>)
@@ -61,62 +61,71 @@ export default function Student() {
         <div className='row'><h2>EXAM SCORE 93 </h2></div>
         <div className='row'><h2>QUIZ SCORE 84 </h2></div>
         <div className='row'><h2>AXE 4 SKILLS SCORE 72</h2></div>
-
-
         <div className='row'><h2>AXE 4 SKILLS SCORE 72</h2></div>
         <div className='row'><h2>AXE 4 SKILLS SCORE 72</h2></div>
         <div className='row'><h2>AXE 4 SKILLS SCORE 72</h2></div>
         <div className='row'><h2>AXE 4 SKILLS SCORE 72</h2></div>
-
-
         <div className='row'><h1>OVERALL SCORE 83</h1></div>
       </div>
     )
   }
 
-  return (
-      <div className='container'>
-        <div className='row'>
-          <div className='col'>
-            <div className='row'>
-              <div className='col-7'>
-                <div className="text-white bg-dark border border-2 border-dark p-2 mt-4 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>AXEBUG DIGITAL</b></h2></div>
-                <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>{student.name}'s SECTION</b></h2></div>
-                <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>YOUR TASKS</b></h2></div>
-              </div>
-              <div className='col-5'>
-                {
-                  myAvatar()
-                }
-              </div>
-            </div>
-            {
-              myTasks()
-            }
-            {
-              contentMenu()
-            }
-          </div>
-          <div className='col'>
-            <div>
-              <div className="text-white bg-dark border border-2 border-dark p-2 mt-4 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>UNCOMPLATED TASK</b></h2></div>
-            </div><div className='row'>
-              {
-                unCompletedExam()
-              }
-              {
-                unCompletedQuiz()
-              }
-              {
-                unCompletedTask()
-              }
-            </div>
-            {
-              scoreBoard()
-            }
 
+
+  const activeTaskShow = (type) => {
+    return (<React.Fragment>
+      {
+        studentWorkTaskList ?
+          studentWorkTaskList.schoolRoomWorkList.map((task, key) =>
+            type || checkComplated(task.episodeTask.id) === true ?
+              <Square key={key} col="3" backgroundColor="white" to={`/study/?id=${task.episodeTask.id}`}><b>{task.episodeTask.name}</b></Square>
+              : null
+          )
+          : null
+      }
+    </React.Fragment>)
+  }
+
+
+  
+  return (
+    <div className='container'>
+      <div className='row'>
+        <div className='col'>
+          <div className='row'>
+            <div className='col-7'>
+              <div className="text-white bg-dark border border-2 border-dark p-2 mt-4 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>AXEBUG DIGITAL</b></h2></div>
+              <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>{student.name}'s SECTION</b></h2></div>
+              <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>YOUR TASKS</b></h2></div>
+            </div>
+            <div className='col-5'>
+              {
+                myAvatar()
+              }
+            </div>
           </div>
+          <div className="row mt-3">
+            {
+              activeTaskShow(true)
+            }
+          </div>
+          {
+            contentMenu()
+          }
+        </div>
+        <div className='col'>
+          <div>
+            <div className="text-white bg-dark border border-2 border-dark p-2 mt-4 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>UNCOMPLATED TASK</b></h2></div>
+          </div><div className='row'>
+            {
+              activeTaskShow(false)
+            }
+          </div>
+          {
+            scoreBoard()
+          }
         </div>
       </div>
+    </div>
   );
 }
