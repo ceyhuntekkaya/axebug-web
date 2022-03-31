@@ -17,7 +17,6 @@ export default function ChapterList() {
           chapterWork.push(element.episodeTask.episode.chapter)
       }
     });
-    console.log(schoolRoomWorkList)
     setChapterWorks(chapterWork)
     setChapters("findAllChapters", null);
   }, [])

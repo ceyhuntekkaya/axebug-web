@@ -16,13 +16,11 @@ export default function WordBankEpisode() {
 
     }, [])
     useEffect(() => {
-        console.log(wordList)
         if (wordList) {
             setChapter(wordList[0].episode.chapter);
             setEpisode(wordList[0].episode)
         }
     }, [wordList])
-    console.log("ceycey: ",wordList)
 
     return <React.Fragment>
         <Home secondaryName="Word Bank" secondaryLink="/wordbank" />

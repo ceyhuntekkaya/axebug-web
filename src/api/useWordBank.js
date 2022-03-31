@@ -58,7 +58,6 @@ export default function useWordBank() {
     }
     const findByEpisode = async (params) => {
         try {
-            console.log(`${config.api.invokeUrl}/${RequestMapping}/episode/${params.episodeId}/${params.category}`)
             const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/episode/${params.episodeId}/${params.category}`);
             setResult(res.data);
         } catch (err) {

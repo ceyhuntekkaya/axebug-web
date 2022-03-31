@@ -23,7 +23,6 @@ export default function useTeacher() {
     }
     const deleteteacher = async (teacherId) => {
         try {
-            console.log(`${config.api.invokeUrl}/teacher/${teacherId}`)
             const res = await axios.delete(`${config.api.invokeUrl}/teacher/${teacherId}`);
             setResult(res.data);
         } catch (err) {

@@ -47,7 +47,6 @@ export default function Spelling() {
             setCurrentKey(currentKey - 1)
         }
     }
-console.log(selectedWord.soundUrl)
     return <React.Fragment>
         <div className="container">
             <div className="row mt-4">

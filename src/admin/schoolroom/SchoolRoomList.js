@@ -17,7 +17,6 @@ export default function SchoolRoomList() {
 
     const addSchoolRoom = (schoolroom) => {
         schoolroom.school = { id: school.id };
-        console.log(schoolroom)
         setSchoolRoomList("createSchoolRoom", schoolroom);
       }
     

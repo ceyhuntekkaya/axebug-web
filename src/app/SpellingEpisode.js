@@ -15,7 +15,6 @@ export default function SpellingEpisode() {
     }, [])
 
     useEffect(() => {
-        console.log(wordList)
         if (wordList) {
             setChapter(wordList[0].episode.chapter);
             setEpisode(wordList[0].episode)

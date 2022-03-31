@@ -4,7 +4,7 @@ import useStudentWork from '../api/useStudentWork'
 
 export default function Student() {
   const [student, setStudent] = useState({ name: "", surname: "", avatar: "" });
-  const [studentWorkTaskList, setStudentWorkApi] = useStudentWork(null);
+  const [studentWorkTaskList, setStudentWorkApi] = useStudentWork([]);
 
   useEffect(() => {
     document.body.style.backgroundColor = 'white'; // '#231F20';
@@ -15,18 +15,26 @@ export default function Student() {
   }, [])
 
   useEffect(() => {
+
     if (studentWorkTaskList) {
       const activeTaskList = studentWorkTaskList.schoolRoomWorkList;
       const studentWorkList = studentWorkTaskList.studentWorkList;
       localStorage.setItem("schoolRoomWorkList", JSON.stringify(activeTaskList))
-      console.log(activeTaskList)
     }
   }, [studentWorkTaskList])
 
-  const checkComplated = (taskId) => {
-    const find = studentWorkTaskList.studentWorkList.find(sw => sw.episodeTaskPanel.episodeTask.id === taskId);
-    if (find)
-      return false
+  const checkComplated = (task, exam) => {
+
+    if (task) {
+      const find = studentWorkTaskList.studentWorkList.find(sw => sw.episodeTaskPanel.episodeTask.id === task.id);
+      if (find)
+        return false
+    }
+    else if (exam) {
+      const find = studentWorkTaskList.studentWorkList.find(sw => sw.exam.id === exam.id);
+      if (find)
+        return false
+    }
     return true
   }
 
@@ -70,15 +78,16 @@ export default function Student() {
     )
   }
 
-
-
   const activeTaskShow = (type) => {
     return (<React.Fragment>
       {
         studentWorkTaskList ?
           studentWorkTaskList.schoolRoomWorkList.map((task, key) =>
-            type || checkComplated(task.episodeTask.id) === true ?
-              <Square key={key} col="3" backgroundColor="white" to={`/study/?id=${task.episodeTask.id}`}><b>{task.episodeTask.name}</b></Square>
+            type || checkComplated(task.episodeTask, task.exam) === true ?
+              task.episodeTask ?
+                <Square key={key} col="3" backgroundColor="white" to={`/study/?id=${task.episodeTask.id}`}><b>{task.episodeTask.name}</b></Square>
+                :
+                <Square key={key} col="3" backgroundColor="white" to={`/app/exam/?id=${task.exam.id}`}><b>{task.exam.name}</b></Square>
               : null
           )
           : null
@@ -86,8 +95,6 @@ export default function Student() {
     </React.Fragment>)
   }
 
-
-  
   return (
     <div className='container'>
       <div className='row'>
