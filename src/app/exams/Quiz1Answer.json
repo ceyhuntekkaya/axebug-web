@@ -1,0 +1,383 @@
+{
+    "general": {
+        "A": {
+            "S1": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S2": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S3": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S4": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S5": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            }
+        },
+        "B": {
+            "S1": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S2": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S3": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S4": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S5": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S6": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S7": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S8": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S9": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S10": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S11": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S12": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            }
+        },
+        "C": {
+            "S1": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S2": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S3": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S4": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S5": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S6": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S7": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S8": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S9": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S10": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            }
+        },
+        "D": {
+            "S1": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S2": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S3": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S4": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S5": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S6": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S7": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S8": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S9": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S10": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            }
+        },
+        "E": {
+            "S1": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S2": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S3": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            },
+            "S4": {
+                "student": "",
+                "answer": "",
+                "weigth": 0,
+                "score": 0,
+                "method": "",
+                "function": "",
+                "functionScore": false
+            }
+        }
+    }
+}

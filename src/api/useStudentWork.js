@@ -33,6 +33,15 @@ export default function useStudentWork() {
         }
     }
 
+    const studentScore = async (params) => {
+        try {
+            const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/score/${params}/`);
+            setResult(res.data);
+        } catch (err) {
+            setResult(`An error has occurred: ${err}`);
+        }
+    }
+
     const handleChange = async (type, params) => {
         if (type === "createStudentWork") {
             await createStudentWork(params);
@@ -40,6 +49,8 @@ export default function useStudentWork() {
             await checkStudentWorkTask(params);
         } else if (type === "studentActiveTask") {
             await studentActiveTask(params);
+        } else if (type === "studentScore") {
+            await studentScore(params);
         } 
     }
     return [result, handleChange];

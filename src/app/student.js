@@ -2,20 +2,30 @@ import React, { useEffect, useState } from 'react';
 import Square from './components/Square';
 import useStudentWork from '../api/useStudentWork'
 
+const scoreModel = {
+  examScore: 0,
+  quizScore: 0,
+  skillsScore: 0,
+  readScore: 0,
+  writeScore: 0,
+  speakingScore: 0,
+  listeningScore: 0,
+}
+
 export default function Student() {
   const [student, setStudent] = useState({ name: "", surname: "", avatar: "" });
   const [studentWorkTaskList, setStudentWorkApi] = useStudentWork([]);
+  const [studentScore, setStudentScore] = useStudentWork(scoreModel);
 
   useEffect(() => {
     document.body.style.backgroundColor = 'white'; // '#231F20';
     const studentData = JSON.parse(localStorage.getItem("student"));
     setStudent(studentData);
     setStudentWorkApi("studentActiveTask", studentData.id)
-
+    setStudentScore("studentScore", studentData.id)
   }, [])
 
   useEffect(() => {
-
     if (studentWorkTaskList) {
       const activeTaskList = studentWorkTaskList.schoolRoomWorkList;
       const studentWorkList = studentWorkTaskList.studentWorkList;
@@ -26,7 +36,7 @@ export default function Student() {
   const checkComplated = (task, exam) => {
     if (task) {
       const find = studentWorkTaskList.studentWorkList.find(
-        sw => sw.episodeTaskPanel ? sw.episodeTaskPanel.episodeTask.id === task.id: null);
+        sw => sw.episodeTaskPanel ? sw.episodeTaskPanel.episodeTask.id === task.id : null);
       if (find)
         return false
     }
@@ -67,14 +77,60 @@ export default function Student() {
     return (
       <div className="border border-2 border-dark p-2 mt-2" style={{ backgroundColor: "black", color: "white" }}>
         <div className='row'><h1>SCORE BOARD</h1></div>
-        <div className='row'><h2>EXAM SCORE 93 </h2></div>
-        <div className='row'><h2>QUIZ SCORE 84 </h2></div>
-        <div className='row'><h2>AXE 4 SKILLS SCORE 72</h2></div>
-        <div className='row'><h2>AXE 4 SKILLS SCORE 72</h2></div>
-        <div className='row'><h2>AXE 4 SKILLS SCORE 72</h2></div>
-        <div className='row'><h2>AXE 4 SKILLS SCORE 72</h2></div>
-        <div className='row'><h2>AXE 4 SKILLS SCORE 72</h2></div>
-        <div className='row'><h1>OVERALL SCORE 83</h1></div>
+
+        {
+          studentScore ?
+            <React.Fragment>
+              <div className='row  mt-3'>
+                <div>EXAM SCORE</div>
+                <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} value={parseInt(studentScore.examScore)} max="100"> 78% </progress>
+                <div className='col-auto' style={{ height: 30 }}><h2>% {parseInt(studentScore.examScore)}</h2></div>
+              </div>
+
+              <div className='row  mt-3'>
+                <div>QUIZ SCORE</div>
+                <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} value={parseInt(studentScore.quizScore)} max="100"> 78% </progress>
+                <div className='col-auto' style={{ height: 30 }}><h2>% {parseInt(studentScore.quizScore)}</h2></div>
+              </div>
+
+              <div className='row  mt-3'>
+                <div>AXE 4 SKILLS SCORE</div>
+                <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} value={parseInt(studentScore.skillsScore)} max="100"> 78% </progress>
+                <div className='col-auto' style={{ height: 30 }}><h2>% {parseInt(studentScore.skillsScore)}</h2></div>
+              </div>
+
+              <div className='row  mt-3'>
+                <div>SPEAKING</div>
+                <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} value={parseInt(studentScore.speakingScore)} max="100"> 78% </progress>
+                <div className='col-auto' style={{ height: 30 }}><h2>% {parseInt(studentScore.speakingScore)}</h2></div>
+              </div>
+
+              <div className='row  mt-3'>
+                <div>READING</div>
+                <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} value={parseInt(studentScore.readScore)} max="100"> 78% </progress>
+                <div className='col-auto' style={{ height: 30 }}><h2>% {parseInt(studentScore.readScore)}</h2></div>
+              </div>
+
+              <div className='row  mt-3'>
+                <div>WRITTING</div>
+                <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} value={parseInt(studentScore.writeScore)} max="100"> 78% </progress>
+                <div className='col-auto' style={{ height: 30 }}><h2>% {parseInt(studentScore.writeScore)}</h2></div>
+              </div>
+
+              <div className='row  mt-3'>
+                <div>LISTENING</div>
+                <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} value={parseInt(studentScore.listeningScore)} max="100"> 78% </progress>
+                <div className='col-auto' style={{ height: 30 }}><h2>% {parseInt(studentScore.listeningScore)}</h2></div>
+              </div>
+
+              <div className='row  mt-3'>
+                <div>OVERALL SCORE</div>
+                <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} value={parseInt(studentScore.skillsScore)} max="100"> 78% </progress>
+                <div className='col-auto' style={{ height: 30 }}><h2>% {parseInt(studentScore.skillsScore)}</h2></div>
+              </div>
+            </React.Fragment>
+            : null
+        }
       </div>
     )
   }
@@ -103,19 +159,13 @@ export default function Student() {
           <div className='row'>
             <div className='col-7'>
               <div className="text-white bg-dark border border-2 border-dark p-2 mt-4 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>AXEBUG DIGITAL</b></h2></div>
-              <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>{student.name}'s SECTION</b></h2></div>
-              <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>YOUR TASKS</b></h2></div>
+              <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>{student.name}'s TASK</b></h2></div>
             </div>
             <div className='col-5'>
               {
                 myAvatar()
               }
             </div>
-          </div>
-          <div className="row mt-3">
-            {
-              activeTaskShow(true)
-            }
           </div>
           {
             contentMenu()
@@ -126,7 +176,7 @@ export default function Student() {
             <div className="text-white bg-dark border border-2 border-dark p-2 mt-4 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>UNCOMPLATED TASK</b></h2></div>
           </div><div className='row'>
             {
-              activeTaskShow(false)
+              activeTaskShow(true)
             }
           </div>
           {
