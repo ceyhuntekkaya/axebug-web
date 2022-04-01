@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import OpticalForm from './components/OpticalForm';
 import Exam1 from './exams/Exam1';
+import Quiz1 from './exams/Quiz1';
 import MultiSelection from './questionTypes/MultiSelection';
 
 export default function Exam() {
@@ -25,7 +26,7 @@ export default function Exam() {
     const prevQuestions = () => {
 
     }
-    return <Exam1/>
+    return <Quiz1/>
     /*
     return <React.Fragment>
         <div className="container">
