@@ -41,258 +41,283 @@ export default function Quiz4() {
     <div>
       AXE QUIZ CHAPTER 1 EPISODE 1
       <div className='container'>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         A. Choose the correct answer
         <div className='row'>
-          1. Who says ‘the World is flat’?
+          1. ................. is the second closest planet to the Sun.
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as1" onChange={(e) => setStudentOpenAnswer("general", "A", "S1", "A")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              A) Narrator
+              A) Venus
             </label>
           </div>
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as1" onChange={(e) => setStudentOpenAnswer("general", "A", "S1", "B")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              B) Axebug
+              B) Mars
             </label>
           </div>
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as1" onChange={(e) => setStudentOpenAnswer("general", "A", "S1", "C")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              C) Dung Beetle
+              C) Jupiter
             </label>
           </div>
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as1" onChange={(e) => setStudentOpenAnswer("general", "A", "S1", "D")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              D) Ladybug
+              D) Uranus
             </label>
           </div>
         </div>
 
         <div className='row'>
-          2. Who do you think stinks the most?
+          2. The red planet has ................. satellites.
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as2" onChange={(e) => setStudentOpenAnswer("general", "A", "S2", "A")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              A) Narrator
+              A) two
             </label>
           </div>
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as2" onChange={(e) => setStudentOpenAnswer("general", "A", "S2", "B")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              B) Axebug
+              B) three
             </label>
           </div>
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as2" onChange={(e) => setStudentOpenAnswer("general", "A", "S2", "C")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              C) Dung Beetle
+              C) four
             </label>
           </div>
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as2" onChange={(e) => setStudentOpenAnswer("general", "A", "S2", "D")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              D) Ladybug
+              D) five
             </label>
           </div>
         </div>
 
         <div className='row'>
-          3. What’s the name of Axebug’s Spaceship?
+          3. To see the planets clearly, they transfer the image to the .................
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer("general", "A", "S3", "A")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              A) ZZZ44
+              A) thermometer
             </label>
           </div>
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer("general", "A", "S3", "B")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              B) ZZZ55
+              B) control panel
             </label>
           </div>
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer("general", "A", "S3", "C")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              C) ZZZ66
+              C) monitor
             </label>
           </div>
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer("general", "A", "S3", "D")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              D) ZZZ77
+              D) glasses
             </label>
           </div>
         </div>
 
         <div className='row'>
-          4. How do Axebug and his crew reach to the spaceship?
+          4. There are craters on the surface of the ...............
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as4" onChange={(e) => setStudentOpenAnswer("general", "A", "S4", "A")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              A) By jumping up a bridge
+              A) Earth
             </label>
           </div>
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as4" onChange={(e) => setStudentOpenAnswer("general", "A", "S4", "B")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              B) By climbing up a ladder
+              B) Sun
             </label>
           </div>
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as4" onChange={(e) => setStudentOpenAnswer("general", "A", "S4", "C")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              C) By taking the bus
+              C) Moon
             </label>
           </div>
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as4" onChange={(e) => setStudentOpenAnswer("general", "A", "S4", "D")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              D) By going downstairs
+              D) Nasa
             </label>
           </div>
         </div>
-
         <div className='row'>
-          5. What was the weather like on the argument day?
+          5. They think they found ................. in space.
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer("general", "A", "S5", "A")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              A) Windy and strange
+              A) jumpers
             </label>
           </div>
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer("general", "A", "S5", "B")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              B) Rainy and peaceful
+              B) life
             </label>
           </div>
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer("general", "A", "S5", "C")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              C) Stormy and excited
+              C) ships
             </label>
           </div>
           <div className="form-check">
             <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer("general", "A", "S5", "D")} />
             <label className="form-check-label" htmlFor="flexRadioDefault1">
-              D) Calm and sunny
+              D) rabbits
             </label>
           </div>
         </div>
+
       </div>
 
 
       <div className='container'>
 
-        Axebug: Tell me what brings you out here? Q1LB1
-        <br /><br />Dung Beetle: Will you ask the
+        B. Listen and fill in the gaps.
+        <br /><br />Axebug: The moon has around 300.000 craters on it’s surface.
+        <br /><br />Axebug: Moon is rich of iron,
         <input className="form-input" type="text" value={answer.general.B.S1.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S1", e.target.value, true)} />
-        or shall i do it?
-        <br /><br />Narrator: Upon listening their argument...
-        <br /><br />Axebug: Hmm!
-        <br /><br />Axebug: It’s neither fl t nor round. The world is a
-        <input className="form-input" type="text" value={answer.general.B.S2.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S2", e.target.value, true)} />
-        <br /><br />Axebug: Hey! Just
+        <br /><br />Axebug: That’s
+        <input className="form-input" type="text" value={answer.general.B.S2.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S2", e.target.value, true)} /> with moon.
+        <br /><br />Dung Beetle Thank you axebug... this was an amazing
         <input className="form-input" type="text" value={answer.general.B.S3.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S3", e.target.value, true)} />
-        would you like to find the an wer by yourselves? Q1LB4
-        <br /><br />Dung Beetle: Wow! This sounds
-        <input className="form-input" type="text" value={answer.general.B.S4.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S4", e.target.value, true)} />.
-        Let’s try to find the an wer.
+        <br /><br />Dung Beetle: Except for the fact that there is
+        <input className="form-input" type="text" value={answer.general.B.S4.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S4", e.target.value, true)} /> in outer space other than
         <input className="form-input" type="text" value={answer.general.B.S5.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S5", e.target.value, true)} />
-        <br /><br />Ladybug: I’ll find the answer, come hell or
-        <input className="form-input" type="text" value={answer.general.B.S6.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S6", e.target.value, true)} />.
-        <br /><br />Axebug: This way,
-        <input className="form-input" type="text" value={answer.general.B.S7.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S7", e.target.value, true)} />
-        I’m sure you will enjoy this journey
-        <input className="form-input" type="text" value={answer.general.B.S8.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S8", e.target.value, true)} />. Q1LB9
-        <br /><br />Axebug:
-        <input className="form-input" type="text" value={answer.general.B.S9.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S9", e.target.value, true)} />.
-        <br /><br />Axebug: I will show you something you have never seen before.
-        <br /><br />Axebug: Over there! Right
+        <br /><br />Ladybug: I think there is!
+        <br /><br />Dung Beetle: Axebug says there isn’t. Don’t you get it? Q4LB6
+        <br /><br />Ladybug: He said it only for the
+        <input className="form-input" type="text" value={answer.general.B.S6.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S6", e.target.value, true)} />
+        <br /><br />Dung Beetle: Yes, she is right.
+        <br /><br />Axebug: We don’t know whether there is life or not in the
+        <input className="form-input" type="text" value={answer.general.B.S7.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S7", e.target.value, true)} /> places of space.
+        <br /><br />Axebug: Anyway, we will talk about this later. It is time to go back to home.
+        <br /><br />Axebug: Could you please check the control panel
+        <input className="form-input" type="text" value={answer.general.B.S8.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S8", e.target.value, true)} /> ?
+        <br /><br />Dung Beetle: I think now is the best time to talk about it
+        <br /><br />Ladybug: Why?
+        <br /><br />Ladybug: You had better
+        <input className="form-input" type="text" value={answer.general.B.S9.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S9", e.target.value, true)} /> at the control panel
+        <br /><br />Dung Beetle:
         <input className="form-input" type="text" value={answer.general.B.S10.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S10", e.target.value, true)} />
-        you’ll see it once we climb up the
-        <input className="form-input" type="text" value={answer.general.B.S11.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S11", e.target.value, true)} />.
-        <br /><br />Axebug: Oh, finall ! Come on! Let’s go in.
-        <br /><br />Axebug: And here we are. Please
-        <input className="form-input" type="text" value={answer.general.B.S12.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S12", e.target.value, true)} />.
+        <br /><br />Robug13: If you see this message
+        <input className="form-input" type="text" value={answer.general.B.S11.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S11", e.target.value, true)} /> help!
+        <br /><br />Axebug: It is an emergency
+        <input className="form-input" type="text" value={answer.general.B.S12.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S12", e.target.value, true)} />
+        <br /><br />Axebug: Guys! We are cancelling our return home.
+        <br /><br />Axebug: I think we
+        <input className="form-input" type="text" value={answer.general.B.S13.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S13", e.target.value, true)} />. Wooohooo!!!
+        <br /><br />Axebug:
+        <input className="form-input" type="text" value={answer.general.B.S14.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S14", e.target.value, true)} />
+
+
+
+
       </div>
 
 
       <div className='container'>
         <table>
           <tr>
-            <td>1. Argument
+            <td>1. Task
               <input className="form-input" type="text" value={answer.general.C.S1.student} onChange={(e) => setStudentOpenAnswer("general", "C", "S1", e.target.value)} />
             </td>
-            <td>A. A person with knowledge, smart enough</td>
+            <td>A. Or else, alternatively</td>
           </tr>
           <tr>
             <td>
-              2. Stubborn
+              2. Otherwise
               <input className="form-input" type="text" value={answer.general.C.S2.student} onChange={(e) => setStudentOpenAnswer("general", "C", "S2", e.target.value)} />
             </td>
-            <td>B. Travel in a period of time</td>
+            <td>B. A big success, just like you win the lottery</td>
           </tr>
           <tr>
             <td>
-              3. Accept
+              3. Assist
               <input className="form-input" type="text" value={answer.general.C.S3.student} onChange={(e) => setStudentOpenAnswer("general", "C", "S3", e.target.value)} />
             </td>
-            <td>C. A negative discussion between two or more people</td>
+            <td>C. An assignment or a duty to accomplish</td>
           </tr>
           <tr>
             <td>
-              4. Wise
+              4. Jackpot
               <input className="form-input" type="text" value={answer.general.C.S4.student} onChange={(e) => setStudentOpenAnswer("general", "C", "S4", e.target.value)} />
             </td>
-            <td>D. To receive a thought or something that someone has given to you</td>
+            <td>D. An exact thing, right</td>
           </tr>
           <tr>
             <td>
-              5. Journey
+              5. Spot on
               <input className="form-input" type="text" value={answer.general.C.S5.student} onChange={(e) => setStudentOpenAnswer("general", "C", "S5", e.target.value)} />
             </td>
-            <td>E. Connected to a purpose or opinion very much</td>
+            <td>E. To help someone or something</td>
           </tr>
 
         </table>
         <hr />
         <table>
           <tr>
-            <td>Experience
+            <td>Martian
               <input className="form-input" type="text" value={answer.general.C.S6.student} onChange={(e) => setStudentOpenAnswer("general", "C", "S6", e.target.value)} />
             </td>
-            <td>The type of liquid change It’s form to a cold solid matter by freezing</td>
+            <td>The central part of a living thing, fruit, which contains It’s seeds</td>
           </tr>
           <tr>
             <td>
-              Ice
+            Core
               <input className="form-input" type="text" value={answer.general.C.S7.student} onChange={(e) => setStudentOpenAnswer("general", "C", "S7", e.target.value)} />
             </td>
-            <td>Practical knowledge of your own</td>
+            <td> A body in the universe, not as big as earth or most other planet</td>
           </tr>
           <tr>
             <td>
-              Bug
+            Ring
               <input className="form-input" type="text" value={answer.general.C.S8.student} onChange={(e) => setStudentOpenAnswer("general", "C", "S8", e.target.value)} />
             </td>
-            <td>The distance covered by a spaceship, airplane or a vehicle</td>
+            <td>Supposed living habitants of Mars</td>
           </tr>
           <tr>
             <td>
-              Range
+              Dwarf Planet
               <input className="form-input" type="text" value={answer.general.C.S9.student} onChange={(e) => setStudentOpenAnswer("general", "C", "S9", e.target.value)} />
             </td>
-            <td>Strength or energy</td>
+            <td>Call of a plan or decision about something</td>
           </tr>
           <tr>
             <td>
-              Force
+            Cancel
               <input className="form-input" type="text" value={answer.general.C.S10.student} onChange={(e) => setStudentOpenAnswer("general", "C", "S10", e.target.value)} />
             </td>
-            <td>An invertebrate, type of insect</td>
+            <td>A circular band</td>
           </tr>
         </table>
       </div>
@@ -305,25 +330,25 @@ export default function Quiz4() {
         D. Unscramble the words. forma yazacak. yazma bölümü.
         <br /><br /><br /><br />
 
-        <br /><br />1. Tnksiy
+        <br /><br />1. Urtren
         <input className="form-input" type="text" value={answer.general.D.S1.student} onChange={(e) => setStudentOpenAnswer("general", "D", "S1", e.target.value, true)} />
-        <br /><br />2. Teriponnuprt
+        <br /><br />2. Cergemney
         <input className="form-input" type="text" value={answer.general.D.S2.student} onChange={(e) => setStudentOpenAnswer("general", "D", "S2", e.target.value, true)} />
-        <br /><br />3. Derttecul
+        <br /><br />3. Inceeprxee
         <input className="form-input" type="text" value={answer.general.D.S3.student} onChange={(e) => setStudentOpenAnswer("general", "D", "S3", e.target.value, true)} />
-        <br /><br />4. Eyurjon
+        <br /><br />4. Rownar
         <input className="form-input" type="text" value={answer.general.D.S4.student} onChange={(e) => setStudentOpenAnswer("general", "D", "S4", e.target.value, true)} />
-        <br /><br />5. Yallfni
+        <br /><br />5. Vesamsi
         <input className="form-input" type="text" value={answer.general.D.S5.student} onChange={(e) => setStudentOpenAnswer("general", "D", "S5", e.target.value, true)} />
-        <br /><br />6. Ioqeustn
+        <br /><br />6. Vrtiaaoiltagn
         <input className="form-input" type="text" value={answer.general.D.S6.student} onChange={(e) => setStudentOpenAnswer("general", "D", "S6", e.target.value, true)} />
-        <br /><br />7. Nurdo
+        <br /><br />7. Urcloo
         <input className="form-input" type="text" value={answer.general.D.S7.student} onChange={(e) => setStudentOpenAnswer("general", "D", "S7", e.target.value, true)} />
-        <br /><br />8. Aillgev
+        <br /><br />8. Gnyhedro
         <input className="form-input" type="text" value={answer.general.D.S8.student} onChange={(e) => setStudentOpenAnswer("general", "D", "S8", e.target.value, true)} />
-        <br /><br />9. Yenveutlla
+        <br /><br />9. Ggistbe
         <input className="form-input" type="text" value={answer.general.D.S9.student} onChange={(e) => setStudentOpenAnswer("general", "D", "S9", e.target.value, true)} />
-        <br /><br />10. Olmwcee
+        <br /><br />10. Etorat
         <input className="form-input" type="text" value={answer.general.D.S10.student} onChange={(e) => setStudentOpenAnswer("general", "D", "S10", e.target.value, true)} />
       </div>
 
