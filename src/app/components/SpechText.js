@@ -55,9 +55,14 @@ export default class SpechText extends Component {
 
     render() {
         return (
-            <div className="col">
-                <button className="btn btn-dark" onClick={() => this.startListening()}>Record Your Voice</button>
-                <input type='text' value={this.state.interimText} readOnly id="speechTextInput"></input>
+            <div className="row w-100">
+                <div className="col-auto">
+                    <button className="btn btn-dark" onClick={() => this.startListening()}>Record Your Voice</button>
+
+                </div>
+                <div className="col">
+                    <input className='form-control' type='text' value={this.state.interimText} id="speechTextInput"></input>
+                </div>
             </div>
         )
     }

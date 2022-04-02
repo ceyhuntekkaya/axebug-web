@@ -41,9 +41,9 @@ export default function TaskList() {
                         tasks ?
                             tasks.map((task, key) =>
                                 taskWorks.find(cw => cw.id === task.id) ?
-                                    <Square key={key} col="2" backgroundColor="black" to={`/study/?id=${task.id}`}><h1><b>{task.name}</b></h1> </Square>
+                                    <Square key={key} col="3" backgroundColor="black" to={`/study/?id=${task.id}`}><h1><b>{task.name}</b></h1> </Square>
                                     :
-                                    <Square key={key} col="2" backgroundColor="white"><h1><b>{task.name}</b></h1> </Square>
+                                    <Square key={key} col="3" backgroundColor="white"><h1><b>{task.name}</b></h1> </Square>
                             )
                             : null
                     }
