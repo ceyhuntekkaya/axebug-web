@@ -39,27 +39,7 @@ export default function Quiz2() {
   }
   return (
     <div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      AXE QUIZ CHAPTER 1 EPISODE 1
+      AXE QUIZ CHAPTER 1 EPISODE 2
       <div className='container'>
         A. Choose the correct answer
         <div className='row'>
@@ -89,8 +69,6 @@ export default function Quiz2() {
             </label>
           </div>
         </div>
-
-
         <div className='row'>
           2. Dung Beetle says “Wouldn’t it be enough if we just .................?”
           <div className="form-check">

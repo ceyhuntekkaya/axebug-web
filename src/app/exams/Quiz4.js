@@ -39,24 +39,8 @@ export default function Quiz4() {
   }
   return (
     <div>
-      AXE QUIZ CHAPTER 1 EPISODE 1
+      AXE QUIZ CHAPTER 1 EPISODE 4
       <div className='container'>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         A. Choose the correct answer
         <div className='row'>
           1. ................. is the second closest planet to the Sun.
@@ -238,9 +222,6 @@ export default function Quiz4() {
         <input className="form-input" type="text" value={answer.general.B.S13.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S13", e.target.value, true)} />. Wooohooo!!!
         <br /><br />Axebug:
         <input className="form-input" type="text" value={answer.general.B.S14.student} onChange={(e) => setStudentOpenAnswer("general", "B", "S14", e.target.value, true)} />
-
-
-
 
       </div>
 

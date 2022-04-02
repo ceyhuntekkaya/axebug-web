@@ -38,7 +38,7 @@ export default function Quiz3() {
   }
   return (
     <div>
-      AXE QUIZ CHAPTER 1 EPISODE 1
+      AXE QUIZ CHAPTER 1 EPISODE 3
       <div className='container'>
         A. Choose the correct answer
         <div className='row'>

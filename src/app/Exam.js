@@ -1,31 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import OpticalForm from './components/OpticalForm';
+import { useParams } from 'react-router-dom';
 import Exam1 from './exams/Exam1';
 import Quiz1 from './exams/Quiz1';
-import MultiSelection from './questionTypes/MultiSelection';
 
 export default function Exam() {
-    const [questions, setQestions] = useState([]);
-    const [selectedQuestions, setSelectedQestions] = useState({ number: 0, type: "" });
+    let { id } = useParams();
+    console.log(id)
 
-    useEffect(() => {
-        const questionList = [];
-        for (var i = 0; i < 20; i++) {
-            const question = { number: (i + 1), type: "multi" }
-            questionList.push(question)
-        }
-        setQestions(questionList);
 
-    }, [])
-
-    const nextQuestions = () => {
-
-    }
-
-    const prevQuestions = () => {
-
-    }
     return <Quiz1/>
     /*
     return <React.Fragment>
