@@ -3,7 +3,6 @@ import Square from './components/Square';
 import { Link } from 'react-router-dom';
 import useStudentWork from '../api/useStudentWork'
 
-
 export default function ExamList() {
 
     const [studentWorkTaskList, setStudentWorkApi] = useStudentWork(null);
@@ -58,7 +57,7 @@ export default function ExamList() {
                     {
                         examList.map((exam, key) =>
                             exam.ready === true ?
-                                <Square col="3" key={key} to={`app/exam/${exam.id}`} backgroundColor="black"><h1><b>{exam.name}</b></h1> </Square>
+                                <Square col="3" key={key} to={`../../app/exam/${exam.id}`} backgroundColor="black"><h1><b>{exam.name}</b></h1> </Square>
                                 :
                                 <Square col="3" key={key} backgroundColor="white"><h1><b>{exam.name}</b></h1> </Square>
                         )

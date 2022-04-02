@@ -1,374 +1,421 @@
 {
-    "general":{
-        "A":{
-            "S1": {
-                "student": "",
-                "answer": "D",
-                "weigth": 1.4,
-                "score": 0,
-                "method": "",
-                "function": "E8",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "C",
-                "weigth": 1.4,
-                "score": 0,
-                "method": "",
-                "function": "E8",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "A",
-                "weigth": 1.4,
-                "score": 0,
-                "method": "",
-                "function": "E8",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "C",
-                "weigth": 1.4,
-                "score": 0,
-                "method": "",
-                "function": "E8",
-                "functionScore": false
-            },
-            "S5": {
-                "student": "",
-                "answer": "A",
-                "weigth": 1.4,
-                "score": 0,
-                "method": "",
-                "function": "E8",
-                "functionScore": false
-            }
-        },
-        "B":{
-            "S1": {
-                "student": "",
-                "answer": "personal stuff.",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "set off",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "Clothes?",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "Brought",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S5": {
-                "student": "",
-                "answer": "each of you.",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S6": {
-                "student": "",
-                "answer": "And",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S7": {
-                "student": "",
-                "answer": "But whatever…",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S8": {
-                "student": "",
-                "answer": "seated.",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S9": {
-                "student": "",
-                "answer": "control panel",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S10": {
-                "student": "",
-                "answer": "start",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S11": {
-                "student": "",
-                "answer": "Hold tight!",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            }
-        },
-        "C":{
-            "S1": {
-                "student": "",
-                "answer": "C",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "E",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "A",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "B",
-                "weigth": 0,
-                "score": 0,
-                "method": "",
-                "function": "",
-                "functionScore": false
-            },
-            "S5": {
-                "student": "",
-                "answer": "D",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S6": {
-                "student": "",
-                "answer": "A common type of fly that lives in people’s houses.",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S7": {
-                "student": "",
-                "answer": "To change you opinion.",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S8": {
-                "student": "",
-                "answer": "A little look at something.",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S9": {
-                "student": "",
-                "answer": "Something spoken truly or not truly.",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S10": {
-                "student": "",
-                "answer": "Dificult to understand.",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            }
-        },
-        "D":{
-            "S1": {
-                "student": "",
-                "answer": "Adventuruous",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "Curious",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "Personal",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "Pyjamas",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S5": {
-                "student": "",
-                "answer": "Launch",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S6": {
-                "student": "",
-                "answer": "Require",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S7": {
-                "student": "",
-                "answer": "Butterfly",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S8": {
-                "student": "",
-                "answer": "Kidding",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S9": {
-                "student": "",
-                "answer": "Metal",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S10": {
-                "student": "",
-                "answer": "Proof",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            }
-        },
-        "E":{
-            "S1": {
-                "student": "",
-                "answer": "WHAT’S YOUR DECISION?",
-                "weigth": 10,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "IT WILL BE A GREAT ADVENTURE",
-                "weigth": 10,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "COME ON OF COURSE I HAD TO TAKE THEM WITH ME",
-                "weigth": 10,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "COME ON ALL ABOARD",
-                "weigth": 10,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            }
-        }
-    }
+    "result": [
+        [
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "D",
+                    "weigth": 1.4,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "C",
+                    "weigth": 1.4,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 1.4,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "C",
+                    "weigth": 1.4,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 1.4,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "personal stuff.",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "set off",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Clothes?",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Brought",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "each of you.",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "And",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "But whatever…",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "seated.",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "control panel",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "start",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Hold tight!",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "C",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "E",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "B",
+                    "weigth": 0,
+                    "score": 0,
+                    "method": "",
+                    "function": "",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A common type of fly that lives in people’s houses.",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "To change you opinion.",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A little look at something.",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Something spoken truly or not truly.",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Dificult to understand.",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Adventuruous",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Curious",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Personal",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Pyjamas",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Launch",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Require",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Butterfly",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Kidding",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Metal",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Proof",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "WHAT’S YOUR DECISION?",
+                    "weigth": 10,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "IT WILL BE A GREAT ADVENTURE",
+                    "weigth": 10,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "COME ON OF COURSE I HAD TO TAKE THEM WITH ME",
+                    "weigth": 10,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "COME ON ALL ABOARD",
+                    "weigth": 10,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                }
+            ]
+        ]
+    ]
 }

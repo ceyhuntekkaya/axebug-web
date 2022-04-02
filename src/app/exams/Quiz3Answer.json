@@ -1,402 +1,448 @@
 {
-    "general":{
-        "A":{
-            "S1": {
-                "student": "",
-                "answer": "D",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E8",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "C",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E10",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "B",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E10",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "C",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E11",
-                "functionScore": false
-            },
-            "S5": {
-                "student": "",
-                "answer": "A",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            }
-        },
-        "B":{
-            "S1": {
-                "student": "",
-                "answer": "Do",
-                "weigth": 2,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "day.",
-                "weigth": 2,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "Suddenly",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "Calm down",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S5": {
-                "student": "",
-                "answer": "Behind",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S6": {
-                "student": "",
-                "answer": "Ready.",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S7": {
-                "student": "",
-                "answer": "you.",
-                "weigth": 2,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S8": {
-                "student": "",
-                "answer": "All right then",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S9": {
-                "student": "",
-                "answer": "Until",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S10": {
-                "student": "",
-                "answer": "Spectacular.",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S11": {
-                "student": "",
-                "answer": "Just",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S12": {
-                "student": "",
-                "answer": "Imagined.",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S13": {
-                "student": "",
-                "answer": "located",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S14": {
-                "student": "",
-                "answer": "revolving",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            }
-
-        },
-        "C":{
-            "S1": {
-                "student": "",
-                "answer": "C",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "E",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "A",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "B",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S5": {
-                "student": "",
-                "answer": "D",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S6": {
-                "student": "",
-                "answer": "All very quick.",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S7": {
-                "student": "",
-                "answer": "Very dark.",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S8": {
-                "student": "",
-                "answer": "To find a place or a location.",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S9": {
-                "student": "",
-                "answer": "Move in a circular shape.",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S10": {
-                "student": "",
-                "answer": "Something being very impressive or thrilling.",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            }
-        },
-        "D":{
-            "S1": {
-                "student": "",
-                "answer": "Imagine",
-                "weigth": 0,
-                "score": 0,
-                "method": "",
-                "function": "",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "Source",
-                "weigth": 0,
-                "score": 0,
-                "method": "",
-                "function": "",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "Spectacular",
-                "weigth": 0,
-                "score": 0,
-                "method": "",
-                "function": "",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "Closest",
-                "weigth": 0,
-                "score": 0,
-                "method": "",
-                "function": "",
-                "functionScore": false
-            },
-            "S5": {
-                "student": "",
-                "answer": "Center",
-                "weigth": 0,
-                "score": 0,
-                "method": "",
-                "function": "",
-                "functionScore": false
-            },
-            "S6": {
-                "student": "",
-                "answer": "Suddenly",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S7": {
-                "student": "",
-                "answer": "Dizzy",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S8": {
-                "student": "",
-                "answer": "Behind",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S9": {
-                "student": "",
-                "answer": "Planets",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S10": {
-                "student": "",
-                "answer": "Revolving",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            }
-        },
-        "E":{
-            "S1": {
-                "student": "",
-                "answer": "NOW OPEN YOUR EYES",
-                "weigth": 9,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "IT’S JUST LIKE I IMAGINED",
-                "weigth": 9,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "IT IS THE FASTEST PLANET",
-                "weigth": 9,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "THE ONLY SATELLITE IT HAS IS THE MOON",
-                "weigth": 9,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            }
-        }
-    }
+    "result": [
+        [
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "C",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E10",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "B",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E10",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "C",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E11",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Do",
+                    "weigth": 2,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "day.",
+                    "weigth": 2,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Suddenly",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Calm down",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Behind",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Ready.",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "you.",
+                    "weigth": 2,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "All right then",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Until",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Spectacular.",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Just",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Imagined.",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "located",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "revolving",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "C",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "E",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "B",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "All very quick.",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Very dark.",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "To find a place or a location.",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Move in a circular shape.",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Something being very impressive or thrilling.",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Imagine",
+                    "weigth": 0,
+                    "score": 0,
+                    "method": "",
+                    "function": "",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Source",
+                    "weigth": 0,
+                    "score": 0,
+                    "method": "",
+                    "function": "",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Spectacular",
+                    "weigth": 0,
+                    "score": 0,
+                    "method": "",
+                    "function": "",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Closest",
+                    "weigth": 0,
+                    "score": 0,
+                    "method": "",
+                    "function": "",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Center",
+                    "weigth": 0,
+                    "score": 0,
+                    "method": "",
+                    "function": "",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Suddenly",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Dizzy",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Behind",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Planets",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Revolving",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "NOW OPEN YOUR EYES",
+                    "weigth": 9,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "IT’S JUST LIKE I IMAGINED",
+                    "weigth": 9,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "IT IS THE FASTEST PLANET",
+                    "weigth": 9,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "THE ONLY SATELLITE IT HAS IS THE MOON",
+                    "weigth": 9,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                }
+            ]
+        ]
+    ]
 }

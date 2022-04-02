@@ -1,383 +1,421 @@
 {
-    "general": {
-        "A": {
-            "S1": {
-                "student": "",
-                "answer": "D",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E1",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "C",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E2",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "B",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E3",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "B",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E4",
-                "functionScore": false
-            },
-            "S5": {
-                "student": "",
-                "answer": "D",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E5",
-                "functionScore": false
-            }
-        },
-        "B": {
-            "S1": {
-                "student": "",
-                "answer": "question",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "cube!",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "kidding!",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "exciting.",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S5": {
-                "student": "",
-                "answer": "Shall we?",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S6": {
-                "student": "",
-                "answer": "high water.",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S7": {
-                "student": "",
-                "answer": "please…",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S8": {
-                "student": "",
-                "answer": "a lot.",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S9": {
-                "student": "",
-                "answer": "Follow me…",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S10": {
-                "student": "",
-                "answer": "behind this door…",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S11": {
-                "student": "",
-                "answer": "ladder.",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S12": {
-                "student": "",
-                "answer": "welcome! ZZZ55.",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            }
-        },
-        "C": {
-            "S1": {
-                "student": "",
-                "answer": "C",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "E",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "D",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "A",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S5": {
-                "student": "",
-                "answer": "B",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S6": {
-                "student": "",
-                "answer": "Practical knowledge of your own",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S7": {
-                "student": "",
-                "answer": "The type of liquid change It’s form to a cold solid matter by freezing",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S8": {
-                "student": "",
-                "answer": "An invertebrate, type of insect",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S9": {
-                "student": "",
-                "answer": "The distance covered by a spaceship, airplane or a vehicle ",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S10": {
-                "student": "",
-                "answer": "Strength or energy",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            }
-        },
-        "D": {
-            "S1": {
-                "student": "",
-                "answer": "Stinky",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "Interruption",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "Cluttered",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "Journey",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S5": {
-                "student": "",
-                "answer": "Finally",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S6": {
-                "student": "",
-                "answer": "Question",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S7": {
-                "student": "",
-                "answer": "Round",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S8": {
-                "student": "",
-                "answer": "Village",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S9": {
-                "student": "",
-                "answer": "Eventually",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S10": {
-                "student": "",
-                "answer": "Welcome",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            }
-        },
-        "E": {
-            "S1": {
-                "student": "",
-                "answer": "SORRY, I GOT CONFUSED",
-                "weigth": 10,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "HE IS THE WISEST PERSON IN OUR TOWN",
-                "weigth": 10,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "THIS WAY PLEASE",
-                "weigth": 10,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "IT LOOKS LIKE A HUGE HOUSEFLY MADE OF METAL",
-                "weigth": 10,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            }
-        }
-    }
+    "result": [
+        [
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "C",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E2",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "B",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E3",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "B",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E4",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E5",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "",
+                    "weigth": 0,
+                    "score": 0,
+                    "method": "",
+                    "function": "",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "question",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "cube!",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "kidding!",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "exciting.",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Shall we?",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "high water.",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "please…",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "a lot.",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Follow me…",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "behind this door…",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "ladder.",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "welcome! ZZZ55.",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "",
+                    "weigth": 0,
+                    "score": 0,
+                    "method": "",
+                    "function": "",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "C",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "E",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "B",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Practical knowledge of your own",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "The type of liquid change It’s form to a cold solid matter by freezing",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "An invertebrate, type of insect",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "The distance covered by a spaceship, airplane or a vehicle ",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Strength or energy",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "",
+                    "weigth": 0,
+                    "score": 0,
+                    "method": "",
+                    "function": "",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Stinky",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Interruption",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Cluttered",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Journey",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Finally",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Question",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Round",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Village",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Eventually",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Welcome",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "",
+                    "weigth": 0,
+                    "score": 0,
+                    "method": "",
+                    "function": "",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "SORRY, I GOT CONFUSED",
+                    "weigth": 10,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "HE IS THE WISEST PERSON IN OUR TOWN",
+                    "weigth": 10,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "THIS WAY PLEASE",
+                    "weigth": 10,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "IT LOOKS LIKE A HUGE HOUSEFLY MADE OF METAL",
+                    "weigth": 10,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                }
+            ]
+        ]
+    ]
 }

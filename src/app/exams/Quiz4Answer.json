@@ -1,402 +1,448 @@
 {
-    "general":{
-        "A":{
-            "S1": {
-                "student": "",
-                "answer": "A",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E10",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "A",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E10",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "D",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E10",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "C",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E10",
-                "functionScore": false
-            },
-            "S5": {
-                "student": "",
-                "answer": "B",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E10",
-                "functionScore": false
-            }
-        },
-        "B":{
-            "S1": {
-                "student": "",
-                "answer": "magnesium, alluminium, titanium.",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "enough",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "experience.",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "no life",
-                "weigth": 2,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S5": {
-                "student": "",
-                "answer": "Earth.",
-                "weigth": 2,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S6": {
-                "student": "",
-                "answer": "solar system.",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S7": {
-                "student": "",
-                "answer": "unknown",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S8": {
-                "student": "",
-                "answer": "for me?",
-                "weigth": 2,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S9": {
-                "student": "",
-                "answer": "look",
-                "weigth": 2,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S10": {
-                "student": "",
-                "answer": "No way!",
-                "weigth": 2,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S11": {
-                "student": "",
-                "answer": "please",
-                "weigth": 2,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S12": {
-                "student": "",
-                "answer": "call.",
-                "weigth": 2,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S13": {
-                "student": "",
-                "answer": "found life in space.",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S14": {
-                "student": "",
-                "answer": "Lets go and find out.",
-                "weigth": 3,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            }
-
-        },
-        "C":{
-            "S1": {
-                "student": "",
-                "answer": "C",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "A",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "E",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "B",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S5": {
-                "student": "",
-                "answer": "D",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S6": {
-                "student": "",
-                "answer": "Supposed living habitants of Mars.",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S7": {
-                "student": "",
-                "answer": "The central part of a living thing, fruit, which contains It’s seeds.",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S8": {
-                "student": "",
-                "answer": "A circular band.",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S9": {
-                "student": "",
-                "answer": "A body in the universe, not as big as earth or most other planet.",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S10": {
-                "student": "",
-                "answer": "Call of a plan or decision about something.",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            }
-        },
-        "D":{
-            "S1": {
-                "student": "",
-                "answer": "Return",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "Emergency",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "Experience",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "Narrow",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S5": {
-                "student": "",
-                "answer": "Massive",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S6": {
-                "student": "",
-                "answer": "Gravitational",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S7": {
-                "student": "",
-                "answer": "Colour",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S8": {
-                "student": "",
-                "answer": "Hydrogen",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S9": {
-                "student": "",
-                "answer": "Biggest",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            },
-            "S10": {
-                "student": "",
-                "answer": "Rotate",
-                "weigth": 1,
-                "score": 0,
-                "method": "",
-                "function": "E6",
-                "functionScore": false
-            }
-        },
-        "E":{
-            "S1": {
-                "student": "",
-                "answer": "IT HAS A RING SYSTEM",
-                "weigth": 10,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S2": {
-                "student": "",
-                "answer": "IT SHOULD BE LARGE AND GLOBAL",
-                "weigth": 10,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S3": {
-                "student": "",
-                "answer": "SO WE WILL SEE IT MORE CLEARLY",
-                "weigth": 10,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            },
-            "S4": {
-                "student": "",
-                "answer": "THIS WAS AN AMAZING EXPERIENCE",
-                "weigth": 10,
-                "score": 0,
-                "method": "",
-                "function": "E7",
-                "functionScore": false
-            }
-        }
-    }
+    "result": [
+        [
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E10",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E10",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E10",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "C",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E10",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "B",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E10",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "magnesium, alluminium, titanium.",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "enough",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "experience.",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "no life",
+                    "weigth": 2,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Earth.",
+                    "weigth": 2,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "solar system.",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "unknown",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "for me?",
+                    "weigth": 2,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "look",
+                    "weigth": 2,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "No way!",
+                    "weigth": 2,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "please",
+                    "weigth": 2,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "call.",
+                    "weigth": 2,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "found life in space.",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Lets go and find out.",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "C",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "E",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "B",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Supposed living habitants of Mars.",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "The central part of a living thing, fruit, which contains It’s seeds.",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A circular band.",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A body in the universe, not as big as earth or most other planet.",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Call of a plan or decision about something.",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Return",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Emergency",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Experience",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Narrow",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Massive",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Gravitational",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Colour",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Hydrogen",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Biggest",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Rotate",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "IT HAS A RING SYSTEM",
+                    "weigth": 10,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "IT SHOULD BE LARGE AND GLOBAL",
+                    "weigth": 10,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "SO WE WILL SEE IT MORE CLEARLY",
+                    "weigth": 10,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "THIS WAS AN AMAZING EXPERIENCE",
+                    "weigth": 10,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                }
+            ]
+        ]
+    ]
 }
