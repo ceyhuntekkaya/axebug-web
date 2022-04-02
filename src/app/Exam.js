@@ -82,10 +82,7 @@ export default function Exam() {
 
     return (
         <React.Fragment>
-            <div className='container'>
-                <div className="card mt-5 mb-5" style={{ width: "18rem;" }}>
-
-                    <div className="card-body p-5">
+          
 
 
 
@@ -104,10 +101,6 @@ export default function Exam() {
                         {
                             examName === "Quiz 4" ? <Quiz4 /> : null
                         }
-
-                    </div>
-                </div>
-            </div>
 
 
         </React.Fragment>
