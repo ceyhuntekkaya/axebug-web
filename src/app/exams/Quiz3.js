@@ -5,6 +5,7 @@ var stringSimilarity = require("string-similarity");
 const answerEmpty = require('./Quiz3Answer.json');
 
 export default function Quiz3() {
+  const [answer, setAnswer] = useState({ ...answerEmpty })
 
   const setStudentOpenAnswer = (skils, section, queationNumber, value, compare) => {
     const temp = { ...answer };
