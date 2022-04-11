@@ -1,0 +1,66 @@
+version: '3.5'
+
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:9.6.23
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-keycloak}
+    networks:
+      - axebug-network
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4:5
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    networks:
+      - axebug-network
+    #    volumes:
+    #      - D:\volumes\pgadmin:/var/lib/pgadmin
+    ports:
+      - "${PGADMIN_PORT:-15033}:80"
+
+  keycloak:
+    container_name: keycloak
+    image: epiphanyplatform/keycloak:14.0.0
+    environment:
+      DB_VENDOR: POSTGRES
+      DB_ADDR: postgres
+      DB_DATABASE: ${POSTGRES_DB:-keycloak}
+      DB_USER: ${POSTGRES_USER:-postgres}
+      DB_SCHEMA: public
+      DB_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      KEYCLOAK_USER: ${KEYCLOAK_USER:-admin}
+      KEYCLOAK_PASSWORD: ${KEYCLOAK_PASSWORD:-admin}
+    networks:
+      - axebug-network
+    ports:
+      - "${KEYCLOAK_PORT:-9090}:8080"
+    depends_on:
+      - postgres
+    restart: always
+
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3.9.11-management
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin
+    networks:
+      - axebug-network
+    ports:
+      - "${RABBITMQ_PORT:-5672}:5672"
+      - "${RABBITMQ_PANEL_PORT:-15034}:15672"
+#    volumes:
+#      - D:\volumes\pgadmin:/var/lib/pgadmin
+
+networks:
+  axebug-network:
+    name: axebug-network

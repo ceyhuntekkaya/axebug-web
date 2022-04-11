@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: axebug-web
+    image: axebug-web:0.1.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - 3001:3000
