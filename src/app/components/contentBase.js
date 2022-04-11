@@ -58,7 +58,7 @@ export default function ContentBase(props) {
         clearValues()
     }
 
-    const clearValues=()=>{
+    const clearValues = () => {
         settxtValue("");
         setSpeechValue(0)
     }
@@ -67,24 +67,24 @@ export default function ContentBase(props) {
         clearValues();
     }, [level])
 
-    
+
 
     return (
         <div className="card">
             <div className='row m-2'>
-                <div className='col-4 boxDark'><h3><b><Link to="/student" style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link></b></h3></div>
+                <div className='col-4 boxDark d-flex justify-content-center'><h3><b><Link to="/student" style={{ color: "white", textDecoration: "none" }}> AXEBUG DIGITAL</Link></b></h3></div>
                 <div className="col-8 btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                     <div className="btn-group mr-2 w-100" role="group" aria-label="First group">
-                        <button type="button" className={`btn btn-${level === 1 ? "dark" : "secondary"}`} onClick={() => setLevel(1)}>Listen & Speak</button>
-                        <button type="button" className={`btn btn-${level === 2 ? "dark" : "secondary"}`} onClick={() => setLevel(2)}>Read & Speak</button>
-                        <button type="button" className={`btn btn-${level === 3 ? "dark" : "secondary"}`} onClick={() => setLevel(3)}>Listen & Write</button>
-                        <button type="button" className={`btn btn-${level === 4 ? "dark" : "secondary"}`} onClick={() => setLevel(4)}>Read & Write</button>
+                        <button type="button" className={`btn btn-${level === 1 ? "success" : "secondary"}`} onClick={() => setLevel(1)}>Listen & Speak</button>
+                        <button type="button" className={`btn btn-${level === 2 ? "warning" : "secondary"}`} onClick={() => setLevel(2)}>Read & Speak</button>
+                        <button type="button" className={`btn btn-${level === 3 ? "primary" : "secondary"}`} onClick={() => setLevel(3)}>Listen & Write</button>
+                        <button type="button" className={`btn btn-${level === 4 ? "danger" : "secondary"}`} onClick={() => setLevel(4)}>Read & Write</button>
                     </div>
                 </div>
             </div>
             <div className='row m-2'>
-                <div className='col-4 boxWhite mr-5'><h3><b>AXE4SKILS</b></h3></div>
-                <div className='col-8 boxDark ml-5'><h4>Listen to the audio. Then, repeat the sentences clearly.</h4></div>
+                <div className='col-4 boxWhite mr-5 d-flex justify-content-center'><h3><b>AXE4SKILS</b></h3></div>
+                <div className='col-8 boxDark ml-5 d-flex justify-content-center'><h4>Listen to the audio. Then, repeat the sentences clearly.</h4></div>
             </div>
             <div className="card-body">
 
@@ -97,31 +97,41 @@ export default function ContentBase(props) {
                     }
                     {
                         level === 1 ?
-                            <img src={`../assets/${selectedContent.imageFullUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} /> : null
+                            <div className="d-flex justify-content-center">
+                                <img src={`../assets/${selectedContent.imageEmptyUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} />
+                            </div>
+                            : null
                     }
                     {
                         level === 2 || level === 4 ?
-                            <img src={`../assets/${selectedContent.imageEmptyUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} /> : null
+                            <div className="d-flex justify-content-center">
+                                <img src={`../assets/${selectedContent.imageFullUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} />
+                            </div>
+
+                            : null
                     }
-                    {
-                        level === 4 ?
-                            <div className="alert alert-secondary mt-2" role="alert">
-                                {selectedContent.text}
-                            </div> : null
-                    }
+
                     {
                         level === 3 || level === 4 ?
-                            <div className="mb-3">
-                                <label htmlFor="txt" className="form-label">Write text...</label>
-                                <input type="text" className="form-control" id="txt" placeholder="Write text..." 
-                                value={txtValue} onChange={(e) => settxtValue(e.target.value)} />
-                                <button className='btn btn-success' onClick={()=> getSpeechText(txtValue)}>Check Text</button>
+                            <div className="mb-3 mt-2">
+
+                                <div className='row'>
+                                    <div className='col'>
+                                        <input type="text" className="form-control" id="txt" placeholder="Write text..."
+                                            value={txtValue} onChange={(e) => settxtValue(e.target.value)} />
+                                    </div>
+                                    <div className='col-auto'> <button className='btn btn-success' onClick={() => getSpeechText(txtValue)}>Check Text</button></div>
+                                </div>
                             </div> : null
                     }
                 </div>
                 <div>
-                    <div className='row  mt-3'>
-                        <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} value={speechValue} id="file" max="100"> 78% </progress>
+                    <div className='row m-1 mt-2'>
+                        <div className="progress col" style={{ height: "30px" }}>
+                            <div className="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                                role="progressbar" style={{ width: speechValue + "%" }}
+                                aria-valuenow={speechValue} aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                         <div className='col-auto' style={{ height: 30 }}><h2>% {speechValue}</h2></div>
                     </div>
                 </div>
@@ -130,12 +140,17 @@ export default function ContentBase(props) {
                         level === 1 || level === 2 ?
                             <SpechText getSpeechText={getSpeechText} /> : null
                     }
-                    {
-                        level > 1 ?
-                            <div className="col"><button className="btn btn-dark" onClick={prevtExersize}>Prev</button></div>
-                            : null
-                    }
-                    <div className="col"><button className="btn btn-dark" onClick={nextExersize}>{level === 4 ? "Next Panel" : "Next"}</button></div>
+
+                    <div className='row mt-2'>
+                        {
+                            level > 1 ?
+                                <div className='col-auto'><button className="btn btn-success" onClick={prevtExersize}>Prev</button></div>
+                                : null
+                        }
+                        <div className='col-auto'><button className="btn btn-success pl-2" onClick={nextExersize}>{level === 4 ? "Next Panel" : "Next"}</button></div>
+
+                    </div>
+
                 </div>
             </div>
         </div>

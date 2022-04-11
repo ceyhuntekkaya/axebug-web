@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Square from './components/Square';
 import useStudentWork from '../api/useStudentWork'
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+
 
 const scoreModel = {
   examScore: 0,
@@ -18,7 +21,7 @@ export default function Student() {
   const [studentScore, setStudentScore] = useStudentWork(scoreModel);
 
   useEffect(() => {
-    document.body.style.backgroundColor = 'white'; // '#231F20';
+    document.body.style.backgroundColor = '#eeeeee'; // '#231F20';
     const studentData = JSON.parse(localStorage.getItem("student"));
     setStudent(studentData);
     setStudentWorkApi("studentActiveTask", studentData.id)
@@ -51,82 +54,102 @@ export default function Student() {
 
   const myAvatar = () => {
     return (
-      <div className='mt-4'><img src={`assets/${student.avatar}`} style={{ width: "100%", backgroundColor: "black" }} alt='Avatar' /></div>)
+      <div className='d-flex justify-content-end mt-4'><img src={`assets/${student.avatar}`} style={{ height: "140px", backgroundColor: "black" }} alt='Avatar' /></div>)
   }
   const contentMenu = () => {
     return (<React.Fragment>
-      <div className="row mt-5">
+      <div className="row mt-2" style={{paddingLeft: "8px", paddingRight: "8px"}}>
         <Square col="3" backgroundColor="black"><b>MISSIONS</b> </Square>
-        <Square col="3" backgroundColor="white" to="/exam"><b>EXAM</b></Square>
-        <Square col="3" backgroundColor="white" to="/quiz"><b>QUIZ</b></Square>
-        <Square col="3" backgroundColor="white" to="/chapter"><b>AXE4SKILS</b></Square>
+        <Square col="3" backgroundColor="pink" to="/exam"><b>EXAM</b></Square>
+        <Square col="3" backgroundColor="lightblue" to="/quiz"><b>QUIZ</b></Square>
+        <Square col="3" backgroundColor="lightgreen" to="/chapter"><b>AXE4SKILS</b></Square>
       </div>
-      <div className="row">
+      <div className="row" style={{paddingLeft: "8px", paddingRight: "8px"}}>
         <Square col="3" backgroundColor="black"><b>MATERIALS</b></Square>
-        <Square col="3" backgroundColor="white" to="/wordbank"><b>WORDBANK</b></Square>
-        <Square col="3" backgroundColor="white" to="/speling"><b>SPELLING</b></Square>
+        <Square col="3" backgroundColor="orange" to="/wordbank"><b>WORDBANK</b></Square>
+        <Square col="3" backgroundColor="yellow" to="/speling"><b>SPELLING</b></Square>
       </div>
-      <div className="row">
+      <div className="row" style={{paddingLeft: "8px", paddingRight: "8px"}}>
         <Square col="3" backgroundColor="black"><b>SCORBOARD</b></Square>
-        <Square col="3" backgroundColor="white" to="/report"><b>REPORT</b></Square>
+        <Square col="3" backgroundColor="lightgray" to="/report"><b>REPORT</b></Square>
       </div>
 
     </React.Fragment>)
   }
   const scoreBoard = () => {
     return (
-      <div className="border border-2 border-dark p-2 mt-2" style={{ backgroundColor: "black", color: "white" }}>
-        <div className='row'><h1>SCORE BOARD</h1></div>
-
+      <div className="border border-2 border-dark p-2 mt-3" style={{ backgroundColor: "black", color: "white" }}>
+        <div className='d-flex justify-content-center mt-3' style={{ fontWeight: "bold" }}><h1>SCORE BOARD</h1></div>
+        <hr />
         {
           studentScore ?
             <React.Fragment>
-              <div className='row  mt-3'>
-                <div>EXAM SCORE</div>
-                <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} value={parseInt(studentScore.examScore)} max="100"> 78% </progress>
-                <div className='col-auto' style={{ height: 30 }}><h2>% {parseInt(studentScore.examScore)}</h2></div>
+              <div className='row  m-3'>
+                <div className='col-6'>
+                  <h2>EXAM SCORE : {parseInt(studentScore.examScore)}</h2>
+                  <div className="progress" style={{ height: "30px" }}>
+                    <div className="progress-bar progress-bar-striped progress-bar-animated"
+                      role="progressbar" style={{ width: parseInt(studentScore.examScore) + "%" }}
+                      aria-valuenow={parseInt(studentScore.examScore)} aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div className='col-6'>
+                  <h2>QUIZ SCORE : {parseInt(studentScore.quizScore)}</h2>
+                  <div className="progress" style={{ height: "30px" }}>
+                    <div className="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                      role="progressbar" style={{ width: parseInt(studentScore.quizScore) + "%" }}
+                      aria-valuenow={parseInt(studentScore.quizScore)} aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+
+              <div className='row m-3'>
+                <h2>AXE 4 SKILLS SCORE : {parseInt(studentScore.skillsScore)}</h2>
+                <div className="progress" style={{ height: "30px" }}>
+                  <div className="progress-bar progress-bar-striped bg-info progress-bar-animated"
+                    role="progressbar" style={{ width: parseInt(studentScore.skillsScore) + "%" }}
+                    aria-valuenow={parseInt(studentScore.skillsScore)} aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
               </div>
 
-              <div className='row  mt-3'>
-                <div>QUIZ SCORE</div>
-                <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} value={parseInt(studentScore.quizScore)} max="100"> 78% </progress>
-                <div className='col-auto' style={{ height: 30 }}><h2>% {parseInt(studentScore.quizScore)}</h2></div>
+              <div className='row m-4'>
+
+                <div className='col-3'>
+                  <div className='d-flex justify-content-center'>
+                    <h4>SPEAKING</h4>
+                  </div>
+                  <CircularProgressbar value={parseInt(studentScore.speakingScore)} text={`${parseInt(studentScore.speakingScore)}%`} />
+                </div>
+                <div className='col-3'>
+                  <div className='d-flex justify-content-center'>
+                    <h4>READING</h4>
+                  </div>
+                  <CircularProgressbar value={parseInt(studentScore.readScore)} text={`${parseInt(studentScore.readScore)}%`} />
+                </div>
+                <div className='col-3'>
+                  <div className='d-flex justify-content-center'>
+                    <h4>WRITTING</h4>
+                  </div>
+                  <CircularProgressbar value={parseInt(studentScore.writeScore)} text={`${parseInt(studentScore.writeScore)}%`} />
+                </div>
+                <div className='col-3'>
+                  <div className='d-flex justify-content-center'>
+                    <h4>LISTENING</h4>
+                  </div>
+                  <CircularProgressbar value={parseInt(studentScore.listeningScore)} text={`${parseInt(studentScore.listeningScore)}%`} />
+                </div>
               </div>
 
-              <div className='row  mt-3'>
-                <div>AXE 4 SKILLS SCORE</div>
-                <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} value={parseInt(studentScore.skillsScore)} max="100"> 78% </progress>
-                <div className='col-auto' style={{ height: 30 }}><h2>% {parseInt(studentScore.skillsScore)}</h2></div>
-              </div>
+              <hr />
 
-              <div className='row  mt-3'>
-                <div>SPEAKING</div>
-                <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} value={parseInt(studentScore.speakingScore)} max="100"> 78% </progress>
-                <div className='col-auto' style={{ height: 30 }}><h2>% {parseInt(studentScore.speakingScore)}</h2></div>
-              </div>
-
-              <div className='row  mt-3'>
-                <div>READING</div>
-                <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} value={parseInt(studentScore.readScore)} max="100"> 78% </progress>
-                <div className='col-auto' style={{ height: 30 }}><h2>% {parseInt(studentScore.readScore)}</h2></div>
-              </div>
-
-              <div className='row  mt-3'>
-                <div>WRITTING</div>
-                <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} value={parseInt(studentScore.writeScore)} max="100"> 78% </progress>
-                <div className='col-auto' style={{ height: 30 }}><h2>% {parseInt(studentScore.writeScore)}</h2></div>
-              </div>
-
-              <div className='row  mt-3'>
-                <div>LISTENING</div>
-                <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} value={parseInt(studentScore.listeningScore)} max="100"> 78% </progress>
-                <div className='col-auto' style={{ height: 30 }}><h2>% {parseInt(studentScore.listeningScore)}</h2></div>
-              </div>
-
-              <div className='row  mt-3'>
-                <div>OVERALL SCORE</div>
-                <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} value={parseInt(studentScore.skillsScore)} max="100"> 78% </progress>
-                <div className='col-auto' style={{ height: 30 }}><h2>% {parseInt(studentScore.skillsScore)}</h2></div>
+              <div className='row  m-3 mb-5'>
+                <h2>OVERALL SCORE : {parseInt(studentScore.skillsScore)}</h2>
+                <div className="progress" style={{ height: "30px" }}>
+                  <div className="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                    role="progressbar" style={{ width: parseInt(studentScore.skillsScore) + "%" }}
+                    aria-valuenow={parseInt(studentScore.skillsScore)} aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
               </div>
             </React.Fragment>
             : null
@@ -137,18 +160,20 @@ export default function Student() {
 
   const activeTaskShow = (type) => {
     return (<React.Fragment>
+      <div style={{paddingLeft: "8px", paddingRight: "8px"}}>
       {
         studentWorkTaskList ?
           studentWorkTaskList.schoolRoomWorkList.map((task, key) =>
             type || checkComplated(task.episodeTask, task.exam) === true ?
               task.episodeTask ?
-                <Square key={key} col="3" backgroundColor="white" to={`/study/?id=${task.episodeTask.id}`}><b>{task.episodeTask.name}</b></Square>
+                <Square key={key} fontSize={30} col="3" backgroundColor="white" to={`/study/?id=${task.episodeTask.id}`}><b>{task.episodeTask.name}</b></Square>
                 :
-                <Square key={key} col="3" backgroundColor="white" to={`/app/exam/?id=${task.exam.id}`}><b>{task.exam.name}</b></Square>
+                <Square key={key} fontSize={30} col="3" backgroundColor="white" to={`/app/exam/?id=${task.exam.id}`}><b>{task.exam.name}</b></Square>
               : null
           )
           : null
       }
+      </div>
     </React.Fragment>)
   }
 
@@ -157,30 +182,31 @@ export default function Student() {
       <div className='row'>
         <div className='col'>
           <div className='row'>
-            <div className='col-7'>
+            <div className='col'>
               <div className="text-white bg-dark border border-2 border-dark p-2 mt-4 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>AXEBUG DIGITAL</b></h2></div>
               <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>{student.name}'s TASK</b></h2></div>
             </div>
-            <div className='col-5'>
+            <div className='col-auto'>
               {
                 myAvatar()
               }
             </div>
           </div>
           {
-            contentMenu()
+            scoreBoard()
+
           }
         </div>
         <div className='col'>
           <div>
-            <div className="text-white bg-dark border border-2 border-dark p-2 mt-4 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>UNCOMPLATED TASK</b></h2></div>
+            <div className="border border-2 border-dark p-2 mt-4 d-flex justify-content-center black900" style={{ width: "100%", color: "white", backgroundColor: "black" }}><h2><b>YOUR TASKS</b></h2></div>
           </div><div className='row'>
             {
               activeTaskShow(true)
             }
           </div>
           {
-            scoreBoard()
+            contentMenu()
           }
         </div>
       </div>

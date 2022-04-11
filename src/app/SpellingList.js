@@ -13,8 +13,8 @@ export default function SpellingList() {
   return <React.Fragment>
     <div className="container">
       <div className="text-white bg-dark border border-2 border-dark p-2 mt-5 d-flex justify-content-center" style={{ width: 350 }}><h2><b>
-      <Link to="/student" style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link>
-        </b></h2></div>
+        <Link to="/student" style={{ color: "white", textDecoration: "none" }}> AXEBUG DIGITAL</Link>
+      </b></h2></div>
       <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: 350 }}><h2><b>SPELLING BEE</b></h2></div>
     </div>
     <div className="d-flex justify-content-center mt-5">
@@ -23,10 +23,10 @@ export default function SpellingList() {
           chapters ?
             chapters.map((chapter, key) =>
               <div className='row'>
-                <Square key={key} col="2" backgroundColor="black"><h4><b>{chapter.name}.{key}</b></h4> </Square>
+                <Square key={key} col="3" backgroundColor="black"><h4><b>{chapter.name}.{key}</b></h4> </Square>
                 {
                   chapter.episodes.map((episode, no) =>
-                    <Square key={"chap"+no} to={`/spellingword/?id=${episode.id}`} col="2" backgroundColor="white"><h3><b>{episode.name}</b></h3> </Square>
+                    <Square key={"chap" + no} to={`/spellingword/?id=${episode.id}`} col="3" backgroundColor="white"><h3><b>{episode.name}</b></h3> </Square>
                   )
                 }
               </div>
