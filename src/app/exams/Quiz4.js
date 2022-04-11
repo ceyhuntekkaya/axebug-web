@@ -48,17 +48,25 @@ export default function Quiz4(props) {
   return (
     <div className='container'>
       <div className="card mt-5 mb-5" style={{ width: "18rem;" }}>
+        <div class="card-header">
+          <div className="d-flex justify-content-center">
+            <h5 className="card-title mt-3"><h1><strong>  AXE QUIZ CHAPTER 1 EPISODE 4</strong></h1></h5>
+
+          </div>
+        </div>
 
         <div className="card-body p-5">
           <div>
             {
               answer ?
                 <React.Fragment>
-                  AXE QUIZ CHAPTER 1 EPISODE 4
+
                   {
                     pageNo === 0 ?
                       <React.Fragment>
-                        A. Choose the correct answer
+                        <div class="alert alert-dark" role="alert">
+                          <strong>       A. Choose the correct answer</strong>
+                        </div>
                         <div className='row'>
                           1. ................. is the second closest planet to the Sun.
                           <div className="form-check">
@@ -86,7 +94,6 @@ export default function Quiz4(props) {
                             </label>
                           </div>
                         </div>
-
                         <div className='row'>
                           2. The red planet has ................. satellites.
                           <div className="form-check">
@@ -206,7 +213,10 @@ export default function Quiz4(props) {
                     pageNo === 1 ?
                       <React.Fragment>
 
-                        B. Listen and fill in the gaps.
+                        <div class="alert alert-dark" role="alert">
+                          <strong>       B. Listen and fill in the gaps.</strong>
+                        </div>
+
                         <br /><br />Axebug: The moon has around 300.000 craters on it’s surface.
                         <br /><br />Axebug: Moon is rich of iron,
                         <input className="form-input textformat" type="text" value={answer.result[0][1][1].student} onChange={(e) => setStudentOpenAnswer(0, 1, 1, e.target.value, true)} />
@@ -250,6 +260,9 @@ export default function Quiz4(props) {
                     pageNo === 2 ?
 
                       <React.Fragment>
+                        <div class="alert alert-dark" role="alert">
+                          <strong>     *********************</strong>
+                        </div>
                         <table>
                           <tr>
                             <td>1. Task
@@ -336,7 +349,10 @@ export default function Quiz4(props) {
 
                       <React.Fragment>
 
-                        D. Unscramble the words. forma yazacak. yazma bölümü.
+                        <div class="alert alert-dark" role="alert">
+                          <strong>     D. Unscramble the words.</strong>
+                        </div>
+
                         <br /><br /><br /><br />
 
                         <br /><br />1. Urtren
@@ -367,7 +383,11 @@ export default function Quiz4(props) {
                     pageNo === 4 ?
 
                       <React.Fragment>
-                        A. Listen to the audio. Then, repeat the sentences clearly.
+
+
+                        <div class="alert alert-dark" role="alert">
+                          <strong>    A. Listen to the audio. Then, repeat the sentences clearly.</strong>
+                        </div>
 
                         <div>
                           <SpechText getSpeechText={getSpeechText} questionNumber="S1" />
