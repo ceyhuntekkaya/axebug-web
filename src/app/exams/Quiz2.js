@@ -7,10 +7,10 @@ const answerEmpty = require('./Quiz2Answer.json');
 export default function Quiz2(props) {
   const [answer, setAnswer] = useState({ ...answerEmpty })
   const [pageNo, setPageNo] = useState(0)
-  const [maxPage, setMaxPage] = useState(10)
+  const [maxPage, setMaxPage] = useState(5)
 
   const nextPage = () => {
-    if (pageNo < maxPage - 2) setPageNo(pageNo + 1)
+    if (pageNo < maxPage - 1) setPageNo(pageNo + 1)
   }
   const prevPage = () => {
     if (pageNo > 0) setPageNo(pageNo - 1)
@@ -48,11 +48,11 @@ export default function Quiz2(props) {
   }
   return (
     <div className='container'>
-      <div className="card mt-5 mb-5" style={{ width: "18rem;" }}>
+      <div className="card mt-5 mb-5">
 
-        <div class="card-header">
+        <div className="card-header">
           <div className="d-flex justify-content-center">
-            <h5 className="card-title mt-3"><h1><strong> AXE QUIZ CHAPTER 1 EPISODE 2</strong></h1></h5>
+            <h1><strong> AXE QUIZ CHAPTER 1 EPISODE 2</strong></h1>
 
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function Quiz2(props) {
                     {
                       pageNo === 0 ?
                         <React.Fragment>
-                          <div class="alert alert-dark" role="alert">
+                          <div className="alert alert-dark" role="alert">
                             <strong>    A. Choose the correct answer</strong>
                           </div>
 
@@ -216,7 +216,7 @@ export default function Quiz2(props) {
                     {
                       pageNo === 1 ?
                         <React.Fragment>
-                          <div class="alert alert-dark" role="alert">
+                          <div className="alert alert-dark" role="alert">
                             <strong>     B. Listen and fill in the gaps.</strong>
                           </div>
 
@@ -302,7 +302,7 @@ export default function Quiz2(props) {
                       pageNo === 2 ?
 
                         <React.Fragment>
-                          <div class="alert alert-dark" role="alert">
+                          <div className="alert alert-dark" role="alert">
                             <strong>     ??????????????????????????</strong>
                           </div>
 
@@ -433,7 +433,7 @@ export default function Quiz2(props) {
                       pageNo === 3 ?
 
                         <React.Fragment>
-                          <div class="alert alert-dark" role="alert">
+                          <div className="alert alert-dark" role="alert">
                             <strong>     D. Unscramble the words.</strong>
                           </div>
 
@@ -529,7 +529,7 @@ export default function Quiz2(props) {
           </div>
 
         </div>
-        <div class="card-footer">
+        <div className="card-footer">
           <div className='row'>
             {
               pageNo !== 0 ?
