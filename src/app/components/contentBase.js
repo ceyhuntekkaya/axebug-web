@@ -127,7 +127,7 @@ export default function ContentBase(props) {
                 </div>
                 <div>
                     <div className='row m-1 mt-2'>
-                        <div class="progress col" style={{ height: "30px" }}>
+                        <div className="progress col" style={{ height: "30px" }}>
                             <div className="progress-bar progress-bar-striped bg-success progress-bar-animated"
                                 role="progressbar" style={{ width: speechValue + "%" }}
                                 aria-valuenow={speechValue} aria-valuemin="0" aria-valuemax="100"></div>

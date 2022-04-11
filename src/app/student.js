@@ -87,7 +87,7 @@ export default function Student() {
               <div className='row  m-3'>
                 <div className='col-6'>
                   <h2>EXAM SCORE : {parseInt(studentScore.examScore)}</h2>
-                  <div class="progress" style={{ height: "30px" }}>
+                  <div className="progress" style={{ height: "30px" }}>
                     <div className="progress-bar progress-bar-striped progress-bar-animated"
                       role="progressbar" style={{ width: parseInt(studentScore.examScore) + "%" }}
                       aria-valuenow={parseInt(studentScore.examScore)} aria-valuemin="0" aria-valuemax="100"></div>
@@ -95,7 +95,7 @@ export default function Student() {
                 </div>
                 <div className='col-6'>
                   <h2>QUIZ SCORE : {parseInt(studentScore.quizScore)}</h2>
-                  <div class="progress" style={{ height: "30px" }}>
+                  <div className="progress" style={{ height: "30px" }}>
                     <div className="progress-bar progress-bar-striped bg-warning progress-bar-animated"
                       role="progressbar" style={{ width: parseInt(studentScore.quizScore) + "%" }}
                       aria-valuenow={parseInt(studentScore.quizScore)} aria-valuemin="0" aria-valuemax="100"></div>
@@ -106,7 +106,7 @@ export default function Student() {
 
               <div className='row m-3'>
                 <h2>AXE 4 SKILLS SCORE : {parseInt(studentScore.skillsScore)}</h2>
-                <div class="progress" style={{ height: "30px" }}>
+                <div className="progress" style={{ height: "30px" }}>
                   <div className="progress-bar progress-bar-striped bg-info progress-bar-animated"
                     role="progressbar" style={{ width: parseInt(studentScore.skillsScore) + "%" }}
                     aria-valuenow={parseInt(studentScore.skillsScore)} aria-valuemin="0" aria-valuemax="100"></div>
@@ -145,7 +145,7 @@ export default function Student() {
 
               <div className='row  m-3 mb-5'>
                 <h2>OVERALL SCORE : {parseInt(studentScore.skillsScore)}</h2>
-                <div class="progress" style={{ height: "30px" }}>
+                <div className="progress" style={{ height: "30px" }}>
                   <div className="progress-bar progress-bar-striped bg-success progress-bar-animated"
                     role="progressbar" style={{ width: parseInt(studentScore.skillsScore) + "%" }}
                     aria-valuenow={parseInt(studentScore.skillsScore)} aria-valuemin="0" aria-valuemax="100"></div>
