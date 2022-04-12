@@ -29,6 +29,45 @@ export default function Report() {
 
   console.log(reportData)
 
+  const getProgress = (score) => {
+
+    if (score < 20)
+      return (
+        <div className="progress" style={{ height: "25px" }}>
+          <div className="progress-bar bg-danger"
+            role="progressbar" style={{ width: score + "%" }}
+            aria-valuenow={score} aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      )
+    else if (score < 50)
+      return (
+        <div className="progress" style={{ height: "25px" }}>
+          <div className="progress-bar bg-warning"
+            role="progressbar" style={{ width: score + "%" }}
+            aria-valuenow={score} aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      )
+
+    else if (score < 75)
+      return (
+        <div className="progress" style={{ height: "25px" }}>
+          <div className="progress-bar bg-info"
+            role="progressbar" style={{ width: score + "%" }}
+            aria-valuenow={score} aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      )
+
+    else
+      return (
+        <div className="progress" style={{ height: "25px" }}>
+          <div className="progress-bar bg-success"
+            role="progressbar" style={{ width: score + "%" }}
+            aria-valuenow={score} aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      )
+
+  }
+
 
   const getText = (skill, score) => {
     if (skill === "Reading") {
@@ -120,19 +159,17 @@ export default function Report() {
               </div>
             </div>
 
-            <hr />
-            <div className='row border border-light'>
+            <div className='row border border-light mt-2'>
               {
                 reportData.taskScore ?
                   reportData.taskScore.map((data, key) =>
                     <React.Fragment key={key}>
                       <div className='col-3'>{data.scoreFunctionText}</div>
                       <div className='col-2'>
-                        <div className="progress" style={{ height: "25px" }}>
-                          <div className="progress-bar progress-bar-striped bg-warning progress-bar-animated"
-                            role="progressbar" style={{ width: parseInt(data.score) + "%" }}
-                            aria-valuenow={parseInt(data.score)} aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
+                        {
+                          getProgress(parseInt(data.score))
+                        }
+
                       </div>
                       <div className='col-1'>{parseInt(data.score)}</div>
                     </React.Fragment>
@@ -143,8 +180,7 @@ export default function Report() {
             </div>
 
 
-            <hr />
-            <div className='row mt-2 text-white bg-dark p-1'>
+            <div className='row mt-2 text-white bg-dark p-1 mb-3'>
               <div className='col-12 text-white bg-dark d-flex justify-content-center'>
                 <h4><b>AXEBUG 4 SKILLS EXAM & QUIZ REPORT</b></h4>
               </div>
@@ -156,11 +192,9 @@ export default function Report() {
                   <div key={key} className='row border border-light'>
                     <div className='col-8'>{data.scoreFunctionText}</div>
                     <div className='col-3'>
-                      <div className="progress" style={{ height: "25px" }}>
-                        <div className="progress-bar progress-bar-striped bg-warning progress-bar-animated"
-                          role="progressbar" style={{ width: parseInt(data.score) + "%" }}
-                          aria-valuenow={parseInt(data.score)} aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
+                      {
+                        getProgress(parseInt(data.score))
+                      }
                     </div>
                     <div className='col-1'>{parseInt(data.score)}</div>
                   </div>
@@ -174,7 +208,7 @@ export default function Report() {
             </div>
 
 
-            <div className='row border border-light'>
+            <div className='row border border-light mt-2'>
               <div className='col-2'><h4><b>Reading : {parseInt(studentScore.readScore)}</b></h4></div>
               <div className='col-10'>{getText('Reading', parseInt(studentScore.readScore))}
               </div>
