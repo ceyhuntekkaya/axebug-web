@@ -1,3 +1,6 @@
 ssh -i .ssh/id_rsa_axebug axeadmn@193.163.88.51 -p 1923
 
 
+docker run -p 3000:3000 ctekkaya/axebug-web:0.1.0
+
+docker run -p 8080:8080 ctekkaya/axebug-server:0.1.0
