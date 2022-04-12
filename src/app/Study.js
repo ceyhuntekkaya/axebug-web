@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import ContentBase from './components/ContentBase';
+import ContentBase from './components/ContentBasePanel';
 import usePanel from '../api/usePanel';
 import { useSearchParams } from 'react-router-dom';
 import useStudentWork from '../api/useStudentWork'
@@ -35,8 +35,8 @@ export default function Study(props) {
         setPanels("findByTask", id);
         const student = JSON.parse(localStorage.getItem("student"));
         setStudentId(student.id )
-        setStudentWork({ ...studentWork, student: { id: student.id } })
         setStudentWorkApi("checkStudentWorkTask", { studentId: student.id, taskId: id });
+        setStudentWork({ ...studentWork, student: { id: studentId } })
     }, [])
 
     useEffect(() => {

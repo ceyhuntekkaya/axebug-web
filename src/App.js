@@ -16,7 +16,7 @@ import ChapterList from "./app/ChapterList";
 import Exam from "./app/Exam";
 import ExamList from "./app/ExamList";
 import QuizList from "./app/QuizList";
-import Student from "./app/Student";
+import Student from "./app/StudentPanel";
 import Studty from './app/Study';
 import TaskList from "./app/TaskList";
 import Login from "./login/login";
@@ -30,9 +30,6 @@ import SpellingEpisode from "./app/SpellingEpisode";
 
 
 // <Route path="*" element={<NotFound/>}/>
-
-
-
 
 
 function App() {

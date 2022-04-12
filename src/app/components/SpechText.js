@@ -49,7 +49,7 @@ export default class SpechText extends Component {
     stopListening = () => {
         this.listener.stopListening();
         this.setState({ listening: false });
-        this.props.getSpeechText(this.state.interimText)
+        this.props.getSpeechText(this.state.interimText, this.props.questionNumber)
     };
 
 

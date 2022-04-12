@@ -1,6 +1,9 @@
 {
+    "api_local": {
+      "invokeUrl": "http://193.163.88.51:8080"
+    },
     "api": {
-      "invokeUrl": "http://localhost:8082"
+      "invokeUrl": "http://localhost:8080"
     }
   }
   

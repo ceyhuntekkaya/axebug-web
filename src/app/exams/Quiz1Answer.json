@@ -46,7 +46,17 @@
                     "method": "",
                     "function": "E5",
                     "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
                 }
+
             ],
             [
                 {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import SpechText from '../components/SpechText';
 
 var stringSimilarity = require("string-similarity");
@@ -7,7 +7,7 @@ const answerEmpty = require('./Exam1Answer.json');
 export default function Exam1(props) {
     const [answer, setAnswer] = useState({ ...answerEmpty })
     const [pageNo, setPageNo] = useState(0)
-    const [maxPage, setMaxPage] = useState(8)
+    const [maxPage, ] = useState(8)
 
     const nextPage = () => {
         if (pageNo < maxPage - 1) setPageNo(pageNo + 1)
@@ -18,6 +18,11 @@ export default function Exam1(props) {
 
     const setStudentOpenAnswer = (skils, section, queationNumber, value, compare) => {
         const temp = { ...answer };
+
+        console.log(temp.result)
+        console.log(skils,section,queationNumber,value, compare)
+        console.log(temp.result[skils][section][queationNumber])
+
         temp.result[skils][section][queationNumber].student = value;
         let finalScore = temp.result[skils][section][queationNumber].weigth;
         if (compare) {
@@ -49,9 +54,9 @@ export default function Exam1(props) {
 
     return (
         <div className='container'>
-            <div className="card mt-5 mb-5" style={{ width: "18rem;" }}>
+            <div className="card mt-5 mb-5">
 
-                <div class="card-header">
+                <div className="card-header">
                     <div className="d-flex justify-content-center">
                         <h5 className="card-title mt-3"><h1><strong>AXE EXAM CHAPTER 1</strong></h1></h5>
 
@@ -68,7 +73,7 @@ export default function Exam1(props) {
                                                 <div className="alert alert-success mt-3" role="alert">
                                                     READING
                                                 </div>
-                                                <div class="alert alert-dark" role="alert">
+                                                <div className="alert alert-dark" role="alert">
                                                     <strong>A. Read the Passage and answer the questions.</strong>
                                                 </div>
                                                 <div className="d-flex justify-content-center pb-3"><strong><h3>THE GUY WITH THE CRAZY HAIR</h3></strong></div>
@@ -83,11 +88,7 @@ export default function Exam1(props) {
                                                 <div className="paragraf">Einstein’s work was mad and hard to sink in. It is still very significant for the World.</div>
                                                 <div className="paragraf">We can clearly understand that he was a smart cunning man who thought knowledge is estential to everyone no matter what. He got a Nobel prize too.</div>
                                                 <div className="paragraf">Einstein died in 1955. He was named "Person of the century" by Time Magazine.</div>
-
-
                                                 <div className='mt-3'><strong>Write the answers in the blanks.</strong></div>
-
-
                                                 <div className='mt-2'>1. What was his teachers name?
                                                     <input className='form-control' value={answer.result[0][0][1].student} onChange={(e) => setStudentOpenAnswer(0, 0, 1, e.target.value)} type="text" />
                                                 </div>
@@ -111,8 +112,8 @@ export default function Exam1(props) {
                                         pageNo === 1 ?
                                             <React.Fragment>
                                                 <div>
-                                                    <div class="alert alert-dark" role="alert">
-                                                    <strong>B. Multiple choice. Read and choose the best answer.</strong>
+                                                    <div className="alert alert-dark" role="alert">
+                                                        <strong>B. Multiple choice. Read and choose the best answer.</strong>
                                                     </div>
 
                                                     <div className='row p-2'>
@@ -259,8 +260,8 @@ export default function Exam1(props) {
                                         pageNo === 2 ?
                                             <React.Fragment>
                                                 <div>
-                                                    <div class="alert alert-dark" role="alert">
-                                                    <strong>B. Read the story. Choose a word from the box below. Write the correct word in the blank.</strong>
+                                                    <div className="alert alert-dark" role="alert">
+                                                        <strong>B. Read the story. Choose a word from the box below. Write the correct word in the blank.</strong>
                                                     </div>
                                                     <div>
                                                         Michael picked up a plane from the carpet and checked it very carefully. He was amused. ‘This is so nice, I love it! He said to his Uncle George.
@@ -306,15 +307,8 @@ export default function Exam1(props) {
                                                         <input className="form-input textformat" type="text" value={answer.result[0][1][12].student} onChange={(e) => setStudentOpenAnswer(0, 1, 12, e.target.value)} /> and books about planes. They They spoke and laughed all night until there weren’t any stars left in the
                                                         <input className="form-input textformat" type="text" value={answer.result[0][1][13].student} onChange={(e) => setStudentOpenAnswer(0, 1, 13, e.target.value)} /> .
                                                     </div>
-
-
-
-
-
                                                     <div className='mt-4 border border border-info p-3'>
-
                                                         <div className="d-flex justify-content-center"><strong> Scroll the words into the right blanks.</strong></div>
-
                                                         <strong><hr />
                                                             <div className='row'>
                                                                 <div className='col-2'>hug</div>
@@ -332,7 +326,6 @@ export default function Exam1(props) {
                                                                 <div className='col-2'>co pilots</div>
                                                                 <div className='col-2'>hurt</div>
                                                             </div>
-
                                                         </strong>
                                                     </div>
                                                 </div>
@@ -344,15 +337,12 @@ export default function Exam1(props) {
                                         pageNo === 3 ?
                                             <React.Fragment>
                                                 <div>
-                                                    <div class="alert alert-dark" role="alert">
-                                                    <strong>A. Listen and fill in the blanks.</strong>
+                                                    <div className="alert alert-dark" role="alert">
+                                                        <strong>A. Listen and fill in the blanks.</strong>
                                                     </div>
-
                                                     <div className="paragraf">
-                                                        <strong>Dung Beetle: </strong>Thank you Axebug. This was an amazing
                                                         <input className="form-input textformat" type="text" value={answer.result[1][0][1].student} onChange={(e) => setStudentOpenAnswer(1, 0, 1, e.target.value)} />.
                                                     </div>
-
                                                     <div className="paragraf">
                                                         <strong>Dung Beetle:</strong> Except for the fact that there is no life in outer space
                                                         <input className="form-input textformat" type="text" value={answer.result[1][0][2].student} onChange={(e) => setStudentOpenAnswer(1, 0, 2, e.target.value)} />.
@@ -371,7 +361,6 @@ export default function Exam1(props) {
                                                         <strong>Dung Beetle:</strong> Yes, she is right.
                                                     </div>
                                                     <div className="paragraf">
-
                                                         <input className="form-input textformat" type="text" value={answer.result[1][0][5].student} onChange={(e) => setStudentOpenAnswer(1, 0, 5, e.target.value)} /> : We don’t know whether there is
                                                         <input className="form-input textformat" type="text" value={answer.result[1][0][6].student} onChange={(e) => setStudentOpenAnswer(1, 0, 6, e.target.value)} />
                                                         in the unknown places of space.
@@ -384,21 +373,16 @@ export default function Exam1(props) {
                                                     <div className="paragraf">
                                                         <strong>Axebug:</strong> Could you please check the control panel for me?
                                                     </div>
-
                                                     <div className="paragraf">
                                                         <input className="form-input textformat" type="text" value={answer.result[1][0][8].student} onChange={(e) => setStudentOpenAnswer(1, 0, 8, e.target.value)} />
                                                         : I think now is the best time to talk about it.
                                                     </div>
-
                                                     <div className="paragraf">
                                                         <strong>Ladybug:</strong> Why?
                                                     </div>
-
-
                                                     <div className="paragraf">
                                                         <strong>Ladybug :</strong> You had better
                                                         <input className="form-input textformat" type="text" value={answer.result[1][0][9].student} onChange={(e) => setStudentOpenAnswer(1, 0, 9, e.target.value)} />.
-
                                                     </div>
                                                     <div className="paragraf">
                                                         <strong>Dung Beetle :</strong> No way!
@@ -431,10 +415,9 @@ export default function Exam1(props) {
                                         pageNo === 4 ?
                                             <React.Fragment>
                                                 <div>
-                                                    <div class="alert alert-dark" role="alert">
-                                                    <strong>B. Listen and read. Then put the words below in order according to the story. Which one happens first?</strong>
+                                                    <div className="alert alert-dark" role="alert">
+                                                        <strong>B. Listen and read. Then put the words below in order according to the story. Which one happens first?</strong>
                                                     </div>
-
                                                     <div className="paragraf"><strong>Insect Brown:</strong> There is a rumour: “It landed on the town square.” And one question: “Have you seen it?”</div>
                                                     <div className="paragraf"><strong>Insect Purple:</strong> They say it’s like a huge housefly. Is that right?</div>
                                                     <div className="paragraf"><strong>Butterfly:</strong> It would be better if it looked like a butterfly.</div>
@@ -495,22 +478,15 @@ export default function Exam1(props) {
                                             <React.Fragment>
                                                 <div>
 
-                                                    <div class="alert alert-dark" role="alert">
-                                                    <strong>A. Read the dialogue and choose the best answer for the blanks. Use the box below.</strong>
+                                                    <div className="alert alert-dark" role="alert">
+                                                        <strong>A. Read the dialogue and choose the best answer for the blanks. Use the box below.</strong>
                                                     </div>
-
-
-
-
-
                                                     <div className='row'>
                                                         <div className='col-6'>
-
                                                             <div className="paragraf"><strong>1. Dung Beetle :</strong> Where did earth go?</div>
                                                             <div className="paragraf"><strong>Axebug :</strong>
                                                                 <input className="form-input textformat" type="text" value={answer.result[2][0][1].student} onChange={(e) => setStudentOpenAnswer(2, 0, 1, e.target.value)} />
                                                             </div>
-
                                                             <div className="paragraf"><strong>2. Axebug: </strong>Are you ready for the answer?</div>
                                                             <div className="paragraf"><strong>Dung Beetle :</strong>
                                                                 <input className="form-input textformat" type="text" value={answer.result[2][0][2].student} onChange={(e) => setStudentOpenAnswer(2, 0, 2, e.target.value)} />
@@ -530,13 +506,9 @@ export default function Exam1(props) {
                                                             <div className="paragraf"><strong>Ladybug :</strong>
                                                                 <input className="form-input textformat" type="text" value={answer.result[2][0][5].student} onChange={(e) => setStudentOpenAnswer(2, 0, 5, e.target.value)} />
                                                             </div>
-
-
-                                                            <div className="paragraf"><strong>6. Dung Beetle:</strong> it’s just like i imagined.</div>
                                                             <div className="paragraf"><strong>Ladybug :</strong>
                                                                 <input className="form-input textformat" type="text" value={answer.result[2][0][6].student} onChange={(e) => setStudentOpenAnswer(2, 0, 6, e.target.value)} />
                                                             </div>
-
                                                         </div>
                                                         <div className='col-6'>
                                                             <div className="paragraf alert alert-success"><strong>A. </strong>Yayy! I’m ready. How about you?</div>
@@ -548,9 +520,6 @@ export default function Exam1(props) {
                                                         </div>
                                                     </div>
 
-
-
-
                                                 </div>
                                             </React.Fragment>
                                             : null
@@ -559,8 +528,8 @@ export default function Exam1(props) {
                                         pageNo === 6 ?
                                             <React.Fragment>
                                                 <div>
-                                                    <div class="alert alert-dark" role="alert">
-                                                    <strong>B. Macth a synonym for each word.</strong>
+                                                    <div className="alert alert-dark" role="alert">
+                                                        <strong>B. Macth a synonym for each word.</strong>
                                                     </div>
 
 
@@ -615,9 +584,6 @@ export default function Exam1(props) {
                                                         </div>
                                                     </div>
                                                     <hr />
-
-
-
                                                     <div className="row">
                                                         <div className="col-2 alert alert-warning m-1">
                                                             Middle
@@ -666,23 +632,20 @@ export default function Exam1(props) {
                                             <React.Fragment>
                                                 <div>
 
-                                                <div class="alert alert-dark" role="alert">
-                                                <strong>A. Listen to the audio. Then, repeat the sentences clearly.</strong>
-                                                    </div>
-
-                                                    
-
-                                                    <div className='border border-success p-3 mt-3'>
-                                                        <SpechText getSpeechText={getSpeechText} questionNumber="S1" />
+                                                    <div className="alert alert-dark" role="alert">
+                                                        <strong>A. Listen to the audio. Then, repeat the sentences clearly.</strong>
                                                     </div>
                                                     <div className='border border-success p-3 mt-3'>
-                                                        <SpechText getSpeechText={getSpeechText} questionNumber="S2" />
+                                                        <SpechText getSpeechText={getSpeechText} questionNumber={1} />
                                                     </div>
                                                     <div className='border border-success p-3 mt-3'>
-                                                        <SpechText getSpeechText={getSpeechText} questionNumber="S3" />
+                                                        <SpechText getSpeechText={getSpeechText} questionNumber={2} />
                                                     </div>
                                                     <div className='border border-success p-3 mt-3'>
-                                                        <SpechText getSpeechText={getSpeechText} questionNumber="S4" />
+                                                        <SpechText getSpeechText={getSpeechText} questionNumber={3} />
+                                                    </div>
+                                                    <div className='border border-success p-3 mt-3'>
+                                                        <SpechText getSpeechText={getSpeechText} questionNumber={4} />
                                                     </div>
                                                 </div>
                                             </React.Fragment>
@@ -696,7 +659,7 @@ export default function Exam1(props) {
                     }
                 </div>
 
-                <div class="card-footer">
+                <div className="card-footer">
                     <div className='row'>
                         {
                             pageNo !== 0 ?

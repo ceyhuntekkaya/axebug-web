@@ -4,8 +4,8 @@ import useLogin from "../api/useLogin"
 
 export default function Login(props) {
     const [login, setLogin] = useLogin(null);
-    const [username, setUsername] = useState("student");
-    const [password, setPassword] = useState("student");
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -24,16 +24,16 @@ export default function Login(props) {
                     navigate(`/student`);
                 }
                 else if (login.userType === "TEACHER") {
-                    navigate(`/teacher`);
                     localStorage.setItem("teacher", JSON.stringify(login.teacher))
+                    navigate(`/teacher`);
                 }
                 else if (login.userType === "SCHOOL") {
-                    navigate(`/admin`);
                     localStorage.setItem("school", JSON.stringify(login.school))
+                    navigate(`/admin`);
                 }
                 else if (login.userType === "SYSTEM_ADMIN") {
-                    navigate(`/system`);
                     localStorage.setItem("system_admin", JSON.stringify(login.systemAdmin))
+                    navigate(`/system`);
                 }
                 else {
                     console.log("USER NOT FOUND")

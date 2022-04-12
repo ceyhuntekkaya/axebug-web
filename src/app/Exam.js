@@ -18,9 +18,6 @@ export default function Exam() {
     useEffect(() => {
         const studentData = JSON.parse(localStorage.getItem("student"));
         setStudent(studentData);
-    }, [])
-
-    useEffect(() => {
         document.body.style.backgroundColor = 'white'; // '#231F20';
         setSelectedExam("findById", id)
     }, [])
@@ -64,19 +61,19 @@ export default function Exam() {
     const findSkillName = (skillNo, examType) => {
         if (examType === "QUIZ") return "GENERAL"
 
-        if (skillNo == 0) return "READING";
-        else if (skillNo == 1) return "WRITTING";
-        else if (skillNo == 2) return "LISTENING";
-        else if (skillNo == 3) return "SPEAKING";
+        if (skillNo === 0) return "READING";
+        else if (skillNo === 1) return "WRITTING";
+        else if (skillNo === 2) return "LISTENING";
+        else if (skillNo === 3) return "SPEAKING";
         return ""
     }
 
     const findSectionName = (sectionNo) => {
-        if (sectionNo == 0) return "A";
-        else if (sectionNo == 1) return "B";
-        else if (sectionNo == 2) return "C";
-        else if (sectionNo == 3) return "D";
-        else if (sectionNo == 4) return "E";
+        if (sectionNo === 0) return "A";
+        else if (sectionNo === 1) return "B";
+        else if (sectionNo === 2) return "C";
+        else if (sectionNo === 3) return "D";
+        else if (sectionNo === 4) return "E";
         return ""
     }
 
