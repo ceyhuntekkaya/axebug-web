@@ -27,7 +27,8 @@ import WordBank from "./app/WordBank";
 import Spelling from "./app/Spelling";
 import SpellingList from "./app/SpellingList";
 import SpellingEpisode from "./app/SpellingEpisode";
-import Report from "./app/exams/Report";
+import Report from "./admin/report/Report";
+import ReportList from "./admin/report/ReportList";
 
 
 // <Route path="*" element={<NotFound/>}/>
@@ -43,6 +44,8 @@ function App() {
         <Route exact path="/admin/assignment" element={<AdminAssignment />} />
         <Route exact path="/admin/homework" element={<AdminHomework />} />
         <Route exact path="/admin/teacher" element={<AdminTeacherList />} />
+        <Route exact path="/admin/reportlist" element={<ReportList />} />
+        <Route exact path="/admin/report/:id/:std" element={<Report />} />
         
         <Route exact path="/admin" element={<Admin />} />
         <Route exact path="/study" element={<Studty />} />
@@ -64,7 +67,7 @@ function App() {
         <Route exact path="/app/wordbank" element={<WordBank />} />
         <Route exact path="/app/spelling" element={<Spelling />} />
 
-        <Route exact path="/app/report/:id" element={<Report />} />
+       
 
         <Route exact path="/" element={<Login />} />
       </Routes>

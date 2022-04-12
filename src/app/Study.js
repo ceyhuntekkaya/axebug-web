@@ -79,7 +79,6 @@ export default function Study(props) {
         values.student.id = studentId;
         setStudentWork(values)
         setStudentWorkApi("createStudentWork", values);
-        console.log(values)
     }
 
     useEffect(() => {

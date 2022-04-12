@@ -25,7 +25,7 @@ export default function Login(props) {
                 }
                 else if (login.userType === "TEACHER") {
                     localStorage.setItem("teacher", JSON.stringify(login.teacher))
-                    navigate(`/teacher`);
+                    navigate(`/admin/teacher`);
                 }
                 else if (login.userType === "SCHOOL") {
                     localStorage.setItem("school", JSON.stringify(login.school))

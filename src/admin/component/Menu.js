@@ -8,6 +8,7 @@ export default function Menu() {
             <div className="col"><Link to="/admin">Dash Board</Link></div>
             <div className="col"><Link to="/admin/teacher">Teachers</Link></div>
             <div className="col"><Link to="/admin/student">Students</Link></div>
+            <div className="col"><Link to="/admin/reportlist">Reports</Link></div>
             <div className="col"><Link to="/admin/schoolroom">School Rooms</Link></div>
             <div className="col"><Link to="/admin/episode">Episodes</Link></div>
             <div className="col"><Link to="/admin/assignment">Assignment</Link></div>

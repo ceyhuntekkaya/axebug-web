@@ -27,7 +27,16 @@ export default function useExam() {
 
     const createReport = async (params) => {
         try {
-            const res = await axios.get(`${config.api.invokeUrl}/report/${params.studentId}/${params.examId}`,);
+            const res = await axios.get(`${config.api.invokeUrl}/report/${params.studentId}/${params.examId}`);
+            setResult(res.data);
+        } catch (err) {
+            setResult(`An error has occurred: ${err}`);
+        }
+    }
+
+    const reportList = async (params) => {
+        try {
+            const res = await axios.get(`${config.api.invokeUrl}/report/examList/${params}`);
             setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);
@@ -41,6 +50,10 @@ export default function useExam() {
             await findById(params);
         } else if (type === "saveExamResult") {
             await saveExamResult(params);
+        } else if (type === "createReport") {
+            await createReport(params);
+        } else if (type === "reportList") {
+            await reportList(params);
         } 
     }
     return [result, handleChange];
