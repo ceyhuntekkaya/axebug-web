@@ -7,7 +7,7 @@ const answerEmpty = require('./Quiz3Answer.json');
 export default function Quiz3(props) {
   const [answer, setAnswer] = useState({ ...answerEmpty })
   const [pageNo, setPageNo] = useState(0)
-  const [maxPage, ] = useState(5)
+  const [maxPage,] = useState(5)
 
   const nextPage = () => {
     if (pageNo < maxPage - 1) setPageNo(pageNo + 1)
@@ -20,14 +20,11 @@ export default function Quiz3(props) {
     const temp = { ...answer };
     temp[skils][section][queationNumber].student = value;
     let finalScore = temp[skils][section][queationNumber].weigth;
-    if (compare) {
-      var similarity = stringSimilarity.compareTwoStrings(clearText(value), clearText(temp[skils][section][queationNumber].answer));
-      const finalScore = similarity * parseFloat(temp[skils][section][queationNumber].weigth)
-      temp[skils][section][queationNumber].score = finalScore;
-    }
-    else {
-      temp[skils][section][queationNumber].score = finalScore;
-    }
+
+    var similarity = stringSimilarity.compareTwoStrings(clearText(value), clearText(temp[skils][section][queationNumber].answer));
+    finalScore = similarity * parseFloat(temp[skils][section][queationNumber].weigth)
+    temp[skils][section][queationNumber].score = finalScore;
+
     if (finalScore > (temp[skils][section][queationNumber].weigth / 10 * 6)) {
       temp[skils][section][queationNumber].functionScore = true;
     }

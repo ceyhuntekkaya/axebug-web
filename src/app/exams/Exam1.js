@@ -18,21 +18,21 @@ export default function Exam1(props) {
 
     const setStudentOpenAnswer = (skils, section, queationNumber, value, compare) => {
         const temp = { ...answer };
-
-        console.log(temp.result)
-        console.log(skils,section,queationNumber,value, compare)
-        console.log(temp.result[skils][section][queationNumber])
-
         temp.result[skils][section][queationNumber].student = value;
         let finalScore = temp.result[skils][section][queationNumber].weigth;
-        if (compare) {
+        // if (compare) {
             var similarity = stringSimilarity.compareTwoStrings(clearText(value), clearText(temp.result[skils][section][queationNumber].answer));
-            const finalScore = similarity * parseFloat(temp.result[skils][section][queationNumber].weigth)
+            finalScore = similarity * parseFloat(temp.result[skils][section][queationNumber].weigth)
             temp.result[skils][section][queationNumber].score = finalScore;
-        }
-        else {
-            temp.result[skils][section][queationNumber].score = finalScore;
-        }
+        // }
+        // else {
+        //     if(value=== temp.result[skils][section][queationNumber].answer){
+        //         temp.result[skils][section][queationNumber].score = finalScore;
+        //     }
+        //     else{
+        //         temp.result[skils][section][queationNumber].score = 0;
+        //     }
+        // }
         if (finalScore > (temp.result[skils][section][queationNumber].weigth / 10 * 6)) {
             temp.result[skils][section][queationNumber].functionScore = true;
         }
@@ -90,19 +90,19 @@ export default function Exam1(props) {
                                                 <div className="paragraf">Einstein died in 1955. He was named "Person of the century" by Time Magazine.</div>
                                                 <div className='mt-3'><strong>Write the answers in the blanks.</strong></div>
                                                 <div className='mt-2'>1. What was his teachers name?
-                                                    <input className='form-control' value={answer.result[0][0][1].student} onChange={(e) => setStudentOpenAnswer(0, 0, 1, e.target.value)} type="text" />
+                                                    <input className='form-control' value={answer.result[0][0][1].student} onChange={(e) => setStudentOpenAnswer(0, 0, 1, e.target.value, true)} type="text" />
                                                 </div>
                                                 <div>2. Was Einstein born and raised in Germany?
-                                                    <input className='form-control' value={answer.result[0][0][2].student} onChange={(e) => setStudentOpenAnswer(0, 0, 2, e.target.value)} type="text" />
+                                                    <input className='form-control' value={answer.result[0][0][2].student} onChange={(e) => setStudentOpenAnswer(0, 0, 2, e.target.value, true)} type="text" />
                                                 </div>
                                                 <div>3. Why did he go to America when he was older?
-                                                    <input className='form-control' value={answer.result[0][0][3].student} onChange={(e) => setStudentOpenAnswer(0, 0, 3, e.target.value)} type="text" />
+                                                    <input className='form-control' value={answer.result[0][0][3].student} onChange={(e) => setStudentOpenAnswer(0, 0, 3, e.target.value, true)} type="text" />
                                                 </div>
                                                 <div>4. Which issues did he focus on?
-                                                    <input className='form-control' value={answer.result[0][0][4].student} onChange={(e) => setStudentOpenAnswer(0, 0, 4, e.target.value)} type="text" />
+                                                    <input className='form-control' value={answer.result[0][0][4].student} onChange={(e) => setStudentOpenAnswer(0, 0, 4, e.target.value, true)} type="text" />
                                                 </div>
                                                 <div>5. What do you think ‘Person of the century’ mean?
-                                                    <input className='form-control' value={answer.result[0][0][5].student} onChange={(e) => setStudentOpenAnswer(0, 0, 5, e.target.value)} type="text" />
+                                                    <input className='form-control' value={answer.result[0][0][5].student} onChange={(e) => setStudentOpenAnswer(0, 0, 5, e.target.value, true)} type="text" />
                                                 </div>
                                             </React.Fragment>
                                             : null
@@ -268,44 +268,44 @@ export default function Exam1(props) {
                                                     </div>
                                                     <div className="paragraf">
                                                         Uncle George lived in Paris. Michael visited him on holidays with his parents. Uncle George was a
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][1].student} onChange={(e) => setStudentOpenAnswer(0, 1, 1, e.target.value)} />
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][1].student} onChange={(e) => setStudentOpenAnswer(0, 1, 1, e.target.value, true)} />
                                                         so he had a lot of
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][2].student} onChange={(e) => setStudentOpenAnswer(0, 1, 2, e.target.value)} />in his house. Michael loved being here because he loves to hear plane stories and his Uncle’s adventures.
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][2].student} onChange={(e) => setStudentOpenAnswer(0, 1, 2, e.target.value, true)} />in his house. Michael loved being here because he loves to hear plane stories and his Uncle’s adventures.
                                                     </div>
                                                     <div className="paragraf">“Please Uncle, tell me another
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][3].student} onChange={(e) => setStudentOpenAnswer(0, 1, 3, e.target.value)} /> tonight!” he said with his hands clapping.
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][3].student} onChange={(e) => setStudentOpenAnswer(0, 1, 3, e.target.value, true)} /> tonight!” he said with his hands clapping.
                                                     </div>
                                                     <div className="paragraf">
                                                         “All right. I’ll tell you the one in 1995 then...” he said sitting on his couch with his warm cup of tea.
                                                     </div>
                                                     <div className="paragraf">“You mean the one with the
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][4].student} onChange={(e) => setStudentOpenAnswer(0, 1, 4, e.target.value)} />.”
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][4].student} onChange={(e) => setStudentOpenAnswer(0, 1, 4, e.target.value, true)} />.”
                                                     </div>
 
 
                                                     <div className="paragraf">“Yeah. It was a cold and rainy night in
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][5].student} onChange={(e) => setStudentOpenAnswer(0, 1, 5, e.target.value)} />. The tower allowed us to fly so we did. But it was a total
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][6].student} onChange={(e) => setStudentOpenAnswer(0, 1, 6, e.target.value)} /> on the plane.”
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][5].student} onChange={(e) => setStudentOpenAnswer(0, 1, 5, e.target.value, true)} />. The tower allowed us to fly so we did. But it was a total
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][6].student} onChange={(e) => setStudentOpenAnswer(0, 1, 6, e.target.value, true)} /> on the plane.”
                                                     </div>
                                                     <div className="paragraf">“What happened?” he said and Uncle George
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][7].student} onChange={(e) => setStudentOpenAnswer(0, 1, 7, e.target.value)} />.
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][7].student} onChange={(e) => setStudentOpenAnswer(0, 1, 7, e.target.value, true)} />.
                                                     </div>
                                                     <div className="paragraf">“We had two people fighting over a lost case at court. I guess they knew eachother from before. They were lawyers. They had knives and tried to
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][8].student} onChange={(e) => setStudentOpenAnswer(0, 1, 8, e.target.value)} /> eachother. I was the one to stop them.”
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][8].student} onChange={(e) => setStudentOpenAnswer(0, 1, 8, e.target.value, true)} /> eachother. I was the one to stop them.”
                                                     </div>
                                                     <div className="paragraf">“But what about the plane? It will crash if you’re not flying it!”
                                                     </div>
                                                     <div className="paragraf">“That’s why we have
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][9].student} onChange={(e) => setStudentOpenAnswer(0, 1, 9, e.target.value)} /> on the plane son!”
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][9].student} onChange={(e) => setStudentOpenAnswer(0, 1, 9, e.target.value, true)} /> on the plane son!”
                                                     </div>
                                                     <div className="paragraf">Michael reached to another plane and starting speaking.</div>
                                                     <div className="paragraf">“I want you to tell me more stories. I also want to know more about planes. Maybe I’ll become a pilot one day, just like you. I love you and I want to be like you. You’re a
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][10].student} onChange={(e) => setStudentOpenAnswer(0, 1, 10, e.target.value)} /> Uncle!”
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][10].student} onChange={(e) => setStudentOpenAnswer(0, 1, 10, e.target.value, true)} /> Uncle!”
                                                     </div>
                                                     <div className="paragraf">Uncle George wiped his tears from his cheeks and gave his nephew a big
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][11].student} onChange={(e) => setStudentOpenAnswer(0, 1, 11, e.target.value)} />. He opened his old cabinet and showed him his
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][12].student} onChange={(e) => setStudentOpenAnswer(0, 1, 12, e.target.value)} /> and books about planes. They They spoke and laughed all night until there weren’t any stars left in the
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][13].student} onChange={(e) => setStudentOpenAnswer(0, 1, 13, e.target.value)} /> .
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][11].student} onChange={(e) => setStudentOpenAnswer(0, 1, 11, e.target.value, true)} />. He opened his old cabinet and showed him his
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][12].student} onChange={(e) => setStudentOpenAnswer(0, 1, 12, e.target.value, true)} /> and books about planes. They They spoke and laughed all night until there weren’t any stars left in the
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][13].student} onChange={(e) => setStudentOpenAnswer(0, 1, 13, e.target.value, true)} /> .
                                                     </div>
                                                     <div className='mt-4 border border border-info p-3'>
                                                         <div className="d-flex justify-content-center"><strong> Scroll the words into the right blanks.</strong></div>
@@ -454,7 +454,7 @@ export default function Exam1(props) {
                                                             </tr>
                                                             <tr>
                                                                 <td>ZZZ55</td>
-                                                                <td><input className="form-input textformat" type="text" value={answer.result[1][1][3].student} onChange={(e) => setStudentOpenAnswer(1, 1, 43, e.target.value)} />
+                                                                <td><input className="form-input textformat" type="text" value={answer.result[1][1][3].student} onChange={(e) => setStudentOpenAnswer(1, 1, 3, e.target.value)} />
                                                                 </td>
                                                             </tr>
                                                             <tr>

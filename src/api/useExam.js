@@ -25,6 +25,16 @@ export default function useExam() {
     }
 
 
+    const createReport = async (params) => {
+        try {
+            const res = await axios.get(`${config.api.invokeUrl}/report/${params.studentId}/${params.examId}`,);
+            setResult(res.data);
+        } catch (err) {
+            setResult(`An error has occurred: ${err}`);
+        }
+    }
+
+
 
     const handleChange = async (type, params) => {
         if (type === "findById") {

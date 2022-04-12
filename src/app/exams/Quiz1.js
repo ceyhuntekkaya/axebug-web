@@ -21,17 +21,14 @@ export default function Quiz1(props) {
   const setStudentOpenAnswer = (skils, section, queationNumber, value, compare) => {
     const temp = { ...answer };
 
-   
+
     temp.result[skils][section][queationNumber].student = value;
     let finalScore = temp.result[skils][section][queationNumber].weigth;
-    if (compare) {
-      var similarity = stringSimilarity.compareTwoStrings(clearText(value), clearText(temp.result[skils][section][queationNumber].answer));
-      const finalScore = similarity * parseFloat(temp.result[skils][section][queationNumber].weigth)
-      temp.result[skils][section][queationNumber].score = finalScore;
-    }
-    else {
-      temp.result[skils][section][queationNumber].score = finalScore;
-    }
+
+    var similarity = stringSimilarity.compareTwoStrings(clearText(value), clearText(temp.result[skils][section][queationNumber].answer));
+    finalScore = similarity * parseFloat(temp.result[skils][section][queationNumber].weigth)
+    temp.result[skils][section][queationNumber].score = finalScore;
+
     if (finalScore > (temp.result[skils][section][queationNumber].weigth / 10 * 6)) {
       temp.result[skils][section][queationNumber].functionScore = true;
     }

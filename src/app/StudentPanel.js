@@ -20,6 +20,8 @@ export default function StudentPanel() {
   const [studentWorkTaskList, setStudentWorkApi] = useStudentWork([]);
   const [studentScore, setStudentScore] = useStudentWork(scoreModel);
 
+  console.log(studentScore)
+
   useEffect(() => {
     document.body.style.backgroundColor = '#eeeeee'; // '#231F20';
     const studentData = JSON.parse(localStorage.getItem("student"));
