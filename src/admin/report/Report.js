@@ -27,6 +27,8 @@ export default function Report() {
     setStudentScore("studentScore", std)
   }, [])
 
+  console.log(reportData)
+
 
   const getText = (skill, score) => {
     if (skill === "Reading") {
@@ -119,7 +121,28 @@ export default function Report() {
             </div>
 
             <hr />
-            TASK REPORT
+            <div className='row border border-light'>
+              {
+                reportData.taskScore ?
+                  reportData.taskScore.map((data, key) =>
+                    <React.Fragment key={key}>
+                      <div className='col-3'>{data.scoreFunctionText}</div>
+                      <div className='col-2'>
+                        <div className="progress" style={{ height: "25px" }}>
+                          <div className="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                            role="progressbar" style={{ width: parseInt(data.score) + "%" }}
+                            aria-valuenow={parseInt(data.score)} aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div className='col-1'>{parseInt(data.score)}</div>
+                    </React.Fragment>
+                  )
+                  : null
+              }
+
+            </div>
+
+
             <hr />
             <div className='row mt-2 text-white bg-dark p-1'>
               <div className='col-12 text-white bg-dark d-flex justify-content-center'>
