@@ -103,7 +103,7 @@ export default function Study(props) {
                             {
                                 panels ?
                                     panels.map((panel, key) => (
-                                        <img src={`../assets/${panel.imageFullUrl}`} key={key} className={`col-6 pb-4`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} />
+                                        <img src={`../assets/${panel.imageFullUrl}`} key={key} className={`col-6 pb-4`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} alt={key} />
                                     )) : null
                             }
                         </div>
