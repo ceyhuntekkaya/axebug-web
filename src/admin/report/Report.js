@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import useExam from "../../api/useExam"
 import useStudentWork from "../../api/useStudentWork"
 
-
 const scoreModel = {
   examScore: 0,
   quizScore: 0,
@@ -13,7 +12,6 @@ const scoreModel = {
   speakingScore: 0,
   listeningScore: 0,
 }
-
 
 export default function Report() {
 
@@ -27,10 +25,7 @@ export default function Report() {
     setStudentScore("studentScore", std)
   }, [])
 
-  console.log(reportData)
-
   const getProgress = (score) => {
-
     if (score < 20)
       return (
         <div className="progress" style={{ height: "25px" }}>
@@ -68,7 +63,6 @@ export default function Report() {
 
   }
 
-
   const getText = (skill, score) => {
     if (skill === "Reading") {
       if (score < 25) {
@@ -85,8 +79,6 @@ export default function Report() {
       }
     }
 
-
-
     if (skill === "Listenig") {
       if (score < 25) {
         return "Identifies resources,yet not all of them. Figures from visuals. Matches everyday information using daily based language very poorly.  Points to basic objects named orally. Needs to practice more with a supervisor/teacher.  ";
@@ -102,8 +94,6 @@ export default function Report() {
       }
     }
 
-
-
     if (skill === "Writing") {
       if (score < 25) {
         return "Produces only short answer responses. Labels picture or wordbanks based on target vocabulary. Poor grammar/vocabulary knowledge. Needs to practice more with a supervisor/teacher.";
@@ -118,8 +108,6 @@ export default function Report() {
         return "Summarizes content related notes from texts . Supplies missing words or phrases correctly. Makes long and meaningful sentences using correct grammar structures. Explain with details and processes. Keep up the good work! ";
       }
     }
-
-
 
     if (skill === "Speaking") {
       if (score < 25) {
@@ -137,9 +125,6 @@ export default function Report() {
     }
 
   }
-
-
-
   return (
     <React.Fragment>
 
@@ -151,14 +136,11 @@ export default function Report() {
               <div className='col-3 text-white bg-dark d-flex justify-content-center'><h2><b>{reportData.exam.name}</b></h2></div>
               <div className='col-3 text-white bg-dark d-flex justify-content-center'><h2><b>{reportData.student.name} {reportData.student.surname}</b></h2></div>
             </div>
-
             <div className='row mt-2 text-white bg-dark p-1'>
               <div className='col-12 text-white bg-dark d-flex justify-content-center'>
                 <h4><b> AXEBUG 4 SKILLS TASK REPORT</b></h4>
-
               </div>
             </div>
-
             <div className='row border border-light mt-2'>
               {
                 reportData.taskScore ?
@@ -176,16 +158,12 @@ export default function Report() {
                   )
                   : null
               }
-
             </div>
-
-
             <div className='row mt-2 text-white bg-dark p-1 mb-3'>
               <div className='col-12 text-white bg-dark d-flex justify-content-center'>
                 <h4><b>AXEBUG 4 SKILLS EXAM & QUIZ REPORT</b></h4>
               </div>
             </div>
-
             {
               reportData.examScore ?
                 reportData.examScore.map((data, key) =>
@@ -206,8 +184,6 @@ export default function Report() {
                 <h4><b>SUGGESTIONS</b></h4>
               </div>
             </div>
-
-
             <div className='row border border-light mt-2'>
               <div className='col-2'><h4><b>Reading : {parseInt(studentScore.readScore)}</b></h4></div>
               <div className='col-10'>{getText('Reading', parseInt(studentScore.readScore))}
@@ -228,18 +204,9 @@ export default function Report() {
               <div className='col-10'>{getText('Speaking', parseInt(studentScore.speakingScore))}
               </div>
             </div>
-
-
-
-
           </div>
           : null
-
       }
-
-
-
-
     </React.Fragment>
   )
 }

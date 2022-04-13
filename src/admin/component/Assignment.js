@@ -28,7 +28,7 @@ export default function Assignment() {
 
     useEffect(() => {
         if (selectedSchoolRoom)
-            if (selectedSchoolRoom.id != 0)
+            if (selectedSchoolRoom.id !== 0)
                 setSchoolRoomWorkList("getSchoolRoomWorks", selectedSchoolRoom.id)
     }, [selectedSchoolRoom])
 

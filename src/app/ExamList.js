@@ -16,8 +16,6 @@ export default function ExamList() {
 
     useEffect(() => {
         if (studentWorkTaskList) {
-            const studentWorkListApi = studentWorkTaskList.studentWorkList;
-            const schoolRoomWorkListApi = studentWorkTaskList.schoolRoomWorkList;
             const examListApi = studentWorkTaskList.examList;
             const exams = [];
             if (examListApi) {

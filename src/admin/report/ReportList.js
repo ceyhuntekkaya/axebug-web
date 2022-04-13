@@ -9,14 +9,12 @@ export default function ReportList() {
     const [studentList, setStudentList] = useStudent([]);
     const [schoolRoomList, setSchoolRoomList] = useSchoolRoom([]);
     const [selectedStudent, setSelectedStudent] = useState({});
-    const [school, setSchool] = useState(null);
     const [selectedSchoolRoomId, setSelectedSchoolRoomId] = useState(0);
 
     const [examList, setExamList] = useExam([]);
 
     useEffect(() => {
         const res = JSON.parse(localStorage.getItem("school"));
-        setSchool(res);
         setSchoolRoomList("findAllSchoolRoom", res.id);
     }, [])
 
