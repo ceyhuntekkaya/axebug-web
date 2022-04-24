@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import useExam from "../../api/useExam"
 import useStudentWork from "../../api/useStudentWork"
 
-
 const scoreModel = {
   examScore: 0,
   quizScore: 0,
@@ -13,8 +12,6 @@ const scoreModel = {
   speakingScore: 0,
   listeningScore: 0,
 }
-
-
 export default function Report() {
 
   let { id, std } = useParams();
@@ -25,9 +22,8 @@ export default function Report() {
     document.body.style.backgroundColor = 'white';
     setReportData("createReport", { studentId: std, examId: id })
     setStudentScore("studentScore", std)
+    // eslint-disable-next-line 
   }, [])
-
-  console.log(reportData)
 
   const getProgress = (score) => {
 
@@ -176,16 +172,12 @@ export default function Report() {
                   )
                   : null
               }
-
             </div>
-
-
             <div className='row mt-2 text-white bg-dark p-1 mb-3'>
               <div className='col-12 text-white bg-dark d-flex justify-content-center'>
                 <h4><b>AXEBUG 4 SKILLS EXAM & QUIZ REPORT</b></h4>
               </div>
             </div>
-
             {
               reportData.examScore ?
                 reportData.examScore.map((data, key) =>

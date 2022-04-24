@@ -58,7 +58,7 @@ export default function Exam1(props) {
 
                 <div className="card-header">
                     <div className="d-flex justify-content-center">
-                        <h5 className="card-title mt-3"><h1><strong>AXE EXAM CHAPTER 1</strong></h1></h5>
+                        <h5 className="card-title mt-3"><h1><strong>AXEEXAM CHAPTER 1</strong></h1></h5>
 
                     </div>
                 </div>
@@ -70,26 +70,24 @@ export default function Exam1(props) {
                                     {
                                         pageNo === 0 ?
                                             <React.Fragment>
-                                                <div className="alert alert-success mt-3" role="alert">
-                                                    READING
-                                                </div>
+                                               
                                                 <div className="alert alert-dark" role="alert">
                                                     <strong>A. Read the Passage and answer the questions.</strong>
                                                 </div>
                                                 <div className="d-flex justify-content-center pb-3"><strong><h3>THE GUY WITH THE CRAZY HAIR</h3></strong></div>
                                                 <div className="paragraf">
-                                                    Known as the biggest science discoverist. Born and raised in Germany, Einstein was a high leveled student through his life. His father supported him to science activities, discussions and experiments. Researching about new ideas, keeping notes and expanding statements was his thing. “Anyone who has never made a mistake, has never tried anything new” was one of his sayings.
+                                                    Known as the biggest science discoverist. Born and raised in Germany, Einstein was a high leveled student through his life. His father supported him to do science activities, discussions and experiments. Researching about new ideas, keeping notes and expanding statements was his thing. “Anyone who has never made a mistake, has never tried anything new” was one of his sayings.
                                                 </div>
                                                 <div className="paragraf">When he was young, he met a teacher called Max Talmund. He started having conversations with him, thus Talmund was teaching him how to experiment a lot. Einstein started to be more curious about light due to Talmund’s light experiments. Investigating became a desire to Einstein. “If you can’t explain it to a six year old, you don’t understand it yourself” he said.
                                                 </div>
-                                                <div className="paragraf">When he was much older, he became a professor in Germany. Many years later he went to America becauese of political issues. This made him examine more of his theories. He was intrusive about time,space,matter,energy and gravity. He is very special for his “Theory of relativity”.</div>
-                                                <div className="paragraf">The theory aims to solve problems that classical Physics can not be enough to. Two types of relativity was explained. Special relativity and general relativity.</div>
+                                                <div className="paragraf">When he was much older, he became a professor in Germany. Many years later he went to America becauese of political issues. This made him examine more of his theories. He was intrusive about time, space, matter, energy and gravity. He is very special for his “Theory of relativity”.</div>
+                                                <div className="paragraf">The theory aims to solve problems that classical Physics can not be enough to. Two types of relativity was explained: Special relativity and general relativity.</div>
                                                 <div className="paragraf">It was revealed in 1905, that things going in the same direction at the same speed are called ‘Inertial frame’. This was special relativity’s concentration. On the other side, general theory focused on gravitional lensing which express the light bending when it comes to larger objects.</div>
                                                 <div className="paragraf">Einstein’s work was mad and hard to sink in. It is still very significant for the World.</div>
                                                 <div className="paragraf">We can clearly understand that he was a smart cunning man who thought knowledge is estential to everyone no matter what. He got a Nobel prize too.</div>
                                                 <div className="paragraf">Einstein died in 1955. He was named "Person of the century" by Time Magazine.</div>
                                                 <div className='mt-3'><strong>Write the answers in the blanks.</strong></div>
-                                                <div className='mt-2'>1. What was his teachers name?
+                                                <div className='mt-2'>1. What was his teacher's name?
                                                     <input className='form-control' value={answer.result[0][0][1].student} onChange={(e) => setStudentOpenAnswer(0, 0, 1, e.target.value, true)} type="text" />
                                                 </div>
                                                 <div>2. Was Einstein born and raised in Germany?
@@ -175,25 +173,25 @@ export default function Exam1(props) {
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as8" onChange={(e) => setStudentOpenAnswer(0, 0, 8, "A")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                A) Special relativity and general relativity
+                                                                A) special relativity and general relativity
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as8" onChange={(e) => setStudentOpenAnswer(0, 0, 8, "B")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault2">
-                                                                B) General relativity and second relativity
+                                                                B) general relativity and second relativity
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as8" onChange={(e) => setStudentOpenAnswer(0, 0, 8, "C")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault2">
-                                                                C) Second relativity and special relativity
+                                                                C) second relativity and special relativity
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as8" onChange={(e) => setStudentOpenAnswer(0, 0, 8, "D")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault2">
-                                                                D) Space relativity and general relativity
+                                                                D) space relativity and general relativity
                                                             </label>
                                                         </div>
                                                     </div>
@@ -263,52 +261,8 @@ export default function Exam1(props) {
                                                     <div className="alert alert-dark" role="alert">
                                                         <strong>B. Read the story. Choose a word from the box below. Write the correct word in the blank.</strong>
                                                     </div>
-                                                    <div>
-                                                        Michael picked up a plane from the carpet and checked it very carefully. He was amused. ‘This is so nice, I love it! He said to his Uncle George.
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        Uncle George lived in Paris. Michael visited him on holidays with his parents. Uncle George was a
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][1].student} onChange={(e) => setStudentOpenAnswer(0, 1, 1, e.target.value, true)} />
-                                                        so he had a lot of
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][2].student} onChange={(e) => setStudentOpenAnswer(0, 1, 2, e.target.value, true)} />in his house. Michael loved being here because he loves to hear plane stories and his Uncle’s adventures.
-                                                    </div>
-                                                    <div className="paragraf">“Please Uncle, tell me another
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][3].student} onChange={(e) => setStudentOpenAnswer(0, 1, 3, e.target.value, true)} /> tonight!” he said with his hands clapping.
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        “All right. I’ll tell you the one in 1995 then...” he said sitting on his couch with his warm cup of tea.
-                                                    </div>
-                                                    <div className="paragraf">“You mean the one with the
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][4].student} onChange={(e) => setStudentOpenAnswer(0, 1, 4, e.target.value, true)} />.”
-                                                    </div>
 
-
-                                                    <div className="paragraf">“Yeah. It was a cold and rainy night in
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][5].student} onChange={(e) => setStudentOpenAnswer(0, 1, 5, e.target.value, true)} />. The tower allowed us to fly so we did. But it was a total
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][6].student} onChange={(e) => setStudentOpenAnswer(0, 1, 6, e.target.value, true)} /> on the plane.”
-                                                    </div>
-                                                    <div className="paragraf">“What happened?” he said and Uncle George
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][7].student} onChange={(e) => setStudentOpenAnswer(0, 1, 7, e.target.value, true)} />.
-                                                    </div>
-                                                    <div className="paragraf">“We had two people fighting over a lost case at court. I guess they knew eachother from before. They were lawyers. They had knives and tried to
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][8].student} onChange={(e) => setStudentOpenAnswer(0, 1, 8, e.target.value, true)} /> eachother. I was the one to stop them.”
-                                                    </div>
-                                                    <div className="paragraf">“But what about the plane? It will crash if you’re not flying it!”
-                                                    </div>
-                                                    <div className="paragraf">“That’s why we have
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][9].student} onChange={(e) => setStudentOpenAnswer(0, 1, 9, e.target.value, true)} /> on the plane son!”
-                                                    </div>
-                                                    <div className="paragraf">Michael reached to another plane and starting speaking.</div>
-                                                    <div className="paragraf">“I want you to tell me more stories. I also want to know more about planes. Maybe I’ll become a pilot one day, just like you. I love you and I want to be like you. You’re a
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][10].student} onChange={(e) => setStudentOpenAnswer(0, 1, 10, e.target.value, true)} /> Uncle!”
-                                                    </div>
-                                                    <div className="paragraf">Uncle George wiped his tears from his cheeks and gave his nephew a big
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][11].student} onChange={(e) => setStudentOpenAnswer(0, 1, 11, e.target.value, true)} />. He opened his old cabinet and showed him his
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][12].student} onChange={(e) => setStudentOpenAnswer(0, 1, 12, e.target.value, true)} /> and books about planes. They They spoke and laughed all night until there weren’t any stars left in the
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][13].student} onChange={(e) => setStudentOpenAnswer(0, 1, 13, e.target.value, true)} /> .
-                                                    </div>
                                                     <div className='mt-4 border border border-info p-3'>
-                                                        <div className="d-flex justify-content-center"><strong> Scroll the words into the right blanks.</strong></div>
                                                         <strong><hr />
                                                             <div className='row'>
                                                                 <div className='col-2'>hug</div>
@@ -328,6 +282,52 @@ export default function Exam1(props) {
                                                             </div>
                                                         </strong>
                                                     </div>
+
+                                                    <div>
+                                                        Michael picked up a plane from the carpet and checked it very carefully. He was amused. ‘This is so nice, I love it! He said to his Uncle George.
+                                                    </div>
+                                                    <div className="paragraf">
+                                                        Uncle George lived in Paris. Michael visited him on holidays with his parents. Uncle George was a
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][1].student} onChange={(e) => setStudentOpenAnswer(0, 1, 1, e.target.value, true)} />
+                                                        so he had a lot of
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][2].student} onChange={(e) => setStudentOpenAnswer(0, 1, 2, e.target.value, true)} />in his house. Michael loved being here because he loves to hear plane stories and his Uncle’s adventures.
+                                                    </div>
+                                                    <div className="paragraf">Michael: “Please Uncle, tell me another
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][3].student} onChange={(e) => setStudentOpenAnswer(0, 1, 3, e.target.value, true)} /> tonight!” he said with his hands clapping.
+                                                    </div>
+                                                    <div className="paragraf">
+                                                        Uncle George: “All right. I’ll tell you the one in 1995 then...” he said sitting on his couch with his warm cup of tea.
+                                                    </div>
+                                                    <div className="paragraf">Uncle George: “You mean the one with the
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][4].student} onChange={(e) => setStudentOpenAnswer(0, 1, 4, e.target.value, true)} />.”
+                                                    </div>
+
+
+                                                    <div className="paragraf">Uncle George: “Yeah. It was a cold and rainy night in
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][5].student} onChange={(e) => setStudentOpenAnswer(0, 1, 5, e.target.value, true)} />. The tower allowed us to fly so we did. But it was a total
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][6].student} onChange={(e) => setStudentOpenAnswer(0, 1, 6, e.target.value, true)} /> on the plane.”
+                                                    </div>
+                                                    <div className="paragraf">Michael: “What happened?” he said and Uncle George
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][7].student} onChange={(e) => setStudentOpenAnswer(0, 1, 7, e.target.value, true)} />.
+                                                    </div>
+                                                    <div className="paragraf">Uncle George: “We had two people fighting over a lost case at court. I guess they knew eachother from before. They were lawyers. They had knives and tried to
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][8].student} onChange={(e) => setStudentOpenAnswer(0, 1, 8, e.target.value, true)} /> eachother. I was the one to stop them.”
+                                                    </div>
+                                                    <div className="paragraf">Michael: “But what about the plane? It will crash if you’re not flying it!”
+                                                    </div>
+                                                    <div className="paragraf">Uncle George: “That’s why we have
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][9].student} onChange={(e) => setStudentOpenAnswer(0, 1, 9, e.target.value, true)} /> on the plane son!”
+                                                    </div>
+                                                    <div className="paragraf">Michael reached to another plane and starting speaking.</div>
+                                                    <div className="paragraf">“I want you to tell me more stories. I also want to know more about planes. Maybe I’ll become a pilot one day, just like you. I love you and I want to be like you. You’re a
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][10].student} onChange={(e) => setStudentOpenAnswer(0, 1, 10, e.target.value, true)} /> Uncle!”
+                                                    </div>
+                                                    <div className="paragraf">Uncle George wiped his tears from his cheeks and gave his nephew a big
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][11].student} onChange={(e) => setStudentOpenAnswer(0, 1, 11, e.target.value, true)} />. He opened his old cabinet and showed him his
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][12].student} onChange={(e) => setStudentOpenAnswer(0, 1, 12, e.target.value, true)} /> and books about planes. They They spoke and laughed all night until there weren’t any stars left in the
+                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][13].student} onChange={(e) => setStudentOpenAnswer(0, 1, 13, e.target.value, true)} /> .
+                                                    </div>
+                                                 
                                                 </div>
                                             </React.Fragment>
                                             : null
@@ -341,6 +341,7 @@ export default function Exam1(props) {
                                                         <strong>A. Listen and fill in the blanks.</strong>
                                                     </div>
                                                     <div className="paragraf">
+                                                    <strong>Dung Beetle:</strong> Thank you Axebug. Thia was an amazing 
                                                         <input className="form-input textformat" type="text" value={answer.result[1][0][1].student} onChange={(e) => setStudentOpenAnswer(1, 0, 1, e.target.value)} />.
                                                     </div>
                                                     <div className="paragraf">
@@ -397,7 +398,7 @@ export default function Exam1(props) {
                                                     <div className="paragraf">
                                                         <strong>Axebug :</strong> Guys!
                                                         <input className="form-input textformat" type="text" value={answer.result[1][0][11].student} onChange={(e) => setStudentOpenAnswer(1, 0, 11, e.target.value)} />
-                                                        Our return home.
+                                                        our return home.
                                                     </div>
                                                     <div className="paragraf">
                                                         <strong>Axebug :</strong> I think we found
@@ -416,7 +417,7 @@ export default function Exam1(props) {
                                             <React.Fragment>
                                                 <div>
                                                     <div className="alert alert-dark" role="alert">
-                                                        <strong>B. Listen and read. Then put the words below in order according to the story. Which one happens first?</strong>
+                                                        <strong>B. Listen and read. Then put the words below in order according to the story.</strong>
                                                     </div>
                                                     <div className="paragraf"><strong>Insect Brown:</strong> There is a rumour: “It landed on the town square.” And one question: “Have you seen it?”</div>
                                                     <div className="paragraf"><strong>Insect Purple:</strong> They say it’s like a huge housefly. Is that right?</div>
@@ -430,7 +431,7 @@ export default function Exam1(props) {
                                                     <div className="paragraf"><strong>Axebug:</strong> Follow me! Let’s get your clothes changed for the journey.</div>
                                                     <div className="paragraf"><strong>Dung Beetle: </strong>Clothes? I have brought some with me.</div>
                                                     <div className="paragraf"><strong>Axebug:</strong> Hah hah! You can’t travel to the space in jeans. You need space suits.</div>
-                                                    <div className="paragraf"><strong> Axebug: </strong>There is o ne for each of you.</div>
+                                                    <div className="paragraf"><strong> Axebug: </strong>There is one for each of you.</div>
                                                     <div className="paragraf"><strong>Axebug:</strong> This is for you.</div>
                                                     <div className="paragraf"><strong>Axebug:</strong> And this is yours.</div>
                                                     <div className="paragraf"><strong>Dung Beetle: </strong>I think my own pyjamas are more comfortable. But whatever...</div>
@@ -479,7 +480,7 @@ export default function Exam1(props) {
                                                 <div>
 
                                                     <div className="alert alert-dark" role="alert">
-                                                        <strong>A. Read the dialogue and choose the best answer for the blanks. Use the box below.</strong>
+                                                        <strong>A. Read the dialogue and write the best answer for the blanks. Use the box below.</strong>
                                                     </div>
                                                     <div className='row'>
                                                         <div className='col-6'>
@@ -651,9 +652,7 @@ export default function Exam1(props) {
                                             </React.Fragment>
                                             : null
                                     }
-
                                 </div>
-
                             </React.Fragment>
                             : null
                     }

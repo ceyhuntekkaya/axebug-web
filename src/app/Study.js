@@ -37,6 +37,7 @@ export default function Study(props) {
         setStudentId(student.id )
         setStudentWorkApi("checkStudentWorkTask", { studentId: student.id, taskId: id });
         setStudentWork({ ...studentWork, student: { id: studentId } })
+        // eslint-disable-next-line 
     }, [])
 
     useEffect(() => {
@@ -44,6 +45,7 @@ export default function Study(props) {
             setSelectedContent(panels[0]);
             onSectionContent(panels[0], 0)
         }
+        // eslint-disable-next-line 
     }, [panels])
 
     const onSectionContent = (content, key) => {
@@ -91,6 +93,7 @@ export default function Study(props) {
                 }
             }
         }
+        // eslint-disable-next-line 
     }, [selectedContent])
 
     return (
@@ -102,7 +105,7 @@ export default function Study(props) {
                             {
                                 panels ?
                                     panels.map((panel, key) => (
-                                        <img src={`../assets/${panel.imageFullUrl}`} key={key} className={`col-6 pb-4`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} />
+                                        <img src={`../assets/${panel.imageFullUrl}`} key={key} className={`col-6 pb-4`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} alt={key} />
                                     )) : null
                             }
                         </div>

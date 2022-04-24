@@ -23,6 +23,7 @@ export default function EpisodeList() {
         });
         setEpisodeWorks(episodeWork)
         setEpisodes("findByChapter", id);
+        // eslint-disable-next-line 
     }, [])
 
     return (

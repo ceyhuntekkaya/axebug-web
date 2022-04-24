@@ -12,6 +12,7 @@ export default function TeacherList() {
     const res = JSON.parse(localStorage.getItem("school"));
     setSchool(res);
     setTeacherList("findBySchoolteacher", res.id);
+    // eslint-disable-next-line 
   }, [])
 
 

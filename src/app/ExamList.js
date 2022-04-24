@@ -12,12 +12,13 @@ export default function ExamList() {
         document.body.style.backgroundColor = 'white'; // '#231F20';
         const studentData = JSON.parse(localStorage.getItem("student"));
         setStudentWorkApi("studentActiveTask", studentData.id)
+        // eslint-disable-next-line 
     }, [])
 
     useEffect(() => {
         if (studentWorkTaskList) {
-            const studentWorkListApi = studentWorkTaskList.studentWorkList;
-            const schoolRoomWorkListApi = studentWorkTaskList.schoolRoomWorkList;
+            //const studentWorkListApi = studentWorkTaskList.studentWorkList;
+            //const schoolRoomWorkListApi = studentWorkTaskList.schoolRoomWorkList;
             const examListApi = studentWorkTaskList.examList;
             const exams = [];
             if (examListApi) {
@@ -42,6 +43,7 @@ export default function ExamList() {
             }
             setExamList(exams)
         }
+        // eslint-disable-next-line 
     }, [studentWorkTaskList])
 
     return (

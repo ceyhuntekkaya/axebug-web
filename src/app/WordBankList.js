@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import useChapter from '../api/useChapter';
 import Home from './components/Home';
 import Square from './components/Square';
@@ -9,6 +8,7 @@ export default function WordBankList() {
 
   useEffect(() => {
     setChapters("findAllChaptersWithEpisodes", null);
+    // eslint-disable-next-line 
   }, [])
 
   return <React.Fragment>

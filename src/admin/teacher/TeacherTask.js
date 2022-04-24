@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import useTeacher from "../../api/useTeacher"
 
 const teacherModel = {
     "id": 0,
@@ -11,15 +10,13 @@ const teacherModel = {
 }
 
 export default function TeacherTask(props) {
-    const [teacherList, setTeacherList] = useTeacher([]);
     const [teacher, setTeacher] = useState(teacherModel);
-    
-
 
     useEffect(() => {
         if(props.selectedTeacher){
             setTeacher(props.selectedTeacher);
         }
+        // eslint-disable-next-line 
     }, [props.selectedTeacher])
 
 

@@ -18,6 +18,7 @@ export default function Spelling() {
         setSelectedWordId(parseInt(id));
         var episodeId = searchParams.get("e");
         setWordList("findByEpisode", {episodeId: episodeId, category: "spelling"});
+        // eslint-disable-next-line 
     }, [])
 
     useEffect(() => {
@@ -33,6 +34,7 @@ export default function Spelling() {
                 }
             });
         }
+        // eslint-disable-next-line 
     }, [wordList])
 
     const nextQuestions = () => {

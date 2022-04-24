@@ -15,6 +15,7 @@ export default function StudentList() {
         const res = JSON.parse(localStorage.getItem("school"));
         setSchool(res);
         setSchoolRoomList("findAllSchoolRoom", res.id);
+        // eslint-disable-next-line 
     }, [])
 
     const addStudent = (student) => {
@@ -24,6 +25,7 @@ export default function StudentList() {
     }
 
     const updateStudent = (student) => {
+
 
     }
 

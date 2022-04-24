@@ -8,6 +8,7 @@ export default function SpellingList() {
 
   useEffect(() => {
     setChapters("findAllChaptersWithEpisodes", null);
+    // eslint-disable-next-line 
   }, [])
 
   return <React.Fragment>

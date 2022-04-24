@@ -12,6 +12,5 @@ export default function AssignmentEpiseode(props) {
             ))
         }
     </ul>
-
     )
 }

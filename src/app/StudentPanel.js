@@ -27,6 +27,7 @@ export default function StudentPanel() {
     setStudent(studentData);
     setStudentWorkApi("studentActiveTask", studentData.id)
     setStudentScore("studentScore", studentData.id)
+    // eslint-disable-next-line 
   }, [])
 
   useEffect(() => {

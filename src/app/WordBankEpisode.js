@@ -13,13 +13,14 @@ export default function WordBankEpisode() {
     useEffect(() => {
         var id = searchParams.get("id");
         setWordList("findByEpisode", { episodeId: id, category: "wordBank" });
-
+// eslint-disable-next-line 
     }, [])
     useEffect(() => {
         if (wordList) {
             setChapter(wordList[0].episode.chapter);
             setEpisode(wordList[0].episode)
         }
+        // eslint-disable-next-line 
     }, [wordList])
 
     return <React.Fragment>

@@ -20,6 +20,7 @@ export default function ChapterList() {
     });
     setChapterWorks(chapterWork)
     setChapters("findAllChapters", null);
+    // eslint-disable-next-line 
   }, [])
 
   return (
