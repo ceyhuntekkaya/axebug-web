@@ -19,6 +19,7 @@ export default function WordBank(props) {
         setSelectedWordId(parseInt(id));
         var episodeId = searchParams.get("e");
         setWordList("findByEpisode", {episodeId: episodeId, category: "wordBank"});
+        // eslint-disable-next-line 
     }, [])
 
     useEffect(() => {
@@ -34,6 +35,7 @@ export default function WordBank(props) {
                 }
             });
         }
+        // eslint-disable-next-line 
     }, [wordList])
 
     const nextQuestions = () => {

@@ -1,8 +1,6 @@
 import React from 'react'
 
 export default function AssignmentSchoolRooms(props) {
-    //<li className="list-group-item active">An active item</li>
-    // setSelectedSchoolRoom
     return (
         <ul className="list-group">
             {

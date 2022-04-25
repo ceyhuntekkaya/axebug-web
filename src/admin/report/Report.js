@@ -12,7 +12,6 @@ const scoreModel = {
   speakingScore: 0,
   listeningScore: 0,
 }
-
 export default function Report() {
 
   let { id, std } = useParams();
@@ -23,6 +22,7 @@ export default function Report() {
     document.body.style.backgroundColor = 'white';
     setReportData("createReport", { studentId: std, examId: id })
     setStudentScore("studentScore", std)
+    // eslint-disable-next-line 
   }, [])
 
   const getProgress = (score) => {

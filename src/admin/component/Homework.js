@@ -5,14 +5,12 @@ const SectionList = require("../../model/Section.json")
 const EpisodeList = require("../../model/episode.json")
 
 export default function Homework() {
-
     const [episodes, setEpisodes] = useState([]);
     const [schoolRooms, setSchoolRooms] = useState([]);
     const [students, setStudents] = useState([]);
     const [selectedSchoolRoom, setSelectedSchoolRoom] = useState({});
 
     useEffect(() => {
-
         const axeBug = [];
         EpisodeList.episodes.forEach(episode => {
             const sections = SectionList.sections.filter(s => s.episodeId === episode.id);
@@ -44,8 +42,6 @@ export default function Homework() {
         }
         setSchoolRooms(schoolRoomListEffect);
         setStudents(studentListEffect);
-
-
     }, [])
 
     const SchoolRoomSelect = () => {

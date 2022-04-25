@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
 const enums = require('../../api/enums.json')
-
 const schoolRoomtModel = {
     "id": 0,
     "name": "",
@@ -33,7 +32,6 @@ export default function SchoolRoomTask(props) {
         props.setSelectedSchoolRoom({});
     }
 
-
     const addEvent = (e) => {
         e.preventDefault();
         const addSchoolRomm = { "name": name, "grade": grade, "active": active };
@@ -51,8 +49,6 @@ export default function SchoolRoomTask(props) {
         const deleteSchoolRomm = { "id": id, "name": name, "grade": grade, "active": active };
         props.deleteSchoolRoom(deleteSchoolRomm);
     }
-
-
 
     return (
         <form>

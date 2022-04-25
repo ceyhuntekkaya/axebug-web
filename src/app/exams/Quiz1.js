@@ -54,7 +54,7 @@ export default function Quiz1(props) {
 
         <div className="card-header">
           <div className="d-flex justify-content-center">
-            <h1><strong> AXE QUIZ CHAPTER 1 EPISODE 1</strong></h1>
+            <h1><strong> AXEQUIZ CHAPTER 1 EPISODE 1</strong></h1>
 
           </div>
         </div>
@@ -220,7 +220,7 @@ export default function Quiz1(props) {
                       pageNo === 1 ?
                         <React.Fragment>
                           <div className="alert alert-dark" role="alert">
-                            <strong>   ?????????????????????????????</strong>
+                            <strong>Listen and fill in the gaps.</strong>
                           </div>
 
 
@@ -232,23 +232,23 @@ export default function Quiz1(props) {
                             or shall i do it?
                           </div>
 
-                          <div className="paragraf"><strong>Narrator: </strong>Upon listening their argument...
+                          <div className="paragraf"><strong>Upon listening their argument...</strong>
                           </div>
 
                           <div className="paragraf"><strong>Axebug:</strong> Hmm!
                           </div>
-                          <div className="paragraf"><strong>Axebug:</strong> It’s neither fl t nor round. The world is a
+                          <div className="paragraf"><strong>Axebug:</strong> It’s neither flat nor round. The world is a
                             <input className="form-input textformat" type="text" value={answer.result[0][1][2].student} onChange={(e) => setStudentOpenAnswer(0, 1, 2, e.target.value, true)} />
                           </div>
 
                           <div className="paragraf"><strong>Axebug:</strong> Hey! Just
                             <input className="form-input textformat" type="text" value={answer.result[0][1][3].student} onChange={(e) => setStudentOpenAnswer(0, 1, 3, e.target.value, true)} />
-                            would you like to find the an wer by yourselves? Q1LB4
+                            would you like to find the answer by yourselves?
                           </div>
 
                           <div className="paragraf"><strong>Dung Beetle:</strong> Wow! This sounds
                             <input className="form-input textformat" type="text" value={answer.result[0][1][4].student} onChange={(e) => setStudentOpenAnswer(0, 1, 4, e.target.value, true)} />.
-                            Let’s try to find the an wer.
+                            Let’s try to find the answer.
                             <input className="form-input textformat" type="text" value={answer.result[0][1][5].student} onChange={(e) => setStudentOpenAnswer(0, 1, 5, e.target.value, true)} />
                           </div>
 
@@ -275,7 +275,7 @@ export default function Quiz1(props) {
                             <input className="form-input textformat" type="text" value={answer.result[0][1][11].student} onChange={(e) => setStudentOpenAnswer(0, 1, 11, e.target.value, true)} />.
                           </div>
 
-                          <div className="paragraf"><strong>Axebug:</strong> Oh, finall ! Come on! Let’s go in.
+                          <div className="paragraf"><strong>Axebug:</strong> Oh, finall! Come on! Let’s go in.
                           </div>
 
                           <div className="paragraf"><strong>Axebug: </strong>And here we are. Please
@@ -289,9 +289,8 @@ export default function Quiz1(props) {
 
                         <React.Fragment>
                           <div className="alert alert-dark" role="alert">
-                            <strong>  **************************</strong>
+                            <strong> C. Match the words read their definitions.</strong>
                           </div>
-
                           <div className='row'>
                             <div className='col-2'>1. Argument
                             </div>
@@ -342,12 +341,7 @@ export default function Quiz1(props) {
                               <div className="paragraf alert alert-success"><strong>E. </strong>Connected to a purpose or opinion very much</div>
                             </div>
                           </div>
-
-
-
-
                           <hr />
-
                           <div className='row'>
                             <div className='col-2'> Experience
                             </div>
@@ -363,7 +357,6 @@ export default function Quiz1(props) {
                             </div>
                             <div className='col-2'>
                               <input className="form-input w-100" type="text" value={answer.result[0][2][7].student} onChange={(e) => setStudentOpenAnswer(0, 2, 7, e.target.value)} />
-
                             </div>
                             <div className='col-8'>
                               Practical knowledge of your own
@@ -411,14 +404,9 @@ export default function Quiz1(props) {
                       pageNo === 3 ?
 
                         <React.Fragment>
-
                           <div className="alert alert-dark" role="alert">
                             <strong>   D. Unscramble the words. </strong>
                           </div>
-
-
-
-
                           <div className='row'>
                             <div className='col-3'>
                             </div>
@@ -431,66 +419,63 @@ export default function Quiz1(props) {
                             <div className='col-9'>
                             </div>
                           </div>
-
-
-
                           <div className='row'>
-                            <div className='col-3'> 1. Tnksiy
+                            <div className='col-3'> 1. tnksiy
                             </div>
                             <div className='col-9'><input className="form-input textformat" type="text" value={answer.result[0][3][1].student} onChange={(e) => setStudentOpenAnswer(0, 3, 1, e.target.value, true)} />
                             </div>
                             <div className='col-9'></div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 2. Teriponnuprt
+                            <div className='col-3'> 2. teriponnuprti
                             </div>
                             <div className='col-9'><input className="form-input textformat" type="text" value={answer.result[0][3][2].student} onChange={(e) => setStudentOpenAnswer(0, 3, 2, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 3. Derttecul
+                            <div className='col-3'> 3. derttecul
                             </div>
                             <div className='col-9'><input className="form-input textformat" type="text" value={answer.result[0][3][3].student} onChange={(e) => setStudentOpenAnswer(0, 3, 3, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 4. Eyurjon
+                            <div className='col-3'> 4. eyurjon
                             </div>
                             <div className='col-9'><input className="form-input textformat" type="text" value={answer.result[0][3][4].student} onChange={(e) => setStudentOpenAnswer(0, 3, 4, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 5. Yallfni
+                            <div className='col-3'> 5. yallfni
                             </div>
                             <div className='col-9'><input className="form-input textformat" type="text" value={answer.result[0][3][5].student} onChange={(e) => setStudentOpenAnswer(0, 3, 5, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 6. Ioqeustn
+                            <div className='col-3'> 6. ioqeustn
                             </div>
                             <div className='col-9'><input className="form-input textformat" type="text" value={answer.result[0][3][6].student} onChange={(e) => setStudentOpenAnswer(0, 3, 6, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 7. Nurdo
+                            <div className='col-3'> 7. nurdo
                             </div>
                             <div className='col-9'><input className="form-input textformat" type="text" value={answer.result[0][3][7].student} onChange={(e) => setStudentOpenAnswer(0, 3, 7, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 8. Aillgev
+                            <div className='col-3'> 8. aillgev
                             </div>
                             <div className='col-9'><input className="form-input textformat" type="text" value={answer.result[0][3][8].student} onChange={(e) => setStudentOpenAnswer(0, 3, 8, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 9. Yenveutlla
+                            <div className='col-3'> 9. yenveutlla
                             </div>
                             <div className='col-9'><input className="form-input textformat" type="text" value={answer.result[0][3][9].student} onChange={(e) => setStudentOpenAnswer(0, 3, 9, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 10. Olmwcee
+                            <div className='col-3'> 10. olmwcee
                             </div>
                             <div className='col-9'><input className="form-input textformat" type="text" value={answer.result[0][3][10].student} onChange={(e) => setStudentOpenAnswer(0, 3, 10, e.target.value, true)} />
                             </div>
@@ -503,13 +488,9 @@ export default function Quiz1(props) {
                       pageNo === 4 ?
 
                         <React.Fragment>
-
-
                           <div className="alert alert-dark" role="alert">
                             <strong>    A. Listen to the audio. Then, repeat the sentences clearly.</strong>
                           </div>
-
-
                           <div className='border border-success p-3 mt-3'>
                             <SpechText getSpeechText={getSpeechText} questionNumber={1} />
                           </div>

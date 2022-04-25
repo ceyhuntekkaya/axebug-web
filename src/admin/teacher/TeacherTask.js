@@ -16,6 +16,7 @@ export default function TeacherTask(props) {
         if(props.selectedTeacher){
             setTeacher(props.selectedTeacher);
         }
+        // eslint-disable-next-line 
     }, [props.selectedTeacher])
 
 

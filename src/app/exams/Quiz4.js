@@ -47,7 +47,7 @@ export default function Quiz4(props) {
       <div className="card mt-5 mb-5">
         <div className="card-header">
           <div className="d-flex justify-content-center">
-            <h1><strong>  AXE QUIZ CHAPTER 1 EPISODE 4</strong></h1>
+            <h1><strong>  AXEQUIZ CHAPTER 1 EPISODE 4</strong></h1>
 
           </div>
         </div>
@@ -214,9 +214,6 @@ export default function Quiz4(props) {
                           <div className="alert alert-dark" role="alert">
                             <strong>       B. Listen and fill in the gaps.</strong>
                           </div>
-
-
-
                           <div className="paragraf">
                             <strong>Axebug:</strong> The moon has around 300.000 craters on it’s surface.
                           </div>
@@ -232,7 +229,7 @@ export default function Quiz4(props) {
                           </div>
 
                           <div className="paragraf">
-                            <strong>Dung Beetle: </strong> Thank you axebug... this was an amazing
+                            <strong>Dung Beetle: </strong> Thank you Axebug... this was an amazing
                             <input className="form-input textformat" type="text" value={answer.result[0][1][3].student} onChange={(e) => setStudentOpenAnswer(0, 1, 3, e.target.value, true)} />
                           </div>
 
@@ -247,7 +244,7 @@ export default function Quiz4(props) {
                           </div>
 
                           <div className="paragraf">
-                            <strong>Dung Beetle: </strong>Axebug says there isn’t. Don’t you get it? Q4LB6
+                            <strong>Dung Beetle: </strong>Axebug says there isn’t. Don’t you get it? 
                           </div>
 
                           <div className="paragraf">
@@ -309,11 +306,6 @@ export default function Quiz4(props) {
                             <strong>Axebug:</strong> I think we
                             <input className="form-input textformat" type="text" value={answer.result[0][1][13].student} onChange={(e) => setStudentOpenAnswer(0, 1, 13, e.target.value, true)} />. Wooohooo!!!
                           </div>
-
-                          <div className="paragraf">
-                            <strong>Axebug:</strong>
-                            <input className="form-input textformat" type="text" value={answer.result[0][1][14].student} onChange={(e) => setStudentOpenAnswer(0, 1, 14, e.target.value, true)} />
-                          </div>
                         </React.Fragment>
                         : null
                     }
@@ -322,7 +314,7 @@ export default function Quiz4(props) {
 
                         <React.Fragment>
                           <div className="alert alert-dark" role="alert">
-                            <strong>     *********************</strong>
+                            <strong>  C. Match the words their definitions.</strong>
                           </div>
 
                           <div className='row'>
@@ -459,61 +451,61 @@ export default function Quiz4(props) {
 
 
                           <div className='row'>
-                            <div className='col-3'> 1. Urtren </div>
+                            <div className='col-3'> 1. urtren </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][1].student} onChange={(e) => setStudentOpenAnswer(0, 3, 1, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 2. Cergemney </div>
+                            <div className='col-3'> 2. cergemney </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][2].student} onChange={(e) => setStudentOpenAnswer(0, 3, 2, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 3. Inceeprxee </div>
+                            <div className='col-3'> 3. inceeprxee </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][3].student} onChange={(e) => setStudentOpenAnswer(0, 3, 3, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> vvv4. Rownar </div>
+                            <div className='col-3'> 4. rownar </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][4].student} onChange={(e) => setStudentOpenAnswer(0, 3, 4, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 5. Vesamsi </div>
+                            <div className='col-3'> 5. vesamsi </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][5].student} onChange={(e) => setStudentOpenAnswer(0, 3, 5, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 6. Vrtiaaoiltagn </div>
+                            <div className='col-3'> 6. vrtiaaoiltagn </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][6].student} onChange={(e) => setStudentOpenAnswer(0, 3, 6, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 7. Urcloo </div>
+                            <div className='col-3'> 7. urcloo </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][7].student} onChange={(e) => setStudentOpenAnswer(0, 3, 7, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 8. Gnyhedro </div>
+                            <div className='col-3'> 8. gnyhedro </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][8].student} onChange={(e) => setStudentOpenAnswer(0, 3, 8, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 9. Ggistbe </div>
+                            <div className='col-3'> 9. ggistbe </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][9].student} onChange={(e) => setStudentOpenAnswer(0, 3, 9, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 10. Etorat </div>
+                            <div className='col-3'> 10. etorat </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][10].student} onChange={(e) => setStudentOpenAnswer(0, 3, 10, e.target.value, true)} />
                             </div>

@@ -23,15 +23,15 @@ export default function Assignment() {
         const res = JSON.parse(localStorage.getItem("school"));
         setSchoolRoomList("findAllSchoolRoom", res.id);
         setAllChapterDetail("findAllDetail", null);
-
+        // eslint-disable-next-line 
     }, [])
 
     useEffect(() => {
         if (selectedSchoolRoom)
             if (selectedSchoolRoom.id !== 0)
                 setSchoolRoomWorkList("getSchoolRoomWorks", selectedSchoolRoom.id)
+                // eslint-disable-next-line 
     }, [selectedSchoolRoom])
-
 
     useEffect(() => {
         if (allChapterDetail) {
@@ -97,7 +97,6 @@ export default function Assignment() {
                 else if (selectedType === 3) {// Exam
 
                 }
-
             }
     }
     useEffect(() => {
@@ -105,11 +104,10 @@ export default function Assignment() {
             hasHappyWorks(selectedEpisode.id)
         }
         else if (selectedType === 2) {//Quiz
-
         }
         else if (selectedType === 3) {// Exam
-
         }
+        // eslint-disable-next-line 
     }, [schoolRoomWorkList])
 
     const assignmentWorkDelete = (work) => {
