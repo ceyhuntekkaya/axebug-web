@@ -37,7 +37,7 @@ export default function Study(props) {
         setStudentId(student.id)
         setStudentWorkApi("checkStudentWorkTask", { studentId: student.id, taskId: id });
         setStudentWork({ ...studentWork, student: { id: studentId } })
-
+        // eslint-disable-next-line 
     }, [])
 
     useEffect(() => {
@@ -45,6 +45,7 @@ export default function Study(props) {
             setSelectedContent(panels[0]);
             onSectionContent(panels[0], 0)
         }
+        // eslint-disable-next-line 
     }, [panels])
 
     const onSectionContent = (content, key) => {
@@ -92,6 +93,7 @@ export default function Study(props) {
                 }
             }
         }
+        // eslint-disable-next-line 
     }, [selectedContent])
 
     return (

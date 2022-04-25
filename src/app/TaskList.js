@@ -24,6 +24,7 @@ export default function TaskList() {
         });
         setTaskWorks(taskWork)
         setTasks("findByEpisode", id);
+        // eslint-disable-next-line 
     }, [])
 
     return (

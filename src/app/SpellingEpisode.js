@@ -13,6 +13,7 @@ export default function SpellingEpisode() {
     useEffect(() => {
         var id = searchParams.get("id");
         setWordList("findByEpisode", { episodeId: id, category: "spelling" });
+        // eslint-disable-next-line 
     }, [])
 
     useEffect(() => {
@@ -20,6 +21,7 @@ export default function SpellingEpisode() {
             setChapter(wordList[0].episode.chapter);
             setEpisode(wordList[0].episode)
         }
+        // eslint-disable-next-line 
     }, [wordList])
 
     return <React.Fragment>

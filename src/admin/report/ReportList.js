@@ -9,13 +9,14 @@ export default function ReportList() {
     const [studentList, setStudentList] = useStudent([]);
     const [schoolRoomList, setSchoolRoomList] = useSchoolRoom([]);
     const [selectedStudent, setSelectedStudent] = useState({});
+    const [setSchool] = useState(null);
     const [selectedSchoolRoomId, setSelectedSchoolRoomId] = useState(0);
-
     const [examList, setExamList] = useExam([]);
 
     useEffect(() => {
         const res = JSON.parse(localStorage.getItem("school"));
         setSchoolRoomList("findAllSchoolRoom", res.id);
+        // eslint-disable-next-line 
     }, [])
 
     const selectStudentEvent = (student) => {
@@ -27,10 +28,6 @@ export default function ReportList() {
         setSelectedSchoolRoomId(schoolRoomId)
         setStudentList("findBySchoolRoomStudent", schoolRoomId);
     }
-
-
-
-
 
     return (
         <div className="container">

@@ -48,7 +48,7 @@ export default function Quiz3(props) {
       <div className="card mt-5 mb-5">
         <div className="card-header">
           <div className="d-flex justify-content-center">
-            <h1><strong>   AXE QUIZ CHAPTER 1 EPISODE 3</strong></h1>
+            <h1><strong>   AXEQUIZ CHAPTER 1 EPISODE 3</strong></h1>
 
           </div>
         </div>
@@ -95,7 +95,7 @@ export default function Quiz3(props) {
                             </div>
                           </div>
                           <div className='row'>
-                            <strong>2. The earth is located in the .................</strong>
+                            <strong>2. The Earth is located in the .................</strong>
                             <div className="form-check">
                               <input className="form-check-input" type="radio" name="as2" onChange={(e) => setStudentOpenAnswer(0, 0, 2, "A")} />
                               <label className="form-check-label" htmlFor="flexRadioDefault1">
@@ -126,25 +126,25 @@ export default function Quiz3(props) {
                             <div className="form-check">
                               <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer(0, 0, 3, "A")} />
                               <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                A) Satellite
+                                A) satellite
                               </label>
                             </div>
                             <div className="form-check">
                               <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer(0, 0, 3, "B")} />
                               <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                B) Star
+                                B) star
                               </label>
                             </div>
                             <div className="form-check">
                               <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer(0, 0, 3, "C")} />
                               <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                C) Space
+                                C) space
                               </label>
                             </div>
                             <div className="form-check">
                               <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer(0, 0, 3, "D")} />
                               <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                D)Satellite
+                                D) satellite
                               </label>
                             </div>
                           </div>
@@ -180,40 +180,42 @@ export default function Quiz3(props) {
                             <div className="form-check">
                               <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer(0, 0, 5, "A")} />
                               <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                A) Make a left turn
+                                A) make a left turn
                               </label>
                             </div>
                             <div className="form-check">
                               <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer(0, 0, 5, "B")} />
                               <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                B) Wave your left hand
+                                B) wave your left hand
                               </label>
                             </div>
                             <div className="form-check">
                               <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer(0, 0, 5, "C")} />
                               <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                C) Touch your left ear
+                                C) touch your left ear
                               </label>
                             </div>
                             <div className="form-check">
                               <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer(0, 0, 5, "D")} />
                               <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                D) Wink your left eye
+                                D) wink your left eye
                               </label>
                             </div>
                           </div>
                         </React.Fragment>
                         : null
                     }
-
                     {
                       pageNo === 1 ?
                         <React.Fragment>
                           <div className="alert alert-dark" role="alert">
-                            <strong>    ???????????????????????</strong>
+                            <strong>    B. Listen and fill in the gaps.</strong>
                           </div>
-
-
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/quiz_listening_c1_e3.mp3`} type="audio/mpeg" />
+                            </audio>
+                          </div>
                           <div className="paragraf">
                             <strong>Axebug:</strong> I can
                             <input className="form-input textformat" type="text" value={answer.result[0][1][1].student} onChange={(e) => setStudentOpenAnswer(0, 1, 1, e.target.value, true)} /> this every
@@ -318,9 +320,8 @@ export default function Quiz3(props) {
 
                         <React.Fragment>
                           <div className="alert alert-dark" role="alert">
-                            <strong>     ---------------------------------------</strong>
+                            <strong>  C. Match the words their definitions.</strong>
                           </div>
-
                           <div className='row'>
                             <div className='col-2'>   1. Launch
                             </div>
@@ -451,61 +452,61 @@ export default function Quiz3(props) {
 
 
                           <div className='row'>
-                            <div className='col-3'> 1. Inegmia </div>
+                            <div className='col-3'> 1. inegmia </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][1].student} onChange={(e) => setStudentOpenAnswer(0, 3, 1, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 2. Rceous </div>
+                            <div className='col-3'> 2. rceous </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][2].student} onChange={(e) => setStudentOpenAnswer(0, 3, 2, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 3. Raslpcretac </div>
+                            <div className='col-3'> 3. ruaslpcretac </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][3].student} onChange={(e) => setStudentOpenAnswer(0, 3, 3, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 4. Tcosels </div>
+                            <div className='col-3'> 4. tcosels </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][4].student} onChange={(e) => setStudentOpenAnswer(0, 3, 4, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 5. Rencet </div>
+                            <div className='col-3'> 5. rencet </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][5].student} onChange={(e) => setStudentOpenAnswer(0, 3, 5, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 6. Dysuedln </div>
+                            <div className='col-3'> 6. dysuedln </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][6].student} onChange={(e) => setStudentOpenAnswer(0, 3, 6, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 7. Zydzi </div>
+                            <div className='col-3'> 7. zydzi </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][7].student} onChange={(e) => setStudentOpenAnswer(0, 3, 7, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 8. Idbhne </div>
+                            <div className='col-3'> 8. idbhne </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][8].student} onChange={(e) => setStudentOpenAnswer(0, 3, 8, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 9. Spntlea </div>
+                            <div className='col-3'> 9. spntlea </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][9].student} onChange={(e) => setStudentOpenAnswer(0, 3, 9, e.target.value, true)} />
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-3'> 10. Groinvelv </div>
+                            <div className='col-3'> 10. groinvelv </div>
                             <div className='col-9'>
                               <input className="form-input textformat" type="text" value={answer.result[0][3][10].student} onChange={(e) => setStudentOpenAnswer(0, 3, 10, e.target.value, true)} />
                             </div>
@@ -521,15 +522,34 @@ export default function Quiz3(props) {
                           <div className="alert alert-dark" role="alert">
                             <strong>    A. Listen to the audio. Then, repeat the sentences clearly.</strong>
                           </div>
-
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/p076_01_c1e3.mp3`} type="audio/mpeg" />
+                            </audio>
+                          </div>
                           <div className='border border-success p-3 mt-3'>
                             <SpechText getSpeechText={getSpeechText} questionNumber="S1" />
+                          </div>
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/p079_01_c1e3.mp3`} type="audio/mpeg" />
+                            </audio>
                           </div>
                           <div className='border border-success p-3 mt-3'>
                             <SpechText getSpeechText={getSpeechText} questionNumber="S2" />
                           </div>
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/p086_03_c1e4.mp3`} type="audio/mpeg" />
+                            </audio>
+                          </div>
                           <div className='border border-success p-3 mt-3'>
                             <SpechText getSpeechText={getSpeechText} questionNumber="S3" />
+                          </div>
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/p091_02_c1e4.mp3`} type="audio/mpeg" />
+                            </audio>
                           </div>
                           <div className='border border-success p-3 mt-3'>
                             <SpechText getSpeechText={getSpeechText} questionNumber="S4" />

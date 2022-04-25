@@ -30,6 +30,7 @@ export default function StudentTask(props) {
             setId(props.selectedStudent.id);
             setSelectedSchoolRoomId(props.selectedStudent.schoolRoomId);
         }
+        // eslint-disable-next-line 
     }, [props.selectedStudent])
 
     const cancelEvent = (e) => {
