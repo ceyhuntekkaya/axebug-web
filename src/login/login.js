@@ -17,7 +17,7 @@ export default function Login(props) {
     }
 
     useEffect(() => {
-        if (login != null) {
+        if (login !== null) {
             if (login.error === null) {
                 if (login.userType === "STUDENT") {
                     localStorage.setItem("student", JSON.stringify(login.student))
@@ -44,7 +44,6 @@ export default function Login(props) {
             }
         }
     }, [login])
-
 
     return <React.Fragment>
         <div className="container" style={{ marginTop: 200 }}>

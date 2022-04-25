@@ -13,19 +13,6 @@ services:
     ports:
       - "${POSTGRES_PORT:-5432}:5432"
 
-  pgadmin:
-    container_name: pgadmin
-    image: dpage/pgadmin4:5
-    environment:
-      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
-      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
-      PGADMIN_CONFIG_SERVER_MODE: 'False'
-    networks:
-      - axebug-network
-    #    volumes:
-    #      - D:\volumes\pgadmin:/var/lib/pgadmin
-    ports:
-      - "${PGADMIN_PORT:-15033}:80"
 
   keycloak:
     container_name: keycloak
@@ -42,7 +29,7 @@ services:
     networks:
       - axebug-network
     ports:
-      - "${KEYCLOAK_PORT:-9090}:8080"
+      - "${KEYCLOAK_PORT:-9090}:8082"
     depends_on:
       - postgres
     restart: always
@@ -60,6 +47,22 @@ services:
       - "${RABBITMQ_PANEL_PORT:-15034}:15672"
 #    volumes:
 #      - D:\volumes\pgadmin:/var/lib/pgadmin
+
+  axebug-web:
+    container_name: axebug-web
+    image: ctekkaya/axebug-web:0.1.0
+    networks:
+      - axebug-network
+    ports:
+      - "3000:3000"
+
+  axebug-server:
+    container_name: axebug-server
+    image: ctekkaya/axebug-server:0.1.0
+    networks:
+      - axebug-network
+    ports:
+      - "8080:8080"
 
 networks:
   axebug-network:

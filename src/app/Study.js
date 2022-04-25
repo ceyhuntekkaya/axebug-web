@@ -34,7 +34,7 @@ export default function Study(props) {
         var id = searchParams.get("id");
         setPanels("findByTask", id);
         const student = JSON.parse(localStorage.getItem("student"));
-        setStudentId(student.id )
+        setStudentId(student.id)
         setStudentWorkApi("checkStudentWorkTask", { studentId: student.id, taskId: id });
         setStudentWork({ ...studentWork, student: { id: studentId } })
         // eslint-disable-next-line 

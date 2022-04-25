@@ -37,7 +37,7 @@ export default function Square(props) {
 
     return (
         <div className={`square col-${colSize}`} onClick={() => props.to ? goLink(props.to) : null}>
-            <img src="http://dummyimage.com/50x50/000/fff.gif&text=50x50" className="sq-setter-w" />
+            <img src="http://dummyimage.com/50x50/000/fff.gif&text=50x50" className="sq-setter-w" alt='window' />
             <div className={`sq-content m-1 row border border-4 ${border}`} style={{ backgroundColor: backgroundColor }} onClick={() => props.to ? goLink(props.to) : null}>
 
                 {
@@ -49,24 +49,3 @@ export default function Square(props) {
                 }
             </div></div>)
 }
-
-{/* <div className="square" style={{ width: 200, backgroundColor: "black" }}>
-<img src="http://dummyimage.com/50x50/000/fff.gif&text=50x50" className="sq-setter-w" />
-<div className="sq-content">Here is content</div>
-</div>
-<div className="square" style={{ height: 100, backgroundColor: "black" }}>
-<img src="http://dummyimage.com/50x50/000/fff.gif&text=50x50" className="sq-setter-h" />
-<div className="sq-content">Here is content</div>
-</div>
-<div className="extrawrapper">
-<div className="square" style={{ width: 200, backgroundColor: "black" }}>
-    <img src="http://dummyimage.com/50x50/000/fff.gif&text=50x50" className="sq-setter-w" />
-    <div className="sq-content">Here is content</div>
-</div>
-</div>
-<div className="extrawrapper">
-<div className="square" style={{ height: 100, backgroundColor: "black" }}>
-    <img src="http://dummyimage.com/50x50/000/fff.gif&text=50x50" className="sq-setter-h" />
-    <div className="sq-content">Here is content</div>
-</div>
-</div> */}

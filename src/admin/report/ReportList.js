@@ -15,7 +15,6 @@ export default function ReportList() {
 
     useEffect(() => {
         const res = JSON.parse(localStorage.getItem("school"));
-        setSchool(res);
         setSchoolRoomList("findAllSchoolRoom", res.id);
         // eslint-disable-next-line 
     }, [])
