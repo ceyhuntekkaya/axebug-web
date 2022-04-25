@@ -7,7 +7,7 @@ const answerEmpty = require('./Exam1Answer.json');
 export default function Exam1(props) {
     const [answer, setAnswer] = useState({ ...answerEmpty })
     const [pageNo, setPageNo] = useState(0)
-    const [maxPage, ] = useState(8)
+    const [maxPage,] = useState(8)
 
     const nextPage = () => {
         if (pageNo < maxPage - 1) setPageNo(pageNo + 1)
@@ -21,9 +21,9 @@ export default function Exam1(props) {
         temp.result[skils][section][queationNumber].student = value;
         let finalScore = temp.result[skils][section][queationNumber].weigth;
         // if (compare) {
-            var similarity = stringSimilarity.compareTwoStrings(clearText(value), clearText(temp.result[skils][section][queationNumber].answer));
-            finalScore = similarity * parseFloat(temp.result[skils][section][queationNumber].weigth)
-            temp.result[skils][section][queationNumber].score = finalScore;
+        var similarity = stringSimilarity.compareTwoStrings(clearText(value), clearText(temp.result[skils][section][queationNumber].answer));
+        finalScore = similarity * parseFloat(temp.result[skils][section][queationNumber].weigth)
+        temp.result[skils][section][queationNumber].score = finalScore;
         // }
         // else {
         //     if(value=== temp.result[skils][section][queationNumber].answer){
@@ -70,7 +70,7 @@ export default function Exam1(props) {
                                     {
                                         pageNo === 0 ?
                                             <React.Fragment>
-                                               
+
                                                 <div className="alert alert-dark" role="alert">
                                                     <strong>A. Read the Passage and answer the questions.</strong>
                                                 </div>
@@ -327,7 +327,7 @@ export default function Exam1(props) {
                                                         <input className="form-input textformat" type="text" value={answer.result[0][1][12].student} onChange={(e) => setStudentOpenAnswer(0, 1, 12, e.target.value, true)} /> and books about planes. They They spoke and laughed all night until there weren’t any stars left in the
                                                         <input className="form-input textformat" type="text" value={answer.result[0][1][13].student} onChange={(e) => setStudentOpenAnswer(0, 1, 13, e.target.value, true)} /> .
                                                     </div>
-                                                 
+
                                                 </div>
                                             </React.Fragment>
                                             : null
@@ -340,8 +340,15 @@ export default function Exam1(props) {
                                                     <div className="alert alert-dark" role="alert">
                                                         <strong>A. Listen and fill in the blanks.</strong>
                                                     </div>
+                                                    <div className="alert alert-dark" role="alert">
+                                                        <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                                                            <source src={`../../assets/axe_exam_c_1_listening_a.mp3`} type="audio/mpeg" />
+                                                        </audio>
+                                                    </div>
                                                     <div className="paragraf">
+
                                                     <strong>Dung Beetle:</strong> Thank you Axebug. Thia was an amazing 
+
                                                         <input className="form-input textformat" type="text" value={answer.result[1][0][1].student} onChange={(e) => setStudentOpenAnswer(1, 0, 1, e.target.value)} />.
                                                     </div>
                                                     <div className="paragraf">
@@ -418,6 +425,12 @@ export default function Exam1(props) {
                                                 <div>
                                                     <div className="alert alert-dark" role="alert">
                                                         <strong>B. Listen and read. Then put the words below in order according to the story.</strong>
+                                                    </div>
+                                                    <div className="alert alert-dark" role="alert">
+                                                        <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                                                            <source src={`../../assets/axe_exam_c_1_listening_b.mp3`} type="audio/mpeg" />
+                                                        </audio>
+
                                                     </div>
                                                     <div className="paragraf"><strong>Insect Brown:</strong> There is a rumour: “It landed on the town square.” And one question: “Have you seen it?”</div>
                                                     <div className="paragraf"><strong>Insect Purple:</strong> They say it’s like a huge housefly. Is that right?</div>
@@ -636,14 +649,34 @@ export default function Exam1(props) {
                                                     <div className="alert alert-dark" role="alert">
                                                         <strong>A. Listen to the audio. Then, repeat the sentences clearly.</strong>
                                                     </div>
+                                                    <div className="alert alert-dark" role="alert">
+                                                        <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                                                            <source src={`../../assets/p015_02_c1e1.mp3`} type="audio/mpeg" />
+                                                        </audio>
+                                                    </div>
                                                     <div className='border border-success p-3 mt-3'>
                                                         <SpechText getSpeechText={getSpeechText} questionNumber={1} />
+                                                    </div>
+                                                    <div className="alert alert-dark" role="alert">
+                                                        <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                                                            <source src={`../../assets/p043_02_c1e2.mp3`} type="audio/mpeg" />
+                                                        </audio>
                                                     </div>
                                                     <div className='border border-success p-3 mt-3'>
                                                         <SpechText getSpeechText={getSpeechText} questionNumber={2} />
                                                     </div>
+                                                    <div className="alert alert-dark" role="alert">
+                                                        <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                                                            <source src={`../../assets/p075_01_c1e3.mp3`} type="audio/mpeg" />
+                                                        </audio>
+                                                    </div>
                                                     <div className='border border-success p-3 mt-3'>
                                                         <SpechText getSpeechText={getSpeechText} questionNumber={3} />
+                                                    </div>
+                                                    <div className="alert alert-dark" role="alert">
+                                                        <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                                                            <source src={`../../assets/p099_01_c1e4.mp3`} type="audio/mpeg" />
+                                                        </audio>
                                                     </div>
                                                     <div className='border border-success p-3 mt-3'>
                                                         <SpechText getSpeechText={getSpeechText} questionNumber={4} />

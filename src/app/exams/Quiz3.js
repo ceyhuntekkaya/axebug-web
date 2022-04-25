@@ -211,6 +211,12 @@ export default function Quiz3(props) {
                           <div className="alert alert-dark" role="alert">
                             <strong>    B. Listen and fill in the gaps.</strong>
                           </div>
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/quiz_listening_c1_e3.mp3`} type="audio/mpeg" />
+                            </audio>
+
+                          </div>
                           <div className="paragraf">
                             <strong>Axebug:</strong> I can
                             <input className="form-input textformat" type="text" value={answer.result[0][1][1].student} onChange={(e) => setStudentOpenAnswer(0, 1, 1, e.target.value, true)} /> this every
@@ -517,15 +523,34 @@ export default function Quiz3(props) {
                           <div className="alert alert-dark" role="alert">
                             <strong>    A. Listen to the audio. Then, repeat the sentences clearly.</strong>
                           </div>
-
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/p076_01_c1e3.mp3`} type="audio/mpeg" />
+                            </audio>
+                          </div>
                           <div className='border border-success p-3 mt-3'>
                             <SpechText getSpeechText={getSpeechText} questionNumber="S1" />
+                          </div>
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/p079_01_c1e3.mp3`} type="audio/mpeg" />
+                            </audio>
                           </div>
                           <div className='border border-success p-3 mt-3'>
                             <SpechText getSpeechText={getSpeechText} questionNumber="S2" />
                           </div>
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/p086_03_c1e4.mp3`} type="audio/mpeg" />
+                            </audio>
+                          </div>
                           <div className='border border-success p-3 mt-3'>
                             <SpechText getSpeechText={getSpeechText} questionNumber="S3" />
+                          </div>
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/p091_02_c1e4.mp3`} type="audio/mpeg" />
+                            </audio>
                           </div>
                           <div className='border border-success p-3 mt-3'>
                             <SpechText getSpeechText={getSpeechText} questionNumber="S4" />
