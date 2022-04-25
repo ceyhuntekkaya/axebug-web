@@ -220,9 +220,13 @@ export default function Quiz1(props) {
                       pageNo === 1 ?
                         <React.Fragment>
                           <div className="alert alert-dark" role="alert">
-                            <strong>Listen and fill in the gaps.</strong>
+                            <strong>B. Listen and fill in the gaps.</strong>
                           </div>
-
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/quiz_listening_c1_e1.mp3`} type="audio/mpeg" />
+                            </audio>
+                          </div>
 
                           <strong>Axebug:</strong> Tell me what brings you out here?
 
@@ -491,14 +495,34 @@ export default function Quiz1(props) {
                           <div className="alert alert-dark" role="alert">
                             <strong>    A. Listen to the audio. Then, repeat the sentences clearly.</strong>
                           </div>
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/p003_03_c1e1.mp3`} type="audio/mpeg" />
+                            </audio>
+                          </div>
                           <div className='border border-success p-3 mt-3'>
                             <SpechText getSpeechText={getSpeechText} questionNumber={1} />
+                          </div>
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/p009_02_c1e1.mp3`} type="audio/mpeg" />
+                            </audio>
                           </div>
                           <div className='border border-success p-3 mt-3'>
                             <SpechText getSpeechText={getSpeechText} questionNumber={2} />
                           </div>
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/p023_01_c1e1.mp3`} type="audio/mpeg" />
+                            </audio>
+                          </div>
                           <div className='border border-success p-3 mt-3'>
                             <SpechText getSpeechText={getSpeechText} questionNumber={3} />
+                          </div>
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/p029_01_c1e2.mp3`} type="audio/mpeg" />
+                            </audio>
                           </div>
                           <div className='border border-success p-3 mt-3'>
                             <SpechText getSpeechText={getSpeechText} questionNumber={4} />

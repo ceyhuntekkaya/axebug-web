@@ -214,6 +214,12 @@ export default function Quiz4(props) {
                           <div className="alert alert-dark" role="alert">
                             <strong>       B. Listen and fill in the gaps.</strong>
                           </div>
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/quiz_listening_c1_e4.mp3`} type="audio/mpeg" />
+                            </audio>
+                          </div>
+
                           <div className="paragraf">
                             <strong>Axebug:</strong> The moon has around 300.000 craters on it’s surface.
                           </div>
@@ -523,15 +529,34 @@ export default function Quiz4(props) {
                           <div className="alert alert-dark" role="alert">
                             <strong>    A. Listen to the audio. Then, repeat the sentences clearly.</strong>
                           </div>
-
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/p099_02_c1e4.mp3`} type="audio/mpeg" />
+                            </audio>
+                          </div>
                           <div className='border border-success p-3 mt-3'>
                             <SpechText getSpeechText={getSpeechText} questionNumber="S1" />
+                          </div>
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/p104_02_c1e4.mp3`} type="audio/mpeg" />
+                            </audio>
                           </div>
                           <div className='border border-success p-3 mt-3'>
                             <SpechText getSpeechText={getSpeechText} questionNumber="S2" />
                           </div>
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/p116_01_c1e4.mp3`} type="audio/mpeg" />
+                            </audio>
+                          </div>
                           <div className='border border-success p-3 mt-3'>
                             <SpechText getSpeechText={getSpeechText} questionNumber="S3" />
+                          </div>
+                          <div className="alert alert-dark" role="alert">
+                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                              <source src={`../../assets/p129_02_c1e4.mp3`} type="audio/mpeg" />
+                            </audio>
                           </div>
                           <div className='border border-success p-3 mt-3'>
                             <SpechText getSpeechText={getSpeechText} questionNumber="S4" />
