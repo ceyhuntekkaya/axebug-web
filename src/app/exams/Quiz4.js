@@ -214,12 +214,12 @@ export default function Quiz4(props) {
                           <div className="alert alert-dark" role="alert">
                             <strong>       B. Listen and fill in the gaps.</strong>
                           </div>
+
                           <div className="alert alert-dark" role="alert">
                             <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
                               <source src={`../../assets/quiz_listening_c1_e4.mp3`} type="audio/mpeg" />
                             </audio>
                           </div>
-
                           <div className="paragraf">
                             <strong>Axebug:</strong> The moon has around 300.000 craters on it’s surface.
                           </div>

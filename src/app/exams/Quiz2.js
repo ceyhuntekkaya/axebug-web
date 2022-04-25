@@ -215,6 +215,7 @@ export default function Quiz2(props) {
                             <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
                               <source src={`../../assets/quiz_listening_c1_e2.mp3`} type="audio/mpeg" />
                             </audio>
+
                           </div>
                           <div className="paragraf">
                             <strong>Dung Beetle :</strong> Come on! Of course, I had to take them with me. They are my
