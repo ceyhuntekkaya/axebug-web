@@ -203,7 +203,6 @@ export default function StudentPanel() {
           </div>
           {
             scoreBoard()
-
           }
         </div>
         <div className='col'>

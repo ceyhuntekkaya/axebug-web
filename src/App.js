@@ -33,7 +33,6 @@ import ReportList from "./admin/report/ReportList";
 
 // <Route path="*" element={<NotFound/>}/>
 
-
 function App() {
   return (
     <BrowserRouter>
