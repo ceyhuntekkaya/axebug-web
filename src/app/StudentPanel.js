@@ -69,6 +69,12 @@ export default function StudentPanel() {
         <Square col="3" backgroundColor="black"><b>MATERIALS</b></Square>
         <Square col="3" backgroundColor="orange" to="/wordbank"><b>WORDBANK</b></Square>
         <Square col="3" backgroundColor="yellow" to="/speling"><b>SPELLING</b></Square>
+        <div className={`square col-3`}>
+          <img src="http://dummyimage.com/50x50/000/fff.gif&text=50x50" className="sq-setter-w" alt='window' />
+          <div className={`sq-content m-1 row border border-4 border-dark`} style={{ backgroundColor: "lightgreen" }}>
+            <a href="HTML/index.html" target="_blank" className={`sq-content p-3 d-flex justify-content-center align-items-center text-dark`}
+              style={{ fontSize: 22, textDecoration: 'none' }}> DIJITAL CONTENTS</a>
+          </div></div>
       </div>
       <div className="row" style={{ paddingLeft: "8px", paddingRight: "8px" }}>
         <Square col="3" backgroundColor="black"><b>SCORBOARD</b></Square>
@@ -88,7 +94,7 @@ export default function StudentPanel() {
               <div className='row  m-3'>
                 <div className='col-6'>
                   <h2>EXAM SCORE : {parseInt(studentScore.examScore)}</h2>
-                  <div className="progress" style={{ height: "30px" }}>
+                  <div className="progress" style={{ height: "30px", padding: 0 }}>
                     <div className="progress-bar progress-bar-striped progress-bar-animated"
                       role="progressbar" style={{ width: parseInt(studentScore.examScore) + "%" }}
                       aria-valuenow={parseInt(studentScore.examScore)} aria-valuemin="0" aria-valuemax="100"></div>
@@ -96,7 +102,7 @@ export default function StudentPanel() {
                 </div>
                 <div className='col-6'>
                   <h2>QUIZ SCORE : {parseInt(studentScore.quizScore)}</h2>
-                  <div className="progress" style={{ height: "30px" }}>
+                  <div className="progress" style={{ height: "30px", padding: 0 }}>
                     <div className="progress-bar progress-bar-striped bg-warning progress-bar-animated"
                       role="progressbar" style={{ width: parseInt(studentScore.quizScore) + "%" }}
                       aria-valuenow={parseInt(studentScore.quizScore)} aria-valuemin="0" aria-valuemax="100"></div>
@@ -107,7 +113,7 @@ export default function StudentPanel() {
 
               <div className='row m-3'>
                 <h2>AXE 4 SKILLS SCORE : {parseInt(studentScore.skillsScore)}</h2>
-                <div className="progress" style={{ height: "30px" }}>
+                <div className="progress" style={{ height: "30px", padding: 0 }}>
                   <div className="progress-bar progress-bar-striped bg-info progress-bar-animated"
                     role="progressbar" style={{ width: parseInt(studentScore.skillsScore) + "%" }}
                     aria-valuenow={parseInt(studentScore.skillsScore)} aria-valuemin="0" aria-valuemax="100"></div>
@@ -146,7 +152,7 @@ export default function StudentPanel() {
 
               <div className='row  m-3 mb-5'>
                 <h2>OVERALL SCORE : {parseInt(studentScore.skillsScore)}</h2>
-                <div className="progress" style={{ height: "30px" }}>
+                <div className="progress" style={{ height: "30px", padding: 0 }}>
                   <div className="progress-bar progress-bar-striped bg-success progress-bar-animated"
                     role="progressbar" style={{ width: parseInt(studentScore.skillsScore) + "%" }}
                     aria-valuenow={parseInt(studentScore.skillsScore)} aria-valuemin="0" aria-valuemax="100"></div>

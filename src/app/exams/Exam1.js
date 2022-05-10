@@ -346,9 +346,7 @@ export default function Exam1(props) {
                                                         </audio>
                                                     </div>
                                                     <div className="paragraf">
-
-                                                    <strong>Dung Beetle:</strong> Thank you Axebug. Thia was an amazing 
-
+                                                        <strong>Dung Beetle:</strong> Thank you Axebug. This was an amazing
                                                         <input className="form-input textformat" type="text" value={answer.result[1][0][1].student} onChange={(e) => setStudentOpenAnswer(1, 0, 1, e.target.value)} />.
                                                     </div>
                                                     <div className="paragraf">
@@ -430,7 +428,6 @@ export default function Exam1(props) {
                                                         <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
                                                             <source src={`../../assets/axe_exam_c_1_listening_b.mp3`} type="audio/mpeg" />
                                                         </audio>
-
                                                     </div>
                                                     <div className="paragraf"><strong>Insect Brown:</strong> There is a rumour: “It landed on the town square.” And one question: “Have you seen it?”</div>
                                                     <div className="paragraf"><strong>Insect Purple:</strong> They say it’s like a huge housefly. Is that right?</div>
