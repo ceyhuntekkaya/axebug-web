@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import SpechText from '../components/SpechText';
+import FinishExam from './FinishExam';
 
 var stringSimilarity = require("string-similarity");
 const answerEmpty = require('./Quiz4Answer.json');
@@ -563,6 +564,11 @@ export default function Quiz4(props) {
                         </React.Fragment>
                         : null
                     }
+                     {
+                      pageNo === 5 ?
+                        <FinishExam />
+                        : null
+                    }
                   </div>
                 </React.Fragment>
                 : null
@@ -588,10 +594,10 @@ export default function Quiz4(props) {
             }
             {
               pageNo === maxPage - 1 ?
-                <div className="col-auto pl-2">
-                  <button className='btn btn-success' onClick={() => props.sendExam(answer)}>FINISH EXAM</button>
-                </div>
-                : null
+              <div className="col-auto pl-2">
+                <button className='btn btn-success' onClick={() => props.sendExam(answer)}>FINISH EXAM</button>
+              </div>
+              : null
             }
 
           </div>
