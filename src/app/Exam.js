@@ -7,6 +7,7 @@ import Quiz3 from './exams/Quiz3';
 import Quiz4 from './exams/Quiz4';
 
 import useExam from "../api/useExam"
+import FinishExam from './exams/FinishExam';
 
 export default function Exam() {
     let { id } = useParams();
@@ -29,6 +30,7 @@ export default function Exam() {
         }
         // eslint-disable-next-line 
     }, [selectedExam])
+
 
     const sendExam = (answer, examType) => {
         const answerList = [];
@@ -57,6 +59,7 @@ export default function Exam() {
         });
 
         saveSelectedExamResult("saveExamResult", answerList)
+        setExamName("Finish")
 
     }
 
@@ -81,26 +84,28 @@ export default function Exam() {
 
     return (
         <React.Fragment>
-          
 
 
 
-                        {
-                            examName === "Exam 1" ? <Exam1 sendExam={sendExam} /> : null
-                        }
-                        {
-                            examName === "Quiz 1" ? <Quiz1 sendExam={sendExam} /> : null
-                        }
-                        {
-                            examName === "Quiz 2" ? <Quiz2 sendExam={sendExam} /> : null
-                        }
-                        {
-                            examName === "Quiz 3" ? <Quiz3 sendExam={sendExam} /> : null
-                        }
-                        {
-                            examName === "Quiz 4" ? <Quiz4 /> : null
-                        }
 
+            {
+                examName === "Exam 1" ? <Exam1 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 1" ? <Quiz1 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 2" ? <Quiz2 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 3" ? <Quiz3 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 4" ? <Quiz4 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Finish" ? <FinishExam  /> : null
+            }
 
         </React.Fragment>
     )

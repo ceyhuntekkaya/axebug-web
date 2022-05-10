@@ -594,10 +594,10 @@ export default function Quiz4(props) {
             }
             {
               pageNo === maxPage - 1 ?
-                <div className="col-auto pl-2">
-                  <button className='btn btn-success' onClick={() => props.sendExam(answer)}>FINISH EXAM</button>
-                </div>
-                : null
+              <div className="col-auto pl-2">
+                <button className='btn btn-success' onClick={() => props.sendExam(answer)}>FINISH EXAM</button>
+              </div>
+              : null
             }
 
           </div>

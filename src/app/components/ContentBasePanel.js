@@ -84,7 +84,28 @@ export default function ContentBasePanel(props) {
             </div>
             <div className='row m-2'>
                 <div className='col-4 boxWhite mr-5 d-flex justify-content-center'><h3><b>AXE4SKILS</b></h3></div>
-                <div className='col-8 boxDark ml-5 d-flex justify-content-center'><h4>Listen to the audio. Then, repeat the sentences clearly.</h4></div>
+                <div className='col-8 boxDark ml-5 d-flex justify-content-center'><h4>
+                    {
+                        level=== 1?
+                        "Listen to the audio. Then, repeat the sentences clearly."
+                        : null
+                    }
+                    {
+                        level=== 2?
+                        "Read the sentences. Then, say it clearly."
+                        : null
+                    }
+                    {
+                        level=== 3?
+                        "Read the sentences. Then, write it fully."
+                        : null
+                    }
+                    {
+                        level=== 4?
+                        "Listen to the sentences. Then, write it fully. "
+                        : null
+                    }
+                    </h4></div>
             </div>
             <div className="card-body">
 
