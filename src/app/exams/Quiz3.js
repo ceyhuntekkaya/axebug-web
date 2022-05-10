@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import SpechText from '../components/SpechText';
+import FinishExam from './FinishExam';
 
 var stringSimilarity = require("string-similarity");
 const answerEmpty = require('./Quiz3Answer.json');
@@ -555,6 +556,11 @@ export default function Quiz3(props) {
                             <SpechText getSpeechText={getSpeechText} questionNumber="S4" />
                           </div>
                         </React.Fragment>
+                        : null
+                    }
+                     {
+                      pageNo === 5 ?
+                        <FinishExam />
                         : null
                     }
                   </div>

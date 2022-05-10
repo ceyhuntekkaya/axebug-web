@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import SpechText from '../components/SpechText';
+import FinishExam from './FinishExam';
 
 var stringSimilarity = require("string-similarity");
 const answerEmpty = require('./Exam1Answer.json');
@@ -680,6 +681,11 @@ export default function Exam1(props) {
                                                     </div>
                                                 </div>
                                             </React.Fragment>
+                                            : null
+                                    }
+                                    {
+                                        pageNo === 7 ?
+                                            <FinishExam />
                                             : null
                                     }
                                 </div>
