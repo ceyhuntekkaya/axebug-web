@@ -48,7 +48,7 @@ export default function Login(props) {
     return <React.Fragment>
         <div className="container" style={{ marginTop: 200 }}>
             <div className="row mt-5">
-                <div className="col"> <img src="assets/loginScreen.png" style={{ width: "100%" }} alt="logo" /></div>
+                <div className="col"> <img src="loginSecreen.png" style={{ width: "100%" }} alt="logo" /></div>
                 <div className="col-auto" style={{ width: 500 }}>
                     <div className="p-5" style={{ backgroundColor: 'lightgray' }}>
                         <div>
