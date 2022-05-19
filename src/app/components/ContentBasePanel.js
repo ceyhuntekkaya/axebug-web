@@ -19,6 +19,7 @@ export default function ContentBasePanel(props) {
     const [selectedContent, setSelectedContent] = useState(contentModel);
     const [level, setLevel] = useState(1);
     const [txtValue, settxtValue] = useState("");
+    const [audioContent, setAudioContent] = useState(null);
 
     const [speechValue, setSpeechValue] = useState(100);
     useEffect(() => {
@@ -27,7 +28,18 @@ export default function ContentBasePanel(props) {
             setLevel(1);
             clearValues()
         }
+        var audio = document.getElementById('audio');
+       // var source = document.getElementById('audioSource');
+       // source.src = `../assets/${selectedContent.soundUrl}`;
+        //console.log(selectedContent.text)
+        audio.load(); 
+        //audio.play();
     }, [props.selectedContent])
+
+
+
+    
+
 
     const clearText = (text) => {
         let newText = text.replace(".", "").replace("'", "").replace("!", "").replace(",", "").replace("’", "").replace("?", "").replace("-", "").replace("_", "");
@@ -110,10 +122,11 @@ export default function ContentBasePanel(props) {
             <div className="card-body">
 
                 <div className="">
+                    
                     {
                         level === 1 || level === 3 ?
-                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                <source src={`../assets/${selectedContent.soundUrl}`} type="audio/mpeg" />
+                            <audio id="audio" controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                                <source id="audioSource" src={`../assets/${selectedContent.soundUrl}`} type="audio/mpeg" />
                             </audio> : null
                     }
                     {
