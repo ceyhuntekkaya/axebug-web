@@ -22,7 +22,7 @@ export default function MyReports() {
                 {
                     examList ?
                         examList.map((exam, key) =>
-                            <Square key={key} fontSize={30} col="4" backgroundColor="white" to={`../../admin/report/${exam.id}/${student.id}`}><b>{exam.name}</b></Square>
+                            <Square blank={false} key={key} fontSize={30} col="4" backgroundColor="white" to={`../../admin/report/${exam.id}/${student.id}`}><b>{exam.name}</b></Square>
                         )
                         : null
                 }

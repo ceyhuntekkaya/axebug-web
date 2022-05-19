@@ -9,6 +9,7 @@ export default function Square(props) {
     const [hasEvent, setHasEvent] = useState(null);
     const navigate = useNavigate();
     const [fontsize, setFontSize] = useState(22);
+    const [blank, setBlank] = useState(false);
 
     useEffect(() => {
         if (props.backgroundColor) {
@@ -24,6 +25,13 @@ export default function Square(props) {
         }
         if (props.to) {
             setHasEvent(props.to);
+        }
+
+        if (props.blank) {
+            setBlank(props.blank);
+        }
+        else {
+            setBlank(false);
         }
 
         if (props.fontSize) {
@@ -42,8 +50,14 @@ export default function Square(props) {
 
                 {
                     hasEvent ?
-                        <Link to={hasEvent} className={`sq-content p-3 d-flex justify-content-center align-items-center ${textColor}`} 
-                        style={{ fontSize: fontsize, textDecoration:'none' }}> {props.children}</Link>
+
+                        blank ?
+                            <a target="_blank" href={hasEvent} className={`sq-content p-3 d-flex justify-content-center align-items-center ${textColor}`}
+                                style={{ fontSize: fontsize, textDecoration: 'none' }}> {props.children}</a>
+                            :
+                            <Link to={hasEvent} className={`sq-content p-3 d-flex justify-content-center align-items-center ${textColor}`}
+                                style={{ fontSize: fontsize, textDecoration: 'none' }}> {props.children}</Link>
+
                         :
                         <div to="/" className={`sq-content p-3 d-flex justify-content-center align-items-center ${textColor}`} style={{ fontSize: 22 }}> {props.children}</div>
                 }

@@ -19,6 +19,13 @@ export default function Login(props) {
     useEffect(() => {
         if (login !== null) {
             if (login.error === null) {
+
+                localStorage.setItem("student", null)
+                localStorage.setItem("teacher", null)
+                localStorage.setItem("school", null)
+                localStorage.setItem("system_admin",null)
+
+
                 if (login.userType === "STUDENT") {
                     localStorage.setItem("student", JSON.stringify(login.student))
                     navigate(`/student`);
