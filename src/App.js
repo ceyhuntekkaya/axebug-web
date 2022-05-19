@@ -31,6 +31,7 @@ import Report from "./admin/report/Report";
 import ReportList from "./admin/report/ReportList";
 import MyTasks from "./app/MyTasks";
 import DijitalContents from "./app/DijitalContents";
+import MyReports from "./app/MyReports";
 
 
 // <Route path="*" element={<NotFound/>}/>
@@ -69,6 +70,7 @@ function App() {
         <Route exact path="/app/spelling" element={<Spelling />} />
         <Route exact path="/mytasks" element={<MyTasks />} />
         <Route exact path="/dijitalcontents" element={<DijitalContents />} />
+        <Route exact path="/myReports" element={<MyReports />} />
        
 
         <Route exact path="/" element={<Login />} />
