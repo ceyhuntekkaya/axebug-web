@@ -59,11 +59,11 @@ export default function StudentPanel() {
         <div className="row mt-3" style={{ paddingLeft: "8px", paddingRight: "8px" }}>
           <Square col="4" backgroundColor="white" to="/mytasks"><b>MY TASK</b> </Square>
           <Square col="4" backgroundColor="white" to="/dijitalcontents"><b>CONTENTS</b></Square>
-          <Square col="4" backgroundColor="white" to="/quiz"><b>AXE 4 SKILLS</b></Square>
+          <Square col="4" backgroundColor="white" to="/chapter"><b>AXE 4 SKILLS</b></Square>
 
-          <Square col="4" backgroundColor="white" to="/exam"><b>SPELLING</b> </Square>
+          <Square col="4" backgroundColor="white" to="/speling"><b>SPELLING</b> </Square>
           <Square col="4" backgroundColor="white" to="/exam"><b>-</b></Square>
-          <Square col="4" backgroundColor="white" to="/quiz"><b>WORDBANK</b></Square>
+          <Square col="4" backgroundColor="white" to="/wordbank"><b>WORDBANK</b></Square>
 
           <Square col="4" backgroundColor="white" to="/exam"><b>GOALS AND ACHIEVEMENTS</b> </Square>
           <Square col="4" backgroundColor="white" to="/exam"><b>MATERIALS</b></Square>
