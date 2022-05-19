@@ -3,7 +3,7 @@ import Square from './components/Square';
 import useStudentWork from '../api/useStudentWork'
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-
+import { useNavigate } from "react-router-dom";
 
 const scoreModel = {
   examScore: 0,
@@ -19,7 +19,7 @@ export default function StudentPanel() {
   const [student, setStudent] = useState({ name: "", surname: "", avatar: "" });
   const [studentWorkTaskList, setStudentWorkApi] = useStudentWork([]);
   const [studentScore, setStudentScore] = useStudentWork(scoreModel);
-
+  const navigate = useNavigate();
 
   useEffect(() => {
     document.body.style.backgroundColor = '#eeeeee'; // '#231F20';
@@ -51,6 +51,12 @@ export default function StudentPanel() {
         return false
     }
     return true
+  }
+
+
+  const exit = () => {
+    localStorage.setItem("student", null);
+    navigate(`/`);
   }
 
   const contentList = () => {
@@ -229,8 +235,12 @@ export default function StudentPanel() {
               <div className="text-white bg-dark border border-2 border-dark p-2 mt-3 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>AXEBUG DIGITAL</b></h2></div>
 
             </div>
-            <div className='col-6'>
-              <div className="border border-2 border-dark p-2 mt-3 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>{student.name}'s TASK</b></h2></div>
+            <div className='col-5'>
+              <div className="border border-2 border-dark p-2 mt-3 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>{student.name}</b></h2></div>
+            </div>
+            <div className='col-1'>
+            <div className="mt-3 d-flex justify-content-center"><img style={{ cursor: "pointer" }} onClick={()=>exit()} className='w-100' src={`assets/exit.png`} /></div>
+            
             </div>
           </div>
           {

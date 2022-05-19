@@ -66,7 +66,8 @@ export default function Login(props) {
                                     <input style={{ fontWeight: "bold", fontSize: 20 }}
                                         type="password" className="form-control border border-3 border-dark"
                                         id="password" placeholder="Enter your password"
-                                        value={password} onChange={(e) => setPassword(e.target.value)} />
+                                        value={password} onChange={(e) => setPassword(e.target.value)}
+                                        onKeyDown={(e)=> e.key==="Enter" ? loginEvent() : null} />
                                 </div>
                             </form>
                         </div>
