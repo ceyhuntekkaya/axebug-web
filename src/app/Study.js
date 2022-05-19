@@ -62,25 +62,26 @@ export default function Study(props) {
 
     const setEvulations = (type, value, evulation) => {
         let values = { ...studentWork };
-        if (type === 1) {
+        if (type === 2) {
             values.read = value
             values.readEvaluation = evulation
         }
-        else if (type === 2) {
+        else if (type === 4) {
             values.write = value
             values.writeEvaluation = evulation
         }
-        else if (type === 3) {
+        else if (type === 1) {
             values.speaking = value
             values.speakingEvaluation = evulation
         }
-        else if (type === 4) {
+        else if (type === 3) {
             values.listening = value
             values.listeningEvaluation = evulation
         }
         values.student.id = studentId;
         setStudentWork(values)
         setStudentWorkApi("createStudentWork", values);
+        
     }
 
     useEffect(() => {
@@ -95,7 +96,7 @@ export default function Study(props) {
         }
         // eslint-disable-next-line 
     }, [selectedContent])
-console.log(selectedContent)
+
     return (
         <div className="container">
             <div className="row mt-4">
@@ -121,7 +122,7 @@ console.log(selectedContent)
                 <div className="col ml-2">
                     <div className="mb-4">
                         {
-                            startContent ? <ContentBase studentWork={studentWork} setEvulations={setEvulations} selectedContent={selectedContent} onNextContent={showNextContent} /> : null
+                            startContent ? <ContentBase studentWorkTaskList={studentWorkTaskList} studentWork={studentWork} setEvulations={setEvulations} selectedContent={selectedContent} onNextContent={showNextContent} /> : null
                         }
                     </div>
                 </div>
