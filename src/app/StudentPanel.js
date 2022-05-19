@@ -74,7 +74,6 @@ export default function StudentPanel() {
 
   }
 
-
   const myAvatar = () => {
     return (
       <div className='d-flex justify-content-end mt-4'><img src={`assets/${student.avatar}`} style={{ height: "140px", backgroundColor: "black" }} alt='Avatar' /></div>)
