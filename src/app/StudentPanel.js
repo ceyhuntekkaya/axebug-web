@@ -53,6 +53,28 @@ export default function StudentPanel() {
     return true
   }
 
+  const contentList = () => {
+    return (
+      <React.Fragment>
+        <div className="row mt-3" style={{ paddingLeft: "8px", paddingRight: "8px" }}>
+          <Square col="4" backgroundColor="white" to="/mytasks"><b>MY TASK</b> </Square>
+          <Square col="4" backgroundColor="white" to="/dijitalcontents"><b>CONTENTS</b></Square>
+          <Square col="4" backgroundColor="white" to="/quiz"><b>AXE 4 SKILLS</b></Square>
+
+          <Square col="4" backgroundColor="white" to="/exam"><b>SPELLING</b> </Square>
+          <Square col="4" backgroundColor="white" to="/exam"><b>-</b></Square>
+          <Square col="4" backgroundColor="white" to="/quiz"><b>WORDBANK</b></Square>
+
+          <Square col="4" backgroundColor="white" to="/exam"><b>GOALS AND ACHIEVEMENTS</b> </Square>
+          <Square col="4" backgroundColor="white" to="/exam"><b>MATERIALS</b></Square>
+          <Square col="4" backgroundColor="white" to="/quiz"><b>REPORT</b></Square>
+        </div>
+      </React.Fragment>
+    )
+
+  }
+
+
   const myAvatar = () => {
     return (
       <div className='d-flex justify-content-end mt-4'><img src={`assets/${student.avatar}`} style={{ height: "140px", backgroundColor: "black" }} alt='Avatar' /></div>)
@@ -190,31 +212,31 @@ export default function StudentPanel() {
     <div className='container'>
       <div className='row'>
         <div className='col'>
-          <div className='row'>
-            <div className='col'>
-              <div className="text-white bg-dark border border-2 border-dark p-2 mt-4 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>AXEBUG DIGITAL</b></h2></div>
-              <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>{student.name}'s TASK</b></h2></div>
-            </div>
-            <div className='col-auto'>
-              {
-                myAvatar()
-              }
-            </div>
-          </div>
+
           {
             scoreBoard()
           }
         </div>
         <div className='col'>
           <div>
-            <div className="border border-2 border-dark p-2 mt-4 d-flex justify-content-center black900" style={{ width: "100%", color: "white", backgroundColor: "black" }}><h2><b>YOUR TASKS</b></h2></div>
+            {/* <div className="border border-2 border-dark p-2 mt-4 d-flex justify-content-center black900" style={{ width: "100%", color: "white", backgroundColor: "black" }}><h2><b>YOUR TASKS</b></h2></div> */}
           </div><div className='row'>
             {
-              activeTaskShow(true)
+              // activeTaskShow(true)
             }
           </div>
+          <div className='row'>
+            <div className='col-6'>
+              <div className="text-white bg-dark border border-2 border-dark p-2 mt-3 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>AXEBUG DIGITAL</b></h2></div>
+
+            </div>
+            <div className='col-6'>
+              <div className="border border-2 border-dark p-2 mt-3 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>{student.name}'s TASK</b></h2></div>
+            </div>
+          </div>
           {
-            contentMenu()
+            // contentMenu()
+            contentList()
           }
         </div>
       </div>

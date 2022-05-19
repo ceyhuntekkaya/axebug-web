@@ -29,6 +29,8 @@ import SpellingList from "./app/SpellingList";
 import SpellingEpisode from "./app/SpellingEpisode";
 import Report from "./admin/report/Report";
 import ReportList from "./admin/report/ReportList";
+import MyTasks from "./app/MyTasks";
+import DijitalContents from "./app/DijitalContents";
 
 
 // <Route path="*" element={<NotFound/>}/>
@@ -65,7 +67,8 @@ function App() {
         <Route exact path="/app/quiz/:id" element={<Exam />} />
         <Route exact path="/app/wordbank" element={<WordBank />} />
         <Route exact path="/app/spelling" element={<Spelling />} />
-
+        <Route exact path="/mytasks" element={<MyTasks />} />
+        <Route exact path="/dijitalcontents" element={<DijitalContents />} />
        
 
         <Route exact path="/" element={<Login />} />
