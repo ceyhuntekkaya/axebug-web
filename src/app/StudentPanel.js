@@ -62,11 +62,11 @@ export default function StudentPanel() {
           <Square col="4" backgroundColor="white" to="/chapter"><b>AXE 4 SKILLS</b></Square>
 
           <Square col="4" backgroundColor="white" to="/speling"><b>SPELLING</b> </Square>
-          <div className="col-4 p-2"><img className='w-100' src={`assets/l7.png`} /></div>
+          <div className="col-4 p-2"><img className='w-100' src={`assets/l7.jpg`} /></div>
           <Square col="4" backgroundColor="white" to="/wordbank"><b>WORDBANK</b></Square>
 
           <Square col="4" backgroundColor="white" to="/exam"><b>GOALS AND ACHIEVEMENTS</b> </Square>
-          <div className="col-4 p-2"><img className='w-100' src={`assets/l1.png`} /></div>
+          <div className="col-4 p-2"><img className='w-100' src={`assets/l1.jpg`} /></div>
           <Square col="4" backgroundColor="white" to="/quiz"><b>REPORT</b></Square>
         </div>
       </React.Fragment>
