@@ -55,7 +55,7 @@ export default function Quiz1(props) {
 
         <div className="card-header">
           <div className="d-flex justify-content-center">
-            <h1><strong> AXEQUIZ CHAPTER 1 EPISODE 1</strong></h1>
+            <h1><strong> QUIZ CHAPTER 1 EPISODE 1</strong></h1>
 
           </div>
         </div>

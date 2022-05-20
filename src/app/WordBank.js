@@ -90,15 +90,8 @@ export default function WordBank(props) {
                                                 }
                                             </div>
                                         </div>
-                                        <div className='col-12 boxDark ml-5'><h4>Record your voice</h4></div>
 
                                     </div>
-                                    <div className='row  mt-3'>
-                                        <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} id="file" value="78" max="100"> 78% </progress>
-                                        <div className='col-auto' style={{ height: 30 }}><h2>% 78</h2></div>
-                                    </div>
-                                    <div className='col-12 boxDark mt-5'><h2>Total Word Score 87</h2></div>
-
                                 </div>
                             </div>
                         </div>

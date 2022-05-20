@@ -17,14 +17,10 @@ var stringSimilarity = require("string-similarity");
 
 export default function ContentBasePanel(props) {
     const [selectedContent, setSelectedContent] = useState(contentModel);
-
     const [studentScore, setStudentScore] = useState(null);
-
     const [progressColor, setProgressColor] = useState("success");
-
     const [level, setLevel] = useState(1);
     const [txtValue, settxtValue] = useState("");
-
     const [speechValue, setSpeechValue] = useState(100);
     useEffect(() => {
         if (props.selectedContent) {

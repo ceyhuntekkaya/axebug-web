@@ -48,7 +48,7 @@ export default function Quiz4(props) {
       <div className="card mt-5 mb-5">
         <div className="card-header">
           <div className="d-flex justify-content-center">
-            <h1><strong>  AXEQUIZ CHAPTER 1 EPISODE 4</strong></h1>
+            <h1><strong>  QUIZ CHAPTER 1 EPISODE 4</strong></h1>
 
           </div>
         </div>

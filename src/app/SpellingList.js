@@ -10,7 +10,7 @@ export default function SpellingList() {
     setChapters("findAllChaptersWithEpisodes", null);
     // eslint-disable-next-line 
   }, [])
-
+console.log(chapters)
   return <React.Fragment>
     <div className="container">
       <div className="text-white bg-dark border border-2 border-dark p-2 mt-5 d-flex justify-content-center" style={{ width: 350 }}><h2><b>
@@ -24,7 +24,7 @@ export default function SpellingList() {
           chapters ?
             chapters.map((chapter, key) =>
               <div className='row'>
-                <Square key={key} col="3" backgroundColor="black"><h4><b>{chapter.name}.{key}</b></h4> </Square>
+                {/* <Square key={key} col="3" backgroundColor="black"><h4><b>{key+1}</b></h4> </Square> */}
                 {
                   chapter.episodes.map((episode, no) =>
                     <Square key={"chap" + no} to={`/spellingword/?id=${episode.id}`} col="3" backgroundColor="white"><h3><b>{episode.name}</b></h3> </Square>

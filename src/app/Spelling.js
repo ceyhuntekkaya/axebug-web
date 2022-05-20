@@ -3,6 +3,9 @@ import Square from './components/Square';
 import useWordBank from '../api/useWordBank';
 import { useSearchParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import SpechText from './components/SpechText';
+
+var stringSimilarity = require("string-similarity");
 
 export default function Spelling() {
     const [searchParams,] = useSearchParams();
@@ -12,14 +15,41 @@ export default function Spelling() {
     const [currentKey, setCurrentKey] = useState(0);
     const [episode, setEpisode] = useState({});
     const [chapter, setChapter] = useState({});
+    const [progressColor, setProgressColor] = useState("success");
+
+    const [speechValue, setSpeechValue] = useState(100);
 
     useEffect(() => {
         var id = searchParams.get("id");
         setSelectedWordId(parseInt(id));
         var episodeId = searchParams.get("e");
-        setWordList("findByEpisode", {episodeId: episodeId, category: "spelling"});
+        setWordList("findByEpisode", { episodeId: episodeId, category: "spelling" });
+
+        var audio = document.getElementById('audio');
+        if (audio)
+            audio.load();
         // eslint-disable-next-line 
     }, [])
+
+    useEffect(() => {
+        var audio = document.getElementById('audio');
+        if (audio)
+            audio.load();
+        // eslint-disable-next-line 
+    }, [selectedWord])
+
+
+
+    useEffect(() => {
+        if (speechValue < 20)
+            setProgressColor("danger")
+        else if (speechValue < 50)
+            setProgressColor("warning")
+        else if (speechValue < 75)
+            setProgressColor("info")
+        else
+            setProgressColor("success")
+    }, [speechValue])
 
     useEffect(() => {
         if (wordList) {
@@ -50,6 +80,23 @@ export default function Spelling() {
             setCurrentKey(currentKey - 1)
         }
     }
+
+    const getSpeechText = (text) => {
+        var similarity = stringSimilarity.compareTwoStrings(clearText(text), clearText(selectedWord.name));
+        const value = parseInt(similarity * 100)
+        setSpeechValue(value);
+
+        console.log(value)
+
+    }
+    const clearText = (readnigText) => {
+        let newText = String(readnigText).replace(".", "").replace("'", "").replace("!", "").replace(",", "").replace("’", "").replace("?", "").replace("-", "").replace("_", "");
+        newText = newText.toLowerCase();
+        return newText;
+    }
+
+
+
     return <React.Fragment>
         <div className="container">
             <div className="row mt-4">
@@ -58,8 +105,8 @@ export default function Spelling() {
                         <div className="">
                             <div className='row m-2'>
                                 <div className='col-4 boxDark mr-5'><h3><b>
-                                <Link to="/student" style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link>
-                                    </b></h3></div>
+                                    <Link to="/student" style={{ color: "white", textDecoration: "none" }}> AXEBUG DIGITAL</Link>
+                                </b></h3></div>
                                 <div className='col-8 boxWhite ml-5'><h4>Listening and Speaking</h4></div>
                             </div>
                             <div className='row m-2'>
@@ -77,21 +124,27 @@ export default function Spelling() {
                                         </div>
                                     </div>
                                     <div className='col-8 ml-5'>
-                                        <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                                        <audio id="audio" controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
                                             <source src={`../../assets/${selectedWord.soundUrl}`} type="audio/mpeg" />
                                         </audio>
                                         <div className='boxWhite p-2'>
                                             <div>
-                                                <span style={{ fontSize: 72, fontWeight: "bold" , letterSpacing:15}}>{selectedWord.name}</span></div>
+                                                <span style={{ fontSize: 72, fontWeight: "bold", letterSpacing: 15 }}>{selectedWord.name}</span></div>
                                         </div>
-                                        <div className='col-12 boxDark ml-5'><h4>Record your voice</h4></div>
-
+                                        <div className='boxWhite p-2'>
+                                            <SpechText getSpeechText={getSpeechText} />
+                                        </div>
                                     </div>
-                                    <div className='row  mt-3'>
-                                        <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} id="file" value="78" max="100"> 78% </progress>
-                                        <div className='col-auto' style={{ height: 30 }}><h2>% 78</h2></div>
+                                    <div>
+                                        <div className='row m-0 mt-2 p-0'>
+                                            <div className="progress col p-0" style={{ height: "30px" }}>
+                                                <div className={`progress-bar progress-bar-striped bg-${progressColor} progress-bar-animated`}
+                                                    role="progressbar" style={{ width: speechValue + "%" }}
+                                                    aria-valuenow={speechValue} aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div className='col-auto' style={{ height: 30 }}><h2>% {speechValue}</h2></div>
+                                        </div>
                                     </div>
-                                    <div className='col-12 boxDark mt-5'><h2>Total Spelling Score 87</h2></div>
 
                                 </div>
                             </div>

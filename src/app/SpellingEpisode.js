@@ -46,7 +46,7 @@ export default function SpellingEpisode() {
                 {
                     wordList ?
                         wordList.map((word, key) =>
-                            <Square key={key} to={`/app/spelling/?id=${word.id}&e=${word.episode.id}`} col="1" backgroundColor="white"><h5>{word.name}</h5> </Square>
+                            <Square key={key} to={`/app/spelling/?id=${word.id}&e=${word.episode.id}`} col="2" backgroundColor="white"><h5>{word.name}</h5> </Square>
                         ) : null
                 }
             </div>

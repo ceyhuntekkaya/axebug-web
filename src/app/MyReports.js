@@ -39,13 +39,13 @@ export default function MyReports() {
                             <div className="text-white bg-dark border border-2 border-dark p-2 mt-3 d-flex justify-content-center" style={{ width: "100%" }}><h2><b> <Link to="/student" style={{ color: "white", textDecoration: "none" }}> AXEBUG DIGITAL</Link></b></h2></div>
                         </div>
                         <div className='col-12'>
-                            <div className="border border-2 border-dark p-2 mt-3 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>{student.name}'s TASK</b></h2></div>
+                            <div className="border border-2 border-dark p-2 mt-3 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>{student.name}'s REPORTS</b></h2></div>
                         </div>
                     </div>
                 </div>
                 <div className='col-7 mt-3'>
                     <div>
-                        <div className="border border-2 border-dark p-2 mt-4 d-flex justify-content-center black900" style={{ width: "100%", color: "white", backgroundColor: "black" }}><h2><b>YOUR TASKS</b></h2></div>
+                        <div className="border border-2 border-dark p-2 mt-4 d-flex justify-content-center black900" style={{ width: "100%", color: "white", backgroundColor: "black" }}><h2><b>YOUR REPORTS</b></h2></div>
                     </div><div className='row'>
                         {
                             activeTaskShow(true)
