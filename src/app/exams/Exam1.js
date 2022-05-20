@@ -12,9 +12,11 @@ export default function Exam1(props) {
 
     const nextPage = () => {
         if (pageNo < maxPage - 1) setPageNo(pageNo + 1)
+        props.sendExam(answer,"EXAM", false)
     }
     const prevPage = () => {
         if (pageNo > 0) setPageNo(pageNo - 1)
+        props.sendExam(answer,"EXAM", false)
     }
 
     const setStudentOpenAnswer = (skils, section, queationNumber, value, compare) => {
@@ -456,27 +458,27 @@ export default function Exam1(props) {
                                                         <table>
                                                             <tr>
                                                                 <td>Launch</td>
-                                                                <td><input style={{width:50}} className="form-input textformat border border-success" type="number" value={answer.result[1][1][1].student} onChange={(e) => setStudentOpenAnswer(1, 1, 1, e.target.value)} />
+                                                                <td><input style={{ width: 50 }} className="form-input textformat border border-success" type="number" value={answer.result[1][1][1].student} onChange={(e) => setStudentOpenAnswer(1, 1, 1, e.target.value)} />
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Control panel</td>
-                                                                <td><input style={{width:50}} className="form-input textformat border border-success" type="number" value={answer.result[1][1][2].student} onChange={(e) => setStudentOpenAnswer(1, 1, 2, e.target.value)} />
+                                                                <td><input style={{ width: 50 }} className="form-input textformat border border-success" type="number" value={answer.result[1][1][2].student} onChange={(e) => setStudentOpenAnswer(1, 1, 2, e.target.value)} />
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>ZZZ55</td>
-                                                                <td><input style={{width:50}} className="form-input textformat border border-success" type="number" value={answer.result[1][1][3].student} onChange={(e) => setStudentOpenAnswer(1, 1, 3, e.target.value)} />
+                                                                <td><input style={{ width: 50 }} className="form-input textformat border border-success" type="number" value={answer.result[1][1][3].student} onChange={(e) => setStudentOpenAnswer(1, 1, 3, e.target.value)} />
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Space suits</td>
-                                                                <td><input style={{width:50}} className="form-input textformat border border-success" type="number" value={answer.result[1][1][4].student} onChange={(e) => setStudentOpenAnswer(1, 1, 4, e.target.value)} />
+                                                                <td><input style={{ width: 50 }} className="form-input textformat border border-success" type="number" value={answer.result[1][1][4].student} onChange={(e) => setStudentOpenAnswer(1, 1, 4, e.target.value)} />
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Personal stuff</td>
-                                                                <td><input style={{width:50}} className="form-input textformat border border-success" type="number" value={answer.result[1][1][5].student} onChange={(e) => setStudentOpenAnswer(1, 1, 5, e.target.value)} />
+                                                                <td><input style={{ width: 50 }} className="form-input textformat border border-success" type="number" value={answer.result[1][1][5].student} onChange={(e) => setStudentOpenAnswer(1, 1, 5, e.target.value)} />
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -497,29 +499,29 @@ export default function Exam1(props) {
                                                         <div className='col-6'>
                                                             <div className="paragraf"><strong>1. Dung Beetle :</strong> Where did earth go?</div>
                                                             <div className="paragraf"><strong>Axebug :</strong>
-                                                                <input style={{width:50}} className="form-input textformat border border-success" type="text" value={answer.result[2][0][1].student} onChange={(e) => setStudentOpenAnswer(2, 0, 1, e.target.value)} />
+                                                                <input style={{ width: 50 }} className="form-input textformat border border-success" type="text" value={answer.result[2][0][1].student} onChange={(e) => setStudentOpenAnswer(2, 0, 1, e.target.value)} />
                                                             </div>
                                                             <div className="paragraf"><strong>2. Axebug: </strong>Are you ready for the answer?</div>
                                                             <div className="paragraf"><strong>Dung Beetle :</strong>
-                                                                <input style={{width:50}} className="form-input textformat border border-success" type="text" value={answer.result[2][0][2].student} onChange={(e) => setStudentOpenAnswer(2, 0, 2, e.target.value)} />
+                                                                <input style={{ width: 50 }} className="form-input textformat border border-success" type="text" value={answer.result[2][0][2].student} onChange={(e) => setStudentOpenAnswer(2, 0, 2, e.target.value)} />
                                                             </div>
 
                                                             <div className="paragraf"><strong>3. Ladybug:</strong> I’m ready! Let’s find out.</div>
                                                             <div className="paragraf"><strong>Axebug :</strong>
-                                                                <input style={{width:50}} className="form-input textformat border border-success" type="text" value={answer.result[2][0][3].student} onChange={(e) => setStudentOpenAnswer(2, 0, 3, e.target.value)} />
+                                                                <input style={{ width: 50 }} className="form-input textformat border border-success" type="text" value={answer.result[2][0][3].student} onChange={(e) => setStudentOpenAnswer(2, 0, 3, e.target.value)} />
                                                             </div>
 
                                                             <div className="paragraf"><strong>4. Axebug:</strong> Close your eyes until i tell you to open them.</div>
                                                             <div className="paragraf"><strong>Axebug :</strong>
-                                                                <input style={{width:50}} className="form-input textformat border border-success" type="text" value={answer.result[2][0][4].student} onChange={(e) => setStudentOpenAnswer(2, 0, 4, e.target.value)} />
+                                                                <input style={{ width: 50 }} className="form-input textformat border border-success" type="text" value={answer.result[2][0][4].student} onChange={(e) => setStudentOpenAnswer(2, 0, 4, e.target.value)} />
                                                             </div>
 
                                                             <div className="paragraf"><strong>5. Dung Beetle:</strong> wow! Spectacular.</div>
                                                             <div className="paragraf"><strong>Ladybug :</strong>
-                                                                <input style={{width:50}} className="form-input textformat border border-success" type="text" value={answer.result[2][0][5].student} onChange={(e) => setStudentOpenAnswer(2, 0, 5, e.target.value)} />
+                                                                <input style={{ width: 50 }} className="form-input textformat border border-success" type="text" value={answer.result[2][0][5].student} onChange={(e) => setStudentOpenAnswer(2, 0, 5, e.target.value)} />
                                                             </div>
                                                             <div className="paragraf"><strong>Ladybug :</strong>
-                                                                <input style={{width:50}} className="form-input textformat border border-success" type="text" value={answer.result[2][0][6].student} onChange={(e) => setStudentOpenAnswer(2, 0, 6, e.target.value)} />
+                                                                <input style={{ width: 50 }} className="form-input textformat border border-success" type="text" value={answer.result[2][0][6].student} onChange={(e) => setStudentOpenAnswer(2, 0, 6, e.target.value)} />
                                                             </div>
                                                         </div>
                                                         <div className='col-6'>
@@ -713,11 +715,13 @@ export default function Exam1(props) {
                         {
                             pageNo === maxPage - 1 ?
                                 <div className="col-auto pl-2">
-                                    <button className='btn btn-success' onClick={() => props.sendExam(answer)}>FINISH EXAM</button>
+                                    <button className='btn btn-success' onClick={() => props.sendExam(answer,"EXAM", true)}>FINISH EXAM</button>
                                 </div>
                                 : null
                         }
-
+                        <div className="col pl-4">
+                            <button className='btn btn-info pl-4' onClick={() => props.sendExam(answer,"EXAM", false)}>SAVE EXAM</button>
+                        </div>
                     </div>
                 </div>
             </div>

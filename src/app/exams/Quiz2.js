@@ -12,9 +12,11 @@ export default function Quiz2(props) {
 
   const nextPage = () => {
     if (pageNo < maxPage - 1) setPageNo(pageNo + 1)
+    props.sendExam(answer,"QUIZ", false)
   }
   const prevPage = () => {
     if (pageNo > 0) setPageNo(pageNo - 1)
+    props.sendExam(answer,"QUIZ", false)
   }
 
   const setStudentOpenAnswer = (skils, section, queationNumber, value, compare) => {
@@ -521,7 +523,7 @@ export default function Quiz2(props) {
                         </React.Fragment>
                         : null
                     }
-                     {
+                    {
                       pageNo === 5 ?
                         <FinishExam />
                         : null
@@ -552,11 +554,13 @@ export default function Quiz2(props) {
             {
               pageNo === maxPage - 1 ?
                 <div className="col-auto pl-2">
-                  <button className='btn btn-success' onClick={() => props.sendExam(answer)}>FINISH EXAM</button>
+                  <button className='btn btn-success' onClick={() => props.sendExam(answer,"QUIZ", true)}>FINISH EXAM</button>
                 </div>
                 : null
             }
-
+            <div className="col pl-4">
+              <button className='btn btn-info pl-4' onClick={() => props.sendExam(answer,"QUIZ", false)}>SAVE EXAM</button>
+            </div>
           </div>
         </div>
       </div >
