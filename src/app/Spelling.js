@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Square from './components/Square';
 import useWordBank from '../api/useWordBank';
+import useWordScore from '../api/useWordScore';
 import { useSearchParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import SpechText from './components/SpechText';
@@ -19,12 +20,27 @@ export default function Spelling() {
 
     const [speechValue, setSpeechValue] = useState(100);
 
+    const [student, setStudent] = useState({ name: "", surname: "", avatar: "" });
+    const [wordScore, setWordScore] = useWordScore({});
+    const [getWordScore, setGetWordScore] = useWordScore({});
+    const [wordScoreReport, setWordScoreReport] = useWordScore({});
+
+
+    console.log('1:', wordScore)
+    console.log('2:', getWordScore)
+    console.log('3:', wordScoreReport)
+
     useEffect(() => {
         var id = searchParams.get("id");
         setSelectedWordId(parseInt(id));
         var episodeId = searchParams.get("e");
         setWordList("findByEpisode", { episodeId: episodeId, category: "spelling" });
 
+
+        document.body.style.backgroundColor = '#eeeeee'; // '#231F20';
+        const studentData = JSON.parse(localStorage.getItem("student"));
+        setStudent(studentData);
+        setWordScoreReport("wordScoreReport", studentData.id)
         var audio = document.getElementById('audio');
         if (audio)
             audio.load();
@@ -35,6 +51,13 @@ export default function Spelling() {
         var audio = document.getElementById('audio');
         if (audio)
             audio.load();
+
+        const param = {
+            useId: student.id,
+            word: selectedWord.name,
+        }
+        setGetWordScore("getWordScore", param)
+        setWordScoreReport("wordScoreReport", student.id)
         // eslint-disable-next-line 
     }, [selectedWord])
 
@@ -85,9 +108,13 @@ export default function Spelling() {
         var similarity = stringSimilarity.compareTwoStrings(clearText(text), clearText(selectedWord.name));
         const value = parseInt(similarity * 100)
         setSpeechValue(value);
-
-        console.log(value)
-
+        const param = {
+            useId: student.id,
+            word: selectedWord.name,
+            score: value,
+            level: selectedWord.category
+        }
+        setWordScore("createWordScore", param)
     }
     const clearText = (readnigText) => {
         let newText = String(readnigText).replace(".", "").replace("'", "").replace("!", "").replace(",", "").replace("’", "").replace("?", "").replace("-", "").replace("_", "");
@@ -145,13 +172,20 @@ export default function Spelling() {
                                             <div className='col-auto' style={{ height: 30 }}><h2>% {speechValue}</h2></div>
                                         </div>
                                     </div>
-
-                                </div>
+                                    <div className='container d-flex justify-content-center mt-2'>
+                                        <div className='row'>
+                                            <div style={{ backgroundColor: "#F4BFBF" }} className='col-3 border border-success p-3 d-flex justify-content-center'><b>EASY VOCABULARY SCORE<br /> <h1>{wordScoreReport ? wordScoreReport[0].score : null}</h1> </b></div>
+                                            <div style={{ backgroundColor: "#FAF0D7" }} className='col-3 border border-success p-3 d-flex justify-content-center'><b>MEDIUM VOCABULARY SCORE<br /> <h1>{wordScoreReport ? wordScoreReport[1].score : null}</h1> </b></div>
+                                            <div style={{ backgroundColor: "#8CC0DE" }} className='col-3 border border-success p-3 d-flex justify-content-center'><b>HARD VOCABULARY SCORE<br /> <h1>{wordScoreReport ? wordScoreReport[2].score : null}</h1> </b></div>
+                                            <div className='col-3 border border-success p-3 d-flex justify-content-center'><b><h1>{selectedWord ? selectedWord.name : null}</h1>BEST SCORE<br /> <h1>{getWordScore ? getWordScore.score : null}</h1> </b></div>
+                                        </div>
+                                    </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </React.Fragment>;
+    </div>
+    </React.Fragment >;
 }

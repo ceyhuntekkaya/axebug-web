@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Square from './components/Square';
-import useStudentWork from '../api/useStudentWork'
 import { Link } from 'react-router-dom';
 
 
 export default function MyMaterials() {
     const [student, setStudent] = useState({ name: "", surname: "", avatar: "" });
-    const [studentWorkTaskList, setStudentWorkApi] = useStudentWork([]);
 
     useEffect(() => {
         document.body.style.backgroundColor = '#eeeeee'; // '#231F20';

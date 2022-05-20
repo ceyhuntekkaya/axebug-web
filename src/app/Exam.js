@@ -21,12 +21,15 @@ export default function Exam() {
         setStudent(studentData);
         document.body.style.backgroundColor = 'white'; // '#231F20';
         setSelectedExam("findById", id)
+
+       
         // eslint-disable-next-line 
     }, [])
 
     useEffect(() => {
         if (selectedExam) {
             setExamName(selectedExam.name);
+            localStorage.setItem('quiz', selectedExam.name)
         }
         // eslint-disable-next-line 
     }, [selectedExam])
