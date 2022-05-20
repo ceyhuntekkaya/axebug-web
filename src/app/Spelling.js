@@ -61,8 +61,6 @@ export default function Spelling() {
         // eslint-disable-next-line 
     }, [selectedWord])
 
-
-
     useEffect(() => {
         if (speechValue < 20)
             setProgressColor("danger")
@@ -121,8 +119,6 @@ export default function Spelling() {
         newText = newText.toLowerCase();
         return newText;
     }
-
-
 
     return <React.Fragment>
         <div className="container">
