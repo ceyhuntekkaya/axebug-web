@@ -10,11 +10,18 @@ export default function Login(props) {
 
     useEffect(() => {
         document.body.style.backgroundColor = 'black'; // '#231F20';
-        if(localStorage.getItem("student")!= null){
+
+
+try{
+        if(localStorage.getItem("student")!== null){
+            console.log(localStorage.getItem("student"))
             const studentData = JSON.parse(localStorage.getItem("student"));
+            if(studentData.username){
             setLogin({ username: studentData.username, password: studentData.password });
-        }
+        }}
+    }catch(err){
         
+    }
 
     }, [])
 

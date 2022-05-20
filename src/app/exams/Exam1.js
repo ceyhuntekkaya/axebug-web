@@ -12,11 +12,11 @@ export default function Exam1(props) {
 
     const nextPage = () => {
         if (pageNo < maxPage - 1) setPageNo(pageNo + 1)
-        props.sendExam(answer,"EXAM", false)
+        //props.sendExam(answer,"EXAM", false)
     }
     const prevPage = () => {
         if (pageNo > 0) setPageNo(pageNo - 1)
-        props.sendExam(answer,"EXAM", false)
+        //props.sendExam(answer,"EXAM", false)
     }
 
     const setStudentOpenAnswer = (skils, section, queationNumber, value, compare) => {
@@ -719,9 +719,9 @@ export default function Exam1(props) {
                                 </div>
                                 : null
                         }
-                        <div className="col pl-4">
+                        {/* <div className="col pl-4">
                             <button className='btn btn-info pl-4' onClick={() => props.sendExam(answer,"EXAM", false)}>SAVE EXAM</button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

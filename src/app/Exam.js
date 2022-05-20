@@ -59,8 +59,9 @@ export default function Exam() {
         });
 
         saveSelectedExamResult("saveExamResult", answerList)
-        if (isFinish === true)
-            setExamName("Finish")
+        setExamName("Finish")
+        // if (isFinish === true)
+        //     setExamName("Finish")
 
     }
 

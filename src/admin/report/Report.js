@@ -28,10 +28,10 @@ export default function Report() {
 
 
   useEffect(() => {
-    if(localStorage.getItem("student") !== null) {setReturnUrl("/student")}
-    else if(localStorage.getItem("teacher") !== null) {setReturnUrl("/admin/reportlist")}
-    else if(localStorage.getItem("school") !== null) {setReturnUrl("/admin/reportlist")}
-    else if(localStorage.getItem("system_admin") !== null) {setReturnUrl("")}
+    if (localStorage.getItem("student") !== null) { setReturnUrl("/student") }
+    else if (localStorage.getItem("teacher") !== null) { setReturnUrl("/admin/reportlist") }
+    else if (localStorage.getItem("school") !== null) { setReturnUrl("/admin/reportlist") }
+    else if (localStorage.getItem("system_admin") !== null) { setReturnUrl("") }
 
 
   }, [])
@@ -162,7 +162,6 @@ export default function Report() {
                         {
                           getProgress(parseInt(data.score))
                         }
-
                       </div>
                       <div className='col-1'>{parseInt(data.score)}</div>
                     </React.Fragment>
@@ -195,26 +194,29 @@ export default function Report() {
                 <h4><b>SUGGESTIONS</b></h4>
               </div>
             </div>
-            <div className='row border border-light mt-2'>
-              <div className='col-2'><h4><b>Reading : {parseInt(studentScore.readScore)}</b></h4></div>
-              <div className='col-10'>{getText('Reading', parseInt(studentScore.readScore))}
-              </div>
-            </div>
-            <div className='row border border-light'>
-              <div className='col-2'><h4><b>Listenig : {parseInt(studentScore.listeningScore)}</b></h4></div>
-              <div className='col-10'>{getText('Listenig', parseInt(studentScore.listeningScore))}
-              </div>
-            </div>
-            <div className='row border border-light'>
-              <div className='col-2'><h4><b>Writing : {parseInt(studentScore.writeScore)}</b></h4></div>
-              <div className='col-10'>{getText('Writing', parseInt(studentScore.writeScore))}
-              </div>
-            </div>
-            <div className='row border border-light'>
-              <div className='col-2'><h4><b>Speaking : {parseInt(studentScore.speakingScore)}</b></h4></div>
-              <div className='col-10'>{getText('Speaking', parseInt(studentScore.speakingScore))}
-              </div>
-            </div>
+            {studentScore ?
+              <React.Fragment>
+                {studentScore.readScore ? <div className='row border border-light mt-2'>
+                  <div className='col-2'><h4><b>Reading : {parseInt(studentScore.readScore)}</b></h4></div>
+                  <div className='col-10'>{getText('Reading', parseInt(studentScore.readScore))}
+                  </div>
+                </div> : null}
+                {studentScore.listeningScore ? <div className='row border border-light'>
+                  <div className='col-2'><h4><b>Listenig : {parseInt(studentScore.listeningScore)}</b></h4></div>
+                  <div className='col-10'>{getText('Listenig', parseInt(studentScore.listeningScore))}
+                  </div>
+                </div> : null}
+                {studentScore.writeScore ? <div className='row border border-light'>
+                  <div className='col-2'><h4><b>Writing : {parseInt(studentScore.writeScore)}</b></h4></div>
+                  <div className='col-10'>{getText('Writing', parseInt(studentScore.writeScore))}
+                  </div>
+                </div> : null}
+                {studentScore.speakingScore ? <div className='row border border-light'>
+                  <div className='col-2'><h4><b>Speaking : {parseInt(studentScore.speakingScore)}</b></h4></div>
+                  <div className='col-10'>{getText('Speaking', parseInt(studentScore.speakingScore))}
+                  </div>
+                </div> : null}
+              </React.Fragment> : null}
           </div>
           : null
       }
