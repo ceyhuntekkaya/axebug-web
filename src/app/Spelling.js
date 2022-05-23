@@ -26,10 +26,6 @@ export default function Spelling() {
     const [wordScoreReport, setWordScoreReport] = useWordScore({});
 
 
-    console.log('1:', wordScore)
-    console.log('2:', getWordScore)
-    console.log('3:', wordScoreReport)
-
     useEffect(() => {
         var id = searchParams.get("id");
         setSelectedWordId(parseInt(id));

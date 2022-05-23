@@ -14,7 +14,6 @@ export default function Login(props) {
 
 try{
         if(localStorage.getItem("student")!== null){
-            console.log(localStorage.getItem("student"))
             const studentData = JSON.parse(localStorage.getItem("student"));
             if(studentData.username){
             setLogin({ username: studentData.username, password: studentData.password });

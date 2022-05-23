@@ -66,12 +66,10 @@ export default function StudentPanel() {
           <Square col="4" backgroundColor="white" to="/mytasks"><b>MY TASK</b> </Square>
           <Square col="4" backgroundColor="white" to="/dijitalcontents"><b>CONTENTS</b></Square>
           <Square col="4" backgroundColor="white" to="/chapter"><b>AXE 4 SKILLS</b></Square>
-
           <Square col="4" backgroundColor="white" to="/speling"><b>SPELLING</b> </Square>
           <div className="col-4 p-2"><img className='w-100' src={`assets/l7.png`} /></div>
           <Square col="4" backgroundColor="white" to="/wordbank"><b>WORDBANK</b></Square>
-
-          <Square col="4" backgroundColor="white" to="/"><b>GOALS AND ACHIEVEMENTS</b> </Square>
+          <Square col="4" backgroundColor="white" to="/goals"><b>{student.name}'s ADVENTURE</b> </Square>
           <Square col="4" backgroundColor="white" to="/myMaterials"><b>MATERIALS</b></Square>
           <Square col="4" backgroundColor="white" to="/myReports"><b>REPORT</b></Square>
         </div>

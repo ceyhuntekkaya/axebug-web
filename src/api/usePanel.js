@@ -72,7 +72,7 @@ export default function usePanel() {
         } else if (type === "updatePanel") {
             await updatePanel(params);
         } else if (type === "findAllPanels") {
-            await findAllPanels(params);
+            await findAllPanels();
         } else if (type === "findByTask") {
             await findByTask(params);
         } else if (type === "findById") {

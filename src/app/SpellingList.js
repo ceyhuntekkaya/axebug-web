@@ -10,7 +10,6 @@ export default function SpellingList() {
     setChapters("findAllChaptersWithEpisodes", null);
     // eslint-disable-next-line 
   }, [])
-console.log(chapters)
   return <React.Fragment>
     <div className="container">
       <div className="text-white bg-dark border border-2 border-dark p-2 mt-5 d-flex justify-content-center" style={{ width: 350 }}><h2><b>

@@ -141,12 +141,13 @@ export default function ContentBasePanel(props) {
                     }
                     {
                         level === 3 ?
-                            "Read the sentences. Then, write it fully."
+                            "Listen to the sentences. Then, write it fully. "
                             : null
                     }
                     {
                         level === 4 ?
-                            "Listen to the sentences. Then, write it fully. "
+                            "Read the sentences. Then, write it fully."
+
                             : null
                     }
                 </h4></div>
