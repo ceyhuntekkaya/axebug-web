@@ -76,7 +76,7 @@ export default function DijitalContents() {
                 </div>
                 <div className='col-7 mt-3'>
                     <div>
-                        <div className="border border-2 border-dark p-2 mt-4 d-flex justify-content-center black900" style={{ width: "100%", color: "white", backgroundColor: "black" }}><h2><b>DIJITAL CONTENTS</b></h2></div>
+                        <div className="border border-2 border-dark p-2 mt-4 d-flex justify-content-center black900" style={{ width: "100%", color: "white", backgroundColor: "#222529" }}><h2><b>DIJITAL CONTENTS</b></h2></div>
                     </div><div className='row'>
                         {
                             activeTaskShow(true)

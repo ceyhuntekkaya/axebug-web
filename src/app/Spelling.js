@@ -123,19 +123,19 @@ export default function Spelling() {
                     <div className="mb-4">
                         <div className="">
                             <div className='row m-2'>
-                                <div className='col-4 boxDark mr-5'><h3><b>
+                                <div className='col-4 boxDark mr-5 d-flex justify-content-center'><h3><b>
                                     <Link to="/student" style={{ color: "white", textDecoration: "none" }}> AXEBUG DIGITAL</Link>
                                 </b></h3></div>
                                 <div className='col-8 boxWhite ml-5'><h4>Listening and Speaking</h4></div>
                             </div>
                             <div className='row m-2'>
-                                <div className='col-4 boxWhite mr-5'><h3><b>SPELLING BEE</b></h3></div>
+                                <div className='col-4 boxWhite mr-5 d-flex justify-content-center'><h3><b>SPELLING</b></h3></div>
                                 <div className='col-8 boxDark ml-5'><h4>Listen to the audio. Then, repeat the sentences clearly.</h4></div>
                             </div>
                             <div className="m-2">
                                 <div className="row">
                                     <div className='col-4 boxWhite mr-5'>
-                                        <div className="row mb-3">
+                                        <div className="row mb-3 d-flex justify-content-center">
                                             <Square col="5" backgroundColor="black"><h1><b>{chapter.name}</b></h1> </Square>
                                             <Square col="5" backgroundColor="black"><h1><b>{episode.name}</b></h1> </Square>
                                             <div className="col-5"><button className="btn btn-dark w-100" onClick={prevQuestions}>Prev Word</button></div>
@@ -143,7 +143,7 @@ export default function Spelling() {
                                         </div>
                                     </div>
                                     <div className='col-8 ml-5'>
-                                        <audio id="audio" controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                                        <audio id="audio" controls className='w-100' style={{ backgroundColor: "#222529", height: 45 }}>
                                             <source src={`../../assets/${selectedWord.soundUrl}`} type="audio/mpeg" />
                                         </audio>
                                         <div className='boxWhite p-2'>

@@ -44,10 +44,9 @@ export default function Square(props) {
     }
 
     return (
-        <div className={`square col-${colSize}`} onClick={() => props.to ? goLink(props.to) : null}>
+        <div className={`square col-${colSize}  d-flex justify-content-center`} onClick={() => props.to ? goLink(props.to) : null}>
             <img src="http://dummyimage.com/50x50/000/fff.gif&text=50x50" className="sq-setter-w" alt='window' />
             <div className={`sq-content m-1 row border border-4 ${border}`} style={{ backgroundColor: backgroundColor }} onClick={() => props.to ? goLink(props.to) : null}>
-
                 {
                     hasEvent ?
 

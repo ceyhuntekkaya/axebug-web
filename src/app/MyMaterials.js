@@ -16,7 +16,7 @@ export default function MyMaterials() {
     const activeTaskShow = (type) => {
         return (
             <React.Fragment>
-                <div style={{ paddingLeft: "8px", paddingRight: "8px" }}>
+                <div className='row' style={{ paddingLeft: "8px", paddingRight: "8px" }}>
                     <Square col="4" backgroundColor="white" to="/speling"><b>SPELLING</b> </Square>
                     <Square col="4" backgroundColor="white" to="/wordbank"><b>WORDBANK</b></Square>
                     <Square col="4" backgroundColor="white" to="/dijitalcontents"><b>CONTENTS</b></Square>
@@ -40,7 +40,7 @@ export default function MyMaterials() {
                 </div>
                 <div className='col-7 mt-3'>
                     <div>
-                        <div className="border border-2 border-dark p-2 mt-4 d-flex justify-content-center black900" style={{ width: "100%", color: "white", backgroundColor: "black" }}><h2><b>YOUR MATERIALS</b></h2></div>
+                        <div className="border border-2 border-dark p-2 mt-4 d-flex justify-content-center black900" style={{ width: "100%", color: "white", backgroundColor: "#222529" }}><h2><b>YOUR MATERIALS</b></h2></div>
                     </div><div className='row'>
                         {
                             activeTaskShow(true)

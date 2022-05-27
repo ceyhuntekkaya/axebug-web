@@ -67,9 +67,9 @@ export default function StudentPanel() {
           <Square col="4" backgroundColor="white" to="/dijitalcontents"><b>CONTENTS</b></Square>
           <Square col="4" backgroundColor="white" to="/chapter"><b>AXE 4 SKILLS</b></Square>
           <Square col="4" backgroundColor="white" to="/speling"><b>SPELLING</b> </Square>
-          <div className="col-4 p-2"><img className='w-100' src={`assets/l7.png`} /></div>
+          <div className="col-4 p-2"><img className='w-100' src={`assets/l1.png`} /></div>
           <Square col="4" backgroundColor="white" to="/wordbank"><b>WORDBANK</b></Square>
-          <Square col="4" backgroundColor="white" to="/goals"><b>{student.name}'s ADVENTURE</b> </Square>
+          <Square col="4" backgroundColor="white" to="/goals"><b>{student.name}'s<br/> ADVENTURE</b> </Square>
           <Square col="4" backgroundColor="white" to="/myMaterials"><b>MATERIALS</b></Square>
           <Square col="4" backgroundColor="white" to="/myReports"><b>REPORT</b></Square>
         </div>
@@ -80,7 +80,7 @@ export default function StudentPanel() {
 
   const myAvatar = () => {
     return (
-      <div className='d-flex justify-content-end mt-4'><img src={`assets/${student.avatar}`} style={{ height: "140px", backgroundColor: "black" }} alt='Avatar' /></div>)
+      <div className='d-flex justify-content-end mt-4'><img src={`assets/${student.avatar}`} style={{ height: "140px", backgroundColor: "#222529" }} alt='Avatar' /></div>)
   }
   const contentMenu = () => {
     return (<React.Fragment>
@@ -110,7 +110,7 @@ export default function StudentPanel() {
   }
   const scoreBoard = () => {
     return (
-      <div className="border border-2 border-dark p-2 mt-3" style={{ backgroundColor: "black", color: "white" }}>
+      <div className="border border-2 border-dark p-2 mt-3" style={{ backgroundColor: "#222529", color: "white" }}>
         <div className='d-flex justify-content-center mt-3' style={{ fontWeight: "bold" }}><h1>SCORE BOARD</h1></div>
         <hr />
         {

@@ -18,7 +18,7 @@ export default function MyReports() {
 
     const activeTaskShow = (type) => {
         return (
-            <div style={{ paddingLeft: "8px", paddingRight: "8px" }}>
+            <div className='row' style={{ paddingLeft: "8px", paddingRight: "8px" }}>
                 {
                     examList ?
                         examList.map((exam, key) =>
@@ -45,7 +45,7 @@ export default function MyReports() {
                 </div>
                 <div className='col-7 mt-3'>
                     <div>
-                        <div className="border border-2 border-dark p-2 mt-4 d-flex justify-content-center black900" style={{ width: "100%", color: "white", backgroundColor: "black" }}><h2><b>YOUR REPORTS</b></h2></div>
+                        <div className="border border-2 border-dark p-2 mt-4 d-flex justify-content-center black900" style={{ width: "100%", color: "white", backgroundColor: "#222529" }}><h2><b>YOUR REPORTS</b></h2></div>
                     </div><div className='row'>
                         {
                             activeTaskShow(true)

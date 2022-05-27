@@ -116,8 +116,7 @@ export default function ContentBasePanel(props) {
     return (
         <div className="card">
             <div className='row m-2'>
-                <div className='col-4 boxDark d-flex justify-content-center'><h3><b><Link to="/student" style={{ color: "white", textDecoration: "none" }}> AXEBUG DIGITAL</Link></b></h3></div>
-                <div className="col-8 btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div className='col-4 boxDark mr-5'><h3><b><Link to="/student" style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link></b></h3></div> <div className="col-8 btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                     <div className="btn-group mr-2 w-100" role="group" aria-label="First group">
                         <button type="button" className={`btn btn-${level === 1 ? "success" : "secondary"}`} onClick={() => setLevel(1)}>Listen & Speak</button>
                         <button type="button" className={`btn btn-${level === 2 ? "warning" : "secondary"}`} onClick={() => setLevel(2)}>Read & Speak</button>
@@ -156,7 +155,7 @@ export default function ContentBasePanel(props) {
                 <div className="">
                     {
                         level === 1 || level === 3 ?
-                            <audio id="audio" controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                            <audio id="audio" controls className='w-100' style={{ backgroundColor: "#222529", height: 45 }}>
                                 <source id="audioSource" src={`../assets/${selectedContent.soundUrl}`} type="audio/mpeg" />
                             </audio> : null
                     }
