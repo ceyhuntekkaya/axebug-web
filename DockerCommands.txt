@@ -1,3 +1,5 @@
 docker build -t ctekkaya/axebug-web . -f Dockerfile
 docker tag ctekkaya/axebug-web ctekkaya/axebug-web:0.1.0
 docker push ctekkaya/axebug-web:0.1.0
+
+
