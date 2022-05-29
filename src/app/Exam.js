@@ -7,6 +7,7 @@ import Quiz3 from './exams/Quiz3';
 import Quiz4 from './exams/Quiz4';
 
 import useExam from "../api/useExam"
+import FinishExam from './exams/FinishExam';
 
 export default function Exam() {
     let { id } = useParams();
@@ -20,17 +21,21 @@ export default function Exam() {
         setStudent(studentData);
         document.body.style.backgroundColor = 'white'; // '#231F20';
         setSelectedExam("findById", id)
+
+       
         // eslint-disable-next-line 
     }, [])
 
     useEffect(() => {
         if (selectedExam) {
             setExamName(selectedExam.name);
+            localStorage.setItem('quiz', selectedExam.name)
         }
         // eslint-disable-next-line 
     }, [selectedExam])
 
-    const sendExam = (answer, examType) => {
+
+    const sendExam = (answer, examType, isFinish) => {
         const answerList = [];
         answer.result.forEach((skill, skillNo) => {
             skill.forEach((section, sectionNo) => {
@@ -57,6 +62,9 @@ export default function Exam() {
         });
 
         saveSelectedExamResult("saveExamResult", answerList)
+        setExamName("Finish")
+        // if (isFinish === true)
+        //     setExamName("Finish")
 
     }
 
@@ -81,27 +89,24 @@ export default function Exam() {
 
     return (
         <React.Fragment>
-          
-
-
-
-                        {
-                            examName === "Exam 1" ? <Exam1 sendExam={sendExam} /> : null
-                        }
-                        {
-                            examName === "Quiz 1" ? <Quiz1 sendExam={sendExam} /> : null
-                        }
-                        {
-                            examName === "Quiz 2" ? <Quiz2 sendExam={sendExam} /> : null
-                        }
-                        {
-                            examName === "Quiz 3" ? <Quiz3 sendExam={sendExam} /> : null
-                        }
-                        {
-                            examName === "Quiz 4" ? <Quiz4 /> : null
-                        }
-
-
+            {
+                examName === "Exam 1" ? <Exam1 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 1" ? <Quiz1 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 2" ? <Quiz2 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 3" ? <Quiz3 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 4" ? <Quiz4 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Finish" ? <FinishExam /> : null
+            }
         </React.Fragment>
     )
 

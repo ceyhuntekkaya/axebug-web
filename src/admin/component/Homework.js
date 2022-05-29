@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Menu from './Menu'
-import { loremIpsum } from "lorem-ipsum";
 const SectionList = require("../../model/Section.json")
 const EpisodeList = require("../../model/episode.json")
 
@@ -33,8 +32,8 @@ export default function Homework() {
             for (var j = 0; j < 24; j++) {
                 const student = {
                     "id": (i * 100) + j,
-                    "name": loremIpsum({ count: 1, units: "word" }),
-                    "surname": loremIpsum({ count: 1, units: "word" }),
+                    "name": "Ferhat",
+                    "surname":"Kökdemir",
                     "schoolRoomId": 1
                 }
                 studentListEffect.push(student);

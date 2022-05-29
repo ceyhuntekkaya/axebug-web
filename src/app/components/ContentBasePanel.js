@@ -17,9 +17,10 @@ var stringSimilarity = require("string-similarity");
 
 export default function ContentBasePanel(props) {
     const [selectedContent, setSelectedContent] = useState(contentModel);
+    const [studentScore, setStudentScore] = useState(null);
+    const [progressColor, setProgressColor] = useState("success");
     const [level, setLevel] = useState(1);
     const [txtValue, settxtValue] = useState("");
-
     const [speechValue, setSpeechValue] = useState(100);
     useEffect(() => {
         if (props.selectedContent) {
@@ -27,8 +28,41 @@ export default function ContentBasePanel(props) {
             setLevel(1);
             clearValues()
         }
+        var audio = document.getElementById('audio');
+        if (audio)
+            audio.load();
+
+        if (props.studentWorkTaskList) {
+            const hasScore = props.studentWorkTaskList.find(s => s.episodeTaskPanel.id === props.selectedContent.id)
+            if (hasScore) {
+                setStudentScore(hasScore)
+            }
+            else {
+                setStudentScore(null)
+            }
+            showScore()
+        }
+
+
     }, [props.selectedContent])
 
+    const showScore = () => {
+        if (studentScore) {
+            if (level === 2) {
+                setSpeechValue(studentScore.readEvaluation)
+            }
+            else if (level === 4) {
+                setSpeechValue(studentScore.writeEvaluation)
+            }
+            else if (level === 1) {
+                setSpeechValue(studentScore.speakingEvaluation)
+            }
+            else if (level === 3) {
+                setSpeechValue(studentScore.listeningEvaluation)
+            }
+        }
+
+    }
     const clearText = (text) => {
         let newText = text.replace(".", "").replace("'", "").replace("!", "").replace(",", "").replace("’", "").replace("?", "").replace("-", "").replace("_", "");
         newText = newText.toLowerCase();
@@ -65,15 +99,24 @@ export default function ContentBasePanel(props) {
 
     useEffect(() => {
         clearValues();
+        showScore()
     }, [level])
 
-
+    useEffect(() => {
+        if (speechValue < 20)
+            setProgressColor("danger")
+        else if (speechValue < 50)
+            setProgressColor("warning")
+        else if (speechValue < 75)
+            setProgressColor("info")
+        else
+            setProgressColor("success")
+    }, [speechValue])
 
     return (
         <div className="card">
             <div className='row m-2'>
-                <div className='col-4 boxDark d-flex justify-content-center'><h3><b><Link to="/student" style={{ color: "white", textDecoration: "none" }}> AXEBUG DIGITAL</Link></b></h3></div>
-                <div className="col-8 btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div className='col-4 boxDark mr-5'><h3><b><Link to="/student" style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link></b></h3></div> <div className="col-8 btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                     <div className="btn-group mr-2 w-100" role="group" aria-label="First group">
                         <button type="button" className={`btn btn-${level === 1 ? "success" : "secondary"}`} onClick={() => setLevel(1)}>Listen & Speak</button>
                         <button type="button" className={`btn btn-${level === 2 ? "warning" : "secondary"}`} onClick={() => setLevel(2)}>Read & Speak</button>
@@ -84,15 +127,36 @@ export default function ContentBasePanel(props) {
             </div>
             <div className='row m-2'>
                 <div className='col-4 boxWhite mr-5 d-flex justify-content-center'><h3><b>AXE4SKILS</b></h3></div>
-                <div className='col-8 boxDark ml-5 d-flex justify-content-center'><h4>Listen to the audio. Then, repeat the sentences clearly.</h4></div>
+                <div className='col-8 boxDark ml-5 d-flex justify-content-center'><h4>
+                    {
+                        level === 1 ?
+                            "Listen to the audio. Then, repeat the sentences clearly."
+                            : null
+                    }
+                    {
+                        level === 2 ?
+                            "Read the sentences. Then, say it clearly."
+                            : null
+                    }
+                    {
+                        level === 3 ?
+                            "Listen to the sentences. Then, write it fully. "
+                            : null
+                    }
+                    {
+                        level === 4 ?
+                            "Read the sentences. Then, write it fully."
+
+                            : null
+                    }
+                </h4></div>
             </div>
             <div className="card-body">
-
                 <div className="">
                     {
                         level === 1 || level === 3 ?
-                            <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                <source src={`../assets/${selectedContent.soundUrl}`} type="audio/mpeg" />
+                            <audio id="audio" controls className='w-100' style={{ backgroundColor: "#222529", height: 45 }}>
+                                <source id="audioSource" src={`../assets/${selectedContent.soundUrl}`} type="audio/mpeg" />
                             </audio> : null
                     }
                     {
@@ -107,14 +171,11 @@ export default function ContentBasePanel(props) {
                             <div className="d-flex justify-content-center">
                                 <img src={`../assets/${selectedContent.imageFullUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} />
                             </div>
-
                             : null
                     }
-
                     {
                         level === 3 || level === 4 ?
                             <div className="mb-3 mt-2">
-
                                 <div className='row'>
                                     <div className='col'>
                                         <input type="text" className="form-control" id="txt" placeholder="Write text..."
@@ -126,9 +187,9 @@ export default function ContentBasePanel(props) {
                     }
                 </div>
                 <div>
-                    <div className='row m-1 mt-2'>
-                        <div className="progress col" style={{ height: "30px" }}>
-                            <div className="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                    <div className='row m-0 mt-2'>
+                        <div className="progress col p-0" style={{ height: "30px" }}>
+                            <div className={`progress-bar progress-bar-striped bg-${progressColor} progress-bar-animated`}
                                 role="progressbar" style={{ width: speechValue + "%" }}
                                 aria-valuenow={speechValue} aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
@@ -140,7 +201,6 @@ export default function ContentBasePanel(props) {
                         level === 1 || level === 2 ?
                             <SpechText getSpeechText={getSpeechText} /> : null
                     }
-
                     <div className='row mt-2'>
                         {
                             level > 1 ?
@@ -148,9 +208,7 @@ export default function ContentBasePanel(props) {
                                 : null
                         }
                         <div className='col-auto'><button className="btn btn-success pl-2" onClick={nextExersize}>{level === 4 ? "Next Panel" : "Next"}</button></div>
-
                     </div>
-
                 </div>
             </div>
         </div>

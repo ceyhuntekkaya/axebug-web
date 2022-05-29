@@ -24,6 +24,8 @@ export default function SpellingEpisode() {
         // eslint-disable-next-line 
     }, [wordList])
 
+
+
     return <React.Fragment>
         <div className="container">
             <div className='row p-2 mt-5'>
@@ -46,7 +48,8 @@ export default function SpellingEpisode() {
                 {
                     wordList ?
                         wordList.map((word, key) =>
-                            <Square key={key} to={`/app/spelling/?id=${word.id}&e=${word.episode.id}`} col="1" backgroundColor="white"><h5>{word.name}</h5> </Square>
+                            <Square key={key} to={`/app/spelling/?id=${word.id}&e=${word.episode.id}`} col="2" 
+                            backgroundColor={word.category === "EASY" ? "#F4BFBF": word.category === "MEDIUM" ? "#FAF0D7": "#8CC0DE"}><h2>{word.name}</h2> </Square>
                         ) : null
                 }
             </div>

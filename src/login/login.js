@@ -10,6 +10,18 @@ export default function Login(props) {
 
     useEffect(() => {
         document.body.style.backgroundColor = 'black'; // '#231F20';
+
+
+try{
+        if(localStorage.getItem("student")!== null){
+            const studentData = JSON.parse(localStorage.getItem("student"));
+            if(studentData.username){
+            setLogin({ username: studentData.username, password: studentData.password });
+        }}
+    }catch(err){
+        
+    }
+
     }, [])
 
     const loginEvent = (e) => {
@@ -19,6 +31,12 @@ export default function Login(props) {
     useEffect(() => {
         if (login !== null) {
             if (login.error === null) {
+
+                localStorage.setItem("student", null)
+                localStorage.setItem("teacher", null)
+                localStorage.setItem("school", null)
+                localStorage.setItem("system_admin",null)
+
                 if (login.userType === "STUDENT") {
                     localStorage.setItem("student", JSON.stringify(login.student))
                     navigate(`/student`);
@@ -66,7 +84,8 @@ export default function Login(props) {
                                     <input style={{ fontWeight: "bold", fontSize: 20 }}
                                         type="password" className="form-control border border-3 border-dark"
                                         id="password" placeholder="Enter your password"
-                                        value={password} onChange={(e) => setPassword(e.target.value)} />
+                                        value={password} onChange={(e) => setPassword(e.target.value)}
+                                        onKeyDown={(e)=> e.key==="Enter" ? loginEvent() : null} />
                                 </div>
                             </form>
                         </div>
@@ -77,6 +96,5 @@ export default function Login(props) {
                 </div>
             </div>
         </div>
-
     </React.Fragment>
 }

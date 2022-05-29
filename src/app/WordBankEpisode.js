@@ -24,9 +24,9 @@ export default function WordBankEpisode() {
     }, [wordList])
 
     return <React.Fragment>
-        <Home secondaryName="Word Bank" secondaryLink="/wordbank" />
+        <Home secondaryName="WORDBANK" secondaryLink="/wordbank" />
         <div className="d-flex justify-content-center mt-5">
-            <div className='row' style={{ width: 750 }}>
+            <div className='container'>
                 {
                     wordList ?
                         wordList.length > 0 ?
