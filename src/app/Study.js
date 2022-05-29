@@ -62,25 +62,26 @@ export default function Study(props) {
 
     const setEvulations = (type, value, evulation) => {
         let values = { ...studentWork };
-        if (type === 1) {
+        if (type === 2) {
             values.read = value
             values.readEvaluation = evulation
         }
-        else if (type === 2) {
+        else if (type === 4) {
             values.write = value
             values.writeEvaluation = evulation
         }
-        else if (type === 3) {
+        else if (type === 1) {
             values.speaking = value
             values.speakingEvaluation = evulation
         }
-        else if (type === 4) {
+        else if (type === 3) {
             values.listening = value
             values.listeningEvaluation = evulation
         }
         values.student.id = studentId;
         setStudentWork(values)
         setStudentWorkApi("createStudentWork", values);
+        
     }
 
     useEffect(() => {
@@ -105,7 +106,14 @@ export default function Study(props) {
                             {
                                 panels ?
                                     panels.map((panel, key) => (
-                                        <img src={`../assets/${panel.imageFullUrl}`} key={key} className={`col-6 pb-4`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} alt={key} />
+                                        selectedContent.id === panel.id ? 
+                                        <img src={`../assets/${panel.imageFullUrl}`} key={key} className={`col-6 mb-4 border border-danger rounded-circle`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} alt={key} />
+
+                                        :
+                                        <img src={`../assets/${panel.imageFullUrl}`} key={key} className={`col-6 mb-4`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} alt={key} />
+
+
+
                                     )) : null
                             }
                         </div>
@@ -114,7 +122,7 @@ export default function Study(props) {
                 <div className="col ml-2">
                     <div className="mb-4">
                         {
-                            startContent ? <ContentBase studentWork={studentWork} setEvulations={setEvulations} selectedContent={selectedContent} onNextContent={showNextContent} /> : null
+                            startContent ? <ContentBase studentWorkTaskList={studentWorkTaskList} studentWork={studentWork} setEvulations={setEvulations} selectedContent={selectedContent} onNextContent={showNextContent} /> : null
                         }
                     </div>
                 </div>

@@ -21,18 +21,21 @@ export default function Exam() {
         setStudent(studentData);
         document.body.style.backgroundColor = 'white'; // '#231F20';
         setSelectedExam("findById", id)
+
+       
         // eslint-disable-next-line 
     }, [])
 
     useEffect(() => {
         if (selectedExam) {
             setExamName(selectedExam.name);
+            localStorage.setItem('quiz', selectedExam.name)
         }
         // eslint-disable-next-line 
     }, [selectedExam])
 
 
-    const sendExam = (answer, examType) => {
+    const sendExam = (answer, examType, isFinish) => {
         const answerList = [];
         answer.result.forEach((skill, skillNo) => {
             skill.forEach((section, sectionNo) => {
@@ -60,6 +63,8 @@ export default function Exam() {
 
         saveSelectedExamResult("saveExamResult", answerList)
         setExamName("Finish")
+        // if (isFinish === true)
+        //     setExamName("Finish")
 
     }
 
@@ -84,10 +89,6 @@ export default function Exam() {
 
     return (
         <React.Fragment>
-
-
-
-
             {
                 examName === "Exam 1" ? <Exam1 sendExam={sendExam} /> : null
             }
@@ -104,9 +105,8 @@ export default function Exam() {
                 examName === "Quiz 4" ? <Quiz4 sendExam={sendExam} /> : null
             }
             {
-                examName === "Finish" ? <FinishExam  /> : null
+                examName === "Finish" ? <FinishExam /> : null
             }
-
         </React.Fragment>
     )
 

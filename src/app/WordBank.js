@@ -13,7 +13,7 @@ export default function WordBank(props) {
     const [episode, setEpisode] = useState({});
     const [chapter, setChapter] = useState({});
 
-
+console.log(selectedWord)
     useEffect(() => {
         var id = searchParams.get("id");
         setSelectedWordId(parseInt(id));
@@ -59,17 +59,21 @@ export default function WordBank(props) {
                     <div className="mb-4">
                         <div className="">
                             <div className='row m-2'>
-                                <div className='col-4 boxDark mr-5'><h3><b><Link to="/student" style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link></b></h3></div>
-                                <div className='col-8 boxWhite ml-5'><h4>Listening and Speaking</h4></div>
+                                <div className='col-4 boxDark mr-5 d-flex justify-content-center'><h3><b><Link to="/student" style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link></b></h3></div>
+                                <div className='col-8 boxWhite ml-5'>
+                                    {/* <h4>Listening and Speaking</h4> */}
+                                    </div>
                             </div>
                             <div className='row m-2'>
-                                <div className='col-4 boxWhite mr-5'><h3><b>WORDBANK</b></h3></div>
-                                <div className='col-8 boxDark ml-5'><h4>Listen to the audio. Then, repeat the sentences clearly.</h4></div>
+                                <div className='col-4 boxWhite mr-5 d-flex justify-content-center'><h3><b>WORDBANK</b></h3></div>
+                                <div className='col-8 boxDark ml-5'>
+                                    {/* <h4>Listen to the audio. Then, repeat the sentences clearly.</h4> */}
+                                    </div>
                             </div>
                             <div className="m-2">
                                 <div className="row">
                                     <div className='col-4 boxWhite mr-5'>
-                                        <div className="row mb-3">
+                                        <div className="row mb-3 d-flex justify-content-center">
                                             <Square col="5" backgroundColor="black"><h1><b>{chapter.name}</b></h1> </Square>
                                             <Square col="5" backgroundColor="black"><h1><b>{episode.name}</b></h1> </Square>
                                             <div className="col-5"><button className="btn btn-dark w-100" onClick={prevQuestions}>Prev Word</button></div>
@@ -77,28 +81,21 @@ export default function WordBank(props) {
                                         </div>
                                     </div>
                                     <div className='col-8 ml-5'>
-                                        <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
+                                        {/* <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
                                             <source src={`../../assets/${selectedWord.soundUrl}`} type="audio/mpeg" />
-                                        </audio>
+                                        </audio> */}
                                         <div className='boxWhite p-2'>
                                             <div>
                                                 <span style={{ fontSize: 48, fontWeight: "bold" }}>{selectedWord.name}</span>
-                                                <span style={{ fontSize: 36, fontStyle: 'italic' }}>/ {selectedWord.type}</span></div>
+                                                <span style={{ fontSize: 36, fontStyle: 'italic' }}>/ {selectedWord.category}</span></div>
                                             <div style={{ fontSize: 48 }}>
                                                 {
                                                     selectedWord.description
                                                 }
                                             </div>
                                         </div>
-                                        <div className='col-12 boxDark ml-5'><h4>Record your voice</h4></div>
 
                                     </div>
-                                    <div className='row  mt-3'>
-                                        <progress className='col' style={{ height: "30px", width: "100%", border: "2px black" }} id="file" value="78" max="100"> 78% </progress>
-                                        <div className='col-auto' style={{ height: 30 }}><h2>% 78</h2></div>
-                                    </div>
-                                    <div className='col-12 boxDark mt-5'><h2>Total Word Score 87</h2></div>
-
                                 </div>
                             </div>
                         </div>

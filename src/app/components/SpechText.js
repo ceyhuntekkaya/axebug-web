@@ -57,7 +57,7 @@ export default class SpechText extends Component {
         return (
             <div className="row w-100">
                 <div className="col-auto">
-                    <button className="btn btn-dark" onClick={() => this.startListening()}>Record Your Voice</button>
+                    <button className={this.state.listening ? "btn btn-danger" : "btn btn-dark"} onClick={() => this.startListening()}>Record Your Voice</button>
 
                 </div>
                 <div className="col">

@@ -44,7 +44,6 @@ export default function ReportList() {
                                 examList.map((exam, key) => 
                                 <React.Fragment>
                                     <Link className='btn btn-success w-100' to={`../../admin/report/${exam.id}/${selectedStudent.id}`}> {exam.name}</Link>
-                                   
                                 </React.Fragment>
                                 )
                                     

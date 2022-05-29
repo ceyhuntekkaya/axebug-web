@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import useChapter from '../api/useChapter';
 import Square from './components/Square';
+import useChapter from '../api/useChapter';
+import { Link } from 'react-router-dom';
+
 
 export default function ChapterList() {
+  const [student, setStudent] = useState({ name: "", surname: "", avatar: "" });
   const [chapters, setChapters] = useChapter([]);
   const [chapterWorks, setChapterWorks] = useState(null);
 
   useEffect(() => {
+    document.body.style.backgroundColor = '#eeeeee'; // '#231F20';
+    const studentData = JSON.parse(localStorage.getItem("student"));
+    setStudent(studentData);
     const schoolRoomWorkList = JSON.parse(localStorage.getItem("schoolRoomWorkList"));
     const chapterWork = [];
     schoolRoomWorkList.forEach(element => {
@@ -22,36 +27,50 @@ export default function ChapterList() {
     setChapters("findAllChapters", null);
     // eslint-disable-next-line 
   }, [])
+  const activeTaskShow = (type) => {
+    return (
+      chapters ?
+        chapters.map((chapter, key) =>
+          chapterWorks.find(cw => cw.id === chapter.id) ?
+            <Square key={key} col="3"
+              backgroundColor="black"
+              to={`/episode/?id=${chapter.id}`}
+            ><h1><b>{chapter.name}</b></h1> </Square>
+            :
+            <Square key={key} col="3"
+              backgroundColor="white"
+            ><h1><b>{chapter.name}</b></h1> </Square>
+        )
+        : null
+    )
+  }
 
   return (
-    <React.Fragment>
-      <div className="container">
-        <div className="text-white bg-dark border border-2 border-dark p-2 mt-5 d-flex justify-content-center" style={{ width: 350 }}><h2><b>
-        <Link to="/student" style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link>
-          </b></h2></div>
-        <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: 350 }}><h2><b>CHAPTERS</b></h2></div>
-      </div>
-      <div className="d-flex justify-content-center mt-5">
-
-        <div className='row' style={{ width: 750 }}>
-          {
-            chapters ?
-              chapters.map((chapter, key) =>
-                chapterWorks.find(cw => cw.id === chapter.id) ?
-                  <Square key={key} col="3"
-                    backgroundColor="black"
-                    to={`/episode/?id=${chapter.id}`}
-                  ><h1><b>{chapter.name}</b></h1> </Square>
-                  :
-                  <Square key={key} col="3"
-                    backgroundColor="white"
-                  ><h1><b>{chapter.name}</b></h1> </Square>
-              )
-              : null
-          }
+    <div className='container'>
+      <div className='row'>
+        <div className='col-5 mt-4'>
+          <div className='row'>
+            <div className='col-12'>
+              <div className="text-white bg-dark border border-2 border-dark p-2 mt-3 d-flex justify-content-center" style={{ width: "100%" }}><h2><b> <Link to="/student" style={{ color: "white", textDecoration: "none" }}> AXEBUG DIGITAL</Link></b></h2></div>
+            </div>
+            <div className='col-12'>
+              <div className="border border-2 border-dark p-2 mt-3 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>{student.name}'s TASK</b></h2></div>
+            </div>
+          </div>
+        </div>
+        <div className='col-7 mt-3'>
+          <div>
+            <div className="border border-2 border-dark p-2 mt-4 d-flex justify-content-center black900" style={{ width: "100%", color: "white", backgroundColor: "#222529" }}><h2><b>YOUR TASKS</b></h2></div>
+          </div>
+          <div className='row p-2'>
+            {
+              activeTaskShow(true)
+            }
+          </div>
         </div>
       </div>
-    </React.Fragment>
+    </div>
   );
 }
+
 
