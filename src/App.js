@@ -34,6 +34,7 @@ import DijitalContents from "./app/DijitalContents";
 import MyReports from "./app/MyReports";
 import MyMaterials from "./app/MyMaterials";
 import Goals from "./app/Goals";
+import Schedule from "./admin/Schedule";
 
 
 // <Route path="*" element={<NotFound/>}/>
@@ -50,6 +51,7 @@ function App() {
         <Route exact path="/admin/teacher" element={<AdminTeacherList />} />
         <Route exact path="/admin/reportlist" element={<ReportList />} />
         <Route exact path="/admin/report/:id/:std" element={<Report />} />
+        <Route exact path="/admin/schedule" element={<Schedule />} />
         
         <Route exact path="/admin" element={<Admin />} />
         <Route exact path="/study" element={<Studty />} />
@@ -75,6 +77,7 @@ function App() {
         <Route exact path="/myReports" element={<MyReports />} />
         <Route exact path="/myMaterials" element={<MyMaterials />} />
         <Route exact path="/goals" element={<Goals />} />
+        
        
 
         <Route exact path="/" element={<Login />} />

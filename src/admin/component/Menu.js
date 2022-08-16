@@ -13,6 +13,7 @@ export default function Menu() {
             <div className="col"><Link to="/admin/episode">Episodes</Link></div>
             <div className="col"><Link to="/admin/assignment">Assignment</Link></div>
             <div className="col"><Link to="/admin/homework">Home Wok Control</Link></div>
+            <div className="col"><Link to="/admin/schedule">Yearly Plan</Link></div>
         </div>
     )
 }
