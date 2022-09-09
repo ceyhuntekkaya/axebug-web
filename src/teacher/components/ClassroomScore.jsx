@@ -1,33 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { CircularProgressbar } from 'react-circular-progressbar'
 
-const scores = {
-  examScore: 20,
-  quizScore: 20,
-  skillsScore: 20,
-  speakingScore: 20,
-  readScore: 20,
-  writeScore: 20,
-  listeningScore: 20,
-  speakingScore: 20,
-  speakingScore: 20
-}
 
-export default function ClassroomScore() {
+export default function ClassroomScore(params) {
 
-  const [schoolroomScore, setSchoorooState] = useState(scores)
+  const [schoolroomScore, setSchoorooState] = useState(params.schoolRoom)
+
+  useEffect(() => {
+    setSchoorooState(params.schoolRoom)
+  }, [])
 
   return (
-
-
     <React.Fragment>
-
-
-
-
       <div className='row mb-2'>
         <div className='col-2'>
-          <h2>5-A</h2>
+          <h2>{params.schoolRoom.name}</h2>
         </div>
         <div className='col-5'>
           <h6>OVERALL : {parseInt(schoolroomScore.skillsScore)}</h6>
@@ -46,8 +33,6 @@ export default function ClassroomScore() {
           </div>
         </div>
       </div>
-
-
 
       <div className='row'>
         <div className='col-2'>
@@ -77,12 +62,7 @@ export default function ClassroomScore() {
 
         <div className='col-4'>
 
-
-
-
-
-
-          <div className='row'>
+          {/* <div className='row'>
             <div className='col-6'>
               <h6>EXAM : {parseInt(schoolroomScore.examScore)}</h6>
               <div className="progress" style={{ height: "30px", padding: 0 }}>
@@ -99,14 +79,11 @@ export default function ClassroomScore() {
                   aria-valuenow={parseInt(schoolroomScore.quizScore)} aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <hr />
 
     </React.Fragment>
-
-
-
   )
 }
