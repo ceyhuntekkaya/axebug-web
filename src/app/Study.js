@@ -9,12 +9,10 @@ const studentWorkTemplate = {
     write: "",
     speaking: "",
     listening: "",
-
     readEvaluation: 0,
     writeEvaluation: 0,
     speakingEvaluation: 0,
     listeningEvaluation: 0,
-
     student: { id: 0 },
     episodeTaskPanel: { id: 0 },
 }

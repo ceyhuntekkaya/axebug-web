@@ -35,6 +35,7 @@ import MyReports from "./app/MyReports";
 import MyMaterials from "./app/MyMaterials";
 import Goals from "./app/Goals";
 import Schedule from "./admin/Schedule";
+import Teacher from "./teacher/Teacher";
 
 
 // <Route path="*" element={<NotFound/>}/>
@@ -59,6 +60,7 @@ function App() {
         <Route exact path="/exam" element={<ExamList />} />
         <Route exact path="/quiz" element={<QuizList />} />
         <Route exact path="/task" element={<TaskList />} />
+        <Route exact path="/teacher" element={<Teacher />} />
         
         <Route exact path="/chapter" element={<ChapterList />} />
         <Route exact path="/episode" element={<EpisodeList />} />

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@event-calendar/list": "^0.11.2",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -16,6 +17,7 @@
     "react-scripts": "5.0.0",
     "speech-to-text": "^2.9.1",
     "string-similarity": "^4.0.4",
+    "tui-calendar": "^1.15.3",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
@@ -41,5 +43,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@event-calendar/core": "^0.11.2",
+    "@event-calendar/time-grid": "^0.11.2"
   }
 }
