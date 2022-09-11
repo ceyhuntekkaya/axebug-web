@@ -10,18 +10,15 @@ export default function Login(props) {
 
     useEffect(() => {
         document.body.style.backgroundColor = 'black'; // '#231F20';
-
-
-try{
-        if(localStorage.getItem("student")!== null){
-            const studentData = JSON.parse(localStorage.getItem("student"));
-            if(studentData.username){
-            setLogin({ username: studentData.username, password: studentData.password });
-        }}
-    }catch(err){
-        
-    }
-
+        try {
+            if (localStorage.getItem("student") !== null) {
+                const studentData = JSON.parse(localStorage.getItem("student"));
+                if (studentData.username) {
+                    setLogin({ username: studentData.username, password: studentData.password });
+                }
+            }
+        } catch (err) {
+        }
     }, [])
 
     const loginEvent = (e) => {
@@ -35,7 +32,7 @@ try{
                 localStorage.setItem("student", null)
                 localStorage.setItem("teacher", null)
                 localStorage.setItem("school", null)
-                localStorage.setItem("system_admin",null)
+                localStorage.setItem("system_admin", null)
 
                 if (login.userType === "STUDENT") {
                     localStorage.setItem("student", JSON.stringify(login.student))
@@ -43,7 +40,7 @@ try{
                 }
                 else if (login.userType === "TEACHER") {
                     localStorage.setItem("teacher", JSON.stringify(login.teacher))
-                    navigate(`/admin/teacher`);
+                    navigate(`/teacher`);
                 }
                 else if (login.userType === "SCHOOL") {
                     localStorage.setItem("school", JSON.stringify(login.school))
@@ -58,7 +55,7 @@ try{
                 }
             }
             else {
-                console.log("ERROR",login)
+                console.log("ERROR", login)
             }
         }
     }, [login])
@@ -85,7 +82,7 @@ try{
                                         type="password" className="form-control border border-3 border-dark"
                                         id="password" placeholder="Enter your password"
                                         value={password} onChange={(e) => setPassword(e.target.value)}
-                                        onKeyDown={(e)=> e.key==="Enter" ? loginEvent() : null} />
+                                        onKeyDown={(e) => e.key === "Enter" ? loginEvent() : null} />
                                 </div>
                             </form>
                         </div>
@@ -98,3 +95,5 @@ try{
         </div>
     </React.Fragment>
 }
+
+

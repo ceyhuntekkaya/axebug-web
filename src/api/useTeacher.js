@@ -86,6 +86,16 @@ export default function useTeacher() {
         }
     }
 
+    const schoolRoomScore = async (teacherId) => {
+        console.log(teacherId)
+        try {
+            const res = await axios.get(`${config.api.invokeUrl}/teacher/school-room-score/${teacherId}`);
+            setResult(res.data);
+        } catch (err) {
+            setResult(`An error has occurred: ${err}`);
+        }
+    }
+
     const handleChange = async (type, params) => {
         if (type === "createteacher") {
             await createteacher(params);
@@ -107,6 +117,8 @@ export default function useTeacher() {
             await findByGradeteacher(params.schoolId, params.grade);
         } else if (type === "loginteacher") {
             await loginteacher(params);
+        } else if (type === "schoolRoomScore") {
+            await schoolRoomScore(params);
         }
     }
     return [result, handleChange];
