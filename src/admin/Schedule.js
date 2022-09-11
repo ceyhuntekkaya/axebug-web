@@ -62,8 +62,7 @@ export default function Schedule() {
     // https://www.npmjs.com/package/gantt-task-react
     //localStorage.setItem("school", null)
 
-    console.log(tasks)
-    console.log(yearlyPlan)
+
 
     const convertToDateForGantt = (baseDateString) => {
         //console.log(new Date(plan.startAt).toDateString())

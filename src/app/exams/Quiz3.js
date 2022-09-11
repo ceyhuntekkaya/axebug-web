@@ -67,7 +67,7 @@ export default function Quiz3(props) {
                       pageNo === 0 ?
                         <React.Fragment>
                           <div className="alert alert-dark" role="alert">
-                            <strong>     A. Choose the correct answer</strong>
+                            <strong>     A. Choose the correct answer.</strong>
                           </div>
 
                           <div className='row'>
@@ -323,7 +323,7 @@ export default function Quiz3(props) {
 
                         <React.Fragment>
                           <div className="alert alert-dark" role="alert">
-                            <strong>  C. Match the words their definitions.</strong>
+                            <strong> C. Match the words / phrases with their definitions</strong>
                           </div>
                           <div className='row'>
                             <div className='col-2'>   1. Launch
@@ -591,7 +591,7 @@ export default function Quiz3(props) {
             {
               pageNo === maxPage - 1 ?
                 <div className="col-auto pl-2">
-                  <button className='btn btn-success' onClick={() => props.sendExam(answer,"QUIZ", true)}>FINISH EXAM</button>
+                  <button className='btn btn-success' onClick={() => props.sendExam(answer, "QUIZ", true)}>FINISH EXAM</button>
                 </div>
                 : null
             }

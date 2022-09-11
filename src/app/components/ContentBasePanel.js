@@ -116,12 +116,12 @@ export default function ContentBasePanel(props) {
     return (
         <div className="card">
             <div className='row m-2'>
-            <div className='col-4 boxDark mr-5'><h3><b><Link to="/student" style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link></b></h3></div> <div className="col-8 btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div className='col-4 boxDark mr-5 d-flex justify-content-center'><h3><b><Link to="/student" style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link></b></h3></div> <div className="col-8 btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                     <div className="btn-group mr-2 w-100" role="group" aria-label="First group">
                         <button type="button" className={`btn btn-${level === 1 ? "success" : "secondary"}`} onClick={() => setLevel(1)}>Listen & Speak</button>
+                        <button type="button" className={`btn btn-${level === 4 ? "danger" : "secondary"}`} onClick={() => setLevel(4)}>Read & Write</button>
                         <button type="button" className={`btn btn-${level === 2 ? "warning" : "secondary"}`} onClick={() => setLevel(2)}>Read & Speak</button>
                         <button type="button" className={`btn btn-${level === 3 ? "primary" : "secondary"}`} onClick={() => setLevel(3)}>Listen & Write</button>
-                        <button type="button" className={`btn btn-${level === 4 ? "danger" : "secondary"}`} onClick={() => setLevel(4)}>Read & Write</button>
                     </div>
                 </div>
             </div>
@@ -130,22 +130,22 @@ export default function ContentBasePanel(props) {
                 <div className='col-8 boxDark ml-5 d-flex justify-content-center'><h4>
                     {
                         level === 1 ?
-                            "Listen to the audio. Then, repeat the sentences clearly."
+                            "Listen and repeat the sentences you hear."
                             : null
                     }
                     {
                         level === 2 ?
-                            "Read the sentences. Then, say it clearly."
+                            "Read the following sentences aloud."
                             : null
                     }
                     {
                         level === 3 ?
-                            "Listen to the sentences. Then, write it fully. "
+                            "Listen to the sentences and write what you hear."
                             : null
                     }
                     {
                         level === 4 ?
-                            "Read the sentences. Then, write it fully."
+                            "Read the sentences and write them."
 
                             : null
                     }

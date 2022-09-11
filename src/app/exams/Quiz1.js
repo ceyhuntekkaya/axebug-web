@@ -74,7 +74,7 @@ export default function Quiz1(props) {
                       pageNo === 0 ?
                         <React.Fragment>
                           <div className="alert alert-dark" role="alert">
-                            <strong>   A. Choose the correct answer</strong>
+                            <strong>   A. Choose the correct answer.</strong>
                           </div>
 
                           <div className='row'>
@@ -296,7 +296,7 @@ export default function Quiz1(props) {
 
                         <React.Fragment>
                           <div className="alert alert-dark" role="alert">
-                            <strong> C. Match the words read their definitions.</strong>
+                            <strong> C. Match the words / phrases with their definitions</strong>
                           </div>
                           <div className='row'>
                             <div className='col-2'>1. Argument
@@ -349,56 +349,61 @@ export default function Quiz1(props) {
                             </div>
                           </div>
                           <hr />
+
+
+                          <div className="alert alert-dark" role="alert">
+                            <strong> Write the correct words for the given definitions.</strong>
+                          </div>
+
+
                           <div className='row'>
-                            <div className='col-2'> Experience
-                            </div>
-                            <div className='col-2'>
+                            <div className='col-2 border border-success p-2 m-1'>Experience</div>
+                            <div className='col-2 border border-success p-2 m-1'>Ice</div>
+                            <div className='col-2 border border-success p-2 m-1'>Bug</div>
+                            <div className='col-2 border border-success p-2 m-1'>Force</div>
+                            <div className='col-2 border border-success p-2 m-1'>Range</div>
+                          </div>
+                          <br />
+                          <div className='row'>
+                            <div className='col-4'>
                               <input className="form-input w-100" type="text" value={answer.result[0][2][6].student} onChange={(e) => setStudentOpenAnswer(0, 2, 6, e.target.value)} />
                             </div>
                             <div className='col-8'>
-                              The type of liquid change It’s form to a cold solid matter by freezing
+                              Water that is frozen.
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-2'>Ice
-                            </div>
-                            <div className='col-2'>
+                            <div className='col-4'>
                               <input className="form-input w-100" type="text" value={answer.result[0][2][7].student} onChange={(e) => setStudentOpenAnswer(0, 2, 7, e.target.value)} />
                             </div>
                             <div className='col-8'>
-                              Practical knowledge of your own
+                              Practical knowledge of your own.
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-2'>Bug
-                            </div>
-                            <div className='col-2'>
+                            <div className='col-4'>
                               <input className="form-input w-100" type="text" value={answer.result[0][2][8].student} onChange={(e) => setStudentOpenAnswer(0, 2, 8, e.target.value)} />
 
                             </div>
                             <div className='col-8'>
-                              The distance covered by a spaceship, airplane or a vehicle
+                              The distance covered by a spaceship, airplane or a vehicle.
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-2'>Range
-                            </div>
-                            <div className='col-2'>
+                            <div className='col-4'>
                               <input className="form-input w-100" type="text" value={answer.result[0][2][9].student} onChange={(e) => setStudentOpenAnswer(0, 2, 9, e.target.value)} />
 
                             </div>
                             <div className='col-8'>
-                              Strength or energy
+                              Strength or energy.
                             </div>
                           </div>
                           <div className='row'>
-                            <div className='col-2'>Force
-                            </div>
-                            <div className='col-2'>
+                            <div className='col-4'>
                               <input className="form-input w-100" type="text" value={answer.result[0][2][10].student} onChange={(e) => setStudentOpenAnswer(0, 2, 10, e.target.value)} />
                             </div>
                             <div className='col-8'>
-                              An invertebrate, type of insect
+                              Type of insect.
                             </div>
                           </div>
 
@@ -564,7 +569,7 @@ export default function Quiz1(props) {
             {
               pageNo === maxPage - 1 ?
                 <div className="col-auto pl-2">
-                  <button className='btn btn-success' onClick={() => props.sendExam(answer,"QUIZ", true)}>FINISH EXAM</button>
+                  <button className='btn btn-success' onClick={() => props.sendExam(answer, "QUIZ", true)}>FINISH EXAM</button>
                 </div>
                 : null
             }
