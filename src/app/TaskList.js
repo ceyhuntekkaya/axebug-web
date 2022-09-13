@@ -12,7 +12,7 @@ export default function TaskList() {
    
     useEffect(() => {
         var id = searchParams.get("id");
-        const schoolRoomWorkList = JSON.parse(localStorage.getItem("schoolRoomWorkList"));
+        const schoolRoomWorkList =JSON.parse(localStorage.getItem("schoolRoomWorkList"));
         const taskWork = [];
         schoolRoomWorkList.forEach(element => {
             if (element.episodeTask) {

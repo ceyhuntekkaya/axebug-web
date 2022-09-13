@@ -12,7 +12,7 @@ services:
       - axebug-network
     ports:
       - "${POSTGRES_PORT:-5432}:5432"
-
+    
   pgadmin:
     container_name: pgadmin
     image: dpage/pgadmin4:5
@@ -29,13 +29,13 @@ services:
 
 
 
-  axebug-web:
-    container_name: axebug-web
-    image: ctekkaya/axebug-web:0.1.0
-    networks:
-      - axebug-network
-    ports:
-      - "3000:3000"
+  #axebug-web:
+  #  container_name: axebug-web
+  #  image: ctekkaya/axebug-web:0.1.0
+  #  networks:
+  #    - axebug-network
+  #  ports:
+  #    - "3000:3000"
 
   axebug-server:
     container_name: axebug-server

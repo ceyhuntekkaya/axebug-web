@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import Square from './components/Square';
 import useStudentWork from '../api/useStudentWork'
+import useYearlyPlan from '../api/useYearlyPlan';
 import { Link } from 'react-router-dom';
 
 
 export default function MyTasks() {
     const [student, setStudent] = useState({ name: "", surname: "", avatar: "" });
-    const [studentWorkTaskList, setStudentWorkApi] = useStudentWork([]);
-
+    // const [studentWorkTaskList, setStudentWorkApi] = useStudentWork([]);
+    const [studentWorkTaskList, setStudentWorkApi] = useYearlyPlan([]);
 
     useEffect(() => {
         document.body.style.backgroundColor = '#eeeeee'; // '#231F20';
         const studentData = JSON.parse(localStorage.getItem("student"));
         setStudent(studentData);
-        setStudentWorkApi("studentActiveTask", studentData.id)
+        setStudentWorkApi("findActivePlanBySchool", studentData.school.id)
         // eslint-disable-next-line 
     }, [])
 
@@ -40,12 +41,16 @@ export default function MyTasks() {
         return true
     }
 
+
+    console.log(studentWorkTaskList)
+
+
     const activeTaskShow = (type) => {
         return (<React.Fragment>
             <div className='row' style={{ paddingLeft: "8px", paddingRight: "8px" }}>
                 {
                     studentWorkTaskList ?
-                        studentWorkTaskList.schoolRoomWorkList.map((task, key) =>
+                        studentWorkTaskList.map((task, key) =>
                             type || checkComplated(task.episodeTask, task.exam) === true ?
                                 task.episodeTask ?
                                     <Square key={key} fontSize={30} col="3" backgroundColor="white" to={`/study/?id=${task.episodeTask.id}`}><b>{task.episodeTask.name}</b></Square>
@@ -61,6 +66,35 @@ export default function MyTasks() {
             </div>
         </React.Fragment>)
     }
+
+
+
+    // const activeTaskShow = (type) => {
+    //     return (<React.Fragment>
+    //         <div className='row' style={{ paddingLeft: "8px", paddingRight: "8px" }}>
+    //             {
+    //                 studentWorkTaskList ?
+    //                     studentWorkTaskList.schoolRoomWorkList ?
+    //                         studentWorkTaskList.schoolRoomWorkList.map((task, key) =>
+    //                             type || checkComplated(task.episodeTask, task.exam) === true ?
+    //                                 task.episodeTask ?
+    //                                     <Square key={key} fontSize={30} col="3" backgroundColor="white" to={`/study/?id=${task.episodeTask.id}`}><b>{task.episodeTask.name}</b></Square>
+    //                                     :
+    //                                     task.exam.examType === "EXAM" ?
+    //                                         <Square key={key} fontSize={30} col="3" backgroundColor="white" to={`/app/exam/${task.exam.id}`}><b>{task.exam.name}</b></Square>
+    //                                         :
+    //                                         <Square key={key} fontSize={30} col="3" backgroundColor="white" to={`/app/quiz/${task.exam.id}`}><b>{task.exam.name}</b></Square>
+    //                                 : null
+    //                         )
+    //                         : null
+    //                     : null
+    //             }
+    //         </div>
+    //     </React.Fragment>)
+    // }
+
+
+
 
     return (
         <div className='container'>

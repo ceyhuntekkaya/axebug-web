@@ -1,6 +1,6 @@
 {
     "api": {
-      "invokeUrl": "https://app.axebug.com/api"
+      "invokeUrl": "http://localhost:8080"
     },
     "api_local": {
       "invokeUrl": "http://localhost:8080"

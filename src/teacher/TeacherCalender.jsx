@@ -15,35 +15,35 @@ export default function TeacherCalender() {
   console.log(yearlyPlan)
 
 
-  useEffect(() => {
-    if (yearlyPlan) {
-      if (yearlyPlan.length > 0) {
-        const readyPlan = [];
-        yearlyPlan.forEach((plan, key) => {
-          let name = "";
-          if (plan.type == "TASK") {
-            name = "Task " + (key + 1)
-          }
-          else {
-            name = "Exam 1"
-          }
-          const task =
-          {
-            start: convertToDateForGantt(plan.startAt),
-            end: convertToDateForGantt(plan.endAt),
-            name: name,
-            id: 'Task ' + key,
-            type: 'task',
-            progress: 90,
-            isDisabled: false,
-            styles: { progressColor: '#ffbb54', progressSelectedColor: '#ff9e0d' },
-          };
-          readyPlan.push(task)
-        });
-        setTasks(readyPlan);
-      }
-    }
-  }, [yearlyPlan])
+  // useEffect(() => {
+  //   if (yearlyPlan) {
+  //     if (yearlyPlan.length > 0) {
+  //       const readyPlan = [];
+  //       yearlyPlan.forEach((plan, key) => {
+  //         let name = "";
+  //         if (plan.type == "TASK") {
+  //           name = "Task " + (key + 1)
+  //         }
+  //         else {
+  //           name = "Exam 1"
+  //         }
+  //         const task =
+  //         {
+  //           start: convertToDateForGantt(plan.startAt),
+  //           end: convertToDateForGantt(plan.endAt),
+  //           name: name,
+  //           id: 'Task ' + key,
+  //           type: 'task',
+  //           progress: 90,
+  //           isDisabled: false,
+  //           styles: { progressColor: '#ffbb54', progressSelectedColor: '#ff9e0d' },
+  //         };
+  //         readyPlan.push(task)
+  //       });
+  //       setTasks(readyPlan);
+  //     }
+  //   }
+  // }, [yearlyPlan])
 
 
   const convertToDateForGantt = (baseDateString) => {
