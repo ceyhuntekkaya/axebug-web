@@ -36,7 +36,10 @@ import MyMaterials from "./app/MyMaterials";
 import Goals from "./app/Goals";
 import Schedule from "./admin/Schedule";
 import Teacher from "./teacher/Teacher";
-
+import TeacherContents from "./teacher/TeacherContents";
+import TeacherClassrooms from "./teacher/TeacherClassrooms"
+import TeacherReports from "./teacher/TeacherReports"
+import Teach from "./teacher/Teach"
 
 // <Route path="*" element={<NotFound/>}/>
 
@@ -60,6 +63,12 @@ function App() {
         <Route exact path="/exam" element={<ExamList />} />
         <Route exact path="/quiz" element={<QuizList />} />
         <Route exact path="/task" element={<TaskList />} />
+
+
+        <Route exact path="/teacher/teach/:id" element={<Teach />} />
+        <Route exact path="/teacher-classes" element={<TeacherClassrooms />} />
+        <Route exact path="/teacher-contents" element={<TeacherContents />} />
+        <Route exact path="/teacher-reports" element={<TeacherReports />} />
         <Route exact path="/teacher" element={<Teacher />} />
         
         <Route exact path="/chapter" element={<ChapterList />} />

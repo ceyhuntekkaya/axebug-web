@@ -33,7 +33,7 @@ export default function SpellingEpisode() {
                     <div className="text-white bg-dark border border-2 border-dark d-flex justify-content-center" style={{ width: 350 }}><h2><b>
                     <Link to="/student" style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link>
                         </b></h2></div>
-                    <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: 350 }}><h2><b>SPELLING BEE</b></h2></div>
+                    <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: 350 }}><h2><b>SPELLING</b></h2></div>
 
                 </div>
                 <div className='col'>

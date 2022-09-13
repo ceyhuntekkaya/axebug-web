@@ -73,9 +73,9 @@ export default function Teacher() {
         <TeacherCalender />
       </div>
       <div className='col-2 p-3 mr-3'>
-        <Square fontSize={30} col="12" backgroundColor="white" to={`/study/`}><b>My Classes</b></Square>
-        <Square fontSize={30} col="12" backgroundColor="white" to={`/study/`}><b>Contents</b></Square>
-        <Square fontSize={30} col="12" backgroundColor="white" to={`/study/`}><b>Reports</b></Square>
+        <Square fontSize={30} col="12" backgroundColor="white" to={`/teacher-classes/`}><b>My Classes</b></Square>
+        <Square fontSize={30} col="12" backgroundColor="white" to={`/teacher-contents/`}><b>Contents</b></Square>
+        <Square fontSize={30} col="12" backgroundColor="white" to={`/teacher-reports/`}><b>Reports</b></Square>
       </div>
     </div>
     <div className='container'>
