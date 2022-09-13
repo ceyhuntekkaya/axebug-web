@@ -36,10 +36,10 @@ export default function SpellingEpisode() {
                     <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: 350 }}><h2><b>SPELLING</b></h2></div>
 
                 </div>
-                <div className='col'>
+                <div className='col'><div className='row'>
                     <Square col="3" backgroundColor="black"><h4><b>{chapter.name}</b></h4> </Square>
                     <Square col="3" backgroundColor="black"><h4><b>{episode.name}</b></h4> </Square>
-                </div>
+                    </div> </div>
 
             </div>
         </div>

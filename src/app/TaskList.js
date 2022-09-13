@@ -9,10 +9,10 @@ export default function TaskList() {
     const [tasks, setTasks] = useTask([]);
     const [searchParams,] = useSearchParams();
     const [taskWorks, setTaskWorks] = useState(null);
-   
+
     useEffect(() => {
         var id = searchParams.get("id");
-        const schoolRoomWorkList =JSON.parse(localStorage.getItem("schoolRoomWorkList"));
+        const schoolRoomWorkList = JSON.parse(localStorage.getItem("schoolRoomWorkList"));
         const taskWork = [];
         schoolRoomWorkList.forEach(element => {
             if (element.episodeTask) {
@@ -31,8 +31,8 @@ export default function TaskList() {
         <React.Fragment>
             <div className="container">
                 <div className="text-white bg-dark border border-2 border-dark p-2 mt-5 d-flex justify-content-center" style={{ width: 350 }}><h2><b>
-                <Link to="/student" style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link>
-                    </b></h2></div>
+                    <Link to="/student" style={{ color: "white", textDecoration: "none" }}> AXEBUG DIGITAL</Link>
+                </b></h2></div>
                 <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: 350 }}><h2><b>TASKS</b></h2></div>
             </div>
             <div className="d-flex justify-content-center mt-5">
