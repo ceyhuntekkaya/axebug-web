@@ -32,7 +32,6 @@ export default function Teacher() {
     setSchoolRoomScore("schoolRoomScore", teacherData.id);
   }, [])
 
-  console.log(schoolRoomScore)
 
   const addScoreArea = () => {
     return (

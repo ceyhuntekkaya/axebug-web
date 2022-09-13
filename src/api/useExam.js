@@ -43,8 +43,6 @@ export default function useExam() {
         }
     }
 
-
-
     const handleChange = async (type, params) => {
         if (type === "findById") {
             await findById(params);

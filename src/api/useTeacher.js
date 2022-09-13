@@ -87,7 +87,6 @@ export default function useTeacher() {
     }
 
     const schoolRoomScore = async (teacherId) => {
-        console.log(teacherId)
         try {
             const res = await axios.get(`${config.api.invokeUrl}/teacher/school-room-score/${teacherId}`);
             setResult(res.data);

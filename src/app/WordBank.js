@@ -13,7 +13,6 @@ export default function WordBank(props) {
     const [episode, setEpisode] = useState({});
     const [chapter, setChapter] = useState({});
 
-console.log(selectedWord)
     useEffect(() => {
         var id = searchParams.get("id");
         setSelectedWordId(parseInt(id));

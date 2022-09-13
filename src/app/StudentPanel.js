@@ -37,7 +37,6 @@ export default function StudentPanel() {
   useEffect(() => {
     if (studentWorkTaskList) {
 
-      console.log(studentWorkTaskList)
       const activeTaskList = studentWorkTaskList.schoolRoomWorkList;
       localStorage.setItem("schoolRoomWorkList", JSON.stringify(activeTaskList))
 
@@ -99,36 +98,36 @@ export default function StudentPanel() {
 
   }
 
-  const myAvatar = () => {
-    return (
-      <div className='d-flex justify-content-end mt-4'><img src={`assets/${student.avatar}`} style={{ height: "140px", backgroundColor: "#222529" }} alt='Avatar' /></div>)
-  }
-  const contentMenu = () => {
-    return (<React.Fragment>
-      <div className="row mt-2" style={{ paddingLeft: "8px", paddingRight: "8px" }}>
-        <Square col="3" backgroundColor="black"><b>MISSIONS</b> </Square>
-        <Square col="3" backgroundColor="pink" to="/exam"><b>EXAM</b></Square>
-        <Square col="3" backgroundColor="lightblue" to="/quiz"><b>QUIZ</b></Square>
-        <Square col="3" backgroundColor="lightgreen" to="/chapter"><b>AXE4SKILS</b></Square>
-      </div>
-      <div className="row" style={{ paddingLeft: "8px", paddingRight: "8px" }}>
-        <Square col="3" backgroundColor="black"><b>MATERIALS</b></Square>
-        <Square col="3" backgroundColor="orange" to="/wordbank"><b>WORDBANK</b></Square>
-        <Square col="3" backgroundColor="yellow" to="/speling"><b>SPELLING</b></Square>
-        <div className={`square col-3`}>
-          <img src="http://dummyimage.com/50x50/000/fff.gif&text=50x50" className="sq-setter-w" alt='window' />
-          <div className={`sq-content m-1 row border border-4 border-dark`} style={{ backgroundColor: "lightgreen" }}>
-            <a href="HTML/index.html" target="_blank" className={`sq-content p-3 d-flex justify-content-center align-items-center text-dark`}
-              style={{ fontSize: 22, textDecoration: 'none' }}> DIJITAL CONTENTS</a>
-          </div></div>
-      </div>
-      <div className="row" style={{ paddingLeft: "8px", paddingRight: "8px" }}>
-        <Square col="3" backgroundColor="black"><b>SCORBOARD</b></Square>
-        <Square col="3" backgroundColor="lightgray" to="/report"><b>REPORT</b></Square>
-      </div>
+  // const myAvatar = () => {
+  //   return (
+  //     <div className='d-flex justify-content-end mt-4'><img src={`assets/${student.avatar}`} style={{ height: "140px", backgroundColor: "#222529" }} alt='Avatar' /></div>)
+  // }
+  // const contentMenu = () => {
+  //   return (<React.Fragment>
+  //     <div className="row mt-2" style={{ paddingLeft: "8px", paddingRight: "8px" }}>
+  //       <Square col="3" backgroundColor="black"><b>MISSIONS</b> </Square>
+  //       <Square col="3" backgroundColor="pink" to="/exam"><b>EXAM</b></Square>
+  //       <Square col="3" backgroundColor="lightblue" to="/quiz"><b>QUIZ</b></Square>
+  //       <Square col="3" backgroundColor="lightgreen" to="/chapter"><b>AXE4SKILS</b></Square>
+  //     </div>
+  //     <div className="row" style={{ paddingLeft: "8px", paddingRight: "8px" }}>
+  //       <Square col="3" backgroundColor="black"><b>MATERIALS</b></Square>
+  //       <Square col="3" backgroundColor="orange" to="/wordbank"><b>WORDBANK</b></Square>
+  //       <Square col="3" backgroundColor="yellow" to="/speling"><b>SPELLING</b></Square>
+  //       <div className={`square col-3`}>
+  //         <img src="http://dummyimage.com/50x50/000/fff.gif&text=50x50" className="sq-setter-w" alt='window' />
+  //         <div className={`sq-content m-1 row border border-4 border-dark`} style={{ backgroundColor: "lightgreen" }}>
+  //           <a href="HTML/index.html" target="_blank" className={`sq-content p-3 d-flex justify-content-center align-items-center text-dark`}
+  //             style={{ fontSize: 22, textDecoration: 'none' }}> DIJITAL CONTENTS</a>
+  //         </div></div>
+  //     </div>
+  //     <div className="row" style={{ paddingLeft: "8px", paddingRight: "8px" }}>
+  //       <Square col="3" backgroundColor="black"><b>SCORBOARD</b></Square>
+  //       <Square col="3" backgroundColor="lightgray" to="/report"><b>REPORT</b></Square>
+  //     </div>
 
-    </React.Fragment>)
-  }
+  //   </React.Fragment>)
+  // }
   const scoreBoard = () => {
     return (
       <div className="border border-2 border-dark p-2 mt-3" style={{ backgroundColor: "#222529", color: "white" }}>
@@ -210,27 +209,27 @@ export default function StudentPanel() {
       </div>
     )//examType
   }
-  const activeTaskShow = (type) => {
-    return (<React.Fragment>
-      <div style={{ paddingLeft: "8px", paddingRight: "8px" }}>
-        {
-          studentWorkTaskList ?
-            studentWorkTaskList.schoolRoomWorkList.map((task, key) =>
-              type || checkComplated(task.episodeTask, task.exam) === true ?
-                task.episodeTask ?
-                  <Square key={key} fontSize={30} col="3" backgroundColor="white" to={`/study/?id=${task.episodeTask.id}`}><b>{task.episodeTask.name}</b></Square>
-                  :
-                  task.exam.examType === "EXAM" ?
-                    <Square key={key} fontSize={30} col="3" backgroundColor="white" to={`/app/exam/${task.exam.id}`}><b>{task.exam.name}</b></Square>
-                    :
-                    <Square key={key} fontSize={30} col="3" backgroundColor="white" to={`/app/quiz/${task.exam.id}`}><b>{task.exam.name}</b></Square>
-                : null
-            )
-            : null
-        }
-      </div>
-    </React.Fragment>)
-  }
+  // const activeTaskShow = (type) => {
+  //   return (<React.Fragment>
+  //     <div style={{ paddingLeft: "8px", paddingRight: "8px" }}>
+  //       {
+  //         studentWorkTaskList ?
+  //           studentWorkTaskList.schoolRoomWorkList.map((task, key) =>
+  //             type || checkComplated(task.episodeTask, task.exam) === true ?
+  //               task.episodeTask ?
+  //                 <Square key={key} fontSize={30} col="3" backgroundColor="white" to={`/study/?id=${task.episodeTask.id}`}><b>{task.episodeTask.name}</b></Square>
+  //                 :
+  //                 task.exam.examType === "EXAM" ?
+  //                   <Square key={key} fontSize={30} col="3" backgroundColor="white" to={`/app/exam/${task.exam.id}`}><b>{task.exam.name}</b></Square>
+  //                   :
+  //                   <Square key={key} fontSize={30} col="3" backgroundColor="white" to={`/app/quiz/${task.exam.id}`}><b>{task.exam.name}</b></Square>
+  //               : null
+  //           )
+  //           : null
+  //       }
+  //     </div>
+  //   </React.Fragment>)
+  // }
 
   return (
     <div className='container'>

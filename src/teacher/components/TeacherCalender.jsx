@@ -22,43 +22,40 @@ export default function TeacherCalender() {
 
   useEffect(() => {
     const teacher = JSON.parse(localStorage.getItem("teacher"));
-    setYearlyPlan('findYearlyPlanBySchool', teacher.school_id);
+    setYearlyPlan('findYearlyPlanBySchool', 110);
   }, [])
-  console.log(tasks)
-  console.log(yearlyPlan)
 
+  useEffect(() => {
+    if (yearlyPlan) {
+      if (yearlyPlan.length > 0) {
+        const readyPlan = [];
+        yearlyPlan.forEach((plan, key) => {
+          let name = "";
+          if (plan.type == "TASK") {
+            name = "Task " + (key + 1)
+          }
+          else {
+            name = "Exam 1"
+          }
+          const task =
+          {
+            start: convertToDateForGantt(plan.startAt),
+            end: convertToDateForGantt(plan.endAt),
+            name: name,
+            id: 'Task ' + key,
+            type: 'task',
+            progress: 90,
+            isDisabled: false,
+            styles: { progressColor: '#ffbb54', progressSelectedColor: '#ff9e0d' },
+          };
+          readyPlan.push(task)
+        });
+        setTasks(readyPlan);
+      }
+    }
+  }, [yearlyPlan])
 
-  // useEffect(() => {
-  //   if (yearlyPlan) {
-  //     if (yearlyPlan.length > 0) {
-  //       const readyPlan = [];
-  //       yearlyPlan.forEach((plan, key) => {
-  //         let name = "";
-  //         if (plan.type == "TASK") {
-  //           name = "Task " + (key + 1)
-  //         }
-  //         else {
-  //           name = "Exam 1"
-  //         }
-  //         const task =
-  //         {
-  //           start: convertToDateForGantt(plan.startAt),
-  //           end: convertToDateForGantt(plan.endAt),
-  //           name: name,
-  //           id: 'Task ' + key,
-  //           type: 'task',
-  //           progress: 90,
-  //           isDisabled: false,
-  //           styles: { progressColor: '#ffbb54', progressSelectedColor: '#ff9e0d' },
-  //         };
-  //         readyPlan.push(task)
-  //       });
-  //       setTasks(readyPlan);
-  //     }
-  //   }
-  // }, [yearlyPlan])
-
-
+console.log(tasks)
   const convertToDateForGantt = (baseDateString) => {
     //console.log(new Date(plan.startAt).toDateString())
     let d = new Date(baseDateString)
@@ -69,6 +66,6 @@ export default function TeacherCalender() {
   }
 
   return (
-    <div>TeacherCalender</div>
+    <div>TeacherCalender 22</div>
   )
 }
