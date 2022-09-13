@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Square from './components/Square';
 import useStudentWork from '../api/useStudentWork'
+import useYearlyPlan from '../api/useYearlyPlan';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { useNavigate } from "react-router-dom";
@@ -17,7 +18,7 @@ const scoreModel = {
 
 export default function StudentPanel() {
   const [student, setStudent] = useState({ name: "", surname: "", avatar: "" });
-  const [studentWorkTaskList, setStudentWorkApi] = useStudentWork([]);
+  const [studentWorkTaskList, setStudentWorkApi] = useYearlyPlan([]);
   const [studentScore, setStudentScore] = useStudentWork(scoreModel);
   const navigate = useNavigate();
 
@@ -25,15 +26,32 @@ export default function StudentPanel() {
     document.body.style.backgroundColor = '#eeeeee'; // '#231F20';
     const studentData = JSON.parse(localStorage.getItem("student"));
     setStudent(studentData);
-    setStudentWorkApi("studentActiveTask", studentData.id)
+
+    setStudentWorkApi("findActivePlanBySchool", studentData.school.id)
+
+
     setStudentScore("studentScore", studentData.id)
     // eslint-disable-next-line 
   }, [])
 
   useEffect(() => {
     if (studentWorkTaskList) {
+
+      console.log(studentWorkTaskList)
       const activeTaskList = studentWorkTaskList.schoolRoomWorkList;
       localStorage.setItem("schoolRoomWorkList", JSON.stringify(activeTaskList))
+
+
+      const activeEpisodeList = [];
+      studentWorkTaskList.forEach(element => {
+        activeEpisodeList.push(element.episodeTask.episode.id)
+      });
+
+
+      localStorage.setItem("activeEpisodeList", JSON.stringify(activeEpisodeList))
+
+
+
     }
   }, [studentWorkTaskList])
 
@@ -66,11 +84,11 @@ export default function StudentPanel() {
           <Square col="4" backgroundColor="white" to="/mytasks"><b>MY TASK</b> </Square>
           <Square col="4" backgroundColor="white" to="/dijitalcontents"><b>CONTENTS</b></Square>
           {/* <Square col="4" backgroundColor="white" to="/chapter"><b>AXE 4 SKILLS</b></Square> */}
-          <Square col="4" backgroundColor="white" to="/goals"><b>{student.name}'s<br/> ADVENTURE</b> </Square>
+          <Square col="4" backgroundColor="white" to="/goals"><b>{student.name}'s<br /> ADVENTURE</b> </Square>
           <Square col="4" backgroundColor="white" to="/speling"><b>SPELLING</b> </Square>
           {/* <div className="col-4 p-2"><img className='w-100' src={`assets/l1.png`} /></div> */}
           <Square col="4" backgroundColor="white" to="/wordbank"><b>WORDBANK</b></Square>
-          
+
           <div className="col-4 p-2"><img className='w-100' src={`assets/l1.png`} /></div>
 
           {/* <Square col="4" backgroundColor="white" to="/myMaterials"><b>MATERIALS</b></Square> */}
@@ -240,8 +258,8 @@ export default function StudentPanel() {
               <div className="border border-2 border-dark p-2 mt-3 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>{student.name}</b></h2></div>
             </div>
             <div className='col-1'>
-            <div className="mt-3 d-flex justify-content-center"><img style={{ cursor: "pointer" }} onClick={()=>exit()} className='w-100' src={`assets/exit.png`} /></div>
-            
+              <div className="mt-3 d-flex justify-content-center"><img style={{ cursor: "pointer" }} onClick={() => exit()} className='w-100' src={`assets/exit.png`} /></div>
+
             </div>
           </div>
           {

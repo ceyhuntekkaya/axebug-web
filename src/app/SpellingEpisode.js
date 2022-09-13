@@ -24,22 +24,20 @@ export default function SpellingEpisode() {
         // eslint-disable-next-line 
     }, [wordList])
 
-
-
     return <React.Fragment>
         <div className="container">
             <div className='row p-2 mt-5'>
                 <div className='col'>
                     <div className="text-white bg-dark border border-2 border-dark d-flex justify-content-center" style={{ width: 350 }}><h2><b>
-                    <Link to="/student" style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link>
-                        </b></h2></div>
+                        <Link to="/student" style={{ color: "white", textDecoration: "none" }}> AXEBUG DIGITAL</Link>
+                    </b></h2></div>
                     <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: 350 }}><h2><b>SPELLING</b></h2></div>
 
                 </div>
                 <div className='col'><div className='row'>
                     <Square col="3" backgroundColor="black"><h4><b>{chapter.name}</b></h4> </Square>
                     <Square col="3" backgroundColor="black"><h4><b>{episode.name}</b></h4> </Square>
-                    </div> </div>
+                </div> </div>
 
             </div>
         </div>
@@ -48,8 +46,8 @@ export default function SpellingEpisode() {
                 {
                     wordList ?
                         wordList.map((word, key) =>
-                            <Square key={key} to={`/app/spelling/?id=${word.id}&e=${word.episode.id}`} col="2" 
-                            backgroundColor={word.category === "EASY" ? "#F4BFBF": word.category === "MEDIUM" ? "#FAF0D7": "#8CC0DE"}><h2>{word.name}</h2> </Square>
+                            <Square key={key} to={`/app/spelling/?id=${word.id}&e=${word.episode.id}`} col="2"
+                                backgroundColor={word.category === "EASY" ? "#F4BFBF" : word.category === "MEDIUM" ? "#FAF0D7" : "#8CC0DE"}><h2>{word.name}</h2> </Square>
                         ) : null
                 }
             </div>
