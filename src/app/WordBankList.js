@@ -22,7 +22,7 @@ export default function WordBankList() {
                 {/* <Square key={key} col="2" backgroundColor="black"><h4><b>{chapter.name}.{key}</b></h4> </Square> */}
                 {
                   chapter.episodes.map((episode, no) =>
-                  no === 0 && key == 0 ? 
+                  no === 0 && key === 0 ? 
                     <Square key={"chap" + no} to={`/words/?id=${episode.id}`} col="3" backgroundColor="white"><h3><b>{episode.name}</b></h3> </Square>
                     : null
                   )

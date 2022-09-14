@@ -5,10 +5,6 @@ export default function useSchool() {
     const [result, setResult] = useState(null);
 
 
-
-
-
-
     const handleChange = async (type, params) => {
         if (type === "createStudent") {
             await createStudent(params);

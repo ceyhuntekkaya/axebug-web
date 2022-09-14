@@ -67,17 +67,17 @@ export default function useTask() {
     }
 
     const handleChange = async (type, params) => {
-        if (type === "createEpisode") {
+        if (type === "createTask") {
             await createTask(params);
-        } else if (type === "updateEpisode") {
+        } else if (type === "updateTask") {
             await updateTask(params);
-        } else if (type === "findAllEpisodes") {
-            await findAllTasks(params);
+        } else if (type === "findAllTasks") {
+            await findAllTasks();
         } else if (type === "findByEpisode") {
             await findByEpisode(params);
         } else if (type === "findById") {
             await findById(params);
-        } else if (type === "findByNameEpisode") {
+        } else if (type === "findByNameTask") {
             await findByNameTask(params);
         } else if (type === "deleteTask") {
             await deleteTask(params);

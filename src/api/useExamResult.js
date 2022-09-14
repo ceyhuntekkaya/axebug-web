@@ -4,11 +4,6 @@ const config = require('./config.json');
 export default function useExamResult() {
     const [result, setResult] = useState(null);
 
-
-
-
-
-
     const handleChange = async (type, params) => {
         if (type === "createStudent") {
             await createStudent(params);

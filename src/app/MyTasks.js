@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Square from './components/Square';
-import useStudentWork from '../api/useStudentWork'
 import useYearlyPlan from '../api/useYearlyPlan';
 import { Link } from 'react-router-dom';
 
@@ -42,7 +41,6 @@ export default function MyTasks() {
     }
 
 
-    console.log(studentWorkTaskList)
 
 
     const activeTaskShow = (type) => {
