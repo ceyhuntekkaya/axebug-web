@@ -66,7 +66,6 @@ function App() {
         <Route exact path="/quiz" element={<QuizList />} />
         <Route exact path="/task" element={<TaskList />} />
 
-
         <Route exact path="/teacher/teach/:id" element={<Teach />} />
         <Route exact path="/teacher-classes" element={<TeacherClassrooms />} />
         <Route exact path="/teacher-tasks/:id" element={<TeacherTask />} />
