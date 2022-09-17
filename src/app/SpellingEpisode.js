@@ -3,6 +3,7 @@ import useWordBank from '../api/useWordBank';
 import Square from './components/Square';
 import { useSearchParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import Home from './components/Home';
 
 export default function SpellingEpisode() {
     const [wordList, setWordList] = useWordBank([]);
@@ -25,24 +26,17 @@ export default function SpellingEpisode() {
     }, [wordList])
 
     return <React.Fragment>
-        <div className="container">
-            <div className='row p-2 mt-5'>
-                <div className='col'>
-                    <div className="text-white bg-dark border border-2 border-dark d-flex justify-content-center" style={{ width: 350 }}><h2><b>
-                        <Link to="/student" style={{ color: "white", textDecoration: "none" }}> AXEBUG DIGITAL</Link>
-                    </b></h2></div>
-                    <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: 350 }}><h2><b>SPELLING</b></h2></div>
-
-                </div>
-                <div className='col'><div className='row'>
-                    <Square col="3" backgroundColor="black"><h4><b>{chapter.name}</b></h4> </Square>
-                    <Square col="3" backgroundColor="black"><h4><b>{episode.name}</b></h4> </Square>
-                </div> </div>
-
-            </div>
-        </div>
+        <Home secondaryName="SPELLING" />
         <div className=" container d-flex justify-content-center mt-5">
             <div className='row'>
+                {
+                    wordList ?
+                        wordList.length > 0 ?
+                            <React.Fragment>
+                                <Square col="2" backgroundColor="black"><h4><b>{chapter.name}</b></h4> </Square>
+                                <Square col="2" backgroundColor="black"><h4><b>{episode.name}</b></h4> </Square>
+                            </React.Fragment> : null : null
+                }
                 {
                     wordList ?
                         wordList.map((word, key) =>

@@ -54,7 +54,7 @@ export default function Square(props) {
                             <a target="_blank" href={hasEvent} className={`sq-content p-3 d-flex justify-content-center align-items-center ${textColor}`}
                                 style={{ fontSize: fontsize, textDecoration: 'none' }}> {props.children}</a>
                             :
-                            <Link to={hasEvent} className={`sq-content p-3 d-flex justify-content-center align-items-center ${textColor}`}
+                            <Link to={hasEvent} className={`sq-content p-3 d-flex justify-content-center align-items-center ${textColor} link homeLinkWhite`}
                                 style={{ fontSize: fontsize, textDecoration: 'none' }}> {props.children}</Link>
 
                         :

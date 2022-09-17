@@ -149,7 +149,7 @@ export default function Report() {
             </div>
             <div className='row mt-2 text-white bg-dark p-1'>
               <div className='col-12 text-white bg-dark d-flex justify-content-center'>
-                <h4><b> AXEBUG 4 SKILLS TASK REPORT</b></h4>
+                <h4><b> TASK4SKILLS TASKS REPORT</b></h4>
               </div>
             </div>
             <div className='row border border-light mt-2'>

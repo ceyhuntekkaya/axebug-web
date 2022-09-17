@@ -80,7 +80,7 @@ export default function StudentPanel() {
     return (
       <React.Fragment>
         <div className="row mt-3" style={{ paddingLeft: "8px", paddingRight: "8px" }}>
-          <Square col="4" backgroundColor="white" to="/mytasks"><b>MY TASK</b> </Square>
+          <Square col="4" backgroundColor="white" to="/mytasks"><b>MY TASKS</b> </Square>
           <Square col="4" backgroundColor="white" to="/dijitalcontents"><b>CONTENTS</b></Square>
           {/* <Square col="4" backgroundColor="white" to="/chapter"><b>AXE 4 SKILLS</b></Square> */}
           <Square col="4" backgroundColor="white" to="/goals"><b>{student.name}'s<br /> ADVENTURE</b> </Square>
@@ -131,7 +131,7 @@ export default function StudentPanel() {
   const scoreBoard = () => {
     return (
       <div className="border border-2 border-dark p-2 mt-3" style={{ backgroundColor: "#222529", color: "white" }}>
-        <div className='d-flex justify-content-center mt-3' style={{ fontWeight: "bold" }}><h1>SCORE BOARD</h1></div>
+        <div className='d-flex justify-content-center mt-3' style={{ fontWeight: "bold" }}><h1>SCOREBOARD</h1></div>
         <hr />
         {
           studentScore ?
@@ -157,7 +157,7 @@ export default function StudentPanel() {
               <hr />
 
               <div className='row m-3'>
-                <h2>AXE 4 SKILLS SCORE : {parseInt(studentScore.skillsScore)}</h2>
+                <h2>TASK4SKILLS SCORE : {parseInt(studentScore.skillsScore)}</h2>
                 <div className="progress" style={{ height: "30px", padding: 0 }}>
                   <div className="progress-bar progress-bar-striped bg-info progress-bar-animated"
                     role="progressbar" style={{ width: parseInt(studentScore.skillsScore) + "%" }}
@@ -181,7 +181,7 @@ export default function StudentPanel() {
                 </div>
                 <div className='col-3'>
                   <div className='d-flex justify-content-center'>
-                    <h4>WRITTING</h4>
+                    <h4>WRITING</h4>
                   </div>
                   <CircularProgressbar value={parseInt(studentScore.writeScore)} text={`${parseInt(studentScore.writeScore)}%`} />
                 </div>
