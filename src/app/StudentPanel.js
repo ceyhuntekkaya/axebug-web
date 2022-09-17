@@ -80,7 +80,7 @@ export default function StudentPanel() {
     return (
       <React.Fragment>
         <div className="row mt-3" style={{ paddingLeft: "8px", paddingRight: "8px" }}>
-          <Square col="4" backgroundColor="white" to="/mytasks"><b>MY TaskList</b> </Square>
+          <Square col="4" backgroundColor="white" to="/mytasks"><b>MY TASKS</b> </Square>
           <Square col="4" backgroundColor="white" to="/dijitalcontents"><b>CONTENTS</b></Square>
           {/* <Square col="4" backgroundColor="white" to="/chapter"><b>AXE 4 SKILLS</b></Square> */}
           <Square col="4" backgroundColor="white" to="/goals"><b>{student.name}'s<br /> ADVENTURE</b> </Square>

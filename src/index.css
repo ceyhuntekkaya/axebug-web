@@ -27,6 +27,11 @@ code {
   padding-top: 12px;
 }
 
+a:hover {
+  color: blue;
+}
+.link:hover { color: blue; }
+
 .square {
   position: relative;
   display: inline-block; /* could be float */

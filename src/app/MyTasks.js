@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Square from './components/Square';
 import useYearlyPlan from '../api/useYearlyPlan';
 import { Link } from 'react-router-dom';
+import Home from './components/Home';
 
 
 export default function MyTasks() {
@@ -45,7 +46,7 @@ export default function MyTasks() {
 
     const activeTaskShow = (type) => {
         return (<React.Fragment>
-            <div className='row' style={{ paddingLeft: "8px", paddingRight: "8px" }}>
+            <div className='row' style={{ paddingLeft: "20px", paddingRight: "8px", paddingTop: "10px" }}>
                 {
                     studentWorkTaskList ?
                         studentWorkTaskList.map((task, key) =>
@@ -97,6 +98,8 @@ export default function MyTasks() {
     return (
         <div className='container'>
             <div className='row'>
+
+                
                 <div className='col-5 mt-4'>
                     <div className='row'>
                         <div className='col-12'>
@@ -107,6 +110,9 @@ export default function MyTasks() {
                         </div>
                     </div>
                 </div>
+
+
+
                 <div className='col-7 mt-3'>
                     <div>
                         <div className="border border-2 border-dark p-2 mt-4 d-flex justify-content-center black900" style={{ width: "100%", color: "white", backgroundColor: "#222529" }}><h2><b>YOUR TASKS</b></h2></div>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useChapter from '../api/useChapter';
 import Square from './components/Square';
 import { Link } from 'react-router-dom';
+import Home from './components/Home';
 
 export default function SpellingList() {
   const [chapters, setChapters] = useChapter([]);
@@ -40,12 +41,10 @@ export default function SpellingList() {
 
 
   return <React.Fragment>
-    <div className="container">
-      <div className="text-white bg-dark border border-2 border-dark p-2 mt-5 d-flex justify-content-center" style={{ width: 350 }}><h2><b>
-        <Link to="/student" style={{ color: "white", textDecoration: "none" }}> AXEBUG DIGITAL</Link>
-      </b></h2></div>
-      <div className="border border-2 border-dark p-2 mt-2 d-flex justify-content-center" style={{ width: 350 }}><h2><b>SPELLING</b></h2></div>
-    </div>
+    <Home secondaryName="SPELLING" />
+
+
+   
     <div className="d-flex justify-content-center mt-5">
       <div className='row' style={{ width: 750 }}>
         {
