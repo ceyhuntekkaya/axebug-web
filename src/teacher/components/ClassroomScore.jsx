@@ -25,7 +25,7 @@ export default function ClassroomScore(params) {
           </div>
         </div>
         <div className='col-5'>
-          <h6>AXE 4 SKILLS : {parseInt(schoolroomScore.skillsScore)}</h6>
+          <h6>TASK4SKILLS : {parseInt(schoolroomScore.skillsScore)}</h6>
           <div className="progress" style={{ height: "30px", padding: 0 }}>
             <div className="progress-bar progress-bar-striped bg-info progress-bar-animated"
               role="progressbar" style={{ width: parseInt(schoolroomScore.skillsScore) + "%" }}
