@@ -1,5 +1,1 @@
 ssh -i .ssh/id_rsa_axebug axeadmn@193.163.88.51 -p 1923
-
-
-
-
