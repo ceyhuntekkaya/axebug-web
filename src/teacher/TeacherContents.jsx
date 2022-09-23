@@ -130,13 +130,11 @@ export default function TeacherContents() {
               </div>
               <div className='row'>
 
-
-
                 {
                   linkType === "OUT" ?
                     selectedDocuments ?
                       selectedDocuments.map((document, key) =>
-                        <Square col="1" backgroundColor="white" ><b><span><a className='w-100 d-flex justify-content-center' style={{ color: "black", textDecoration: "none" }} target="_blank" href={`../pdf/${document.link}`}>
+                        <Square key={key} col="1" backgroundColor="white" ><b><span><a className='w-100 d-flex justify-content-center' style={{ color: "black", fontSize:"10pt", textDecoration: "none" }} target="_blank" href={`../pdf/${document.link}`}>
                           <span >{document.name}</span>
                         </a></span></b> </Square>
 
