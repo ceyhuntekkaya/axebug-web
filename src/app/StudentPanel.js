@@ -43,6 +43,8 @@ export default function StudentPanel() {
 
       const activeEpisodeList = [];
       studentWorkTaskList.forEach(element => {
+        if(element.episodeTask)
+        if(element.episodeTask.episode)
         activeEpisodeList.push(element.episodeTask.episode.id)
       });
 
