@@ -19,7 +19,7 @@ export default function GoalEpisode(props) {
                         <div className='text-white bg-dark p-2 m-2'>
                             <h3>{episode.name}</h3>
                         </div>
-                        <GoalTask episodeId={episode.id} />
+                        <GoalTask studentId={props.studentId} episodeId={episode.id} />
                     </React.Fragment>
                 )
                 : null

@@ -42,6 +42,8 @@ import TeacherReports from "./teacher/TeacherReports"
 import Teach from "./teacher/Teach"
 import TeacherTask from "./teacher/TeacherTask";
 import TeacherExam from "./teacher/TeacherExam";
+import TeacherStudents from "./teacher/TeacherStudents";
+import TeacherScore from "./teacher/TeacherScore";
 
 // <Route path="*" element={<NotFound/>}/>
 
@@ -68,6 +70,8 @@ function App() {
 
         <Route exact path="/teacher/teach/:id" element={<Teach />} />
         <Route exact path="/teacher-classes" element={<TeacherClassrooms />} />
+        <Route exact path="/teacher-students/:id" element={<TeacherStudents />} />
+        <Route exact path="/teacher-student-score/:id" element={<TeacherScore />} />
         <Route exact path="/teacher-tasks/:id" element={<TeacherTask />} />
         <Route exact path="/teacher-exam/:id" element={<TeacherExam />} />
         <Route exact path="/teacher-contents/:id" element={<TeacherContents />} />

@@ -18,7 +18,7 @@ export default function GoalTask(props) {
                             <div className='text-white bg-dark p-2 m-2'>
                                 <h4>{task.name}</h4>
                             </div>
-                            <GoalDetails taskId={task.id} />
+                            <GoalDetails studentId={props.studentId} taskId={task.id} />
                         </React.Fragment>
                     )
                     : null

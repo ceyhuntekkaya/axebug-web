@@ -1,5 +1,7 @@
+import { Button } from 'bootstrap'
 import React, { useState, useEffect } from 'react'
 import { CircularProgressbar } from 'react-circular-progressbar'
+import { Link } from 'react-router-dom'
 
 
 export default function ClassroomScore(params) {
@@ -59,8 +61,10 @@ export default function ClassroomScore(params) {
           </div>
           <CircularProgressbar value={parseInt(schoolroomScore.listeningScore)} text={`${parseInt(schoolroomScore.listeningScore)}%`} />
         </div>
-
         <div className='col-4'>
+          <div className='row'>
+            <Link to={`/teacher-students/${schoolroomScore.schoolRoomId}`} className='mt-5 btn btn-success w-100'>STUDENT LIST</Link>
+          </div>
 
           {/* <div className='row'>
             <div className='col-6'>
@@ -79,7 +83,7 @@ export default function ClassroomScore(params) {
                   aria-valuenow={parseInt(schoolroomScore.quizScore)} aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
-          </div> */}
+          </div>  */}
         </div>
       </div>
       <hr />
