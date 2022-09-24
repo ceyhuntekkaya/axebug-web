@@ -26,10 +26,7 @@ export default function StudentPanel() {
     document.body.style.backgroundColor = '#eeeeee'; // '#231F20';
     const studentData = JSON.parse(localStorage.getItem("student"));
     setStudent(studentData);
-
     setStudentWorkApi("findActivePlanBySchool", studentData.school.id)
-
-
     setStudentScore("studentScore", studentData.id)
     // eslint-disable-next-line 
   }, [])
@@ -40,17 +37,13 @@ export default function StudentPanel() {
       const activeTaskList = studentWorkTaskList.schoolRoomWorkList;
       localStorage.setItem("schoolRoomWorkList", JSON.stringify(activeTaskList))
 
-
       const activeEpisodeList = [];
       studentWorkTaskList.forEach(element => {
+        if(element.episodeTask)
+        if(element.episodeTask.episode)
         activeEpisodeList.push(element.episodeTask.episode.id)
       });
-
-
       localStorage.setItem("activeEpisodeList", JSON.stringify(activeEpisodeList))
-
-
-
     }
   }, [studentWorkTaskList])
 
@@ -75,7 +68,6 @@ export default function StudentPanel() {
     localStorage.setItem("student", null);
     navigate(`/`);
   }
-
   const contentList = () => {
     return (
       <React.Fragment>
@@ -95,9 +87,7 @@ export default function StudentPanel() {
         </div>
       </React.Fragment>
     )
-
   }
-
   // const myAvatar = () => {
   //   return (
   //     <div className='d-flex justify-content-end mt-4'><img src={`assets/${student.avatar}`} style={{ height: "140px", backgroundColor: "#222529" }} alt='Avatar' /></div>)
@@ -155,7 +145,6 @@ export default function StudentPanel() {
                 </div>
               </div>
               <hr />
-
               <div className='row m-3'>
                 <h2>TASK4SKILLS SCORE : {parseInt(studentScore.skillsScore)}</h2>
                 <div className="progress" style={{ height: "30px", padding: 0 }}>
@@ -164,9 +153,7 @@ export default function StudentPanel() {
                     aria-valuenow={parseInt(studentScore.skillsScore)} aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
-
               <div className='row m-4'>
-
                 <div className='col-3'>
                   <div className='d-flex justify-content-center'>
                     <h4>SPEAKING</h4>
@@ -192,9 +179,7 @@ export default function StudentPanel() {
                   <CircularProgressbar value={parseInt(studentScore.listeningScore)} text={`${parseInt(studentScore.listeningScore)}%`} />
                 </div>
               </div>
-
               <hr />
-
               <div className='row  m-3 mb-5'>
                 <h2>OVERALL SCORE : {parseInt(studentScore.skillsScore)}</h2>
                 <div className="progress" style={{ height: "30px", padding: 0 }}>
@@ -235,7 +220,6 @@ export default function StudentPanel() {
     <div className='container'>
       <div className='row'>
         <div className='col'>
-
           {
             scoreBoard()
           }

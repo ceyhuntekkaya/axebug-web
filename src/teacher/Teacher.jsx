@@ -77,7 +77,7 @@ export default function Teacher() {
         <Square fontSize={30} col="12" backgroundColor="white" to={`/teacher-reports/`}><b>Reports</b></Square>
       </div>
     </div>
-    <div className='container'>
+    {/* <div className='container'>
       <div className='row mt-3'>
         {
           studensUp.map((s, key) =>
@@ -98,7 +98,8 @@ export default function Teacher() {
           )
         }
       </div>
-    </div>
+    </div> */}
+    <div className='mt-3'></div>
   </React.Fragment>
   )
 }
