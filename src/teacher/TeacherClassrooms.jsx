@@ -28,11 +28,7 @@ export default function TeacherClassrooms() {
               schoolRoomScore ?
                 schoolRoomScore.map((schoolRoom, key) => <React.Fragment>
                   <ClassroomScore key={key} schoolRoom={schoolRoom} />
-                  <div className='bg-white'>
-                    {
-
-                    }
-                  </div>
+                 
                 </React.Fragment>
                 ) : null
             }

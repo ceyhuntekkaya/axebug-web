@@ -9,12 +9,14 @@ export default function GoalDetails(props) {
 
 
     useEffect(() => {
-
         document.body.style.backgroundColor = '#eeeeee'; // '#231F20';
-        document.body.style.backgroundColor = '#eeeeee'; // '#231F20';
-        const studentData = JSON.parse(localStorage.getItem("student"));
-        setStudentWorkApi("checkStudentWorkTask", { studentId: studentData.id, taskId: props.taskId });
-
+        if (props.studentId) {
+            setStudentWorkApi("checkStudentWorkTask", { studentId: props.studentId, taskId: props.taskId });
+        }
+        else {
+            const studentData = JSON.parse(localStorage.getItem("student"));
+            setStudentWorkApi("checkStudentWorkTask", { studentId: studentData.id, taskId: props.taskId });
+        }
         //setPanels("findByTask", props.taskId);
         // eslint-disable-next-line 
     }, [])
@@ -30,16 +32,16 @@ export default function GoalDetails(props) {
 
         if (studentWorkTaskList) {
             const found = studentWorkTaskList.find(w => w.episodeTaskPanel.id === panelId)
-            if(found){
+            if (found) {
 
-                return found.speakingEvaluation + " - "+ found.readEvaluation + " - "+ found.writeEvaluation + " - "+ found.listeningEvaluation
+                return found.speakingEvaluation + " - " + found.readEvaluation + " - " + found.writeEvaluation + " - " + found.listeningEvaluation
 
             }
-            else{
+            else {
                 return ".. - .. - .. - .."
             }
         }
-        else{
+        else {
             return ".. - .. - .. - .."
         }
     }
@@ -51,7 +53,7 @@ export default function GoalDetails(props) {
                     panels.map((panel, key) => (
                         <div className={`col-2 mb-2 mt-2`} ><Link to={`/study/?id=${props.taskId}`}>
                             <img src={`../assets/${panel.imageFullUrl}`} key={key} className={`col-12`} style={{ cursor: "pointer" }} alt={key} />
-                            </Link><div className='border border-success p-1 mt-1 d-flex justify-content-center' style={{ fontSize: "10pt" }}>{calculateScore(panel.id)}</div>
+                        </Link><div className='border border-success p-1 mt-1 d-flex justify-content-center' style={{ fontSize: "10pt" }}>{calculateScore(panel.id)}</div>
                         </div>
                     )) : null
             }
