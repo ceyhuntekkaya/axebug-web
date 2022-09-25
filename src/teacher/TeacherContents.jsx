@@ -5,6 +5,9 @@ import useDocument from '../api/useDocument';
 import useTask from '../api/useTask';
 import { useParams } from 'react-router-dom';
 import useExam from '../api/useExam';
+import Axios from 'axios';
+
+var fileDownload = require('js-file-download');
 
 export default function TeacherContents() {
   const [documents, setDocuments] = useDocument([]);
@@ -22,13 +25,18 @@ export default function TeacherContents() {
     setTasks("findAllTasks", "")
   }, [])
 
+  const download = (url, filename) => {
+    Axios.get(url, {
+      responseType: 'blob',
+    }).then(res => {
+      fileDownload(res.data, filename);
+    });
+  }
 
   useEffect(() => {
     if (id && documents) {
-
       setOpen(false)
       const activeList = [];
-
       if (id === "TASKS") {
         if (tasks)
           tasks.forEach(element => {
@@ -59,7 +67,6 @@ export default function TeacherContents() {
         });
         setLinkType("OUT")
       }
-
       setSelectedDocuments(activeList)
     }
     else {
@@ -113,8 +120,8 @@ export default function TeacherContents() {
               <div className='row'>
                 <Square col="2" backgroundColor="black" ><b><span >APPLICATION</span></b> </Square>
                 <Square col="2" backgroundColor="white" to="/teacher-contents/TASKS" ><b><span >AXE4SKILLS</span></b> </Square>
-                <Square col="2" backgroundColor="white" to="/teacher-contents/spelling" ><b><span >SPELLING</span></b> </Square>
-                <Square col="2" backgroundColor="white" to="/teacher-contents/wordbank" ><b><span >WORDBANK</span></b> </Square>
+                <Square col="2" backgroundColor="white" to="/teacher-spelling-list" ><b><span >SPELLING</span></b> </Square>
+                <Square col="2" backgroundColor="white" to="/teacher-wordbank-list" ><b><span >WORDBANK</span></b> </Square>
                 <Square col="2" backgroundColor="white" to="/teacher-contents/GAME" ><b><span >CLASS GAMES</span></b> </Square>
                 <Square col="2" backgroundColor="white" to="/teacher-contents/PLAY" ><b><span >PLAYS</span></b> </Square>
                 <Square col="2" backgroundColor="white" to="/teacher-contents/SHOW_TIME" ><b><span >SHOW TIME</span></b> </Square>
@@ -134,9 +141,15 @@ export default function TeacherContents() {
                   linkType === "OUT" ?
                     selectedDocuments ?
                       selectedDocuments.map((document, key) =>
-                        <Square key={key} col="1" backgroundColor="white" ><b><span><a className='w-100 d-flex justify-content-center' style={{ color: "black", fontSize:"10pt", textDecoration: "none" }} target="_blank" href={`../pdf/${document.link}`}>
-                          <span >{document.name}</span>
-                        </a></span></b> </Square>
+                        <Square key={key} col="1" backgroundColor="white" >
+                          <b>
+                            <span>
+                              <button className='btn btn-success' onClick={() => download(`../pdf/${document.link}`, document.link)} to={`../pdf/${document.link}`}>
+                                <span >{document.name}</span>
+                              </button>
+                            </span>
+                          </b>
+                        </Square>
 
                       ) : null
                     : null

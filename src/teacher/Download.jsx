@@ -32,7 +32,7 @@ export default function Download() {
                 Page {pageNumber} of {numPages}
             </p>
 
-            <button onClick={()=> download("./pdf/l_p_w_1.pdf","aa.pdf")}>cccccc</button>
+            <button onClick={()=> download("../pdf/l_p_w_1.pdf","aa.pdf")}>cccccc</button>
         </div>
     );
 }

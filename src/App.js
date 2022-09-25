@@ -45,6 +45,13 @@ import TeacherExam from "./teacher/TeacherExam";
 import TeacherStudents from "./teacher/TeacherStudents";
 import TeacherScore from "./teacher/TeacherScore";
 import Download from "./teacher/Download";
+import TeacherSpellingList from "./teacher/page/TeacherSpellingList";
+import TeacherSpellingEpisode from "./teacher/page/TeacherSpellingEpisode"
+import TeacherSpelling from "./teacher/page/TeacherSpelling";
+
+import TeacherWordBankList from "./teacher/page/TeacherWordBankList";
+import TeacherWordBankEpisode from "./teacher/page/TeacherWordBankEpisode"
+import TeacherWordBank from "./teacher/page/TeacherWordBank";
 
 // <Route path="*" element={<NotFound/>}/>
 
@@ -78,6 +85,18 @@ function App() {
         <Route exact path="/teacher-contents/:id" element={<TeacherContents />} />
         <Route exact path="/teacher-contents" element={<TeacherContents />} />
         <Route exact path="/teacher-reports" element={<TeacherReports />} />
+
+        
+        <Route exact path="/teacher-spelling-list" element={<TeacherSpellingList />} />
+        <Route exact path="/teacher-spellingword" element={<TeacherSpellingEpisode />} />
+        <Route exact path="/teacher-spelling" element={<TeacherSpelling />} />
+
+
+        <Route exact path="/teacher-wordbank-list" element={<TeacherWordBankList />} />
+        <Route exact path="/teacher-wordbankword" element={<TeacherWordBankEpisode />} />
+        <Route exact path="/teacher-wordbank" element={<TeacherWordBank />} />
+
+
         <Route exact path="/teacher" element={<Teacher />} />
         <Route exact path="/download" element={<Download />} />
         
@@ -88,6 +107,9 @@ function App() {
 
         <Route exact path="/speling" element={<SpellingList />} />
         <Route exact path="/spellingword" element={<SpellingEpisode />} />
+        
+
+
 
         <Route exact path="/app/exam/:id" element={<Exam />} />
         <Route exact path="/app/quiz/:id" element={<Exam />} />
