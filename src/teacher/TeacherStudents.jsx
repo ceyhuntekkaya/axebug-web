@@ -12,7 +12,6 @@ export default function TeacherStudents() {
         // eslint-disable-next-line 
     }, [])
 
-    console.log()
 
   return (
     <div className='container'>
