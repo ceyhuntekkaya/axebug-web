@@ -144,7 +144,7 @@ export default function TeacherContents() {
                         <Square key={key} col="1" backgroundColor="white" >
                           <b>
                             <span>
-                              <button className='btn btn-success' onClick={() => download(`../pdf/${document.link}`, document.link)} to={`../pdf/${document.link}`}>
+                              <button className='btn btn-success' onClick={() => download(`./pdf/${document.link}`, document.link)} to={`../pdf/${document.link}`}>
                                 <span >{document.name}</span>
                               </button>
                             </span>
