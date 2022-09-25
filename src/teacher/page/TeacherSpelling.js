@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import Square from './components/Square';
-import useWordBank from '../api/useWordBank';
-import useWordScore from '../api/useWordScore';
-import { useSearchParams } from 'react-router-dom';
+import Square from '../../app/components/Square';
+import useWordBank from '../../api/useWordBank';
 import { Link } from 'react-router-dom';
-import SpechText from './components/SpechText';
+import SpechText from '../../app/components/SpechText';
+import { useSearchParams } from 'react-router-dom';
 
 var stringSimilarity = require("string-similarity");
 
-export default function Spelling() {
+export default function TeacherSpelling() {
     const [searchParams,] = useSearchParams();
     const [wordList, setWordList] = useWordBank(null);
     const [selectedWord, setSelectedWord] = useState({ number: 0, type: "" });
@@ -17,13 +16,7 @@ export default function Spelling() {
     const [episode, setEpisode] = useState({});
     const [chapter, setChapter] = useState({});
     const [progressColor, setProgressColor] = useState("success");
-
     const [speechValue, setSpeechValue] = useState(100);
-
-    const [student, setStudent] = useState({ name: "", surname: "", avatar: "" });
-    const [wordScore, setWordScore] = useWordScore({});
-    const [getWordScore, setGetWordScore] = useWordScore({});
-    const [wordScoreReport, setWordScoreReport] = useWordScore({});
 
 
     useEffect(() => {
@@ -33,9 +26,6 @@ export default function Spelling() {
         setWordList("findByEpisode", { episodeId: episodeId, category: "spelling" });
 
         document.body.style.backgroundColor = '#eeeeee'; // '#231F20';
-        const studentData = JSON.parse(localStorage.getItem("student"));
-        setStudent(studentData);
-        setWordScoreReport("wordScoreReport", studentData.id)
         var audio = document.getElementById('audio');
         if (audio)
             audio.load();
@@ -47,12 +37,6 @@ export default function Spelling() {
         if (audio)
             audio.load();
 
-        const param = {
-            useId: student.id,
-            word: selectedWord.name,
-        }
-        setGetWordScore("getWordScore", param)
-        setWordScoreReport("wordScoreReport", student.id)
         // eslint-disable-next-line 
     }, [selectedWord])
 
@@ -102,12 +86,11 @@ export default function Spelling() {
         const value = parseInt(similarity * 100)
         setSpeechValue(value);
         const param = {
-            useId: student.id,
+            useId: 0,
             word: selectedWord.name,
             score: value,
             level: selectedWord.category
         }
-        setWordScore("createWordScore", param)
     }
     const clearText = (readnigText) => {
         let newText = String(readnigText).replace(".", "").replace("'", "").replace("!", "").replace(",", "").replace("’", "").replace("?", "").replace("-", "").replace("_", "");
@@ -123,7 +106,7 @@ export default function Spelling() {
                         <div className="">
                             <div className='row m-2'>
                                 <div className='col-4 boxDark mr-5 d-flex justify-content-center'><h3><b>
-                                    <Link to="/student" style={{ color: "white", textDecoration: "none" }}> AXEBUG DIGITAL</Link>
+                                    <Link to="/teacher" style={{ color: "white", textDecoration: "none" }}> AXEBUG DIGITAL</Link>
                                 </b></h3></div>
                                 <div className='col-8 boxWhite ml-5'><h4>Listening and Speaking</h4></div>
                             </div>
@@ -163,14 +146,12 @@ export default function Spelling() {
                                             <div className='col-auto' style={{ height: 30 }}><h2>% {speechValue}</h2></div>
                                         </div>
                                     </div>
-                                    <div className='container d-flex justify-content-center mt-2'>
-                                        <div className='row'>
-                                            <div style={{ backgroundColor: "#F4BFBF" }} className='col-3 border border-success p-3 d-flex justify-content-center'><b>EASY VOCABULARY SCORE<br /> <h1>{wordScoreReport ? wordScoreReport[0].score : null}</h1> </b></div>
-                                            <div style={{ backgroundColor: "#FAF0D7" }} className='col-3 border border-success p-3 d-flex justify-content-center'><b>MEDIUM VOCABULARY SCORE<br /> <h1>{wordScoreReport ? wordScoreReport[1].score : null}</h1> </b></div>
-                                            <div style={{ backgroundColor: "#8CC0DE" }} className='col-3 border border-success p-3 d-flex justify-content-center'><b>HARD VOCABULARY SCORE<br /> <h1>{wordScoreReport ? wordScoreReport[2].score : null}</h1> </b></div>
-                                            <div className='col-3 border border-success p-3 d-flex justify-content-center'><b><h1>{selectedWord ? selectedWord.name : null}</h1>BEST SCORE<br /> <h1>{getWordScore ? getWordScore.score : null}</h1> </b></div>
-                                        </div>
-                                    </div>
+
+
+
+
+
+
                                 </div>
                             </div>
                         </div>

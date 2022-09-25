@@ -33,15 +33,10 @@ export default function TeacherContents() {
     });
   }
 
-
-
-
   useEffect(() => {
     if (id && documents) {
-
       setOpen(false)
       const activeList = [];
-
       if (id === "TASKS") {
         if (tasks)
           tasks.forEach(element => {
@@ -72,7 +67,6 @@ export default function TeacherContents() {
         });
         setLinkType("OUT")
       }
-
       setSelectedDocuments(activeList)
     }
     else {
@@ -126,8 +120,8 @@ export default function TeacherContents() {
               <div className='row'>
                 <Square col="2" backgroundColor="black" ><b><span >APPLICATION</span></b> </Square>
                 <Square col="2" backgroundColor="white" to="/teacher-contents/TASKS" ><b><span >AXE4SKILLS</span></b> </Square>
-                <Square col="2" backgroundColor="white" to="/teacher-contents/spelling" ><b><span >SPELLING</span></b> </Square>
-                <Square col="2" backgroundColor="white" to="/teacher-contents/wordbank" ><b><span >WORDBANK</span></b> </Square>
+                <Square col="2" backgroundColor="white" to="/teacher-spelling-list" ><b><span >SPELLING</span></b> </Square>
+                <Square col="2" backgroundColor="white" to="/teacher-wordbank-list" ><b><span >WORDBANK</span></b> </Square>
                 <Square col="2" backgroundColor="white" to="/teacher-contents/GAME" ><b><span >CLASS GAMES</span></b> </Square>
                 <Square col="2" backgroundColor="white" to="/teacher-contents/PLAY" ><b><span >PLAYS</span></b> </Square>
                 <Square col="2" backgroundColor="white" to="/teacher-contents/SHOW_TIME" ><b><span >SHOW TIME</span></b> </Square>
