@@ -116,7 +116,7 @@ export default function ContentBasePanel(props) {
     return (
         <div className="card">
             <div className='row m-2'>
-            <div className='col-4 boxDark mr-5 d-flex justify-content-center'><h3><b><Link to="/student" style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link></b></h3></div> <div className="col-8 btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div className='col-4 boxDark mr-5 d-flex justify-content-center'><h3><b><Link to={props.teacher ? "/teacher-contents" : "/student"} style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link></b></h3></div> <div className="col-8 btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                     <div className="btn-group mr-2 w-100" role="group" aria-label="First group">
                         <button type="button" className={`btn btn-${level === 1 ? "success" : "secondary"}`} onClick={() => setLevel(1)}>Listen & Speak</button>
                         <button type="button" className={`btn btn-${level === 4 ? "danger" : "secondary"}`} onClick={() => setLevel(4)}>Read & Write</button>

@@ -67,7 +67,7 @@ export default function TeacherTask() {
                 <div className="col ml-2">
                     <div className="mb-4">
                         {
-                            startContent ? <ContentBase studentWorkTaskList={null} studentWork={null} setEvulations={null} selectedContent={selectedContent} onNextContent={showNextContent} /> : null
+                            startContent ? <ContentBase teacher={true} studentWorkTaskList={null} studentWork={null} setEvulations={null} selectedContent={selectedContent} onNextContent={showNextContent} /> : null
                         }
                     </div>
                 </div>

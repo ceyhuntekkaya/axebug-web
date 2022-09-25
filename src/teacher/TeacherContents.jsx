@@ -60,6 +60,11 @@ export default function TeacherContents() {
         setLinkType("QUIZS")
       }
       else {
+
+
+        documents.sort(function(a, b){
+          return a.id - b.id;
+      });
         documents.forEach(element => {
           if (element.type === id) {
             activeList.push(element)
@@ -74,6 +79,7 @@ export default function TeacherContents() {
     }
   }, [id, documents])
 
+  console.log(documents)
 
   return (
     <div className='container'>
