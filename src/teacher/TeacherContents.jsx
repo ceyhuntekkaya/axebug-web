@@ -5,6 +5,9 @@ import useDocument from '../api/useDocument';
 import useTask from '../api/useTask';
 import { useParams } from 'react-router-dom';
 import useExam from '../api/useExam';
+import Axios from 'axios';
+
+var fileDownload = require('js-file-download');
 
 export default function TeacherContents() {
   const [documents, setDocuments] = useDocument([]);
@@ -21,6 +24,16 @@ export default function TeacherContents() {
     setExams("findAllExam", "")
     setTasks("findAllTasks", "")
   }, [])
+
+  const download = (url, filename) => {
+    Axios.get(url, {
+      responseType: 'blob',
+    }).then(res => {
+      fileDownload(res.data, filename);
+    });
+  }
+
+
 
 
   useEffect(() => {
@@ -134,9 +147,15 @@ export default function TeacherContents() {
                   linkType === "OUT" ?
                     selectedDocuments ?
                       selectedDocuments.map((document, key) =>
-                        <Square key={key} col="1" backgroundColor="white" ><b><span><a className='w-100 d-flex justify-content-center' style={{ color: "black", fontSize:"10pt", textDecoration: "none" }} target="_blank" href={`../pdf/${document.link}`}>
-                          <span >{document.name}</span>
-                        </a></span></b> </Square>
+                        <Square key={key} col="1" backgroundColor="white" >
+                          <b>
+                            <span>
+                              <button className='btn btn-success' onClick={() => download(`../pdf/${document.link}`, document.link)} to={`../pdf/${document.link}`}>
+                                <span >{document.name}</span>
+                              </button>
+                            </span>
+                          </b>
+                        </Square>
 
                       ) : null
                     : null
