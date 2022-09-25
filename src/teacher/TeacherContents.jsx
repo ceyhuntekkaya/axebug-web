@@ -144,9 +144,9 @@ export default function TeacherContents() {
                         <Square key={key} col="1" backgroundColor="white" >
                           <b>
                             <span>
-                              <button className='btn btn-success' onClick={() => download(`./pdf/${document.link}`, document.link)} to={`../pdf/${document.link}`}>
+                              <a className='btn btn-success' target="_blank" href={`http://madeinbrain.net/pdf/${document.link}`}>
                                 <span >{document.name}</span>
-                              </button>
+                              </a>
                             </span>
                           </b>
                         </Square>
