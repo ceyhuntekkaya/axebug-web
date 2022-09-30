@@ -8,12 +8,19 @@ export default function FinishExam() {
   const [student, setStudent] = useState({ name: "", surname: "", avatar: "" });
   const [examList, setExamList] = useExam([]);
   const [examName, setExamName] = useState(null);
+  const [std, setStd] = useState(null);
 
   useEffect(() => {
     document.body.style.backgroundColor = '#eeeeee'; // '#231F20';
-    const studentData = JSON.parse(localStorage.getItem("student"));
-    setStudent(studentData);
-    setExamList("reportList", studentData.id)
+
+    try {
+      const studentData = JSON.parse(localStorage.getItem("student"));
+      setStudent(studentData);
+      setExamList("reportList", studentData.id)
+      setStd(studentData)
+    } catch (err) {
+
+    }
 
     localStorage.getItem('quiz')
     setExamName(localStorage.getItem('quiz'))
@@ -32,7 +39,6 @@ export default function FinishExam() {
                 : null)
             : null
         }
-
         <Square col="4" backgroundColor="white" to="/myReports"><b>MY REPORTS</b></Square>
       </div>
     )
@@ -52,9 +58,14 @@ export default function FinishExam() {
           </div>
         </div>
         <div className='col'>
-          <div>
-            <div className="border border-2 border-dark p-2 mt-4 d-flex justify-content-center black900" style={{ width: "100%", color: "white", backgroundColor: "#222529" }}><h2><b><Link to="/myReports" style={{ color: "white", textDecoration: "none" }}>REPORT</Link></b></h2></div>
-          </div>
+          {
+            std ?
+              <div>
+                <div className="border border-2 border-dark p-2 mt-4 d-flex justify-content-center black900" style={{ width: "100%", color: "white", backgroundColor: "#222529" }}><h2><b><Link to="/myReports" style={{ color: "white", textDecoration: "none" }}>REPORT</Link></b></h2></div>
+              </div>
+              : null
+          }
+
 
           <div className='row'>
             {
