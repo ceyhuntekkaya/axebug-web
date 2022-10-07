@@ -9,7 +9,7 @@ export default function TeacherWordBankEpisode() {
     const [episode, setEpisode] = useState({});
     const [chapter, setChapter] = useState({});
 
-    useEffect(() => {
+    useEffect(() => { 
         var id = searchParams.get("id");
         setWordList("findByEpisode", { episodeId: id, category: "wordBank" });
         // eslint-disable-next-line 
