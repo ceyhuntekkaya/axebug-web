@@ -44,7 +44,7 @@ export default function DijitalContents() {
         return (
             <React.Fragment>
                 <div className="row mt-3" style={{ paddingLeft: "8px", paddingRight: "8px" }}>
-                    <div className="col-3 p-2"><a target="_blank" href="HTML/index.html"><img className='w-100' src={`assets/ch1.png`} /></a></div>
+                    <div className="col-3 p-2"><a target="_blank" href="HTML/Chapter1/index.html"><img className='w-100' src={`assets/ch1.png`} /></a></div>
                     <div className="col-3 p-2"><a target="_blank" href="HTML/Chapter2/index.html"><img className='w-100' src={`assets/ch2.png`} /></a></div>
                     <div className="col-3 p-2"><a target="_blank" href="HTML/Chapter3/index.html"><img className='w-100' src={`assets/ch3.png`} /></a></div>
                     <div className="col-3 p-2"><a target="_blank" href="HTML/Chapter4/index.html"><img className='w-100' src={`assets/ch4.png`} /></a></div>
