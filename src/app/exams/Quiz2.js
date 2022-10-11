@@ -22,16 +22,7 @@ export default function Quiz2(props) {
   const setStudentOpenAnswer = (skils, section, queationNumber, value, compare) => {
     const fffff = answer.result;
     const temp = { ...fffff };
-    console.log(temp)
-    console.log('ceyhun', skils, section, queationNumber,value, temp)
-    console.log(temp[skils])
-
-
     temp[skils][section][queationNumber].student = value;
-
-   
-
-
     let finalScore = temp[skils][section][queationNumber].weigth;
 
     var similarity = stringSimilarity.compareTwoStrings(clearText(value), clearText(temp[skils][section][queationNumber].answer));

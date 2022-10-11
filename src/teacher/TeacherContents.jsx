@@ -79,7 +79,6 @@ export default function TeacherContents() {
     }
   }, [id, documents])
 
-  console.log(documents)
 
   return (
     <div className='container'>

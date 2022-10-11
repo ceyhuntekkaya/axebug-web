@@ -10,7 +10,6 @@ export default function TeacherCalender() {
   }, [])
 
   const convertToDateForGantt = (baseDateString) => {
-    //console.log(new Date(plan.startAt).toDateString())
     let d = new Date(baseDateString)
     let ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(d);
     let mo = new Intl.DateTimeFormat('en', { month: 'numeric' }).format(d);
