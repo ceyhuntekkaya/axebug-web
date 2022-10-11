@@ -20,8 +20,18 @@ export default function Quiz2(props) {
   }
 
   const setStudentOpenAnswer = (skils, section, queationNumber, value, compare) => {
-    const temp = { ...answer };
+    const fffff = answer.result;
+    const temp = { ...fffff };
+    console.log(temp)
+    console.log('ceyhun', skils, section, queationNumber,value, temp)
+    console.log(temp[skils])
+
+
     temp[skils][section][queationNumber].student = value;
+
+   
+
+
     let finalScore = temp[skils][section][queationNumber].weigth;
 
     var similarity = stringSimilarity.compareTwoStrings(clearText(value), clearText(temp[skils][section][queationNumber].answer));
@@ -34,7 +44,8 @@ export default function Quiz2(props) {
     else {
       temp[skils][section][queationNumber].functionScore = false;
     }
-    setAnswer(temp)
+    const ggg = {result: temp}
+    setAnswer(ggg)
   }
 
   const getSpeechText = (text, questionNumber) => {
