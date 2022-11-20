@@ -6,7 +6,6 @@ import useTask from '../api/useTask';
 import { useParams } from 'react-router-dom';
 import useExam from '../api/useExam';
 import Axios from 'axios';
-
 var fileDownload = require('js-file-download');
 
 export default function TeacherContents() {
