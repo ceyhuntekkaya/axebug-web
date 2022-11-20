@@ -45,12 +45,12 @@ export default function DijitalContents() {
             <React.Fragment>
                 <div className="row mt-3" style={{ paddingLeft: "8px", paddingRight: "8px" }}>
                     <div className="col-3 p-2"><a target="_blank" href="HTML/Chapter1/index.html"><img className='w-100' src={`assets/ch1.png`} /></a></div>
-                    <div className="col-3 p-2"><a target="_blank" href="HTML/Chapter2/index.html"><img className='w-100' src={`assets/ch2.png`} /></a></div>
+                    <div className="col-3 p-2"><a target="_blank" href="HTML/Chapter2v3/index.html"><img className='w-100' src={`assets/ch2.png`} /></a></div>
                     <div className="col-3 p-2"><a target="_blank" href="HTML/Chapter3/index.html"><img className='w-100' src={`assets/ch3.png`} /></a></div>
                     <div className="col-3 p-2"><a target="_blank" href="HTML/Chapter4/index.html"><img className='w-100' src={`assets/ch4.png`} /></a></div>
 
                     <div className="col-3 p-2"><a target="_blank" href="HTML/Activite1/index.html"><img className='w-100' src={`assets/ab1.png`} /></a></div>
-                    <div className="col-3 p-2"><a target="_blank" href="HTML/Activite2/index.html"><img className='w-100' src={`assets/ab2.png`} /></a></div>
+                    <div className="col-3 p-2"><a target="_blank" href="HTML/Activite2v3/index.html"><img className='w-100' src={`assets/ab2.png`} /></a></div>
                     <div className="col-3 p-2"><a target="_blank" href="HTML/Activite3/index.html"><img className='w-100' src={`assets/ab3.png`} /></a></div>
                     <div className="col-3 p-2"><a target="_blank" href="HTML/Activite4/index.html"><img className='w-100' src={`assets/ab4.png`} /></a></div>
 
