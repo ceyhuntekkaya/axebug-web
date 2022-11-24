@@ -49,6 +49,7 @@ export default function Exam2(props) {
         setStudentOpenAnswer(3, 0, questionNumber, text, true)
     }
 
+    
     const clearText = (text) => {
         let newText = text.replace(".", "").replace("'", "").replace("!", "").replace(",", "").replace("’", "").replace("?", "").replace("-", "").replace("_", "");
         newText = newText.toLowerCase();
