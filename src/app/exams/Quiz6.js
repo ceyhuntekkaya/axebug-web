@@ -68,144 +68,143 @@ export default function Quiz6(props) {
                                         {
                                             pageNo === 0 ?
                                                 <React.Fragment>
-
                                                     <div className="alert alert-dark" role="alert">
                                                         <strong>       A. Choose the correct answer.</strong>
                                                     </div>
                                                     <div className='row'>
-                                                        <strong>1. What does Watchman see behind the meteorites?</strong>
+                                                        <strong>1. A wormhole is a ______.</strong>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as1" onChange={(e) => setStudentOpenAnswer(0, 0, 1, "A")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                A) A dot
+                                                                A) circle
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as1" onChange={(e) => setStudentOpenAnswer(0, 0, 1, "B")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                B) A tree
+                                                                B) sphere
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as1" onChange={(e) => setStudentOpenAnswer(0, 0, 1, "C")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                C) A whistle
+                                                                C) square
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as1" onChange={(e) => setStudentOpenAnswer(0, 0, 1, "D")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                D) A twinkle
+                                                                D) cube
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <strong>2. The watchman can __________ inside the ship.</strong>
+                                                        <strong>2. What does Axebug explain wormhole with?</strong>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as2" onChange={(e) => setStudentOpenAnswer(0, 0, 2, "A")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                A) sleep
+                                                                A) Ruler
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as2" onChange={(e) => setStudentOpenAnswer(0, 0, 2, "B")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                B) see
+                                                                B) Pen and paper
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as2" onChange={(e) => setStudentOpenAnswer(0, 0, 2, "C")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                C) dance
+                                                                C) Calculater
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as2" onChange={(e) => setStudentOpenAnswer(0, 0, 2, "D")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                D) read
+                                                                D) Book and pencil
                                                             </label>
                                                         </div>
                                                     </div>
 
                                                     <div className='row'>
-                                                        <strong>3. When will they take control of ZZZ55?</strong>
+                                                        <strong>3. The wormhole ______ space.</strong>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer(0, 0, 3, "A")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                A) When it enters the range
+                                                                A) jumps
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer(0, 0, 3, "B")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                B) When it stops the engine
+                                                                B) reads
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer(0, 0, 3, "C")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                C) When it is in control of another colony
+                                                                C) wraps
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer(0, 0, 3, "D")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                D) When it is fixed up
+                                                                D) closes
                                                             </label>
                                                         </div>
                                                     </div>
 
                                                     <div className='row'>
-                                                        <strong>4. Who realizes the attack?</strong>
+                                                        <strong>4. They were in a ______ when they got out of the hole.</strong>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as4" onChange={(e) => setStudentOpenAnswer(0, 0, 4, "A")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                A) Watchman
+                                                                A) neighbour galaxy
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as4" onChange={(e) => setStudentOpenAnswer(0, 0, 4, "B")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                B) Ladybug
+                                                                B) neighbour star
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as4" onChange={(e) => setStudentOpenAnswer(0, 0, 4, "C")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                C) Dung Beetle
+                                                                C) space fire
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as4" onChange={(e) => setStudentOpenAnswer(0, 0, 4, "D")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                D) Axebug
+                                                                D) galaxy market
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <strong>5. The watchman switches to ______ mode.</strong>
+                                                        <strong>5. What do they think of a wormhole?</strong>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer(0, 0, 5, "A")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                A) stealth
+                                                                A) Distinguish
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer(0, 0, 5, "B")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                B) sleep
+                                                                B) Awesome
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer(0, 0, 5, "C")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                C) offline
+                                                                C) Perfect
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer(0, 0, 5, "D")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                D) online
+                                                                D) Ugly
                                                             </label>
                                                         </div>
                                                     </div>
@@ -224,44 +223,50 @@ export default function Quiz6(props) {
                                                         </audio>
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>WATCHMAN 1:</strong> Let’s use the seeker
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][1].student} onChange={(e) => setStudentOpenAnswer(0, 1, 1, e.target.value, true)} />
+                                                        <strong>Axebug:</strong> Ahaa! This is exactly what a   <input className="form-input textformat" type="text" value={answer.result[0][1][1].student} onChange={(e) => setStudentOpenAnswer(0, 1, 1, e.target.value, true)} />
+                                                        looks like.
+                                                    </div>
+                                                    <div className="paragraf">
+                                                        <strong>Ladybug:</strong> It is a      <input className="form-input textformat" type="text" value={answer.result[0][1][2].student} onChange={(e) => setStudentOpenAnswer(0, 1, 2, e.target.value, true)} />
                                                         then.
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>WATCHMAN 2:</strong> Damn it! Look properly. You are  <input className="form-input textformat" type="text" value={answer.result[0][1][2].student} onChange={(e) => setStudentOpenAnswer(0, 1, 2, e.target.value, true)} /> !
+                                                        <strong>Axebug: </strong>Yes it is.
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>WATCHMAN 1: </strong>That’s ok. If i miss out, we have you afterall.
+                                                        <strong>Axebug: </strong> When we entered the sphere, we passed millions of kilometers in a       <input className="form-input textformat" type="text" value={answer.result[0][1][3].student} onChange={(e) => setStudentOpenAnswer(0, 1, 3, e.target.value, true)} />
+                                                        .
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>WATCHMAN 1: </strong> The seeker telescope is our eye in space. The data in it records
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][3].student} onChange={(e) => setStudentOpenAnswer(0, 1, 3, e.target.value, true)} />.
+                                                        <strong>Axebug:</strong> So how did this happen?
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>WATCHMAN 2:</strong> We will see what it is when we check the archives.
+                                                        <strong>Axebug: </strong>It is a piece of cake for me to explain. Just give me a pen and paper.
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>WATCHMAN 2: </strong>Keep    <input className="form-input textformat" type="text" value={answer.result[0][1][4].student} onChange={(e) => setStudentOpenAnswer(0, 1, 4, e.target.value, true)} /> in outer space other than
-                                                        by the way.
+                                                        <strong>Axebug: </strong>This is a   <input className="form-input textformat" type="text" value={answer.result[0][1][4].student} onChange={(e) => setStudentOpenAnswer(0, 1, 4, e.target.value, true)} />
+                                                        right?
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>WATCHMAN 2: </strong>This... Is This?
+                                                        <strong>Axebug:</strong> This is where we are.
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>WATCHMAN 2:</strong> This is a      <input className="form-input textformat" type="text" value={answer.result[0][1][5].student} onChange={(e) => setStudentOpenAnswer(0, 1, 5, e.target.value, true)} /> !
-                                                    </div>
-
-                                                    <div className="paragraf">
-                                                        <strong>WATCHMAN 1:</strong> It looks like a bug to me.
+                                                        <strong>Axebug:</strong> And this is where we want to   <input className="form-input textformat" type="text" value={answer.result[0][1][5].student} onChange={(e) => setStudentOpenAnswer(0, 1, 5, e.target.value, true)} />
+                                                        .
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>WATCHMAN 1: </strong>Here, i have reached the archives. Now, leave
-                                                        <input className="form-input textformat" type="text" value={answer.result[0][1][6].student} onChange={(e) => setStudentOpenAnswer(0, 1, 6, e.target.value, true)} />
+                                                        <strong>Axebug: </strong>We will        <input className="form-input textformat" type="text" value={answer.result[0][1][6].student} onChange={(e) => setStudentOpenAnswer(0, 1, 6, e.target.value, true)} />
+                                                        this point to the other.
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>WATCHMAN 2:</strong> Allright. The name of the           <input className="form-input textformat" type="text" value={answer.result[0][1][7].student} onChange={(e) => setStudentOpenAnswer(0, 1, 7, e.target.value, true)} />
-                                                        is ‘zzz55’.
+                                                        <strong>Axebug:</strong> But it is far, isn’t it?
+                                                    </div>
+                                                    <div className="paragraf">
+                                                        <strong>Axebug:</strong> So let’s fold the paper and match a point to b.
+                                                    </div>
+                                                    <div className="paragraf">
+                                                        <strong>Axebug:</strong> The wormhole    <input className="form-input textformat" type="text" value={answer.result[0][1][7].student} onChange={(e) => setStudentOpenAnswer(0, 1, 7, e.target.value, true)} />
+                                                        space just like this.
                                                     </div>
                                                 </React.Fragment>
                                                 : null
@@ -274,58 +279,58 @@ export default function Quiz6(props) {
                                                     </div>
 
                                                     <div className='row'>
-                                                        <div className='col-2'>   1. Suspend
+                                                        <div className='col-2'>   1. Explain
                                                         </div>
                                                         <div className='col-1'>
                                                             <input className="form-input w-100" type="text" value={answer.result[0][2][1].student} onChange={(e) => setStudentOpenAnswer(0, 2, 1, e.target.value)} />
 
                                                         </div>
                                                         <div className='col-9'>
-                                                            <div className="paragraf alert alert-success"><strong>A. </strong> Information</div>
+                                                            <div className="paragraf alert alert-success"><strong>A. </strong> An object or a shape measured in three different ways, height, length, width</div>
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-2'>   2. Approach
+                                                        <div className='col-2'>   2. Sphere
                                                         </div>
                                                         <div className='col-1'>
                                                             <input className="form-input w-100" type="text" value={answer.result[0][2][2].student} onChange={(e) => setStudentOpenAnswer(0, 2, 2, e.target.value)} />
 
                                                         </div>
                                                         <div className='col-9'>
-                                                            <div className="paragraf alert alert-success"><strong>B. </strong> Probably</div>
+                                                            <div className="paragraf alert alert-success"><strong>B. </strong> To bend or twist a type of shape.</div>
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-2'>   3. Data
+                                                        <div className='col-2'>   3. Warp
                                                         </div>
                                                         <div className='col-1'>
                                                             <input className="form-input w-100" type="text" value={answer.result[0][2][3].student} onChange={(e) => setStudentOpenAnswer(0, 2, 3, e.target.value)} />
 
                                                         </div>
                                                         <div className='col-9'>
-                                                            <div className="paragraf alert alert-success"><strong>C. </strong> To cancel something.</div>
+                                                            <div className="paragraf alert alert-success"><strong>C. </strong> To give information about.</div>
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-2'>    4. Likely
+                                                        <div className='col-2'>    4. 3 Dimensional
                                                         </div>
                                                         <div className='col-1'>
                                                             <input className="form-input w-100" type="text" value={answer.result[0][2][4].student} onChange={(e) => setStudentOpenAnswer(0, 2, 4, e.target.value)} />
 
                                                         </div>
                                                         <div className='col-9'>
-                                                            <div className="paragraf alert alert-success"><strong>D. </strong> An area you can see.</div>
+                                                            <div className="paragraf alert alert-success"><strong>D. </strong> A round figure of geometry.</div>
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-2'>   5. Range
+                                                        <div className='col-2'>   5. Remember
                                                         </div>
                                                         <div className='col-1'>
                                                             <input className="form-input w-100" type="text" value={answer.result[0][2][5].student} onChange={(e) => setStudentOpenAnswer(0, 2, 5, e.target.value)} />
 
                                                         </div>
                                                         <div className='col-9'>
-                                                            <div className="paragraf alert alert-success"><strong>E. </strong> To come closer.</div>
+                                                            <div className="paragraf alert alert-success"><strong>E. </strong> To have something in your mind or bring something back into your mind.</div>
                                                         </div>
                                                     </div>
                                                 </React.Fragment>
@@ -338,61 +343,61 @@ export default function Quiz6(props) {
                                                         <strong>     D. Unscramble the words.</strong>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 1. emowrhlo </div>
+                                                        <div className='col-3'> 1. etmuni </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][1].student} onChange={(e) => setStudentOpenAnswer(0, 3, 1, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 2. rnete </div>
+                                                        <div className='col-3'> 2. actexyl </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][2].student} onChange={(e) => setStudentOpenAnswer(0, 3, 2, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 3. utinmse </div>
+                                                        <div className='col-3'> 3. temokrile </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][3].student} onChange={(e) => setStudentOpenAnswer(0, 3, 3, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 4. wdon </div>
+                                                        <div className='col-3'> 4. ratlve </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][4].student} onChange={(e) => setStudentOpenAnswer(0, 3, 4, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 5. worsle </div>
+                                                        <div className='col-3'> 5. hcera </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][5].student} onChange={(e) => setStudentOpenAnswer(0, 3, 5, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 6. snoesrs </div>
+                                                        <div className='col-3'> 6. celicr </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][6].student} onChange={(e) => setStudentOpenAnswer(0, 3, 6, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 7. tasleht </div>
+                                                        <div className='col-3'> 7. losnogi </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][7].student} onChange={(e) => setStudentOpenAnswer(0, 3, 7, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 8. sewat </div>
+                                                        <div className='col-3'> 8. rmebmre </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][8].student} onChange={(e) => setStudentOpenAnswer(0, 3, 8, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 9. ragtviy </div>
+                                                        <div className='col-3'> 9. leho </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][9].student} onChange={(e) => setStudentOpenAnswer(0, 3, 9, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 10. rominor </div>
+                                                        <div className='col-3'> 10. zamiagn </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][10].student} onChange={(e) => setStudentOpenAnswer(0, 3, 10, e.target.value, true)} />
                                                         </div>

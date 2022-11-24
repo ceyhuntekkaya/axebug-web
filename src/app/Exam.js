@@ -7,6 +7,11 @@ import Quiz3 from './exams/Quiz3';
 import Quiz4 from './exams/Quiz4';
 import Quiz5 from './exams/Quiz5';
 
+import Quiz6 from './exams/Quiz6';
+import Quiz7 from './exams/Quiz7';
+import Quiz8 from './exams/Quiz8';
+import Exam2 from './exams/Exam2';
+
 import useExam from "../api/useExam"
 import FinishExam from './exams/FinishExam';
 
@@ -23,7 +28,7 @@ export default function Exam() {
         document.body.style.backgroundColor = 'white'; // '#231F20';
         setSelectedExam("findById", id)
 
-       
+
         // eslint-disable-next-line 
     }, [])
 
@@ -94,6 +99,9 @@ export default function Exam() {
                 examName === "Exam 1" ? <Exam1 sendExam={sendExam} /> : null
             }
             {
+                examName === "Exam 2" ? <Exam2 sendExam={sendExam} /> : null
+            }
+            {
                 examName === "Quiz 1" ? <Quiz1 sendExam={sendExam} /> : null
             }
             {
@@ -107,6 +115,15 @@ export default function Exam() {
             }
             {
                 examName === "Quiz 5" ? <Quiz5 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 6" ? <Quiz6 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 7" ? <Quiz7 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 8" ? <Quiz8 sendExam={sendExam} /> : null
             }
             {
                 examName === "Finish" ? <FinishExam /> : null

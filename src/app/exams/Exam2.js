@@ -61,7 +61,7 @@ export default function Exam2(props) {
 
                 <div className="card-header">
                     <div className="d-flex justify-content-center">
-                        <h5 className="card-title mt-3"><h1><strong>EXAM CHAPTER 1</strong></h1></h5>
+                        <h5 className="card-title mt-3"><h1><strong>EXAM CHAPTER 2</strong></h1></h5>
 
                     </div>
                 </div>
