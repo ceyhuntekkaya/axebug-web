@@ -642,46 +642,46 @@
                     "functionScore": false
                 }
             ]
+        ],
+        [
+            [
+                {
+                    "student": "",
+                    "answer": "I LOST CONTROL!",
+                    "weigth": 9,
+                    "score": 0,
+                    "method": "",
+                    "function": "",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "MOVE AHEAD GENTLY",
+                    "weigth": 10,
+                    "score": 0,
+                    "method": "",
+                    "function": "E19",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "BECAUSE ALL YOU CAN THINK ABOUT IS POOP AND ROLLING IT",
+                    "weigth": 10,
+                    "score": 0,
+                    "method": "",
+                    "function": "E19",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "",
+                    "weigth": 0,
+                    "score": 0,
+                    "method": "",
+                    "function": "",
+                    "functionScore": false
+                }
+            ]
         ]
     ]
 }
-],
-[
-    [
-        {
-            "student": "",
-            "answer": "I LOST CONTROL!",
-            "weigth": 9,
-            "score": 0,
-            "method": "",
-            "function": "",
-            "functionScore": false
-        },
-        {
-            "student": "",
-            "answer": "MOVE AHEAD GENTLY",
-            "weigth": 10,
-            "score": 0,
-            "method": "",
-            "function": "E19",
-            "functionScore": false
-        },
-        {
-            "student": "",
-            "answer": "BECAUSE ALL YOU CAN THINK ABOUT IS POOP AND ROLLING IT",
-            "weigth": 10,
-            "score": 0,
-            "method": "",
-            "function": "E19",
-            "functionScore": false
-        },
-        {
-            "student": "",
-            "answer": "",
-            "weigth": 0,
-            "score": 0,
-            "method": "",
-            "function": "",
-            "functionScore": false
-        },
-        {

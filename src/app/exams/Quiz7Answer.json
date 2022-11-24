@@ -138,60 +138,6 @@
                     "method": "",
                     "function": "E6",
                     "functionScore": false
-                },
-                {
-                    "student": "XX",
-                    "answer": "look",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "XX",
-                    "answer": "No way!",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "XX",
-                    "answer": "please",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "XX",
-                    "answer": "call.",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "XX",
-                    "answer": "found life in space.",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "XX",
-                    "answer": "Lets go and find out.",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
                 }
             ],
             [
@@ -244,51 +190,6 @@
                     "student": "",
                     "answer": "C",
                     "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E7",
-                    "functionScore": false
-                },
-                {
-                    "student": "XX",
-                    "answer": "Supposed living habitants of Mars.",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E7",
-                    "functionScore": false
-                },
-                {
-                    "student": "XX",
-                    "answer": "The central part of a living thing, fruit, which contains It’s seeds.",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E7",
-                    "functionScore": false
-                },
-                {
-                    "student": "XX",
-                    "answer": "A circular band.",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E7",
-                    "functionScore": false
-                },
-                {
-                    "student": "XX",
-                    "answer": "A body in the universe, not as big as earth or most other planet.",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E7",
-                    "functionScore": false
-                },
-                {
-                    "student": "XX",
-                    "answer": "Call of a plan or decision about something.",
-                    "weigth": 1,
                     "score": 0,
                     "method": "",
                     "function": "E7",
