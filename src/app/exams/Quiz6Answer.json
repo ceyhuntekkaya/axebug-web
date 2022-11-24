@@ -13,47 +13,47 @@
                 },
                 {
                     "student": "",
-                    "answer": "A",
-                    "weigth": 1,
+                    "answer": "B",
+                    "weigth": 1.4,
                     "score": 0,
                     "method": "",
-                    "function": "E10",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "A",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E10",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "D",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E10",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "C",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E10",
+                    "function": "E8",
                     "functionScore": false
                 },
                 {
                     "student": "",
                     "answer": "B",
-                    "weigth": 1,
+                    "weigth": 1.4,
                     "score": 0,
                     "method": "",
-                    "function": "E10",
+                    "function": "E8",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "C",
+                    "weigth": 1.4,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 1.4,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "B",
+                    "weigth": 1.4,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
                     "functionScore": false
                 }
             ],
@@ -69,8 +69,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "magnesium, alluminium, titanium.",
-                    "weigth": 3,
+                    "answer": "wormhole",
+                    "weigth": 4,
                     "score": 0,
                     "method": "",
                     "function": "E6",
@@ -78,8 +78,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "enough",
-                    "weigth": 3,
+                    "answer": "sphere",
+                    "weigth": 4,
                     "score": 0,
                     "method": "",
                     "function": "E6",
@@ -87,8 +87,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "experience.",
-                    "weigth": 3,
+                    "answer": "few minutes.",
+                    "weigth": 4,
                     "score": 0,
                     "method": "",
                     "function": "",
@@ -96,7 +96,16 @@
                 },
                 {
                     "student": "",
-                    "answer": "no life",
+                    "answer": "circle",
+                    "weigth": 4,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "reach",
                     "weigth": 2,
                     "score": 0,
                     "method": "",
@@ -105,8 +114,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "Earth.",
-                    "weigth": 2,
+                    "answer": "travel",
+                    "weigth": 4,
                     "score": 0,
                     "method": "",
                     "function": "E6",
@@ -114,24 +123,15 @@
                 },
                 {
                     "student": "",
-                    "answer": "solar system.",
-                    "weigth": 3,
+                    "answer": "warps",
+                    "weigth": 4,
                     "score": 0,
                     "method": "",
                     "function": "E6",
                     "functionScore": false
                 },
                 {
-                    "student": "",
-                    "answer": "unknown",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
+                    "student": "XX",
                     "answer": "for me?",
                     "weigth": 2,
                     "score": 0,
@@ -140,7 +140,7 @@
                     "functionScore": false
                 },
                 {
-                    "student": "",
+                    "student": "XX",
                     "answer": "look",
                     "weigth": 2,
                     "score": 0,
@@ -149,7 +149,7 @@
                     "functionScore": false
                 },
                 {
-                    "student": "",
+                    "student": "XX",
                     "answer": "No way!",
                     "weigth": 2,
                     "score": 0,
@@ -158,7 +158,7 @@
                     "functionScore": false
                 },
                 {
-                    "student": "",
+                    "student": "XX",
                     "answer": "please",
                     "weigth": 2,
                     "score": 0,
@@ -167,7 +167,7 @@
                     "functionScore": false
                 },
                 {
-                    "student": "",
+                    "student": "XX",
                     "answer": "call.",
                     "weigth": 2,
                     "score": 0,
@@ -176,7 +176,7 @@
                     "functionScore": false
                 },
                 {
-                    "student": "",
+                    "student": "XX",
                     "answer": "found life in space.",
                     "weigth": 3,
                     "score": 0,
@@ -185,7 +185,7 @@
                     "functionScore": false
                 },
                 {
-                    "student": "",
+                    "student": "XX",
                     "answer": "Lets go and find out.",
                     "weigth": 3,
                     "score": 0,
@@ -207,34 +207,7 @@
                 {
                     "student": "",
                     "answer": "C",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E7",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "A",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E7",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "E",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E7",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "B",
-                    "weigth": 1,
+                    "weigth": 3,
                     "score": 0,
                     "method": "",
                     "function": "E7",
@@ -243,7 +216,7 @@
                 {
                     "student": "",
                     "answer": "D",
-                    "weigth": 1,
+                    "weigth": 3,
                     "score": 0,
                     "method": "",
                     "function": "E7",
@@ -251,6 +224,33 @@
                 },
                 {
                     "student": "",
+                    "answer": "B",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "E",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "XX",
                     "answer": "Supposed living habitants of Mars.",
                     "weigth": 1,
                     "score": 0,
@@ -259,7 +259,7 @@
                     "functionScore": false
                 },
                 {
-                    "student": "",
+                    "student": "XX",
                     "answer": "The central part of a living thing, fruit, which contains It’s seeds.",
                     "weigth": 1,
                     "score": 0,
@@ -268,7 +268,7 @@
                     "functionScore": false
                 },
                 {
-                    "student": "",
+                    "student": "XX",
                     "answer": "A circular band.",
                     "weigth": 1,
                     "score": 0,
@@ -277,7 +277,7 @@
                     "functionScore": false
                 },
                 {
-                    "student": "",
+                    "student": "XX",
                     "answer": "A body in the universe, not as big as earth or most other planet.",
                     "weigth": 1,
                     "score": 0,
@@ -286,7 +286,7 @@
                     "functionScore": false
                 },
                 {
-                    "student": "",
+                    "student": "XX",
                     "answer": "Call of a plan or decision about something.",
                     "weigth": 1,
                     "score": 0,
@@ -307,7 +307,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Return",
+                    "answer": "minute",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -316,7 +316,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Emergency",
+                    "answer": "exactly",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -325,7 +325,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Experience",
+                    "answer": "kilometer",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -334,7 +334,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Narrow",
+                    "answer": "travel",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -343,7 +343,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Massive",
+                    "answer": "reach",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -352,7 +352,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Gravitational",
+                    "answer": "circle",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -361,7 +361,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Colour",
+                    "answer": "loosing",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -370,7 +370,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Hydrogen",
+                    "answer": "remember",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -379,7 +379,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Biggest",
+                    "answer": "hole",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -388,7 +388,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Rotate",
+                    "answer": "amazing",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -408,7 +408,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "IT HAS A RING SYSTEM",
+                    "answer": "SWITCHING TO STEALTH MODE IN FIVE SECONDS",
                     "weigth": 10,
                     "score": 0,
                     "method": "",
@@ -417,7 +417,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "IT SHOULD BE LARGE AND GLOBAL",
+                    "answer": "WE SHOULD FLY SLOWER",
                     "weigth": 10,
                     "score": 0,
                     "method": "",
@@ -426,7 +426,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "SO WE WILL SEE IT MORE CLEARLY",
+                    "answer": "DID WE JUST PASS MILLIONS OF KILOMETERS IN A FEW MINUTES",
                     "weigth": 10,
                     "score": 0,
                     "method": "",
@@ -435,7 +435,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "THIS WAS AN AMAZING EXPERIENCE",
+                    "answer": "WE WERE IN A NEIGHBOUR GALAXY WHEN WE GOT OUT OF THE HOLE",
                     "weigth": 10,
                     "score": 0,
                     "method": "",

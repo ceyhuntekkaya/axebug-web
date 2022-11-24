@@ -13,26 +13,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "A",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E10",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "A",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E10",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
                     "answer": "D",
-                    "weigth": 1,
+                    "weigth": 1.4,
                     "score": 0,
                     "method": "",
                     "function": "E10",
@@ -41,7 +23,25 @@
                 {
                     "student": "",
                     "answer": "C",
-                    "weigth": 1,
+                    "weigth": 1.4,
+                    "score": 0,
+                    "method": "",
+                    "function": "E10",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 1.4,
+                    "score": 0,
+                    "method": "",
+                    "function": "E10",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "C",
+                    "weigth": 1.4,
                     "score": 0,
                     "method": "",
                     "function": "E10",
@@ -50,7 +50,7 @@
                 {
                     "student": "",
                     "answer": "B",
-                    "weigth": 1,
+                    "weigth": 1.4,
                     "score": 0,
                     "method": "",
                     "function": "E10",
@@ -69,7 +69,16 @@
                 },
                 {
                     "student": "",
-                    "answer": "magnesium, alluminium, titanium.",
+                    "answer": "freely",
+                    "weigth": 4,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "tower",
                     "weigth": 3,
                     "score": 0,
                     "method": "",
@@ -78,7 +87,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "enough",
+                    "answer": "take a break",
                     "weigth": 3,
                     "score": 0,
                     "method": "",
@@ -87,34 +96,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "experience.",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "no life",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "Earth.",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "solar system.",
+                    "answer": "sos call",
                     "weigth": 3,
                     "score": 0,
                     "method": "",
@@ -123,7 +105,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "unknown",
+                    "answer": "send",
                     "weigth": 3,
                     "score": 0,
                     "method": "",
@@ -132,8 +114,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "for me?",
-                    "weigth": 2,
+                    "answer": "aid",
+                    "weigth": 3,
                     "score": 0,
                     "method": "",
                     "function": "E6",
@@ -141,8 +123,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "look",
-                    "weigth": 2,
+                    "answer": "energy shortage",
+                    "weigth": 3,
                     "score": 0,
                     "method": "",
                     "function": "E6",
@@ -150,8 +132,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "No way!",
-                    "weigth": 2,
+                    "answer": "extinct",
+                    "weigth": 3,
                     "score": 0,
                     "method": "",
                     "function": "E6",
@@ -159,6 +141,24 @@
                 },
                 {
                     "student": "",
+                    "answer": "source",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "salvation",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "XX",
                     "answer": "please",
                     "weigth": 2,
                     "score": 0,
@@ -167,7 +167,7 @@
                     "functionScore": false
                 },
                 {
-                    "student": "",
+                    "student": "XX",
                     "answer": "call.",
                     "weigth": 2,
                     "score": 0,
@@ -176,7 +176,7 @@
                     "functionScore": false
                 },
                 {
-                    "student": "",
+                    "student": "XX",
                     "answer": "found life in space.",
                     "weigth": 3,
                     "score": 0,
@@ -185,7 +185,7 @@
                     "functionScore": false
                 },
                 {
-                    "student": "",
+                    "student": "XX",
                     "answer": "Lets go and find out.",
                     "weigth": 3,
                     "score": 0,
@@ -206,8 +206,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "C",
-                    "weigth": 1,
+                    "answer": "B",
+                    "weigth": 2.6,
                     "score": 0,
                     "method": "",
                     "function": "E7",
@@ -216,25 +216,7 @@
                 {
                     "student": "",
                     "answer": "A",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E7",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "E",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E7",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "B",
-                    "weigth": 1,
+                    "weigth": 2.6,
                     "score": 0,
                     "method": "",
                     "function": "E7",
@@ -243,7 +225,7 @@
                 {
                     "student": "",
                     "answer": "D",
-                    "weigth": 1,
+                    "weigth": 2.6,
                     "score": 0,
                     "method": "",
                     "function": "E7",
@@ -251,6 +233,24 @@
                 },
                 {
                     "student": "",
+                    "answer": "E",
+                    "weigth": 2.6,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "C",
+                    "weigth": 2.6,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "XX",
                     "answer": "Supposed living habitants of Mars.",
                     "weigth": 1,
                     "score": 0,
@@ -259,7 +259,7 @@
                     "functionScore": false
                 },
                 {
-                    "student": "",
+                    "student": "XX",
                     "answer": "The central part of a living thing, fruit, which contains It’s seeds.",
                     "weigth": 1,
                     "score": 0,
@@ -268,7 +268,7 @@
                     "functionScore": false
                 },
                 {
-                    "student": "",
+                    "student": "XX",
                     "answer": "A circular band.",
                     "weigth": 1,
                     "score": 0,
@@ -277,7 +277,7 @@
                     "functionScore": false
                 },
                 {
-                    "student": "",
+                    "student": "XX",
                     "answer": "A body in the universe, not as big as earth or most other planet.",
                     "weigth": 1,
                     "score": 0,
@@ -286,7 +286,7 @@
                     "functionScore": false
                 },
                 {
-                    "student": "",
+                    "student": "XX",
                     "answer": "Call of a plan or decision about something.",
                     "weigth": 1,
                     "score": 0,
@@ -307,7 +307,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Return",
+                    "answer": "poor",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -316,7 +316,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Emergency",
+                    "answer": "colony",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -325,7 +325,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Experience",
+                    "answer": "travel",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -334,7 +334,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Narrow",
+                    "answer": "headquarter",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -343,7 +343,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Massive",
+                    "answer": "think",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -352,7 +352,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Gravitational",
+                    "answer": "axebug",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -361,7 +361,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Colour",
+                    "answer": "return",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -370,7 +370,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Hydrogen",
+                    "answer": "treasure",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -379,7 +379,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Biggest",
+                    "answer": "target",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -388,7 +388,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Rotate",
+                    "answer": "recharge",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -408,7 +408,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "IT HAS A RING SYSTEM",
+                    "answer": "PRECISELY",
                     "weigth": 10,
                     "score": 0,
                     "method": "",
@@ -417,7 +417,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "IT SHOULD BE LARGE AND GLOBAL",
+                    "answer": "I THINK THE AID WAS REQUESTED BY THE HEADQUARTER",
                     "weigth": 10,
                     "score": 0,
                     "method": "",
@@ -426,7 +426,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "SO WE WILL SEE IT MORE CLEARLY",
+                    "answer": "WE WILL TAKE YOU TO THE HEADQUARTER IMMEDIATELY",
                     "weigth": 10,
                     "score": 0,
                     "method": "",
@@ -435,7 +435,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "THIS WAS AN AMAZING EXPERIENCE",
+                    "answer": "HOW MUCH FURTHER",
                     "weigth": 10,
                     "score": 0,
                     "method": "",
