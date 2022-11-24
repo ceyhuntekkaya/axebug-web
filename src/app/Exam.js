@@ -5,6 +5,7 @@ import Quiz1 from './exams/Quiz1';
 import Quiz2 from './exams/Quiz2';
 import Quiz3 from './exams/Quiz3';
 import Quiz4 from './exams/Quiz4';
+import Quiz5 from './exams/Quiz5';
 
 import useExam from "../api/useExam"
 import FinishExam from './exams/FinishExam';
@@ -103,6 +104,9 @@ export default function Exam() {
             }
             {
                 examName === "Quiz 4" ? <Quiz4 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 5" ? <Quiz5 sendExam={sendExam} /> : null
             }
             {
                 examName === "Finish" ? <FinishExam /> : null
