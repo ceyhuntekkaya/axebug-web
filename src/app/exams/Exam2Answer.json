@@ -13,7 +13,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "His teachers name was Max Talmund.",
+                    "answer": "kilometers",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -22,7 +22,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Yes, He was born and raised in Germany.",
+                    "answer": "wormhole",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -31,7 +31,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Because there were political issues.",
+                    "answer": "exactly",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -40,7 +40,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "He focused on  time,space,matter,energy and gravity.",
+                    "answer": "sphere",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -49,7 +49,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "It means he is a very knowledgable man with a lot of talent.",
+                    "answer": "paper",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -58,11 +58,11 @@
                 },
                 {
                     "student": "",
-                    "answer": "B",
-                    "weigth": 1,
+                    "answer": "",
+                    "weigth": 0,
                     "score": 0,
                     "method": "",
-                    "function": "E12",
+                    "function": "",
                     "functionScore": false
                 },
                 {
@@ -76,369 +76,6 @@
                 },
                 {
                     "student": "",
-                    "answer": "A",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E17",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "B",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E12",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "C",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E12",
-                    "functionScore": false
-                }
-            ],
-            [
-                {
-                    "student": "",
-                    "answer": "",
-                    "weigth": 0,
-                    "score": 0,
-                    "method": "",
-                    "function": "",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "pilot",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "plane toys",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "story",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "accident",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "England",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "nightmare",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "nodded",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "hurt",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "co pilots",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "hero",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "hug",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "magazines",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "sky",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                }
-            ]
-        ],
-        [
-            [
-                {
-                    "student": "",
-                    "answer": "",
-                    "weigth": 0,
-                    "score": 0,
-                    "method": "",
-                    "function": "",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "experience",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E9",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "other than earth",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E9",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "Ladybug",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E9",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "don’t you get it?",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E9",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "Axebug",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E9",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "is life or not",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E9",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "talk about this later",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E9",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "Dung beetle",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E9",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "look at the control panel",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E9",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "if you see this message",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E9",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "we are cancelling",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E9",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "life in space",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E9",
-                    "functionScore": false
-                }
-            ],
-            [
-                {
-                    "student": "",
-                    "answer": "",
-                    "weigth": 0,
-                    "score": 0,
-                    "method": "",
-                    "function": "",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "5",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E9",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "4",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E9",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "1",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E9",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "3",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E9",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "2",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E9",
-                    "functionScore": false
-                }
-            ]
-        ],
-        [
-            [
-                {
-                    "student": "",
-                    "answer": "",
-                    "weigth": 0,
-                    "score": 0,
-                    "method": "",
-                    "function": "",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "D",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E17",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "A",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E17",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
                     "answer": "F",
                     "weigth": 1,
                     "score": 0,
@@ -448,20 +85,49 @@
                 },
                 {
                     "student": "",
-                    "answer": "B",
+                    "answer": "G",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
-                    "function": "E17",
+                    "function": "E12",
                     "functionScore": false
                 },
                 {
                     "student": "",
-                    "answer": "C",
+                    "answer": "H",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
-                    "function": "E17",
+                    "function": "E12",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "",
+                    "answer": "J",
+                    "weigth": 0,
+                    "score": 0,
+                    "method": "",
+                    "function": "",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "I",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
                     "functionScore": false
                 },
                 {
@@ -470,11 +136,27 @@
                     "weigth": 1,
                     "score": 0,
                     "method": "",
-                    "function": "E17",
+                    "function": "E15",
                     "functionScore": false
-                }
-            ],
-            [
+                },
+                {
+                    "student": "",
+                    "answer": "B",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
+                    "functionScore": false
+                },
                 {
                     "student": "",
                     "answer": "",
@@ -486,8 +168,371 @@
                 },
                 {
                     "student": "",
-                    "answer": "SOS",
-                    "weigth": 0.5,
+                    "answer": "TRUE",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E14",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "TRUE",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E14",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "TRUE",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E14",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "FALSE",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E14",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "TRUE",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E14",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "FALSE",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E14",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "FALSE",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E14",
+                    "functionScore": false
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "student": "",
+                    "answer": "FALSE",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E14",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "TRUE",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E14",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "FALSE",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E14",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "",
+                    "weigth": 0,
+                    "score": 0,
+                    "method": "",
+                    "function": "",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "ALL DONE",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "IS THIS A JOKE",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "NICE AND EASY",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "WHICH PLANET ARE YOU FROM",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "WE CAME HERE FOR YOUR SOS CALL",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "TWENTY MINUTES TO TARGET",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "HOW RIDICILOUS",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E9",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "WE ARE AT HEADQUARTES",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "CAN WE ROLL AND FIND IT",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "",
+                    "answer": "WHERE ARE WE GOING TO FIND IT",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "STROLL AROUND",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "TOWER",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "RECHARGE YOUR BATTERIES",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "SOS CALL",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "SPLENDID",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
+                    "functionScore": false
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "student": "",
+                    "answer": "PLANET",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "",
+                    "weigth": 0,
+                    "score": 0,
+                    "method": "",
+                    "function": "",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Any type of call for help",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Receive to have, to have been delivered something",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "To bring something",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "Help",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "The point that is aimed",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "",
+                    "answer": "Asking for something",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "To detach",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "To walk slowly",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "An error in action",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "An act of saving something from harm",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E15",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "",
+                    "weigth": 0,
+                    "score": 0,
+                    "method": "",
+                    "function": "",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "DIFFICULT",
+                    "weigth": 1,
                     "score": 0,
                     "method": "",
                     "function": "E18",
@@ -495,8 +540,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "VISIT",
-                    "weigth": 0.5,
+                    "answer": "BE QUICK",
+                    "weigth": 1,
                     "score": 0,
                     "method": "",
                     "function": "E18",
@@ -504,8 +549,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "RIGHT",
-                    "weigth": 0.5,
+                    "answer": "GO SLOW",
+                    "weigth": 1,
                     "score": 0,
                     "method": "",
                     "function": "E18",
@@ -513,8 +558,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "SUPER",
-                    "weigth": 0.5,
+                    "answer": "INCREASE",
+                    "weigth": 1,
                     "score": 0,
                     "method": "",
                     "function": "E18",
@@ -522,8 +567,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "SEND",
-                    "weigth": 0.5,
+                    "answer": "EXIT",
+                    "weigth": 1,
                     "score": 0,
                     "method": "",
                     "function": "E18",
@@ -531,8 +576,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "END",
-                    "weigth": 0.5,
+                    "answer": "STOP",
+                    "weigth": 1,
                     "score": 0,
                     "method": "",
                     "function": "E18",
@@ -540,53 +585,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "QUICK",
-                    "weigth": 0.5,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "MIDDLE",
-                    "weigth": 0.5,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "CORRECT",
-                    "weigth": 0.5,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "WEIRD",
-                    "weigth": 0.5,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "KING",
-                    "weigth": 0.5,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "UNTIDY",
-                    "weigth": 0.5,
+                    "answer": "ENTER",
+                    "weigth": 1,
                     "score": 0,
                     "method": "",
                     "function": "E18",
@@ -598,6 +598,33 @@
             [
                 {
                     "student": "",
+                    "answer": "BORED",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E18",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "START",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E18",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "ALL TOGETHER",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E18",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
                     "answer": "",
                     "weigth": 0,
                     "score": 0,
@@ -607,8 +634,30 @@
                 },
                 {
                     "student": "",
-                    "answer": "COULD YOU PLEASE OPEN THE DOOR?",
+                    "answer": "I’M TRANSFERRING IT TO THE MONITOR NOW",
+                    "weigth": 10,
+                    "score": 0,
+                    "method": "",
+                    "function": "E19",
+                    "functionScore": false
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "student": "",
+                    "answer": "I LOST CONTROL!",
                     "weigth": 9,
+                    "score": 0,
+                    "method": "",
+                    "function": "",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "MOVE AHEAD GENTLY",
+                    "weigth": 10,
                     "score": 0,
                     "method": "",
                     "function": "E19",
@@ -616,8 +665,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "KNOWLEDGE REQUIRES A LOT OF EFFORT",
-                    "weigth": 9,
+                    "answer": "BECAUSE ALL YOU CAN THINK ABOUT IS POOP AND ROLLING IT",
+                    "weigth": 10,
                     "score": 0,
                     "method": "",
                     "function": "E19",
@@ -625,20 +674,11 @@
                 },
                 {
                     "student": "",
-                    "answer": "CLOSE YOUR EYES UNTIL I TELL YOU TO OPEN THEM",
-                    "weigth": 9,
+                    "answer": "",
+                    "weigth": 0,
                     "score": 0,
                     "method": "",
-                    "function": "E19",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "THERE IS URANUS IN THE SEVENTH PLACE",
-                    "weigth": 9,
-                    "score": 0,
-                    "method": "",
-                    "function": "E19",
+                    "function": "",
                     "functionScore": false
                 }
             ]
