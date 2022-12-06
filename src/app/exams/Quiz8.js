@@ -23,18 +23,18 @@ export default function Quiz8(props) {
 
     const setStudentOpenAnswer = (skils, section, queationNumber, value, compare) => {
         const temp = { ...answer };
-        temp[skils][section][queationNumber].student = value;
-        let finalScore = temp[skils][section][queationNumber].weigth;
+        temp.result[skils][section][queationNumber].student = value;
+        let finalScore = temp.result[skils][section][queationNumber].weigth;
 
-        var similarity = stringSimilarity.compareTwoStrings(clearText(value), clearText(temp[skils][section][queationNumber].answer));
-        finalScore = similarity * parseFloat(temp[skils][section][queationNumber].weigth)
-        temp[skils][section][queationNumber].score = finalScore;
+        var similarity = stringSimilarity.compareTwoStrings(clearText(value), clearText(temp.result[skils][section][queationNumber].answer));
+        finalScore = similarity * parseFloat(temp.result[skils][section][queationNumber].weigth)
+        temp.result[skils][section][queationNumber].score = finalScore;
 
-        if (finalScore > (temp[skils][section][queationNumber].weigth / 10 * 6)) {
-            temp[skils][section][queationNumber].functionScore = true;
+        if (finalScore > (temp.result[skils][section][queationNumber].weigth / 10 * 6)) {
+            temp.result[skils][section][queationNumber].functionScore = true;
         }
         else {
-            temp[skils][section][queationNumber].functionScore = false;
+            temp.result[skils][section][queationNumber].functionScore = false;
         }
         setAnswer(temp)
     }
