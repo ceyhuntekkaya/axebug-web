@@ -19,12 +19,16 @@ export default function Report() {
   const [studentScore, setStudentScore] = useStudentWork(scoreModel);
   const [returnUrl, setReturnUrl] = useState("");
 
+
+
+
   useEffect(() => {
     document.body.style.backgroundColor = 'white';
     setReportData("createReport", { studentId: std, examId: id })
     setStudentScore("studentScore", std)
     // eslint-disable-next-line 
   }, [])
+
 
 
   useEffect(() => {
@@ -144,7 +148,7 @@ export default function Report() {
           <div className='container m-5'>
             <div className='row text-white bg-dark p-4'>
               <div className='col-6 text-white bg-dark d-flex justify-content-center'><h2><b><Link className='text-white' to={returnUrl}>AXEBUG REPORT</Link></b></h2></div>
-              <div className='col-3 text-white bg-dark d-flex justify-content-center'><h2><b>{reportData != null ? reportData.exam.name : null}</b></h2></div>
+              <div className='col-3 text-white bg-dark d-flex justify-content-center'><h2><b>{reportData.exam ? reportData.exam.name ? reportData.exam.name : null : null}</b></h2></div>
               <div className='col-3 text-white bg-dark d-flex justify-content-center'><h2><b>{reportData.student.name} {reportData.student.surname}</b></h2></div>
             </div>
             <div className='row mt-2 text-white bg-dark p-1'>

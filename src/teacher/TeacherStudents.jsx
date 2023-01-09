@@ -37,7 +37,7 @@ export default function TeacherStudents() {
             studentList.map((student, key) =>
                   <tr key={key} className="p-2">
                     <td className="p-2">{key+1}</td>
-                    <td className="p-2">{student.name}</td>
+                    <td className="p-2">{student.name} {student.surname}</td>
                     <td className="p-2"><Link to={`/teacher-student-score/${student.id}`} className='btn btn-info'>SCORES</Link></td>
                   </tr>
                 )
