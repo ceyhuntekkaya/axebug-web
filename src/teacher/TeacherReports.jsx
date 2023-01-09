@@ -33,7 +33,6 @@ export default function TeacherReports() {
   const getReport = () => {
     if (examId !== 0 && studentId !== 0) {
       setTimeStamp(Date.now().toString())
-
     }
   }
 
