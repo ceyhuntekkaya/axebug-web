@@ -220,7 +220,7 @@ export default function Quiz8(props) {
                                                     </div>
                                                     <div className="alert alert-dark" role="alert">
                                                         <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                                            <source src={`../../assets/OUIZ_5_B_LISTENING.mp3`} type="audio/mpeg" />
+                                                            <source src={`../../assets/OUIZ_8_B_LISTENING.mp3`} type="audio/mpeg" />
                                                         </audio>
                                                     </div>
                                                     <div className="paragraf">
@@ -460,7 +460,7 @@ export default function Quiz8(props) {
                                                     </div>
                                                     <div className="alert alert-dark" role="alert">
                                                         <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                                            <source src={`../../assets/p016_001_c2_e5.mp3`} type="audio/mpeg" />
+                                                            <source src={`../../assets/p0135_002_c2_e8.mp3`} type="audio/mpeg" />
                                                         </audio>
                                                     </div>
                                                     <div className='border border-success p-3 mt-3'>
@@ -468,7 +468,7 @@ export default function Quiz8(props) {
                                                     </div>
                                                     <div className="alert alert-dark" role="alert">
                                                         <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                                            <source src={`../../assets/p027_001_c2_e5.mp3`} type="audio/mpeg" />
+                                                            <source src={`../../assets/p0146_001_c2_e8.mp3`} type="audio/mpeg" />
                                                         </audio>
                                                     </div>
                                                     <div className='border border-success p-3 mt-3'>
@@ -476,7 +476,7 @@ export default function Quiz8(props) {
                                                     </div>
                                                     <div className="alert alert-dark" role="alert">
                                                         <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                                            <source src={`../../assets/p035_003_c2_e5.mp3`} type="audio/mpeg" />
+                                                            <source src={`../../assets/p0150_001_c2_e8.mp3`} type="audio/mpeg" />
                                                         </audio>
                                                     </div>
                                                     <div className='border border-success p-3 mt-3'>
@@ -484,7 +484,7 @@ export default function Quiz8(props) {
                                                     </div>
                                                     <div className="alert alert-dark" role="alert">
                                                         <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                                            <source src={`../../assets/p039_001_c2_e5.mp3`} type="audio/mpeg" />
+                                                            <source src={`../../assets/p0157_001_c2_e8.mp3`} type="audio/mpeg" />
                                                         </audio>
                                                     </div>
                                                     <div className='border border-success p-3 mt-3'>

@@ -6,7 +6,6 @@ import useTask from '../api/useTask';
 import { useParams } from 'react-router-dom';
 import useExam from '../api/useExam';
 import Axios from 'axios';
-
 var fileDownload = require('js-file-download');
 
 export default function TeacherContents() {
@@ -192,7 +191,7 @@ export default function TeacherContents() {
                   linkType === "COMICS" ?
                     <React.Fragment>
                       <div className="col-3 p-2"><a target="_blank" href="../HTML/Chapter1/index.html"><img className='w-100' src={`../assets/ch1.png`} /></a></div>
-                      <div className="col-3 p-2"><a target="_blank" href="../HTML/Chapter2/index.html"><img className='w-100' src={`../assets/ch2.png`} /></a></div>
+                      <div className="col-3 p-2"><a target="_blank" href="../HTML/Chapter2v3/index.html"><img className='w-100' src={`../assets/ch2.png`} /></a></div>
                       <div className="col-3 p-2"><a target="_blank" href="../HTML/Chapter3/index.html"><img className='w-100' src={`../assets/ch3.png`} /></a></div>
                       <div className="col-3 p-2"><a target="_blank" href="../HTML/Chapter4/index.html"><img className='w-100' src={`../assets/ch4.png`} /></a></div>
                     </React.Fragment>
@@ -203,14 +202,11 @@ export default function TeacherContents() {
                     <React.Fragment>
 
                       <div className="col-3 p-2"><a target="_blank" href="../HTML/Activite1/index.html"><img className='w-100' src={`../assets/ab1.png`} /></a>
-                      
-
                               <a className='mt-2 border border-success p-2 d-flex justify-content-center' target="_blank" href={`http://madeinbrain.net/pdf/Activite_1_Book_key.pdf`}>
                                 <span>DOWNLOAD KEY</span>
                               </a>
-
                       </div>
-                      <div className="col-3 p-2"><a target="_blank" href="../HTML/Activite2/index.html"><img className='w-100' src={`../assets/ab2.png`} /></a>
+                      <div className="col-3 p-2"><a target="_blank" href="../HTML/Activite2v3/index.html"><img className='w-100' src={`../assets/ab2.png`} /></a>
                         <a target="_blank" href="../pdf/Activite_2_Book_key.pdf">
                           <div className='mt-2 border border-success p-2 d-flex justify-content-center'><b>DOWNLOAD KEY</b></div></a></div>
                       <div className="col-3 p-2"><a target="_blank" href="../HTML/Activite3/index.html"><img className='w-100' src={`../assets/ab3.png`} /></a>
