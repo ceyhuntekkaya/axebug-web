@@ -160,7 +160,7 @@ export default function StudentSingleReport(params) {
                         reportData.exam ?
                             <div className='container m-5'>
                                 <div className='row text-white bg-dark p-4'>
-                                    <div className='col-6 text-white bg-dark d-flex justify-content-center'><h2><b><Link className='text-white' to={returnUrl}>AXEBUG REPORT</Link></b></h2></div>
+                                    <div className='col-6 text-white bg-dark d-flex justify-content-center'><h2><b><Link className='text-white'>AXEBUG REPORT</Link></b></h2></div>
                                     <div className='col-3 text-white bg-dark d-flex justify-content-center'><h2><b>{reportData.exam ? reportData.exam.name ? reportData.exam.name : null : null}</b></h2></div>
                                     <div className='col-3 text-white bg-dark d-flex justify-content-center'><h2><b>{reportData.student.name} {reportData.student.surname}</b></h2></div>
                                 </div>
