@@ -220,7 +220,7 @@ export default function Quiz5(props) {
                                                     </div>
                                                     <div className="alert alert-dark" role="alert">
                                                         <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                                            <source src={`../../assets/OUIZ_5_B_LISTENING.mp3`} type="audio/mpeg" />
+                                                            <source src={`http://madeinbrain.net/axebug/assets/OUIZ_5_B_LISTENING.mp3`} type="audio/mpeg" />
                                                         </audio>
                                                     </div>
                                                     <div className="paragraf">
@@ -408,7 +408,7 @@ export default function Quiz5(props) {
                                                     </div>
                                                     <div className="alert alert-dark" role="alert">
                                                         <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                                            <source src={`../../assets/p016_001_c2_e5.mp3`} type="audio/mpeg" />
+                                                            <source src={`http://madeinbrain.net/axebug/assets/p016_001_c2_e5.mp3`} type="audio/mpeg" />
                                                         </audio>
                                                     </div>
                                                     <div className='border border-success p-3 mt-3'>
@@ -416,7 +416,7 @@ export default function Quiz5(props) {
                                                     </div>
                                                     <div className="alert alert-dark" role="alert">
                                                         <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                                            <source src={`../../assets/p027_001_c2_e5.mp3`} type="audio/mpeg" />
+                                                            <source src={`http://madeinbrain.net/axebug/assets/p027_001_c2_e5.mp3`} type="audio/mpeg" />
                                                         </audio>
                                                     </div>
                                                     <div className='border border-success p-3 mt-3'>
@@ -424,7 +424,7 @@ export default function Quiz5(props) {
                                                     </div>
                                                     <div className="alert alert-dark" role="alert">
                                                         <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                                            <source src={`../../assets/p035_003_c2_e5.mp3`} type="audio/mpeg" />
+                                                            <source src={`http://madeinbrain.net/axebug/assets/p035_003_c2_e5.mp3`} type="audio/mpeg" />
                                                         </audio>
                                                     </div>
                                                     <div className='border border-success p-3 mt-3'>
@@ -432,7 +432,7 @@ export default function Quiz5(props) {
                                                     </div>
                                                     <div className="alert alert-dark" role="alert">
                                                         <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                                            <source src={`../../assets/p039_001_c2_e5.mp3`} type="audio/mpeg" />
+                                                            <source src={`http://madeinbrain.net/axebug/assets/p039_001_c2_e5.mp3`} type="audio/mpeg" />
                                                         </audio>
                                                     </div>
                                                     <div className='border border-success p-3 mt-3'>

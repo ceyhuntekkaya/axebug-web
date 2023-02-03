@@ -19,17 +19,12 @@ export default function Report() {
   const [studentScore, setStudentScore] = useStudentWork(scoreModel);
   const [returnUrl, setReturnUrl] = useState("");
 
-
-
-
   useEffect(() => {
     document.body.style.backgroundColor = 'white';
     setReportData("createReport", { studentId: std, examId: id })
     setStudentScore("studentScore", std)
     // eslint-disable-next-line 
   }, [])
-
-
 
   useEffect(() => {
     if (localStorage.getItem("student") !== null) { setReturnUrl("/student") }
