@@ -221,8 +221,8 @@ export default function TeacherContents() {
                 {
                   linkType === "CONNECTION" ?
                     <React.Fragment>
-                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Mathematics/index.html" rel="noreferrer"><img className='w-100' src={`http://madeinbrain.net/axebug/assets/math.png`} /></a></div>
-                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Science/index.html" rel="noreferrer"><img className='w-100' src={`http://madeinbrain.net/axebug/assets/science.png`} /></a></div>
+                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Mathematics/index.html" rel="noreferrer"><img className='w-100' src={`http://madeinbrain.net/axebug/assets/math.png`} alt=""/></a></div>
+                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Science/index.html" rel="noreferrer"><img className='w-100' src={`http://madeinbrain.net/axebug/assets/science.png`} alt=""/></a></div>
                     </React.Fragment>
                     : null
                 }
