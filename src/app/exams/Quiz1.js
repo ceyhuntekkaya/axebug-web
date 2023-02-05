@@ -227,7 +227,7 @@ export default function Quiz1(props) {
                           </div>
                           <div className="alert alert-dark" role="alert">
                             <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                              <source src={`http://madeinbrain.net/axebug/assets/quiz_listening_c1_e1.mp3`} type="audio/mpeg" />
+                              <source src={`../../assets/quiz_listening_c1_e1.mp3`} type="audio/mpeg" />
                             </audio>
                           </div>
 
@@ -505,7 +505,7 @@ export default function Quiz1(props) {
                           </div>
                           <div className="alert alert-dark" role="alert">
                             <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                              <source src={`http://madeinbrain.net/axebug/assets/p003_03_c1e1.mp3`} type="audio/mpeg" />
+                              <source src={`../../assets/p003_03_c1e1.mp3`} type="audio/mpeg" />
                             </audio>
                           </div>
                           <div className='border border-success p-3 mt-3'>
@@ -513,7 +513,7 @@ export default function Quiz1(props) {
                           </div>
                           <div className="alert alert-dark" role="alert">
                             <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                              <source src={`http://madeinbrain.net/axebug/assets/p009_02_c1e1.mp3`} type="audio/mpeg" />
+                              <source src={`../../assets/p009_02_c1e1.mp3`} type="audio/mpeg" />
                             </audio>
                           </div>
                           <div className='border border-success p-3 mt-3'>
@@ -521,7 +521,7 @@ export default function Quiz1(props) {
                           </div>
                           <div className="alert alert-dark" role="alert">
                             <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                              <source src={`http://madeinbrain.net/axebug/assets/p023_01_c1e1.mp3`} type="audio/mpeg" />
+                              <source src={`../../assets/p023_01_c1e1.mp3`} type="audio/mpeg" />
                             </audio>
                           </div>
                           <div className='border border-success p-3 mt-3'>
@@ -529,7 +529,7 @@ export default function Quiz1(props) {
                           </div>
                           <div className="alert alert-dark" role="alert">
                             <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                              <source src={`http://madeinbrain.net/axebug/assets/p029_01_c1e2.mp3`} type="audio/mpeg" />
+                              <source src={`../../assets/p029_01_c1e2.mp3`} type="audio/mpeg" />
                             </audio>
                           </div>
                           <div className='border border-success p-3 mt-3'>

@@ -190,10 +190,10 @@ export default function TeacherContents() {
                 {
                   linkType === "COMICS" ?
                     <React.Fragment>
-                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Chapter1/index.html"><img className='w-100' src={`http://madeinbrain.net/axebug/assets/ch1.png`} /></a></div>
-                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Chapter2v3/index.html"><img className='w-100' src={`http://madeinbrain.net/axebug/assets/ch2.png`} /></a></div>
-                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Chapter3/index.html"><img className='w-100' src={`http://madeinbrain.net/axebug/assets/ch3.png`} /></a></div>
-                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Chapter4/index.html"><img className='w-100' src={`http://madeinbrain.net/axebug/assets/ch4.png`} /></a></div>
+                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Chapter1/index.html"><img className='w-100' src={`../../assets/ch1.png`} /></a></div>
+                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Chapter2v3/index.html"><img className='w-100' src={`../../assets/ch2.png`} /></a></div>
+                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Chapter3/index.html"><img className='w-100' src={`../../assets/ch3.png`} /></a></div>
+                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Chapter4/index.html"><img className='w-100' src={`../../assets/ch4.png`} /></a></div>
                     </React.Fragment>
                     : null
                 }
@@ -201,18 +201,18 @@ export default function TeacherContents() {
                   linkType === "ACTIVTY" ?
                     <React.Fragment>
 
-                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Activite1/index.html" rel="noreferrer"><img className='w-100' src={`http://madeinbrain.net/axebug/assets/ab1.png`} /></a>
+                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Activite1/index.html" rel="noreferrer"><img className='w-100' src={`../../assets/ab1.png`} /></a>
                               <a className='mt-2 border border-success p-2 d-flex justify-content-center' target="_blank" href={`http://madeinbrain.net/pdf/Activite_1_Book_key.pdf`} rel="noreferrer">
                                 <span>DOWNLOAD KEY</span>
                               </a>
                       </div>
-                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Activite2v3/index.html" rel="noreferrer"><img className='w-100' src={`http://madeinbrain.net/axebug/assets/ab2.png`} /></a>
+                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Activite2v3/index.html" rel="noreferrer"><img className='w-100' src={`../../assets/ab2.png`} /></a>
                         <a target="_blank" href="../pdf/Activite_2_Book_key.pdf">
                           <div className='mt-2 border border-success p-2 d-flex justify-content-center'><b>DOWNLOAD KEY</b></div></a></div>
-                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Activite3/index.html" rel="noreferrer"><img className='w-100' src={`http://madeinbrain.net/axebug/assets/ab3.png`} /></a>
+                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Activite3/index.html" rel="noreferrer"><img className='w-100' src={`../../assets/ab3.png`} /></a>
                         <a target="_blank" href="../pdf/Activite_3_Book_key.pdf">
                           <div className='mt-2 border border-success p-2 d-flex justify-content-center'><b>DOWNLOAD KEY</b></div></a></div>
-                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Activite4/index.html" rel="noreferrer"><img className='w-100' src={`http://madeinbrain.net/axebug/assets/ab4.png`} /></a>
+                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Activite4/index.html" rel="noreferrer"><img className='w-100' src={`../../assets/ab4.png`} /></a>
                         <a target="_blank" href="../pdf/Activite_4_Book_key.pdf">
                           <div className='mt-2 border border-success p-2 d-flex justify-content-center'><b>DOWNLOAD KEY</b></div></a></div>
                     </React.Fragment>
@@ -221,8 +221,8 @@ export default function TeacherContents() {
                 {
                   linkType === "CONNECTION" ?
                     <React.Fragment>
-                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Mathematics/index.html" rel="noreferrer"><img className='w-100' src={`http://madeinbrain.net/axebug/assets/math.png`} /></a></div>
-                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Science/index.html" rel="noreferrer"><img className='w-100' src={`http://madeinbrain.net/axebug/assets/science.png`} /></a></div>
+                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Mathematics/index.html" rel="noreferrer"><img className='w-100' src={`../../assets/math.png`} /></a></div>
+                      <div className="col-3 p-2"><a target="_blank" href="http://madeinbrain.net/axebug/html/Science/index.html" rel="noreferrer"><img className='w-100' src={`../../assets/science.png`} /></a></div>
                     </React.Fragment>
                     : null
                 }

@@ -81,7 +81,7 @@ export default function WordBank(props) {
                                     </div>
                                     <div className='col-8 ml-5'>
                                         {/* <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                            <source src={`http://madeinbrain.net/axebug/assets/${selectedWord.soundUrl}`} type="audio/mpeg" />
+                                            <source src={`../../assets/${selectedWord.soundUrl}`} type="audio/mpeg" />
                                         </audio> */}
                                         <div className='boxWhite p-2'>
                                             <div>
