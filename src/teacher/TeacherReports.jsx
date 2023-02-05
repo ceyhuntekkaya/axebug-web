@@ -29,7 +29,6 @@ export default function TeacherReports() {
     }
   }, [schoolRoomId])
 
-
   const getReport = () => {
     if (examId !== 0 && studentId !== 0) {
       setTimeStamp(Date.now().toString())
