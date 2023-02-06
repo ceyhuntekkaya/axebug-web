@@ -75,19 +75,30 @@ export default function ContentBasePanel(props) {
         setSpeechValue(value);
         props.setEvulations(level, text, value)
     }
-
     const nextExersize = () => {
-        if (level < 4) {
-            setLevel(level + 1);
-        }
-        else {
-            props.onNextContent();
-        }
+
+        if (level === 1) { setLevel(4);  }
+        if (level === 4) { setLevel(2);  }
+        if (level === 2) { setLevel(3); }
+        if (level === 3) { props.onNextContent();  }
+
+
         clearValues()
     }
+
+
+
+
     const prevtExersize = () => {
         if (level > 1) {
-            setLevel(level - 1);
+
+            if (level === 3) setLevel(2);
+            if (level === 2) setLevel(4);
+            if (level === 4) setLevel(1);
+
+
+
+            
         }
         clearValues()
     }
@@ -207,7 +218,7 @@ export default function ContentBasePanel(props) {
                                 <div className='col-auto'><button className="btn btn-success" onClick={prevtExersize}>Prev</button></div>
                                 : null
                         }
-                        <div className='col-auto'><button className="btn btn-success pl-2" onClick={nextExersize}>{level === 4 ? "Next Panel" : "Next"}</button></div>
+                        <div className='col-auto'><button className="btn btn-success pl-2" onClick={nextExersize}>{level === 3 ? "Next Panel" : "Next"}</button></div>
                     </div>
                 </div>
             </div>

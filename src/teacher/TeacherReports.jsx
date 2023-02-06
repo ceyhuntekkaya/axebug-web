@@ -36,7 +36,6 @@ export default function TeacherReports() {
     }
   }
 
-  console.log(timeStamp && examId !== 0 && studentId !== 0)
 
   return (
     <div className='container'>

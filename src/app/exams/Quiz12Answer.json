@@ -1,0 +1,367 @@
+{
+    "result": [
+        [
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "D",
+                    "weigth": 1.4,
+                    "score": 0,
+                    "method": "",
+                    "function": "E10",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "C",
+                    "weigth": 1.4,
+                    "score": 0,
+                    "method": "",
+                    "function": "E10",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 1.4,
+                    "score": 0,
+                    "method": "",
+                    "function": "E10",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "C",
+                    "weigth": 1.4,
+                    "score": 0,
+                    "method": "",
+                    "function": "E10",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "B",
+                    "weigth": 1.4,
+                    "score": 0,
+                    "method": "",
+                    "function": "E10",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "freely",
+                    "weigth": 4,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "tower",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "take a break",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "sos call",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "send",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "aid",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "energy shortage",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "extinct",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "source",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "salvation",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "B",
+                    "weigth": 2.6,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 2.6,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "D",
+                    "weigth": 2.6,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "E",
+                    "weigth": 2.6,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "C",
+                    "weigth": 2.6,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "poor",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "colony",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "travel",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "headquarter",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "think",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "axebug",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "return",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "treasure",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "target",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "recharge",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "PRECISELY",
+                    "weigth": 10,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "I THINK THE AID WAS REQUESTED BY THE HEADQUARTER",
+                    "weigth": 10,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "WE WILL TAKE YOU TO THE HEADQUARTER IMMEDIATELY",
+                    "weigth": 10,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "HOW MUCH FURTHER",
+                    "weigth": 10,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                }
+            ]
+        ]
+    ]
+}
