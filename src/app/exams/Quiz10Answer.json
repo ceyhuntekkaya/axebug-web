@@ -87,6 +87,15 @@
                 },
                 {
                     "student": "",
+                    "answer": "coward",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
                     "answer": "chasing rainbows",
                     "weigth": 3,
                     "score": 0,

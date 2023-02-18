@@ -114,6 +114,15 @@
                 },
                 {
                     "student": "",
+                    "answer": "absolutely",
+                    "weigth": 2,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
                     "answer": "reach",
                     "weigth": 2,
                     "score": 0,
@@ -301,7 +310,7 @@
                 {
                     "student": "",
                     "answer": "GET OVER IT.",
-                    "weigth": 11.5,
+                    "weigth": 11,
                     "score": 0,
                     "method": "",
                     "function": "E7",
@@ -310,7 +319,7 @@
                 {
                     "student": "",
                     "answer": "LET'S REACH THE STARS.",
-                    "weigth": 11.5,
+                    "weigth": 11,
                     "score": 0,
                     "method": "",
                     "function": "E7",
@@ -319,7 +328,7 @@
                 {
                     "student": "",
                     "answer": "A NEW ADVENTURE BEGINS!",
-                    "weigth": 11.5,
+                    "weigth": 11,
                     "score": 0,
                     "method": "",
                     "function": "E7",
@@ -328,7 +337,7 @@
                 {
                     "student": "",
                     "answer": "WHAT DO YOU MEAN BY DANGER?",
-                    "weigth": 11.5,
+                    "weigth": 11,
                     "score": 0,
                     "method": "",
                     "function": "E7",

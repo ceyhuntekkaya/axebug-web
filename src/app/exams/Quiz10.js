@@ -55,7 +55,7 @@ export default function Quiz10(props) {
             <div className="card mt-5 mb-5">
                 <div className="card-header">
                     <div className="d-flex justify-content-center">
-                        <h1><strong>  QUIZ CHAPTER 2 EPISODE 8</strong></h1>
+                        <h1><strong>  QUIZ CHAPTER 3 EPISODE 10</strong></h1>
 
                     </div>
                 </div>
@@ -73,139 +73,139 @@ export default function Quiz10(props) {
                                                         <strong>       A. Choose the correct answer.</strong>
                                                     </div>
                                                     <div className='row'>
-                                                        <strong>1. They received __________ call.</strong>
+                                                        <strong>1. Designexium is the element of _________________ .</strong>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as1" onChange={(e) => setStudentOpenAnswer(0, 0, 1, "A")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                A) book
+                                                                A) love and peace
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as1" onChange={(e) => setStudentOpenAnswer(0, 0, 1, "B")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                B) mail
+                                                                B) imagination and creativity
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as1" onChange={(e) => setStudentOpenAnswer(0, 0, 1, "C")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                C) food order
+                                                                C) power and strength
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as1" onChange={(e) => setStudentOpenAnswer(0, 0, 1, "D")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                D) SOS
+                                                                D) courage and liberty
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <strong>2. The aid was requested by the ____________.</strong>
+                                                        <strong>2. How did the Robug Colony know that there is an existence of life on earth?</strong>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as2" onChange={(e) => setStudentOpenAnswer(0, 0, 2, "A")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                A) robots
+                                                                A) They reached a message from the earth.
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as2" onChange={(e) => setStudentOpenAnswer(0, 0, 2, "B")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                B) president
+                                                                B) They were watching the earth by telescopes
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as2" onChange={(e) => setStudentOpenAnswer(0, 0, 2, "C")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                C) headquarter
+                                                                C) A robug fortune teller told them about it.
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as2" onChange={(e) => setStudentOpenAnswer(0, 0, 2, "D")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                D) police
+                                                                D) They know everything about the whole galaxy.
                                                             </label>
                                                         </div>
                                                     </div>
 
                                                     <div className='row'>
-                                                        <strong>3. They travel with ____________ to the head quarter.</strong>
+                                                        <strong>3. The message that the Robug Colony have reached is __________________ .</strong>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer(0, 0, 3, "A")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                A) Area C923
+                                                                A) poo rolled by a dung beetle.
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer(0, 0, 3, "B")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                B) Area C924
+                                                                B) garbage that is thrown away to space.
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer(0, 0, 3, "C")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                C) Area C925
+                                                                C) the golden record sent in 1977.
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer(0, 0, 3, "D")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                D) Area C926
+                                                                D) the smell of a piece of pizza.
                                                             </label>
                                                         </div>
                                                     </div>
 
                                                     <div className='row'>
-                                                        <strong>4. Dung beetle loves the vehicle because ____________ .</strong>
+                                                        <strong>4. The golden record has ____________ inside it.</strong>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as4" onChange={(e) => setStudentOpenAnswer(0, 0, 4, "A")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                A) it is green
+                                                                A) the sound of the earth
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as4" onChange={(e) => setStudentOpenAnswer(0, 0, 4, "B")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                B) it is soft
+                                                                B) the sound of a bee
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as4" onChange={(e) => setStudentOpenAnswer(0, 0, 4, "C")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                C) it is round
+                                                                C) the ‘baby shark’ song
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as4" onChange={(e) => setStudentOpenAnswer(0, 0, 4, "D")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                D) it smells
+                                                                D) the song of the earth
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <strong>5. Why did they send an SOS?</strong>
+                                                        <strong>5. How did they go there so quickly?</strong>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer(0, 0, 5, "A")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                A) Trafic accident
+                                                                A) A wise man told them about a short way.
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer(0, 0, 5, "B")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                B) Energy shortage
+                                                                B) zzz55 is the fastest spaceship in the whole galaxy.
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer(0, 0, 5, "C")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                C) Health problem
+                                                                C) They entered the wormhole.
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer(0, 0, 5, "D")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                D) Disagreement
+                                                                D) A magician sent them there.
                                                             </label>
                                                         </div>
                                                     </div>
@@ -220,101 +220,97 @@ export default function Quiz10(props) {
                                                     </div>
                                                     <div className="alert alert-dark" role="alert">
                                                         <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                                            <source src={`../../assets/OUIZ_8_B_LISTENING.mp3`} type="audio/mpeg" />
+                                                            <source src={`../../assets/quiz_10_listeng.mp3`} type="audio/mpeg" />
                                                         </audio>
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Robug 13:</strong> These are our friends. From now on, they can stroll around    <input className="form-input textformat" type="text" value={answer.result[0][1][1].student} onChange={(e) => setStudentOpenAnswer(0, 1, 1, e.target.value, true)} />
+                                                        <strong>Robug 13:</strong>  Here you go! Daily routine! Power shortage!
+                                                    </div>
+                                                    <div className="paragraf">
+                                                        <strong>Robug 13:</strong> We shut down all the    <input className="form-input textformat" type="text" value={answer.result[0][1][1].student} onChange={(e) => setStudentOpenAnswer(0, 1, 1, e.target.value, true)} />
                                                         .
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Robug 13:</strong> You can go back to the     <input className="form-input textformat" type="text" value={answer.result[0][1][2].student} onChange={(e) => setStudentOpenAnswer(0, 1, 2, e.target.value, true)} />
-                                                        . I will take care of our guests.
+                                                        <strong>Robug 13: </strong>So, we don’t use the energy for a while.
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>WATCHMAN 2: </strong>Yes, sir!
+                                                        <strong>LADYBUG: </strong> Are we going to stay in the<input className="form-input textformat" type="text" value={answer.result[0][1][2].student} onChange={(e) => setStudentOpenAnswer(0, 1, 2, e.target.value, true)} />
+                                                        ?
+                                                    </div>
+                                                   
+                                                    <div className="paragraf">
+                                                        <strong>Dung beetle:</strong> Yeah, so what?
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Robug 13: </strong> You have come a long way.     <input className="form-input textformat" type="text" value={answer.result[0][1][3].student} onChange={(e) => setStudentOpenAnswer(0, 1, 3, e.target.value, true)} />
-                                                        . Eat and recharge your batteries. We will talk afterwards.
+                                                        <strong>Dung beetle: </strong>Unless you’re being a  <input className="form-input textformat" type="text" value={answer.result[0][1][3].student} onChange={(e) => setStudentOpenAnswer(0, 1, 3, e.target.value, true)} />
+                                                        ...
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>TEN HOURS LATER</strong>
+                                                        <strong>Ladybug: </strong>No, I’m not!
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Robug 13:</strong> My friends! So glad to see you. We need your help!
+                                                        <strong>Ladybug:</strong> I just... I just can’t fly in the dark.
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Axebug: </strong>We couldn’t ignore your   <input className="form-input textformat" type="text" value={answer.result[0][1][4].student} onChange={(e) => setStudentOpenAnswer(0, 1, 4, e.target.value, true)} />
-                                                        of course.
+                                                        <strong>Dung beetle:</strong>Drama queen! Always   <input className="form-input textformat" type="text" value={answer.result[0][1][4].student} onChange={(e) => setStudentOpenAnswer(0, 1, 4, e.target.value, true)} />
+                                                      .
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Dung beetle: </strong>This place is splendid! Everything is round shaped!
+                                                        <strong>Axebug: </strong>I repeat, why is designexium so major?
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Ladybug:</strong> Tell me about it!
+                                                        <strong>Robug 13:</strong> Designexium is an energy source as well as an <input className="form-input textformat" type="text" value={answer.result[0][1][5].student} onChange={(e) => setStudentOpenAnswer(0, 1, 5, e.target.value, true)} />
+                                                        and creativity element.
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Axebug:</strong> Why did you    <input className="form-input textformat" type="text" value={answer.result[0][1][5].student} onChange={(e) => setStudentOpenAnswer(0, 1, 5, e.target.value, true)} />
-                                                        an S.OS.? What’s the problem?
+                                                        <strong>All together:</strong> What on earth are you saying?
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Robug 13: </strong>We arrived to this planet long before you ever lived.
+                                                        <strong>Axebug:</strong> Imagination!
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Axebug:</strong> What?
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Dung beetle:</strong> How long?
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Ladybug:</strong> I don’t get it!
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Robug 13:</strong> You will get all your answers.
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Robug 13:</strong> But first, hear me out.
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Robug 13:</strong> In order to continue life in our colony, we need your  <input className="form-input textformat" type="text" value={answer.result[0][1][6].student} onChange={(e) => setStudentOpenAnswer(0, 1, 6, e.target.value, true)} />
-                                                        .
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Robug 13:</strong> We are dealing with     <input className="form-input textformat" type="text" value={answer.result[0][1][7].student} onChange={(e) => setStudentOpenAnswer(0, 1, 7, e.target.value, true)} />
-                                                        .
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Robug 13:</strong> We made huge mistakes. And now, our colony is about to      <input className="form-input textformat" type="text" value={answer.result[0][1][8].student} onChange={(e) => setStudentOpenAnswer(0, 1, 8, e.target.value, true)} />
+                                                        <strong>Dung beetle:</strong>   <input className="form-input textformat" type="text" value={answer.result[0][1][6].student} onChange={(e) => setStudentOpenAnswer(0, 1, 6, e.target.value, true)} />
                                                         !
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Axebug:</strong> But, what are we going to do?
+                                                        <strong>Ladybug: </strong> And energy!
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Robug 13:</strong> You are the only ones who can find the   <input className="form-input textformat" type="text" value={answer.result[0][1][9].student} onChange={(e) => setStudentOpenAnswer(0, 1, 9, e.target.value, true)} />
-                                                        of energy we need.
+                                                        <strong>Robug 13:</strong> Precisely! It fires up your creativity!
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Axebug:</strong> Where are we going to find it?
+                                                        <strong>Dung beetle:</strong> Imagine me having rolling power forever!
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Dung beetle:</strong> Can we roll and find it?
+                                                        <strong>Dung beetle:</strong> Lady, you  <input className="form-input textformat" type="text" value={answer.result[0][1][7].student} onChange={(e) => setStudentOpenAnswer(0, 1, 7, e.target.value, true)} />
+                                                        the jackpot! You can fly in the dark afterall.
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Ladybug:</strong> That takes the biscuit! I want to go home!
+                                                        <strong>Ladybug:</strong> Hmm...
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Axebug:</strong> Guys, pull yourself together. They need help. We can do this.
+                                                        <strong>Axebug:</strong> Give me a   <input className="form-input textformat" type="text" value={answer.result[0][1][8].student} onChange={(e) => setStudentOpenAnswer(0, 1, 8, e.target.value, true)} />
+                                                        , will you?
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Robug 13:</strong> You need to find the element of designexium in deep space. That’s our  <input className="form-input textformat" type="text" value={answer.result[0][1][10].student} onChange={(e) => setStudentOpenAnswer(0, 1, 10, e.target.value, true)} />
+                                                        <strong>Axebug:</strong> I also wonder about another thing.
+                                                    </div>
+                                                    <div className="paragraf">
+                                                        <strong>Robug 13:</strong> Knowledge is power! I’m listening.
+                                                    </div>
+                                                    <div className="paragraf">
+                                                        <strong>Axebug:</strong> How did you find us? I mean ... how did you even know that we ever  <input className="form-input textformat" type="text" value={answer.result[0][1][9].student} onChange={(e) => setStudentOpenAnswer(0, 1, 9, e.target.value, true)} />
+                                                        ?
+                                                    </div>
+                                                    <div className="paragraf">
+                                                        <strong>Robug 13:</strong> You said one, but asked two. I’ll answer both then...
+                                                    </div>
+                                                    <div className="paragraf">
+                                                        <strong>Robug 13:</strong> A  <input className="form-input textformat" type="text" value={answer.result[0][1][10].student} onChange={(e) => setStudentOpenAnswer(0, 1, 10, e.target.value, true)} />
+                                                        happened. One in a septillion...
                                                         .
                                                     </div>
-                                                    <div className="paragraf">
-                                                        <strong>Axebug:</strong> Allright then. Let the adventure begin!
-                                                    </div>
-
+                                                    
                                                 </React.Fragment>
                                                 : null
                                         }
@@ -326,58 +322,58 @@ export default function Quiz10(props) {
                                                     </div>
 
                                                     <div className='row'>
-                                                        <div className='col-2'>   1. Allow
+                                                        <div className='col-2'>   1. Shut down
                                                         </div>
                                                         <div className='col-1'>
                                                             <input className="form-input w-100" type="text" value={answer.result[0][2][1].student} onChange={(e) => setStudentOpenAnswer(0, 2, 1, e.target.value)} />
 
                                                         </div>
                                                         <div className='col-9'>
-                                                            <div className="paragraf alert alert-success"><strong>A. </strong> A frame showing motions.</div>
+                                                            <div className="paragraf alert alert-success"><strong>A. </strong> Being anxious about something.</div>
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-2'>   2. Screen
+                                                        <div className='col-2'>   2. Worried
                                                         </div>
                                                         <div className='col-1'>
                                                             <input className="form-input w-100" type="text" value={answer.result[0][2][2].student} onChange={(e) => setStudentOpenAnswer(0, 2, 2, e.target.value)} />
 
                                                         </div>
                                                         <div className='col-9'>
-                                                            <div className="paragraf alert alert-success"><strong>B. </strong> To give permission.</div>
+                                                            <div className="paragraf alert alert-success"><strong>B. </strong> An instrument, device, or weapon to use for a certain purpose.</div>
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-2'>   3. Immediately
+                                                        <div className='col-2'>   3. Tool
                                                         </div>
                                                         <div className='col-1'>
                                                             <input className="form-input w-100" type="text" value={answer.result[0][2][3].student} onChange={(e) => setStudentOpenAnswer(0, 2, 3, e.target.value)} />
 
                                                         </div>
                                                         <div className='col-9'>
-                                                            <div className="paragraf alert alert-success"><strong>C. </strong> Any type of call for help.</div>
+                                                            <div className="paragraf alert alert-success"><strong>C. </strong> Being or living.</div>
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-2'>    4. Return
+                                                        <div className='col-2'>    4. Chit-chat
                                                         </div>
                                                         <div className='col-1'>
                                                             <input className="form-input w-100" type="text" value={answer.result[0][2][4].student} onChange={(e) => setStudentOpenAnswer(0, 2, 4, e.target.value)} />
 
                                                         </div>
                                                         <div className='col-9'>
-                                                            <div className="paragraf alert alert-success"><strong>D. </strong> Very urgently.</div>
+                                                            <div className="paragraf alert alert-success"><strong>D. </strong>Closing a device, machine, or a place.</div>
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-2'>   5. SOS Call
+                                                        <div className='col-2'>   5. Exist
                                                         </div>
                                                         <div className='col-1'>
                                                             <input className="form-input w-100" type="text" value={answer.result[0][2][5].student} onChange={(e) => setStudentOpenAnswer(0, 2, 5, e.target.value)} />
 
                                                         </div>
                                                         <div className='col-9'>
-                                                            <div className="paragraf alert alert-success"><strong>E. </strong> Go back to a position or way.</div>
+                                                            <div className="paragraf alert alert-success"><strong>E. </strong> An informal conversation among friends.</div>
                                                         </div>
                                                     </div>
                                                 </React.Fragment>
@@ -390,61 +386,61 @@ export default function Quiz10(props) {
                                                         <strong>     D. Unscramble the words.</strong>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 1. oorp </div>
+                                                        <div className='col-3'> 1. miagitonai </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][1].student} onChange={(e) => setStudentOpenAnswer(0, 3, 1, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 2. locoyn </div>
+                                                        <div className='col-3'> 2. harstoge </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][2].student} onChange={(e) => setStudentOpenAnswer(0, 3, 2, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 3. vltare </div>
+                                                        <div className='col-3'> 3. wocadr </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][3].student} onChange={(e) => setStudentOpenAnswer(0, 3, 3, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 4. qedharuratre </div>
+                                                        <div className='col-3'> 4. carucli </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][4].student} onChange={(e) => setStudentOpenAnswer(0, 3, 4, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 5. hkint </div>
+                                                        <div className='col-3'> 5. cerdor </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][5].student} onChange={(e) => setStudentOpenAnswer(0, 3, 5, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 6. gxabeu </div>
+                                                        <div className='col-3'> 6. rebak </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][6].student} onChange={(e) => setStudentOpenAnswer(0, 3, 6, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 7. nerutr </div>
+                                                        <div className='col-3'> 7. otlo </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][7].student} onChange={(e) => setStudentOpenAnswer(0, 3, 7, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 8. seturarue </div>
+                                                        <div className='col-3'> 8. raplot </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][8].student} onChange={(e) => setStudentOpenAnswer(0, 3, 8, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 9. grtate </div>
+                                                        <div className='col-3'> 9. vedeci </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][9].student} onChange={(e) => setStudentOpenAnswer(0, 3, 9, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 10. cregahrege </div>
+                                                        <div className='col-3'> 10. ayvegor </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][10].student} onChange={(e) => setStudentOpenAnswer(0, 3, 10, e.target.value, true)} />
                                                         </div>
@@ -460,7 +456,7 @@ export default function Quiz10(props) {
                                                     </div>
                                                     <div className="alert alert-dark" role="alert">
                                                         <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                                            <source src={`../../assets/p0135_002_c2_e8.mp3`} type="audio/mpeg" />
+                                                            <source src={`../../assets/c3_e10_pg13_p2.mp3`} type="audio/mpeg" />
                                                         </audio>
                                                     </div>
                                                     <div className='border border-success p-3 mt-3'>
@@ -468,7 +464,7 @@ export default function Quiz10(props) {
                                                     </div>
                                                     <div className="alert alert-dark" role="alert">
                                                         <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                                            <source src={`../../assets/p0146_001_c2_e8.mp3`} type="audio/mpeg" />
+                                                            <source src={`../../assets/c3_e10_pg13_p5.mp3`} type="audio/mpeg" />
                                                         </audio>
                                                     </div>
                                                     <div className='border border-success p-3 mt-3'>
@@ -476,7 +472,7 @@ export default function Quiz10(props) {
                                                     </div>
                                                     <div className="alert alert-dark" role="alert">
                                                         <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                                            <source src={`../../assets/p0150_001_c2_e8.mp3`} type="audio/mpeg" />
+                                                            <source src={`../../assets/c3_e10_pg14_p3.mp3`} type="audio/mpeg" />
                                                         </audio>
                                                     </div>
                                                     <div className='border border-success p-3 mt-3'>
@@ -484,7 +480,7 @@ export default function Quiz10(props) {
                                                     </div>
                                                     <div className="alert alert-dark" role="alert">
                                                         <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                                            <source src={`../../assets/p0157_001_c2_e8.mp3`} type="audio/mpeg" />
+                                                            <source src={`../../assets/c3_e10_pg15_p7.mp3`} type="audio/mpeg" />
                                                         </audio>
                                                     </div>
                                                     <div className='border border-success p-3 mt-3'>

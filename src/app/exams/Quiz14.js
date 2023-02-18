@@ -55,7 +55,7 @@ export default function Quiz14(props) {
             <div className="card mt-5 mb-5">
                 <div className="card-header">
                     <div className="d-flex justify-content-center">
-                        <h1><strong>  QUIZ CHAPTER 2 EPISODE 8</strong></h1>
+                        <h1><strong>  QUIZ CHAPTER 4 EPISODE 13</strong></h1>
 
                     </div>
                 </div>
@@ -73,139 +73,139 @@ export default function Quiz14(props) {
                                                         <strong>       A. Choose the correct answer.</strong>
                                                     </div>
                                                     <div className='row'>
-                                                        <strong>1. They received __________ call.</strong>
+                                                        <strong>1. What is relativity?</strong>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as1" onChange={(e) => setStudentOpenAnswer(0, 0, 1, "A")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                A) book
+                                                                A) A spaceship.
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as1" onChange={(e) => setStudentOpenAnswer(0, 0, 1, "B")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                B) mail
+                                                                B) A relationship between time and space.
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as1" onChange={(e) => setStudentOpenAnswer(0, 0, 1, "C")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                C) food order
+                                                                C) A planet out of our solar system.
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as1" onChange={(e) => setStudentOpenAnswer(0, 0, 1, "D")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                D) SOS
+                                                                D) The name of the town where they came from.
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <strong>2. The aid was requested by the ____________.</strong>
+                                                        <strong>2. What measures the time best?</strong>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as2" onChange={(e) => setStudentOpenAnswer(0, 0, 2, "A")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                A) robots
+                                                                A) the watch Swatch.
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as2" onChange={(e) => setStudentOpenAnswer(0, 0, 2, "B")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                B) president
+                                                                B) movements of the moon.
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as2" onChange={(e) => setStudentOpenAnswer(0, 0, 2, "C")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                C) headquarter
+                                                                C) the vibration of Cesium element.
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as2" onChange={(e) => setStudentOpenAnswer(0, 0, 2, "D")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                D) police
+                                                                D) the vibration of potassium elements.
                                                             </label>
                                                         </div>
                                                     </div>
 
                                                     <div className='row'>
-                                                        <strong>3. They travel with ____________ to the head quarter.</strong>
+                                                        <strong>3. Axebug added the atomic number of Cesium element to the name of the spaceship because when he was building the spaceship</strong>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer(0, 0, 3, "A")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                A) Area C923
+                                                                A) 55 was his lucky number.
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer(0, 0, 3, "B")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                B) Area C924
+                                                                B)he dreamt to travel in space and time.
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer(0, 0, 3, "C")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                C) Area C925
+                                                                C) he was 55 years old.
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as3" onChange={(e) => setStudentOpenAnswer(0, 0, 3, "D")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                D) Area C926
+                                                                D) he was doing various experiments with Cesium.
                                                             </label>
                                                         </div>
                                                     </div>
 
                                                     <div className='row'>
-                                                        <strong>4. Dung beetle loves the vehicle because ____________ .</strong>
+                                                        <strong>4. According to Einstein, how does gravitational force affect time?</strong>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as4" onChange={(e) => setStudentOpenAnswer(0, 0, 4, "A")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                A) it is green
+                                                                A) Time can not be measured when gravitational force increases.
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as4" onChange={(e) => setStudentOpenAnswer(0, 0, 4, "B")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                B) it is soft
+                                                                B) Time can not be measured when gravitational force decreases
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as4" onChange={(e) => setStudentOpenAnswer(0, 0, 4, "C")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                C) it is round
+                                                                C) Time runs faster when gravitational force decreases
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as4" onChange={(e) => setStudentOpenAnswer(0, 0, 4, "D")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                D) it smells
+                                                                D) Time runs slower when gravitational force increases.
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <strong>5. Why did they send an SOS?</strong>
+                                                        <strong>5. What is the name of the paradox of the theory of relativity?</strong>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer(0, 0, 5, "A")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                A) Trafic accident
+                                                                A) Twice paradox
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer(0, 0, 5, "B")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                B) Energy shortage
+                                                                B) Twin paradox
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer(0, 0, 5, "C")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                C) Health problem
+                                                                C) Relativity Paradox
                                                             </label>
                                                         </div>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as5" onChange={(e) => setStudentOpenAnswer(0, 0, 5, "D")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                                                D) Disagreement
+                                                                D) Gravitational Paradox
                                                             </label>
                                                         </div>
                                                     </div>
@@ -224,96 +224,76 @@ export default function Quiz14(props) {
                                                         </audio>
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Robug 13:</strong> These are our friends. From now on, they can stroll around    <input className="form-input textformat" type="text" value={answer.result[0][1][1].student} onChange={(e) => setStudentOpenAnswer(0, 1, 1, e.target.value, true)} />
+                                                        <strong>Axebug: </strong> First thing is first. How do we measure time?
+                                                    </div>
+                                                    <div className="paragraf">
+                                                        <strong>Ladybug:</strong> There are  <input className="form-input textformat" type="text" value={answer.result[0][1][2].student} onChange={(e) => setStudentOpenAnswer(0, 1, 2, e.target.value, true)} />
+                                                        of ways used in history.
+                                                    </div>
+                                                    <div className="paragraf">
+                                                        <strong>Axebug: </strong>We measured the earth’s turn, right?
+                                                    </div>
+                                                    <div className="paragraf">
+                                                        <strong>Dung beetle: </strong>The earth turns around it’s in 24 hours.
+                                                    </div>
+                                                    <div className="paragraf">
+                                                        <strong>Ladybug:</strong>  Or we divided it into 24 hours…
+                                                    </div>
+                                                    <div className="paragraf">
+                                                        <strong>Dung beetle: </strong> What?
+                                                    </div>
+                                                    <div className="paragraf">
+                                                        <strong>Ladybug: </strong>Why are you <input className="form-input textformat" type="text" value={answer.result[0][1][2].student} onChange={(e) => setStudentOpenAnswer(0, 1, 2, e.target.value, true)} />
+                                                        ? I just gave a second <input className="form-input textformat" type="text" value={answer.result[0][1][2].student} onChange={(e) => setStudentOpenAnswer(0, 1, 2, e.target.value, true)} />
                                                         .
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Robug 13:</strong> You can go back to the     <input className="form-input textformat" type="text" value={answer.result[0][1][2].student} onChange={(e) => setStudentOpenAnswer(0, 1, 2, e.target.value, true)} />
-                                                        . I will take care of our guests.
+                                                        <strong>Dung beetle:</strong>Then, an hour is 60 minutes.
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>WATCHMAN 2: </strong>Yes, sir!
+                                                        <strong>Ladybug:</strong> So we divided 1 hour into 60.
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Robug 13: </strong> You have come a long way.     <input className="form-input textformat" type="text" value={answer.result[0][1][3].student} onChange={(e) => setStudentOpenAnswer(0, 1, 3, e.target.value, true)} />
-                                                        . Eat and recharge your batteries. We will talk afterwards.
+                                                        <strong>Axebug: </strong>Great! Now you are looking from point of view too.
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>TEN HOURS LATER</strong>
+                                                        <strong>Dung beetle:</strong> We divided a minute into 60 and called it seconds.
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Robug 13:</strong> My friends! So glad to see you. We need your help!
+                                                        <strong>Dung beetle:</strong> We said that 60 <input className="form-input textformat" type="text" value={answer.result[0][1][2].student} onChange={(e) => setStudentOpenAnswer(0, 1, 2, e.target.value, true)} />
+                                                        make a minute.
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Axebug: </strong>We couldn’t ignore your   <input className="form-input textformat" type="text" value={answer.result[0][1][4].student} onChange={(e) => setStudentOpenAnswer(0, 1, 4, e.target.value, true)} />
-                                                        of course.
+                                                        <strong>dealing beetle:</strong> I have never seen it from this side.
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Dung beetle: </strong>This place is splendid! Everything is round shaped!
+                                                        <strong>Ladybug:</strong> What about year and <input className="form-input textformat" type="text" value={answer.result[0][1][7].student} onChange={(e) => setStudentOpenAnswer(0, 1, 7, e.target.value, true)} />
+                                                        beetle?
+
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Ladybug:</strong> Tell me about it!
+                                                        <strong>Dung beetle:</strong> Earth turns <input className="form-input textformat" type="text" value={answer.result[0][1][7].student} onChange={(e) => setStudentOpenAnswer(0, 1, 7, e.target.value, true)} />
+                                                        the sun in 12 parts. We call month to each of them.
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Axebug:</strong> Why did you    <input className="form-input textformat" type="text" value={answer.result[0][1][5].student} onChange={(e) => setStudentOpenAnswer(0, 1, 5, e.target.value, true)} />
-                                                        an S.OS.? What’s the problem?
+                                                        <strong>Dung beetle:</strong> And then, we divided every part to 30. We named it a day.
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Robug 13: </strong>We arrived to this planet long before you ever lived.
+                                                        <strong>Dung beetle:</strong> This helped us understand time.
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Axebug:</strong> What?
+                                                        <strong>Axebug:</strong>We don’t have a  <input className="form-input textformat" type="text" value={answer.result[0][1][8].student} onChange={(e) => setStudentOpenAnswer(0, 1, 8, e.target.value, true)} />
+                                                        of slowing earth’s turn.
+                                                    </div>
+                                                   
+                                                    <div className="paragraf">
+                                                        <strong>Dung beetle:</strong> Then, time   <input className="form-input textformat" type="text" value={answer.result[0][1][9].student} onChange={(e) => setStudentOpenAnswer(0, 1, 9, e.target.value, true)} />
+                                                        exactly the same for everybody around the world.
                                                     </div>
                                                     <div className="paragraf">
-                                                        <strong>Dung beetle:</strong> How long?
+                                                        <strong>Ladybug:</strong> Yeah,
                                                     </div>
-                                                    <div className="paragraf">
-                                                        <strong>Ladybug:</strong> I don’t get it!
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Robug 13:</strong> You will get all your answers.
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Robug 13:</strong> But first, hear me out.
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Robug 13:</strong> In order to continue life in our colony, we need your  <input className="form-input textformat" type="text" value={answer.result[0][1][6].student} onChange={(e) => setStudentOpenAnswer(0, 1, 6, e.target.value, true)} />
-                                                        .
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Robug 13:</strong> We are dealing with     <input className="form-input textformat" type="text" value={answer.result[0][1][7].student} onChange={(e) => setStudentOpenAnswer(0, 1, 7, e.target.value, true)} />
-                                                        .
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Robug 13:</strong> We made huge mistakes. And now, our colony is about to      <input className="form-input textformat" type="text" value={answer.result[0][1][8].student} onChange={(e) => setStudentOpenAnswer(0, 1, 8, e.target.value, true)} />
-                                                        !
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Axebug:</strong> But, what are we going to do?
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Robug 13:</strong> You are the only ones who can find the   <input className="form-input textformat" type="text" value={answer.result[0][1][9].student} onChange={(e) => setStudentOpenAnswer(0, 1, 9, e.target.value, true)} />
-                                                        of energy we need.
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Axebug:</strong> Where are we going to find it?
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Dung beetle:</strong> Can we roll and find it?
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Ladybug:</strong> That takes the biscuit! I want to go home!
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Axebug:</strong> Guys, pull yourself together. They need help. We can do this.
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Robug 13:</strong> You need to find the element of designexium in deep space. That’s our  <input className="form-input textformat" type="text" value={answer.result[0][1][10].student} onChange={(e) => setStudentOpenAnswer(0, 1, 10, e.target.value, true)} />
-                                                        .
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Axebug:</strong> Allright then. Let the adventure begin!
-                                                    </div>
+                                                   
 
                                                 </React.Fragment>
                                                 : null
@@ -326,47 +306,47 @@ export default function Quiz14(props) {
                                                     </div>
 
                                                     <div className='row'>
-                                                        <div className='col-2'>   1. Allow
+                                                        <div className='col-2'>   1. Point of view
                                                         </div>
                                                         <div className='col-1'>
                                                             <input className="form-input w-100" type="text" value={answer.result[0][2][1].student} onChange={(e) => setStudentOpenAnswer(0, 2, 1, e.target.value)} />
 
                                                         </div>
                                                         <div className='col-9'>
-                                                            <div className="paragraf alert alert-success"><strong>A. </strong> A frame showing motions.</div>
+                                                            <div className="paragraf alert alert-success"><strong>A. </strong> To give encourage someone enough excitement to start or complete a task.</div>
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-2'>   2. Screen
+                                                        <div className='col-2'>   2. Inspire
                                                         </div>
                                                         <div className='col-1'>
                                                             <input className="form-input w-100" type="text" value={answer.result[0][2][2].student} onChange={(e) => setStudentOpenAnswer(0, 2, 2, e.target.value)} />
 
                                                         </div>
                                                         <div className='col-9'>
-                                                            <div className="paragraf alert alert-success"><strong>B. </strong> To give permission.</div>
+                                                            <div className="paragraf alert alert-success"><strong>B. </strong> Speed of a heart beat.</div>
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-2'>   3. Immediately
+                                                        <div className='col-2'>   3. Heart Rate
                                                         </div>
                                                         <div className='col-1'>
                                                             <input className="form-input w-100" type="text" value={answer.result[0][2][3].student} onChange={(e) => setStudentOpenAnswer(0, 2, 3, e.target.value)} />
 
                                                         </div>
                                                         <div className='col-9'>
-                                                            <div className="paragraf alert alert-success"><strong>C. </strong> Any type of call for help.</div>
+                                                            <div className="paragraf alert alert-success"><strong>C. </strong> Common or regular.</div>
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-2'>    4. Return
+                                                        <div className='col-2'>    4. Trouble
                                                         </div>
                                                         <div className='col-1'>
                                                             <input className="form-input w-100" type="text" value={answer.result[0][2][4].student} onChange={(e) => setStudentOpenAnswer(0, 2, 4, e.target.value)} />
 
                                                         </div>
                                                         <div className='col-9'>
-                                                            <div className="paragraf alert alert-success"><strong>D. </strong> Very urgently.</div>
+                                                            <div className="paragraf alert alert-success"><strong>D. </strong> Looking at an issue more differentlyPerspective, opinion on something.</div>
                                                         </div>
                                                     </div>
                                                     <div className='row'>
@@ -390,61 +370,61 @@ export default function Quiz14(props) {
                                                         <strong>     D. Unscramble the words.</strong>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 1. oorp </div>
+                                                        <div className='col-3'> 1. WTIN </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][1].student} onChange={(e) => setStudentOpenAnswer(0, 3, 1, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 2. locoyn </div>
+                                                        <div className='col-3'> 2. RAOPAXD </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][2].student} onChange={(e) => setStudentOpenAnswer(0, 3, 2, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 3. vltare </div>
+                                                        <div className='col-3'> 3. OZO </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][3].student} onChange={(e) => setStudentOpenAnswer(0, 3, 3, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 4. qedharuratre </div>
+                                                        <div className='col-3'> 4. GANEL </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][4].student} onChange={(e) => setStudentOpenAnswer(0, 3, 4, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 5. hkint </div>
+                                                        <div className='col-3'> 5. ONZE </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][5].student} onChange={(e) => setStudentOpenAnswer(0, 3, 5, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 6. gxabeu </div>
+                                                        <div className='col-3'> 6. SEUMOURON </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][6].student} onChange={(e) => setStudentOpenAnswer(0, 3, 6, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 7. nerutr </div>
+                                                        <div className='col-3'> 7. NITOMO </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][7].student} onChange={(e) => setStudentOpenAnswer(0, 3, 7, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 8. seturarue </div>
+                                                        <div className='col-3'> 8. EMTELNE </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][8].student} onChange={(e) => setStudentOpenAnswer(0, 3, 8, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 9. grtate </div>
+                                                        <div className='col-3'> 9. OCLCK </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][9].student} onChange={(e) => setStudentOpenAnswer(0, 3, 9, e.target.value, true)} />
                                                         </div>
                                                     </div>
                                                     <div className='row'>
-                                                        <div className='col-3'> 10. cregahrege </div>
+                                                        <div className='col-3'> 10. EREGDE </div>
                                                         <div className='col-9'>
                                                             <input className="form-input textformat" type="text" value={answer.result[0][3][10].student} onChange={(e) => setStudentOpenAnswer(0, 3, 10, e.target.value, true)} />
                                                         </div>

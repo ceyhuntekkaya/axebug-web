@@ -55,7 +55,7 @@ export default function Quiz15(props) {
             <div className="card mt-5 mb-5">
                 <div className="card-header">
                     <div className="d-flex justify-content-center">
-                        <h1><strong>  QUIZ CHAPTER 2 EPISODE 8</strong></h1>
+                        <h1><strong>  QUIZ CHAPTER 4 EPISODE 15</strong></h1>
 
                     </div>
                 </div>
@@ -73,7 +73,7 @@ export default function Quiz15(props) {
                                                         <strong>       A. Choose the correct answer.</strong>
                                                     </div>
                                                     <div className='row'>
-                                                        <strong>1. They received __________ call.</strong>
+                                                        <strong>1. Choose the correct answer.</strong>
                                                         <div className="form-check">
                                                             <input className="form-check-input" type="radio" name="as1" onChange={(e) => setStudentOpenAnswer(0, 0, 1, "A")} />
                                                             <label className="form-check-label" htmlFor="flexRadioDefault1">
