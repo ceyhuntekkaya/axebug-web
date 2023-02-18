@@ -13,17 +13,17 @@
                 },
                 {
                     "student": "",
-                    "answer": "D",
-                    "weigth": 1.4,
+                    "answer": "A",
+                    "weigth": 1,
                     "score": 0,
                     "method": "",
-                    "function": "E10",
+                    "function": "E8",
                     "functionScore": false
                 },
                 {
                     "student": "",
-                    "answer": "C",
-                    "weigth": 1.4,
+                    "answer": "B",
+                    "weigth": 1,
                     "score": 0,
                     "method": "",
                     "function": "E10",
@@ -32,7 +32,7 @@
                 {
                     "student": "",
                     "answer": "A",
-                    "weigth": 1.4,
+                    "weigth": 1,
                     "score": 0,
                     "method": "",
                     "function": "E10",
@@ -41,117 +41,16 @@
                 {
                     "student": "",
                     "answer": "C",
-                    "weigth": 1.4,
-                    "score": 0,
-                    "method": "",
-                    "function": "E10",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "B",
-                    "weigth": 1.4,
-                    "score": 0,
-                    "method": "",
-                    "function": "E10",
-                    "functionScore": false
-                }
-            ],
-            [
-                {
-                    "student": "TEMPLATE",
-                    "answer": "D",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
-                    "function": "E1",
+                    "function": "E11",
                     "functionScore": false
                 },
                 {
                     "student": "",
-                    "answer": "freely",
-                    "weigth": 4,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "tower",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "take a break",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "sos call",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "send",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "aid",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "energy shortage",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "extinct",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "source",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "salvation",
-                    "weigth": 3,
+                    "answer": "D",
+                    "weigth": 1,
                     "score": 0,
                     "method": "",
                     "function": "E6",
@@ -170,64 +69,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "B",
-                    "weigth": 2.6,
-                    "score": 0,
-                    "method": "",
-                    "function": "E7",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "A",
-                    "weigth": 2.6,
-                    "score": 0,
-                    "method": "",
-                    "function": "E7",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "D",
-                    "weigth": 2.6,
-                    "score": 0,
-                    "method": "",
-                    "function": "E7",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "E",
-                    "weigth": 2.6,
-                    "score": 0,
-                    "method": "",
-                    "function": "E7",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "C",
-                    "weigth": 2.6,
-                    "score": 0,
-                    "method": "",
-                    "function": "E7",
-                    "functionScore": false
-                }
-            ],
-            [
-                {
-                    "student": "TEMPLATE",
-                    "answer": "D",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E1",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "poor",
-                    "weigth": 1,
+                    "answer": "constant",
+                    "weigth": 3,
                     "score": 0,
                     "method": "",
                     "function": "E6",
@@ -235,8 +78,71 @@
                 },
                 {
                     "student": "",
-                    "answer": "colony",
-                    "weigth": 1,
+                    "answer": "second",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "per",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "stop",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "deimension",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "during",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "faster",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "penny",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "go back",
+                    "weigth": 3,
                     "score": 0,
                     "method": "",
                     "function": "E6",
@@ -245,6 +151,82 @@
                 {
                     "student": "",
                     "answer": "travel",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "C",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "E",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "B",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "D",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
+                    "answer": "D",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "spend",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -253,7 +235,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "headquarter",
+                    "answer": "dimension",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -262,7 +244,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "think",
+                    "answer": "curve",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -271,7 +253,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "axebug",
+                    "answer": "known",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -280,7 +262,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "return",
+                    "answer": "hush",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -289,7 +271,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "treasure",
+                    "answer": "against",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -298,7 +280,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "target",
+                    "answer": "forget",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -307,7 +289,25 @@
                 },
                 {
                     "student": "",
-                    "answer": "recharge",
+                    "answer": "mass",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "particle",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "ghost",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -327,7 +327,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "PRECISELY",
+                    "answer": "BLAZING FAST.",
                     "weigth": 10,
                     "score": 0,
                     "method": "",
@@ -336,7 +336,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "I THINK THE AID WAS REQUESTED BY THE HEADQUARTER",
+                    "answer": "WOULD IT REALLY STOP?",
                     "weigth": 10,
                     "score": 0,
                     "method": "",
@@ -345,7 +345,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "WE WILL TAKE YOU TO THE HEADQUARTER IMMEDIATELY",
+                    "answer": "I MEAN, TIME TRAVEL?",
                     "weigth": 10,
                     "score": 0,
                     "method": "",
@@ -354,7 +354,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "HOW MUCH FURTHER",
+                    "answer": "TIME WOULD DEFINATELY STOP.",
                     "weigth": 10,
                     "score": 0,
                     "method": "",

@@ -13,47 +13,47 @@
                 },
                 {
                     "student": "",
+                    "answer": "C",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
                     "answer": "D",
-                    "weigth": 1.4,
+                    "weigth": 1,
                     "score": 0,
                     "method": "",
-                    "function": "E10",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "C",
-                    "weigth": 1.4,
-                    "score": 0,
-                    "method": "",
-                    "function": "E10",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "A",
-                    "weigth": 1.4,
-                    "score": 0,
-                    "method": "",
-                    "function": "E10",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "C",
-                    "weigth": 1.4,
-                    "score": 0,
-                    "method": "",
-                    "function": "E10",
+                    "function": "E8",
                     "functionScore": false
                 },
                 {
                     "student": "",
                     "answer": "B",
-                    "weigth": 1.4,
+                    "weigth": 1,
                     "score": 0,
                     "method": "",
-                    "function": "E10",
+                    "function": "E8",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E8",
                     "functionScore": false
                 }
             ],
@@ -69,7 +69,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "freely",
+                    "answer": "turn round",
                     "weigth": 4,
                     "score": 0,
                     "method": "",
@@ -78,7 +78,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "tower",
+                    "answer": "good as new",
                     "weigth": 3,
                     "score": 0,
                     "method": "",
@@ -87,7 +87,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "take a break",
+                    "answer": "bull's eye",
                     "weigth": 3,
                     "score": 0,
                     "method": "",
@@ -96,7 +96,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "sos call",
+                    "answer": "see over",
                     "weigth": 3,
                     "score": 0,
                     "method": "",
@@ -105,7 +105,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "send",
+                    "answer": "exactly",
                     "weigth": 3,
                     "score": 0,
                     "method": "",
@@ -114,7 +114,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "aid",
+                    "answer": "heading",
                     "weigth": 3,
                     "score": 0,
                     "method": "",
@@ -123,7 +123,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "energy shortage",
+                    "answer": "constellation",
                     "weigth": 3,
                     "score": 0,
                     "method": "",
@@ -132,7 +132,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "extinct",
+                    "answer": "ride",
                     "weigth": 3,
                     "score": 0,
                     "method": "",
@@ -141,7 +141,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "source",
+                    "answer": "solid",
                     "weigth": 3,
                     "score": 0,
                     "method": "",
@@ -150,7 +150,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "salvation",
+                    "answer": "route",
                     "weigth": 3,
                     "score": 0,
                     "method": "",
@@ -171,34 +171,7 @@
                 {
                     "student": "",
                     "answer": "B",
-                    "weigth": 2.6,
-                    "score": 0,
-                    "method": "",
-                    "function": "E7",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "A",
-                    "weigth": 2.6,
-                    "score": 0,
-                    "method": "",
-                    "function": "E7",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "D",
-                    "weigth": 2.6,
-                    "score": 0,
-                    "method": "",
-                    "function": "E7",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "E",
-                    "weigth": 2.6,
+                    "weigth": 3,
                     "score": 0,
                     "method": "",
                     "function": "E7",
@@ -207,7 +180,34 @@
                 {
                     "student": "",
                     "answer": "C",
-                    "weigth": 2.6,
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "E",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "D",
+                    "weigth": 3,
                     "score": 0,
                     "method": "",
                     "function": "E7",
@@ -226,7 +226,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "poor",
+                    "answer": "journey",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -235,7 +235,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "colony",
+                    "answer": "produce",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -244,7 +244,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "travel",
+                    "answer": "route",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -253,7 +253,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "headquarter",
+                    "answer": "mystery",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -262,7 +262,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "think",
+                    "answer": "cautious",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -271,7 +271,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "axebug",
+                    "answer": "alert",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -280,7 +280,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "return",
+                    "answer": "forever",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -289,7 +289,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "treasure",
+                    "answer": "bred",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -298,7 +298,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "target",
+                    "answer": "spiral",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -307,7 +307,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "recharge",
+                    "answer": "borred",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -327,7 +327,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "PRECISELY",
+                    "answer": "DON'T YOU WORRY.",
                     "weigth": 10,
                     "score": 0,
                     "method": "",
@@ -336,7 +336,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "I THINK THE AID WAS REQUESTED BY THE HEADQUARTER",
+                    "answer": "LET'S GO BACK TO HEADQUARTERS.",
                     "weigth": 10,
                     "score": 0,
                     "method": "",
@@ -345,7 +345,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "WE WILL TAKE YOU TO THE HEADQUARTER IMMEDIATELY",
+                    "answer": "WHERE ARE WE EXACTLY?",
                     "weigth": 10,
                     "score": 0,
                     "method": "",
@@ -354,7 +354,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "HOW MUCH FURTHER",
+                    "answer": "SET UP OUR ROUTE.",
                     "weigth": 10,
                     "score": 0,
                     "method": "",

@@ -13,17 +13,17 @@
                 },
                 {
                     "student": "",
-                    "answer": "D",
-                    "weigth": 1.4,
+                    "answer": "A",
+                    "weigth": 1,
                     "score": 0,
                     "method": "",
-                    "function": "E10",
+                    "function": "E8",
                     "functionScore": false
                 },
                 {
                     "student": "",
-                    "answer": "C",
-                    "weigth": 1.4,
+                    "answer": "B",
+                    "weigth": 1,
                     "score": 0,
                     "method": "",
                     "function": "E10",
@@ -32,7 +32,7 @@
                 {
                     "student": "",
                     "answer": "A",
-                    "weigth": 1.4,
+                    "weigth": 1,
                     "score": 0,
                     "method": "",
                     "function": "E10",
@@ -41,117 +41,16 @@
                 {
                     "student": "",
                     "answer": "C",
-                    "weigth": 1.4,
-                    "score": 0,
-                    "method": "",
-                    "function": "E10",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "B",
-                    "weigth": 1.4,
-                    "score": 0,
-                    "method": "",
-                    "function": "E10",
-                    "functionScore": false
-                }
-            ],
-            [
-                {
-                    "student": "TEMPLATE",
-                    "answer": "D",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
-                    "function": "E1",
+                    "function": "E11",
                     "functionScore": false
                 },
                 {
                     "student": "",
-                    "answer": "freely",
-                    "weigth": 4,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "tower",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "take a break",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "sos call",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "send",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "aid",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "energy shortage",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "extinct",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "source",
-                    "weigth": 3,
-                    "score": 0,
-                    "method": "",
-                    "function": "E6",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "salvation",
-                    "weigth": 3,
+                    "answer": "D",
+                    "weigth": 1,
                     "score": 0,
                     "method": "",
                     "function": "E6",
@@ -170,26 +69,109 @@
                 },
                 {
                     "student": "",
-                    "answer": "B",
-                    "weigth": 2.6,
+                    "answer": "lightspeed",
+                    "weigth": 3,
                     "score": 0,
                     "method": "",
-                    "function": "E7",
+                    "function": "E6",
                     "functionScore": false
                 },
                 {
                     "student": "",
-                    "answer": "A",
-                    "weigth": 2.6,
+                    "answer": "headlights",
+                    "weigth": 3,
                     "score": 0,
                     "method": "",
-                    "function": "E7",
+                    "function": "E6",
                     "functionScore": false
                 },
                 {
                     "student": "",
+                    "answer": "outside",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "properly",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "motions",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "stable",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "universe",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "stuck",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "relativity",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "occur",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E6",
+                    "functionScore": false
+                }
+            ],
+            [
+                {
+                    "student": "TEMPLATE",
                     "answer": "D",
-                    "weigth": 2.6,
+                    "weigth": 1,
+                    "score": 0,
+                    "method": "",
+                    "function": "E1",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "B",
+                    "weigth": 3,
                     "score": 0,
                     "method": "",
                     "function": "E7",
@@ -198,7 +180,7 @@
                 {
                     "student": "",
                     "answer": "E",
-                    "weigth": 2.6,
+                    "weigth": 3,
                     "score": 0,
                     "method": "",
                     "function": "E7",
@@ -207,7 +189,25 @@
                 {
                     "student": "",
                     "answer": "C",
-                    "weigth": 2.6,
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "A",
+                    "weigth": 3,
+                    "score": 0,
+                    "method": "",
+                    "function": "E7",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "D",
+                    "weigth": 3,
                     "score": 0,
                     "method": "",
                     "function": "E7",
@@ -226,7 +226,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "poor",
+                    "answer": "flat",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -235,7 +235,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "colony",
+                    "answer": "occur",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -244,7 +244,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "travel",
+                    "answer": "sheet",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -253,7 +253,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "headquarter",
+                    "answer": "surface",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -262,7 +262,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "think",
+                    "answer": "sensor",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -271,7 +271,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "axebug",
+                    "answer": "breath",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -280,7 +280,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "return",
+                    "answer": "destroy",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -289,7 +289,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "treasure",
+                    "answer": "urgently",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -298,7 +298,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "target",
+                    "answer": "awesome",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -307,7 +307,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "recharge",
+                    "answer": "stuck",
                     "weigth": 1,
                     "score": 0,
                     "method": "",
@@ -327,7 +327,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "PRECISELY",
+                    "answer": "AMAZING AS A GHOST!",
                     "weigth": 10,
                     "score": 0,
                     "method": "",
@@ -336,7 +336,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "I THINK THE AID WAS REQUESTED BY THE HEADQUARTER",
+                    "answer": "WE TURN ON THE HEAD LIGHTS.",
                     "weigth": 10,
                     "score": 0,
                     "method": "",
@@ -345,7 +345,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "WE WILL TAKE YOU TO THE HEADQUARTER IMMEDIATELY",
+                    "answer": "HOW CAN THAT BE?",
                     "weigth": 10,
                     "score": 0,
                     "method": "",
@@ -354,7 +354,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "HOW MUCH FURTHER",
+                    "answer": "THE CAR IS AT LIGHT SPEED.",
                     "weigth": 10,
                     "score": 0,
                     "method": "",

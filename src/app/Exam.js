@@ -6,11 +6,20 @@ import Quiz2 from './exams/Quiz2';
 import Quiz3 from './exams/Quiz3';
 import Quiz4 from './exams/Quiz4';
 import Quiz5 from './exams/Quiz5';
-
 import Quiz6 from './exams/Quiz6';
 import Quiz7 from './exams/Quiz7';
 import Quiz8 from './exams/Quiz8';
+import Quiz9 from './exams/Quiz9';
+import Quiz10 from './exams/Quiz10';
+import Quiz11 from './exams/Quiz11';
+import Quiz12 from './exams/Quiz12';
+import Quiz13 from './exams/Quiz13';
+import Quiz14 from './exams/Quiz14';
+import Quiz15 from './exams/Quiz15';
+import Quiz16 from './exams/Quiz16';
 import Exam2 from './exams/Exam2';
+import Exam3 from './exams/Exam3';
+import Exam4 from './exams/Exam4';
 
 import useExam from "../api/useExam"
 import FinishExam from './exams/FinishExam';
@@ -102,6 +111,15 @@ export default function Exam() {
                 examName === "Exam 2" ? <Exam2 sendExam={sendExam} /> : null
             }
             {
+                examName === "Exam 3" ? <Exam3 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Exam 4" ? <Exam4 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Exam 2" ? <Exam2 sendExam={sendExam} /> : null
+            }
+            {
                 examName === "Quiz 1" ? <Quiz1 sendExam={sendExam} /> : null
             }
             {
@@ -124,6 +142,30 @@ export default function Exam() {
             }
             {
                 examName === "Quiz 8" ? <Quiz8 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 9" ? <Quiz9 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 10" ? <Quiz10 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 11" ? <Quiz11 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 12" ? <Quiz12 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 13" ? <Quiz13 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 14" ? <Quiz14 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 15" ? <Quiz15 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Quiz 16" ? <Quiz16 sendExam={sendExam} /> : null
             }
             {
                 examName === "Finish" ? <FinishExam /> : null

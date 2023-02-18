@@ -3,7 +3,7 @@ import SpechText from '../components/SpechText';
 import FinishExam from './FinishExam';
 
 var stringSimilarity = require("string-similarity");
-const answerEmpty = require('./Quiz8Answer.json');
+const answerEmpty = require('./Quiz16Answer.json');
 
 export default function Quiz16(props) {
 
