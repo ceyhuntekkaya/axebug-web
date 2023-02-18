@@ -61,12 +61,12 @@ export default function TeacherExam() {
             {
                 examName === "Quiz 2" ? <Quiz2 sendExam={sendExam} /> : null
             }
-            {
+            {/* {
                 examName === "Quiz 3" ? <Quiz3 sendExam={sendExam} /> : null
             }
             {
                 examName === "Quiz 4" ? <Quiz4 sendExam={sendExam} /> : null
-            }
+            } */}
 
             {
                 examName === "Quiz 5" ? <Quiz5 sendExam={sendExam} /> : null
@@ -92,7 +92,7 @@ export default function TeacherExam() {
             {
                 examName === "Quiz 12" ? <Quiz12 sendExam={sendExam} /> : null
             }
-            {
+            {/* {
                 examName === "Quiz 13" ? <Quiz13 sendExam={sendExam} /> : null
             }
             {
@@ -103,7 +103,7 @@ export default function TeacherExam() {
             }
             {
                 examName === "Quiz 16" ? <Quiz16 sendExam={sendExam} /> : null
-            }
+            } */}
 
 
 
