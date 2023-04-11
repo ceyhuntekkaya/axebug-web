@@ -1,3 +1,24 @@
 ssh -i .ssh/id_rsa_axebug axeadmn@193.163.88.51 -p 1923
 
 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
+
+
+
+docker exec axeadmn_db_1 pg_dumpall -U postgres > /home/axeadmn/axebug_backup_db_11_04_2023_16_06.sql
+
+
+docker exec -it axeadmn_db_1 psql -U postgres
+
+
+docker exec -it axeadmn_db_1 createdb -U postgres axebug
+
+cat /home/axeadmn/axebug_backup_db_11_04_2023_16_06.sql | docker exec -i axeadmn_db_1 psql -U postgres 
+
+
+scp -r -P 1923  axeadmin@193.163.88.51:/home/axeadmn/axebug_backup_db_11_04_2023_16_06.sql Desktop/axebug-data
+
+
+cp /home/axeadmn/axebug_backup_db_11_04_2023_16_06.sql /home/axeadmn/host/axebug-web/public/axebug_backup_db_11_04_2023_16_06.sql
+
+
+cp axebug_backup_db_11_04_2023_16_06.sql /home/axeadmn/host/axebug-web/public/axebug_backup_db_11_04_2023_16_06.sql

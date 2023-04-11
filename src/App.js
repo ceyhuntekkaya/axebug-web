@@ -52,6 +52,7 @@ import TeacherSpelling from "./teacher/page/TeacherSpelling";
 import TeacherWordBankList from "./teacher/page/TeacherWordBankList";
 import TeacherWordBankEpisode from "./teacher/page/TeacherWordBankEpisode"
 import TeacherWordBank from "./teacher/page/TeacherWordBank";
+import Demo from "./app/Demo";
 
 // <Route path="*" element={<NotFound/>}/>
 
@@ -108,7 +109,7 @@ function App() {
         <Route exact path="/speling" element={<SpellingList />} />
         <Route exact path="/spellingword" element={<SpellingEpisode />} />
         
-
+        <Route exact path="/demo" element={<Demo />} />
 
 
         <Route exact path="/app/exam/:id" element={<Exam />} />
