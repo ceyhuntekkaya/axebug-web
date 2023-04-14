@@ -1,5 +1,5 @@
 {
-    "api": {
+    "api_2": {
       "invokeUrl": "https://app.axebug.com/api"
     },
     "api_local": {
@@ -7,6 +7,9 @@
     },
     "api_server": {
       "invokeUrl": "https://app.axebug.com/api"
+    },
+    "api": {
+      "invokeUrl": "https://api.axebug.com/api"
     }
   }
   
