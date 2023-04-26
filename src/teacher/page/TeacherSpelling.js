@@ -126,7 +126,7 @@ export default function TeacherSpelling() {
                                     </div>
                                     <div className='col-8 ml-5'>
                                         <audio id="audio" controls className='w-100' style={{ backgroundColor: "#222529", height: 45 }}>
-                                            <source src={`../../assets/${selectedWord.soundUrl}`} type="audio/mpeg" />
+                                            <source src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/${selectedWord.soundUrl}`} type="audio/mpeg" />
                                         </audio>
                                         <div className='boxWhite p-2'>
                                             <div>

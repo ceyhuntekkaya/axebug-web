@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import SpechText from './SpechText';
-
+// https://axebug.s3.eu-central-1.amazonaws.com/assets/1.jpg
+//https://axebug.s3.eu-central-1.amazonaws.com/pdf/Activite+Book+2_key.pdf
 const contentModel = {
     "id": 1,
     "name": "",
@@ -167,20 +168,20 @@ export default function ContentBasePanel(props) {
                     {
                         level === 1 || level === 3 ?
                             <audio id="audio" controls className='w-100' style={{ backgroundColor: "#222529", height: 45 }}>
-                                <source id="audioSource" src={`../../assets/${selectedContent.soundUrl}`} type="audio/mpeg" />
+                                <source id="audioSource" src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/${selectedContent.soundUrl}`} type="audio/mpeg" />
                             </audio> : null
                     }
                     {
                         level === 1 ?
                             <div className="d-flex justify-content-center">
-                                <img src={`../../assets/${selectedContent.imageEmptyUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} />
+                                <img src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/${selectedContent.imageEmptyUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} />
                             </div>
                             : null
                     }
                     {
                         level === 2 || level === 4 ?
                             <div className="d-flex justify-content-center">
-                                <img src={`../../assets/${selectedContent.imageFullUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} />
+                                <img src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/${selectedContent.imageFullUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} />
                             </div>
                             : null
                     }

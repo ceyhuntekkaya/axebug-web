@@ -105,10 +105,10 @@ export default function Study(props) {
                                 panels ?
                                     panels.map((panel, key) => (
                                         selectedContent.id === panel.id ? 
-                                        <img src={`../../assets/${panel.imageFullUrl}`} key={key} className={`col-6 mb-4 border border-danger rounded-circle`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} alt={key} />
+                                        <img src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/${panel.imageFullUrl}`} key={key} className={`col-6 mb-4 border border-danger rounded-circle`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} alt={key} />
 
                                         :
-                                        <img src={`../../assets/${panel.imageFullUrl}`} key={key} className={`col-6 mb-4`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} alt={key} />
+                                        <img src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/${panel.imageFullUrl}`} key={key} className={`col-6 mb-4`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} alt={key} />
 
 
 

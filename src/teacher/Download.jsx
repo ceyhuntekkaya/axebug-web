@@ -25,14 +25,14 @@ export default function Download() {
 
     return (
         <div>
-            <Document file="./pdf/l_p_w_1.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+            <Document file="https://axebug.s3.eu-central-1.amazonaws.com/pdf/l_p_w_1.pdf" onLoadSuccess={onDocumentLoadSuccess}>
                 <Page pageNumber={pageNumber} />
             </Document>
             <p>
                 Page {pageNumber} of {numPages}
             </p>
 
-            <button onClick={()=> download("../pdf/l_p_w_1.pdf","aa.pdf")}>cccccc</button>
+            <button onClick={()=> download("https://axebug.s3.eu-central-1.amazonaws.com/pdf/l_p_w_1.pdf","aa.pdf")}>cccccc</button>
         </div>
     );
 }
