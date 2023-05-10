@@ -7,7 +7,7 @@ const answerEmpty = require("./Quiz15Answer.json");
 
 export default function Quiz15(props) {
   const [answer, setAnswer] = useState({ ...answerEmpty });
-  const [pageNo, setPageNo] = useState(0);
+  const [pageNo, setPageNo] = useState(1);
   const [maxPage] = useState(5);
 
   const nextPage = () => {
@@ -405,14 +405,20 @@ export default function Quiz15(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/OUIZ_8_B_LISTENING.mp3`}
+                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/ouiz_15_listening.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
                       </div>
                       <div className="paragraf">
-                        <strong>Robug 13:</strong> These are our friends. From
-                        now on, they can stroll around{" "}
+                        <strong>AXEBUG:</strong> Light speed doesn’t change, no matter what.
+                       
+                        
+                      </div>
+                      <div className="paragraf">
+                        <strong>AXEBUG:</strong> It is 
+
+
                         <input
                           className="form-input textformat"
                           type="text"
@@ -420,11 +426,15 @@ export default function Quiz15(props) {
                           onChange={(e) =>
                             setStudentOpenAnswer(0, 1, 1, e.target.value, true)
                           }
-                        />
-                        .
+                        />.
+
+
+                       
+                       
                       </div>
                       <div className="paragraf">
-                        <strong>Robug 13:</strong> You can go back to the{" "}
+                        <strong>AXEBUG: </strong>YLight speed travels at 300.000km per 
+
                         <input
                           className="form-input textformat"
                           type="text"
@@ -432,14 +442,11 @@ export default function Quiz15(props) {
                           onChange={(e) =>
                             setStudentOpenAnswer(0, 1, 2, e.target.value, true)
                           }
-                        />
-                        . I will take care of our guests.
+                        />.
+
                       </div>
                       <div className="paragraf">
-                        <strong>WATCHMAN 2: </strong>Yes, sir!
-                      </div>
-                      <div className="paragraf">
-                        <strong>Robug 13: </strong> You have come a long way.{" "}
+                        <strong>DUNG BEETLE : </strong> What if we stabilized our speed to 300.000km 	
                         <input
                           className="form-input textformat"
                           type="text"
@@ -448,18 +455,17 @@ export default function Quiz15(props) {
                             setStudentOpenAnswer(0, 1, 3, e.target.value, true)
                           }
                         />
-                        . Eat and recharge your batteries. We will talk
-                        afterwards.
+                      second then?
+                      </div>
+                     
+
+
+
+                      <div className="paragraf">
+                        <strong>LADYBUG:</strong> Time would idefinitely stop. 
                       </div>
                       <div className="paragraf">
-                        <strong>TEN HOURS LATER</strong>
-                      </div>
-                      <div className="paragraf">
-                        <strong>Robug 13:</strong> My friends! So glad to see
-                        you. We need your help!
-                      </div>
-                      <div className="paragraf">
-                        <strong>Axebug: </strong>We couldn’t ignore your{" "}
+                        <strong>DUNG BEETLE: </strong>Would it really 	
                         <input
                           className="form-input textformat"
                           type="text"
@@ -468,17 +474,13 @@ export default function Quiz15(props) {
                             setStudentOpenAnswer(0, 1, 4, e.target.value, true)
                           }
                         />
-                        of course.
+                       ? 
                       </div>
                       <div className="paragraf">
-                        <strong>Dung beetle: </strong>This place is splendid!
-                        Everything is round shaped!
+                        <strong>LADYBUG: </strong>I mean, there won’t be time at all.
                       </div>
                       <div className="paragraf">
-                        <strong>Ladybug:</strong> Tell me about it!
-                      </div>
-                      <div className="paragraf">
-                        <strong>Axebug:</strong> Why did you{" "}
+                        <strong>AXEBUG:</strong> Or we would jump to another 
                         <input
                           className="form-input textformat"
                           type="text"
@@ -487,31 +489,13 @@ export default function Quiz15(props) {
                             setStudentOpenAnswer(0, 1, 5, e.target.value, true)
                           }
                         />
-                        an S.OS.? What’s the problem?
+                        .
                       </div>
                       <div className="paragraf">
-                        <strong>Robug 13: </strong>We arrived to this planet
-                        long before you ever lived.
+                        <strong>DUNG BEETLE :</strong> Then…
                       </div>
                       <div className="paragraf">
-                        <strong>Axebug:</strong> What?
-                      </div>
-                      <div className="paragraf">
-                        <strong>Dung beetle:</strong> How long?
-                      </div>
-                      <div className="paragraf">
-                        <strong>Ladybug:</strong> I don’t get it!
-                      </div>
-                      <div className="paragraf">
-                        <strong>Robug 13:</strong> You will get all your
-                        answers.
-                      </div>
-                      <div className="paragraf">
-                        <strong>Robug 13:</strong> But first, hear me out.
-                      </div>
-                      <div className="paragraf">
-                        <strong>Robug 13:</strong> In order to continue life in
-                        our colony, we need your{" "}
+                        <strong>DUNG BEETLE : </strong>If time stops 	
                         <input
                           className="form-input textformat"
                           type="text"
@@ -520,10 +504,12 @@ export default function Quiz15(props) {
                             setStudentOpenAnswer(0, 1, 6, e.target.value, true)
                           }
                         />
-                        .
+                        
+                        
+                         our travel in light speed…
                       </div>
                       <div className="paragraf">
-                        <strong>Robug 13:</strong> We are dealing with{" "}
+                        <strong>DUNG BEETLE :</strong> Is it possible to move 
                         <input
                           className="form-input textformat"
                           type="text"
@@ -532,11 +518,18 @@ export default function Quiz15(props) {
                             setStudentOpenAnswer(0, 1, 7, e.target.value, true)
                           }
                         />
-                        .
+                        than light?
+
+
                       </div>
                       <div className="paragraf">
-                        <strong>Robug 13:</strong> We made huge mistakes. And
-                        now, our colony is about to{" "}
+                        <strong>DUNG BEETLE :</strong> Can we travel in… 
+                      </div>
+                      <div className="paragraf">
+                        <strong>LADYBUG:</strong> And?
+                      </div>
+                      <div className="paragraf">
+                        <strong>LADYBUG:</strong> A 	
                         <input
                           className="form-input textformat"
                           type="text"
@@ -545,14 +538,16 @@ export default function Quiz15(props) {
                             setStudentOpenAnswer(0, 1, 8, e.target.value, true)
                           }
                         />
-                        !
+                        
+                        
+                        
+                         for your thoughts…
                       </div>
                       <div className="paragraf">
-                        <strong>Axebug:</strong> But, what are we going to do?
+                        <strong>DUNG:</strong> Just saying…
                       </div>
                       <div className="paragraf">
-                        <strong>Robug 13:</strong> You are the only ones who can
-                        find the{" "}
+                        <strong>DUNG BEETLE :</strong> Can we
                         <input
                           className="form-input textformat"
                           type="text"
@@ -561,25 +556,10 @@ export default function Quiz15(props) {
                             setStudentOpenAnswer(0, 1, 9, e.target.value, true)
                           }
                         />
-                        of energy we need.
+                        in time?
                       </div>
                       <div className="paragraf">
-                        <strong>Axebug:</strong> Where are we going to find it?
-                      </div>
-                      <div className="paragraf">
-                        <strong>Dung beetle:</strong> Can we roll and find it?
-                      </div>
-                      <div className="paragraf">
-                        <strong>Ladybug:</strong> That takes the biscuit! I want
-                        to go home!
-                      </div>
-                      <div className="paragraf">
-                        <strong>Axebug:</strong> Guys, pull yourself together.
-                        They need help. We can do this.
-                      </div>
-                      <div className="paragraf">
-                        <strong>Robug 13:</strong> You need to find the element
-                        of designexium in deep space. That’s our{" "}
+                        <strong>DUNG BEETLE :</strong> I mean, time
                         <input
                           className="form-input textformat"
                           type="text"
@@ -591,9 +571,9 @@ export default function Quiz15(props) {
                         .
                       </div>
                       <div className="paragraf">
-                        <strong>Axebug:</strong> Allright then. Let the
-                        adventure begin!
+                        <strong>AXEBUG:</strong> Yes!
                       </div>
+    
                     </React.Fragment>
                   ) : null}
                   {pageNo === 2 ? (
@@ -606,7 +586,7 @@ export default function Quiz15(props) {
                       </div>
 
                       <div className="row">
-                        <div className="col-2"> 1. Allow</div>
+                        <div className="col-2"> 1. Clarify</div>
                         <div className="col-1">
                           <input
                             className="form-input w-100"
@@ -619,12 +599,12 @@ export default function Quiz15(props) {
                         </div>
                         <div className="col-9">
                           <div className="paragraf alert alert-success">
-                            <strong>A. </strong> A frame showing motions.
+                            <strong>A. </strong> A large, powerful light at the front of a vehicle to illuminate the road ahead.
                           </div>
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-2"> 2. Screen</div>
+                        <div className="col-2"> 2. Headlights</div>
                         <div className="col-1">
                           <input
                             className="form-input w-100"
@@ -637,12 +617,12 @@ export default function Quiz15(props) {
                         </div>
                         <div className="col-9">
                           <div className="paragraf alert alert-success">
-                            <strong>B. </strong> To give permission.
+                            <strong>B. </strong> Although, while, on the contrary.
                           </div>
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-2"> 3. Immediately</div>
+                        <div className="col-2"> 3. Time dilation</div>
                         <div className="col-1">
                           <input
                             className="form-input w-100"
@@ -655,12 +635,12 @@ export default function Quiz15(props) {
                         </div>
                         <div className="col-9">
                           <div className="paragraf alert alert-success">
-                            <strong>C. </strong> Any type of call for help.
+                            <strong>C. </strong> C. To make something clear or easier to understand, to define.
                           </div>
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-2"> 4. Return</div>
+                        <div className="col-2"> 4. Whereas</div>
                         <div className="col-1">
                           <input
                             className="form-input w-100"
@@ -673,12 +653,12 @@ export default function Quiz15(props) {
                         </div>
                         <div className="col-9">
                           <div className="paragraf alert alert-success">
-                            <strong>D. </strong> Very urgently.
+                            <strong>D. </strong> Not similar, unlike.
                           </div>
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-2"> 5. SOS Call</div>
+                        <div className="col-2"> 5. Difference</div>
                         <div className="col-1">
                           <input
                             className="form-input w-100"
@@ -691,7 +671,7 @@ export default function Quiz15(props) {
                         </div>
                         <div className="col-9">
                           <div className="paragraf alert alert-success">
-                            <strong>E. </strong> Go back to a position or way.
+                            <strong>E. </strong> Time differance difference caused by gravitational forces and speed.
                           </div>
                         </div>
                       </div>
@@ -703,7 +683,7 @@ export default function Quiz15(props) {
                         <strong> D. Unscramble the words.</strong>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 1. oorp </div>
+                        <div className="col-3"> 1.	EDSPN </div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -722,7 +702,7 @@ export default function Quiz15(props) {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 2. locoyn </div>
+                        <div className="col-3"> 2.	ODNIMESIN  </div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -741,7 +721,7 @@ export default function Quiz15(props) {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 3. vltare </div>
+                        <div className="col-3"> 3.	UCREV </div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -760,7 +740,7 @@ export default function Quiz15(props) {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 4. qedharuratre </div>
+                        <div className="col-3"> 4.	WKNON</div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -779,7 +759,7 @@ export default function Quiz15(props) {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 5. hkint </div>
+                        <div className="col-3"> 5.	UHSH </div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -798,7 +778,7 @@ export default function Quiz15(props) {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 6. gxabeu </div>
+                        <div className="col-3"> 6.	GIANATS </div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -817,7 +797,7 @@ export default function Quiz15(props) {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 7. nerutr </div>
+                        <div className="col-3"> 7.	TOGFRE </div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -836,7 +816,7 @@ export default function Quiz15(props) {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 8. seturarue </div>
+                        <div className="col-3"> 8.	SAMS</div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -855,7 +835,7 @@ export default function Quiz15(props) {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 9. grtate </div>
+                        <div className="col-3"> 9.	RACETIPL </div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -874,7 +854,7 @@ export default function Quiz15(props) {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 10. cregahrege </div>
+                        <div className="col-3"> 10.	GTSOH </div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -910,7 +890,7 @@ export default function Quiz15(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/p0135_002_c2_e8.mp3`}
+                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/c4_e15_pg20_p5.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -928,7 +908,7 @@ export default function Quiz15(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/p0146_001_c2_e8.mp3`}
+                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/c4_e15_pg20_p6.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -946,7 +926,7 @@ export default function Quiz15(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/p0150_001_c2_e8.mp3`}
+                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/c4_e15_pg20_p15.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -964,7 +944,7 @@ export default function Quiz15(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/p0157_001_c2_e8.mp3`}
+                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/c4_e15_pg21_p7_8.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>

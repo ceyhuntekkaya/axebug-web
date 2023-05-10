@@ -92,7 +92,7 @@ export default function TeacherExam() {
             {
                 examName === "Quiz 12" ? <Quiz12 sendExam={sendExam} /> : null
             }
-            {/* {
+             {
                 examName === "Quiz 13" ? <Quiz13 sendExam={sendExam} /> : null
             }
             {
@@ -103,7 +103,7 @@ export default function TeacherExam() {
             }
             {
                 examName === "Quiz 16" ? <Quiz16 sendExam={sendExam} /> : null
-            } */}
+            } 
 
 
 

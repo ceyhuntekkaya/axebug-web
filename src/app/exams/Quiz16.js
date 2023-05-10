@@ -7,7 +7,7 @@ const answerEmpty = require("./Quiz16Answer.json");
 
 export default function Quiz16(props) {
   const [answer, setAnswer] = useState({ ...answerEmpty });
-  const [pageNo, setPageNo] = useState(0);
+  const [pageNo, setPageNo] = useState(1);
   const [maxPage] = useState(5);
 
   const nextPage = () => {
@@ -73,7 +73,7 @@ export default function Quiz16(props) {
         <div className="card-header">
           <div className="d-flex justify-content-center">
             <h1>
-              <strong> QUIZ CHAPTER 2 EPISODE 8</strong>
+              <strong> QUIZ CHAPTER 4 EPISODE 16</strong>
             </h1>
           </div>
         </div>
@@ -405,14 +405,13 @@ export default function Quiz16(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/OUIZ_8_B_LISTENING.mp3`}
+                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/ouiz_16_listening.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
                       </div>
                       <div className="paragraf">
-                        <strong>Robug 13:</strong> These are our friends. From
-                        now on, they can stroll around{" "}
+                        <strong>RAXEBUG:</strong> Can anything pass
                         <input
                           className="form-input textformat"
                           type="text"
@@ -421,10 +420,13 @@ export default function Quiz16(props) {
                             setStudentOpenAnswer(0, 1, 1, e.target.value, true)
                           }
                         />
-                        .
+                        at all?
                       </div>
                       <div className="paragraf">
-                        <strong>Robug 13:</strong> You can go back to the{" "}
+                        <strong>LADYBUG:</strong> No, it can’t.
+                      </div>
+                      <div className="paragraf">
+                        <strong>AXEBUG: </strong>Then, the car and the
                         <input
                           className="form-input textformat"
                           type="text"
@@ -433,13 +435,14 @@ export default function Quiz16(props) {
                             setStudentOpenAnswer(0, 1, 2, e.target.value, true)
                           }
                         />
-                        . I will take care of our guests.
+                        are going with the same speed, right?
                       </div>
                       <div className="paragraf">
-                        <strong>WATCHMAN 2: </strong>Yes, sir!
+                        <strong>DUNG BEETLE : </strong> Yes.
                       </div>
+
                       <div className="paragraf">
-                        <strong>Robug 13: </strong> You have come a long way.{" "}
+                        <strong>AXEBUG:</strong> So, according to the person
                         <input
                           className="form-input textformat"
                           type="text"
@@ -448,18 +451,11 @@ export default function Quiz16(props) {
                             setStudentOpenAnswer(0, 1, 3, e.target.value, true)
                           }
                         />
-                        . Eat and recharge your batteries. We will talk
-                        afterwards.
+                        , headlights are not going in front of the car.
                       </div>
                       <div className="paragraf">
-                        <strong>TEN HOURS LATER</strong>
-                      </div>
-                      <div className="paragraf">
-                        <strong>Robug 13:</strong> My friends! So glad to see
-                        you. We need your help!
-                      </div>
-                      <div className="paragraf">
-                        <strong>Axebug: </strong>We couldn’t ignore your{" "}
+                        <strong>DUNG BEETLE : </strong>WMaybe, he is behind the
+                        car, he can’t see
                         <input
                           className="form-input textformat"
                           type="text"
@@ -468,17 +464,11 @@ export default function Quiz16(props) {
                             setStudentOpenAnswer(0, 1, 4, e.target.value, true)
                           }
                         />
-                        of course.
+                        .
                       </div>
                       <div className="paragraf">
-                        <strong>Dung beetle: </strong>This place is splendid!
-                        Everything is round shaped!
-                      </div>
-                      <div className="paragraf">
-                        <strong>Ladybug:</strong> Tell me about it!
-                      </div>
-                      <div className="paragraf">
-                        <strong>Axebug:</strong> Why did you{" "}
+                        <strong>AXEBUG: </strong>The general relativity only
+                        examines
                         <input
                           className="form-input textformat"
                           type="text"
@@ -487,31 +477,10 @@ export default function Quiz16(props) {
                             setStudentOpenAnswer(0, 1, 5, e.target.value, true)
                           }
                         />
-                        an S.OS.? What’s the problem?
+                        which change speed.
                       </div>
                       <div className="paragraf">
-                        <strong>Robug 13: </strong>We arrived to this planet
-                        long before you ever lived.
-                      </div>
-                      <div className="paragraf">
-                        <strong>Axebug:</strong> What?
-                      </div>
-                      <div className="paragraf">
-                        <strong>Dung beetle:</strong> How long?
-                      </div>
-                      <div className="paragraf">
-                        <strong>Ladybug:</strong> I don’t get it!
-                      </div>
-                      <div className="paragraf">
-                        <strong>Robug 13:</strong> You will get all your
-                        answers.
-                      </div>
-                      <div className="paragraf">
-                        <strong>Robug 13:</strong> But first, hear me out.
-                      </div>
-                      <div className="paragraf">
-                        <strong>Robug 13:</strong> In order to continue life in
-                        our colony, we need your{" "}
+                        <strong>DUNG BEETLE :</strong> But, light speed is
                         <input
                           className="form-input textformat"
                           type="text"
@@ -520,10 +489,13 @@ export default function Quiz16(props) {
                             setStudentOpenAnswer(0, 1, 6, e.target.value, true)
                           }
                         />
-                        .
                       </div>
                       <div className="paragraf">
-                        <strong>Robug 13:</strong> We are dealing with{" "}
+                        <strong>AXEBUG:</strong> Yeap.
+                      </div>
+                      <div className="paragraf">
+                        <strong>AXEBUG: </strong>General relativity explains us
+                        blackholes and the expanding
                         <input
                           className="form-input textformat"
                           type="text"
@@ -532,11 +504,11 @@ export default function Quiz16(props) {
                             setStudentOpenAnswer(0, 1, 7, e.target.value, true)
                           }
                         />
-                        .
+                        model.
                       </div>
                       <div className="paragraf">
-                        <strong>Robug 13:</strong> We made huge mistakes. And
-                        now, our colony is about to{" "}
+                        <strong>DUNG BEETLE :</strong>
+                        I guess special relativity is just in constant speed
                         <input
                           className="form-input textformat"
                           type="text"
@@ -545,14 +517,10 @@ export default function Quiz16(props) {
                             setStudentOpenAnswer(0, 1, 8, e.target.value, true)
                           }
                         />
-                        !
+                        .
                       </div>
                       <div className="paragraf">
-                        <strong>Axebug:</strong> But, what are we going to do?
-                      </div>
-                      <div className="paragraf">
-                        <strong>Robug 13:</strong> You are the only ones who can
-                        find the{" "}
+                        <strong>AXEBUG:</strong> General
                         <input
                           className="form-input textformat"
                           type="text"
@@ -561,25 +529,11 @@ export default function Quiz16(props) {
                             setStudentOpenAnswer(0, 1, 9, e.target.value, true)
                           }
                         />
-                        of energy we need.
+                        tells us about gravitional field, time and their
+                        effects.
                       </div>
                       <div className="paragraf">
-                        <strong>Axebug:</strong> Where are we going to find it?
-                      </div>
-                      <div className="paragraf">
-                        <strong>Dung beetle:</strong> Can we roll and find it?
-                      </div>
-                      <div className="paragraf">
-                        <strong>Ladybug:</strong> That takes the biscuit! I want
-                        to go home!
-                      </div>
-                      <div className="paragraf">
-                        <strong>Axebug:</strong> Guys, pull yourself together.
-                        They need help. We can do this.
-                      </div>
-                      <div className="paragraf">
-                        <strong>Robug 13:</strong> You need to find the element
-                        of designexium in deep space. That’s our{" "}
+                        <strong>AXEBUG:</strong> It also opens up how blackholes
                         <input
                           className="form-input textformat"
                           type="text"
@@ -588,11 +542,15 @@ export default function Quiz16(props) {
                             setStudentOpenAnswer(0, 1, 10, e.target.value, true)
                           }
                         />
-                        .
+                        after hypernova explosions.
                       </div>
                       <div className="paragraf">
-                        <strong>Axebug:</strong> Allright then. Let the
-                        adventure begin!
+                        <strong>DUNG BEETLE :</strong> Space, time, blackhole,
+                        hypernova, relativity…
+                      </div>
+                      <div className="paragraf">
+                        <strong>RDUNG BEETLE :</strong> It’s just too much to
+                        sink in.
                       </div>
                     </React.Fragment>
                   ) : null}
@@ -606,7 +564,7 @@ export default function Quiz16(props) {
                       </div>
 
                       <div className="row">
-                        <div className="col-2"> 1. Allow</div>
+                        <div className="col-2"> 1. Blackhole</div>
                         <div className="col-1">
                           <input
                             className="form-input w-100"
@@ -619,12 +577,13 @@ export default function Quiz16(props) {
                         </div>
                         <div className="col-9">
                           <div className="paragraf alert alert-success">
-                            <strong>A. </strong> A frame showing motions.
+                            <strong>A. </strong> Any natural object outside of
+                            the Earth's atmosphere.
                           </div>
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-2"> 2. Screen</div>
+                        <div className="col-2"> 2. Spinning</div>
                         <div className="col-1">
                           <input
                             className="form-input w-100"
@@ -637,12 +596,14 @@ export default function Quiz16(props) {
                         </div>
                         <div className="col-9">
                           <div className="paragraf alert alert-success">
-                            <strong>B. </strong> To give permission.
+                            <strong>B. </strong> A region in space where gravity
+                            is so strong that nothing, not even light, can
+                            escape.
                           </div>
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-2"> 3. Immediately</div>
+                        <div className="col-2"> 3. Take Off</div>
                         <div className="col-1">
                           <input
                             className="form-input w-100"
@@ -655,12 +616,13 @@ export default function Quiz16(props) {
                         </div>
                         <div className="col-9">
                           <div className="paragraf alert alert-success">
-                            <strong>C. </strong> Any type of call for help.
+                            <strong>C. </strong> Leaving ground and beginning to
+                            fly.
                           </div>
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-2"> 4. Return</div>
+                        <div className="col-2"> 4. Celestial Body</div>
                         <div className="col-1">
                           <input
                             className="form-input w-100"
@@ -673,12 +635,15 @@ export default function Quiz16(props) {
                         </div>
                         <div className="col-9">
                           <div className="paragraf alert alert-success">
-                            <strong>D. </strong> Very urgently.
+                            <strong>D. </strong> To become understood or known..
                           </div>
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-2"> 5. SOS Call</div>
+                        <div className="col-2">
+                          {" "}
+                          5. To become understood or known..
+                        </div>
                         <div className="col-1">
                           <input
                             className="form-input w-100"
@@ -691,7 +656,7 @@ export default function Quiz16(props) {
                         </div>
                         <div className="col-9">
                           <div className="paragraf alert alert-success">
-                            <strong>E. </strong> Go back to a position or way.
+                            <strong>E. </strong> Rotating, turning around.
                           </div>
                         </div>
                       </div>
@@ -703,7 +668,7 @@ export default function Quiz16(props) {
                         <strong> D. Unscramble the words.</strong>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 1. oorp </div>
+                        <div className="col-3"> 1. LTAF </div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -722,7 +687,7 @@ export default function Quiz16(props) {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 2. locoyn </div>
+                        <div className="col-3"> 2. COCUR </div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -741,7 +706,7 @@ export default function Quiz16(props) {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 3. vltare </div>
+                        <div className="col-3"> 3. EHSET </div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -760,7 +725,7 @@ export default function Quiz16(props) {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 4. qedharuratre </div>
+                        <div className="col-3"> 4. CARFESU </div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -779,7 +744,7 @@ export default function Quiz16(props) {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 5. hkint </div>
+                        <div className="col-3"> 5. NOSRES</div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -798,7 +763,7 @@ export default function Quiz16(props) {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 6. gxabeu </div>
+                        <div className="col-3"> 6. RBATEH </div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -817,7 +782,7 @@ export default function Quiz16(props) {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 7. nerutr </div>
+                        <div className="col-3"> 7. TEDSYOR </div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -836,7 +801,7 @@ export default function Quiz16(props) {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 8. seturarue </div>
+                        <div className="col-3"> 8. GTUREYLN </div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -855,7 +820,7 @@ export default function Quiz16(props) {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 9. grtate </div>
+                        <div className="col-3"> 9. OWASEME </div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -874,7 +839,7 @@ export default function Quiz16(props) {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-3"> 10. cregahrege </div>
+                        <div className="col-3"> 10. USCTK </div>
                         <div className="col-9">
                           <input
                             className="form-input textformat"
@@ -910,7 +875,7 @@ export default function Quiz16(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/p0135_002_c2_e8.mp3`}
+                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/c4_e16_pg24_p15.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -928,7 +893,7 @@ export default function Quiz16(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/p0146_001_c2_e8.mp3`}
+                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/c4_e16_pg25_p17.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -946,7 +911,7 @@ export default function Quiz16(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/p0150_001_c2_e8.mp3`}
+                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/c4_e16_pg26_p1.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -964,7 +929,7 @@ export default function Quiz16(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/p0157_001_c2_e8.mp3`}
+                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/c4_e16_pg26_p5.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
