@@ -17,9 +17,10 @@ export default function TeacherSpellingEpisode() {
 
     useEffect(() => {
         if (wordList) {
+            if (wordList.length>0) {
             setChapter(wordList[0].episode.chapter);
             setEpisode(wordList[0].episode)
-        }
+        } }
         // eslint-disable-next-line 
     }, [wordList])
 

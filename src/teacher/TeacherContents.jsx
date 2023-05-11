@@ -145,7 +145,7 @@ export default function TeacherContents() {
                   linkType === "OUT" ?
                     selectedDocuments ?
                       selectedDocuments.map((document, key) =>
-                        <Square key={key} col="1" backgroundColor="white" >
+                        <Square key={key} col="2" backgroundColor="white" >
                           <b>
                             <span>
                               <a className='btn btn-success' target="_blank" href={`https://axebug.s3.eu-central-1.amazonaws.com/pdf/${document.link}`}>

@@ -52,12 +52,12 @@ export default function MyTasks() {
                         studentWorkTaskList.map((task, key) =>
                             type || checkComplated(task.episodeTask, task.exam) === true ?
                                 task.episodeTask ?
-                                    <Square key={key} fontSize={30} col="3" backgroundColor="white" to={`/study/?id=${task.episodeTask.id}`}><b>{task.episodeTask.name}</b></Square>
+                                    <Square key={key} fontSize={30} col="3" backgroundColor="#FEF2F4" to={`/study/?id=${task.episodeTask.id}`}><b>{task.episodeTask.name}</b></Square>
                                     :
                                     task.exam.examType === "EXAM" ?
-                                        <Square key={key} fontSize={30} col="3" backgroundColor="white" to={`/app/exam/${task.exam.id}`}><b>{task.exam.name}</b></Square>
+                                        <Square key={key} fontSize={30} col="3" backgroundColor="#C9A7EB" to={`/app/exam/${task.exam.id}`}><b>{task.exam.name}</b></Square>
                                         :
-                                        <Square key={key} fontSize={30} col="3" backgroundColor="white" to={`/app/quiz/${task.exam.id}`}><b>{task.exam.name}</b></Square>
+                                        <Square key={key} fontSize={30} col="3" backgroundColor="#87CBB9" to={`/app/quiz/${task.exam.id}`}><b>{task.exam.name}</b></Square>
                                 : null
                         )
                         : null
@@ -65,33 +65,6 @@ export default function MyTasks() {
             </div>
         </React.Fragment>)
     }
-
-
-
-    // const activeTaskShow = (type) => {
-    //     return (<React.Fragment>
-    //         <div className='row' style={{ paddingLeft: "8px", paddingRight: "8px" }}>
-    //             {
-    //                 studentWorkTaskList ?
-    //                     studentWorkTaskList.schoolRoomWorkList ?
-    //                         studentWorkTaskList.schoolRoomWorkList.map((task, key) =>
-    //                             type || checkComplated(task.episodeTask, task.exam) === true ?
-    //                                 task.episodeTask ?
-    //                                     <Square key={key} fontSize={30} col="3" backgroundColor="white" to={`/study/?id=${task.episodeTask.id}`}><b>{task.episodeTask.name}</b></Square>
-    //                                     :
-    //                                     task.exam.examType === "EXAM" ?
-    //                                         <Square key={key} fontSize={30} col="3" backgroundColor="white" to={`/app/exam/${task.exam.id}`}><b>{task.exam.name}</b></Square>
-    //                                         :
-    //                                         <Square key={key} fontSize={30} col="3" backgroundColor="white" to={`/app/quiz/${task.exam.id}`}><b>{task.exam.name}</b></Square>
-    //                                 : null
-    //                         )
-    //                         : null
-    //                     : null
-    //             }
-    //         </div>
-    //     </React.Fragment>)
-    // }
-
 
 
 
