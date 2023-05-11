@@ -80,9 +80,7 @@ export default function WordBank(props) {
                                         </div>
                                     </div>
                                     <div className='col-8 ml-5'>
-                                        {/* <audio controls className='w-100' style={{ backgroundColor: "black", height: 45 }}>
-                                            <source src={`../../assets/${selectedWord.soundUrl}`} type="audio/mpeg" />
-                                        </audio> */}
+             
                                         <div className='boxWhite p-2'>
                                             <div>
                                                 <span style={{ fontSize: 48, fontWeight: "bold" }}>{selectedWord.name}</span>
