@@ -22,6 +22,19 @@ export default function Square(props) {
                 setTextColor("text-dark");
                 setBorder("border-dark")
             }
+
+
+            else if (props.backgroundColor === "#C9A7EB") {
+                setTextColor("text-dark");
+                setBorder("border-dark")
+            }
+            else if (props.backgroundColor === "#87CBB9") {
+                setTextColor("text-dark");
+                setBorder("border-dark")
+            }
+
+
+
         }
         if (props.to) {
             setHasEvent(props.to);

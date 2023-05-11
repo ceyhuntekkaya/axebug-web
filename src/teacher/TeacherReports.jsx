@@ -24,7 +24,7 @@ export default function TeacherReports() {
 
 
   useEffect(() => {
-    if (schoolRoomId != undefined) {
+    if (schoolRoomId !== undefined) {
       setStudentList('findBySchoolRoomStudent', schoolRoomId)
     }
   }, [schoolRoomId])
