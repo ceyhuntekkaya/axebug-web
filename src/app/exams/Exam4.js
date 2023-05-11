@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SpechText from "../components/SpechText";
 import FinishExam from "./FinishExam";
+import { Link } from "react-router-dom";
 
 var stringSimilarity = require("string-similarity");
 const answerEmpty = require("./Exam2Answer.json");
@@ -79,6 +80,13 @@ export default function Exam4(props) {
   return (
     <div className="container">
       <div className="card mt-5 mb-5">
+      <div className="card-header">
+          <div className="d-flex justify-content-center">
+            <h4>
+              <strong><Link to="/mytasks"> RETURN TASK LIST</Link></strong>
+            </h4>
+          </div>
+        </div>
         <div className="card-header">
           <div className="d-flex justify-content-center">
             <h5 className="card-title mt-3">
