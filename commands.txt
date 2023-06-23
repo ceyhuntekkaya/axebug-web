@@ -9,8 +9,6 @@ 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
 
 
 
-
-
 docker exec axeadmn_db_1 pg_dumpall -U postgres > /home/axeadmn/axebug_backup_db_14_04_2023_12_43.sql
 
 
