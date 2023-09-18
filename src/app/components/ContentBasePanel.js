@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import SpechText from './SpechText';
-// https://axebug.s3.eu-central-1.amazonaws.com/assets/1.jpg
-//https://axebug.s3.eu-central-1.amazonaws.com/pdf/Activite+Book+2_key.pdf
+// http://madeinbrain.net/axebug/assets/1.jpg
+//http://madeinbrain.net/axebug/pdf/Activite+Book+2_key.pdf
 const contentModel = {
     "id": 1,
     "name": "",
@@ -78,10 +78,10 @@ export default function ContentBasePanel(props) {
     }
     const nextExersize = () => {
 
-        if (level === 1) { setLevel(4);  }
-        if (level === 4) { setLevel(2);  }
+        if (level === 1) { setLevel(4); }
+        if (level === 4) { setLevel(2); }
         if (level === 2) { setLevel(3); }
-        if (level === 3) { props.onNextContent();  }
+        if (level === 3) { props.onNextContent(); }
 
 
         clearValues()
@@ -99,7 +99,7 @@ export default function ContentBasePanel(props) {
 
 
 
-            
+
         }
         clearValues()
     }
@@ -128,7 +128,7 @@ export default function ContentBasePanel(props) {
     return (
         <div className="card">
             <div className='row m-2'>
-            <div className='col-4 boxDark mr-5 d-flex justify-content-center'><h3><b><Link to={props.teacher ? "/teacher-contents" : "/student"} style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link></b></h3></div> <div className="col-8 btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div className='col-4 boxDark mr-5 d-flex justify-content-center'><h3><b><Link to={props.teacher ? "/teacher-contents" : "/student"} style={{ color: "white", textDecoration: "none" }}> AXEBUG DIGITAL</Link></b></h3></div> <div className="col-8 btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                     <div className="btn-group mr-2 w-100" role="group" aria-label="First group">
                         <button type="button" className={`btn btn-${level === 1 ? "success" : "secondary"}`} onClick={() => setLevel(1)}>Listen & Speak</button>
                         <button type="button" className={`btn btn-${level === 4 ? "danger" : "secondary"}`} onClick={() => setLevel(4)}>Read & Write</button>
@@ -168,20 +168,20 @@ export default function ContentBasePanel(props) {
                     {
                         level === 1 || level === 3 ?
                             <audio id="audio" controls className='w-100' style={{ backgroundColor: "#222529", height: 45 }}>
-                                <source id="audioSource" src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/${selectedContent.soundUrl}`} type="audio/mpeg" />
+                                <source id="audioSource" src={`http://madeinbrain.net/axebug/assets/${selectedContent.soundUrl}`} type="audio/mpeg" />
                             </audio> : null
                     }
                     {
                         level === 1 ?
                             <div className="d-flex justify-content-center">
-                                <img src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/${selectedContent.imageEmptyUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} />
+                                <img src={`http://madeinbrain.net/axebug/assets/${selectedContent.imageEmptyUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} />
                             </div>
                             : null
                     }
                     {
                         level === 2 || level === 4 ?
                             <div className="d-flex justify-content-center">
-                                <img src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/${selectedContent.imageFullUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} />
+                                <img src={`http://madeinbrain.net/axebug/assets/${selectedContent.imageFullUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} />
                             </div>
                             : null
                     }

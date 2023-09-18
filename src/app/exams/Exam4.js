@@ -80,7 +80,7 @@ export default function Exam4(props) {
   return (
     <div className="container">
       <div className="card mt-5 mb-5">
-      <div className="card-header">
+        <div className="card-header">
           <div className="d-flex justify-content-center">
             <h4>
               <strong><Link to="/mytasks"> RETURN TASK LIST</Link></strong>
@@ -216,7 +216,7 @@ export default function Exam4(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/exam_4_listening.mp3`}
+                            src={`http://madeinbrain.net/axebug/assets/exam_4_listening.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -378,18 +378,18 @@ export default function Exam4(props) {
                     </div>
                   </React.Fragment>
                 ) : null}
-               
+
                 {pageNo === 2 ? (
                   <React.Fragment>
                     <div>
                       <div className="alert alert-dark" role="alert">
                         <strong>
-                        C.	Match the words and phrases with the correct definitions.
+                          C.	Match the words and phrases with the correct definitions.
                         </strong>
                       </div>
                       <div className="row">
                         <div className="col-6">
-                         
+
                           <div className="paragraf">
                             <strong>1.	Disciplinary</strong>
                             <input
@@ -402,7 +402,7 @@ export default function Exam4(props) {
                               }
                             />
                           </div>
-                          
+
                           <div className="paragraf">
                             <strong>2.	Vital</strong>
                             <input
@@ -416,7 +416,7 @@ export default function Exam4(props) {
                             />
                           </div>
 
-                          
+
                           <div className="paragraf">
                             <strong>3.	Patience</strong>
                             <input
@@ -430,7 +430,7 @@ export default function Exam4(props) {
                             />
                           </div>
 
-                          
+
                           <div className="paragraf">
                             <strong>4.	Essential </strong>
                             <input
@@ -456,7 +456,7 @@ export default function Exam4(props) {
                             />
                           </div>
 
-                        
+
                         </div>
                         <div className="col-6">
                           <div className="paragraf alert alert-success">
@@ -715,7 +715,7 @@ export default function Exam4(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/p015_02_c1e1.mp3`}
+                            src={`http://madeinbrain.net/axebug/assets/p015_02_c1e1.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -733,7 +733,7 @@ export default function Exam4(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/p043_02_c1e2.mp3`}
+                            src={`http://madeinbrain.net/axebug/assets/p043_02_c1e2.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -751,7 +751,7 @@ export default function Exam4(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/p075_01_c1e3.mp3`}
+                            src={`http://madeinbrain.net/axebug/assets/p075_01_c1e3.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -769,7 +769,7 @@ export default function Exam4(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/p099_01_c1e4.mp3`}
+                            src={`http://madeinbrain.net/axebug/assets/p099_01_c1e4.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>

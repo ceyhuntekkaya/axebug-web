@@ -20,6 +20,7 @@ docker exec -it axeadmn_db_1 createdb -U postgres axebug
 cat /home/axeadmn/axebug_backup_db_11_04_2023_16_06.sql | docker exec -i axeadmn_db_1 psql -U postgres 
 
 
+
 scp -r -P 1923  axeadmin@193.163.88.51:/home/axeadmn/axebug_backup_db_11_04_2023_16_06.sql Desktop/axebug-data
 
 

@@ -71,7 +71,7 @@ export default function Quiz15(props) {
   return (
     <div className="container">
       <div className="card mt-5 mb-5">
-      <div className="card-header">
+        <div className="card-header">
           <div className="d-flex justify-content-center">
             <h4>
               <strong><Link to="/mytasks"> RETURN TASK LIST</Link></strong>
@@ -414,18 +414,18 @@ export default function Quiz15(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/ouiz_15_listening.mp3`}
+                            src={`http://madeinbrain.net/axebug/assets/ouiz_15_listening.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
                       </div>
                       <div className="paragraf">
                         <strong>AXEBUG:</strong> Light speed doesn’t change, no matter what.
-                       
-                        
+
+
                       </div>
                       <div className="paragraf">
-                        <strong>AXEBUG:</strong> It is 
+                        <strong>AXEBUG:</strong> It is
 
 
                         <input
@@ -438,11 +438,11 @@ export default function Quiz15(props) {
                         />.
 
 
-                       
-                       
+
+
                       </div>
                       <div className="paragraf">
-                        <strong>AXEBUG: </strong>YLight speed travels at 300.000km per 
+                        <strong>AXEBUG: </strong>YLight speed travels at 300.000km per
 
                         <input
                           className="form-input textformat"
@@ -455,7 +455,7 @@ export default function Quiz15(props) {
 
                       </div>
                       <div className="paragraf">
-                        <strong>DUNG BEETLE : </strong> What if we stabilized our speed to 300.000km 	
+                        <strong>DUNG BEETLE : </strong> What if we stabilized our speed to 300.000km
                         <input
                           className="form-input textformat"
                           type="text"
@@ -464,17 +464,17 @@ export default function Quiz15(props) {
                             setStudentOpenAnswer(0, 1, 3, e.target.value, true)
                           }
                         />
-                      second then?
+                        second then?
                       </div>
-                     
+
 
 
 
                       <div className="paragraf">
-                        <strong>LADYBUG:</strong> Time would idefinitely stop. 
+                        <strong>LADYBUG:</strong> Time would idefinitely stop.
                       </div>
                       <div className="paragraf">
-                        <strong>DUNG BEETLE: </strong>Would it really 	
+                        <strong>DUNG BEETLE: </strong>Would it really
                         <input
                           className="form-input textformat"
                           type="text"
@@ -483,13 +483,13 @@ export default function Quiz15(props) {
                             setStudentOpenAnswer(0, 1, 4, e.target.value, true)
                           }
                         />
-                       ? 
+                        ?
                       </div>
                       <div className="paragraf">
                         <strong>LADYBUG: </strong>I mean, there won’t be time at all.
                       </div>
                       <div className="paragraf">
-                        <strong>AXEBUG:</strong> Or we would jump to another 
+                        <strong>AXEBUG:</strong> Or we would jump to another
                         <input
                           className="form-input textformat"
                           type="text"
@@ -504,7 +504,7 @@ export default function Quiz15(props) {
                         <strong>DUNG BEETLE :</strong> Then…
                       </div>
                       <div className="paragraf">
-                        <strong>DUNG BEETLE : </strong>If time stops 	
+                        <strong>DUNG BEETLE : </strong>If time stops
                         <input
                           className="form-input textformat"
                           type="text"
@@ -513,12 +513,12 @@ export default function Quiz15(props) {
                             setStudentOpenAnswer(0, 1, 6, e.target.value, true)
                           }
                         />
-                        
-                        
-                         our travel in light speed…
+
+
+                        our travel in light speed…
                       </div>
                       <div className="paragraf">
-                        <strong>DUNG BEETLE :</strong> Is it possible to move 
+                        <strong>DUNG BEETLE :</strong> Is it possible to move
                         <input
                           className="form-input textformat"
                           type="text"
@@ -532,13 +532,13 @@ export default function Quiz15(props) {
 
                       </div>
                       <div className="paragraf">
-                        <strong>DUNG BEETLE :</strong> Can we travel in… 
+                        <strong>DUNG BEETLE :</strong> Can we travel in…
                       </div>
                       <div className="paragraf">
                         <strong>LADYBUG:</strong> And?
                       </div>
                       <div className="paragraf">
-                        <strong>LADYBUG:</strong> A 	
+                        <strong>LADYBUG:</strong> A
                         <input
                           className="form-input textformat"
                           type="text"
@@ -547,10 +547,10 @@ export default function Quiz15(props) {
                             setStudentOpenAnswer(0, 1, 8, e.target.value, true)
                           }
                         />
-                        
-                        
-                        
-                         for your thoughts…
+
+
+
+                        for your thoughts…
                       </div>
                       <div className="paragraf">
                         <strong>DUNG:</strong> Just saying…
@@ -582,7 +582,7 @@ export default function Quiz15(props) {
                       <div className="paragraf">
                         <strong>AXEBUG:</strong> Yes!
                       </div>
-    
+
                     </React.Fragment>
                   ) : null}
                   {pageNo === 2 ? (
@@ -899,7 +899,7 @@ export default function Quiz15(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/c4_e15_pg20_p5.mp3`}
+                            src={`http://madeinbrain.net/axebug/assets/c4_e15_pg20_p5.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -917,7 +917,7 @@ export default function Quiz15(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/c4_e15_pg20_p6.mp3`}
+                            src={`http://madeinbrain.net/axebug/assets/c4_e15_pg20_p6.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -935,7 +935,7 @@ export default function Quiz15(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/c4_e15_pg20_p15.mp3`}
+                            src={`http://madeinbrain.net/axebug/assets/c4_e15_pg20_p15.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -953,7 +953,7 @@ export default function Quiz15(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/c4_e15_pg21_p7_8.mp3`}
+                            src={`http://madeinbrain.net/axebug/assets/c4_e15_pg21_p7_8.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>

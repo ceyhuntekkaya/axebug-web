@@ -72,7 +72,7 @@ export default function Quiz3(props) {
   return (
     <div className="container">
       <div className="card mt-5 mb-5">
-      <div className="card-header">
+        <div className="card-header">
           <div className="d-flex justify-content-center">
             <h4>
               <strong><Link to="/mytasks"> RETURN TASK LIST</Link></strong>
@@ -412,7 +412,7 @@ export default function Quiz3(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/quiz_listening_c1_e3.mp3`}
+                            src={`http://madeinbrain.net/axebug/assets/quiz_listening_c1_e3.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -1001,7 +1001,7 @@ export default function Quiz3(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/p076_01_c1e3.mp3`}
+                            src={`http://madeinbrain.net/axebug/assets/p076_01_c1e3.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -1019,7 +1019,7 @@ export default function Quiz3(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/p079_01_c1e3.mp3`}
+                            src={`http://madeinbrain.net/axebug/assets/p079_01_c1e3.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -1037,7 +1037,7 @@ export default function Quiz3(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/p086_03_c1e4.mp3`}
+                            src={`http://madeinbrain.net/axebug/assets/p086_03_c1e4.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -1055,7 +1055,7 @@ export default function Quiz3(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`https://axebug.s3.eu-central-1.amazonaws.com/assets/p091_02_c1e4.mp3`}
+                            src={`http://madeinbrain.net/axebug/assets/p091_02_c1e4.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
