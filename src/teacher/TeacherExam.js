@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom'
 import useExam from '../api/useExam'
 import Exam1 from '../app/exams/Exam1'
 import Exam2 from '../app/exams/Exam2'
+import Exam3 from '../app/exams/Exam3'
+import Exam4 from '../app/exams/Exam4'
 import FinishExam from '../app/exams/FinishExam'
 import Quiz1 from '../app/exams/Quiz1'
 import Quiz2 from '../app/exams/Quiz2'
@@ -56,17 +58,23 @@ export default function TeacherExam() {
                 examName === "Exam 2" ? <Exam2 sendExam={sendExam} /> : null
             }
             {
+                examName === "Exam 3" ? <Exam3 sendExam={sendExam} /> : null
+            }
+            {
+                examName === "Exam 4" ? <Exam4 sendExam={sendExam} /> : null
+            }
+            {
                 examName === "Quiz 1" ? <Quiz1 sendExam={sendExam} /> : null
             }
             {
                 examName === "Quiz 2" ? <Quiz2 sendExam={sendExam} /> : null
             }
-            {/* {
+            {
                 examName === "Quiz 3" ? <Quiz3 sendExam={sendExam} /> : null
             }
             {
                 examName === "Quiz 4" ? <Quiz4 sendExam={sendExam} /> : null
-            } */}
+            } 
 
             {
                 examName === "Quiz 5" ? <Quiz5 sendExam={sendExam} /> : null
