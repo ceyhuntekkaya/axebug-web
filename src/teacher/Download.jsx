@@ -25,14 +25,14 @@ export default function Download() {
 
     return (
         <div>
-            <Document file="http://madeinbrain.net/axebug/pdf/l_p_w_1.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+            <Document file="https://app.axebug.com/axebug/pdf/l_p_w_1.pdf" onLoadSuccess={onDocumentLoadSuccess}>
                 <Page pageNumber={pageNumber} />
             </Document>
             <p>
                 Page {pageNumber} of {numPages}
             </p>
 
-            <button onClick={() => download("http://madeinbrain.net/axebug/pdf/l_p_w_1.pdf", "aa.pdf")}>cccccc</button>
+            <button onClick={() => download("https://app.axebug.com/axebug/pdf/l_p_w_1.pdf", "aa.pdf")}>cccccc</button>
         </div>
     );
 }

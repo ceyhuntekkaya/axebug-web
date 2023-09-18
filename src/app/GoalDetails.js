@@ -52,7 +52,7 @@ export default function GoalDetails(props) {
                 panels ?
                     panels.map((panel, key) => (
                         <div className={`col-2 mb-2 mt-2`} ><Link to={`/study/?id=${props.taskId}`}>
-                            <img src={`http://madeinbrain.net/axebug/assets/${panel.imageFullUrl}`} key={key} className={`col-12`} style={{ cursor: "pointer" }} alt={key} />
+                            <img src={`https://app.axebug.com/axebug/assets/${panel.imageFullUrl}`} key={key} className={`col-12`} style={{ cursor: "pointer" }} alt={key} />
                         </Link><div className='border border-success p-1 mt-1 d-flex justify-content-center' style={{ fontSize: "10pt" }}>{calculateScore(panel.id)}</div>
                         </div>
                     )) : null

@@ -52,10 +52,10 @@ export default function TeacherTask() {
                                 panels ?
                                     panels.map((panel, key) => (
                                         selectedContent.id === panel.id ?
-                                            <img src={`http://madeinbrain.net/axebug/assets/${panel.imageFullUrl}`} key={key} className={`col-6 mb-4 border border-danger rounded-circle`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} alt={key} />
+                                            <img src={`https://app.axebug.com/axebug/assets/${panel.imageFullUrl}`} key={key} className={`col-6 mb-4 border border-danger rounded-circle`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} alt={key} />
 
                                             :
-                                            <img src={`http://madeinbrain.net/axebug/assets/${panel.imageFullUrl}`} key={key} className={`col-6 mb-4`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} alt={key} />
+                                            <img src={`https://app.axebug.com/axebug/assets/${panel.imageFullUrl}`} key={key} className={`col-6 mb-4`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} alt={key} />
 
 
 

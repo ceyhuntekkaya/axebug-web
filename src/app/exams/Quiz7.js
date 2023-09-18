@@ -407,7 +407,7 @@ export default function Quiz7(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`http://madeinbrain.net/axebug/assets/OUIZ_7_B_LISTENING.mp3`}
+                            src={`https://app.axebug.com/axebug/assets/OUIZ_7_B_LISTENING.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -856,7 +856,7 @@ export default function Quiz7(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`http://madeinbrain.net/axebug/assets/p078_001_c2_e7.mp3`}
+                            src={`https://app.axebug.com/axebug/assets/p078_001_c2_e7.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -874,7 +874,7 @@ export default function Quiz7(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`http://madeinbrain.net/axebug/assets/p082_001_c2_e7.mp3`}
+                            src={`https://app.axebug.com/axebug/assets/p082_001_c2_e7.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -892,7 +892,7 @@ export default function Quiz7(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`http://madeinbrain.net/axebug/assets/p087_001_c2_e7.mp3`}
+                            src={`https://app.axebug.com/axebug/assets/p087_001_c2_e7.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
@@ -910,7 +910,7 @@ export default function Quiz7(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`http://madeinbrain.net/axebug/assets/p0104_001_c2_e7.mp3`}
+                            src={`https://app.axebug.com/axebug/assets/p0104_001_c2_e7.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>
