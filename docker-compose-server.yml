@@ -5,9 +5,9 @@ services:
     container_name: postgres
     image: postgres:9.6.23
     environment:
-      POSTGRES_USER: ${POSTGRES_USER:-postgres}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
-      POSTGRES_DB: ${POSTGRES_DB:-keycloak}
+      POSTGRES_USER: ${POSTGRES_USER:-axebug}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-Str421900}
+      POSTGRES_DB: ${POSTGRES_DB:-axebug}
     networks:
       - axebug-network
     ports:
@@ -39,7 +39,7 @@ services:
 
   axebug-server:
     container_name: axebug-server
-    image: ctekkaya/axebug-server:0.1.1
+    image: ctekkaya/axebug-server:0.1.3
     networks:
       - axebug-network
     ports:
