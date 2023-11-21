@@ -16,9 +16,7 @@ export default function TeacherCalender() {
     let da = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(d);
     return da + "." + (mo - 1) + "." + ye;
   }
-
-
-
+  
   return (
     <div className='mt-3 bg-dark'>
       <div>

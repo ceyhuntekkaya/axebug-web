@@ -6,7 +6,7 @@ services:
     image: postgres:9.6.23
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-axebug}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-Str421900}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-Str421900*}
       POSTGRES_DB: ${POSTGRES_DB:-axebug}
     networks:
       - axebug-network

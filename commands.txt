@@ -32,4 +32,47 @@ cp axebug_backup_db_14_04_2023_12_43.sql /home/axeadmn/host/axebug-web/public/ax
 
 scp -r axebug_backup_db_14_04_2023_12_43.sql root@5.75.238.9:~/docs/axebug_backup_db_14_04_2023_12_43.sql 
 
-cat ~/docs/axebug_backup_db_14_04_2023_12_43.sql | docker exec -i root_db_1 psql -U postgres 
+
+cat ~/docs/axebug_backup_axebug.sql | docker exec -i axebugdb psql -U axebug 
+
+
+
+
+
+
+
+
+
+
+
+
+
+scp -r root@5.75.238.9:~/docs/axebug_backup_db_14_04_2023_12_43.sql axebug_backup_db_14_04_2023_12_43.sql 
+scp -r axebug_backup_axebug.sql root@5.75.238.9:~/docs/axebug_backup_axebug.sql 
+cat ~/docs/axebug_backup_db_14_04_2023_12_43.sql | docker exec -i axebugdb psql -U axebug 
+
+
+
+
+
+
+
+
+
+
+
+cp dvdrental.tar /home/axeadmn/host/axebug-web/public/axebug_backup_db_14_04_2023_12_43.sql
+
+
+- db:/var/lib/postgresql/datadb
+
+
+
+
+
+cat ~/docs/axebug_backup_db_14_04_2023_12_43.sql | docker exec -i axepostgres psql -U ferhatskokdemir 
+
+
+
+DOCKER FILE COPY
+docker cp dvdrental.tar 530cf67124af:dvdrental.tar

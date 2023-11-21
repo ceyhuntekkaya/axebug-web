@@ -1,0 +1,31 @@
+version: '3.5'
+
+services:
+  postgres:
+    container_name: axepostgres
+    image: postgres:15.4-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=ferhatskokdemir
+      - POSTGRES_PASSWORD=8V&y+7XCzz=mg[}£O£*YlO854
+    ports:
+      - '5433:5432'
+    volumes: 
+      - $HOME/docker/volumes/postgres:/var/lib/postgresql/data
+    networks:
+      - axe-network
+    
+
+  axebug-server:
+    container_name: axe-server
+    image: ctekkaya/axebug-server:0.2.4
+    networks:
+      - axe-network
+    ports:
+      - "8080:8080"
+
+networks:
+  axe-network:
+    name: axe-network
+    external: true
+
