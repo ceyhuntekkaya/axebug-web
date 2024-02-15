@@ -2,27 +2,45 @@
     "sections":[
         {
             "id":1,
-            "name":"1-1 Section",
+            "name":"Speaking",
             "orderNumber":1,
             "episodeId":1
         },
         {
             "id":2,
-            "name":"1-2 Section",
+            "name":"Listening",
             "orderNumber":1,
             "episodeId":1
         },
         {
             "id":3,
-            "name":"2-1 Section",
+            "name":"Writing",
+            "orderNumber":1,
+            "episodeId":1
+        },
+        {
+            "id":4,
+            "name":"Reading",
+            "orderNumber":1,
+            "episodeId":1
+        },
+        {
+            "id":4,
+            "name":"Quiz",
             "orderNumber":1,
             "episodeId":2
         },
         {
             "id":4,
-            "name":"2-2 Section",
+            "name":"Exam",
             "orderNumber":1,
             "episodeId":2
+        },
+        {
+            "id":4,
+            "name":"Total Score",
+            "orderNumber":1,
+            "episodeId":3
         }
     ]
 }

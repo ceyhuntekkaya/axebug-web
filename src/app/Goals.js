@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import useChapter from '../api/useChapter';
 import GoalEpisode from './GoalEpisode';
+import Square from "./components/Square";
 
 export default function Goals() {
     const [student, setStudent] = useState({ name: "", surname: "", avatar: "" });
@@ -45,14 +46,28 @@ export default function Goals() {
                 <div className='col-5 mt-4'>
                     <div className='row'>
                         <div className='col-12'>
-                            <div className="text-white bg-dark border border-2 border-dark p-2 mt-3 d-flex " style={{ width: "100%" }}><h2><b> <Link to="/student" style={{ color: "white", textDecoration: "none" }}> AXEBUG DIGITAL</Link></b></h2></div>
+                            <div className="text-white bg-dark border border-2 border-dark p-2 mt-3 d-flex "
+                                 style={{width: "100%"}}><h2><b> <Link to="/student" style={{
+                                color: "white",
+                                textDecoration: "none"
+                            }}> AXEBUG DIGITAL</Link></b></h2></div>
                         </div>
+                        <div className='row'><div style={{width:"100px"}}>
+                            <Square backgroundColor="black" to="/student"><b><span>HOME PAGE</span></b>
+                            </Square>
+
+
+                    </div></div>
 
                     </div>
                 </div>
                 <div className='col-7 mt-3'>
                     <div>
-                        <div className="border border-2 border-dark p-2 pr-0 mt-4  black900" style={{ width: "100%", color: "white", backgroundColor: "#222529" }}><h2><b>GOALS AND SCORES</b></h2></div>
+                        <div className="border border-2 border-dark p-2 pr-0 mt-4  black900"
+                             style={{width: "100%", color: "white", backgroundColor: "#222529"}}><h2><b>GOALS AND
+                            SCORES</b></h2></div>
+
+
                     </div>
                 </div>
             </div>

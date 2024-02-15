@@ -76,19 +76,31 @@ export default function MyTasks() {
                 <div className='col-5 mt-4'>
                     <div className='row'>
                         <div className='col-12'>
-                            <div className="text-white bg-dark border border-2 border-dark p-2 mt-3 d-flex justify-content-center" style={{ width: "100%" }}><h2><b> <Link to="/student" style={{ color: "white", textDecoration: "none" }}> AXEBUG DIGITAL</Link></b></h2></div>
+                            <div
+                                className="text-white bg-dark border border-2 border-dark p-2 mt-3 d-flex justify-content-center"
+                                style={{width: "100%"}}><h2><b> <Link to="/student" style={{
+                                color: "white",
+                                textDecoration: "none"
+                            }}> AXEBUG DIGITAL</Link></b></h2></div>
                         </div>
                         <div className='col-12'>
-                            <div className="border border-2 border-dark p-2 mt-3 d-flex justify-content-center" style={{ width: "100%" }}><h2><b>{student.name}'s Tasks</b></h2></div>
+                            <div className="border border-2 border-dark p-2 mt-3 d-flex justify-content-center"
+                                 style={{width: "100%"}}><h2><b>{student.name}'s Tasks</b></h2></div>
+
+                        </div>
+                        <div className='row'>
+                            <Square col="4" backgroundColor="black" to="/student"><b><span>HOME PAGE</span></b> </Square>
+
+
                         </div>
                     </div>
                 </div>
 
 
-
                 <div className='col-7 mt-3'>
                     <div>
-                        <div className="border border-2 border-dark p-2 mt-4 d-flex justify-content-center black900" style={{ width: "100%", color: "white", backgroundColor: "#222529" }}><h2><b>YOUR TASKS</b></h2></div>
+                        <div className="border border-2 border-dark p-2 mt-4 d-flex justify-content-center black900"
+                             style={{width: "100%", color: "white", backgroundColor: "#222529" }}><h2><b>YOUR TASKS</b></h2></div>
                     </div><div className='row'>
                         {
                             activeTaskShow(true)

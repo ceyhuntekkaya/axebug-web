@@ -2,13 +2,18 @@
     "episodes":[
         {
             "id":1,
-            "name":"Intro Episode",
+            "name":"Skills",
             "orderNumber":1
         },
         {
             "id":2,
-            "name":"Adventure 1",
+            "name":"Quiz / Exams",
             "orderNumber":2
+        },
+        {
+            "id":3,
+            "name":"Total Score",
+            "orderNumber":3
         }
     ]
 }

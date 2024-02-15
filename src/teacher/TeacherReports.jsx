@@ -4,6 +4,7 @@ import useSchoolRoom from '../api/useSchoolRoom';
 import useExam from '../api/useExam';
 import useStudent from '../api/useStudent';
 import StudentSingleReport from './StudentSingleReport';
+import Square from '../app/components/Square'
 
 export default function TeacherReports() {
   const [studentList, setStudentList] = useStudent([]);
@@ -46,6 +47,11 @@ export default function TeacherReports() {
               <div className="text-white bg-dark border border-2 border-dark p-2 mt-3 d-flex justify-content-center" style={{ width: "100%" }}><h2><b> <Link to="/teacher" style={{ color: "white", textDecoration: "none" }}> AXEBUG DIGITAL</Link></b></h2></div>
             </div>
             <div className='col-12'>
+            <div className='row'><div style={{width:"100px"}}>
+            <Square backgroundColor="black" to="/teacher" style={{ cursor: "pointer" }}><b><span style={{ cursor: "pointer" }}>MAIN PAGE</span></b> </Square>
+            </div></div>
+
+
               <div className="border border-2 border-dark p-2 mt-3 d-flex justify-content-center" style={{ width: "100%" }}>
                 <div className='row w-100'>
                   <div className='col-3'>Exams<br />

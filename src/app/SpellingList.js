@@ -41,26 +41,27 @@ export default function SpellingList() {
 
 
   return <React.Fragment>
-    <Home secondaryName="SPELLING" />
+    <Home secondaryName="SPELLING"/>
 
 
-   
+
     <div className="d-flex justify-content-center mt-5">
-      <div className='row' style={{ width: 750 }}>
+      <div className='row' style={{width: 750}}>
         {
           list ?
-          list.map((chapter, key) =>
-              <div className='row' key={key}>
-                {/* <Square key={key} col="3" backgroundColor="black"><h4><b>{key+1}</b></h4> </Square> */}
-                {
-                  chapter.episodes.map((episode, no) =>
-                  no === 0 && key === 0 ? 
-                    <Square key={no} to={`/spellingword/?id=${episode.id}`} col="3" backgroundColor="white"><h3><b>{episode.name}</b></h3> </Square>
-                    : null
-                  )
-                }
-              </div>
-            ) : null
+              list.map((chapter, key) =>
+                  <div className='row' key={key}>
+                    {/* <Square key={key} col="3" backgroundColor="black"><h4><b>{key+1}</b></h4> </Square> */}
+                    {
+                      chapter.episodes.map((episode, no) =>
+                          no === 0 && key === 0 ?
+                              <Square key={no} to={`/spellingword/?id=${episode.id}`} col="3" backgroundColor="white">
+                                <h3><b>{episode.name}</b></h3></Square>
+                              : null
+                      )
+                    }
+                  </div>
+              ) : null
         }
       </div>
     </div>

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "KINDERGARTEN YEAR 4",
+    "value": -2
+  },
+  {
+    "name": "KINDERGARTEN YEAR 5",
+    "value": -1
+  },
+  {
+    "name": "KINDERGARTEN YEAR 6",
+    "value": 0
+  },
+  {
+    "name": "GRADE 1",
+    "value": 1
+  },
+  {
+    "name": "GRADE 2",
+    "value": 2
+  },
+  {
+    "name": "GRADE 3",
+    "value": 3
+  },
+  {
+    "name": "GRADE 4",
+    "value": 4
+  },
+  {
+    "name": "GRADE 5",
+    "value": 5
+  },
+  {
+    "name": "GRADE 6",
+    "value": 6
+  },
+  {
+    "name": "GRADE 7",
+    "value": 7
+  },
+  {
+    "name": "GRADE 8",
+    "value": 8
+  },
+  {
+    "name": "GRADE 9",
+    "value": 9
+  },
+  {
+    "name": "GRADE 10",
+    "value": 10
+  },
+  {
+    "name": "GRADE 11",
+    "value": 11
+  },
+  {
+    "name": "GRADE 12",
+    "value": 12
+  }
+]

@@ -1,15 +1,18 @@
 {
-    "api_2": {
-      "invokeUrl": "https://app.axebug.com/api"
-    },
-    "api_local": {
-      "invokeUrl": "http://localhost:8080"
-    },
-    "api_server": {
-      "invokeUrl": "https://app.axebug.com/api"
-    },
-    "api": {
-      "invokeUrl": "https://api.axebug.com/api"
-    }
+  "api_2": {
+    "invokeUrl": "https://app.axebug.com/api"
+  },
+  "api_local": {
+    "invokeUrl": "http://localhost:8080"
+  },
+  "api_server": {
+    "invokeUrl": "https://app.axebug.com/api"
+  },
+  "api_yayin": {
+    "invokeUrl": "https://api.axebug.com/api"
+  },
+  "api": {
+    "invokeUrl": "https://api.axebug.com/api"
   }
+}
   

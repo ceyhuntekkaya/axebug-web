@@ -18,16 +18,6 @@ export default function Demo() {
         setPanels("findAllPanels", "");
         // eslint-disable-next-line 
       }, [])
-
-      console.log(chapters)
-      console.log(episodes)
-
-      console.log(tasks)
-
-      console.log(panels)
-
-
-
   return (
     <div>demo</div>
   )

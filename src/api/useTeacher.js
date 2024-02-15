@@ -95,6 +95,34 @@ export default function useTeacher() {
         }
     }
 
+
+
+
+    const schoolRoomList = async (teacherId) => {
+        try {
+            const res = await axios.get(`${config.api.invokeUrl}/teacher/schoolroom/${teacherId}`);
+            setResult(res.data);
+        } catch (err) {
+            setResult(`An error has occurred: ${err}`);
+        }
+    }
+    const schoolRoomAdd = async (teacherId, schoolroomId) => {
+        try {
+            const res = await axios.get(`${config.api.invokeUrl}/teacher/schoolroom/${teacherId}/add/${schoolroomId}`);
+            setResult(res.data);
+        } catch (err) {
+            setResult(`An error has occurred: ${err}`);
+        }
+    }
+    const schoolRoomRemove = async (teacherId, schoolroomId) => {
+        try {
+            const res = await axios.get(`${config.api.invokeUrl}/teacher/schoolroom/${teacherId}/remove/${schoolroomId}`);
+            setResult(res.data);
+        } catch (err) {
+            setResult(`An error has occurred: ${err}`);
+        }
+    }
+
     const handleChange = async (type, params) => {
         if (type === "createteacher") {
             await createteacher(params);
@@ -118,6 +146,12 @@ export default function useTeacher() {
             await loginteacher(params);
         } else if (type === "schoolRoomScore") {
             await schoolRoomScore(params);
+        } else if (type === "schoolRoomList") {
+            await schoolRoomList(params);
+        } else if (type === "schoolRoomAdd") {
+            await schoolRoomAdd(params.teacherId, params.schoolroomId);
+        } else if (type === "schoolRoomRemove") {
+            await schoolRoomRemove(params.teacherId, params.schoolroomId);
         }
     }
     return [result, handleChange];
