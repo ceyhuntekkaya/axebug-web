@@ -126,7 +126,7 @@ export default function TeacherContents() {
                             </div>
                             <div className='row'>
                                 <Square col="2" backgroundColor="black"><b><span>STUDENT MATERIALS</span></b> </Square>
-                                <Square col="2" backgroundColor="white" to="/teacher-contents/ACTIVTY"><b><span>ACTIVTY BOOKS</span></b>
+                                <Square col="2" backgroundColor="white" to="/teacher-contents/ACTIVTY"><b><span>ACTIVITY BOOKS</span></b>
                                 </Square>
                             </div>
                             <div className='row'>

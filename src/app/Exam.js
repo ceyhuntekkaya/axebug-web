@@ -117,9 +117,6 @@ export default function Exam() {
                 examName === "Exam 4" ? <Exam4 sendExam={sendExam} /> : null
             }
             {
-                examName === "Exam 2" ? <Exam2 sendExam={sendExam} /> : null
-            }
-            {
                 examName === "Quiz 1" ? <Quiz1 sendExam={sendExam} /> : null
             }
             {
