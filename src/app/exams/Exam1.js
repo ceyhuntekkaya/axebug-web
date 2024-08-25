@@ -775,7 +775,7 @@ export default function Exam1(props) {
                           style={{ backgroundColor: "black", height: 45 }}
                         >
                           <source
-                            src={`./axebug/assets/axe_exam_c_1_listening_a.mp3`}
+                            src={`https://app.axebug.com/axebug/assets/axe_exam_c_1_listening_a.mp3`}
                             type="audio/mpeg"
                           />
                         </audio>

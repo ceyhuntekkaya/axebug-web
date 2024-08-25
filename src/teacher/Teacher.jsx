@@ -88,7 +88,10 @@ export default function Teacher() {
 
             </div>
         </div>
-        <Square fontSize={30} col="12" backgroundColor="white" to={`/teacher-classes/`}><b>My Classes</b></Square>
+        {
+          // <Square fontSize={30} col="12" backgroundColor="white" to={`/teacher-classes/`}><b>My Classes</b></Square>
+        }
+
         <Square fontSize={30} col="12" backgroundColor="white" to={`/teacher-contents/`}><b>Contents</b></Square>
         <Square fontSize={30} col="12" backgroundColor="white" to={`/teacher-reports/`}><b>Reports</b></Square>
       </div>

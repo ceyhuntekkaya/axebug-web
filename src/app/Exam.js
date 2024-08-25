@@ -75,12 +75,10 @@ export default function Exam() {
                 });
             });
         });
-
         saveSelectedExamResult("saveExamResult", answerList)
         setExamName("Finish")
         // if (isFinish === true)
         //     setExamName("Finish")
-
     }
 
     const findSkillName = (skillNo, examType) => {

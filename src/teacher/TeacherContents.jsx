@@ -123,17 +123,12 @@ export default function TeacherContents() {
                                 <Square col="2" backgroundColor="black"><b><span>CONTENTS</span></b> </Square>
                                 <Square col="2" backgroundColor="white" to="/teacher-contents/COMICS"><b><span>COMIC BOOKS</span></b>
                                 </Square>
-                            </div>
-                            <div className='row'>
-                                <Square col="2" backgroundColor="black"><b><span>STUDENT MATERIALS</span></b> </Square>
                                 <Square col="2" backgroundColor="white" to="/teacher-contents/ACTIVTY"><b><span>ACTIVITY BOOKS</span></b>
                                 </Square>
-                            </div>
-                            <div className='row'>
-                                <Square col="2" backgroundColor="black"><b><span>CONNECTION</span></b> </Square>
                                 <Square col="2" backgroundColor="white" to="/teacher-contents/CONNECTION"><b><span>SCIENCE & MATH</span></b>
                                 </Square>
                             </div>
+
                             <div className='row'>
                                 <Square col="2" backgroundColor="black"><b><span>APPLICATION</span></b> </Square>
                                 <Square col="2" backgroundColor="white"
@@ -142,6 +137,10 @@ export default function TeacherContents() {
                                         to="/teacher-spelling-list"><b><span>SPELLING</span></b> </Square>
                                 <Square col="2" backgroundColor="white"
                                         to="/teacher-wordbank-list"><b><span>WORDBANK</span></b> </Square>
+
+                                {
+
+                                }
                                 <Square col="2" backgroundColor="white"
                                         to="/teacher-contents/GAME"><b><span>CLASS GAMES</span></b> </Square>
                                 <Square col="2" backgroundColor="white"
@@ -206,7 +205,6 @@ export default function TeacherContents() {
                                                     : null
                                             ) : null
                                         : null
-
                                 }
                                 {
                                     linkType === "QUIZS" ?
