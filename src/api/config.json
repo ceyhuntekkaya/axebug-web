@@ -1,5 +1,5 @@
 {
-  "api_2": {
+  "api_2e": {
     "invokeUrl": "https://app.axebug.com/api"
   },
   "api_3333": {
@@ -13,6 +13,7 @@
   },
   "api": {
     "invokeUrl": "https://api.axebug.com/api"
-  }
+  },
+
 }
   
