@@ -5,9 +5,6 @@ _65c8f4f4da44823d7ceabedcf7d029fd.axebug.com. CNAME _f944f1f5ff01d10810d016dc12d
 ssh root@5.75.238.9
 
 
-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
-
-
 
 docker exec axeadmn_db_1 pg_dumpall -U postgres > /home/axeadmn/axebug_backup_db_14_04_2023_12_43.sql
 
