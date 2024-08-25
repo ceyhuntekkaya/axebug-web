@@ -175,9 +175,16 @@ export default function TeacherContents() {
                                                         <b>
                             <span>
                               <a className='btn btn-success' target="_blank"
-                                 href={`http://madeinbrain.net/pdf/${document.link}`}>
+                                 href={`https://app.axebug.com/axebug/pdf/${document.link}`}>
                                 <span>{document.name}</span>
                               </a>
+
+                                {
+                                   // <a className='btn btn-success' target="_blank"
+                                   //    href={`http://madeinbrain.net/pdf/${document.link}`}>
+                                   //     <span>{document.name}</span>
+                                   // </a>
+                                }
                             </span>
                                                         </b>
                                                     </Square>

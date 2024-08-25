@@ -3,7 +3,7 @@
     "invokeUrl": "https://app.axebug.com/api"
   },
   "api": {
-    "invokeUrl": "http://localhost:8082"
+    "invokeUrl": "http://localhost:8080"
   },
   "api_server": {
     "invokeUrl": "https://app.axebug.com/api"
