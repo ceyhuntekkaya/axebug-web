@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import useWordBank from '../api/useWordBank';
 import Square from './components/Square';
-import { useSearchParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import {useSearchParams} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import Home from './components/Home';
 
 export default function SpellingEpisode() {
@@ -13,7 +13,7 @@ export default function SpellingEpisode() {
 
     useEffect(() => {
         var id = searchParams.get("id");
-        setWordList("findByEpisode", { episodeId: id, category: "spelling" });
+        setWordList("findByEpisode", {episodeId: id, category: "spelling"});
         // eslint-disable-next-line 
     }, [])
 
@@ -26,22 +26,24 @@ export default function SpellingEpisode() {
     }, [wordList])
 
     return <React.Fragment>
-        <Home secondaryName="SPELLING" />
+        <Home secondaryName="SPELLING"/>
         <div className=" container d-flex justify-content-center mt-5">
             <div className='row'>
                 {
                     wordList ?
                         wordList.length > 0 ?
                             <React.Fragment>
-                                <Square col="2" backgroundColor="black"><h4><b>{chapter.name}</b></h4> </Square>
-                                <Square col="2" backgroundColor="black"><h4><b>{episode.name}</b></h4> </Square>
+                                <Square to={`/speling/`} col="2" backgroundColor="white"><h3><b>BACK</b></h3></Square>
+                                <Square col="2" backgroundColor="black"><h4><b>{chapter.name}</b></h4></Square>
+                                <Square col="2" backgroundColor="black"><h4><b>{episode.name}</b></h4></Square>
                             </React.Fragment> : null : null
                 }
                 {
                     wordList ?
                         wordList.map((word, key) =>
                             <Square key={key} to={`/app/spelling/?id=${word.id}&e=${word.episode.id}`} col="2"
-                                backgroundColor={word.category === "EASY" ? "#F4BFBF" : word.category === "MEDIUM" ? "#FAF0D7" : "#8CC0DE"}><h2>{word.name}</h2> </Square>
+                                    backgroundColor={word.category === "EASY" ? "#F4BFBF" : word.category === "MEDIUM" ? "#FAF0D7" : "#8CC0DE"}>
+                                <h2>{word.name}</h2></Square>
                         ) : null
                 }
             </div>

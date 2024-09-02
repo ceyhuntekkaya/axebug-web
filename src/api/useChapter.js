@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import axios from 'axios'
+
 const config = require('./config.json');
 
 export default function useChapter() {
@@ -55,8 +56,9 @@ export default function useChapter() {
         }
     }
     const findAllChaptersWithEpisodes = async () => {
+        console.log("findAllChaptersWithEpisodes")
         try {
-            const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/episode/`);
+            const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/episode`);
             setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);
@@ -88,8 +90,8 @@ export default function useChapter() {
         } else if (type === "findAllDetail") {
             await findAllDetail();
         } else if (type === "findAllChaptersWithEpisodes") {
-        await findAllChaptersWithEpisodes();
-    } 
+            await findAllChaptersWithEpisodes();
+        }
     }
     return [result, handleChange];
 }

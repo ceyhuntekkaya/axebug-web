@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import Square from './components/Square';
 import useWordBank from '../api/useWordBank';
-import { useSearchParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import {useSearchParams} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 export default function WordBank(props) {
     const [searchParams,] = useSearchParams();
     const [wordList, setWordList] = useWordBank(null);
-    const [selectedWord, setSelectedWord] = useState({ number: 0, type: "" });
+    const [selectedWord, setSelectedWord] = useState({number: 0, type: ""});
     const [selectedWordId, setSelectedWordId] = useState(0);
     const [currentKey, setCurrentKey] = useState(0);
     const [episode, setEpisode] = useState({});
@@ -58,34 +58,52 @@ export default function WordBank(props) {
                     <div className="mb-4">
                         <div className="">
                             <div className='row m-2'>
-                                <div className='col-4 boxDark mr-5 d-flex justify-content-center'><h3><b><Link to="/student" style={{ color:"white", textDecoration:"none" }}> AXEBUG DIGITAL</Link></b></h3></div>
+                                <div className='col-4 boxDark mr-5 d-flex justify-content-center'><h3><b><Link
+                                    to="/student" style={{color: "white", textDecoration: "none"}}> AXEBUG
+                                    DIGITAL</Link></b></h3></div>
                                 <div className='col-8 boxWhite ml-5'>
                                     {/* <h4>Listening and Speaking</h4> */}
-                                    </div>
+                                </div>
                             </div>
                             <div className='row m-2'>
-                                <div className='col-4 boxWhite mr-5 d-flex justify-content-center'><h3><b>WORDBANK</b></h3></div>
+                                <div className='col-4 boxWhite mr-5 d-flex justify-content-center'><h3><b>WORDBANK</b>
+                                </h3></div>
                                 <div className='col-8 boxDark ml-5'>
-                                    {/* <h4>Listen to the audio. Then, repeat the sentences clearly.</h4> */}
-                                    </div>
+                                </div>
                             </div>
                             <div className="m-2">
                                 <div className="row">
                                     <div className='col-4 boxWhite mr-5'>
                                         <div className="row mb-3 d-flex justify-content-center">
-                                            <Square col="5" backgroundColor="black"><h1><b>{chapter.name}</b></h1> </Square>
-                                            <Square col="5" backgroundColor="black"><h1><b>{episode.name}</b></h1> </Square>
-                                            <div className="col-5"><button className="btn btn-dark w-100" onClick={prevQuestions}>Prev Word</button></div>
-                                            <div className="col-5"><button className="btn btn-dark w-100" onClick={nextQuestions}>Next Word</button></div>
+                                            <Square col="5" backgroundColor="black"><h1><b>{chapter.name}</b></h1>
+                                            </Square>
+                                            <Square col="5" backgroundColor="black"><h1><b>{episode.name}</b></h1>
+                                            </Square>
+                                            <div className="col-5">
+                                                <button className="btn btn-dark w-100" onClick={prevQuestions}>Prev
+                                                    Word
+                                                </button>
+                                            </div>
+                                            <div className="col-5">
+                                                <button className="btn btn-dark w-100" onClick={nextQuestions}>Next
+                                                    Word
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className='col-8 ml-5'>
-             
+
                                         <div className='boxWhite p-2'>
                                             <div>
-                                                <span style={{ fontSize: 48, fontWeight: "bold" }}>{selectedWord.name}</span>
-                                                <span style={{ fontSize: 36, fontStyle: 'italic' }}>/ {selectedWord.category}</span></div>
-                                            <div style={{ fontSize: 48 }}>
+                                                <span style={{
+                                                    fontSize: 48,
+                                                    fontWeight: "bold"
+                                                }}>{selectedWord.name}</span>
+                                                <span style={{
+                                                    fontSize: 36,
+                                                    fontStyle: 'italic'
+                                                }}>/ {selectedWord.category}</span></div>
+                                            <div style={{fontSize: 48}}>
                                                 {
                                                     selectedWord.description
                                                 }

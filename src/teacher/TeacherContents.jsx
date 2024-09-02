@@ -127,20 +127,18 @@ export default function TeacherContents() {
                                 </Square>
                                 <Square col="2" backgroundColor="white" to="/teacher-contents/CONNECTION"><b><span>SCIENCE & MATH</span></b>
                                 </Square>
+                                <Square col="2" backgroundColor="white"
+                                        to="/teacher-contents/TASKS"><b><span>TASKS</span></b>
+                                </Square>
                             </div>
 
-                            <div className='row'>
+                            <div className='row mb-5'>
                                 <Square col="2" backgroundColor="black"><b><span>APPLICATION</span></b> </Square>
-                                <Square col="2" backgroundColor="white"
-                                        to="/teacher-contents/TASKS"><b><span>AXE4SKILLS</span></b> </Square>
+
                                 <Square col="2" backgroundColor="white"
                                         to="/teacher-spelling-list"><b><span>SPELLING</span></b> </Square>
                                 <Square col="2" backgroundColor="white"
                                         to="/teacher-wordbank-list"><b><span>WORDBANK</span></b> </Square>
-
-                                {
-
-                                }
                                 <Square col="2" backgroundColor="white"
                                         to="/teacher-contents/GAME"><b><span>CLASS GAMES</span></b> </Square>
                                 <Square col="2" backgroundColor="white"
@@ -171,23 +169,16 @@ export default function TeacherContents() {
                                     linkType === "OUT" ?
                                         selectedDocuments ?
                                             selectedDocuments.map((document, key) =>
-                                                    <Square key={key} col="2" backgroundColor="white">
-                                                        <b>
-                            <span>
-                              <a className='btn btn-success' target="_blank"
-                                 href={`https://app.axebug.com/axebug/pdf/${document.link}`}>
-                                <span>{document.name}</span>
-                              </a>
-
-                                {
-                                   // <a className='btn btn-success' target="_blank"
-                                   //    href={`http://madeinbrain.net/pdf/${document.link}`}>
-                                   //     <span>{document.name}</span>
-                                   // </a>
-                                }
-                            </span>
-                                                        </b>
-                                                    </Square>
+                                                <Square key={key} col="2" backgroundColor="white">
+                                                        <span>
+                                                            <b>
+                                                          <a className='btn btn-success' target="_blank"
+                                                             href={`https://app.axebug.com/axebug/pdf/${document.link}`}>
+                                                            <span>{document.name}</span>
+                                                          </a>
+                                                            </b>
+                                                        </span>
+                                                </Square>
                                             ) : null
                                         : null
                                 }
