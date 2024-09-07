@@ -54,8 +54,6 @@ export default function TeacherContents() {
             } else if (id === "QUIZS") {
                 setLinkType("QUIZS")
             } else {
-
-
                 documents.sort(function (a, b) {
                     return a.id - b.id;
                 });
@@ -71,7 +69,6 @@ export default function TeacherContents() {
             setOpen(true)
         }
     }, [id, documents])
-
 
     return (
         <div className='container'>
@@ -94,7 +91,6 @@ export default function TeacherContents() {
                 {
                     open
                 }
-
                 {
                     open === true ?
                         <div className='col-12 mt-3'>
@@ -103,8 +99,6 @@ export default function TeacherContents() {
                                         style={{cursor: "pointer"}}><b><span
                                     style={{cursor: "pointer"}}>MAIN PAGE</span></b> </Square>
                             </div>
-
-
                             <div className='row'>
                                 <Square col="2" backgroundColor="black"><b><span>PLANNING</span></b> </Square>
                                 <Square col="2" backgroundColor="white" to="/teacher-contents/YEARLY_PLAN"><b><span>YEARLY PLAN</span></b>
@@ -160,8 +154,6 @@ export default function TeacherContents() {
                                 <Square col="2" backgroundColor="black" to="/teacher-contents"
                                         style={{cursor: "pointer"}}><b><span style={{cursor: "pointer"}}>BACK</span></b>
                                 </Square>
-
-
                             </div>
                             <div className='row'>
 
