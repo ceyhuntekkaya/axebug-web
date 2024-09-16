@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import SpechText from "../components/SpechText";
 import FinishExam from "./FinishExam";
 import { Link } from "react-router-dom";
@@ -19,7 +19,15 @@ export default function Quiz8(props) {
     if (pageNo > 0) setPageNo(pageNo - 1);
     // props.sendExam(answer,"QUIZ", false)
   };
+  const [returnLink, setReturnLink] = useState("/mytasks");
+  useEffect(() => {
+    const isTeacher = window.location.href
 
+    if(isTeacher.includes("teacher")){
+      setReturnLink("/teacher-contents/QUIZS")
+      console.log(isTeacher)
+    }
+  }, [])
   const setStudentOpenAnswer = (
     skils,
     section,
@@ -74,7 +82,7 @@ export default function Quiz8(props) {
         <div className="card-header">
           <div className="d-flex justify-content-center">
             <h4>
-              <strong><Link to="/mytasks"> RETURN TASK LIST</Link></strong>
+              <strong><Link to={returnLink}> RETURN TASK LIST</Link></strong>
             </h4>
           </div>
         </div>

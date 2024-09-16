@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import SpechText from "../components/SpechText";
 import FinishExam from "./FinishExam";
 import { Link } from "react-router-dom";
@@ -10,6 +10,17 @@ export default function Exam2(props) {
   const [answer, setAnswer] = useState({ ...answerEmpty });
   const [pageNo, setPageNo] = useState(0);
   const [maxPage] = useState(7);
+
+
+  const [returnLink, setReturnLink] = useState("/mytasks");
+  useEffect(() => {
+    const isTeacher = window.location.href
+
+    if(isTeacher.includes("teacher")){
+      setReturnLink("/teacher-contents/EXAMS")
+      console.log(isTeacher)
+    }
+  }, [])
 
   const nextPage = () => {
     if (pageNo < maxPage - 1) setPageNo(pageNo + 1);
@@ -74,7 +85,7 @@ export default function Exam2(props) {
         <div className="card-header">
           <div className="d-flex justify-content-center">
             <h4>
-              <strong><Link to="/mytasks"> RETURN TASK LIST</Link></strong>
+              <strong><Link to={returnLink}> RETURN TASK LIST</Link></strong>
             </h4>
           </div>
         </div>

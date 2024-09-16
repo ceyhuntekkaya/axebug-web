@@ -39,6 +39,43 @@ export default function DijitalContents() {
         return true
     }
 
+
+
+    const backup=()=>{
+        return(<>
+            <div className="col-3 p-2"><a target="_blank"
+                                          href="https://madeinbrain.net/axebug/HTML/Chapter1/index.html"><img
+                className='w-100' src={`assets/ch1.png`}/></a></div>
+        <div className="col-3 p-2"><a target="_blank"
+                                      href="https://madeinbrain.net/axebug/HTML/Chapter2v3/index.html"><img
+            className='w-100' src={`assets/ch2.png`}/></a></div>
+        <div className="col-3 p-2"><a target="_blank"
+                                      href="https://madeinbrain.net/axebug/HTML/Chapter3/index.html"><img
+            className='w-100' src={`assets/ch3.png`}/></a></div>
+        <div className="col-3 p-2"><a target="_blank"
+                                      href="https://madeinbrain.net/axebug/HTML/Chapter4/index.html"><img
+            className='w-100' src={`assets/ch4.png`}/></a></div>
+        <div className="col-3 p-2"><a target="_blank"
+                                      href="https://madeinbrain.net/axebug/HTML/Activite1/index.html"><img
+            className='w-100' src={`assets/ab1.png`}/></a></div>
+        <div className="col-3 p-2"><a target="_blank"
+                                      href="https://madeinbrain.net/axebug/HTML/Activite2v3/index.html"><img
+            className='w-100' src={`assets/ab2.png`}/></a></div>
+        <div className="col-3 p-2"><a target="_blank"
+                                      href="https://madeinbrain.net/axebug/HTML/Activite3/index.html"><img
+            className='w-100' src={`assets/ab3.png`}/></a></div>
+        <div className="col-3 p-2"><a target="_blank"
+                                      href="https://madeinbrain.net/axebug/HTML/Activite4/index.html"><img
+            className='w-100' src={`assets/ab4.png`}/></a></div>
+
+        <div className="col-3 p-2"><a target="_blank"
+                                      href="https://madeinbrain.net/axebug/HTML/Mathematics/index.html"><img
+            className='w-100' src={`assets/math.png`}/></a></div>
+        <div className="col-3 p-2"><a target="_blank"
+                                      href="https://madeinbrain.net/axebug/HTML/Science/index.html"><img
+            className='w-100' src={`assets/science.png`}/></a></div></>
+        )
+    }
     const activeTaskShow = () => {
         return (
             <React.Fragment>
@@ -46,27 +83,13 @@ export default function DijitalContents() {
                     <div className="col-3 p-2"><a target="_blank"
                                                   href="https://madeinbrain.net/axebug/HTML/Chapter1/index.html"><img
                         className='w-100' src={`assets/ch1.png`}/></a></div>
-                    <div className="col-3 p-2"><a target="_blank"
-                                                  href="https://madeinbrain.net/axebug/HTML/Chapter2v3/index.html"><img
-                        className='w-100' src={`assets/ch2.png`}/></a></div>
-                    <div className="col-3 p-2"><a target="_blank"
-                                                  href="https://madeinbrain.net/axebug/HTML/Chapter3/index.html"><img
-                        className='w-100' src={`assets/ch3.png`}/></a></div>
-                    <div className="col-3 p-2"><a target="_blank"
-                                                  href="https://madeinbrain.net/axebug/HTML/Chapter4/index.html"><img
-                        className='w-100' src={`assets/ch4.png`}/></a></div>
+
+
+
                     <div className="col-3 p-2"><a target="_blank"
                                                   href="https://madeinbrain.net/axebug/HTML/Activite1/index.html"><img
                         className='w-100' src={`assets/ab1.png`}/></a></div>
-                    <div className="col-3 p-2"><a target="_blank"
-                                                  href="https://madeinbrain.net/axebug/HTML/Activite2v3/index.html"><img
-                        className='w-100' src={`assets/ab2.png`}/></a></div>
-                    <div className="col-3 p-2"><a target="_blank"
-                                                  href="https://madeinbrain.net/axebug/HTML/Activite3/index.html"><img
-                        className='w-100' src={`assets/ab3.png`}/></a></div>
-                    <div className="col-3 p-2"><a target="_blank"
-                                                  href="https://madeinbrain.net/axebug/HTML/Activite4/index.html"><img
-                        className='w-100' src={`assets/ab4.png`}/></a></div>
+
 
                     <div className="col-3 p-2"><a target="_blank"
                                                   href="https://madeinbrain.net/axebug/HTML/Mathematics/index.html"><img
