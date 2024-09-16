@@ -416,164 +416,171 @@ export default function Quiz13(props) {
                     </React.Fragment>
                   ) : null}
                   {pageNo === 1 ? (
-                    <React.Fragment>
-                      <div className="alert alert-dark" role="alert">
-                        <strong> B. Listen and fill in the gaps.</strong>
-                      </div>
-                      <div className="alert alert-dark" role="alert">
-                        <audio
-                          controls
-                          className="w-100"
-                          style={{ backgroundColor: "black", height: 45 }}
-                        >
-                          <source
-                            src={`https://app.axebug.com/axebug/assets/OUIZ_8_B_LISTENING.mp3`}
-                            type="audio/mpeg"
+                      <React.Fragment>
+                        <div className="alert alert-dark" role="alert">
+                          <strong> B. Listen and fill in the gaps.</strong>
+                        </div>
+                        <div className="alert alert-dark" role="alert">
+                          <audio
+                              controls
+                              className="w-100"
+                              style={{backgroundColor: "black", height: 45}}
+                          >
+                            <source
+                                src={`https://app.axebug.com/axebug/assets/OUIZ_8_B_LISTENING.mp3`}
+                                type="audio/mpeg"
+                            />
+                          </audio>
+                        </div>
+                        <div className="paragraf">
+                          <strong>Axebug:</strong> The power of maths and physics
+                          are everywhere.
+                        </div>
+
+                        <div className="paragraf">
+                          <strong>Dung Beetle:</strong> And do you think maths and
+                          <input
+                              className="form-input textformat"
+                              type="text"
+                              value={answer.result[0][1][1].student}
+                              onChange={(e) =>
+                                  setStudentOpenAnswer(0, 1, 1, e.target.value, true)
+                              }
                           />
-                        </audio>
-                      </div>
-                      <div className="paragraf">
-                        <strong>Axebug:</strong> The power of maths and physics
-                        are everywhere. Dung beetle and do you think maths and
-                        <input
-                          className="form-input textformat"
-                          type="text"
-                          value={answer.result[0][1][1].student}
-                          onChange={(e) =>
-                            setStudentOpenAnswer(0, 1, 1, e.target.value, true)
-                          }
-                        />
-                        will save us from bossroach?
-                      </div>
-                      <div className="paragraf">
-                        <strong>Ladybug:</strong> If you’re{" "}
-                        <input
-                          className="form-input textformat"
-                          type="text"
-                          value={answer.result[0][1][2].student}
-                          onChange={(e) =>
-                            setStudentOpenAnswer(0, 1, 2, e.target.value, true)
-                          }
-                        />
-                        and brave enough, what can stop you?
-                      </div>
-                      <div className="paragraf">
-                        <strong>Dung beetle: </strong> I don’t know. What can
-                        stop me?
-                      </div>
-                      <div className="paragraf">
-                        <strong>Axebug: </strong> Nothing, without{" "}
-                        <input
-                          className="form-input textformat"
-                          type="text"
-                          value={answer.result[0][1][3].student}
-                          onChange={(e) =>
-                            setStudentOpenAnswer(0, 1, 3, e.target.value, true)
-                          }
-                        />
-                        ! You will go the whole nine yards!
-                      </div>
-                      <div className="paragraf">
-                        <strong>Dung beetle:</strong>Let’s not make a fuss...
-                      </div>
-                      <div className="paragraf">
-                        <strong>Axebug: </strong>Beetle, every cloud has a
-                        silver lining.
-                      </div>
-                      <div className="paragraf">
-                        <strong>Ladybug: </strong>We are not{" "}
-                        <input
-                          className="form-input textformat"
-                          type="text"
-                          value={answer.result[0][1][5].student}
-                          onChange={(e) =>
-                            setStudentOpenAnswer(0, 1, 5, e.target.value, true)
-                          }
-                        />
-                        of him!
-                      </div>
-                      <div className="paragraf">
-                        <strong>Dung beetle:</strong> Aren’t we?
-                      </div>
-                      <div className="paragraf">
-                        <strong>Axebug:</strong> He should be scared of us!
-                      </div>
-                      <div className="paragraf">
-                        <strong>Axebug:</strong> All great minds{" "}
-                        <input
-                          className="form-input textformat"
-                          type="text"
-                          value={answer.result[0][1][5].student}
-                          onChange={(e) =>
-                            setStudentOpenAnswer(0, 1, 5, e.target.value, true)
-                          }
-                        />
-                        in the same channel, right?
-                      </div>
-                      <div className="paragraf">
-                        <strong>Axebug: </strong>Science and knowledge will{" "}
-                        <input
-                          className="form-input textformat"
-                          type="text"
-                          value={answer.result[0][1][5].student}
-                          onChange={(e) =>
-                            setStudentOpenAnswer(0, 1, 5, e.target.value, true)
-                          }
-                        />
-                        everything!
-                      </div>
-                      <div className="paragraf">
-                        <strong>Ladybug:</strong>
-                        <input
-                          className="form-input textformat"
-                          type="text"
-                          value={answer.result[0][1][5].student}
-                          onChange={(e) =>
-                            setStudentOpenAnswer(0, 1, 5, e.target.value, true)
-                          }
-                        />
-                        and working hard is{" "}
-                        <input
-                          className="form-input textformat"
-                          type="text"
-                          value={answer.result[0][1][5].student}
-                          onChange={(e) =>
-                            setStudentOpenAnswer(0, 1, 5, e.target.value, true)
-                          }
-                        />
-                        ofcourse.
-                      </div>
-                      <div className="paragraf">
-                        <strong>Axebug:</strong>DIsciplinary is
-                      </div>
-                      <div className="paragraf">
-                        <strong>Robug 13:</strong> And all that requires
-                      </div>
-                      <div className="paragraf">
-                        <strong>Ladybug:</strong> Science, knowledge, courage,
-                        hardworking, disciplinary, patience…
-                      </div>
-                      <div className="paragraf">
-                        <strong>Dung beetle:</strong> And me! I am essential
-                        too!
-                      </div>
-                    </React.Fragment>
+                          will save us from bossroach?
+                        </div>
+
+
+
+                        <div className="paragraf">
+                          <strong>Ladybug:</strong> If you’re{" "}
+                          <input
+                              className="form-input textformat"
+                              type="text"
+                              value={answer.result[0][1][2].student}
+                              onChange={(e) =>
+                                  setStudentOpenAnswer(0, 1, 2, e.target.value, true)
+                              }
+                          />
+                          and brave enough, what can stop you?
+                        </div>
+                        <div className="paragraf">
+                          <strong>Dung beetle: </strong> I don’t know. What can
+                          stop me?
+                        </div>
+                        <div className="paragraf">
+                          <strong>Axebug: </strong> Nothing, without{" "}
+                          <input
+                              className="form-input textformat"
+                              type="text"
+                              value={answer.result[0][1][3].student}
+                              onChange={(e) =>
+                                  setStudentOpenAnswer(0, 1, 3, e.target.value, true)
+                              }
+                          />
+                          ! You will go the whole nine yards!
+                        </div>
+                        <div className="paragraf">
+                          <strong>Dung beetle:</strong>Let’s not make a fuss...
+                        </div>
+                        <div className="paragraf">
+                          <strong>Axebug: </strong>Beetle, every cloud has a
+                          silver lining.
+                        </div>
+                        <div className="paragraf">
+                          <strong>Ladybug: </strong>We are not{" "}
+                          <input
+                              className="form-input textformat"
+                              type="text"
+                              value={answer.result[0][1][5].student}
+                              onChange={(e) =>
+                                  setStudentOpenAnswer(0, 1, 5, e.target.value, true)
+                              }
+                          />
+                          of him!
+                        </div>
+                        <div className="paragraf">
+                          <strong>Dung beetle:</strong> Aren’t we?
+                        </div>
+                        <div className="paragraf">
+                          <strong>Axebug:</strong> He should be scared of us!
+                        </div>
+                        <div className="paragraf">
+                          <strong>Axebug:</strong> All great minds{" "}
+                          <input
+                              className="form-input textformat"
+                              type="text"
+                              value={answer.result[0][1][5].student}
+                              onChange={(e) =>
+                                  setStudentOpenAnswer(0, 1, 5, e.target.value, true)
+                              }
+                          />
+                          in the same channel, right?
+                        </div>
+                        <div className="paragraf">
+                          <strong>Axebug: </strong>Science and knowledge will{" "}
+                          <input
+                              className="form-input textformat"
+                              type="text"
+                              value={answer.result[0][1][5].student}
+                              onChange={(e) =>
+                                  setStudentOpenAnswer(0, 1, 5, e.target.value, true)
+                              }
+                          />
+                          everything!
+                        </div>
+                        <div className="paragraf">
+                          <strong>Ladybug:</strong>
+                          <input
+                              className="form-input textformat"
+                              type="text"
+                              value={answer.result[0][1][5].student}
+                              onChange={(e) =>
+                                  setStudentOpenAnswer(0, 1, 5, e.target.value, true)
+                              }
+                          />
+                          and working hard is{" "}
+                          <input
+                              className="form-input textformat"
+                              type="text"
+                              value={answer.result[0][1][5].student}
+                              onChange={(e) =>
+                                  setStudentOpenAnswer(0, 1, 5, e.target.value, true)
+                              }
+                          />
+                          ofcourse.
+                        </div>
+                        <div className="paragraf">
+                          <strong>Axebug:</strong>DIsciplinary is
+                        </div>
+                        <div className="paragraf">
+                          <strong>Robug 13:</strong> And all that requires
+                        </div>
+                        <div className="paragraf">
+                          <strong>Ladybug:</strong> Science, knowledge, courage,
+                          hardworking, disciplinary, patience…
+                        </div>
+                        <div className="paragraf">
+                          <strong>Dung beetle:</strong> And me! I am essential
+                          too!
+                        </div>
+                      </React.Fragment>
                   ) : null}
                   {pageNo === 2 ? (
-                    <React.Fragment>
-                      <div className="alert alert-dark" role="alert">
-                        <strong>
-                          {" "}
-                          C. Match the words with their definitions
-                        </strong>
-                      </div>
+                      <React.Fragment>
+                        <div className="alert alert-dark" role="alert">
+                          <strong>
+                            {" "}
+                            C. Match the words with their definitions
+                          </strong>
+                        </div>
 
-                      <div className="row">
-                        <div className="col-2"> 1. Percent</div>
-                        <div className="col-1">
-                          <input
-                            className="form-input w-100"
-                            type="text"
+                        <div className="row">
+                          <div className="col-2"> 1. Percent</div>
+                          <div className="col-1">
+                            <input
+                                className="form-input w-100"
+                                type="text"
                             value={answer.result[0][2][1].student}
                             onChange={(e) =>
                               setStudentOpenAnswer(0, 2, 1, e.target.value)

@@ -491,21 +491,8 @@ export default function Quiz9(props) {
                         />
                         it and set up our route.
                       </div>
-                      <div className="paragraf">
-                        <strong>Ladybug:</strong> Tell me about it!
-                      </div>
-                      <div className="paragraf">
-                        <strong>Axebug: </strong> Why did you{" "}
-                        <input
-                          className="form-input textformat"
-                          type="text"
-                          value={answer.result[0][1][4].student}
-                          onChange={(e) =>
-                            setStudentOpenAnswer(0, 1, 5, e.target.value, true)
-                          }
-                        />
-                        an S.OS.? What’s the problem?
-                      </div>
+
+
                       <div className="paragraf">
                         <strong>Robug 13: </strong>I am counting on you and your
                         crew!
