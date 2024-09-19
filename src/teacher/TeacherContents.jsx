@@ -70,6 +70,14 @@ export default function TeacherContents() {
         }
     }, [id, documents])
 
+    //YEARLY_PLAN
+    //DAILY_PLAN
+    //COMICS
+    //GAME
+    //PLAY
+    //SHOW_TIME
+    //ACTIVITY
+
     return (
         <div className='container'>
             <div className='row'>
@@ -101,9 +109,6 @@ export default function TeacherContents() {
                             </div>
                             <div className='row'>
                                 <Square col="2" backgroundColor="black"><b><span>PLANNING</span></b> </Square>
-                                {
-
-                                }
                                 <Square col="2" backgroundColor="white" to="/teacher-contents/YEARLY_PLAN"><b><span>YEARLY PLAN</span></b>
                                 </Square>
                                 <Square col="2" backgroundColor="white" to="/teacher-contents/DAILY_PLAN"><b><span>LESSON PLAN</span></b>
@@ -131,7 +136,6 @@ export default function TeacherContents() {
 
                             <div className='row mb-5'>
                                 <Square col="2" backgroundColor="black"><b><span>APPLICATION</span></b> </Square>
-
                                 <Square col="2" backgroundColor="white"
                                         to="/teacher-spelling-list"><b><span>SPELLING</span></b> </Square>
                                 <Square col="2" backgroundColor="white"
@@ -145,10 +149,7 @@ export default function TeacherContents() {
                             </div>
                         </div>
                         :
-
                         <div className='col-12 mt-3'>
-
-
                             <div className='row'>
 
                                 <Square col="2" backgroundColor="black" to="/teacher"
@@ -164,8 +165,15 @@ export default function TeacherContents() {
                                     linkType === "OUT" ?
                                         selectedDocuments ?
                                             selectedDocuments.map((document, key) =>
-                                                key<1 ?
-                                                <Square key={key} col="2" backgroundColor="white">
+                                                (id === "YEARLY_PLAN" && key < 1) ||
+                                                (id === "DAILY_PLAN" && key < 8) ||
+                                                (id === "COMICS" && key < 1) ||
+                                                (id === "GAME" && key < 1) ||
+                                                (id === "PLAY" && key < 1) ||
+                                                (id === "SHOW_TIME" && key < 1) ||
+                                                (id === "ACTIVITY" && key < 1)
+                                                    ?
+                                                    <Square key={key} col="2" backgroundColor="white">
                                                         <span>
                                                             <b>
                                                           <a className='btn btn-success' target="_blank"
@@ -174,7 +182,7 @@ export default function TeacherContents() {
                                                           </a>
                                                             </b>
                                                         </span>
-                                                </Square> : null
+                                                    </Square> : null
                                             ) : null
                                         : null
                                 }
@@ -211,7 +219,7 @@ export default function TeacherContents() {
                                                     key < 8 ?
                                                         <Square key={key} col="2" backgroundColor="white"
                                                                 to={`/teacher-exam/${document.id}`}><b>{document.name}</b>
-                                                        </Square>  :null
+                                                        </Square> : null
                                                     : null
                                             ) : null
                                         : null
