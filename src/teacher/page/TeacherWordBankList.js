@@ -23,6 +23,7 @@ export default function TeacherWordBankList() {
         {
           chapters ?
             chapters.map((chapter, key) =>
+                key<1 ?
               <div className='row'>
                 {/* <Square key={key} col="2" backgroundColor="black"><h4><b>{chapter.name}.{key}</b></h4> </Square> */}
                 {
@@ -32,7 +33,7 @@ export default function TeacherWordBankList() {
                     
                   )
                 }
-              </div>
+              </div> : null
             ) : null
         }
       </div>

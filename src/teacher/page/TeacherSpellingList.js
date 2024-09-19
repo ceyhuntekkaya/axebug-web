@@ -24,15 +24,15 @@ export default function TeacherSpellingList() {
         {
           chapters ?
           chapters.map((chapter, key) =>
+              key<1 ?
               <div className='row' key={key}>
                 {
                   chapter.episodes.map((episode, no) =>
-                
-                    <Square key={no} to={`/teacher-spellingword/?id=${episode.id}`} col="3" backgroundColor="white"><h3><b>{episode.name}</b></h3> </Square>
+                    <Square key={no} to={`/teacher-spellingword/?id=${episode.id}`} col="3" backgroundColor="white"><h3><b>{episode.name} </b></h3> </Square>
                  
                   )
                 }
-              </div>
+              </div> : null
             ) : null
         }
       </div>

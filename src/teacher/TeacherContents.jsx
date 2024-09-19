@@ -101,6 +101,9 @@ export default function TeacherContents() {
                             </div>
                             <div className='row'>
                                 <Square col="2" backgroundColor="black"><b><span>PLANNING</span></b> </Square>
+                                {
+
+                                }
                                 <Square col="2" backgroundColor="white" to="/teacher-contents/YEARLY_PLAN"><b><span>YEARLY PLAN</span></b>
                                 </Square>
                                 <Square col="2" backgroundColor="white" to="/teacher-contents/DAILY_PLAN"><b><span>LESSON PLAN</span></b>
@@ -161,6 +164,7 @@ export default function TeacherContents() {
                                     linkType === "OUT" ?
                                         selectedDocuments ?
                                             selectedDocuments.map((document, key) =>
+                                                key<1 ?
                                                 <Square key={key} col="2" backgroundColor="white">
                                                         <span>
                                                             <b>
@@ -170,7 +174,7 @@ export default function TeacherContents() {
                                                           </a>
                                                             </b>
                                                         </span>
-                                                </Square>
+                                                </Square> : null
                                             ) : null
                                         : null
                                 }
@@ -178,9 +182,10 @@ export default function TeacherContents() {
                                     linkType === "TASKS" ?
                                         selectedDocuments ?
                                             selectedDocuments.map((document, key) =>
-                                                <Square key={key} col="2" backgroundColor="white"
-                                                        to={`/teacher-tasks/${document.id}`}><b>{document.name}</b>
-                                                </Square>
+                                                key < 8 ?
+                                                    <Square key={key} col="2" backgroundColor="white"
+                                                            to={`/teacher-tasks/${document.id}`}><b>{document.name}</b>
+                                                    </Square> : null
                                             ) : null
                                         : null
                                 }
@@ -188,10 +193,12 @@ export default function TeacherContents() {
                                     linkType === "EXAMS" ?
                                         exams ?
                                             exams.map((document, key) =>
+
                                                 document.examType === "EXAM" ?
-                                                    <Square key={key} col="2" backgroundColor="white"
-                                                            to={`/teacher-exam/${document.id}`}><b>{document.name}</b>
-                                                    </Square>
+                                                    key < 1 ?
+                                                        <Square key={key} col="2" backgroundColor="white"
+                                                                to={`/teacher-exam/${document.id}`}><b>{document.name}</b>
+                                                        </Square> : null
                                                     : null
                                             ) : null
                                         : null
@@ -201,9 +208,10 @@ export default function TeacherContents() {
                                         exams ?
                                             exams.map((document, key) =>
                                                 document.examType === "QUIZ" ?
-                                                    <Square key={key} col="2" backgroundColor="white"
-                                                            to={`/teacher-exam/${document.id}`}><b>{document.name}</b>
-                                                    </Square>
+                                                    key < 8 ?
+                                                        <Square key={key} col="2" backgroundColor="white"
+                                                                to={`/teacher-exam/${document.id}`}><b>{document.name}</b>
+                                                        </Square>  :null
                                                     : null
                                             ) : null
                                         : null
@@ -215,18 +223,17 @@ export default function TeacherContents() {
                                                                           href="https://madeinbrain.net/axebug/HTML/Chapter1/index.html"><img
                                                 className='w-100' src={`https://app.axebug.com/axebug/assets/ch1.png`}/></a>
                                             </div>
-                                            <div className="col-3 p-2"><a target="_blank"
-                                                                          href="https://madeinbrain.net/axebug/HTML/Chapter2v3/index.html"><img
-                                                className='w-100' src={`https://app.axebug.com/axebug/assets/ch2.png`}/></a>
-                                            </div>
-                                            <div className="col-3 p-2"><a target="_blank"
-                                                                          href="https://madeinbrain.net/axebug/HTML/Chapter3/index.html"><img
-                                                className='w-100' src={`https://app.axebug.com/axebug/assets/ch3.png`}/></a>
-                                            </div>
-                                            <div className="col-3 p-2"><a target="_blank"
-                                                                          href="https://madeinbrain.net/axebug/HTML/Chapter4/index.html"><img
-                                                className='w-100' src={`https://app.axebug.com/axebug/assets/ch4.png`}/></a>
-                                            </div>
+
+                                            {
+                                                // <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Chapter2/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch2.png`}/></a></div>
+                                            }
+                                            {
+                                                // <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Chapter3/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch3.png`}/></a></div>
+                                            }
+                                            {
+                                                // <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Chapter4/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch4.png`}/></a></div>
+                                            }
+
                                         </React.Fragment>
                                         : null
                                 }
@@ -245,36 +252,16 @@ export default function TeacherContents() {
                                                     <span>DOWNLOAD KEY</span>
                                                 </a>
                                             </div>
-                                            <div className="col-3 p-2"><a target="_blank"
-                                                                          href="https://madeinbrain.net/axebug/HTML/Activite2v3/index.html"
-                                                                          rel="noreferrer"><img className='w-100'
-                                                                                                src={`https://app.axebug.com/axebug/assets/ab2.png`}/></a>
-                                                <a target="_blank"
-                                                   href="https://app.axebug.com/axebug/pdf/Activite_2_Book_key.pdf">
-                                                    <div
-                                                        className='mt-2 border border-success p-2 d-flex justify-content-center'>
-                                                        <b>DOWNLOAD KEY</b></div>
-                                                </a></div>
-                                            <div className="col-3 p-2"><a target="_blank"
-                                                                          href="https://madeinbrain.net/axebug/HTML/Activite3/index.html"
-                                                                          rel="noreferrer"><img className='w-100'
-                                                                                                src={`https://app.axebug.com/axebug/assets/ab3.png`}/></a>
-                                                <a target="_blank"
-                                                   href="https://app.axebug.com/axebug/pdf/Activite_3_Book_key.pdf">
-                                                    <div
-                                                        className='mt-2 border border-success p-2 d-flex justify-content-center'>
-                                                        <b>DOWNLOAD KEY</b></div>
-                                                </a></div>
-                                            <div className="col-3 p-2"><a target="_blank"
-                                                                          href="https://madeinbrain.net/axebug/HTML/Activite4/index.html"
-                                                                          rel="noreferrer"><img className='w-100'
-                                                                                                src={`https://app.axebug.com/axebug/assets/ab4.png`}/></a>
-                                                <a target="_blank"
-                                                   href="https://app.axebug.com/axebug/pdf/Activite_4_Book_key.pdf">
-                                                    <div
-                                                        className='mt-2 border border-success p-2 d-flex justify-content-center'>
-                                                        <b>DOWNLOAD KEY</b></div>
-                                                </a></div>
+                                            {
+                                                // <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Activite2/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab2.png`}/></a></div>
+                                            }
+                                            {
+                                                // <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Activite3/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab3.png`}/></a></div>
+                                            }
+                                            {
+                                                // <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Activite4/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab4.png`}/></a></div>
+                                            }
+
                                         </React.Fragment>
                                         : null
                                 }
