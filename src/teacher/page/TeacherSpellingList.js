@@ -12,6 +12,18 @@ export default function TeacherSpellingList() {
   }, [])
 
 
+    const compare = (a, b) => {
+        if (a.name < b.name) {
+            return -1;
+        }
+        if (a.name > b.name) {
+            return 1;
+        }
+        return 0;
+    };
+
+
+
 
   return <React.Fragment>
    <div className="container">
@@ -24,7 +36,7 @@ export default function TeacherSpellingList() {
         {
           chapters ?
           chapters.map((chapter, key) =>
-              key<1 ?
+              key===0 || key === 3 ?
               <div className='row' key={key}>
                 {
                   chapter.episodes.map((episode, no) =>

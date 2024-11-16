@@ -14,7 +14,7 @@
                 {
                     "student": "",
                     "answer": "kilometers",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E12",
@@ -23,7 +23,7 @@
                 {
                     "student": "",
                     "answer": "wormhole",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E12",
@@ -32,7 +32,7 @@
                 {
                     "student": "",
                     "answer": "exactly",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E12",
@@ -41,7 +41,7 @@
                 {
                     "student": "",
                     "answer": "sphere",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E12",
@@ -50,7 +50,7 @@
                 {
                     "student": "",
                     "answer": "paper",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E13",
@@ -115,7 +115,7 @@
                 {
                     "student": "",
                     "answer": "I",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E15",
@@ -124,7 +124,7 @@
                 {
                     "student": "",
                     "answer": "A",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E15",
@@ -133,7 +133,7 @@
                 {
                     "student": "",
                     "answer": "E",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E15",
@@ -142,7 +142,7 @@
                 {
                     "student": "",
                     "answer": "B",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E15",
@@ -151,7 +151,7 @@
                 {
                     "student": "",
                     "answer": "D",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E15",
@@ -169,7 +169,7 @@
                 {
                     "student": "",
                     "answer": "TRUE",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E14",
@@ -178,7 +178,7 @@
                 {
                     "student": "",
                     "answer": "TRUE",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E14",
@@ -187,7 +187,7 @@
                 {
                     "student": "",
                     "answer": "TRUE",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E14",
@@ -196,7 +196,7 @@
                 {
                     "student": "",
                     "answer": "FALSE",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E14",
@@ -205,7 +205,7 @@
                 {
                     "student": "",
                     "answer": "TRUE",
-                    "weigth": 1,
+                    "weigth": 5,
                     "score": 0,
                     "method": "",
                     "function": "E14",
@@ -214,7 +214,7 @@
                 {
                     "student": "",
                     "answer": "FALSE",
-                    "weigth": 1,
+                    "weigth": 5,
                     "score": 0,
                     "method": "",
                     "function": "E14",
@@ -223,7 +223,7 @@
                 {
                     "student": "",
                     "answer": "FALSE",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E14",
@@ -236,7 +236,7 @@
                 {
                     "student": "",
                     "answer": "FALSE",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E14",
@@ -245,7 +245,7 @@
                 {
                     "student": "",
                     "answer": "TRUE",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E14",
@@ -254,7 +254,7 @@
                 {
                     "student": "",
                     "answer": "FALSE",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E14",
@@ -349,9 +349,7 @@
                     "method": "",
                     "function": "E8",
                     "functionScore": false
-                }
-            ],
-            [
+                },
                 {
                     "student": "",
                     "answer": "WHERE ARE WE GOING TO FIND IT",
@@ -362,6 +360,15 @@
                     "functionScore": false
                 },
                 {
+                    "student": "",
+                    "answer": "",
+                    "weigth": 0,
+                    "score": 0,
+                    "method": "",
+                    "function": "",
+                    "functionScore": false
+                },
+                {                 
                     "student": "",
                     "answer": "STROLL AROUND",
                     "weigth": 1,
@@ -405,11 +412,7 @@
                     "method": "",
                     "function": "E15",
                     "functionScore": false
-                }
-            ]
-        ],
-        [
-            [
+                },
                 {
                     "student": "",
                     "answer": "PLANET",
@@ -427,210 +430,7 @@
                     "method": "",
                     "function": "",
                     "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "Any type of call for help",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "Receive to have, to have been delivered something",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "To bring something",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "Help",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "The point that is aimed",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                }
-            ],
-            [
-                {
-                    "student": "",
-                    "answer": "Asking for something",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "To detach",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "To walk slowly",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "An error in action",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "An act of saving something from harm",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "",
-                    "weigth": 0,
-                    "score": 0,
-                    "method": "",
-                    "function": "",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "DIFFICULT",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "BE QUICK",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "GO SLOW",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "INCREASE",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "EXIT",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "STOP",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "ENTER",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                }
-            ]
-        ],
-        [
-            [
-                {
-                    "student": "",
-                    "answer": "BORED",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "START",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "ALL TOGETHER",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "",
-                    "weigth": 0,
-                    "score": 0,
-                    "method": "",
-                    "function": "E12",
-                    "functionScore": false
+                   
                 },
                 {
                     "student": "",
@@ -640,15 +440,11 @@
                     "method": "",
                     "function": "E19",
                     "functionScore": false
-                }
-            ]
-        ],
-        [
-            [
+                },
                 {
                     "student": "",
                     "answer": "I LOST CONTROL!",
-                    "weigth": 9,
+                    "weigth": 10,
                     "score": 0,
                     "method": "",
                     "function": "",

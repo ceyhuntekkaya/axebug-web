@@ -115,10 +115,10 @@ export default function Exam2(props) {
                                             </strong>
                                         </div>
                                         <div className="paragraf">
-                                            <strong>Ladybug:</strong>: Can you explain what a wormhole is?
+                                            <strong>Ladybug:</strong> Can you explain what a wormhole is?
                                         </div>
                                         <div className="paragraf">
-                                            <strong>Dung beetle:</strong>: Did we just pass millions of
+                                            <strong>Dung beetle:</strong> Did we just pass millions of
                                             <input
                                                 className="form-input textformat"
                                                 type="text"
@@ -131,7 +131,7 @@ export default function Exam2(props) {
                                         </div>
 
                                         <div className="paragraf">
-                                            <strong>Axebug:</strong>: I will explain what a
+                                            <strong>Axebug:</strong> I will explain what a
                                             <input
                                                 className="form-input textformat"
                                                 type="text"
@@ -144,19 +144,19 @@ export default function Exam2(props) {
                                         </div>
 
                                         <div className="paragraf">
-                                            <strong>Axebug:</strong>: Ummm...
+                                            <strong>Axebug:</strong> Ummm...
                                         </div>
                                         <div className="paragraf">
-                                            <strong>Ladybug:</strong>: What?
+                                            <strong>Ladybug:</strong> What?
                                         </div>
                                         <div className="paragraf">
-                                            <strong>Axebug:</strong>: It is errrm...
+                                            <strong>Axebug:</strong> It is errrm...
                                         </div>
                                         <div className="paragraf">
-                                            <strong>Dung beetle:</strong>: What is it?
+                                            <strong>Dung beetle:</strong> What is it?
                                         </div>
                                         <div className="paragraf">
-                                            <strong>Axebug:</strong>: Aahaa! This is
+                                            <strong>Axebug:</strong> Aahaa! This is
                                             <input
                                                 className="form-input textformat"
                                                 type="text"
@@ -168,7 +168,7 @@ export default function Exam2(props) {
                                             what a worm hole looks like.
                                         </div>
                                         <div className="paragraf">
-                                            <strong>Ladybug:</strong>: It is a
+                                            <strong>Ladybug:</strong> It is a
                                             <input
                                                 className="form-input textformat"
                                                 type="text"
@@ -181,18 +181,18 @@ export default function Exam2(props) {
                                         </div>
 
                                         <div className="paragraf">
-                                            <strong>Axebug:</strong>: Yes, it is.
+                                            <strong>Axebug:</strong> Yes, it is.
                                         </div>
                                         <div className="paragraf">
-                                            <strong>Axebug:</strong>: When we entered the sphere, we passed millions of
+                                            <strong>Axebug:</strong> When we entered the sphere, we passed millions of
                                             kilometers in a
                                             few minutes.
                                         </div>
                                         <div className="paragraf">
-                                            <strong>Axebug:</strong>:So how did this happen?
+                                            <strong>Axebug:</strong> So how did this happen?
                                         </div>
                                         <div className="paragraf">
-                                            <strong>Axebug:</strong>: It is a piece of cake for me to explain. Just give
+                                            <strong>Axebug:</strong> It is a piece of cake for me to explain. Just give
                                             me a pen and
                                             <input
                                                 className="form-input textformat"
@@ -205,7 +205,7 @@ export default function Exam2(props) {
                                             .
                                         </div>
                                         <div className="paragraf">
-                                            <strong>Dung beetle:</strong>: Take these.
+                                            <strong>Dung beetle:</strong> Take these.
                                         </div>
 
 
@@ -217,7 +217,7 @@ export default function Exam2(props) {
                                         <div>
                                             <div className="alert alert-dark" role="alert">
                                                 <strong>
-                                                    B. Match the idioms with the correct definitions
+                                                    B. Match the idioms with the correct definitions.
                                                 </strong>
                                             </div>
 
@@ -586,13 +586,13 @@ export default function Exam2(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/axe_exam_c_1_listening_a.mp3`}
+                                                        src={`https://app.axebug.com/axebug/assets/axe_exam_c_2_listening_A.mp3`}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
                                             </div>
                                             <div className="paragraf">
-                                                <strong>1:</strong>
+                                                <strong>1 </strong>
                                                 <input
                                                     className="form-input textformat"
                                                     type="text"
@@ -604,7 +604,7 @@ export default function Exam2(props) {
 
                                             </div>
                                             <div className="paragraf">
-                                                <strong>2:</strong>
+                                                <strong>2 </strong>
                                                 <input
                                                     className="form-input textformat"
                                                     type="text"
@@ -616,7 +616,7 @@ export default function Exam2(props) {
 
                                             </div>
                                             <div className="paragraf">
-                                                <strong>3:</strong>
+                                                <strong>3 </strong>
                                                 <input
                                                     className="form-input textformat"
                                                     type="text"
@@ -628,7 +628,7 @@ export default function Exam2(props) {
 
                                             </div>
                                             <div className="paragraf">
-                                                <strong>4:</strong>
+                                                <strong>4 </strong>
                                                 <input
                                                     className="form-input textformat"
                                                     type="text"
@@ -640,7 +640,7 @@ export default function Exam2(props) {
 
                                             </div>
                                             <div className="paragraf">
-                                                <strong>5:</strong>
+                                                <strong>5 </strong>
                                                 <input
                                                     className="form-input textformat"
                                                     type="text"
@@ -651,7 +651,7 @@ export default function Exam2(props) {
                                                 />
                                             </div>
                                             <div className="paragraf">
-                                                <strong>6:</strong>
+                                                <strong>6 </strong>
 
                                                 <input
                                                     className="form-input textformat"
@@ -665,7 +665,7 @@ export default function Exam2(props) {
 
                                             </div>
                                             <div className="paragraf">
-                                                <strong>7:</strong>
+                                                <strong>7 </strong>
                                                 <input
                                                     className="form-input textformat"
                                                     type="text"
@@ -678,7 +678,7 @@ export default function Exam2(props) {
                                             </div>
 
                                             <div className="paragraf">
-                                                <strong>8:</strong>
+                                                <strong>8 </strong>
 
                                                 <input
                                                     className="form-input textformat"
@@ -690,7 +690,7 @@ export default function Exam2(props) {
                                                 />
                                             </div>
                                             <div className="paragraf">
-                                                <strong>9:</strong>
+                                                <strong>9 </strong>
                                                 <input
                                                     className="form-input textformat"
                                                     type="text"
@@ -701,7 +701,7 @@ export default function Exam2(props) {
                                                 />
                                             </div>
                                             <div className="paragraf">
-                                                <strong>10 :</strong>
+                                                <strong>10 </strong>
                                                 <input
                                                     className="form-input textformat"
                                                     type="text"
@@ -719,7 +719,7 @@ export default function Exam2(props) {
                                         <div>
                                             <div className="alert alert-dark" role="alert">
                                                 <strong>
-                                                    Listen and fill the blanks
+                                                    E. Listen and fill the blanks
                                                 </strong>
                                             </div>
                                             <div className="alert alert-dark" role="alert">
@@ -729,7 +729,7 @@ export default function Exam2(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/axe_exam_c_1_listening_b.mp3`}
+                                                        src={`https://app.axebug.com/axebug/assets/axe_exam_c_2_listening_B.mp3`}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -771,11 +771,11 @@ export default function Exam2(props) {
                                                 <strong>TEN HOURS LATER </strong>
                                             </div>
                                             <div className="paragraf">
-                                                <strong>Robug 13:</strong>My friends! So glad to see you. We need your
+                                                <strong>Robug 13:</strong> My friends! So glad to see you. We need your
                                                 help!
                                             </div>
                                             <div className="paragraf">
-                                                <strong>Axebug:</strong>We couldn’t ignore your <input
+                                                <strong>Axebug:</strong> We couldn’t ignore your <input
                                                 className="form-input textformat"
                                                 type="text"
                                                 value={answer.result[1][0][10].student}
@@ -785,7 +785,7 @@ export default function Exam2(props) {
                                             /> of course.
                                             </div>
                                             <div className="paragraf">
-                                                <strong> Ladybug: </strong>Tell me about it!
+                                                <strong> Ladybug: </strong> Tell me about it!
                                             </div>
                                             <div className="paragraf">
                                                 <strong>Axebug:</strong> Why did you send an sos? What’s the problem?
@@ -804,7 +804,7 @@ export default function Exam2(props) {
                                                 <strong>Axebug:</strong> What?
                                             </div>
                                             <div className="paragraf">
-                                                <strong>Dung Beetle: </strong>How long?
+                                                <strong>Dung Beetle: </strong> How long?
                                             </div>
                                             <div className="paragraf">
                                                 <strong>Ladybug:</strong> I don’t get it!
@@ -813,285 +813,7 @@ export default function Exam2(props) {
                                         </div>
                                     </React.Fragment>
                                 ) : null}
-                                {pageNo === 5 ? (
-                                    <React.Fragment>
-                                        <div>
-
-                                            <div className="row">
-                                                <div className="col-6">
-
-                                                    <div className="alert alert-dark" role="alert">
-                                                        <strong>
-                                                            A. Write the definitions of the following words.
-                                                        </strong>
-                                                    </div>
-
-
-                                                    <div className="paragraf">
-                                                        <strong>SOS :</strong> <input
-                                                        style={{width: 150}}
-                                                        className="form-input textformat border border-success"
-                                                        type="text"
-                                                        value={answer.result[2][0][1].student}
-                                                        onChange={(e) =>
-                                                            setStudentOpenAnswer(2, 0, 1, e.target.value)
-                                                        }
-                                                    />
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>RECEIVE :</strong>
-                                                        <input
-                                                            style={{width: 150}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][1].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 1, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-
-                                                    <div className="paragraf">
-                                                        <strong>FETCH :</strong>
-                                                        <input
-                                                            style={{width: 150}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][2].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 2, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-
-                                                    <div className="paragraf">
-                                                        <strong>AID:</strong>
-                                                        <input
-                                                            style={{width: 150}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][3].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 3, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>TARGET :</strong>
-                                                        <input
-                                                            style={{width: 150}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][3].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 3, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-
-
-                                                    <div className="paragraf">
-                                                        <strong>REQUEST :</strong>
-                                                        <input
-                                                            style={{width: 150}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][4].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 4, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-
-                                                    <div className="paragraf">
-                                                        <strong>UNFASTENe:</strong>
-                                                        <input
-                                                            style={{width: 150}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][5].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 5, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>STROLL AROUND :</strong>
-                                                        <input
-                                                            style={{width: 150}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][5].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 5, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>MISTAKE :</strong>
-                                                        <input
-                                                            style={{width: 150}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][6].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 6, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>SALVATION :</strong>
-                                                        <input
-                                                            style={{width: 150}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][6].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 6, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-                                                </div>
-
-
-                                                <div className="col-6">
-                                                    <div className="alert alert-dark" role="alert">
-                                                        <strong>
-                                                            B. Write an antonym for each word.
-                                                        </strong>
-                                                    </div>
-
-
-                                                    <div className="paragraf">
-                                                        <strong>EASY :</strong> <input
-                                                        style={{width: 150}}
-                                                        className="form-input textformat border border-success"
-                                                        type="text"
-                                                        value={answer.result[2][0][1].student}
-                                                        onChange={(e) =>
-                                                            setStudentOpenAnswer(2, 0, 1, e.target.value)
-                                                        }
-                                                    />
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>SLOW DOWN :</strong>
-                                                        <input
-                                                            style={{width: 150}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][1].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 1, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-
-                                                    <div className="paragraf">
-                                                        <strong>GO FAST :</strong>
-                                                        <input
-                                                            style={{width: 150}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][2].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 2, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-
-                                                    <div className="paragraf">
-                                                        <strong>DECREASE:</strong>
-                                                        <input
-                                                            style={{width: 150}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][3].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 3, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>ENTER :</strong>
-                                                        <input
-                                                            style={{width: 150}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][3].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 3, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-
-
-                                                    <div className="paragraf">
-                                                        <strong>MOVE :</strong>
-                                                        <input
-                                                            style={{width: 150}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][4].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 4, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-
-                                                    <div className="paragraf">
-                                                        <strong>EXIT: </strong>
-                                                        <input
-                                                            style={{width: 150}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][5].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 5, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>THRILLED :</strong>
-                                                        <input
-                                                            style={{width: 150}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][5].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 5, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>COMPLETE :</strong>
-                                                        <input
-                                                            style={{width: 150}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][6].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 6, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>ONE BY ONE :</strong>
-                                                        <input
-                                                            style={{width: 150}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][6].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 6, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </React.Fragment>
-                                ) : null}
-
+             
                                 {pageNo === 6 ? (
                                     <React.Fragment>
                                         <div>
@@ -1108,7 +830,7 @@ export default function Exam2(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p015_02_c1e1.mp3`}
+                                                        src={`https://app.axebug.com/axebug/assets/p021_001_c2_e5.mp3`}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -1126,7 +848,7 @@ export default function Exam2(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p043_02_c1e2.mp3`}
+                                                        src={`https://app.axebug.com/axebug/assets/p081_001_c2_e7.mp3`}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -1144,7 +866,7 @@ export default function Exam2(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p075_01_c1e3.mp3`}
+                                                        src={`https://app.axebug.com/axebug/assets/p0116_001_c2_e7.mp3`}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -1162,7 +884,7 @@ export default function Exam2(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p099_01_c1e4.mp3`}
+                                                        src={`https://app.axebug.com/axebug/assets/p0174_002_c2_e8.mp3`}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>

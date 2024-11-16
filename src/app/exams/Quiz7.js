@@ -657,7 +657,7 @@ export default function Quiz7(props) {
                                                 <strong> D. Unscramble the words.</strong>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 1. lepant</div>
+                                                <div className="col-3"> 1. netpla</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -676,7 +676,7 @@ export default function Quiz7(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 2. tse</div>
+                                                <div className="col-3"> 2. tes</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -695,7 +695,7 @@ export default function Quiz7(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 3. thera</div>
+                                                <div className="col-3"> 3. arthe</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -714,7 +714,7 @@ export default function Quiz7(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 4. roctoln</div>
+                                                <div className="col-3"> 4. rolcont</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -733,7 +733,7 @@ export default function Quiz7(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 5. hdaeda</div>
+                                                <div className="col-3"> 5. heada</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -752,7 +752,7 @@ export default function Quiz7(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 6. ptuecar</div>
+                                                <div className="col-3"> 6. turecap</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -771,7 +771,7 @@ export default function Quiz7(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 7. ldonckg</div>
+                                                <div className="col-3"> 7. kingdoc</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -790,7 +790,7 @@ export default function Quiz7(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 8. temhle</div>
+                                                <div className="col-3"> 8. methel</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -809,7 +809,7 @@ export default function Quiz7(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 9. saecpsiute</div>
+                                                <div className="col-3"> 9. suitspace</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -828,7 +828,7 @@ export default function Quiz7(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 10. rwote</div>
+                                                <div className="col-3"> 10. werto</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"

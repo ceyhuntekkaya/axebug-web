@@ -139,7 +139,7 @@ export default function TeacherContents() {
                                 <Square col="2" backgroundColor="white"
                                         to="/teacher-spelling-list"><b><span>SPELLING</span></b> </Square>
                                 <Square col="2" backgroundColor="white"
-                                        to="/teacher-wordbank-list"><b><span>WORDBANK</span></b> </Square>
+                                        to="/teacher-wordbank-list"><b><span>WORD BANK</span></b> </Square>
                                 <Square col="2" backgroundColor="white"
                                         to="/teacher-contents/GAME"><b><span>CLASS GAMES</span></b> </Square>
                                 <Square col="2" backgroundColor="white"
@@ -165,13 +165,13 @@ export default function TeacherContents() {
                                     linkType === "OUT" ?
                                         selectedDocuments ?
                                             selectedDocuments.map((document, key) =>
-                                                (id === "YEARLY_PLAN" && key < 1) ||
-                                                (id === "DAILY_PLAN" && key < 8) ||
-                                                (id === "COMICS" && key < 1) ||
+                                                (id === "YEARLY_PLAN" && key < 2) ||
+                                                (id === "DAILY_PLAN" && key < 16) ||
+                                                (id === "COMICS" && key < 2) ||
                                                 (id === "GAME" && key < 1) ||
                                                 (id === "PLAY" && key < 1) ||
-                                                (id === "SHOW_TIME" && key < 1) ||
-                                                (id === "ACTIVITY" && key < 1)
+                                                (id === "SHOW_TIME" && key < 2) ||
+                                                (id === "ACTIVITY" && key < 2)
                                                     ?
                                                     <Square key={key} col="2" backgroundColor="white">
                                                         <span>
@@ -190,7 +190,7 @@ export default function TeacherContents() {
                                     linkType === "TASKS" ?
                                         selectedDocuments ?
                                             selectedDocuments.map((document, key) =>
-                                                key < 8 ?
+                                                key < 16 ?
                                                     <Square key={key} col="2" backgroundColor="white"
                                                             to={`/teacher-tasks/${document.id}`}><b>{document.name}</b>
                                                     </Square> : null
@@ -203,7 +203,7 @@ export default function TeacherContents() {
                                             exams.map((document, key) =>
 
                                                 document.examType === "EXAM" ?
-                                                    key < 1 ?
+                                                    key < 2 ?
                                                         <Square key={key} col="2" backgroundColor="white"
                                                                 to={`/teacher-exam/${document.id}`}><b>{document.name}</b>
                                                         </Square> : null
@@ -216,7 +216,7 @@ export default function TeacherContents() {
                                         exams ?
                                             exams.map((document, key) =>
                                                 document.examType === "QUIZ" ?
-                                                    key < 8 ?
+                                                    key < 12 ?
                                                         <Square key={key} col="2" backgroundColor="white"
                                                                 to={`/teacher-exam/${document.id}`}><b>{document.name}</b>
                                                         </Square> : null
@@ -232,9 +232,9 @@ export default function TeacherContents() {
                                                 className='w-100' src={`https://app.axebug.com/axebug/assets/ch1.png`}/></a>
                                             </div>
 
-                                            {
-                                                // <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Chapter2/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch2.png`}/></a></div>
-                                            }
+
+                                                <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Chapter2/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch2.png`}/></a></div>
+
                                             {
                                                 // <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Chapter3/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch3.png`}/></a></div>
                                             }
@@ -260,9 +260,19 @@ export default function TeacherContents() {
                                                     <span>DOWNLOAD KEY</span>
                                                 </a>
                                             </div>
-                                            {
-                                                // <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Activite2/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab2.png`}/></a></div>
-                                            }
+
+                                            <div className="col-3 p-2"><a target="_blank"
+                                                                          href="https://madeinbrain.net/axebug/HTML/Activite2/index.html"
+                                                                          rel="noreferrer"><img className='w-100'
+                                                                                                src={`https://app.axebug.com/axebug/assets/ab2.png`}/></a>
+                                                <a className='mt-2 border border-success p-2 d-flex justify-content-center'
+                                                   target="_blank"
+                                                   href={`https://madeinbrain.net/pdf/Activite_2_Book_key.pdf`}
+                                                   rel="noreferrer">
+                                                    <span>DOWNLOAD KEY</span>
+                                                </a>
+                                            </div>
+
                                             {
                                                 // <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Activite3/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab3.png`}/></a></div>
                                             }

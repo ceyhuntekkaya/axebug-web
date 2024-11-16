@@ -661,7 +661,7 @@ export default function Quiz6(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 2. actexyl</div>
+                                                <div className="col-3"> 2. actlyex</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -680,7 +680,7 @@ export default function Quiz6(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 3. temokrile</div>
+                                                <div className="col-3"> 3. meterkilo</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -699,7 +699,7 @@ export default function Quiz6(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 4. ratlve</div>
+                                                <div className="col-3"> 4. veltra</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -718,7 +718,7 @@ export default function Quiz6(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 5. hcera</div>
+                                                <div className="col-3"> 5. achre</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -737,7 +737,7 @@ export default function Quiz6(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 6. celicr</div>
+                                                <div className="col-3"> 6. clecir</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -756,7 +756,7 @@ export default function Quiz6(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 7. losnogi</div>
+                                                <div className="col-3"> 7. singloo</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -775,7 +775,7 @@ export default function Quiz6(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 8. rmebmre</div>
+                                                <div className="col-3"> 8. berremem</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -813,7 +813,7 @@ export default function Quiz6(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 10. zamiagn</div>
+                                                <div className="col-3"> 10. zingama</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"

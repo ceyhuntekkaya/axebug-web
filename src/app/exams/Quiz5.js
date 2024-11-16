@@ -90,7 +90,7 @@ export default function Quiz5(props) {
                 <div className="card-header">
                     <div className="d-flex justify-content-center">
                         <h1>
-                            <strong> QUIZ CHAPTER 2 EPISODE 5</strong>
+                            <strong> QUIZ  CHAPTER 2 EPISODE 5</strong>
                         </h1>
                     </div>
                 </div>
@@ -638,7 +638,7 @@ export default function Quiz5(props) {
                                                 <strong> D. Unscramble the words.</strong>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 1. emowrhlo</div>
+                                                <div className="col-3"> 1. holeworm</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -657,7 +657,7 @@ export default function Quiz5(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 2. rnete</div>
+                                                <div className="col-3"> 2. teren</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -676,7 +676,7 @@ export default function Quiz5(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 3. utinmse</div>
+                                                <div className="col-3"> 3. tesminu</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -695,7 +695,7 @@ export default function Quiz5(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 4. wdon</div>
+                                                <div className="col-3"> 4. ownd</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -714,7 +714,7 @@ export default function Quiz5(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 5. worsle</div>
+                                                <div className="col-3"> 5. werslo</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -733,7 +733,7 @@ export default function Quiz5(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 6. snoesrs</div>
+                                                <div className="col-3"> 6. sorssen</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -752,7 +752,7 @@ export default function Quiz5(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 7. tasleht</div>
+                                                <div className="col-3"> 7. althste</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -771,7 +771,7 @@ export default function Quiz5(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 8. sewat</div>
+                                                <div className="col-3"> 8. tewas</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -790,7 +790,7 @@ export default function Quiz5(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 9. ragtviy</div>
+                                                <div className="col-3"> 9. vitygra</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
@@ -809,7 +809,7 @@ export default function Quiz5(props) {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-3"> 10. rominor</div>
+                                                <div className="col-3"> 10. tormoni</div>
                                                 <div className="col-9">
                                                     <input
                                                         className="form-input textformat"
