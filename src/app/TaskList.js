@@ -10,6 +10,20 @@ export default function TaskList() {
     const [searchParams,] = useSearchParams();
     const [taskWorks, setTaskWorks] = useState(null);
 
+
+    const compare = (a, b) => {
+
+        console.log(a)
+        if (a.id < b.id) {
+            return -1;
+        }
+        if (a.id > b.id) {
+            return 1;
+        }
+        return 0;
+    };
+
+
     useEffect(() => {
         var id = searchParams.get("id");
         const schoolRoomWorkList = JSON.parse(localStorage.getItem("schoolRoomWorkList"));
@@ -27,6 +41,12 @@ export default function TaskList() {
         // eslint-disable-next-line 
     }, [])
 
+
+
+
+
+    console.log(tasks)
+
     return (
         <React.Fragment>
             <div className="container">
@@ -40,7 +60,7 @@ export default function TaskList() {
                 <div className='row' style={{ width: 750 }}>
                     {
                         tasks ?
-                            tasks.map((task, key) =>
+                            tasks.sort((a, b) => a.id - b.id).map((task, key) =>
                                 taskWorks.find(cw => cw.id === task.id) ?
                                     <Square key={key} col="3" backgroundColor="black" to={`/study/?id=${task.id}`}><h1><b>{task.name}</b></h1> </Square>
                                     :

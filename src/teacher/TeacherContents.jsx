@@ -168,8 +168,8 @@ export default function TeacherContents() {
                                                 (id === "YEARLY_PLAN" && key < 2) ||
                                                 (id === "DAILY_PLAN" && key < 16) ||
                                                 (id === "COMICS" && key < 2) ||
-                                                (id === "GAME" && key < 1) ||
-                                                (id === "PLAY" && key < 1) ||
+                                                (id === "GAME" && key < 2) ||
+                                                (id === "PLAY" && key < 4) ||
                                                 (id === "SHOW_TIME" && key < 2) ||
                                                 (id === "ACTIVITY" && key < 2)
                                                     ?
@@ -233,7 +233,10 @@ export default function TeacherContents() {
                                             </div>
 
 
-                                                <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Chapter2/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch2.png`}/></a></div>
+                                            <div className="col-3 p-2"><a target="_blank"
+                                                                          href="https://madeinbrain.net/axebug/HTML/Chapter2/index.html"><img
+                                                className='w-100' src={`https://app.axebug.com/axebug/assets/ch2.png`}/></a>
+                                            </div>
 
                                             {
                                                 // <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Chapter3/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch3.png`}/></a></div>

@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import Square from '../../app/components/Square';
 import useWordBank from '../../api/useWordBank';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import SpechText from '../../app/components/SpechText';
-import { useSearchParams } from 'react-router-dom';
+import {useSearchParams} from 'react-router-dom';
 
 var stringSimilarity = require("string-similarity");
 
 export default function TeacherSpelling() {
     const [searchParams,] = useSearchParams();
     const [wordList, setWordList] = useWordBank(null);
-    const [selectedWord, setSelectedWord] = useState({ number: 0, type: "" });
+    const [selectedWord, setSelectedWord] = useState({number: 0, type: ""});
     const [selectedWordId, setSelectedWordId] = useState(0);
     const [currentKey, setCurrentKey] = useState(0);
     const [episode, setEpisode] = useState({});
@@ -23,7 +23,7 @@ export default function TeacherSpelling() {
         var id = searchParams.get("id");
         setSelectedWordId(parseInt(id));
         var episodeId = searchParams.get("e");
-        setWordList("findByEpisode", { episodeId: episodeId, category: "spelling" });
+        setWordList("findByEpisode", {episodeId: episodeId, category: "spelling"});
 
         document.body.style.backgroundColor = '#eeeeee'; // '#231F20';
         var audio = document.getElementById('audio');
@@ -106,50 +106,69 @@ export default function TeacherSpelling() {
                         <div className="">
                             <div className='row m-2'>
                                 <div className='col-4 boxDark mr-5 d-flex justify-content-center'><h3><b>
-                                    <Link to="/teacher" style={{ color: "white", textDecoration: "none" }}> AXEBUG DIGITAL</Link>
+                                    <Link to="/teacher" style={{color: "white", textDecoration: "none"}}> AXEBUG
+                                        DIGITAL</Link>
                                 </b></h3></div>
                                 <div className='col-8 boxWhite ml-5'><h4>Listening and Speaking</h4></div>
                             </div>
                             <div className='row m-2'>
-                                <div className='col-4 boxWhite mr-5 d-flex justify-content-center'><h3><b>SPELLING</b></h3></div>
-                                <div className='col-8 boxDark ml-5'><h4>Listen to the audio. Then, repeat the sentences clearly.</h4></div>
+                                <div className='col-4 boxWhite mr-5 d-flex justify-content-center'><h3><b>SPELLING</b>
+                                </h3></div>
+                                <div className='col-8 boxDark ml-5'><h4>Listen to the audio. Then, repeat the sentences
+                                    clearly.</h4></div>
                             </div>
                             <div className="m-2">
                                 <div className="row">
                                     <div className='col-4 boxWhite mr-5'>
                                         <div className="row mb-3 d-flex justify-content-center">
-                                            <Square col="5" backgroundColor="black"><h1><b>{chapter.name}</b></h1> </Square>
-                                            <Square col="5" backgroundColor="black"><h1><b>{episode.name}</b></h1> </Square>
-                                            <div className="col-5"><button className="btn btn-dark w-100" onClick={prevQuestions}>Prev Word</button></div>
-                                            <div className="col-5"><button className="btn btn-dark w-100" onClick={nextQuestions}>Next Word</button></div>
+                                            <Square col="5" backgroundColor="black"><h1><b>{chapter.name}</b></h1>
+                                            </Square>
+                                            <Square col="5" backgroundColor="black"><h1><b>{episode.name}</b></h1>
+                                            </Square>
+                                            <div className="col-5">
+                                                <button className="btn btn-dark w-100" onClick={prevQuestions}>Prev
+                                                    Word
+                                                </button>
+                                            </div>
+                                            <div className="col-5">
+                                                <button className="btn btn-dark w-100" onClick={nextQuestions}>Next
+                                                    Word
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className='col-8 ml-5'>
-                                        <audio id="audio" controls className='w-100' style={{ backgroundColor: "#222529", height: 45 }}>
-                                            <source src={`https://app.axebug.com/axebug/assets/${selectedWord.soundUrl}`} type="audio/mpeg" />
+                                        <audio id="audio" controls className='w-100'
+                                               style={{backgroundColor: "#222529", height: 45}}>
+                                            <source
+                                                src={`https://app.axebug.com/axebug/assets/${selectedWord.soundUrl}`}
+                                                type="audio/mpeg"/>
                                         </audio>
                                         <div className='boxWhite p-2'>
                                             <div>
-                                                <span style={{ fontSize: 72, fontWeight: "bold", letterSpacing: 15 }}>{selectedWord.name}</span></div>
+                                                <span style={{
+                                                    fontSize: 72,
+                                                    fontWeight: "bold",
+                                                    letterSpacing: 15
+                                                }}>{selectedWord.name}</span></div>
                                         </div>
                                         <div className='boxWhite p-2'>
-                                            <SpechText getSpeechText={getSpeechText} />
+                                            <SpechText getSpeechText={getSpeechText}/>
                                         </div>
                                     </div>
                                     <div>
                                         <div className='row m-0 mt-2 p-0'>
-                                            <div className="progress col p-0" style={{ height: "30px" }}>
-                                                <div className={`progress-bar progress-bar-striped bg-${progressColor} progress-bar-animated`}
-                                                    role="progressbar" style={{ width: speechValue + "%" }}
-                                                    aria-valuenow={speechValue} aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div className="progress col p-0" style={{height: "30px"}}>
+                                                <div
+                                                    className={`progress-bar progress-bar-striped bg-${progressColor} progress-bar-animated`}
+                                                    role="progressbar" style={{width: speechValue + "%"}}
+                                                    aria-valuenow={speechValue} aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
                                             </div>
-                                            <div className='col-auto' style={{ height: 30 }}><h2>% {speechValue}</h2></div>
+                                            <div className='col-auto' style={{height: 30}}><h2>% {speechValue}</h2>
+                                            </div>
                                         </div>
                                     </div>
-
-
-
-
 
 
                                 </div>
@@ -159,5 +178,5 @@ export default function TeacherSpelling() {
                 </div>
             </div>
         </div>
-    </React.Fragment >;
+    </React.Fragment>;
 }

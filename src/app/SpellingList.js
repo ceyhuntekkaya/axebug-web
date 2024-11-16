@@ -40,7 +40,7 @@ export default function SpellingList() {
                 {
                     chapters ?
                         chapters.map((chapter, key) =>
-                            key === 0 ?
+                            key === 0 || key === 3 ?
                                 <div className='row' key={key}>
                                     {/* <Square key={key} col="3" backgroundColor="black"><h4><b>{key+1}</b></h4> </Square> */}
                                     {

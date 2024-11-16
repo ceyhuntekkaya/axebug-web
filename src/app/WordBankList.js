@@ -18,7 +18,7 @@ export default function WordBankList() {
                 {
                     chapters ?
                         chapters.map((chapter, key) =>
-                            key === 0 ?
+                            key === 0 || key === 3 ?
                                 <div className='row'>
                                     {/* <Square key={key} col="2" backgroundColor="black"><h4><b>{chapter.name}.{key}</b></h4> </Square> */}
                                     {

@@ -84,11 +84,16 @@ export default function DijitalContents() {
                                                   href="https://madeinbrain.net/axebug/HTML/Chapter1/index.html"><img
                         className='w-100' src={`assets/ch1.png`}/></a></div>
 
-
+                    <div className="col-3 p-2"><a target="_blank"
+                                                  href="https://madeinbrain.net/axebug/HTML/Chapter2v3/index.html"><img
+                        className='w-100' src={`assets/ch2.png`}/></a></div>
 
                     <div className="col-3 p-2"><a target="_blank"
                                                   href="https://madeinbrain.net/axebug/HTML/Activite1/index.html"><img
                         className='w-100' src={`assets/ab1.png`}/></a></div>
+                    <div className="col-3 p-2"><a target="_blank"
+                                                  href="https://madeinbrain.net/axebug/HTML/Activite2v3/index.html"><img
+                        className='w-100' src={`assets/ab2.png`}/></a></div>
 
 
                     <div className="col-3 p-2"><a target="_blank"
@@ -107,7 +112,7 @@ export default function DijitalContents() {
             <div className='row'>
                 <div className='col-5 mt-4'>
                     <div className='row'>
-                        <div className='col-12'>
+                    <div className='col-12'>
                             <div
                                 className="text-white bg-dark border border-2 border-dark p-2 mt-3 d-flex justify-content-center"
                                 style={{width: "100%"}}><h2><b> <Link to="/student" style={{
