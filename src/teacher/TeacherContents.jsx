@@ -6,6 +6,8 @@ import useTask from '../api/useTask';
 import {useParams} from 'react-router-dom';
 import useExam from '../api/useExam';
 import Axios from 'axios';
+import useYearlyPlan from "../api/useYearlyPlan";
+const content = require('../model/contentRelation.json')
 
 var fileDownload = require('js-file-download');
 
@@ -16,6 +18,12 @@ export default function TeacherContents() {
     const [tasks, setTasks] = useTask([]);
     const [selectedDocuments, setSelectedDocuments] = useState([]);
     const [linkType, setLinkType] = useState("");
+
+    const [yearlyPlan, setYearlyPlan] = useYearlyPlan([]);
+
+    useEffect(() => {
+        setYearlyPlan('findYearlyPlanBySchool', 110);
+    }, [])
 
     let {id} = useParams();
 
@@ -77,6 +85,38 @@ export default function TeacherContents() {
     //PLAY
     //SHOW_TIME
     //ACTIVITY
+
+
+
+    const setActiveWeekTaskNumber =()=>{
+
+
+    }
+
+
+
+    const controlVisible = (type, key) => {
+
+        const result = content.find(c => c.type === type && c.key === key)
+        if(result && result.relation <= 5){
+            return true
+        }
+        return false
+/*
+        if (
+            (group === "YEARLY_PLAN" && key < 2) ||
+            (group === "DAILY_PLAN" && key < 16) ||
+            (group === "COMICS" && key < 2) ||
+            (group === "GAME" && key < 2) ||
+            (group === "PLAY" && key < 4) ||
+            (group === "SHOW_TIME" && key < 2) ||
+            (group === "ACTIVITY" && key < 2)) {
+            return true
+        }
+        return false;
+
+ */
+    }
 
     return (
         <div className='container'>
@@ -165,15 +205,8 @@ export default function TeacherContents() {
                                     linkType === "OUT" ?
                                         selectedDocuments ?
                                             selectedDocuments.map((document, key) =>
-                                                (id === "YEARLY_PLAN" && key < 2) ||
-                                                (id === "DAILY_PLAN" && key < 16) ||
-                                                (id === "COMICS" && key < 2) ||
-                                                (id === "GAME" && key < 2) ||
-                                                (id === "PLAY" && key < 4) ||
-                                                (id === "SHOW_TIME" && key < 2) ||
-                                                (id === "ACTIVITY" && key < 2)
-                                                    ?
-                                                    <Square key={key} col="2" backgroundColor="white">
+
+                                                <Square key={key} col="2" backgroundColor="white">
                                                         <span>
                                                             <b>
                                                           <a className='btn btn-success' target="_blank"
@@ -182,7 +215,7 @@ export default function TeacherContents() {
                                                           </a>
                                                             </b>
                                                         </span>
-                                                    </Square> : null
+                                                </Square>
                                             ) : null
                                         : null
                                 }
@@ -190,10 +223,10 @@ export default function TeacherContents() {
                                     linkType === "TASKS" ?
                                         selectedDocuments ?
                                             selectedDocuments.map((document, key) =>
-                                                key < 16 ?
+
                                                     <Square key={key} col="2" backgroundColor="white"
                                                             to={`/teacher-tasks/${document.id}`}><b>{document.name}</b>
-                                                    </Square> : null
+                                                    </Square>
                                             ) : null
                                         : null
                                 }
@@ -203,11 +236,11 @@ export default function TeacherContents() {
                                             exams.map((document, key) =>
 
                                                 document.examType === "EXAM" ?
-                                                    key < 2 ?
+
                                                         <Square key={key} col="2" backgroundColor="white"
                                                                 to={`/teacher-exam/${document.id}`}><b>{document.name}</b>
                                                         </Square> : null
-                                                    : null
+
                                             ) : null
                                         : null
                                 }
@@ -216,10 +249,10 @@ export default function TeacherContents() {
                                         exams ?
                                             exams.map((document, key) =>
                                                 document.examType === "QUIZ" ?
-                                                    key < 12 ?
+
                                                         <Square key={key} col="2" backgroundColor="white"
                                                                 to={`/teacher-exam/${document.id}`}><b>{document.name}</b>
-                                                        </Square> : null
+                                                        </Square>
                                                     : null
                                             ) : null
                                         : null

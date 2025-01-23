@@ -37,7 +37,7 @@ export default function TeacherSpellingList() {
                 {
                     chapters ?
                         chapters.map((chapter, key) =>
-                            key === 0 || key === 3 ?
+
                                 <div className='row' key={key}>
                                     {
                                         chapter.episodes.map((episode, no) =>
@@ -45,7 +45,7 @@ export default function TeacherSpellingList() {
                                                     backgroundColor="white"><h3><b>{episode.name} </b></h3></Square>
                                         )
                                     }
-                                </div> : null
+                                </div>
                         ) : null
                 }
             </div>

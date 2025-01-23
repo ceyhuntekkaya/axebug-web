@@ -6,22 +6,7 @@ import TeacherCalender from './components/TeacherCalender'
 import useTeacher from "../api/useTeacher"
 import { useNavigate } from "react-router-dom";
 
-const studensUp = [
-  { classroom: "5-A", name: "Kerem C." },
-  { classroom: "5-B", name: "Ömer G." },
-  { classroom: "5-B", name: "Derya A." },
-  { classroom: "5-A", name: "Osman İ." },
-  { classroom: "5-C", name: "Serap E." },
-  { classroom: "5-C", name: "Faruk E." },
-]
-const studensDown = [
-  { classroom: "5-C", name: "Osman C." },
-  { classroom: "5-B", name: "Dilan M." },
-  { classroom: "5-B", name: "Yıldız O." },
-  { classroom: "5-A", name: "Seden D." },
-  { classroom: "5-A", name: "Mina D." },
-  { classroom: "5-C", name: "Ahmet D." },
-]
+
 
 export default function Teacher() {
 
@@ -31,6 +16,7 @@ export default function Teacher() {
     document.body.style.backgroundColor = 'white'; // '#231F20';
     const teacherData = JSON.parse(localStorage.getItem("teacher"));
     setTeacher(teacherData);
+    console.log(teacherData)
     setSchoolRoomScore("schoolRoomScore", teacherData.id);
   }, [])
 
@@ -96,28 +82,7 @@ export default function Teacher() {
         <Square fontSize={30} col="12" backgroundColor="white" to={`/teacher-reports/`}><b>Reports</b></Square>
       </div>
     </div>
-    {/* <div className='container'>
-      <div className='row mt-3'>
-        {
-          studensUp.map((s, key) =>
-            <div key={key} className="col-2 bg-success border border-info p-2">
-              {s.classroom}<br />
-              {s.name}
-            </div>
-          )
-        }
-      </div>
-      <div className='row mb-5 mt-1'>
-        {
-          studensDown.map((s, key) =>
-            <div key={key} className="col-2 bg-info border border-success p-2">
-              {s.classroom}<br />
-              {s.name}
-            </div>
-          )
-        }
-      </div>
-    </div> */}
+
     <div className='mt-3'></div>
   </React.Fragment>
   )
