@@ -271,12 +271,12 @@ export default function TeacherContents() {
                                                 className='w-100' src={`https://app.axebug.com/axebug/assets/ch2.png`}/></a>
                                             </div>
 
-                                            {
-                                                // <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Chapter3/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch3.png`}/></a></div>
-                                            }
-                                            {
-                                                // <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Chapter4/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch4.png`}/></a></div>
-                                            }
+
+                                                 <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Chapter3/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch3.png`}/></a></div>
+
+
+                                                 <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Chapter4/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch4.png`}/></a></div>
+
 
                                         </React.Fragment>
                                         : null
@@ -309,12 +309,11 @@ export default function TeacherContents() {
                                                 </a>
                                             </div>
 
-                                            {
-                                                // <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Activite3/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab3.png`}/></a></div>
-                                            }
-                                            {
-                                                // <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Activite4/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab4.png`}/></a></div>
-                                            }
+
+                                                 <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Activite3/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab3.png`}/></a></div>
+
+                                                 <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Activite4/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab4.png`}/></a></div>
+
 
                                         </React.Fragment>
                                         : null
