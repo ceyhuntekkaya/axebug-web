@@ -1,17 +1,8 @@
 {
-  "api_2e": {
-    "invokeUrl": "https://app.axebug.com/api"
-  },
-  "api_rt": {
+  "api": {
     "invokeUrl": "http://localhost:8080"
   },
-  "api_server": {
-    "invokeUrl": "https://app.axebug.com/api"
-  },
-  "api_yayin": {
-    "invokeUrl": "https://api.axebug.com/api"
-  },
-  "api": {
+  "api_servers": {
     "invokeUrl": "https://api.axebug.com/api"
   }
 }

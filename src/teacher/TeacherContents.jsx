@@ -21,8 +21,17 @@ export default function TeacherContents() {
 
     const [yearlyPlan, setYearlyPlan] = useYearlyPlan([]);
 
+
+
     useEffect(() => {
-        setYearlyPlan('findYearlyPlanBySchool', 110);
+        const teacherData = JSON.parse(localStorage.getItem("teacher"));
+        if(teacherData){
+            console.log(teacherData.school.id)
+            if(teacherData.school){
+                setYearlyPlan('findYearlyPlanBySchool', teacherData.school.id);
+            }
+        }
+
     }, [])
 
     let {id} = useParams();
