@@ -13,15 +13,16 @@ export default function TeacherSpellingList() {
 
 
     const compare = (a, b) => {
-        if (a.name < b.name) {
+
+        if (a.id < b.id) {
             return -1;
         }
-        if (a.name > b.name) {
+        if (a.id > b.id) {
             return 1;
         }
         return 0;
     };
-
+    console.log(chapters)
 
     return <React.Fragment>
         <div className="container">
@@ -36,11 +37,14 @@ export default function TeacherSpellingList() {
             <div className='row' style={{width: 750}}>
                 {
                     chapters ?
-                        chapters.map((chapter, key) =>
-                            key === 0 || key === 3 ?
+                        chapters.sort(compare).map((chapter, key) =>
+                            key === 1 || key === 0 || key === 3 ?
                                 <div className='row' key={key}>
                                     {
-                                        chapter.episodes.map((episode, no) =>
+                                       // console.log(chapter.chapter)
+                                    }
+                                    {
+                                        chapter.episodes.sort(compare).map((episode, no) =>
                                             <Square key={no} to={`/teacher-spellingword/?id=${episode.id}`} col="3"
                                                     backgroundColor="white"><h3><b>{episode.name} </b></h3></Square>
                                         )

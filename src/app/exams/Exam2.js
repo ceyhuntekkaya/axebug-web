@@ -12,6 +12,9 @@ export default function Exam2(props) {
     const [maxPage] = useState(7);
 
 
+    console.log(pageNo)
+
+
     const [returnLink, setReturnLink] = useState("/mytasks");
     useEffect(() => {
         const isTeacher = window.location.href
@@ -814,7 +817,7 @@ export default function Exam2(props) {
                                     </React.Fragment>
                                 ) : null}
              
-                                {pageNo === 6 ? (
+                                {pageNo === 5 ? (
                                     <React.Fragment>
                                         <div>
                                             <div className="alert alert-dark" role="alert">
@@ -898,7 +901,7 @@ export default function Exam2(props) {
                                         </div>
                                     </React.Fragment>
                                 ) : null}
-                                {pageNo === 7 ? <FinishExam/> : null}
+                                {pageNo === 6 ? <FinishExam/> : null}
                             </div>
                         </React.Fragment>
                     ) : null}
@@ -913,14 +916,14 @@ export default function Exam2(props) {
                                 </button>
                             </div>
                         ) : null}
-                        {pageNo !== maxPage - 1 ? (
+                        {pageNo !== maxPage - 2 ? (
                             <div className="col-auto pl-2">
                                 <button className="btn btn-success" onClick={() => nextPage()}>
                                     NEXT
                                 </button>
                             </div>
                         ) : null}
-                        {pageNo === maxPage - 1 ? (
+                        {pageNo === maxPage - 2 ? (
                             <div className="col-auto pl-2">
                                 <button
                                     className="btn btn-success"
