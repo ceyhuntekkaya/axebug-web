@@ -89,12 +89,18 @@ export default function DijitalContents() {
                         className='w-100' src={`assets/ch2.png`}/></a></div>
 
                     <div className="col-3 p-2"><a target="_blank"
+                                                  href="https://madeinbrain.net/axebug/HTML/Chapter3/index.html"><img
+                        className='w-100' src={`assets/ch3.png`}/></a></div>
+
+                    <div className="col-3 p-2"><a target="_blank"
                                                   href="https://madeinbrain.net/axebug/HTML/Activite1/index.html"><img
                         className='w-100' src={`assets/ab1.png`}/></a></div>
                     <div className="col-3 p-2"><a target="_blank"
                                                   href="https://madeinbrain.net/axebug/HTML/Activite2v3/index.html"><img
                         className='w-100' src={`assets/ab2.png`}/></a></div>
-
+                    <div className="col-3 p-2"><a target="_blank"
+                                                  href="https://madeinbrain.net/axebug/HTML/Activite3/index.html"><img
+                        className='w-100' src={`assets/ab3.png`}/></a></div>
 
                     <div className="col-3 p-2"><a target="_blank"
                                                   href="https://madeinbrain.net/axebug/HTML/Mathematics/index.html"><img

@@ -165,13 +165,13 @@ export default function TeacherContents() {
                                     linkType === "OUT" ?
                                         selectedDocuments ?
                                             selectedDocuments.map((document, key) =>
-                                                (id === "YEARLY_PLAN" && key < 2) ||
-                                                (id === "DAILY_PLAN" && key < 16) ||
-                                                (id === "COMICS" && key < 2) ||
-                                                (id === "GAME" && key < 2) ||
-                                                (id === "PLAY" && key < 4) ||
-                                                (id === "SHOW_TIME" && key < 2) ||
-                                                (id === "ACTIVITY" && key < 2)
+                                                (id === "YEARLY_PLAN" && key < 3) ||
+                                                (id === "DAILY_PLAN" && key < 24) ||
+                                                (id === "COMICS" && key < 3) ||
+                                                (id === "GAME" && key < 3) ||
+                                                (id === "PLAY" && key < 6) ||
+                                                (id === "SHOW_TIME" && key < 3) ||
+                                                (id === "ACTIVITY" && key < 3)
                                                     ?
                                                     <Square key={key} col="2" backgroundColor="white">
                                                         <span>
@@ -203,7 +203,7 @@ export default function TeacherContents() {
                                             exams.map((document, key) =>
 
                                                 document.examType === "EXAM" ?
-                                                    key < 2 ?
+                                                    key < 3 ?
                                                         <Square key={key} col="2" backgroundColor="white"
                                                                 to={`/teacher-exam/${document.id}`}><b>{document.name}</b>
                                                         </Square> : null
@@ -216,7 +216,7 @@ export default function TeacherContents() {
                                         exams ?
                                             exams.map((document, key) =>
                                                 document.examType === "QUIZ" ?
-                                                    key < 12 ?
+                                                    key < 16 ?
                                                         <Square key={key} col="2" backgroundColor="white"
                                                                 to={`/teacher-exam/${document.id}`}><b>{document.name}</b>
                                                         </Square> : null

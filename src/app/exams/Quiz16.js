@@ -428,7 +428,7 @@ export default function Quiz16(props) {
                                                 </audio>
                                             </div>
                                             <div className="paragraf">
-                                                <strong>RAXEBUG:</strong> Can anything pass
+                                                <strong>AXEBUG:</strong> Can anything pass
                                                 <input
                                                     className="form-input textformat"
                                                     type="text"
@@ -566,7 +566,7 @@ export default function Quiz16(props) {
                                                 hypernova, relativity…
                                             </div>
                                             <div className="paragraf">
-                                                <strong>RDUNG BEETLE :</strong> It’s just too much to
+                                                <strong>DUNG BEETLE :</strong> It’s just too much to
                                                 sink in.
                                             </div>
                                         </React.Fragment>

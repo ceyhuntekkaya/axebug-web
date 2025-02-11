@@ -51,6 +51,8 @@ export default function MyTasks() {
         return 0;
     };
 
+    console.log(studentWorkTaskList)
+
     const activeTaskShow = (type) => {
         return (<React.Fragment>
             <div className='row' style={{paddingLeft: "20px", paddingRight: "8px", paddingTop: "10px"}}>
