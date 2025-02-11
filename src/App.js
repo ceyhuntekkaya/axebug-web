@@ -88,11 +88,9 @@ function App() {
         <Route exact path="/teacher-contents" element={<TeacherContents />} />
         <Route exact path="/teacher-reports" element={<TeacherReports />} />
 
-        
         <Route exact path="/teacher-spelling-list" element={<TeacherSpellingList />} />
         <Route exact path="/teacher-spellingword" element={<TeacherSpellingEpisode />} />
         <Route exact path="/teacher-spelling" element={<TeacherSpelling />} />
-
 
         <Route exact path="/teacher-wordbank-list" element={<TeacherWordBankList />} />
         <Route exact path="/teacher-wordbankword" element={<TeacherWordBankEpisode />} />
