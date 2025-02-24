@@ -52,16 +52,7 @@
                 {
                     "student": "",
                     "answer": "boots",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E12",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "teenagers",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E12",
@@ -70,25 +61,7 @@
                 {
                     "student": "",
                     "answer": "night",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E12",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "police",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E12",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "reptile",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E12",
@@ -97,7 +70,7 @@
                 {
                     "student": "",
                     "answer": "hospitals",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E12",
@@ -105,8 +78,49 @@
                 },
                 {
                     "student": "",
+                    "answer": "teenagers",
+                    "weigth": 2,
+                    "score": 0,
+                    "method": "",
+                    "function": "E12",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "police",
+                    "weigth": 2,
+                    "score": 0,
+                    "method": "",
+                    "function": "E12",
+                    "functionScore": false
+                },
+                {
+                    "student": "",
+                    "answer": "reptile",
+                    "weigth": 2,
+                    "score": 0,
+                    "method": "",
+                    "function": "E12",
+                    "functionScore": false
+                },
+                
+            ],
+            [
+                {
+                    
+                        "student": "TEMPLATE",
+                        "answer": "D",
+                        "weigth": 1,
+                        "score": 0,
+                        "method": "",
+                        "function": "E1",
+                        "functionScore": false
+                    },
+                    {
+                
+                    "student": "",
                     "answer": "six days",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E15",
@@ -115,7 +129,7 @@
                 {
                     "student": "",
                     "answer": "reach",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E15",
@@ -124,7 +138,7 @@
                 {
                     "student": "",
                     "answer": "wormhole",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E15",
@@ -133,7 +147,7 @@
                 {
                     "student": "",
                     "answer": "beetle",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E15",
@@ -142,7 +156,7 @@
                 {
                     "student": "",
                     "answer": "calculations",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E15",
@@ -151,7 +165,7 @@
                 {
                     "student": "",
                     "answer": "shorter",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E15",
@@ -159,8 +173,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "math",
-                    "weigth": 1,
+                    "answer": "Math",
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E15",
@@ -169,7 +183,7 @@
                 {
                     "student": "",
                     "answer": "takeoff",
-                    "weigth": 1,
+                    "weigth": 2,
                     "score": 0,
                     "method": "",
                     "function": "E15",
@@ -188,8 +202,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "i",
-                    "weigth": 2,
+                    "answer": "D",
+                    "weigth": 5,
                     "score": 0,
                     "method": "",
                     "function": "E18",
@@ -197,8 +211,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "k",
-                    "weigth": 2,
+                    "answer": "E",
+                    "weigth": 5,
                     "score": 0,
                     "method": "",
                     "function": "E18",
@@ -206,8 +220,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "e",
-                    "weigth": 2,
+                    "answer": "C",
+                    "weigth": 5,
                     "score": 0,
                     "method": "",
                     "function": "E18",
@@ -215,8 +229,8 @@
                 },
                 {
                     "student": "",
-                    "answer": "a",
-                    "weigth": 2,
+                    "answer": "A",
+                    "weigth": 5,
                     "score": 0,
                     "method": "",
                     "function": "E18",
@@ -224,94 +238,14 @@
                 },
                 {
                     "student": "",
-                    "answer": "b",
-                    "weigth": 2,
+                    "answer": "B",
+                    "weigth": 5,
                     "score": 0,
                     "method": "",
                     "function": "E18",
                     "functionScore": false
                 },
-                {
-                    "student": "",
-                    "answer": "n",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "c",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "l",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "d",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "m",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "f",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "j",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "g",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "h",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E18",
-                    "functionScore": false
-                }
+                
             ],
             [
                 {
@@ -326,7 +260,7 @@
                 {
                     "student": "",
                     "answer": "DICIPLINARY IS VITAL.",
-                    "weigth": 13,
+                    "weigth": 10,
                     "score": 0,
                     "method": "",
                     "function": "E19",
@@ -335,7 +269,7 @@
                 {
                     "student": "",
                     "answer": "GRAVITATIONAL FORCE EFFECT TIME.",
-                    "weigth": 13,
+                    "weigth": 10,
                     "score": 0,
                     "method": "",
                     "function": "E19",
@@ -344,7 +278,7 @@
                 {
                     "student": "",
                     "answer": "CONSTANT SPEED AND RELATIVE SPEED.",
-                    "weigth": 13,
+                    "weigth": 11,
                     "score": 0,
                     "method": "",
                     "function": "E19",
@@ -353,7 +287,7 @@
                 {
                     "student": "",
                     "answer": "THEY BEND TIME TOO.",
-                    "weigth": 13,
+                    "weigth": 10,
                     "score": 0,
                     "method": "",
                     "function": "E19",

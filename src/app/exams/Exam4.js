@@ -112,9 +112,207 @@ export default function Exam4(props) {
                             <div style={{fontSize: "18pt"}}>
                                 {pageNo === 0 ? (
                                     <React.Fragment>
+                                        
+                                        
+                                        
+                                        <div>
+                                            <div className="alert alert-dark" role="alert">
+                                                <strong>
+                                                    A.	Read the text and choose the correct answer.
+                                                </strong>
+                                            </div>
+
+                                            <div className="row p-2">
+                                                <strong>
+                                                    1. Which of the following words starting with the letter Z is mentioned in the text?
+                                                    ___________________ .
+                                                </strong>
+                                                <div className="form-check">
+                                                    <input
+                                                        className="form-check-input"
+                                                        type="radio"
+                                                        name="as6"
+                                                        onChange={(e) => setStudentOpenAnswer(0, 0, 6, "A")}
+                                                    />
+                                                    <label
+                                                        className="form-check-label"
+                                                        htmlFor="flexRadioDefault1"
+                                                    >
+                                                        A) Zebra
+                                                    </label>
+                                                </div>
+                                                <div className="form-check">
+                                                    <input
+                                                        className="form-check-input"
+                                                        type="radio"
+                                                        name="as6"
+                                                        onChange={(e) => setStudentOpenAnswer(0, 0, 6, "B")}
+                                                    />
+                                                    <label
+                                                        className="form-check-label"
+                                                        htmlFor="flexRadioDefault2"
+                                                    >
+                                                        B) Zoology
+                                                    </label>
+                                                </div>
+                                                <div className="form-check">
+                                                    <input
+                                                        className="form-check-input"
+                                                        type="radio"
+                                                        name="as6"
+                                                        onChange={(e) => setStudentOpenAnswer(0, 0, 6, "C")}
+                                                    />
+                                                    <label
+                                                        className="form-check-label"
+                                                        htmlFor="flexRadioDefault2"
+                                                    >
+                                                        C) Zeppelin
+                                                    </label>
+                                                </div>
+                                                <div className="form-check">
+                                                    <input
+                                                        className="form-check-input"
+                                                        type="radio"
+                                                        name="as6"
+                                                        onChange={(e) => setStudentOpenAnswer(0, 0, 6, "D")}
+                                                    />
+                                                    <label
+                                                        className="form-check-label"
+                                                        htmlFor="flexRadioDefault2"
+                                                    >
+                                                        D) Zygote
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div className="row p-2">
+                                                <strong>
+                                                    2.	Plato was the first one to ____________ .
+                                                </strong>
+                                                <div className="form-check">
+                                                    <input
+                                                        className="form-check-input"
+                                                        type="radio"
+                                                        name="as7"
+                                                        onChange={(e) => setStudentOpenAnswer(0, 0, 7, "A")}
+                                                    />
+                                                    <label
+                                                        className="form-check-label"
+                                                        htmlFor="flexRadioDefault1"
+                                                    >
+                                                        A) establish a tower
+                                                    </label>
+                                                </div>
+                                                <div className="form-check">
+                                                    <input
+                                                        className="form-check-input"
+                                                        type="radio"
+                                                        name="as7"
+                                                        onChange={(e) => setStudentOpenAnswer(0, 0, 7, "B")}
+                                                    />
+                                                    <label
+                                                        className="form-check-label"
+                                                        htmlFor="flexRadioDefault2"
+                                                    >
+                                                        B) establish an Academy
+                                                    </label>
+                                                </div>
+                                                <div className="form-check">
+                                                    <input
+                                                        className="form-check-input"
+                                                        type="radio"
+                                                        name="as7"
+                                                        onChange={(e) => setStudentOpenAnswer(0, 0, 7, "C")}
+                                                    />
+                                                    <label
+                                                        className="form-check-label"
+                                                        htmlFor="flexRadioDefault2"
+                                                    >
+                                                        C) establish a restaurant
+                                                    </label>
+                                                </div>
+                                                <div className="form-check">
+                                                    <input
+                                                        className="form-check-input"
+                                                        type="radio"
+                                                        name="as7"
+                                                        onChange={(e) => setStudentOpenAnswer(0, 0, 7, "D")}
+                                                    />
+                                                    <label
+                                                        className="form-check-label"
+                                                        htmlFor="flexRadioDefault2"
+                                                    >
+                                                        D) establish a library
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div className="row p-2">
+                                                <strong>
+                                                    3. The shape of the spaceship was inspired by ____________ .
+                                                    
+                                                </strong>
+                                                <div className="form-check">
+                                                    <input
+                                                        className="form-check-input"
+                                                        type="radio"
+                                                        name="as8"
+                                                        onChange={(e) => setStudentOpenAnswer(0, 0, 8, "A")}
+                                                    />
+                                                    <label
+                                                        className="form-check-label"
+                                                        htmlFor="flexRadioDefault1"
+                                                    >
+                                                        A) a bee
+                                                    </label>
+                                                </div>
+                                                <div className="form-check">
+                                                    <input
+                                                        className="form-check-input"
+                                                        type="radio"
+                                                        name="as8"
+                                                        onChange={(e) => setStudentOpenAnswer(0, 0, 8, "B")}
+                                                    />
+                                                    <label
+                                                        className="form-check-label"
+                                                        htmlFor="flexRadioDefault2"
+                                                    >
+                                                        B) a houseflye
+                                                    </label>
+                                                </div>
+                                                <div className="form-check">
+                                                    <input
+                                                        className="form-check-input"
+                                                        type="radio"
+                                                        name="as8"
+                                                        onChange={(e) => setStudentOpenAnswer(0, 0, 8, "C")}
+                                                    />
+                                                    <label
+                                                        className="form-check-label"
+                                                        htmlFor="flexRadioDefault2"
+                                                    >
+                                                        C) a spider
+                                                    </label>
+                                                </div>
+                                                <div className="form-check">
+                                                    <input
+                                                        className="form-check-input"
+                                                        type="radio"
+                                                        name="as8"
+                                                        onChange={(e) => setStudentOpenAnswer(0, 0, 8, "D")}
+                                                    />
+                                                    <label
+                                                        className="form-check-label"
+                                                        htmlFor="flexRadioDefault2"
+                                                    >
+                                                        D) a caterpillar
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            
+                                        
+                                        
                                         <div className="alert alert-dark" role="alert">
                                             <strong>
-                                                A. Read the story. Choose a word from the box below.
+                                                B. Read the story. Choose a word from the box below.
                                                 Write the correct words in the blanks.
                                             </strong>
                                         </div>
@@ -187,7 +385,7 @@ export default function Exam4(props) {
                                                 type="text"
                                             />
                                             from giving harm to people, and the government shall
-                                            decide about the future of the animals
+                                            decide about the future of the animals.
                                         </div>
 
                                         <div className="row">
@@ -195,10 +393,13 @@ export default function Exam4(props) {
                                                 boots
                                             </div>
                                             <div className="col-2 border border-success p-2 m-1">
-                                                teenagers
+                                                night
                                             </div>
                                             <div className="col-2 border border-success p-2 m-1">
-                                                night
+                                                hospitals
+                                            </div>
+                                            <div className="col-2 border border-success p-2 m-1">
+                                                teenagers
                                             </div>
                                             <div className="col-2 border border-success p-2 m-1">
                                                 police
@@ -206,18 +407,18 @@ export default function Exam4(props) {
                                             <div className="col-2 border border-success p-2 m-1">
                                                 reptile
                                             </div>
-                                            <div className="col-2 border border-success p-2 m-1">
-                                                hospitals
-                                            </div>
                                         </div>
                                     </React.Fragment>
                                 ) : null}
 
                                 {pageNo === 1 ? (
                                     <React.Fragment>
+                                      
+                                      
+                                      
                                         <div>
                                             <div className="alert alert-dark" role="alert">
-                                                <strong>B. Listen and fill in the blanks.</strong>
+                                                <strong>C. Listen and fill in the blanks.</strong>
                                             </div>
                                             <div className="alert alert-dark" role="alert">
                                                 <audio
@@ -327,10 +528,10 @@ export default function Exam4(props) {
                                                 , the trip is %90 shorter.
                                             </div>
                                             <div className="paragraf">
-                                                <strong>Dung beetle :</strong> Why?
+                                                <strong>Dung beetle :</strong> What about coming back?
                                             </div>
                                             <div className="paragraf">
-                                                <strong>Ladybug:</strong> If i do the math…?
+                                                <strong>Ladybug:</strong> If I do the math...
                                             </div>
                                             <div className="paragraf">
                                                 <strong>Ladybug:</strong> Coming back will be %82
@@ -342,7 +543,7 @@ export default function Exam4(props) {
                                                         setStudentOpenAnswer(1, 0, 5, e.target.value)
                                                     }
                                                 />
-                                                ?
+                                                .
                                             </div>
                                             <div className="paragraf">
                                                 <strong>Robug13:</strong> This one has brains!
@@ -391,17 +592,30 @@ export default function Exam4(props) {
 
                                 {pageNo === 2 ? (
                                     <React.Fragment>
+
+                                        
                                         <div>
                                             <div className="alert alert-dark" role="alert">
                                                 <strong>
-                                                    C. Match the words and phrases with the correct definitions.
+                                                    D. Match the words and phrases with the correct definitions.
                                                 </strong>
                                             </div>
                                             <div className="row">
                                                 <div className="col-6">
-
                                                     <div className="paragraf">
-                                                        <strong>1. Disciplinary</strong>
+                                                        <strong>1. Disciplinary:</strong>
+                                                        <input
+                                                            style={{width: 50}}
+                                                            className="form-input textformat border border-success"
+                                                            type="text"
+                                                            value={answer.result[2][0][1].student}
+                                                            onChange={(e) =>
+                                                                setStudentOpenAnswer(2, 0, 1, e.target.value)
+                                                            }
+                                                        />
+                                                    </div>
+                                                    <div className="paragraf">
+                                                    <strong>2. Vital:</strong>
                                                         <input
                                                             style={{width: 50}}
                                                             className="form-input textformat border border-success"
@@ -414,314 +628,70 @@ export default function Exam4(props) {
                                                     </div>
 
                                                     <div className="paragraf">
-                                                        <strong>2. Vital</strong>
+                                                    <strong>3. Patience:</strong>
                                                         <input
                                                             style={{width: 50}}
                                                             className="form-input textformat border border-success"
                                                             type="text"
-                                                            value={answer.result[2][0][2].student}
+                                                            value={answer.result[2][0][1].student}
                                                             onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 2, e.target.value)
+                                                                setStudentOpenAnswer(2, 0, 1, e.target.value)
                                                             }
                                                         />
                                                     </div>
-
 
                                                     <div className="paragraf">
-                                                        <strong>3. Patience</strong>
+                                                    <strong>4. Essential:</strong>
                                                         <input
                                                             style={{width: 50}}
                                                             className="form-input textformat border border-success"
                                                             type="text"
-                                                            value={answer.result[2][0][3].student}
+                                                            value={answer.result[2][0][1].student}
                                                             onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 3, e.target.value)
+                                                                setStudentOpenAnswer(2, 0, 1, e.target.value)
                                                             }
                                                         />
                                                     </div>
-
 
                                                     <div className="paragraf">
-                                                        <strong>4. Essential </strong>
+                                                    <strong>5. Light speed:</strong>
                                                         <input
                                                             style={{width: 50}}
                                                             className="form-input textformat border border-success"
                                                             type="text"
-                                                            value={answer.result[2][0][4].student}
+                                                            value={answer.result[2][0][1].student}
                                                             onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 4, e.target.value)
+                                                                setStudentOpenAnswer(2, 0, 1, e.target.value)
                                                             }
+                                                     
                                                         />
                                                     </div>
-                                                    <div className="paragraf">
-                                                        <strong>5. Zoo </strong>
-                                                        <input
-                                                            style={{width: 50}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][5].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 5, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-
-
                                                 </div>
                                                 <div className="col-6">
                                                     <div className="paragraf alert alert-success">
-                                                        <strong>A. </strong>a. Totally necessary.
+                                                        <strong>A. </strong>Totally necessary.
                                                     </div>
                                                     <div className="paragraf alert alert-success">
-                                                        <strong>B. </strong>A place where people keep various animal
-                                                        types.
+                                                        <strong>B. </strong>The speed of light.  
                                                     </div>
                                                     <div className="paragraf alert alert-success">
-                                                        <strong>C. </strong>A branch of Maths concerned with the
-                                                        relati-onship between points, lines, and surfaces.
+                                                        <strong>C. </strong>Tolerance.
                                                     </div>
                                                     <div className="paragraf alert alert-success">
-                                                        <strong>D. </strong>The force that pushes objects towards the
-                                                        centre of the earth and towards each other.
-                                                        us.
+                                                        <strong>D. </strong>Concerning discipline.
                                                     </div>
                                                     <div className="paragraf alert alert-success">
-                                                        <strong>E. </strong>Tolerance.
+                                                        <strong>E. </strong>Very important.
                                                     </div>
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>F. </strong>To travel through time into the past or
-                                                        future.
-                                                    </div>
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>G. </strong>A particle with no mass.
-                                                    </div>
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>H. </strong>A contradictory statement which may be true
-                                                        or false.
-                                                    </div>
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>I. </strong>Concerning discipline.
-                                                    </div>
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>J. </strong>A particle travelling faster than light.
-                                                    </div>
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>K. </strong>Very important
-                                                    </div>
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>L. </strong>A place in space with such intense
-                                                        gravitation that nothing an escape.
-                                                    </div>
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>M. </strong>The speed of light
-                                                        left now. But first...
-                                                    </div>
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>N. </strong>The number of a chemical element in the
-                                                        periodic system.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </React.Fragment>
-                                ) : null}
-                                {pageNo === 6 ? (
-                                    <React.Fragment>
-                                        <div>
-                                            <div className="alert alert-dark" role="alert">
-                                                <strong>B. Macth a synonym for each word.</strong>
-                                            </div>
-
-                                            <div className="row">
-                                                <div className="col-2 alert alert-info m-3">
-                                                    Emergency
-                                                    <input
-                                                        style={{fontSize: 30}}
-                                                        className="form-input w-100"
-                                                        type="text"
-                                                        value={answer.result[2][1][1].student}
-                                                        onChange={(e) =>
-                                                            setStudentOpenAnswer(2, 1, 1, e.target.value)
-                                                        }
-                                                    />
-                                                </div>
-                                                <div className="col-2 alert alert-info m-3">
-                                                    Travel
-                                                    <input
-                                                        style={{fontSize: 30}}
-                                                        className="form-input w-100"
-                                                        type="text"
-                                                        value={answer.result[2][1][2].student}
-                                                        onChange={(e) =>
-                                                            setStudentOpenAnswer(2, 1, 2, e.target.value)
-                                                        }
-                                                    />
-                                                </div>
-                                                <div className="col-2 alert alert-info m-3">
-                                                    Possible
-                                                    <input
-                                                        style={{fontSize: 30}}
-                                                        className="form-input w-100"
-                                                        type="text"
-                                                        value={answer.result[2][1][3].student}
-                                                        onChange={(e) =>
-                                                            setStudentOpenAnswer(2, 1, 3, e.target.value)
-                                                        }
-                                                    />
-                                                </div>
-                                                <div className="col-2 alert alert-info m-3">
-                                                    Amazing
-                                                    <input
-                                                        style={{fontSize: 30}}
-                                                        className="form-input w-100"
-                                                        type="text"
-                                                        value={answer.result[2][1][4].student}
-                                                        onChange={(e) =>
-                                                            setStudentOpenAnswer(2, 1, 4, e.target.value)
-                                                        }
-                                                    />
-                                                </div>
-                                                <div className="col-2 alert alert-info m-3">
-                                                    Transfer
-                                                    <input
-                                                        style={{fontSize: 30}}
-                                                        className="form-input w-100"
-                                                        type="text"
-                                                        value={answer.result[2][1][5].student}
-                                                        onChange={(e) =>
-                                                            setStudentOpenAnswer(2, 1, 5, e.target.value)
-                                                        }
-                                                    />
-                                                </div>
-                                                <div className="col-2 alert alert-info m-3">
-                                                    Cancel
-                                                    <input
-                                                        style={{fontSize: 30}}
-                                                        className="form-input w-100"
-                                                        type="text"
-                                                        value={answer.result[2][1][6].student}
-                                                        onChange={(e) =>
-                                                            setStudentOpenAnswer(2, 1, 6, e.target.value)
-                                                        }
-                                                    />
-                                                </div>
-                                                <div className="col-2 alert alert-info m-3">
-                                                    Rush
-                                                    <input
-                                                        style={{fontSize: 30}}
-                                                        className="form-input w-100"
-                                                        type="text"
-                                                        value={answer.result[2][1][7].student}
-                                                        onChange={(e) =>
-                                                            setStudentOpenAnswer(2, 1, 7, e.target.value)
-                                                        }
-                                                    />
-                                                </div>
-                                                <div className="col-2 alert alert-info m-3">
-                                                    Center
-                                                    <input
-                                                        style={{fontSize: 30}}
-                                                        className="form-input w-100"
-                                                        type="text"
-                                                        value={answer.result[2][1][8].student}
-                                                        onChange={(e) =>
-                                                            setStudentOpenAnswer(2, 1, 8, e.target.value)
-                                                        }
-                                                    />
-                                                </div>
-                                                <div className="col-2 alert alert-info m-3">
-                                                    Right
-                                                    <input
-                                                        style={{fontSize: 30}}
-                                                        className="form-input w-100"
-                                                        type="text"
-                                                        value={answer.result[2][1][9].student}
-                                                        onChange={(e) =>
-                                                            setStudentOpenAnswer(2, 1, 9, e.target.value)
-                                                        }
-                                                    />
-                                                </div>
-                                                <div className="col-2 alert alert-info m-3">
-                                                    Strange
-                                                    <input
-                                                        style={{fontSize: 30}}
-                                                        className="form-input w-100"
-                                                        type="text"
-                                                        value={answer.result[2][1][10].student}
-                                                        onChange={(e) =>
-                                                            setStudentOpenAnswer(2, 1, 10, e.target.value)
-                                                        }
-                                                    />
-                                                </div>
-                                                <div className="col-2 alert alert-info m-3">
-                                                    Master
-                                                    <input
-                                                        style={{fontSize: 30}}
-                                                        className="form-input w-100"
-                                                        type="text"
-                                                        value={answer.result[2][1][11].student}
-                                                        onChange={(e) =>
-                                                            setStudentOpenAnswer(2, 1, 11, e.target.value)
-                                                        }
-                                                    />
-                                                </div>
-                                                <div className="col-2 alert alert-info m-3">
-                                                    Cluttered
-                                                    <input
-                                                        style={{fontSize: 30}}
-                                                        className="form-input w-100"
-                                                        type="text"
-                                                        value={answer.result[2][1][12].student}
-                                                        onChange={(e) =>
-                                                            setStudentOpenAnswer(2, 1, 12, e.target.value)
-                                                        }
-                                                    />
-                                                </div>
-                                            </div>
-                                            <hr/>
-                                            <div className="row">
-                                                <div className="col-2 alert alert-warning m-1">
-                                                    Middle
-                                                </div>
-                                                <div className="col-1 alert alert-warning m-1">End</div>
-                                                <div className="col-1 alert alert-warning m-1">
-                                                    Send
-                                                </div>
-                                                <div className="col-1 alert alert-warning m-1">
-                                                    Super
-                                                </div>
-                                                <div className="col-1 alert alert-warning m-1">
-                                                    King
-                                                </div>
-                                                <div className="col-1 alert alert-warning m-1">
-                                                    Visit
-                                                </div>
-                                                <div className="col-1 alert alert-warning m-1">
-                                                    Quick
-                                                </div>
-                                                <div className="col-1 alert alert-warning m-1">Sos</div>
-                                                <div className="col-2 alert alert-warning m-1">
-                                                    Correct
-                                                </div>
-                                                <div className="col-1 alert alert-warning m-1">
-                                                    Right
-                                                </div>
-                                                <div className="col-1 alert alert-warning m-1">
-                                                    Weird
-                                                </div>
-                                                <div className="col-2 alert alert-warning m-1">
-                                                    Untidy
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </React.Fragment>
-                                ) : null}
-                                {pageNo === 7 ? (
-                                    <React.Fragment>
+                                                   
+                                        
+                                        
+                                        
+                                        
                                         <div>
                                             <div className="alert alert-dark" role="alert">
                                                 <strong>
-                                                    A. Listen to the audio. Then, repeat the sentences
+                                                    E. Listen to the audio. Then, repeat the sentences
                                                     clearly.
                                                 </strong>
                                             </div>
@@ -732,7 +702,7 @@ export default function Exam4(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p015_02_c1e1.mp3`}
+                                                        src={`https://app.axebug.com/axebug/assets/c4_e13_pg8_p7.mp3`}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -750,7 +720,7 @@ export default function Exam4(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p043_02_c1e2.mp3`}
+                                                        src={`https://app.axebug.com/axebug/assets/c4_e14_pg16_p6.mp3`}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -768,7 +738,7 @@ export default function Exam4(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p075_01_c1e3.mp3`}
+                                                        src={`https://app.axebug.com/axebug/assets/c4_e15_pg22_p8.mp3`}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -786,7 +756,7 @@ export default function Exam4(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p099_01_c1e4.mp3`}
+                                                        src={`https://app.axebug.com/axebug/assets/c4_e16_pg27_p15.mp3`}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>

@@ -14,7 +14,7 @@
                 {
                     "student": "",
                     "answer": "D",
-                    "weigth": 1,
+                    "weigth": 1.6,
                     "score": 0,
                     "method": "",
                     "function": "E14",
@@ -23,7 +23,7 @@
                 {
                     "student": "",
                     "answer": "B",
-                    "weigth": 1,
+                    "weigth": 1.6,
                     "score": 0,
                     "method": "",
                     "function": "E14",
@@ -32,16 +32,7 @@
                 {
                     "student": "",
                     "answer": "B",
-                    "weigth": 1,
-                    "score": 0,
-                    "method": "",
-                    "function": "E14",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "C",
-                    "weigth": 1,
+                    "weigth": 1.6,
                     "score": 0,
                     "method": "",
                     "function": "E14",
@@ -50,7 +41,7 @@
                 {
                     "student": "",
                     "answer": "D",
-                    "weigth": 1,
+                    "weigth": 1.6,
                     "score": 0,
                     "method": "",
                     "function": "E14",
@@ -58,13 +49,13 @@
                 },
                 {
                     "student": "",
-                    "answer": "A",
-                    "weigth": 1,
+                    "answer": "C",
+                    "weigth": 1.6,
                     "score": 0,
                     "method": "",
                     "function": "E14",
                     "functionScore": false
-                }
+                },
             ],
             [
                 {
@@ -87,7 +78,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "rest",
+                    "answer": "departure",
                     "weigth": 2,
                     "score": 0,
                     "method": "",
@@ -114,7 +105,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "Artificial",
+                    "answer": "artificial intelligence",
                     "weigth": 2,
                     "score": 0,
                     "method": "",
@@ -123,16 +114,7 @@
                 },
                 {
                     "student": "",
-                    "answer": "intelligence",
-                    "weigth": 2,
-                    "score": 0,
-                    "method": "",
-                    "function": "E15",
-                    "functionScore": false
-                },
-                {
-                    "student": "",
-                    "answer": "Assist",
+                    "answer": "assist you",
                     "weigth": 2,
                     "score": 0,
                     "method": "",
@@ -156,7 +138,8 @@
                     "method": "",
                     "function": "E15",
                     "functionScore": false
-                }
+                },
+                
             ],
             [
                 {

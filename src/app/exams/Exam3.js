@@ -102,7 +102,7 @@ export default function Exam3(props) {
                     <div className="d-flex justify-content-center">
                         <h5 className="card-title mt-3">
                             <h1>
-                                <strong>EXAM CHAPTER 2</strong>
+                                <strong>EXAM CHAPTER 3</strong>
                             </h1>
                         </h5>
                     </div>
@@ -113,139 +113,17 @@ export default function Exam3(props) {
                             <div style={{fontSize: "18pt"}}>
                                 {pageNo === 0 ? (
                                     <React.Fragment>
-                                        <div className="alert alert-dark" role="alert">
-                                            <strong>
-                                                A. Read the Passage and answer the questions.
-                                            </strong>
-                                        </div>
-                                        <div className="d-flex justify-content-center pb-3">
-                                            <strong>
-                                                <h3>THE GUY WITH THE CRAZY HAIR</h3>
-                                            </strong>
-                                        </div>
-                                        <div className="paragraf">
-                                            Known as the biggest science discoverist. Born and raised
-                                            in Germany, Einstein was a high leveled student through
-                                            his life. His father supported him to do science
-                                            activities, discussions and experiments. Researching about
-                                            new ideas, keeping notes and expanding statements was his
-                                            thing. “Anyone who has never made a mistake, has never
-                                            tried anything new” was one of his sayings.
-                                        </div>
-                                        <div className="paragraf">
-                                            When he was young, he met a teacher called Max Talmund. He
-                                            started having conversations with him, thus Talmund was
-                                            teaching him how to experiment a lot. Einstein started to
-                                            be more curious about light due to Talmund’s light
-                                            experiments. Investigating became a desire to Einstein.
-                                            “If you can’t explain it to a six year old, you don’t
-                                            understand it yourself” he said.
-                                        </div>
-                                        <div className="paragraf">
-                                            When he was much older, he became a professor in Germany.
-                                            Many years later he went to America becauese of political
-                                            issues. This made him examine more of his theories. He was
-                                            intrusive about time, space, matter, energy and gravity.
-                                            He is very special for his “Theory of relativity”.
-                                        </div>
-                                        <div className="paragraf">
-                                            The theory aims to solve problems that classical Physics
-                                            can not be enough to. Two types of relativity was
-                                            explained: Special relativity and general relativity.
-                                        </div>
-                                        <div className="paragraf">
-                                            It was revealed in 1905, that things going in the same
-                                            direction at the same speed are called ‘Inertial frame’.
-                                            This was special relativity’s concentration. On the other
-                                            side, general theory focused on gravitional lensing which
-                                            express the light bending when it comes to larger objects.
-                                        </div>
-                                        <div className="paragraf">
-                                            Einstein’s work was mad and hard to sink in. It is still
-                                            very significant for the World.
-                                        </div>
-                                        <div className="paragraf">
-                                            We can clearly understand that he was a smart cunning man
-                                            who thought knowledge is estential to everyone no matter
-                                            what. He got a Nobel prize too.
-                                        </div>
-                                        <div className="paragraf">
-                                            Einstein died in 1955. He was named "Person of the
-                                            century" by Time Magazine.
-                                        </div>
-                                        <div className="mt-3">
-                                            <strong>Write the answers in the blanks.</strong>
-                                        </div>
-                                        <div className="mt-2">
-                                            1. What was his teacher's name?
-                                            <input
-                                                className="form-control"
-                                                value={answer.result[0][0][1].student}
-                                                onChange={(e) =>
-                                                    setStudentOpenAnswer(0, 0, 1, e.target.value, true)
-                                                }
-                                                type="text"
-                                            />
-                                        </div>
-                                        <div>
-                                            2. Was Einstein born and raised in Germany?
-                                            <input
-                                                className="form-control"
-                                                value={answer.result[0][0][2].student}
-                                                onChange={(e) =>
-                                                    setStudentOpenAnswer(0, 0, 2, e.target.value, true)
-                                                }
-                                                type="text"
-                                            />
-                                        </div>
-                                        <div>
-                                            3. Why did he go to America when he was older?
-                                            <input
-                                                className="form-control"
-                                                value={answer.result[0][0][3].student}
-                                                onChange={(e) =>
-                                                    setStudentOpenAnswer(0, 0, 3, e.target.value, true)
-                                                }
-                                                type="text"
-                                            />
-                                        </div>
-                                        <div>
-                                            4. Which issues did he focus on?
-                                            <input
-                                                className="form-control"
-                                                value={answer.result[0][0][4].student}
-                                                onChange={(e) =>
-                                                    setStudentOpenAnswer(0, 0, 4, e.target.value, true)
-                                                }
-                                                type="text"
-                                            />
-                                        </div>
-                                        <div>
-                                            5. What do you think ‘Person of the century’ mean?
-                                            <input
-                                                className="form-control"
-                                                value={answer.result[0][0][5].student}
-                                                onChange={(e) =>
-                                                    setStudentOpenAnswer(0, 0, 5, e.target.value, true)
-                                                }
-                                                type="text"
-                                            />
-                                        </div>
-                                    </React.Fragment>
-                                ) : null}
-
-                                {pageNo === 1 ? (
-                                    <React.Fragment>
+                                
                                         <div>
                                             <div className="alert alert-dark" role="alert">
                                                 <strong>
-                                                    B. Multiple choice. Read and choose the best answer.
+                                                    A.	Read the text and choose the correct answer.
                                                 </strong>
                                             </div>
 
                                             <div className="row p-2">
                                                 <strong>
-                                                    6. Einstein’s father supported him to
+                                                    1. Which of the following statements is an opinion?
                                                     ___________________ .
                                                 </strong>
                                                 <div className="form-check">
@@ -259,7 +137,7 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault1"
                                                     >
-                                                        A) write books
+                                                        A) Disney made many movies like Bambi.
                                                     </label>
                                                 </div>
                                                 <div className="form-check">
@@ -273,7 +151,7 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault2"
                                                     >
-                                                        B) do science activities
+                                                        B) In the 1940s, Disney had an idea to build an amazingpark for families.
                                                     </label>
                                                 </div>
                                                 <div className="form-check">
@@ -287,7 +165,7 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault2"
                                                     >
-                                                        C) do drama plays
+                                                        C) Disneyland was first opened in California.
                                                     </label>
                                                 </div>
                                                 <div className="form-check">
@@ -301,13 +179,13 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault2"
                                                     >
-                                                        D) play in sports
+                                                        D) Walt Disney was a creative genius.
                                                     </label>
                                                 </div>
                                             </div>
                                             <div className="row p-2">
                                                 <strong>
-                                                    7. He became a professor in ___________________ .
+                                                    2. According to the writer, Disneyland is a ___________.
                                                 </strong>
                                                 <div className="form-check">
                                                     <input
@@ -320,7 +198,7 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault1"
                                                     >
-                                                        A) England
+                                                        A) small park
                                                     </label>
                                                 </div>
                                                 <div className="form-check">
@@ -334,7 +212,7 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault2"
                                                     >
-                                                        B) France
+                                                        B) an amusement park for all ages
                                                     </label>
                                                 </div>
                                                 <div className="form-check">
@@ -348,7 +226,7 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault2"
                                                     >
-                                                        C) Germany
+                                                        C) orange grove
                                                     </label>
                                                 </div>
                                                 <div className="form-check">
@@ -362,13 +240,13 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault2"
                                                     >
-                                                        D) Spain
+                                                        D) huge playground
                                                     </label>
                                                 </div>
                                             </div>
                                             <div className="row p-2">
                                                 <strong>
-                                                    8. The two types of relativity are ___________________
+                                                    3. He came to ___________ as an ambulance driver for Red Cross.
                                                     .
                                                 </strong>
                                                 <div className="form-check">
@@ -382,7 +260,7 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault1"
                                                     >
-                                                        A) special relativity and general relativity
+                                                        A) England
                                                     </label>
                                                 </div>
                                                 <div className="form-check">
@@ -396,7 +274,7 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault2"
                                                     >
-                                                        B) general relativity and second relativity
+                                                        B) France
                                                     </label>
                                                 </div>
                                                 <div className="form-check">
@@ -410,7 +288,7 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault2"
                                                     >
-                                                        C) second relativity and special relativity
+                                                        C) Germany
                                                     </label>
                                                 </div>
                                                 <div className="form-check">
@@ -424,15 +302,13 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault2"
                                                     >
-                                                        D) space relativity and general relativity
+                                                        D) Spain
                                                     </label>
                                                 </div>
                                             </div>
                                             <div className="row p-2">
                                                 <strong>
-                                                    9. General theory focused on ___________________ which
-                                                    express the light bending when it comes to larger
-                                                    objects.
+                                                    4. He came to California ___________.
                                                 </strong>
                                                 <div className="form-check">
                                                     <input
@@ -445,7 +321,7 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault1"
                                                     >
-                                                        A) control panels
+                                                        A) when he was already rich
                                                     </label>
                                                 </div>
                                                 <div className="form-check">
@@ -459,7 +335,7 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault2"
                                                     >
-                                                        B) gravitional lensing
+                                                        B) with a bag full of biscuits
                                                     </label>
                                                 </div>
                                                 <div className="form-check">
@@ -473,7 +349,7 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault2"
                                                     >
-                                                        C) mass lensing
+                                                        C) with a suitcase and $20 in his pocket
                                                     </label>
                                                 </div>
                                                 <div className="form-check">
@@ -487,13 +363,13 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault2"
                                                     >
-                                                        D) velocity panels
+                                                        D) when he was a child
                                                     </label>
                                                 </div>
                                             </div>
                                             <div className="row p-2">
                                                 <strong>
-                                                    10. Einstein died in ___________________ .
+                                                    5. Snow White and the Seven Dwarfs is ___________ .
                                                 </strong>
                                                 <div className="form-check">
                                                     <input
@@ -508,7 +384,7 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault1"
                                                     >
-                                                        A) 1953
+                                                        A) a random story
                                                     </label>
                                                 </div>
                                                 <div className="form-check">
@@ -524,7 +400,7 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault2"
                                                     >
-                                                        B) 1954
+                                                        B) a space adventure
                                                     </label>
                                                 </div>
                                                 <div className="form-check">
@@ -540,7 +416,7 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault2"
                                                     >
-                                                        C) 1955
+                                                        C) a brand of toy
                                                     </label>
                                                 </div>
                                                 <div className="form-check">
@@ -556,7 +432,7 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault2"
                                                     >
-                                                        D) 1956
+                                                        D) the first full-length animated movie by Disney
                                                     </label>
                                                 </div>
                                             </div>
@@ -566,404 +442,12 @@ export default function Exam3(props) {
 
                                 {pageNo === 2 ? (
                                     <React.Fragment>
+                                        
+                                        
                                         <div>
                                             <div className="alert alert-dark" role="alert">
                                                 <strong>
-                                                    B. Read the story. Choose a word from the box below.
-                                                    Write the correct word in the blank.
-                                                </strong>
-                                            </div>
-
-                                            <div className="mt-4 border border border-info p-3">
-                                                <strong>
-                                                    <hr/>
-                                                    <div className="row">
-                                                        <div className="col-2">hug</div>
-                                                        <div className="col-2">hero</div>
-                                                        <div className="col-2">sky</div>
-                                                        <div className="col-2">magazines</div>
-                                                        <div className="col-2">pilot</div>
-                                                        <div className="col-2">story</div>
-                                                        <div className="col-2">accident</div>
-                                                        <div className="col-2">plane</div>
-                                                        <div className="col-2">toys</div>
-                                                        <div className="col-2">nodded</div>
-                                                        <div className="col-2">England</div>
-                                                        <div className="col-2">nightmare</div>
-                                                        <div className="col-2">co pilots</div>
-                                                        <div className="col-2">hurt</div>
-                                                    </div>
-                                                </strong>
-                                            </div>
-
-                                            <div>
-                                                Michael picked up a plane from the carpet and checked it
-                                                very carefully. He was amused. ‘This is so nice, I love
-                                                it! He said to his Uncle George.
-                                            </div>
-                                            <div className="paragraf">
-                                                Uncle George lived in Paris. Michael visited him on
-                                                holidays with his parents. Uncle George was a
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[0][1][1].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(0, 1, 1, e.target.value, true)
-                                                    }
-                                                />
-                                                so he had a lot of
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[0][1][2].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(0, 1, 2, e.target.value, true)
-                                                    }
-                                                />
-                                                in his house. Michael loved being here because he loves
-                                                to hear plane stories and his Uncle’s adventures.
-                                            </div>
-                                            <div className="paragraf">
-                                                Michael: “Please Uncle, tell me another
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[0][1][3].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(0, 1, 3, e.target.value, true)
-                                                    }
-                                                />{" "}
-                                                tonight!” he said with his hands clapping.
-                                            </div>
-                                            <div className="paragraf">
-                                                Uncle George: “All right. I’ll tell you the one in 1995
-                                                then...” he said sitting on his couch with his warm cup
-                                                of tea.
-                                            </div>
-                                            <div className="paragraf">
-                                                Uncle George: “You mean the one with the
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[0][1][4].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(0, 1, 4, e.target.value, true)
-                                                    }
-                                                />
-                                                .”
-                                            </div>
-
-                                            <div className="paragraf">
-                                                Uncle George: “Yeah. It was a cold and rainy night in
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[0][1][5].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(0, 1, 5, e.target.value, true)
-                                                    }
-                                                />
-                                                . The tower allowed us to fly so we did. But it was a
-                                                total
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[0][1][6].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(0, 1, 6, e.target.value, true)
-                                                    }
-                                                />{" "}
-                                                on the plane.”
-                                            </div>
-                                            <div className="paragraf">
-                                                Michael: “What happened?” he said and Uncle George
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[0][1][7].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(0, 1, 7, e.target.value, true)
-                                                    }
-                                                />
-                                                .
-                                            </div>
-                                            <div className="paragraf">
-                                                Uncle George: “We had two people fighting over a lost
-                                                case at court. I guess they knew eachother from before.
-                                                They were lawyers. They had knives and tried to
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[0][1][8].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(0, 1, 8, e.target.value, true)
-                                                    }
-                                                />{" "}
-                                                eachother. I was the one to stop them.”
-                                            </div>
-                                            <div className="paragraf">
-                                                Michael: “But what about the plane? It will crash if
-                                                you’re not flying it!”
-                                            </div>
-                                            <div className="paragraf">
-                                                Uncle George: “That’s why we have
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[0][1][9].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(0, 1, 9, e.target.value, true)
-                                                    }
-                                                />{" "}
-                                                on the plane son!”
-                                            </div>
-                                            <div className="paragraf">
-                                                Michael reached to another plane and starting speaking.
-                                            </div>
-                                            <div className="paragraf">
-                                                “I want you to tell me more stories. I also want to know
-                                                more about planes. Maybe I’ll become a pilot one day,
-                                                just like you. I love you and I want to be like you.
-                                                You’re a
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[0][1][10].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(0, 1, 10, e.target.value, true)
-                                                    }
-                                                />{" "}
-                                                Uncle!”
-                                            </div>
-                                            <div className="paragraf">
-                                                Uncle George wiped his tears from his cheeks and gave
-                                                his nephew a big
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[0][1][11].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(0, 1, 11, e.target.value, true)
-                                                    }
-                                                />
-                                                . He opened his old cabinet and showed him his
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[0][1][12].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(0, 1, 12, e.target.value, true)
-                                                    }
-                                                />{" "}
-                                                and books about planes. They They spoke and laughed all
-                                                night until there weren’t any stars left in the
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[0][1][13].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(0, 1, 13, e.target.value, true)
-                                                    }
-                                                />{" "}
-                                                .
-                                            </div>
-                                        </div>
-                                    </React.Fragment>
-                                ) : null}
-
-                                {pageNo === 3 ? (
-                                    <React.Fragment>
-                                        <div>
-                                            <div className="alert alert-dark" role="alert">
-                                                <strong>A. Listen and fill in the blanks.</strong>
-                                            </div>
-                                            <div className="alert alert-dark" role="alert">
-                                                <audio
-                                                    controls
-                                                    className="w-100"
-                                                    style={{backgroundColor: "black", height: 45}}
-                                                >
-                                                    <source
-                                                        src={`https://app.axebug.com/axebug/assets/axe_exam_c_1_listening_a.mp3`}
-                                                        type="audio/mpeg"
-                                                    />
-                                                </audio>
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Dung Beetle:</strong> Thank you Axebug. This was
-                                                an amazing
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[1][0][1].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(1, 0, 1, e.target.value)
-                                                    }
-                                                />
-                                                .
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Dung Beetle:</strong> Except for the fact that
-                                                there is no life in outer space
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[1][0][2].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(1, 0, 2, e.target.value)
-                                                    }
-                                                />
-                                                .
-                                            </div>
-                                            <div className="paragraf">
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[1][0][3].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(1, 0, 3, e.target.value)
-                                                    }
-                                                />
-                                                : I think there is!
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Dung Beetle:</strong> Axebug says there isn’t.
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[1][0][4].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(1, 0, 4, e.target.value)
-                                                    }
-                                                />
-                                                .
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Ladybug:</strong> He said it only for the solar
-                                                system.
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Dung Beetle:</strong> Yes, she is right.
-                                            </div>
-                                            <div className="paragraf">
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[1][0][5].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(1, 0, 5, e.target.value)
-                                                    }
-                                                />{" "}
-                                                : We don’t know whether there is
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[1][0][6].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(1, 0, 6, e.target.value)
-                                                    }
-                                                />
-                                                in the unknown places of space.
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Axebug:</strong> Anyway, we will
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[1][0][7].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(1, 0, 7, e.target.value)
-                                                    }
-                                                />
-                                                . It is time to go back to home.
-                                            </div>
-
-                                            <div className="paragraf">
-                                                <strong>Axebug:</strong> Could you please check the
-                                                control panel for me?
-                                            </div>
-                                            <div className="paragraf">
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[1][0][8].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(1, 0, 8, e.target.value)
-                                                    }
-                                                />
-                                                : I think now is the best time to talk about it.
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Ladybug:</strong> Why?
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Ladybug :</strong> You had better
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[1][0][9].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(1, 0, 9, e.target.value)
-                                                    }
-                                                />
-                                                .
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Dung Beetle :</strong> No way!
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Robug 13 :</strong>
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[1][0][10].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(1, 0, 10, e.target.value)
-                                                    }
-                                                />
-                                                , please help!
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Axebug :</strong> It is an emergency call.
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Axebug :</strong> Guys!
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[1][0][11].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(1, 0, 11, e.target.value)
-                                                    }
-                                                />
-                                                our return home.
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Axebug :</strong> I think we found
-                                                <input
-                                                    className="form-input textformat"
-                                                    type="text"
-                                                    value={answer.result[1][0][12].student}
-                                                    onChange={(e) =>
-                                                        setStudentOpenAnswer(1, 0, 12, e.target.value)
-                                                    }
-                                                />
-                                                . Wooohooo!!!
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Axebug :</strong> Let’s go and find out.
-                                            </div>
-                                        </div>
-                                    </React.Fragment>
-                                ) : null}
-                                {pageNo === 4 ? (
-                                    <React.Fragment>
-                                        <div>
-                                            <div className="alert alert-dark" role="alert">
-                                                <strong>
-                                                    B. Listen and read. Then put the words below in order
-                                                    according to the story.
+                                                    B. Listen and fill the blanks
                                                 </strong>
                                             </div>
                                             <div className="alert alert-dark" role="alert">
@@ -973,313 +457,300 @@ export default function Exam3(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/axe_exam_c_1_listening_b.mp3`}
+                                                        src={`https://app.axebug.com/axebug/assets/axe_exam_c_2_listening_B.mp3`}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
                                             </div>
                                             <div className="paragraf">
-                                                <strong>Insect Brown:</strong> There is a rumour: “It
-                                                landed on the town square.” And one question: “Have you
-                                                seen it?”
+                                                <strong>Robug 13:</strong>So, I think we are all<input
+                                                className="form-input textformat"
+                                                type="text"
+                                                value={answer.result[1][0][10].student}
+                                                onChange={(e) =>
+                                                    setStudentOpenAnswer(1, 0, 10, e.target.value)
+                                                }
+                                            />.
                                             </div>
                                             <div className="paragraf">
-                                                <strong>Insect Purple:</strong> They say it’s like a
-                                                huge housefly. Is that right?
+                                                <strong>Robug 13:</strong> Let’s take a rest then we will meet at the <input
+                                                className="form-input textformat"
+                                                type="text"
+                                                value={answer.result[1][0][10].student}
+                                                onChange={(e) =>
+                                                    setStudentOpenAnswer(1, 0, 10, e.target.value)
+                                                }
+                                            />area.
                                             </div>
                                             <div className="paragraf">
-                                                <strong>Butterfly:</strong> It would be better if it
-                                                looked like a butterfly.
+                                                <strong>Robug 13:</strong> Come on! 
+                                                </div>
+                                                <div className="paragraf">
+
                                             </div>
                                             <div className="paragraf">
-                                                <strong>Mosquito: </strong>Look! There it is.
+                                                <strong>Dung Beetle:</strong> My favorite time! Let’s take<input
+                                                className="form-input textformat"
+                                                type="text"
+                                                value={answer.result[1][0][10].student}
+                                                onChange={(e) =>
+                                                    setStudentOpenAnswer(1, 0, 10, e.target.value)
+                                                }
+                                            />.
                                             </div>
                                             <div className="paragraf">
-                                                <strong>Axebug was ready for the take off.</strong>
+                                                <strong>Black Writing:</strong> 12 hours later. 5 Minutes to<input
+                                                className="form-input textformat"
+                                                type="text"
+                                                value={answer.result[1][0][10].student}
+                                                onChange={(e) =>
+                                                    setStudentOpenAnswer(1, 0, 10, e.target.value)
+                                                }
+                                            />. Earth time 9 o’clock.
+
                                             </div>
                                             <div className="paragraf">
-                                                <strong>He was waiting for the two buddies.</strong>
+                                                <strong>Robug 13:</strong>It’s time. Let’s begin. You can board to ZZZ55.
+                                                </div>
+                                                <div className="paragraf">
+
                                             </div>
                                             <div className="paragraf">
-                                                <strong>
-                                                    Soon, the two buddies appeared in the town square.
-                                                </strong>
+                                                <strong>Robug 13:</strong>From now on, we will run this ship with<input
+                                                className="form-input textformat"
+                                                type="text"
+                                                value={answer.result[1][0][10].student}
+                                                onChange={(e) =>
+                                                    setStudentOpenAnswer(1, 0, 10, e.target.value)
+                                                }
+                                            />. Co-pilots are ladybug and dung beetle.
+
                                             </div>
                                             <div className="paragraf">
-                                                <strong>Dung Beetle:</strong> Come on! Of course I had
-                                                to take them with me. They are my personal stuff.
+                                                <strong>Monitor:</strong>Tower, we are ready to launch.
+                                                </div>
+                                                <div className="paragraf">
+                                               
                                             </div>
                                             <div className="paragraf">
-                                                <strong>Axebug:</strong> Here you are, finally! The
-                                                spaceship is almost ready. We will set off soon.
+                                                <strong>Watchman 2:</strong>Fuel tanks are ready.
+                                                </div>
+                                                <div className="paragraf">
+
+                                                </div>
+                                            <div className="paragraf">
+                                                <strong>Watchman 1:</strong>There is a robot in ‘zzz55’ to<input
+                                                className="form-input textformat"
+                                                type="text"
+                                                value={answer.result[1][0][10].student}
+                                                onChange={(e) =>
+                                                    setStudentOpenAnswer(1, 0, 10, e.target.value)
+                                                }
+                                            />.
+
                                             </div>
                                             <div className="paragraf">
-                                                <strong>Axebug:</strong> Follow me! Let’s get your
-                                                clothes changed for the journey.
+                                                <strong>Axebug:</strong>All set! Waiting for your signal, tower!
+                                                </div>
+                                                <div className="paragraf">
+
+                                                </div>
+                                            <div className="paragraf">
+                                                <strong>Tower:</strong>You can power up the engine and launch.
+                                                </div>
+                                                <div className="paragraf">
+
+                                                </div>
+                                            <div className="paragraf">
+                                                <strong>Ladybug:</strong><input
+                                                className="form-input textformat"
+                                                type="text"
+                                                value={answer.result[1][0][10].student}
+                                                onChange={(e) =>
+                                                    setStudentOpenAnswer(1, 0, 10, e.target.value)
+                                                }
+                                            />ready. We are launching.
+
                                             </div>
                                             <div className="paragraf">
-                                                <strong>Dung Beetle: </strong>Clothes? I have brought
-                                                some with me.
+                                                <strong>Watchman 2:</strong>Ready.
                                             </div>
                                             <div className="paragraf">
-                                                <strong>Axebug:</strong> Hah hah! You can’t travel to
-                                                the space in jeans. You need space suits.
+
                                             </div>
                                             <div className="paragraf">
-                                                <strong> Axebug: </strong>There is one for each of you.
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Axebug:</strong> This is for you.
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Axebug:</strong> And this is yours.
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Dung Beetle: </strong>I think my own pyjamas are
-                                                more comfortable. But whatever...
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Axebug:</strong> Come on! All aboard.
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Axebug:</strong> We are ready to take off if you
-                                                are both seated. Can you please check the control panel
-                                                for me?
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Dung Beetle: </strong>What do you want me to
-                                                check? This is too complicated.
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Axebug:</strong> Tell me when you see thetart"
-                                                notice on screen.
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Spaceship Computer:</strong> I tihnk there is 9
-                                                seconds. 8...7...6...5...4...3...2...1... Lanch!
-                                            </div>
-                                            <div className="paragraf">
-                                                <strong>Axebug:</strong> Well... Here we go. Hold tight!
-                                            </div>
-                                            <div className="mt-5 border border-info p-5">
-                                                <table>
-                                                    <tr>
-                                                        <td>Launch</td>
-                                                        <td>
-                                                            <input
-                                                                style={{width: 50}}
-                                                                className="form-input textformat border border-success"
-                                                                type="number"
-                                                                value={answer.result[1][1][1].student}
-                                                                onChange={(e) =>
-                                                                    setStudentOpenAnswer(1, 1, 1, e.target.value)
-                                                                }
-                                                            />
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Control panel</td>
-                                                        <td>
-                                                            <input
-                                                                style={{width: 50}}
-                                                                className="form-input textformat border border-success"
-                                                                type="number"
-                                                                value={answer.result[1][1][2].student}
-                                                                onChange={(e) =>
-                                                                    setStudentOpenAnswer(1, 1, 2, e.target.value)
-                                                                }
-                                                            />
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>ZZZ55</td>
-                                                        <td>
-                                                            <input
-                                                                style={{width: 50}}
-                                                                className="form-input textformat border border-success"
-                                                                type="number"
-                                                                value={answer.result[1][1][3].student}
-                                                                onChange={(e) =>
-                                                                    setStudentOpenAnswer(1, 1, 3, e.target.value)
-                                                                }
-                                                            />
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Space suits</td>
-                                                        <td>
-                                                            <input
-                                                                style={{width: 50}}
-                                                                className="form-input textformat border border-success"
-                                                                type="number"
-                                                                value={answer.result[1][1][4].student}
-                                                                onChange={(e) =>
-                                                                    setStudentOpenAnswer(1, 1, 4, e.target.value)
-                                                                }
-                                                            />
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Personal stuff</td>
-                                                        <td>
-                                                            <input
-                                                                style={{width: 50}}
-                                                                className="form-input textformat border border-success"
-                                                                type="number"
-                                                                value={answer.result[1][1][5].student}
-                                                                onChange={(e) =>
-                                                                    setStudentOpenAnswer(1, 1, 5, e.target.value)
-                                                                }
-                                                            />
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </div>
+                                                <strong>Watchman 1:</strong>3,2,1! You can<input
+                                                className="form-input textformat"
+                                                type="text"
+                                                value={answer.result[1][0][10].student}
+                                                onChange={(e) =>
+                                                    setStudentOpenAnswer(1, 0, 10, e.target.value)
+                                                }
+                                            />.
+                                            
+                                        
                                         </div>
                                     </React.Fragment>
                                 ) : null}
-                                {pageNo === 5 ? (
+                                {pageNo === 2 ? (
                                     <React.Fragment>
                                         <div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
                                             <div className="alert alert-dark" role="alert">
                                                 <strong>
-                                                    A. Read the dialogue and write the best answer for the
-                                                    blanks. Use the box below.
+                                                    C. Read the following statements and choose TRUE (✓) or FALSE (X).
                                                 </strong>
                                             </div>
-                                            <div className="row">
-                                                <div className="col-6">
-                                                    <div className="paragraf">
-                                                        <strong>1. Dung Beetle :</strong> Where did earth
-                                                        go?
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Axebug :</strong>
-                                                        <input
-                                                            style={{width: 50}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][1].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 1, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>2. Axebug: </strong>Are you ready for the
-                                                        answer?
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Dung Beetle :</strong>
-                                                        <input
-                                                            style={{width: 50}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][2].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 2, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
+                                            <table>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>TRUE</td>
+                                                    <td>FALSE</td>
+                                                </tr>
+                                                <tbody>
+                                                <tr>
+                                                    <td>1. They don’t need to calculate the total time of travel.</td>
+                                                    <td><input
+                                                        className="form-input textformat"
+                                                        type="checkbox"
+                                                        value={answer.result[1][0][6].student}
+                                                        onChange={(e) =>
+                                                            setStudentOpenAnswer(1, 0, 6, e.target.value)
+                                                        }
+                                                    /></td>
+                                                    <td><input
+                                                        className="form-input textformat"
+                                                        type="checkbox"
+                                                        value={answer.result[1][0][6].student}
+                                                        onChange={(e) =>
+                                                            setStudentOpenAnswer(1, 0, 6, e.target.value)
+                                                        }
+                                                    /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2. The travel takes 1923 days in earth time.</td>
+                                                    <td><input
+                                                        className="form-input textformat"
+                                                        type="checkbox"
+                                                        value={answer.result[1][0][6].student}
+                                                        onChange={(e) =>
+                                                            setStudentOpenAnswer(1, 0, 6, e.target.value)
+                                                        }
+                                                    /></td>
+                                                    <td><input
+                                                        className="form-input textformat"
+                                                        type="checkbox"
+                                                        value={answer.result[1][0][6].student}
+                                                        onChange={(e) =>
+                                                            setStudentOpenAnswer(1, 0, 6, e.target.value)
+                                                        }
+                                                    /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3. Arriving there will take 220 days, but coming back will take 450 days.</td>
+                                                    <td><input
+                                                        className="form-input textformat"
+                                                        type="checkbox"
+                                                        value={answer.result[1][0][6].student}
+                                                        onChange={(e) =>
+                                                            setStudentOpenAnswer(1, 0, 6, e.target.value)
+                                                        }
+                                                    /></td>
+                                                    <td><input
+                                                        className="form-input textformat"
+                                                        type="checkbox"
+                                                        value={answer.result[1][0][6].student}
+                                                        onChange={(e) =>
+                                                            setStudentOpenAnswer(1, 0, 6, e.target.value)
+                                                        }
+                                                    /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4. The reason for the time differences between going and coming back is the speed.</td>
+                                                    <td><input
+                                                        className="form-input textformat"
+                                                        type="checkbox"
+                                                        value={answer.result[1][0][6].student}
+                                                        onChange={(e) =>
+                                                            setStudentOpenAnswer(1, 0, 6, e.target.value)
+                                                        }
+                                                    /></td>
+                                                    <td><input
+                                                        className="form-input textformat"
+                                                        type="checkbox"
+                                                        value={answer.result[1][0][6].student}
+                                                        onChange={(e) =>
+                                                            setStudentOpenAnswer(1, 0, 6, e.target.value)
+                                                        }
+                                                    /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5. Axebug asked how they see space from Earth.</td>
+                                                    <td><input
+                                                        className="form-input textformat"
+                                                        type="checkbox"
+                                                        value={answer.result[1][0][6].student}
+                                                        onChange={(e) =>
+                                                            setStudentOpenAnswer(1, 0, 6, e.target.value)
+                                                        }
+                                                    /></td>
+                                                    <td><input
+                                                        className="form-input textformat"
+                                                        type="checkbox"
+                                                        value={answer.result[1][0][6].student}
+                                                        onChange={(e) =>
+                                                            setStudentOpenAnswer(1, 0, 6, e.target.value)
+                                                        }
+                                                    /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td> 6. Axebug gave traveling from earth to mars as an example to explain the time differences.</td>
+                                                    <td><input
+                                                        className="form-input textformat"
+                                                        type="checkbox"
+                                                        value={answer.result[1][0][6].student}
+                                                        onChange={(e) =>
+                                                            setStudentOpenAnswer(1, 0, 6, e.target.value)
+                                                        }
+                                                    /></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
 
-                                                    <div className="paragraf">
-                                                        <strong>3. Ladybug:</strong> I’m ready! Let’s find
-                                                        out.
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Axebug :</strong>
-                                                        <input
-                                                            style={{width: 50}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][3].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 3, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
 
-                                                    <div className="paragraf">
-                                                        <strong>4. Axebug:</strong> Close your eyes until i
-                                                        tell you to open them.
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Axebug :</strong>
-                                                        <input
-                                                            style={{width: 50}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][4].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 4, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-
-                                                    <div className="paragraf">
-                                                        <strong>5. Dung Beetle:</strong> wow! Spectacular.
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Ladybug :</strong>
-                                                        <input
-                                                            style={{width: 50}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][5].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 5, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>Ladybug :</strong>
-                                                        <input
-                                                            style={{width: 50}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][6].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 6, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-                                                </div>
-                                                <div className="col-6">
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>A. </strong>Yayy! I’m ready. How about you?
-                                                    </div>
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>B. </strong>Now open your eyes!
-                                                    </div>
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>C. </strong>No! It’s impossible.
-                                                    </div>
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>D. </strong>Don’t panic. It’s right behind
-                                                        us.
-                                                    </div>
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>E. </strong>He was right.
-                                                    </div>
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>F. </strong>All right then... lets hang a
-                                                        left now. But first...
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </React.Fragment>
                                 ) : null}
                                 {pageNo === 6 ? (
                                     <React.Fragment>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
                                         <div>
                                             <div className="alert alert-dark" role="alert">
-                                                <strong>B. Macth a synonym for each word.</strong>
+                                                <strong>D. Macth a synonym for each word.</strong>
                                             </div>
 
                                             <div className="row">
                                                 <div className="col-2 alert alert-info m-3">
-                                                    Emergency
+                                                    Seek
                                                     <input
                                                         style={{fontSize: 30}}
                                                         className="form-input w-100"
@@ -1291,7 +762,7 @@ export default function Exam3(props) {
                                                     />
                                                 </div>
                                                 <div className="col-2 alert alert-info m-3">
-                                                    Travel
+                                                    Go On
                                                     <input
                                                         style={{fontSize: 30}}
                                                         className="form-input w-100"
@@ -1303,7 +774,7 @@ export default function Exam3(props) {
                                                     />
                                                 </div>
                                                 <div className="col-2 alert alert-info m-3">
-                                                    Possible
+                                                    Fault
                                                     <input
                                                         style={{fontSize: 30}}
                                                         className="form-input w-100"
@@ -1315,7 +786,7 @@ export default function Exam3(props) {
                                                     />
                                                 </div>
                                                 <div className="col-2 alert alert-info m-3">
-                                                    Amazing
+                                                    Count On
                                                     <input
                                                         style={{fontSize: 30}}
                                                         className="form-input w-100"
@@ -1327,7 +798,7 @@ export default function Exam3(props) {
                                                     />
                                                 </div>
                                                 <div className="col-2 alert alert-info m-3">
-                                                    Transfer
+                                                    Rich
                                                     <input
                                                         style={{fontSize: 30}}
                                                         className="form-input w-100"
@@ -1339,7 +810,7 @@ export default function Exam3(props) {
                                                     />
                                                 </div>
                                                 <div className="col-2 alert alert-info m-3">
-                                                    Cancel
+                                                    Forest
                                                     <input
                                                         style={{fontSize: 30}}
                                                         className="form-input w-100"
@@ -1351,7 +822,7 @@ export default function Exam3(props) {
                                                     />
                                                 </div>
                                                 <div className="col-2 alert alert-info m-3">
-                                                    Rush
+                                                    Rest
                                                     <input
                                                         style={{fontSize: 30}}
                                                         className="form-input w-100"
@@ -1363,7 +834,7 @@ export default function Exam3(props) {
                                                     />
                                                 </div>
                                                 <div className="col-2 alert alert-info m-3">
-                                                    Center
+                                                    Fellow
                                                     <input
                                                         style={{fontSize: 30}}
                                                         className="form-input w-100"
@@ -1387,7 +858,7 @@ export default function Exam3(props) {
                                                     />
                                                 </div>
                                                 <div className="col-2 alert alert-info m-3">
-                                                    Strange
+                                                    Switch
                                                     <input
                                                         style={{fontSize: 30}}
                                                         className="form-input w-100"
@@ -1399,7 +870,7 @@ export default function Exam3(props) {
                                                     />
                                                 </div>
                                                 <div className="col-2 alert alert-info m-3">
-                                                    Master
+                                                    Constantly
                                                     <input
                                                         style={{fontSize: 30}}
                                                         className="form-input w-100"
@@ -1411,7 +882,7 @@ export default function Exam3(props) {
                                                     />
                                                 </div>
                                                 <div className="col-2 alert alert-info m-3">
-                                                    Cluttered
+                                                    Fold
                                                     <input
                                                         style={{fontSize: 30}}
                                                         className="form-input w-100"
@@ -1426,47 +897,63 @@ export default function Exam3(props) {
                                             <hr/>
                                             <div className="row">
                                                 <div className="col-2 alert alert-warning m-1">
-                                                    Middle
+                                                    Search
                                                 </div>
                                                 <div className="col-1 alert alert-warning m-1">End</div>
                                                 <div className="col-1 alert alert-warning m-1">
-                                                    Send
+                                                    Continue
                                                 </div>
                                                 <div className="col-1 alert alert-warning m-1">
-                                                    Super
+                                                    Mistake
                                                 </div>
                                                 <div className="col-1 alert alert-warning m-1">
-                                                    King
+                                                    Depend On
                                                 </div>
                                                 <div className="col-1 alert alert-warning m-1">
-                                                    Visit
+                                                    Wealthy
                                                 </div>
                                                 <div className="col-1 alert alert-warning m-1">
-                                                    Quick
+                                                    Forestland
                                                 </div>
                                                 <div className="col-1 alert alert-warning m-1">Sos</div>
                                                 <div className="col-2 alert alert-warning m-1">
-                                                    Correct
+                                                    Relax
                                                 </div>
                                                 <div className="col-1 alert alert-warning m-1">
-                                                    Right
+                                                    Person
                                                 </div>
                                                 <div className="col-1 alert alert-warning m-1">
-                                                    Weird
+                                                    True
                                                 </div>
                                                 <div className="col-2 alert alert-warning m-1">
-                                                    Untidy
+                                                    Turn On
                                                 </div>
-                                            </div>
-                                        </div>
+                                                <div className="col-1 alert alert-warning m-1"></div>
+                                                    Regularly
+                                                </div>
+                                                <div className="col-1 alert alert-warning m-1"></div>
+                                                    Bend
+                                                </div>
                                     </React.Fragment>
                                 ) : null}
                                 {pageNo === 7 ? (
                                     <React.Fragment>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
                                         <div>
                                             <div className="alert alert-dark" role="alert">
                                                 <strong>
-                                                    A. Listen to the audio. Then, repeat the sentences
+                                                    E. Listen to the audio. Then, repeat the sentences
                                                     clearly.
                                                 </strong>
                                             </div>
@@ -1477,7 +964,7 @@ export default function Exam3(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p015_02_c1e1.mp3`}
+                                                        src={`https://app.axebug.com/axebug/assets/c3_e9_pg8_p3.mp3`}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -1495,7 +982,7 @@ export default function Exam3(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p043_02_c1e2.mp3`}
+                                                        src={`https://app.axebug.com/axebug/assets/c3_e10_pg16_p1.mp3`}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -1513,7 +1000,7 @@ export default function Exam3(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p075_01_c1e3.mp3`}
+                                                        src={`https://app.axebug.com/axebug/assets/c3_e11_pg18_p6.mp3`}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -1531,7 +1018,7 @@ export default function Exam3(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p099_01_c1e4.mp3`}
+                                                        src={`https://app.axebug.com/axebug/assets/c3_e12_pg30_p4.mp3`}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
