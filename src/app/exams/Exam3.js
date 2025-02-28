@@ -113,11 +113,11 @@ export default function Exam3(props) {
                             <div style={{fontSize: "18pt"}}>
                                 {pageNo === 0 ? (
                                     <React.Fragment>
-                                
+
                                         <div>
                                             <div className="alert alert-dark" role="alert">
                                                 <strong>
-                                                    A.	Read the text and choose the correct answer.
+                                                    A. Read the text and choose the correct answer.
                                                 </strong>
                                             </div>
 
@@ -151,7 +151,8 @@ export default function Exam3(props) {
                                                         className="form-check-label"
                                                         htmlFor="flexRadioDefault2"
                                                     >
-                                                        B) In the 1940s, Disney had an idea to build an amazingpark for families.
+                                                        B) In the 1940s, Disney had an idea to build an amazingpark for
+                                                        families.
                                                     </label>
                                                 </div>
                                                 <div className="form-check">
@@ -442,8 +443,8 @@ export default function Exam3(props) {
 
                                 {pageNo === 2 ? (
                                     <React.Fragment>
-                                        
-                                        
+
+
                                         <div>
                                             <div className="alert alert-dark" role="alert">
                                                 <strong>
@@ -473,7 +474,8 @@ export default function Exam3(props) {
                                             />.
                                             </div>
                                             <div className="paragraf">
-                                                <strong>Robug 13:</strong> Let’s take a rest then we will meet at the <input
+                                                <strong>Robug 13:</strong> Let’s take a rest then we will meet at
+                                                the <input
                                                 className="form-input textformat"
                                                 type="text"
                                                 value={answer.result[1][0][10].student}
@@ -483,9 +485,9 @@ export default function Exam3(props) {
                                             />area.
                                             </div>
                                             <div className="paragraf">
-                                                <strong>Robug 13:</strong> Come on! 
-                                                </div>
-                                                <div className="paragraf">
+                                                <strong>Robug 13:</strong> Come on!
+                                            </div>
+                                            <div className="paragraf">
 
                                             </div>
                                             <div className="paragraf">
@@ -510,9 +512,10 @@ export default function Exam3(props) {
 
                                             </div>
                                             <div className="paragraf">
-                                                <strong>Robug 13:</strong>It’s time. Let’s begin. You can board to ZZZ55.
-                                                </div>
-                                                <div className="paragraf">
+                                                <strong>Robug 13:</strong>It’s time. Let’s begin. You can board to
+                                                ZZZ55.
+                                            </div>
+                                            <div className="paragraf">
 
                                             </div>
                                             <div className="paragraf">
@@ -528,16 +531,16 @@ export default function Exam3(props) {
                                             </div>
                                             <div className="paragraf">
                                                 <strong>Monitor:</strong>Tower, we are ready to launch.
-                                                </div>
-                                                <div className="paragraf">
-                                               
+                                            </div>
+                                            <div className="paragraf">
+
                                             </div>
                                             <div className="paragraf">
                                                 <strong>Watchman 2:</strong>Fuel tanks are ready.
-                                                </div>
-                                                <div className="paragraf">
+                                            </div>
+                                            <div className="paragraf">
 
-                                                </div>
+                                            </div>
                                             <div className="paragraf">
                                                 <strong>Watchman 1:</strong>There is a robot in ‘zzz55’ to<input
                                                 className="form-input textformat"
@@ -551,16 +554,16 @@ export default function Exam3(props) {
                                             </div>
                                             <div className="paragraf">
                                                 <strong>Axebug:</strong>All set! Waiting for your signal, tower!
-                                                </div>
-                                                <div className="paragraf">
+                                            </div>
+                                            <div className="paragraf">
 
-                                                </div>
+                                            </div>
                                             <div className="paragraf">
                                                 <strong>Tower:</strong>You can power up the engine and launch.
-                                                </div>
-                                                <div className="paragraf">
+                                            </div>
+                                            <div className="paragraf">
 
-                                                </div>
+                                            </div>
                                             <div className="paragraf">
                                                 <strong>Ladybug:</strong><input
                                                 className="form-input textformat"
@@ -587,22 +590,17 @@ export default function Exam3(props) {
                                                     setStudentOpenAnswer(1, 0, 10, e.target.value)
                                                 }
                                             />.
-                                            
-                                        
+
+
+                                            </div>
                                         </div>
                                     </React.Fragment>
-                                ) : null}
+                                    ) : null}
                                 {pageNo === 2 ? (
                                     <React.Fragment>
                                         <div>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
+
+
                                             <div className="alert alert-dark" role="alert">
                                                 <strong>
                                                     C. Read the following statements and choose TRUE (✓) or FALSE (X).
@@ -654,7 +652,9 @@ export default function Exam3(props) {
                                                     /></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>3. Arriving there will take 220 days, but coming back will take 450 days.</td>
+                                                    <td>3. Arriving there will take 220 days, but coming back will take
+                                                        450 days.
+                                                    </td>
                                                     <td><input
                                                         className="form-input textformat"
                                                         type="checkbox"
@@ -673,7 +673,9 @@ export default function Exam3(props) {
                                                     /></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>4. The reason for the time differences between going and coming back is the speed.</td>
+                                                    <td>4. The reason for the time differences between going and coming
+                                                        back is the speed.
+                                                    </td>
                                                     <td><input
                                                         className="form-input textformat"
                                                         type="checkbox"
@@ -711,7 +713,9 @@ export default function Exam3(props) {
                                                     /></td>
                                                 </tr>
                                                 <tr>
-                                                    <td> 6. Axebug gave traveling from earth to mars as an example to explain the time differences.</td>
+                                                    <td> 6. Axebug gave traveling from earth to mars as an example to
+                                                        explain the time differences.
+                                                    </td>
                                                     <td><input
                                                         className="form-input textformat"
                                                         type="checkbox"
@@ -730,19 +734,8 @@ export default function Exam3(props) {
                                 ) : null}
                                 {pageNo === 6 ? (
                                     <React.Fragment>
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
+
+
                                         <div>
                                             <div className="alert alert-dark" role="alert">
                                                 <strong>D. Macth a synonym for each word.</strong>
@@ -929,27 +922,17 @@ export default function Exam3(props) {
                                                     Turn On
                                                 </div>
                                                 <div className="col-1 alert alert-warning m-1"></div>
-                                                    Regularly
-                                                </div>
-                                                <div className="col-1 alert alert-warning m-1"></div>
-                                                    Bend
-                                                </div>
+                                                Regularly
+                                            </div>
+                                            <div className="col-1 alert alert-warning m-1"></div>
+                                            Bend
+                                        </div>
                                     </React.Fragment>
                                 ) : null}
                                 {pageNo === 7 ? (
                                     <React.Fragment>
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
+
+
                                         <div>
                                             <div className="alert alert-dark" role="alert">
                                                 <strong>
@@ -1035,7 +1018,7 @@ export default function Exam3(props) {
                                 {pageNo === 7 ? <FinishExam/> : null}
                             </div>
                         </React.Fragment>
-                    ) : null}
+                        ) : null}
                 </div>
 
                 <div className="card-footer">
@@ -1071,5 +1054,5 @@ export default function Exam3(props) {
                 </div>
             </div>
         </div>
-    );
+);
 }

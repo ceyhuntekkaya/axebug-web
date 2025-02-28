@@ -112,19 +112,19 @@ export default function Exam4(props) {
                             <div style={{fontSize: "18pt"}}>
                                 {pageNo === 0 ? (
                                     <React.Fragment>
-                                        
-                                        
-                                        
+
+
                                         <div>
                                             <div className="alert alert-dark" role="alert">
                                                 <strong>
-                                                    A.	Read the text and choose the correct answer.
+                                                    A. Read the text and choose the correct answer.
                                                 </strong>
                                             </div>
 
                                             <div className="row p-2">
                                                 <strong>
-                                                    1. Which of the following words starting with the letter Z is mentioned in the text?
+                                                    1. Which of the following words starting with the letter Z is
+                                                    mentioned in the text?
                                                     ___________________ .
                                                 </strong>
                                                 <div className="form-check">
@@ -186,7 +186,7 @@ export default function Exam4(props) {
                                             </div>
                                             <div className="row p-2">
                                                 <strong>
-                                                    2.	Plato was the first one to ____________ .
+                                                    2. Plato was the first one to ____________ .
                                                 </strong>
                                                 <div className="form-check">
                                                     <input
@@ -248,7 +248,7 @@ export default function Exam4(props) {
                                             <div className="row p-2">
                                                 <strong>
                                                     3. The shape of the spaceship was inspired by ____________ .
-                                                    
+
                                                 </strong>
                                                 <div className="form-check">
                                                     <input
@@ -307,105 +307,105 @@ export default function Exam4(props) {
                                                     </label>
                                                 </div>
                                             </div>
-                                            
-                                        
-                                        
-                                        <div className="alert alert-dark" role="alert">
-                                            <strong>
-                                                B. Read the story. Choose a word from the box below.
-                                                Write the correct words in the blanks.
-                                            </strong>
-                                        </div>
-                                        <div className="d-flex justify-content-center pb-3"></div>
-                                        <div className="paragraf">
-                                            The residents of the Joule Town have been told to arm
-                                            themselves with hats and
-                                            <input
-                                                className="form-input textformat"
-                                                value={answer.result[0][0][1].student}
-                                                onChange={(e) =>
-                                                    setStudentOpenAnswer(0, 0, 1, e.target.value, true)
-                                                }
-                                                type="text"
-                                            />
-                                            because of the recent snake attacks. Many people from the
-                                            town experienced attacks during the day and
-                                            <input
-                                                className="form-input textformat"
-                                                value={answer.result[0][0][2].student}
-                                                onChange={(e) =>
-                                                    setStudentOpenAnswer(0, 0, 2, e.target.value, true)
-                                                }
-                                                type="text"
-                                            />
-                                            time. “Recent weeks have been a nightmare!” said a
-                                            resident of the Joule Town. Some people needed some
-                                            treatment and they had to stay in
-                                            <input
-                                                className="form-input textformat"
-                                                value={answer.result[0][0][3].student}
-                                                onChange={(e) =>
-                                                    setStudentOpenAnswer(0, 0, 3, e.target.value, true)
-                                                }
-                                                type="text"
-                                            />
-                                            due to these attacks. They say a snake was last seen on
-                                            the bridge of Woods. A group of
-                                            <input
-                                                className="form-input textformat"
-                                                value={answer.result[0][0][4].student}
-                                                onChange={(e) =>
-                                                    setStudentOpenAnswer(0, 0, 4, e.target.value, true)
-                                                }
-                                                type="text"
-                                            />
-                                            living in the town had a massive attack and they all had
-                                            to have injections required by the treatment curriculum.
-                                        </div>
-                                        <div className="paragraf">
-                                            Tourists were worried and they left the town immeadiately
-                                            which caused financial problems for the residents. The
-                                            local
-                                            <input
-                                                className="form-input textformat"
-                                                value={answer.result[0][0][5].student}
-                                                onChange={(e) =>
-                                                    setStudentOpenAnswer(0, 0, 5, e.target.value, true)
-                                                }
-                                                type="text"
-                                            />
-                                            and authorities are hoping to catch the snakes as soon as
-                                            possible. They say the plan is to catch and prevent the
-                                            <input
-                                                className="form-input textformat"
-                                                value={answer.result[0][0][6].student}
-                                                onChange={(e) =>
-                                                    setStudentOpenAnswer(0, 0, 6, e.target.value, true)
-                                                }
-                                                type="text"
-                                            />
-                                            from giving harm to people, and the government shall
-                                            decide about the future of the animals.
-                                        </div>
 
-                                        <div className="row">
-                                            <div className="col-2 border border-success p-2 m-1">
-                                                boots
+
+                                            <div className="alert alert-dark" role="alert">
+                                                <strong>
+                                                    B. Read the story. Choose a word from the box below.
+                                                    Write the correct words in the blanks.
+                                                </strong>
                                             </div>
-                                            <div className="col-2 border border-success p-2 m-1">
-                                                night
+                                            <div className="d-flex justify-content-center pb-3"></div>
+                                            <div className="paragraf">
+                                                The residents of the Joule Town have been told to arm
+                                                themselves with hats and
+                                                <input
+                                                    className="form-input textformat"
+                                                    value={answer.result[0][0][1].student}
+                                                    onChange={(e) =>
+                                                        setStudentOpenAnswer(0, 0, 1, e.target.value, true)
+                                                    }
+                                                    type="text"
+                                                />
+                                                because of the recent snake attacks. Many people from the
+                                                town experienced attacks during the day and
+                                                <input
+                                                    className="form-input textformat"
+                                                    value={answer.result[0][0][2].student}
+                                                    onChange={(e) =>
+                                                        setStudentOpenAnswer(0, 0, 2, e.target.value, true)
+                                                    }
+                                                    type="text"
+                                                />
+                                                time. “Recent weeks have been a nightmare!” said a
+                                                resident of the Joule Town. Some people needed some
+                                                treatment and they had to stay in
+                                                <input
+                                                    className="form-input textformat"
+                                                    value={answer.result[0][0][3].student}
+                                                    onChange={(e) =>
+                                                        setStudentOpenAnswer(0, 0, 3, e.target.value, true)
+                                                    }
+                                                    type="text"
+                                                />
+                                                due to these attacks. They say a snake was last seen on
+                                                the bridge of Woods. A group of
+                                                <input
+                                                    className="form-input textformat"
+                                                    value={answer.result[0][0][4].student}
+                                                    onChange={(e) =>
+                                                        setStudentOpenAnswer(0, 0, 4, e.target.value, true)
+                                                    }
+                                                    type="text"
+                                                />
+                                                living in the town had a massive attack and they all had
+                                                to have injections required by the treatment curriculum.
                                             </div>
-                                            <div className="col-2 border border-success p-2 m-1">
-                                                hospitals
+                                            <div className="paragraf">
+                                                Tourists were worried and they left the town immeadiately
+                                                which caused financial problems for the residents. The
+                                                local
+                                                <input
+                                                    className="form-input textformat"
+                                                    value={answer.result[0][0][5].student}
+                                                    onChange={(e) =>
+                                                        setStudentOpenAnswer(0, 0, 5, e.target.value, true)
+                                                    }
+                                                    type="text"
+                                                />
+                                                and authorities are hoping to catch the snakes as soon as
+                                                possible. They say the plan is to catch and prevent the
+                                                <input
+                                                    className="form-input textformat"
+                                                    value={answer.result[0][0][6].student}
+                                                    onChange={(e) =>
+                                                        setStudentOpenAnswer(0, 0, 6, e.target.value, true)
+                                                    }
+                                                    type="text"
+                                                />
+                                                from giving harm to people, and the government shall
+                                                decide about the future of the animals.
                                             </div>
-                                            <div className="col-2 border border-success p-2 m-1">
-                                                teenagers
-                                            </div>
-                                            <div className="col-2 border border-success p-2 m-1">
-                                                police
-                                            </div>
-                                            <div className="col-2 border border-success p-2 m-1">
-                                                reptile
+
+                                            <div className="row">
+                                                <div className="col-2 border border-success p-2 m-1">
+                                                    boots
+                                                </div>
+                                                <div className="col-2 border border-success p-2 m-1">
+                                                    night
+                                                </div>
+                                                <div className="col-2 border border-success p-2 m-1">
+                                                    hospitals
+                                                </div>
+                                                <div className="col-2 border border-success p-2 m-1">
+                                                    teenagers
+                                                </div>
+                                                <div className="col-2 border border-success p-2 m-1">
+                                                    police
+                                                </div>
+                                                <div className="col-2 border border-success p-2 m-1">
+                                                    reptile
+                                                </div>
                                             </div>
                                         </div>
                                     </React.Fragment>
@@ -413,9 +413,8 @@ export default function Exam4(props) {
 
                                 {pageNo === 1 ? (
                                     <React.Fragment>
-                                      
-                                      
-                                      
+
+
                                         <div>
                                             <div className="alert alert-dark" role="alert">
                                                 <strong>C. Listen and fill in the blanks.</strong>
@@ -593,7 +592,7 @@ export default function Exam4(props) {
                                 {pageNo === 2 ? (
                                     <React.Fragment>
 
-                                        
+
                                         <div>
                                             <div className="alert alert-dark" role="alert">
                                                 <strong>
@@ -615,7 +614,7 @@ export default function Exam4(props) {
                                                         />
                                                     </div>
                                                     <div className="paragraf">
-                                                    <strong>2. Vital:</strong>
+                                                        <strong>2. Vital:</strong>
                                                         <input
                                                             style={{width: 50}}
                                                             className="form-input textformat border border-success"
@@ -628,7 +627,7 @@ export default function Exam4(props) {
                                                     </div>
 
                                                     <div className="paragraf">
-                                                    <strong>3. Patience:</strong>
+                                                        <strong>3. Patience:</strong>
                                                         <input
                                                             style={{width: 50}}
                                                             className="form-input textformat border border-success"
@@ -641,7 +640,7 @@ export default function Exam4(props) {
                                                     </div>
 
                                                     <div className="paragraf">
-                                                    <strong>4. Essential:</strong>
+                                                        <strong>4. Essential:</strong>
                                                         <input
                                                             style={{width: 50}}
                                                             className="form-input textformat border border-success"
@@ -654,7 +653,7 @@ export default function Exam4(props) {
                                                     </div>
 
                                                     <div className="paragraf">
-                                                    <strong>5. Light speed:</strong>
+                                                        <strong>5. Light speed:</strong>
                                                         <input
                                                             style={{width: 50}}
                                                             className="form-input textformat border border-success"
@@ -663,7 +662,7 @@ export default function Exam4(props) {
                                                             onChange={(e) =>
                                                                 setStudentOpenAnswer(2, 0, 1, e.target.value)
                                                             }
-                                                     
+
                                                         />
                                                     </div>
                                                 </div>
@@ -672,7 +671,7 @@ export default function Exam4(props) {
                                                         <strong>A. </strong>Totally necessary.
                                                     </div>
                                                     <div className="paragraf alert alert-success">
-                                                        <strong>B. </strong>The speed of light.  
+                                                        <strong>B. </strong>The speed of light.
                                                     </div>
                                                     <div className="paragraf alert alert-success">
                                                         <strong>C. </strong>Tolerance.
@@ -683,97 +682,97 @@ export default function Exam4(props) {
                                                     <div className="paragraf alert alert-success">
                                                         <strong>E. </strong>Very important.
                                                     </div>
-                                                   
-                                        
-                                        
-                                        
-                                        
-                                        <div>
-                                            <div className="alert alert-dark" role="alert">
-                                                <strong>
-                                                    E. Listen to the audio. Then, repeat the sentences
-                                                    clearly.
-                                                </strong>
-                                            </div>
-                                            <div className="alert alert-dark" role="alert">
-                                                <audio
-                                                    controls
-                                                    className="w-100"
-                                                    style={{backgroundColor: "black", height: 45}}
-                                                >
-                                                    <source
-                                                        src={`https://app.axebug.com/axebug/assets/c4_e13_pg8_p7.mp3`}
-                                                        type="audio/mpeg"
-                                                    />
-                                                </audio>
-                                            </div>
-                                            <div className="border border-success p-3 mt-3">
-                                                <SpechText
-                                                    getSpeechText={getSpeechText}
-                                                    questionNumber={1}
-                                                />
-                                            </div>
-                                            <div className="alert alert-dark" role="alert">
-                                                <audio
-                                                    controls
-                                                    className="w-100"
-                                                    style={{backgroundColor: "black", height: 45}}
-                                                >
-                                                    <source
-                                                        src={`https://app.axebug.com/axebug/assets/c4_e14_pg16_p6.mp3`}
-                                                        type="audio/mpeg"
-                                                    />
-                                                </audio>
-                                            </div>
-                                            <div className="border border-success p-3 mt-3">
-                                                <SpechText
-                                                    getSpeechText={getSpeechText}
-                                                    questionNumber={2}
-                                                />
-                                            </div>
-                                            <div className="alert alert-dark" role="alert">
-                                                <audio
-                                                    controls
-                                                    className="w-100"
-                                                    style={{backgroundColor: "black", height: 45}}
-                                                >
-                                                    <source
-                                                        src={`https://app.axebug.com/axebug/assets/c4_e15_pg22_p8.mp3`}
-                                                        type="audio/mpeg"
-                                                    />
-                                                </audio>
-                                            </div>
-                                            <div className="border border-success p-3 mt-3">
-                                                <SpechText
-                                                    getSpeechText={getSpeechText}
-                                                    questionNumber={3}
-                                                />
-                                            </div>
-                                            <div className="alert alert-dark" role="alert">
-                                                <audio
-                                                    controls
-                                                    className="w-100"
-                                                    style={{backgroundColor: "black", height: 45}}
-                                                >
-                                                    <source
-                                                        src={`https://app.axebug.com/axebug/assets/c4_e16_pg27_p15.mp3`}
-                                                        type="audio/mpeg"
-                                                    />
-                                                </audio>
-                                            </div>
-                                            <div className="border border-success p-3 mt-3">
-                                                <SpechText
-                                                    getSpeechText={getSpeechText}
-                                                    questionNumber={4}
-                                                />
+
+
+                                                    <div>
+                                                        <div className="alert alert-dark" role="alert">
+                                                            <strong>
+                                                                E. Listen to the audio. Then, repeat the sentences
+                                                                clearly.
+                                                            </strong>
+                                                        </div>
+                                                        <div className="alert alert-dark" role="alert">
+                                                            <audio
+                                                                controls
+                                                                className="w-100"
+                                                                style={{backgroundColor: "black", height: 45}}
+                                                            >
+                                                                <source
+                                                                    src={`https://app.axebug.com/axebug/assets/c4_e13_pg8_p7.mp3`}
+                                                                    type="audio/mpeg"
+                                                                />
+                                                            </audio>
+                                                        </div>
+                                                        <div className="border border-success p-3 mt-3">
+                                                            <SpechText
+                                                                getSpeechText={getSpeechText}
+                                                                questionNumber={1}
+                                                            />
+                                                        </div>
+                                                        <div className="alert alert-dark" role="alert">
+                                                            <audio
+                                                                controls
+                                                                className="w-100"
+                                                                style={{backgroundColor: "black", height: 45}}
+                                                            >
+                                                                <source
+                                                                    src={`https://app.axebug.com/axebug/assets/c4_e14_pg16_p6.mp3`}
+                                                                    type="audio/mpeg"
+                                                                />
+                                                            </audio>
+                                                        </div>
+                                                        <div className="border border-success p-3 mt-3">
+                                                            <SpechText
+                                                                getSpeechText={getSpeechText}
+                                                                questionNumber={2}
+                                                            />
+                                                        </div>
+                                                        <div className="alert alert-dark" role="alert">
+                                                            <audio
+                                                                controls
+                                                                className="w-100"
+                                                                style={{backgroundColor: "black", height: 45}}
+                                                            >
+                                                                <source
+                                                                    src={`https://app.axebug.com/axebug/assets/c4_e15_pg22_p8.mp3`}
+                                                                    type="audio/mpeg"
+                                                                />
+                                                            </audio>
+                                                        </div>
+                                                        <div className="border border-success p-3 mt-3">
+                                                            <SpechText
+                                                                getSpeechText={getSpeechText}
+                                                                questionNumber={3}
+                                                            />
+                                                        </div>
+                                                        <div className="alert alert-dark" role="alert">
+                                                            <audio
+                                                                controls
+                                                                className="w-100"
+                                                                style={{backgroundColor: "black", height: 45}}
+                                                            >
+                                                                <source
+                                                                    src={`https://app.axebug.com/axebug/assets/c4_e16_pg27_p15.mp3`}
+                                                                    type="audio/mpeg"
+                                                                />
+                                                            </audio>
+                                                        </div>
+                                                        <div className="border border-success p-3 mt-3">
+                                                            <SpechText
+                                                                getSpeechText={getSpeechText}
+                                                                questionNumber={4}
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </React.Fragment>
-                                ) : null}
+                                    ) : null}
                                 {pageNo === 7 ? <FinishExam/> : null}
                             </div>
                         </React.Fragment>
-                    ) : null}
+                        ) : null}
                 </div>
 
                 <div className="card-footer">
