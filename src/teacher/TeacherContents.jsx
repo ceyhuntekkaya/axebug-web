@@ -165,13 +165,13 @@ export default function TeacherContents() {
                                     linkType === "OUT" ?
                                         selectedDocuments ?
                                             selectedDocuments.map((document, key) =>
-                                                (id === "YEARLY_PLAN" && key < 3) ||
-                                                (id === "DAILY_PLAN" && key < 24) ||
-                                                (id === "COMICS" && key < 3) ||
-                                                (id === "GAME" && key < 3) ||
-                                                (id === "PLAY" && key < 6) ||
-                                                (id === "SHOW_TIME" && key < 3) ||
-                                                (id === "ACTIVITY" && key < 3)
+                                                (id === "YEARLY_PLAN" && key < 30) ||
+                                                (id === "DAILY_PLAN" && key < 240) ||
+                                                (id === "COMICS" && key < 30) ||
+                                                (id === "GAME" && key < 30) ||
+                                                (id === "PLAY" && key < 60) ||
+                                                (id === "SHOW_TIME" && key < 30) ||
+                                                (id === "ACTIVITY" && key < 30)
                                                     ?
                                                     <Square key={key} col="2" backgroundColor="white">
                                                         <span>
@@ -190,7 +190,7 @@ export default function TeacherContents() {
                                     linkType === "TASKS" ?
                                         selectedDocuments ?
                                             selectedDocuments.map((document, key) =>
-                                                key < 16 ?
+                                                key < 32 ?
                                                     <Square key={key} col="2" backgroundColor="white"
                                                             to={`/teacher-tasks/${document.id}`}><b>{document.name}</b>
                                                     </Square> : null
@@ -216,7 +216,7 @@ export default function TeacherContents() {
                                         exams ?
                                             exams.map((document, key) =>
                                                 document.examType === "QUIZ" ?
-                                                    key < 16 ?
+                                                    key < 32 ?
                                                         <Square key={key} col="2" backgroundColor="white"
                                                                 to={`/teacher-exam/${document.id}`}><b>{document.name}</b>
                                                         </Square> : null
@@ -238,12 +238,9 @@ export default function TeacherContents() {
                                                 className='w-100' src={`https://app.axebug.com/axebug/assets/ch2.png`}/></a>
                                             </div>
 
-                                            {
-                                                // <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Chapter3/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch3.png`}/></a></div>
-                                            }
-                                            {
-                                                // <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Chapter4/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch4.png`}/></a></div>
-                                            }
+                                             <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Chapter3/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch3.png`}/></a></div>
+                                            <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Chapter4/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch4.png`}/></a></div>
+
 
                                         </React.Fragment>
                                         : null
@@ -276,12 +273,9 @@ export default function TeacherContents() {
                                                 </a>
                                             </div>
 
-                                            {
-                                                // <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Activite3/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab3.png`}/></a></div>
-                                            }
-                                            {
-                                                // <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Activite4/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab4.png`}/></a></div>
-                                            }
+                                                <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Activite3/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab3.png`}/></a></div>
+                                            <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Activite4/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab4.png`}/></a></div>
+
 
                                         </React.Fragment>
                                         : null
