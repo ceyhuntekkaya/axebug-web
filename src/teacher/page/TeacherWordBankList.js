@@ -26,7 +26,7 @@ export default function TeacherWordBankList() {
                 {
                     chapters ?
                         chapters.map((chapter, key) =>
-                            key === 1 || key === 0 || key === 3 ?
+                            key === 1 || key === 2 || key === 0 || key === 3 ?
                                 <div className='row'>
                                     {/* <Square key={key} col="2" backgroundColor="black"><h4><b>{chapter.name}.{key}</b></h4> </Square> */}
                                     {

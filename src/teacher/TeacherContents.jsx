@@ -203,7 +203,7 @@ export default function TeacherContents() {
                                             exams.map((document, key) =>
 
                                                 document.examType === "EXAM" ?
-                                                    key < 3 ?
+                                                    key < 4 ?
                                                         <Square key={key} col="2" backgroundColor="white"
                                                                 to={`/teacher-exam/${document.id}`}><b>{document.name}</b>
                                                         </Square> : null
@@ -273,8 +273,25 @@ export default function TeacherContents() {
                                                 </a>
                                             </div>
 
-                                                <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Activite3/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab3.png`}/></a></div>
-                                            <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Activite4/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab4.png`}/></a></div>
+                                                <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Activite3/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab3.png`}/></a>
+                                                    <a className='mt-2 border border-success p-2 d-flex justify-content-center'
+                                                       target="_blank"
+                                                       href={`https://madeinbrain.net/pdf/Activite_3_Book_key.pdf`}
+                                                       rel="noreferrer">
+                                                        <span>DOWNLOAD KEY</span>
+                                                    </a>
+
+                                                </div>
+                                            <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Activite4/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab4.png`}/></a>
+
+                                                <a className='mt-2 border border-success p-2 d-flex justify-content-center'
+                                                   target="_blank"
+                                                   href={`https://madeinbrain.net/pdf/Activite_4_Book_key.pdf`}
+                                                   rel="noreferrer">
+                                                    <span>DOWNLOAD KEY</span>
+                                                </a>
+
+                                            </div>
 
 
                                         </React.Fragment>

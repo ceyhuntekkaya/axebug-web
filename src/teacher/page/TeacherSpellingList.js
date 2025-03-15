@@ -38,7 +38,7 @@ export default function TeacherSpellingList() {
                 {
                     chapters ?
                         chapters.sort(compare).map((chapter, key) =>
-                            key === 1 || key === 0 || key === 3 ?
+                            key === 1 || key === 2 || key === 0 || key === 3 ?
                                 <div className='row' key={key}>
                                     {
                                        // console.log(chapter.chapter)
