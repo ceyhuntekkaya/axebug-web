@@ -4,12 +4,12 @@ import FinishExam from "./FinishExam";
 import {Link} from "react-router-dom";
 
 var stringSimilarity = require("string-similarity");
-const answerEmpty = require("./Exam2Answer.json");
+const answerEmpty = require("./Exam4Answer.json");
 
 export default function Exam4(props) {
     const [answer, setAnswer] = useState({...answerEmpty});
     const [pageNo, setPageNo] = useState(0);
-    const [maxPage] = useState(8);
+    const [maxPage] = useState(4);
 
     const nextPage = () => {
         if (pageNo < maxPage - 1) setPageNo(pageNo + 1);
@@ -590,223 +590,229 @@ export default function Exam4(props) {
                                 ) : null}
 
                                 {pageNo === 2 ? (
-                                    <React.Fragment>
+                                        <React.Fragment>
 
 
-                                        <div>
-                                            <div className="alert alert-dark" role="alert">
-                                                <strong>
-                                                    D. Match the words and phrases with the correct definitions.
-                                                </strong>
-                                            </div>
-                                            <div className="row">
-                                                <div className="col-6">
-                                                    <div className="paragraf">
-                                                        <strong>1. Disciplinary:</strong>
-                                                        <input
-                                                            style={{width: 50}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][1].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 1, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-                                                    <div className="paragraf">
-                                                        <strong>2. Vital:</strong>
-                                                        <input
-                                                            style={{width: 50}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][1].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 1, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-
-                                                    <div className="paragraf">
-                                                        <strong>3. Patience:</strong>
-                                                        <input
-                                                            style={{width: 50}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][1].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 1, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-
-                                                    <div className="paragraf">
-                                                        <strong>4. Essential:</strong>
-                                                        <input
-                                                            style={{width: 50}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][1].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 1, e.target.value)
-                                                            }
-                                                        />
-                                                    </div>
-
-                                                    <div className="paragraf">
-                                                        <strong>5. Light speed:</strong>
-                                                        <input
-                                                            style={{width: 50}}
-                                                            className="form-input textformat border border-success"
-                                                            type="text"
-                                                            value={answer.result[2][0][1].student}
-                                                            onChange={(e) =>
-                                                                setStudentOpenAnswer(2, 0, 1, e.target.value)
-                                                            }
-
-                                                        />
-                                                    </div>
+                                            <div>
+                                                <div className="alert alert-dark" role="alert">
+                                                    <strong>
+                                                        D. Match the words and phrases with the correct definitions.
+                                                    </strong>
                                                 </div>
-                                                <div className="col-6">
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>A. </strong>Totally necessary.
-                                                    </div>
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>B. </strong>The speed of light.
-                                                    </div>
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>C. </strong>Tolerance.
-                                                    </div>
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>D. </strong>Concerning discipline.
-                                                    </div>
-                                                    <div className="paragraf alert alert-success">
-                                                        <strong>E. </strong>Very important.
-                                                    </div>
+                                                <div className="row">
+                                                    <div className="col-6">
+                                                        <div className="paragraf">
+                                                            <strong>1. Disciplinary:</strong>
+                                                            <input
+                                                                style={{width: 50}}
+                                                                className="form-input textformat border border-success"
+                                                                type="text"
+                                                                value={answer.result[2][0][1].student}
+                                                                onChange={(e) =>
+                                                                    setStudentOpenAnswer(2, 0, 1, e.target.value)
+                                                                }
+                                                            />
+                                                        </div>
+                                                        <div className="paragraf">
+                                                            <strong>2. Vital:</strong>
+                                                            <input
+                                                                style={{width: 50}}
+                                                                className="form-input textformat border border-success"
+                                                                type="text"
+                                                                value={answer.result[2][0][1].student}
+                                                                onChange={(e) =>
+                                                                    setStudentOpenAnswer(2, 0, 1, e.target.value)
+                                                                }
+                                                            />
+                                                        </div>
 
+                                                        <div className="paragraf">
+                                                            <strong>3. Patience:</strong>
+                                                            <input
+                                                                style={{width: 50}}
+                                                                className="form-input textformat border border-success"
+                                                                type="text"
+                                                                value={answer.result[2][0][1].student}
+                                                                onChange={(e) =>
+                                                                    setStudentOpenAnswer(2, 0, 1, e.target.value)
+                                                                }
+                                                            />
+                                                        </div>
 
-                                                    <div>
-                                                        <div className="alert alert-dark" role="alert">
-                                                            <strong>
-                                                                E. Listen to the audio. Then, repeat the sentences
-                                                                clearly.
-                                                            </strong>
-                                                        </div>
-                                                        <div className="alert alert-dark" role="alert">
-                                                            <audio
-                                                                controls
-                                                                className="w-100"
-                                                                style={{backgroundColor: "black", height: 45}}
-                                                            >
-                                                                <source
-                                                                    src={`https://app.axebug.com/axebug/assets/c4_e13_pg8_p7.mp3`}
-                                                                    type="audio/mpeg"
-                                                                />
-                                                            </audio>
-                                                        </div>
-                                                        <div className="border border-success p-3 mt-3">
-                                                            <SpechText
-                                                                getSpeechText={getSpeechText}
-                                                                questionNumber={1}
+                                                        <div className="paragraf">
+                                                            <strong>4. Essential:</strong>
+                                                            <input
+                                                                style={{width: 50}}
+                                                                className="form-input textformat border border-success"
+                                                                type="text"
+                                                                value={answer.result[2][0][1].student}
+                                                                onChange={(e) =>
+                                                                    setStudentOpenAnswer(2, 0, 1, e.target.value)
+                                                                }
                                                             />
                                                         </div>
-                                                        <div className="alert alert-dark" role="alert">
-                                                            <audio
-                                                                controls
-                                                                className="w-100"
-                                                                style={{backgroundColor: "black", height: 45}}
-                                                            >
-                                                                <source
-                                                                    src={`https://app.axebug.com/axebug/assets/c4_e14_pg16_p6.mp3`}
-                                                                    type="audio/mpeg"
-                                                                />
-                                                            </audio>
-                                                        </div>
-                                                        <div className="border border-success p-3 mt-3">
-                                                            <SpechText
-                                                                getSpeechText={getSpeechText}
-                                                                questionNumber={2}
+
+                                                        <div className="paragraf">
+                                                            <strong>5. Light speed:</strong>
+                                                            <input
+                                                                style={{width: 50}}
+                                                                className="form-input textformat border border-success"
+                                                                type="text"
+                                                                value={answer.result[2][0][1].student}
+                                                                onChange={(e) =>
+                                                                    setStudentOpenAnswer(2, 0, 1, e.target.value)
+                                                                }
+
                                                             />
                                                         </div>
-                                                        <div className="alert alert-dark" role="alert">
-                                                            <audio
-                                                                controls
-                                                                className="w-100"
-                                                                style={{backgroundColor: "black", height: 45}}
-                                                            >
-                                                                <source
-                                                                    src={`https://app.axebug.com/axebug/assets/c4_e15_pg22_p8.mp3`}
-                                                                    type="audio/mpeg"
-                                                                />
-                                                            </audio>
+                                                    </div>
+                                                    <div className="col-6">
+                                                        <div className="paragraf alert alert-success">
+                                                            <strong>A. </strong>Totally necessary.
                                                         </div>
-                                                        <div className="border border-success p-3 mt-3">
-                                                            <SpechText
-                                                                getSpeechText={getSpeechText}
-                                                                questionNumber={3}
-                                                            />
+                                                        <div className="paragraf alert alert-success">
+                                                            <strong>B. </strong>The speed of light.
                                                         </div>
-                                                        <div className="alert alert-dark" role="alert">
-                                                            <audio
-                                                                controls
-                                                                className="w-100"
-                                                                style={{backgroundColor: "black", height: 45}}
-                                                            >
-                                                                <source
-                                                                    src={`https://app.axebug.com/axebug/assets/c4_e16_pg27_p15.mp3`}
-                                                                    type="audio/mpeg"
-                                                                />
-                                                            </audio>
+                                                        <div className="paragraf alert alert-success">
+                                                            <strong>C. </strong>Tolerance.
                                                         </div>
-                                                        <div className="border border-success p-3 mt-3">
-                                                            <SpechText
-                                                                getSpeechText={getSpeechText}
-                                                                questionNumber={4}
-                                                            />
+                                                        <div className="paragraf alert alert-success">
+                                                            <strong>D. </strong>Concerning discipline.
+                                                        </div>
+                                                        <div className="paragraf alert alert-success">
+                                                            <strong>E. </strong>Very important.
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </React.Fragment>
+
+                                        ) : null}
+                                        {pageNo === 3 ? (
+                                            <React.Fragment>
+                                            <div>
+                                                <div className="alert alert-dark" role="alert">
+                                                    <strong>
+                                                        E. Listen to the audio. Then, repeat the sentences
+                                                        clearly.
+                                                    </strong>
+                                                </div>
+                                                <div className="alert alert-dark" role="alert">
+                                                    <audio
+                                                        controls
+                                                        className="w-100"
+                                                        style={{backgroundColor: "black", height: 45}}
+                                                    >
+                                                        <source
+                                                            src={`https://app.axebug.com/axebug/assets/c4_e13_pg8_p7.mp3`}
+                                                            type="audio/mpeg"
+                                                        />
+                                                    </audio>
+                                                </div>
+                                                <div className="border border-success p-3 mt-3">
+                                                    <SpechText
+                                                        getSpeechText={getSpeechText}
+                                                        questionNumber={1}
+                                                    />
+                                                </div>
+                                                <div className="alert alert-dark" role="alert">
+                                                    <audio
+                                                        controls
+                                                        className="w-100"
+                                                        style={{backgroundColor: "black", height: 45}}
+                                                    >
+                                                        <source
+                                                            src={`https://app.axebug.com/axebug/assets/c4_e14_pg16_p6.mp3`}
+                                                            type="audio/mpeg"
+                                                        />
+                                                    </audio>
+                                                </div>
+                                                <div className="border border-success p-3 mt-3">
+                                                    <SpechText
+                                                        getSpeechText={getSpeechText}
+                                                        questionNumber={2}
+                                                    />
+                                                </div>
+                                                <div className="alert alert-dark" role="alert">
+                                                    <audio
+                                                        controls
+                                                        className="w-100"
+                                                        style={{backgroundColor: "black", height: 45}}
+                                                    >
+                                                        <source
+                                                            src={`https://app.axebug.com/axebug/assets/c4_e15_pg22_p8.mp3`}
+                                                            type="audio/mpeg"
+                                                        />
+                                                    </audio>
+                                                </div>
+                                                <div className="border border-success p-3 mt-3">
+                                                    <SpechText
+                                                        getSpeechText={getSpeechText}
+                                                        questionNumber={3}
+                                                    />
+                                                </div>
+                                                <div className="alert alert-dark" role="alert">
+                                                    <audio
+                                                        controls
+                                                        className="w-100"
+                                                        style={{backgroundColor: "black", height: 45}}
+                                                    >
+                                                        <source
+                                                            src={`https://app.axebug.com/axebug/assets/c4_e16_pg27_p15.mp3`}
+                                                            type="audio/mpeg"
+                                                        />
+                                                    </audio>
+                                                </div>
+                                                <div className="border border-success p-3 mt-3">
+                                                    <SpechText
+                                                        getSpeechText={getSpeechText}
+                                                        questionNumber={4}
+                                                    />
+                                                </div>
+                                            </div>
+
+
+
+                                            </React.Fragment>
+                                            ) : null}
+                                        {pageNo === 4 ? <FinishExam/> : null}
+                                    </div>
                                     </React.Fragment>
                                     ) : null}
-                                {pageNo === 7 ? <FinishExam/> : null}
                             </div>
-                        </React.Fragment>
-                        ) : null}
-                </div>
 
-                <div className="card-footer">
-                    <div className="row">
-                        {pageNo !== 0 ? (
-                            <div className="col-auto">
-                                <button className="btn btn-success" onClick={() => prevPage()}>
-                                    PREV
-                                </button>
-                            </div>
-                        ) : null}
-                        {pageNo !== maxPage - 1 ? (
-                            <div className="col-auto pl-2">
-                                <button className="btn btn-success" onClick={() => nextPage()}>
-                                    NEXT
-                                </button>
-                            </div>
-                        ) : null}
-                        {pageNo === maxPage - 1 ? (
-                            <div className="col-auto pl-2">
-                                <button
-                                    className="btn btn-success"
-                                    onClick={() => props.sendExam(answer, "EXAM", true)}
-                                >
-                                    FINISH EXAM
-                                </button>
-                            </div>
-                        ) : null}
-                        {/* <div className="col pl-4">
+                            <div className="card-footer">
+                                <div className="row">
+                                    {pageNo !== 0 ? (
+                                        <div className="col-auto">
+                                            <button className="btn btn-success" onClick={() => prevPage()}>
+                                                PREV
+                                            </button>
+                                        </div>
+                                    ) : null}
+                                    {pageNo !== maxPage - 1 ? (
+                                        <div className="col-auto pl-2">
+                                            <button className="btn btn-success" onClick={() => nextPage()}>
+                                                NEXT
+                                            </button>
+                                        </div>
+                                    ) : null}
+                                    {pageNo === maxPage - 1 ? (
+                                        <div className="col-auto pl-2">
+                                            <button
+                                                className="btn btn-success"
+                                                onClick={() => props.sendExam(answer, "EXAM", true)}
+                                            >
+                                                FINISH EXAM
+                                            </button>
+                                        </div>
+                                    ) : null}
+                                    {/* <div className="col pl-4">
                             <button className='btn btn-info pl-4' onClick={() => props.sendExam(answer,"EXAM", false)}>SAVE EXAM</button>
                         </div> */}
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-}
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        );
+                    }

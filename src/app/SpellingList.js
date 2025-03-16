@@ -9,11 +9,35 @@ export default function SpellingList() {
     const [activeEpisodeList, setActiveEpisodeList] = useState([]);
     const [ready, setReady] = useState(false);
 
+
+    const [chapterList, setChapterList] = useState([]);
+
     useEffect(() => {
         setChapters("findAllChaptersWithEpisodes", null);
         setActiveEpisodeList(JSON.parse(localStorage.getItem("activeEpisodeList")));
         // eslint-disable-next-line
     }, [])
+
+
+    useEffect(() => {
+        if(chapters){
+            let _chapter = [];
+            for(let i=0; i<chapters.length; i++){
+
+                for(let j=0; j<chapters[i].episodes.length; j++){
+
+                    _chapter.push(chapters[i].episodes[j])
+                }
+            }
+
+
+            console.log(_chapter)
+            _chapter = _chapter.sort((a, b) => a.id - b.id)
+            setChapterList(_chapter)
+        }
+        // eslint-disable-next-line
+    }, [chapters])
+
 
 
     useEffect(() => {
@@ -39,12 +63,11 @@ export default function SpellingList() {
             <div className='row' style={{width: 750}}>
                 {
                     chapters ?
-                        chapters.map((chapter, key) =>
-                            key === 1 ||   key === 2 ||  key === 0 || key === 3 ?
-                                <div className='row' key={key}>
+
+                                <div className='row' >
                                     {/* <Square key={key} col="3" backgroundColor="black"><h4><b>{key+1}</b></h4> </Square> */}
                                     {
-                                        chapter.episodes.map((episode, no) =>
+                                        chapterList.map((episode, no) =>
 
                                             <Square key={no} to={`/spellingword/?id=${episode.id}`} col="3"
                                                     backgroundColor="white">
@@ -52,7 +75,7 @@ export default function SpellingList() {
                                         )
                                     }
                                 </div> : ""
-                        ) : null
+
                 }
             </div>
         </div>

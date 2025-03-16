@@ -1,28 +1,37 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import useChapter from '../../api/useChapter';
 import Square from '../../app/components/Square';
 
 export default function TeacherSpellingList() {
     const [chapters, setChapters] = useChapter([]);
+    const [chapterList, setChapterList] = useState([]);
 
     useEffect(() => {
         setChapters("findAllChaptersWithEpisodes", null);
         // eslint-disable-next-line
     }, [])
 
+    useEffect(() => {
+       if(chapters){
+           let _chapter = [];
+           for(let i=0; i<chapters.length; i++){
 
-    const compare = (a, b) => {
+               for(let j=0; j<chapters[i].episodes.length; j++){
 
-        if (a.id < b.id) {
-            return -1;
-        }
-        if (a.id > b.id) {
-            return 1;
-        }
-        return 0;
-    };
-    console.log(chapters)
+                   _chapter.push(chapters[i].episodes[j])
+               }
+           }
+
+
+       console.log(_chapter)
+           _chapter = _chapter.sort((a, b) => a.id - b.id)
+           setChapterList(_chapter)
+       }
+        // eslint-disable-next-line
+    }, [chapters])
+
+
 
     return <React.Fragment>
         <div className="container">
@@ -37,20 +46,17 @@ export default function TeacherSpellingList() {
             <div className='row' style={{width: 750}}>
                 {
                     chapters ?
-                        chapters.sort(compare).map((chapter, key) =>
-                            key === 1 || key === 2 || key === 0 || key === 3 ?
-                                <div className='row' key={key}>
+
+                                <div className='row' >
+
                                     {
-                                       // console.log(chapter.chapter)
-                                    }
-                                    {
-                                        chapter.episodes.sort(compare).map((episode, no) =>
+                                        chapterList.map((episode, no) =>
                                             <Square key={no} to={`/teacher-spellingword/?id=${episode.id}`} col="3"
                                                     backgroundColor="white"><h3><b>{episode.name} </b></h3></Square>
                                         )
                                     }
                                 </div> : null
-                        ) : null
+
                 }
             </div>
         </div>

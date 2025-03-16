@@ -51,6 +51,10 @@ export default function Exam() {
 
 
     const sendExam = (answer, examType, isFinish) => {
+
+        console.log("ceyhun")
+
+
         const answerList = [];
         answer.result.forEach((skill, skillNo) => {
             skill.forEach((section, sectionNo) => {
@@ -77,6 +81,8 @@ export default function Exam() {
         });
         saveSelectedExamResult("saveExamResult", answerList)
         setExamName("Finish")
+
+        console.log("ceyhun")
         // if (isFinish === true)
         //     setExamName("Finish")
     }

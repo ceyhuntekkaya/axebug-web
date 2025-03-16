@@ -4,12 +4,12 @@ import FinishExam from "./FinishExam";
 import {Link} from "react-router-dom";
 
 var stringSimilarity = require("string-similarity");
-const answerEmpty = require("./Exam2Answer.json");
+const answerEmpty = require("./Exam3Answer.json");
 
 export default function Exam3(props) {
     const [answer, setAnswer] = useState({...answerEmpty});
     const [pageNo, setPageNo] = useState(0);
-    const [maxPage] = useState(8);
+    const [maxPage] = useState(5);
 
     const nextPage = () => {
         if (pageNo < maxPage - 1) setPageNo(pageNo + 1);
@@ -29,6 +29,9 @@ export default function Exam3(props) {
             console.log(isTeacher)
         }
     }, [])
+
+
+    console.log(answer.result)
 
     const setStudentOpenAnswer = (
         skils,
@@ -68,6 +71,9 @@ export default function Exam3(props) {
         }
         setAnswer(temp);
     };
+
+
+    console.log(pageNo)
 
     const getSpeechText = (text, questionNumber) => {
         setStudentOpenAnswer(3, 0, questionNumber, text, true);
@@ -441,7 +447,7 @@ export default function Exam3(props) {
                                     </React.Fragment>
                                 ) : null}
 
-                                {pageNo === 2 ? (
+                                {pageNo === 1 ? (
                                     <React.Fragment>
 
 
@@ -732,7 +738,7 @@ export default function Exam3(props) {
                                         </div>
                                     </React.Fragment>
                                 ) : null}
-                                {pageNo === 6 ? (
+                                {pageNo === 3 ? (
                                     <React.Fragment>
 
 
@@ -748,7 +754,7 @@ export default function Exam3(props) {
                                                         style={{fontSize: 30}}
                                                         className="form-input w-100"
                                                         type="text"
-                                                        value={answer.result[2][1][1].student}
+                                                        value={answer.result[2] ? answer.result[2][1][1]?.student: ""}
                                                         onChange={(e) =>
                                                             setStudentOpenAnswer(2, 1, 1, e.target.value)
                                                         }
@@ -760,7 +766,7 @@ export default function Exam3(props) {
                                                         style={{fontSize: 30}}
                                                         className="form-input w-100"
                                                         type="text"
-                                                        value={answer.result[2][1][2].student}
+                                                        value={answer.result[2] ? answer.result[2][1][2]?.student: ""}
                                                         onChange={(e) =>
                                                             setStudentOpenAnswer(2, 1, 2, e.target.value)
                                                         }
@@ -772,7 +778,7 @@ export default function Exam3(props) {
                                                         style={{fontSize: 30}}
                                                         className="form-input w-100"
                                                         type="text"
-                                                        value={answer.result[2][1][3].student}
+                                                        value={answer.result[2] ? answer.result[2][1][3]?.student: ""}
                                                         onChange={(e) =>
                                                             setStudentOpenAnswer(2, 1, 3, e.target.value)
                                                         }
@@ -929,7 +935,7 @@ export default function Exam3(props) {
                                         </div>
                                     </React.Fragment>
                                 ) : null}
-                                {pageNo === 7 ? (
+                                {pageNo === 4 ? (
                                     <React.Fragment>
 
 
@@ -1015,7 +1021,7 @@ export default function Exam3(props) {
                                         </div>
                                     </React.Fragment>
                                 ) : null}
-                                {pageNo === 7 ? <FinishExam/> : null}
+                                {pageNo === 5 ? <FinishExam/> : null}
                             </div>
                         </React.Fragment>
                         ) : null}
@@ -1041,7 +1047,12 @@ export default function Exam3(props) {
                             <div className="col-auto pl-2">
                                 <button
                                     className="btn btn-success"
-                                    onClick={() => props.sendExam(answer, "EXAM", true)}
+                                    onClick={() => {
+                                        console.log("Merhaba");
+                                        console.log(answer);
+                                        props.sendExam(answer, "EXAM", true)
+                                        console.log(props.sendExam);
+                                    }}
                                 >
                                     FINISH EXAM
                                 </button>
