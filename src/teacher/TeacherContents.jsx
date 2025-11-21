@@ -228,18 +228,18 @@ export default function TeacherContents() {
                                     linkType === "COMICS" ?
                                         <React.Fragment>
                                             <div className="col-3 p-2"><a target="_blank"
-                                                                          href="https://madeinbrain.net/axebug/HTML/Chapter1/index.html"><img
+                                                                          href="https://app.axebug.com/document-server/html/HTML/Chapter1/index.html"><img
                                                 className='w-100' src={`https://app.axebug.com/axebug/assets/ch1.png`}/></a>
                                             </div>
 
 
                                             <div className="col-3 p-2"><a target="_blank"
-                                                                          href="https://madeinbrain.net/axebug/HTML/Chapter2/index.html"><img
+                                                                          href="https://app.axebug.com/document-server/html/HTML/Chapter2/index.html"><img
                                                 className='w-100' src={`https://app.axebug.com/axebug/assets/ch2.png`}/></a>
                                             </div>
 
-                                             <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Chapter3/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch3.png`}/></a></div>
-                                            <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Chapter4/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch4.png`}/></a></div>
+                                             <div className="col-3 p-2"><a target="_blank" href="https://app.axebug.com/document-server/html/HTML/Chapter3/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch3.png`}/></a></div>
+                                            <div className="col-3 p-2"><a target="_blank" href="https://app.axebug.com/document-server/html/HTML/Chapter4/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch4.png`}/></a></div>
 
 
                                         </React.Fragment>
@@ -250,7 +250,7 @@ export default function TeacherContents() {
                                         <React.Fragment>
 
                                             <div className="col-3 p-2"><a target="_blank"
-                                                                          href="https://madeinbrain.net/axebug/HTML/Activite1/index.html"
+                                                                          href="https://app.axebug.com/document-server/html/HTML/Activite1/index.html"
                                                                           rel="noreferrer"><img className='w-100'
                                                                                                 src={`https://app.axebug.com/axebug/assets/ab1.png`}/></a>
                                                 <a className='mt-2 border border-success p-2 d-flex justify-content-center'
@@ -262,31 +262,31 @@ export default function TeacherContents() {
                                             </div>
 
                                             <div className="col-3 p-2"><a target="_blank"
-                                                                          href="https://madeinbrain.net/axebug/HTML/Activite2/index.html"
+                                                                          href="https://app.axebug.com/document-server/html/HTML/Activite2/index.html"
                                                                           rel="noreferrer"><img className='w-100'
                                                                                                 src={`https://app.axebug.com/axebug/assets/ab2.png`}/></a>
                                                 <a className='mt-2 border border-success p-2 d-flex justify-content-center'
                                                    target="_blank"
-                                                   href={`https://madeinbrain.net/pdf/Activite_2_Book_key.pdf`}
+                                                   href={`https://app.axebug.com/document-server/pdf/pdf/Activite_2_Book_key.pdf`}
                                                    rel="noreferrer">
                                                     <span>DOWNLOAD KEY</span>
                                                 </a>
                                             </div>
 
-                                                <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Activite3/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab3.png`}/></a>
+                                                <div className="col-3 p-2"><a target="_blank" href="https://app.axebug.com/document-server/html/HTML/Activite3/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab3.png`}/></a>
                                                     <a className='mt-2 border border-success p-2 d-flex justify-content-center'
                                                        target="_blank"
-                                                       href={`https://madeinbrain.net/pdf/Activite_3_Book_key.pdf`}
+                                                       href={`https://app.axebug.com/document-server/pdf/pdf/Activite_3_Book_key.pdf`}
                                                        rel="noreferrer">
                                                         <span>DOWNLOAD KEY</span>
                                                     </a>
 
                                                 </div>
-                                            <div className="col-3 p-2"><a target="_blank" href="https://madeinbrain.net/axebug/HTML/Activite4/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab4.png`}/></a>
+                                            <div className="col-3 p-2"><a target="_blank" href="https://app.axebug.com/document-server/html/HTML/Activite4/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab4.png`}/></a>
 
                                                 <a className='mt-2 border border-success p-2 d-flex justify-content-center'
                                                    target="_blank"
-                                                   href={`https://madeinbrain.net/pdf/Activite_4_Book_key.pdf`}
+                                                   href={`https://app.axebug.com/document-server/pdf/pdf/Activite_4_Book_key.pdf`}
                                                    rel="noreferrer">
                                                     <span>DOWNLOAD KEY</span>
                                                 </a>
@@ -301,12 +301,12 @@ export default function TeacherContents() {
                                     linkType === "CONNECTION" ?
                                         <React.Fragment>
                                             <div className="col-3 p-2"><a target="_blank"
-                                                                          href="https://madeinbrain.net/axebug/HTML/Mathematics/index.html"
+                                                                          href="https://app.axebug.com/document-server/html/HTML/Mathematics/index.html"
                                                                           rel="noreferrer"><img className='w-100'
                                                                                                 src={`https://app.axebug.com/axebug/assets/math.png`}/></a>
                                             </div>
                                             <div className="col-3 p-2"><a target="_blank"
-                                                                          href="https://madeinbrain.net/axebug/HTML/Science/index.html"
+                                                                          href="https://app.axebug.com/document-server/html/HTML/Science/index.html"
                                                                           rel="noreferrer"><img className='w-100'
                                                                                                 src={`https://app.axebug.com/axebug/assets/science.png`}/></a>
                                             </div>

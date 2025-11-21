@@ -2,6 +2,7 @@ ssh -i .ssh/id_rsa_axebug axeadmn@193.163.88.51 -p 1923
 
 
 ssh root@5.75.238.9
+Str421900
 
 
 docker exec axeadmn_db_1 pg_dumpall -U postgres > /home/axeadmn/axebug_backup_db_14_04_2023_12_43.sql
