@@ -255,7 +255,7 @@ export default function TeacherContents() {
                                                                                                 src={`https://app.axebug.com/axebug/assets/ab1.png`}/></a>
                                                 <a className='mt-2 border border-success p-2 d-flex justify-content-center'
                                                    target="_blank"
-                                                   href={`https://madeinbrain.net/pdf/Activite_1_Book_key.pdf`}
+                                                   href={`https://app.axebug.com/document-server/pdf/pdf/Activite_1_Book_key.pdf`}
                                                    rel="noreferrer">
                                                     <span>DOWNLOAD KEY</span>
                                                 </a>
