@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 
 var stringSimilarity = require("string-similarity");
 const answerEmpty = require("./Quiz4Answer.json");
+const { getFileUrl } = require('../../api/fileUrl');
 
 export default function Quiz4(props) {
     const [answer, setAnswer] = useState({...answerEmpty});
@@ -429,7 +430,7 @@ export default function Quiz4(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/quiz_listening_c1_e4.mp3`}
+                                                        src={getFileUrl('quiz_listening_c1_e4.mp3')}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -1037,7 +1038,7 @@ export default function Quiz4(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p099_02_c1e4.mp3`}
+                                                        src={getFileUrl('p099_02_c1e4.mp3')}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -1055,7 +1056,7 @@ export default function Quiz4(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p104_02_c1e4.mp3`}
+                                                        src={getFileUrl('p104_02_c1e4.mp3')}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -1073,7 +1074,7 @@ export default function Quiz4(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p116_01_c1e4.mp3`}
+                                                        src={getFileUrl('p116_01_c1e4.mp3')}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -1091,7 +1092,7 @@ export default function Quiz4(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p129_02_c1e4.mp3`}
+                                                        src={getFileUrl('p129_02_c1e4.mp3')}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>

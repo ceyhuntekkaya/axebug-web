@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import axios from 'axios'
+import axios from './axiosInstance'
 const config = require('./config.json');
 
 export default function useStudentWork() {
@@ -17,7 +17,7 @@ export default function useStudentWork() {
 
     const checkStudentWorkTask = async (params) => {
         try {
-            const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/${params.studentId}/${params.taskId}/`);
+            const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/${params.studentId}/${params.taskId}`);
             setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);
@@ -26,7 +26,7 @@ export default function useStudentWork() {
 
     const studentActiveTask = async (params) => {
         try {
-            const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/active/${params}/`);
+            const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/active/${params}`);
             setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);
@@ -35,7 +35,7 @@ export default function useStudentWork() {
 
     const studentScore = async (params) => {
         try {
-            const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/score/${params}/`);
+            const res = await axios.get(`${config.api.invokeUrl}/${RequestMapping}/score/${params}`);
             setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);

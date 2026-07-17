@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import axios from 'axios'
+import axios from './axiosInstance'
 const config = require('./config.json');
 
 export default function useWordScore() {

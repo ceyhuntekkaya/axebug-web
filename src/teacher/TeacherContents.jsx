@@ -6,6 +6,7 @@ import useTask from '../api/useTask';
 import {useParams} from 'react-router-dom';
 import useExam from '../api/useExam';
 import Axios from 'axios';
+const { getFileUrl, getHttpUrl, getPdfUrl } = require('../api/fileUrl');
 
 var fileDownload = require('js-file-download');
 
@@ -177,7 +178,7 @@ export default function TeacherContents() {
                                                         <span>
                                                             <b>
                                                           <a className='btn btn-success' target="_blank"
-                                                             href={`https://app.axebug.com/axebug/pdf/${document.link}`}>
+                                                             href={getPdfUrl(document.link)}>
                                                             <span>{document.name}</span>
                                                           </a>
                                                             </b>
@@ -228,18 +229,18 @@ export default function TeacherContents() {
                                     linkType === "COMICS" ?
                                         <React.Fragment>
                                             <div className="col-3 p-2"><a target="_blank"
-                                                                          href="https://app.axebug.com/document-server/html/HTML/Chapter1/index.html"><img
-                                                className='w-100' src={`https://app.axebug.com/axebug/assets/ch1.png`}/></a>
+                                                                          href={getHttpUrl('Chapter1/index.html')}><img
+                                                className='w-100' src={getFileUrl('ch1.png')}/></a>
                                             </div>
 
 
                                             <div className="col-3 p-2"><a target="_blank"
-                                                                          href="https://app.axebug.com/document-server/html/HTML/Chapter2/index.html"><img
-                                                className='w-100' src={`https://app.axebug.com/axebug/assets/ch2.png`}/></a>
+                                                                          href={getHttpUrl('Chapter2/index.html')}><img
+                                                className='w-100' src={getFileUrl('ch2.png')}/></a>
                                             </div>
 
-                                             <div className="col-3 p-2"><a target="_blank" href="https://app.axebug.com/document-server/html/HTML/Chapter3/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch3.png`}/></a></div>
-                                            <div className="col-3 p-2"><a target="_blank" href="https://app.axebug.com/document-server/html/HTML/Chapter4/index.html"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ch4.png`}/></a></div>
+                                             <div className="col-3 p-2"><a target="_blank" href={getHttpUrl('Chapter3/index.html')}><img className='w-100' src={getFileUrl('ch3.png')}/></a></div>
+                                            <div className="col-3 p-2"><a target="_blank" href={getHttpUrl('Chapter4/index.html')}><img className='w-100' src={getFileUrl('ch4.png')}/></a></div>
 
 
                                         </React.Fragment>
@@ -250,43 +251,43 @@ export default function TeacherContents() {
                                         <React.Fragment>
 
                                             <div className="col-3 p-2"><a target="_blank"
-                                                                          href="https://app.axebug.com/document-server/html/HTML/Activite1/index.html"
+                                                                          href={getHttpUrl('Activite1/index.html')}
                                                                           rel="noreferrer"><img className='w-100'
-                                                                                                src={`https://app.axebug.com/axebug/assets/ab1.png`}/></a>
+                                                                                                src={getFileUrl('ab1.png')}/></a>
                                                 <a className='mt-2 border border-success p-2 d-flex justify-content-center'
                                                    target="_blank"
-                                                   href={`https://app.axebug.com/document-server/pdf/pdf/Activite_1_Book_key.pdf`}
+                                                   href={getPdfUrl('Activite_1_Book_key.pdf')}
                                                    rel="noreferrer">
                                                     <span>DOWNLOAD KEY</span>
                                                 </a>
                                             </div>
 
                                             <div className="col-3 p-2"><a target="_blank"
-                                                                          href="https://app.axebug.com/document-server/html/HTML/Activite2/index.html"
+                                                                          href={getHttpUrl('Activite2/index.html')}
                                                                           rel="noreferrer"><img className='w-100'
-                                                                                                src={`https://app.axebug.com/axebug/assets/ab2.png`}/></a>
+                                                                                                src={getFileUrl('ab2.png')}/></a>
                                                 <a className='mt-2 border border-success p-2 d-flex justify-content-center'
                                                    target="_blank"
-                                                   href={`https://app.axebug.com/document-server/pdf/pdf/Activite_2_Book_key.pdf`}
+                                                   href={getPdfUrl('Activite_2_Book_key.pdf')}
                                                    rel="noreferrer">
                                                     <span>DOWNLOAD KEY</span>
                                                 </a>
                                             </div>
 
-                                                <div className="col-3 p-2"><a target="_blank" href="https://app.axebug.com/document-server/html/HTML/Activite3/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab3.png`}/></a>
+                                                <div className="col-3 p-2"><a target="_blank" href={getHttpUrl('Activite3/index.html')} rel="noreferrer"><img className='w-100' src={getFileUrl('ab3.png')}/></a>
                                                     <a className='mt-2 border border-success p-2 d-flex justify-content-center'
                                                        target="_blank"
-                                                       href={`https://app.axebug.com/document-server/pdf/pdf/Activite_3_Book_key.pdf`}
+                                                       href={getPdfUrl('Activite_3_Book_key.pdf')}
                                                        rel="noreferrer">
                                                         <span>DOWNLOAD KEY</span>
                                                     </a>
 
                                                 </div>
-                                            <div className="col-3 p-2"><a target="_blank" href="https://app.axebug.com/document-server/html/HTML/Activite4/index.html" rel="noreferrer"><img className='w-100' src={`https://app.axebug.com/axebug/assets/ab4.png`}/></a>
+                                            <div className="col-3 p-2"><a target="_blank" href={getHttpUrl('Activite4/index.html')} rel="noreferrer"><img className='w-100' src={getFileUrl('ab4.png')}/></a>
 
                                                 <a className='mt-2 border border-success p-2 d-flex justify-content-center'
                                                    target="_blank"
-                                                   href={`https://app.axebug.com/document-server/pdf/pdf/Activite_4_Book_key.pdf`}
+                                                   href={getPdfUrl('Activite_4_Book_key.pdf')}
                                                    rel="noreferrer">
                                                     <span>DOWNLOAD KEY</span>
                                                 </a>
@@ -301,14 +302,14 @@ export default function TeacherContents() {
                                     linkType === "CONNECTION" ?
                                         <React.Fragment>
                                             <div className="col-3 p-2"><a target="_blank"
-                                                                          href="https://app.axebug.com/document-server/html/HTML/Mathematics/index.html"
+                                                                          href={getHttpUrl('Mathematics/index.html')}
                                                                           rel="noreferrer"><img className='w-100'
-                                                                                                src={`https://app.axebug.com/axebug/assets/math.png`}/></a>
+                                                                                                src={getFileUrl('math.png')}/></a>
                                             </div>
                                             <div className="col-3 p-2"><a target="_blank"
-                                                                          href="https://app.axebug.com/document-server/html/HTML/Science/index.html"
+                                                                          href={getHttpUrl('Science/index.html')}
                                                                           rel="noreferrer"><img className='w-100'
-                                                                                                src={`https://app.axebug.com/axebug/assets/science.png`}/></a>
+                                                                                                src={getFileUrl('science.png')}/></a>
                                             </div>
                                         </React.Fragment>
                                         : null

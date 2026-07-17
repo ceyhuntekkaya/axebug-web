@@ -65,6 +65,7 @@ export default function Teacher() {
 
   const exit = () => {
     localStorage.setItem("teacher", null);
+    localStorage.removeItem("token");
     navigate(`/`);
   }
 

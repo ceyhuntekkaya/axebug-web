@@ -4,6 +4,7 @@ import useWordBank from '../../api/useWordBank';
 import {Link} from 'react-router-dom';
 import SpechText from '../../app/components/SpechText';
 import {useSearchParams} from 'react-router-dom';
+const { getFileUrl } = require('../../api/fileUrl');
 
 var stringSimilarity = require("string-similarity");
 
@@ -141,7 +142,7 @@ export default function TeacherSpelling() {
                                         <audio id="audio" controls className='w-100'
                                                style={{backgroundColor: "#222529", height: 45}}>
                                             <source
-                                                src={`https://app.axebug.com/axebug/assets/${selectedWord.soundUrl}`}
+                                                src={getFileUrl(selectedWord.soundUrl)}
                                                 type="audio/mpeg"/>
                                         </audio>
                                         <div className='boxWhite p-2'>

@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 
 var stringSimilarity = require("string-similarity");
 const answerEmpty = require("./Exam3Answer.json");
+const { getFileUrl } = require('../../api/fileUrl');
 
 export default function Exam3(props) {
     const [answer, setAnswer] = useState({...answerEmpty});
@@ -464,7 +465,7 @@ export default function Exam3(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/axe_exam_c_2_listening_B.mp3`}
+                                                        src={getFileUrl('axe_exam_c_2_listening_B.mp3')}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -953,7 +954,7 @@ export default function Exam3(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/c3_e9_pg8_p3.mp3`}
+                                                        src={getFileUrl('c3_e9_pg8_p3.mp3')}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -971,7 +972,7 @@ export default function Exam3(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/c3_e10_pg16_p1.mp3`}
+                                                        src={getFileUrl('c3_e10_pg16_p1.mp3')}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -989,7 +990,7 @@ export default function Exam3(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/c3_e11_pg18_p6.mp3`}
+                                                        src={getFileUrl('c3_e11_pg18_p6.mp3')}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -1007,7 +1008,7 @@ export default function Exam3(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/c3_e12_pg30_p4.mp3`}
+                                                        src={getFileUrl('c3_e12_pg30_p4.mp3')}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>

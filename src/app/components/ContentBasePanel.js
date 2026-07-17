@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import SpechText from './SpechText';
-// https://app.axebug.com/axebug/assets/1.jpg
-//https://app.axebug.com/axebug/pdf/Activite+Book+2_key.pdf
+const { getFileUrl } = require('../../api/fileUrl');
 const contentModel = {
     "id": 1,
     "name": "",
@@ -168,20 +167,20 @@ export default function ContentBasePanel(props) {
                     {
                         level === 1 || level === 3 ?
                             <audio id="audio" controls className='w-100' style={{ backgroundColor: "#222529", height: 45 }}>
-                                <source id="audioSource" src={`https://app.axebug.com/axebug/assets/${selectedContent.soundUrl}`} type="audio/mpeg" />
+                                <source id="audioSource" src={getFileUrl(selectedContent.soundUrl)} type="audio/mpeg" />
                             </audio> : null
                     }
                     {
                         level === 1 ?
                             <div className="d-flex justify-content-center">
-                                <img src={`https://app.axebug.com/axebug/assets/${selectedContent.imageEmptyUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} />
+                                <img src={getFileUrl(selectedContent.imageEmptyUrl)} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} />
                             </div>
                             : null
                     }
                     {
                         level === 2 || level === 4 ?
                             <div className="d-flex justify-content-center">
-                                <img src={`https://app.axebug.com/axebug/assets/${selectedContent.imageFullUrl}`} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} />
+                                <img src={getFileUrl(selectedContent.imageFullUrl)} alt="" className="w-50 border border-2 border-dark" style={{ height: 400 }} />
                             </div>
                             : null
                     }

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ContentBase from '../app/components/ContentBasePanel';
 import usePanel from '../api/usePanel';
 import { useParams } from 'react-router-dom';
+const { getFileUrl } = require('../api/fileUrl');
 
 export default function TeacherTask() {
     const [panels, setPanels] = usePanel([]);
@@ -52,10 +53,10 @@ export default function TeacherTask() {
                                 panels ?
                                     panels.map((panel, key) => (
                                         selectedContent.id === panel.id ?
-                                            <img src={`https://app.axebug.com/axebug/assets/${panel.imageFullUrl}`} key={key} className={`col-6 mb-4 border border-danger rounded-circle`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} alt={key} />
+                                            <img src={getFileUrl(panel.imageFullUrl)} key={key} className={`col-6 mb-4 border border-danger rounded-circle`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} alt={key} />
 
                                             :
-                                            <img src={`https://app.axebug.com/axebug/assets/${panel.imageFullUrl}`} key={key} className={`col-6 mb-4`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} alt={key} />
+                                            <img src={getFileUrl(panel.imageFullUrl)} key={key} className={`col-6 mb-4`} onClick={() => onSectionContent(panel, key)} style={{ cursor: "pointer" }} alt={key} />
 
 
 

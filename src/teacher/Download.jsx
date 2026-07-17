@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import Axios from 'axios';
+const { getPdfUrl } = require('../api/fileUrl');
 
 export default function Download() {
     const [numPages, setNumPages] = useState(null);
@@ -25,14 +26,14 @@ export default function Download() {
 
     return (
         <div>
-            <Document file="https://app.axebug.com/axebug/pdf/l_p_w_1.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+            <Document file={getPdfUrl('l_p_w_1.pdf')} onLoadSuccess={onDocumentLoadSuccess}>
                 <Page pageNumber={pageNumber} />
             </Document>
             <p>
                 Page {pageNumber} of {numPages}
             </p>
 
-            <button onClick={() => download("https://app.axebug.com/axebug/pdf/l_p_w_1.pdf", "aa.pdf")}>cccccc</button>
+            <button onClick={() => download(getPdfUrl('l_p_w_1.pdf'), "aa.pdf")}>cccccc</button>
         </div>
     );
 }

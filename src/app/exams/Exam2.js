@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 
 var stringSimilarity = require("string-similarity");
 const answerEmpty = require("./Exam2Answer.json");
+const { getFileUrl } = require('../../api/fileUrl');
 
 export default function Exam2(props) {
     const [answer, setAnswer] = useState({...answerEmpty});
@@ -589,7 +590,7 @@ export default function Exam2(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/axe_exam_c_2_listening_A.mp3`}
+                                                        src={getFileUrl('axe_exam_c_2_listening_A.mp3')}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -732,7 +733,7 @@ export default function Exam2(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/axe_exam_c_2_listening_B.mp3`}
+                                                        src={getFileUrl('axe_exam_c_2_listening_B.mp3')}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -833,7 +834,7 @@ export default function Exam2(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p021_001_c2_e5.mp3`}
+                                                        src={getFileUrl('p021_001_c2_e5.mp3')}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -851,7 +852,7 @@ export default function Exam2(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p081_001_c2_e7.mp3`}
+                                                        src={getFileUrl('p081_001_c2_e7.mp3')}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -869,7 +870,7 @@ export default function Exam2(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p0116_001_c2_e7.mp3`}
+                                                        src={getFileUrl('p0116_001_c2_e7.mp3')}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>
@@ -887,7 +888,7 @@ export default function Exam2(props) {
                                                     style={{backgroundColor: "black", height: 45}}
                                                 >
                                                     <source
-                                                        src={`https://app.axebug.com/axebug/assets/p0174_002_c2_e8.mp3`}
+                                                        src={getFileUrl('p0174_002_c2_e8.mp3')}
                                                         type="audio/mpeg"
                                                     />
                                                 </audio>

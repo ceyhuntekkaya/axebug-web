@@ -65,6 +65,7 @@ export default function StudentPanel() {
 
     const exit = () => {
         localStorage.setItem("student", null);
+        localStorage.removeItem("token");
         navigate(`/`);
     }
     const contentList = () => {

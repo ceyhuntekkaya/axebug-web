@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Square from './components/Square';
 import useStudentWork from '../api/useStudentWork'
 import {Link} from 'react-router-dom';
+const { getHttpUrl } = require('../api/fileUrl');
 
 
 export default function DijitalContents() {
@@ -44,70 +45,70 @@ export default function DijitalContents() {
     const backup=()=>{
         return(<>
             <div className="col-3 p-2"><a target="_blank"
-                                          href="https://app.axebug.com/document-server/html/HTML/Chapter1/index.html"><img
+                                          href={getHttpUrl('Chapter1/index.html')}><img
                 className='w-100' src={`assets/ch1.png`}/></a></div>
         <div className="col-3 p-2"><a target="_blank"
-                                      href="https://app.axebug.com/document-server/html/HTML/Chapter2v3/index.html"><img
+                                      href={getHttpUrl('Chapter2v3/index.html')}><img
             className='w-100' src={`assets/ch2.png`}/></a></div>
         <div className="col-3 p-2"><a target="_blank"
-                                      href="https://app.axebug.com/document-server/html/HTML/Chapter3/index.html"><img
+                                      href={getHttpUrl('Chapter3/index.html')}><img
             className='w-100' src={`assets/ch3.png`}/></a></div>
         <div className="col-3 p-2"><a target="_blank"
-                                      href="https://app.axebug.com/document-server/html/HTML/Chapter4/index.html"><img
+                                      href={getHttpUrl('Chapter4/index.html')}><img
             className='w-100' src={`assets/ch4.png`}/></a></div>
         <div className="col-3 p-2"><a target="_blank"
-                                      href="https://app.axebug.com/document-server/html/HTML/Activite1/index.html"><img
+                                      href={getHttpUrl('Activite1/index.html')}><img
             className='w-100' src={`assets/ab1.png`}/></a></div>
         <div className="col-3 p-2"><a target="_blank"
-                                      href="https://app.axebug.com/document-server/html/HTML/Activite2v3/index.html"><img
+                                      href={getHttpUrl('Activite2v3/index.html')}><img
             className='w-100' src={`assets/ab2.png`}/></a></div>
         <div className="col-3 p-2"><a target="_blank"
-                                      href="https://app.axebug.com/document-server/html/HTML/Activite3/index.html"><img
+                                      href={getHttpUrl('Activite3/index.html')}><img
             className='w-100' src={`assets/ab3.png`}/></a></div>
         <div className="col-3 p-2"><a target="_blank"
-                                      href="https://app.axebug.com/document-server/html/HTML/Activite4/index.html"><img
+                                      href={getHttpUrl('Activite4/index.html')}><img
             className='w-100' src={`assets/ab4.png`}/></a></div>
 
         <div className="col-3 p-2"><a target="_blank"
-                                      href="https://app.axebug.com/document-server/html/HTML/Mathematics/index.html"><img
+                                      href={getHttpUrl('Mathematics/index.html')}><img
             className='w-100' src={`assets/math.png`}/></a></div>
         <div className="col-3 p-2"><a target="_blank"
-                                      href="https://app.axebug.com/document-server/html/HTML/Science/index.html"><img
+                                      href={getHttpUrl('Science/index.html')}><img
             className='w-100' src={`assets/science.png`}/></a></div></>
         )
     }
     const activeTaskShow = () => {
         return(<>
                 <div className="col-3 p-2"><a target="_blank"
-                                              href="https://app.axebug.com/document-server/html/HTML/Chapter1/index.html"><img
+                                              href={getHttpUrl('Chapter1/index.html')}><img
                     className='w-100' src={`assets/ch1.png`}/></a></div>
                 <div className="col-3 p-2"><a target="_blank"
-                                              href="https://app.axebug.com/document-server/html/HTML/Chapter2v3/index.html"><img
+                                              href={getHttpUrl('Chapter2v3/index.html')}><img
                     className='w-100' src={`assets/ch2.png`}/></a></div>
                 <div className="col-3 p-2"><a target="_blank"
-                                              href="https://app.axebug.com/document-server/html/HTML/Chapter3/index.html"><img
+                                              href={getHttpUrl('Chapter3/index.html')}><img
                     className='w-100' src={`assets/ch3.png`}/></a></div>
                 <div className="col-3 p-2"><a target="_blank"
-                                              href="https://app.axebug.com/document-server/html/HTML/Chapter4/index.html"><img
+                                              href={getHttpUrl('Chapter4/index.html')}><img
                     className='w-100' src={`assets/ch4.png`}/></a></div>
                 <div className="col-3 p-2"><a target="_blank"
-                                              href="https://app.axebug.com/document-server/html/HTML/Activite1/index.html"><img
+                                              href={getHttpUrl('Activite1/index.html')}><img
                     className='w-100' src={`assets/ab1.png`}/></a></div>
                 <div className="col-3 p-2"><a target="_blank"
-                                              href="https://app.axebug.com/document-server/html/HTML/Activite2v3/index.html"><img
+                                              href={getHttpUrl('Activite2v3/index.html')}><img
                     className='w-100' src={`assets/ab2.png`}/></a></div>
                 <div className="col-3 p-2"><a target="_blank"
-                                              href="https://app.axebug.com/document-server/html/HTML/Activite3/index.html"><img
+                                              href={getHttpUrl('Activite3/index.html')}><img
                     className='w-100' src={`assets/ab3.png`}/></a></div>
                 <div className="col-3 p-2"><a target="_blank"
-                                              href="https://app.axebug.com/document-server/html/HTML/Activite4/index.html"><img
+                                              href={getHttpUrl('Activite4/index.html')}><img
                     className='w-100' src={`assets/ab4.png`}/></a></div>
 
                 <div className="col-3 p-2"><a target="_blank"
-                                              href="https://app.axebug.com/document-server/html/HTML/Mathematics/index.html"><img
+                                              href={getHttpUrl('Mathematics/index.html')}><img
                     className='w-100' src={`assets/math.png`}/></a></div>
                 <div className="col-3 p-2"><a target="_blank"
-                                              href="https://app.axebug.com/document-server/html/HTML/Science/index.html"><img
+                                              href={getHttpUrl('Science/index.html')}><img
                     className='w-100' src={`assets/science.png`}/></a></div></>
         )
     }

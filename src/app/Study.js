@@ -4,6 +4,7 @@ import usePanel from '../api/usePanel';
 import { useSearchParams } from 'react-router-dom';
 import useStudentWork from '../api/useStudentWork'
 import Square from "./components/Square";
+const { getFileUrl } = require('../api/fileUrl');
 
 const studentWorkTemplate = {
     read: "",
@@ -106,13 +107,13 @@ export default function Study(props) {
                                 panels ?
                                     panels.map((panel, key) => (
                                         selectedContent.id === panel.id ?
-                                            <img src={`https://app.axebug.com/axebug/assets/${panel.imageFullUrl}`}
+                                            <img src={getFileUrl(panel.imageFullUrl)}
                                                  key={key} className={`col-6 mb-4 border border-danger rounded-circle`}
                                                  onClick={() => onSectionContent(panel, key)}
                                                  style={{cursor: "pointer"}} alt={key}/>
 
                                             :
-                                            <img src={`https://app.axebug.com/axebug/assets/${panel.imageFullUrl}`}
+                                            <img src={getFileUrl(panel.imageFullUrl)}
                                                  key={key} className={`col-6 mb-4`}
                                                  onClick={() => onSectionContent(panel, key)}
                                                  style={{cursor: "pointer"}} alt={key}/>

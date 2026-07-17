@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import axios from 'axios'
+import axios from './axiosInstance'
 const config = require('./config.json');
 
 
@@ -9,7 +9,7 @@ export default function useLogin() {
 
     const handleChange = async (params) => {
         try {
-            const res = await axios.put(`${config.api.invokeUrl}/${RequestMapping}/`, params);
+            const res = await axios.post(`${config.api.invokeUrl}/${RequestMapping}/`, params);
             setResult(res.data);
         } catch (err) {
             setResult(`An error has occurred: ${err}`);
